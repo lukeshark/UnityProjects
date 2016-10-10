@@ -1,16 +1,16 @@
-﻿// (c) Copyright HutongGames, LLC 2010-2016. All rights reserved.
+﻿// (c) Copyright HutongGames, LLC 2010-2015. All rights reserved.
 
 using UnityEngine;
 
 namespace HutongGames.PlayMaker.Actions
 {
-	[ActionCategory(ActionCategory.Animator)]
+	[ActionCategory("Animator")]
 	[Tooltip("Interrupts the automatic target matching. CompleteMatch will make the gameobject match the target completely at the next frame.")]
 	public class AnimatorInterruptMatchTarget : FsmStateAction
 	{
 		[RequiredField]
 		[CheckForComponent(typeof(Animator))]
-		[Tooltip("The target. An Animator component is required")]
+		[Tooltip("The target. An Animator component and a PlayMakerAnimatorProxy component are required")]
 		public FsmOwnerDefault gameObject;
 
 		[Tooltip("Will make the gameobject match the target completely at the next frame")]

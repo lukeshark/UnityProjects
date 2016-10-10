@@ -1,12 +1,13 @@
-// (c) Copyright HutongGames, LLC 2010-2016. All rights reserved.
+// (c) Copyright HutongGames, LLC 2010-2015. All rights reserved.
 
 using UnityEngine;
 
 namespace HutongGames.PlayMaker.Actions
 {
-	[ActionCategory(ActionCategory.Animator)]
+	[ActionCategory("Animator")]
 	[Tooltip("Gets the playback speed of the Animator. 1 is normal playback speed")]
-	public class GetAnimatorSpeed : FsmStateActionAnimatorBase
+	[HelpUrl("https://hutonggames.fogbugz.com/default.asp?W1056")]
+	public class GetAnimatorSpeed : FsmStateAction
 	{
 		[RequiredField]
 		[CheckForComponent(typeof(Animator))]
@@ -18,12 +19,13 @@ namespace HutongGames.PlayMaker.Actions
 		[Tooltip("The playBack speed of the animator. 1 is normal playback speed")]
 		public FsmFloat speed;
 		
+		[Tooltip("Repeat every frame. Useful when value is subject to change over time.")]
+		public bool everyFrame;
+		
 		private Animator _animator;
 		
 		public override void Reset()
 		{
-			base.Reset();
-
 			gameObject = null;
 			speed = null;
 			everyFrame = false;
@@ -56,7 +58,7 @@ namespace HutongGames.PlayMaker.Actions
 			}
 		}
 	
-		public override void OnActionUpdate()
+		public override void OnUpdate()
 		{
 			GetPlaybackSpeed();
 		}

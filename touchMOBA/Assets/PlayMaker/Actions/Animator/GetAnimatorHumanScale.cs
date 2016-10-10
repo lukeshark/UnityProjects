@@ -1,10 +1,10 @@
-// (c) Copyright HutongGames, LLC 2010-2016. All rights reserved.
+// (c) Copyright HutongGames, LLC 2010-2015. All rights reserved.
 
 using UnityEngine;
 
 namespace HutongGames.PlayMaker.Actions
 {
-	[ActionCategory(ActionCategory.Animator)]
+	[ActionCategory("Animator")]
 	[Tooltip("Returns the scale of the current Avatar for a humanoid rig, (1 by default if the rig is generic).\n The scale is relative to Unity's Default Avatar")]
 	public class GetAnimatorHumanScale: FsmStateAction
 	{
@@ -19,7 +19,7 @@ namespace HutongGames.PlayMaker.Actions
 		[Tooltip("the scale of the current Avatar")]
 		public FsmFloat humanScale;
 		
-		Animator _animator;
+		private Animator _animator;
 		
 		public override void Reset()
 		{
@@ -60,6 +60,7 @@ namespace HutongGames.PlayMaker.Actions
 			}
 			
 			humanScale.Value = _animator.humanScale;
+			
 		}
 		
 	}

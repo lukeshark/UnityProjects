@@ -1,16 +1,18 @@
-﻿// (c) Copyright HutongGames, LLC 2010-2016. All rights reserved.
+// (c) Copyright HutongGames, LLC 2010-2015. All rights reserved.
 
 using UnityEngine;
 
 namespace HutongGames.PlayMaker.Actions
 {
-	[ActionCategory(ActionCategory.Animator)]
+	[ActionCategory("Animator")]
 	[Tooltip("Sets the position, rotation and weights of an IK goal. A GameObject can be set to control the position and rotation, or it can be manually expressed.")]
+	[HelpUrl("https://hutonggames.fogbugz.com/default.asp?W1067")]
 	public class SetAnimatorIKGoal: FsmStateAction
 	{
 		[RequiredField]
 		[CheckForComponent(typeof(Animator))]
-		[Tooltip("The target.")]
+		[CheckForComponent(typeof(PlayMakerAnimatorIKProxy))]
+		[Tooltip("The target. An Animator component and a PlayMakerAnimatorIKProxy component are required")]
 		public FsmOwnerDefault gameObject;
 		
 		[Tooltip("The IK goal")]
@@ -35,7 +37,9 @@ namespace HutongGames.PlayMaker.Actions
 		
 		[Tooltip("Repeat every frame. Useful when changing over time.")]
 		public bool everyFrame;
-
+		
+		private PlayMakerAnimatorIKProxy _animatorProxy;
+		
 		private Animator _animator;
 		
 		private Transform _transform;
@@ -52,10 +56,6 @@ namespace HutongGames.PlayMaker.Actions
 			everyFrame = false;
 		}
 		
-		public override void OnPreprocess ()
-		{
-			Fsm.HandleAnimatorIK = true;
-		}
 
 		public override void OnEnter()
 		{
@@ -75,24 +75,49 @@ namespace HutongGames.PlayMaker.Actions
 				Finish();
 				return;
 			}
-
+			
+			_animatorProxy = go.GetComponent<PlayMakerAnimatorIKProxy>();
+			if (_animatorProxy!=null)
+			{
+				_animatorProxy.OnAnimatorIKEvent += OnAnimatorIKEvent;
+			}else{
+				Debug.LogWarning("This action requires a PlayMakerAnimatorIKProxy. It may not perform properly if not present.");
+			}
+			
+			
+			
 			GameObject _goal = goal.Value;
 			if (_goal!=null)
 			{
 				_transform = _goal.transform;
 			}
-		}
-	
-		public override void DoAnimatorIK (int layerIndex)
-		{
+			
+			
 			DoSetIKGoal();
 			
 			if (!everyFrame) 
 			{
 				Finish();
 			}
+		}
+	
+		public void OnAnimatorIKEvent(int layer)
+		{
+			if (_animatorProxy!=null)
+			{
+				DoSetIKGoal();
+			}
 		}	
-
+		
+		/* not working
+		public override void OnUpdate() 
+		{
+			if (_animatorProxy==null)
+			{
+				DoSetIKGoal();
+			}
+		}
+		 */
 		void DoSetIKGoal()
 		{		
 			if (_animator==null)
@@ -137,5 +162,14 @@ namespace HutongGames.PlayMaker.Actions
 				_animator.SetIKRotationWeight(iKGoal,rotationWeight.Value);
 			}
 		}
+		
+		public override void OnExit()
+		{
+			if (_animatorProxy!=null)
+			{
+				_animatorProxy.OnAnimatorIKEvent -= OnAnimatorIKEvent;
+			}
+		}
+		
 	}
 }

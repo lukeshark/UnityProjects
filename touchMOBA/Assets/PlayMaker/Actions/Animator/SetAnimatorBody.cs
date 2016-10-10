@@ -1,16 +1,17 @@
-﻿// (c) Copyright HutongGames, LLC 2010-2016. All rights reserved.
+// (c) Copyright HutongGames, LLC 2010-2015. All rights reserved.
 
 using UnityEngine;
 
 namespace HutongGames.PlayMaker.Actions
 {
-	[ActionCategory(ActionCategory.Animator)]
+	[ActionCategory("Animator")]
 	[Tooltip("Sets the position and rotation of the body. A GameObject can be set to control the position and rotation, or it can be manually expressed.")]
+	[HelpUrl("https://hutonggames.fogbugz.com/default.asp?W1062")]
 	public class SetAnimatorBody: FsmStateAction
 	{
 		[RequiredField]
 		[CheckForComponent(typeof(Animator))]
-		[Tooltip("The target. An Animator component is required")]
+		[Tooltip("The target. An Animator component and a PlayMakerAnimatorProxy component are required")]
 		public FsmOwnerDefault gameObject;
 		
 		[Tooltip("The gameObject target of the ik goal")]
@@ -21,10 +22,12 @@ namespace HutongGames.PlayMaker.Actions
 		
 		[Tooltip("The rotation of the ik goal.If Goal GameObject set, rotation is used as an offset from Goal")]
 		public FsmQuaternion rotation;
-
-		[Tooltip("Repeat every frame.")]
+		
+		[Tooltip("Repeat every frame. Useful when changing over time.")]
 		public bool everyFrame;
-
+		
+		private PlayMakerAnimatorIKProxy _animatorProxy;
+		
 		private Animator _animator;
 		
 		private Transform _transform;
@@ -39,10 +42,6 @@ namespace HutongGames.PlayMaker.Actions
 			everyFrame = false;
 		}
 		
-		public override void OnPreprocess ()
-		{
-			Fsm.HandleAnimatorIK = true;
-		}
 
 		public override void OnEnter()
 		{
@@ -62,22 +61,43 @@ namespace HutongGames.PlayMaker.Actions
 				Finish();
 				return;
 			}
-
+			
+			_animatorProxy = go.GetComponent<PlayMakerAnimatorIKProxy>();
+			if (_animatorProxy!=null)
+			{
+				_animatorProxy.OnAnimatorIKEvent += OnAnimatorIKEvent;
+			}
+			
+			
+			
 			GameObject _target = target.Value;
 			if (_target!=null)
 			{
 				_transform = _target.transform;
 			}
-
-		}
-
-		public override void DoAnimatorIK (int layerIndex)
-		{
+			
+			
 			DoSetBody();
 			
 			if (!everyFrame) 
 			{
 				Finish();
+			}
+		}
+	
+		public void OnAnimatorIKEvent(int layer)
+		{
+			if (_animatorProxy!=null)
+			{
+				DoSetBody();
+			}
+		}	
+		
+		public override void OnUpdate() 
+		{
+			if (_animatorProxy==null)
+			{
+				DoSetBody();
 			}
 		}
 
@@ -117,5 +137,14 @@ namespace HutongGames.PlayMaker.Actions
 			}
 
 		}
+		
+		public override void OnExit()
+		{
+			if (_animatorProxy!=null)
+			{
+				_animatorProxy.OnAnimatorIKEvent -= OnAnimatorIKEvent;
+			}
+		}
+		
 	}
 }

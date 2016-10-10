@@ -1,22 +1,23 @@
-// (c) Copyright HutongGames, LLC 2010-2016. All rights reserved.
+// (c) Copyright HutongGames, LLC 2010-2015. All rights reserved.
 
 using UnityEngine;
 
 namespace HutongGames.PlayMaker.Actions
 {
-	[ActionCategory(ActionCategory.Animator)]
-	[Tooltip("Gets the value of an int parameter")]
-	public class GetAnimatorInt : FsmStateActionAnimatorBase
+	[ActionCategory("Animator")]
+	[Tooltip("Gets the value of a int parameter")]
+	public class GetAnimatorInt : FsmStateAction
 	{
 		[RequiredField]
 		[CheckForComponent(typeof(Animator))]
-		[Tooltip("The target. An Animator component is required")]
+		[Tooltip("The target. An Animator component and a PlayMakerAnimatorProxy component are required")]
 		public FsmOwnerDefault gameObject;
-
-        [RequiredField]
-        [UIHint(UIHint.AnimatorInt)]
+		
 		[Tooltip("The animator parameter")]
 		public FsmString parameter;
+		
+		[Tooltip("Repeat every frame. Useful when value is subject to change over time.")]
+		public bool everyFrame;
 		
 		[ActionSection("Results")]
 		
@@ -25,16 +26,18 @@ namespace HutongGames.PlayMaker.Actions
 		[Tooltip("The int value of the animator parameter")]
 		public FsmInt result;
 
+		private PlayMakerAnimatorMoveProxy _animatorProxy;
+		
 		private Animator _animator;
 		
 		private int _paramID;
 		
 		public override void Reset()
 		{
-			base.Reset();
 			gameObject = null;
 			parameter = null;
 			result = null;
+			everyFrame = false;
 		}
 		
 		
@@ -57,7 +60,14 @@ namespace HutongGames.PlayMaker.Actions
 				Finish();
 				return;
 			}
-
+			
+			_animatorProxy = go.GetComponent<PlayMakerAnimatorMoveProxy>();
+			if (_animatorProxy!=null)
+			{
+				_animatorProxy.OnAnimatorMoveEvent += OnAnimatorMoveEvent;
+			}
+			
+			
 			// get hash from the param for efficiency:
 			_paramID = Animator.StringToHash(parameter.Value);
 			
@@ -67,11 +77,23 @@ namespace HutongGames.PlayMaker.Actions
 			{
 				Finish();
 			}
+		}
+	
+	
+		public void OnAnimatorMoveEvent()
+		{
+			if (_animatorProxy!=null)
+			{
+				GetParameter();
+			}
 		}	
 		
-		public override void OnActionUpdate() 
+		public override void OnUpdate() 
 		{
-			GetParameter();
+			if (_animatorProxy==null)
+			{
+				GetParameter();
+			}
 		}
 		
 		void GetParameter()
@@ -79,6 +101,14 @@ namespace HutongGames.PlayMaker.Actions
 			if (_animator!=null)
 			{
 				result.Value = _animator.GetInteger(_paramID);
+			}
+		}
+		
+		public override void OnExit()
+		{
+			if (_animatorProxy!=null)
+			{
+				_animatorProxy.OnAnimatorMoveEvent -= OnAnimatorMoveEvent;
 			}
 		}
 	}

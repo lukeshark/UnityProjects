@@ -1,0 +1,130 @@
+** UPDATE HISTORY  **
+
+If there are any bugs or issues, please contact us: www.aibotsystem.com
+
+We try to reply very quickly!
+
+* POTENTIAL PROBLEM: ARE THERE MISSING FILES IN YOUR DOWNLOAD? *
+IF you are missing any files (for strange reasons, some users reported this), please send us an email
+with your name and Unity receipt number and we will email you an updated package! 
+
+** Some users have reported that updating PlayMaker in their current project sometimes removes the FSMs from all project files, resulting in their having to manually add FSMs back. To prevent this issue, start a blank new project, install PlayMaker first, then install other dependencies (such as UFPS if you're using that), and finally, import our asset. **
+
+
+
+====================================
+Release 1.6.2
+====================================
+Removed folder "Inventory" in UFPS Addon Actions that was throwing errors with latest UFPS update. This folder is not used by our AI system and was only included for a possible future feature.
+
+
+====================================
+Release 1.6.1
+====================================
+
+Fixed a minor bug with an extra team tag scan in the Attack module on the newer AI prefabs. Added instructions to resolve tag-undefined errors.
+
+
+
+====================================
+Release 1.6
+====================================
+
+0) We have removed support for Unity 4, since it requires a significant amount of development time & cost to maintain and most developers don't use it anymore. This means from now on, only the Unity5 version will receive the latest updates.
+
+But the Unity 4 version should still be available for download from the Unity Store - simply download using Unity 4.  The Unity 4 version ends with the last one: Version 1.5, which still has a ton of great features.  The Unity 5 version is not backwards compatible with Unity 4.
+
+1) Added 6 new demo scenes (EXAMPLE SCENES / v1.6 Demo Scenes)
+
+2) Added Multi-team support (4 teams):
+	i) In the AI setup, there are 3 extra slots for team tags
+	ii) In the Awareness FSM, you may set additional team tags
+	iii) Set:
+		a) charSTAT_EnemyTag
+		b) charSTAT_EnemyTag2
+		c) charSTAT_EnemyTag3
+	iv) If not using a tag slot, set it to "Blank" (your project must have the tag, "Blank")
+
+3) Turret Update: Awareness FSM has 1 additional setting for turrets (see the Awareness FSM graph, State: "Update")
+
+4) Added Ragdoll support, w/ new setting in HealthAndDamage FSM: To use Ragdoll procedural death animation,
+set charSTAT_UseRagdoll to TRUE. This eliminates the need for Mechanim death animation. To use Mechanim animation instead,
+set it to FALSE.
+
+5) Updated Bullet and Grenade templates with additional team tag damage slots
+
+6) Melee fights now has some cool-looking kill-moves - when the AI kills someone using Melee, the victim
+is flipped and thrown as ragdoll. (See new Melee demo)
+
+7) Added new Grenade demo in slow motion to show explosive effects on ragdolls
+
+8) Added a Warzone demo showing an endless battlefield with 2 AI teams
+
+9) Added new multi-team demo scene, 3 vs 3 vs 3 vs 3
+
+10) Added Swat Team - Room Clearing demo
+
+11) Updated Mass Brawl demo scene - now has ragdoll effects
+
+
+
+
+============================
+PREVIOUS VERSION: Beta 1.5.1
+============================
+1) We have changed the name of our product to "Advanced Battle AI"
+The previous name was "Instant AI Bots for PlayMaker"
+
+2) Minor edits and touchups.
+
+3) Nothing major has changed since last version other than the rebranding.
+
+
+
+============================
+PREVIOUS VERSION: Beta 1.5
+============================
+1) Rearranged folder structure
+2) Moved documentation online (for instructions, go to the \documentation\ folder
+3) Added basic grenade A.I. (advanced grenade functionality will be available later as an add-on)
+4) Added new sample script on how to send damage from C#
+5a) Added UFPS integration example and instructions
+5b) The UFPS demo scene is in a ZIP file located at \Addons\ folder
+5c) Instructions for UFPS integration is located in our documentation, found on our website
+6) Added New Scene: "Basic Grenade Throwing Demo"
+7) Added New Scene: "Basic Real Time Command"
+8) Added New Scene: "Send Damage by Script"
+9) Updated Scene: "Capture the Flag"
+10) Updated Scene: "Basic Tower Defense"
+11) Made AI Bot prefab's FSM variables visible in editor for easier editing
+12) Demo damage points and health points have been balanced
+
+NEW EXAMPLE SCENES LOCATED AT \EXAMPLE SCENES\BETA 1.5 Demo Scenes\
+
+
+
+============================
+PREVIOUS VERSION: Beta 1.2 - 1.4
+============================
+
+CHANGES:
+	1) Complete animation system overhaul
+	2) Enhanced Animation Controller (multiple layers + avatar masks)
+	3) Added Sniper-type weapon setups (Raycast Bullets)
+	4) Added Bool option in Attack FSM: charSTAT_BulletUseRaycast [set to true for raycast bullets]
+	5) Fixed previous humanoid animation issues
+	6) Smoothed out Melee attacking
+	7) Added Bool option in Awareness FSM: charROLE_stopWhenAttacking [true to stop moving on shoot]
+	[set to false for run-and-gun style movements]
+	8) Added Float in Awareness FSM: charSTAT_LoS_YOffset [height offset for bot line of sight. use this to match eye location]
+	9) Added New Demo Scene: Basic Auto Gun Reloading
+	10) Added New Demo Scene: Raycast Bullet Sniper Example
+	11) Updated Demo Scene: Mass Brawl
+	12) All previous demo scenes have been updated with the new AI Prefab. Please update your projects.
+
+
+
+============================
+PREVIOUS VERSION: Beta 1.0
+============================
+CHANGES: None. First version.

@@ -1,18 +1,21 @@
-// (c) Copyright HutongGames, LLC 2010-2016. All rights reserved.
+// (c) Copyright HutongGames, LLC 2010-2015. All rights reserved.
 
 using UnityEngine;
 
 namespace HutongGames.PlayMaker.Actions
 {
-	[ActionCategory(ActionCategory.Animator)]
+	[ActionCategory("Animator")]
 	[Tooltip("Returns true if automatic matching is active. Can also send events")]
-	public class GetAnimatorIsMatchingTarget: FsmStateActionAnimatorBase
+	public class GetAnimatorIsMatchingTarget: FsmStateAction
 	{
 		[RequiredField]
 		[CheckForComponent(typeof(Animator))]
 		[Tooltip("The target. An Animator component and a PlayMakerAnimatorProxy component are required")]
 		public FsmOwnerDefault gameObject;
-
+		
+		[Tooltip("Repeat every frame. Warning: do not use the events in this action if you set everyFrame to true")]
+		public bool everyFrame;
+		
 		[ActionSection("Results")]
 		
 		[UIHint(UIHint.Variable)]
@@ -24,17 +27,18 @@ namespace HutongGames.PlayMaker.Actions
 		
 		[Tooltip("Event send if automatic matching is not active")]
 		public FsmEvent matchingDeactivedEvent;
-
+		
+		private PlayMakerAnimatorMoveProxy _animatorProxy;
+		
 		private Animator _animator;
 		
 		public override void Reset()
 		{
-			base.Reset();
-
 			gameObject = null;
 			isMatchingActive = null;
 			matchingActivatedEvent = null;
 			matchingDeactivedEvent = null;
+			everyFrame = false;
 		}
 		
 		public override void OnEnter()
@@ -55,7 +59,14 @@ namespace HutongGames.PlayMaker.Actions
 				Finish();
 				return;
 			}
-
+			
+			_animatorProxy = go.GetComponent<PlayMakerAnimatorMoveProxy>();
+			if (_animatorProxy!=null)
+			{
+				_animatorProxy.OnAnimatorMoveEvent += OnAnimatorMoveEvent;
+			}
+			
+			
 			DoCheckIsMatchingActive();
 			
 			if (!everyFrame)
@@ -65,12 +76,19 @@ namespace HutongGames.PlayMaker.Actions
 		}
 	
 		
-		public override void OnActionUpdate() 
+		public override void OnUpdate() 
+		{
+			if (_animatorProxy==null)
+			{
+				DoCheckIsMatchingActive();
+			}
+		}
+		
+		public void OnAnimatorMoveEvent()
 		{
 			DoCheckIsMatchingActive();
-
 		}
-
+		
 		void DoCheckIsMatchingActive()
 		{		
 			if (_animator==null)
@@ -86,6 +104,14 @@ namespace HutongGames.PlayMaker.Actions
 				Fsm.Event(matchingActivatedEvent);
 			}else{
 				Fsm.Event(matchingDeactivedEvent);
+			}
+		}
+		
+		public override void OnExit()
+		{
+			if (_animatorProxy!=null)
+			{
+				_animatorProxy.OnAnimatorMoveEvent -= OnAnimatorMoveEvent;
 			}
 		}
 		

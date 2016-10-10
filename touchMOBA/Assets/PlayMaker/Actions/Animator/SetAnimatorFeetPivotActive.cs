@@ -1,11 +1,12 @@
-// (c) Copyright HutongGames, LLC 2010-2016. All rights reserved.
+// (c) Copyright HutongGames, LLC 2010-2015. All rights reserved.
 
 using UnityEngine;
 
 namespace HutongGames.PlayMaker.Actions
 {
-	[ActionCategory(ActionCategory.Animator)]
+	[ActionCategory("Animator")]
 	[Tooltip("Activates feet pivot. At 0% blending point is body mass center. At 100% blending point is feet pivot")]
+	[HelpUrl("https://hutonggames.fogbugz.com/default.asp?W1065")]
 	public class SetAnimatorFeetPivotActive: FsmStateAction
 	{
 		[RequiredField]

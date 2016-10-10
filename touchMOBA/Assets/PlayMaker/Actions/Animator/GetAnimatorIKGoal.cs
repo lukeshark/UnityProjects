@@ -1,12 +1,12 @@
-// (c) Copyright HutongGames, LLC 2010-2016. All rights reserved.
+// (c) Copyright HutongGames, LLC 2010-2015. All rights reserved.
 
 using UnityEngine;
 
 namespace HutongGames.PlayMaker.Actions
 {
-	[ActionCategory(ActionCategory.Animator)]
+	[ActionCategory("Animator")]
 	[Tooltip("Gets the position, rotation and weights of an IK goal. A GameObject can be set to use for the position and rotation")]
-	public class GetAnimatorIKGoal: FsmStateActionAnimatorBase
+	public class GetAnimatorIKGoal: FsmStateAction
 	{
 		[RequiredField]
 		[CheckForComponent(typeof(Animator))]
@@ -14,12 +14,13 @@ namespace HutongGames.PlayMaker.Actions
 		public FsmOwnerDefault gameObject;
 		
 		[Tooltip("The IK goal")]
-		[ObjectType(typeof(AvatarIKGoal))]
-		public FsmEnum iKGoal;
+		public AvatarIKGoal iKGoal;
+				
+		[Tooltip("Repeat every frame. Useful for changing over time.")]
+		public bool everyFrame;
 		
 		[ActionSection("Results")]
-
-		[UIHint(UIHint.Variable)]
+		
 		[Tooltip("The gameObject to apply ik goal position and rotation to")]
 		public FsmGameObject goal;
 		
@@ -39,26 +40,21 @@ namespace HutongGames.PlayMaker.Actions
 		[Tooltip("Gets the rotational weight of an IK goal (0 = rotation before IK, 1 = rotation at the IK goal)")]
 		public FsmFloat rotationWeight;
 
-	 	Animator _animator;
+		private Animator _animator;
 		
-		Transform _transform;
-
-		AvatarIKGoal _iKGoal;
-
+		private Transform _transform;
+		
 		public override void Reset()
 		{
-			base.Reset();
-
 			gameObject = null;
-
-			iKGoal = null;
-
+			
 			goal = null;
 			position = null;
 			rotation = null;
 			positionWeight = null;
 			rotationWeight = null;
-
+			
+			everyFrame = false;
 		}
 		
 		public override void OnEnter()
@@ -94,7 +90,7 @@ namespace HutongGames.PlayMaker.Actions
 			}
 		}
 	
-		public override void OnActionUpdate()
+		public override void OnUpdate()
 		{
 			DoGetIKGoal();
 		}
@@ -106,32 +102,30 @@ namespace HutongGames.PlayMaker.Actions
 			{
 				return;
 			}
-
-			_iKGoal = 	(AvatarIKGoal)iKGoal.Value;
-
+			
 			if (_transform!=null)
 			{
-				_transform.position = _animator.GetIKPosition(_iKGoal);
-				_transform.rotation = _animator.GetIKRotation(_iKGoal);
+				_transform.position = _animator.GetIKPosition(iKGoal);
+				_transform.rotation = _animator.GetIKRotation(iKGoal);
 			}
 			
 			if (!position.IsNone)
 			{
-				position.Value = _animator.GetIKPosition(_iKGoal);
+				position.Value = _animator.GetIKPosition(iKGoal);
 			}
 			
 			if (!rotation.IsNone)
 			{
-				rotation.Value =_animator.GetIKRotation(_iKGoal);
+				rotation.Value =_animator.GetIKRotation(iKGoal);
 			}
 			
 			if (!positionWeight.IsNone)
 			{
-				positionWeight.Value = _animator.GetIKPositionWeight(_iKGoal);
+				positionWeight.Value = _animator.GetIKPositionWeight(iKGoal);
 			}
 			if (!rotationWeight.IsNone)
 			{
-				rotationWeight.Value = _animator.GetIKRotationWeight(_iKGoal);
+				rotationWeight.Value = _animator.GetIKRotationWeight(iKGoal);
 			}
 		}
 		

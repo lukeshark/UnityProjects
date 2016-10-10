@@ -1,10 +1,10 @@
-﻿// (c) Copyright HutongGames, LLC 2010-2016. All rights reserved.
+﻿// (c) Copyright HutongGames, LLC 2010-2015. All rights reserved.
 
 using UnityEngine;
 
 namespace HutongGames.PlayMaker.Actions
 {
-	[ActionCategory(ActionCategory.Animator)]
+	[ActionCategory("Animator")]
 	[Tooltip("Returns true if a parameter is controlled by an additional curve on an animation")]
 	public class GetAnimatorIsParameterControlledByCurve: FsmStateAction
 	{
@@ -13,7 +13,6 @@ namespace HutongGames.PlayMaker.Actions
 		[Tooltip("The target. An Animator component is required")]
 		public FsmOwnerDefault gameObject;
 
-		[Tooltip("The parameter's name")]
 		public FsmString parameterName;
 		
 		[ActionSection("Results")]

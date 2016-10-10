@@ -1,30 +1,33 @@
-// (c) Copyright HutongGames, LLC 2010-2016. All rights reserved.
+// (c) Copyright HutongGames, LLC 2010-2015. All rights reserved.
 
 using UnityEngine;
 
 namespace HutongGames.PlayMaker.Actions
 {
-	[ActionCategory(ActionCategory.Animator)]
+	[ActionCategory("Animator")]
 	[Tooltip("Returns The current gravity weight based on current animations that are played")]
-	public class GetAnimatorGravityWeight: FsmStateActionAnimatorBase
+	public class GetAnimatorGravityWeight: FsmStateAction
 	{
 		[RequiredField]
 		[CheckForComponent(typeof(Animator))]
-		[Tooltip("The target. An Animator component is required")]
+		[Tooltip("The target. An Animator component and a PlayMakerAnimatorProxy component are required")]
 		public FsmOwnerDefault gameObject;
+		
+		[Tooltip("Repeat every frame. Useful when value is subject to change over time.")]
+		public bool everyFrame;
 		
 		[ActionSection("Results")]
 		
 		[UIHint(UIHint.Variable)]
 		[Tooltip("The current gravity weight based on current animations that are played")]
 		public FsmFloat gravityWeight;
-
+		
+		private PlayMakerAnimatorMoveProxy _animatorProxy;
+		
 		private Animator _animator;
 		
 		public override void Reset()
 		{
-			base.Reset();
-
 			gameObject = null;
 			gravityWeight= null;
 			everyFrame = false;
@@ -48,7 +51,14 @@ namespace HutongGames.PlayMaker.Actions
 				Finish();
 				return;
 			}
-
+			
+			_animatorProxy = go.GetComponent<PlayMakerAnimatorMoveProxy>();
+			if (_animatorProxy!=null)
+			{
+				_animatorProxy.OnAnimatorMoveEvent += OnAnimatorMoveEvent;
+			}
+			
+			
 			DoGetGravityWeight();
 			
 			if (!everyFrame) 
@@ -56,10 +66,21 @@ namespace HutongGames.PlayMaker.Actions
 				Finish();
 			}
 		}
-
-		public override void OnActionUpdate() 
+	
+		public void OnAnimatorMoveEvent()
 		{
-			DoGetGravityWeight();
+			if (_animatorProxy!=null)
+			{
+				DoGetGravityWeight();
+			}
+		}	
+		
+		public override void OnUpdate() 
+		{
+			if (_animatorProxy==null)
+			{
+				DoGetGravityWeight();
+			}
 		}
 	
 		void DoGetGravityWeight()
@@ -70,6 +91,15 @@ namespace HutongGames.PlayMaker.Actions
 			}
 			
 			gravityWeight.Value = _animator.gravityWeight;
+			
+		}
+		
+		public override void OnExit()
+		{
+			if (_animatorProxy!=null)
+			{
+				_animatorProxy.OnAnimatorMoveEvent -= OnAnimatorMoveEvent;
+			}
 		}
 	}
 }

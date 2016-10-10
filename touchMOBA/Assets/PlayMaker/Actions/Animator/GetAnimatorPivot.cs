@@ -1,17 +1,21 @@
-// (c) Copyright HutongGames, LLC 2010-2016. All rights reserved.
+// (c) Copyright HutongGames, LLC 2010-2015. All rights reserved.
 
 using UnityEngine;
 
 namespace HutongGames.PlayMaker.Actions
 {
-	[ActionCategory(ActionCategory.Animator)]
+	[ActionCategory("Animator")]
 	[Tooltip("Returns the pivot weight and/or position. The pivot is the most stable point between the avatar's left and right foot.\n For a weight value of 0, the left foot is the most stable point For a value of 1, the right foot is the most stable point")]
-	public class GetAnimatorPivot : FsmStateActionAnimatorBase
+	[HelpUrl("https://hutonggames.fogbugz.com/default.asp?W1055")]
+	public class GetAnimatorPivot : FsmStateAction
 	{
 		[RequiredField]
 		[CheckForComponent(typeof(Animator))]
-		[Tooltip("The target. An Animator component is required")]
+		[Tooltip("The target. An Animator component and a PlayMakerAnimatorProxy component are required")]
 		public FsmOwnerDefault gameObject;
+		
+		[Tooltip("Repeat every frame. Useful when value is subject to change over time.")]
+		public bool everyFrame;
 		
 		[ActionSection("Results")]
 		
@@ -23,15 +27,16 @@ namespace HutongGames.PlayMaker.Actions
 		[Tooltip("The pivot is the most stable point between the avatar's left and right foot.\n For a value of 0, the left foot is the most stable point For a value of 1, the right foot is the most stable point")]
 		public FsmVector3 pivotPosition;
 
+		private PlayMakerAnimatorMoveProxy _animatorProxy;
+		
 		private Animator _animator;
 		
 		public override void Reset()
 		{
-			base.Reset();
-
 			gameObject = null;
 			pivotWeight = null;
 			pivotPosition = null;
+			everyFrame = false;
 		}
 		
 		public override void OnEnter()
@@ -52,7 +57,14 @@ namespace HutongGames.PlayMaker.Actions
 				Finish();
 				return;
 			}
-
+			
+			_animatorProxy = go.GetComponent<PlayMakerAnimatorMoveProxy>();
+			if (_animatorProxy!=null)
+			{
+				_animatorProxy.OnAnimatorMoveEvent += OnAnimatorMoveEvent;
+			}
+			
+			
 			DoCheckPivot();
 			
 			if (!everyFrame)
@@ -60,10 +72,21 @@ namespace HutongGames.PlayMaker.Actions
 				Finish();
 			}
 		}
-
-		public override void OnActionUpdate() 
+		
+		public void OnAnimatorMoveEvent()
 		{
-			DoCheckPivot();
+			if (_animatorProxy!=null)
+			{
+				DoCheckPivot();
+			}
+		}	
+		
+		public override void OnUpdate() 
+		{
+			if (_animatorProxy==null)
+			{
+				DoCheckPivot();
+			}
 		}
 		
 	
@@ -74,15 +97,17 @@ namespace HutongGames.PlayMaker.Actions
 				return;
 			}
 
-			if (!pivotWeight.IsNone)
-			{
-				pivotWeight.Value = _animator.pivotWeight;
-			}
-			if (!pivotPosition.IsNone)
-			{
-				pivotPosition.Value = _animator.pivotPosition;
-			}
+			pivotWeight.Value = _animator.pivotWeight;
+			pivotPosition.Value = _animator.pivotPosition;
 
+		}
+		
+		public override void OnExit()
+		{
+			if (_animatorProxy!=null)
+			{
+				_animatorProxy.OnAnimatorMoveEvent -= OnAnimatorMoveEvent;
+			}
 		}
 	}
 }

@@ -1,21 +1,24 @@
-// (c) Copyright HutongGames, LLC 2010-2016. All rights reserved.
+// (c) Copyright HutongGames, LLC 2010-2015. All rights reserved.
 
 using UnityEngine;
 
 namespace HutongGames.PlayMaker.Actions
 {
-	[ActionCategory(ActionCategory.Animator)]
+	[ActionCategory("Animator")]
 	[Tooltip("Gets the current State information on a specified layer")]
-	public class GetAnimatorCurrentStateInfo : FsmStateActionAnimatorBase
+	public class GetAnimatorCurrentStateInfo : FsmStateAction
 	{
 		[RequiredField]
 		[CheckForComponent(typeof(Animator))]
-		[Tooltip("The target.")]
+		[Tooltip("The target. An Animator component and a PlayMakerAnimatorProxy component are required")]
 		public FsmOwnerDefault gameObject;
 		
 		[RequiredField]
 		[Tooltip("The layer's index")]
 		public FsmInt layerIndex;
+		
+		[Tooltip("Repeat every frame. Useful when value is subject to change over time.")]
+		public bool everyFrame;
 		
 		[ActionSection("Results")]
 		
@@ -24,18 +27,8 @@ namespace HutongGames.PlayMaker.Actions
 		public FsmString name;
 		
 		[UIHint(UIHint.Variable)]
-		[Tooltip("The layer's name Hash. Obsolete in Unity 5, use fullPathHash or shortPathHash instead, nameHash will be the same as shortNameHash for legacy")]
+		[Tooltip("The layer's name Hash")]
 		public FsmInt nameHash;
-		
-		#if UNITY_5
-		[UIHint(UIHint.Variable)]
-		[Tooltip("The full path hash for this state.")]
-		public FsmInt fullPathHash;
-		
-		[UIHint(UIHint.Variable)]
-		[Tooltip("The name Hash. Doest not include the parent layer's name")]
-		public FsmInt shortPathHash;
-		#endif
 		
 		[UIHint(UIHint.Variable)]
 		[Tooltip("The layer's tag hash")]
@@ -60,24 +53,18 @@ namespace HutongGames.PlayMaker.Actions
 		[UIHint(UIHint.Variable)]
 		[Tooltip("The progress in the current loop. This is extracted from the normalizedTime")]
 		public FsmFloat currentLoopProgress;
-
+		
+		private PlayMakerAnimatorMoveProxy _animatorProxy;
+		
 		private Animator _animator;
 		
 		public override void Reset()
 		{
-			base.Reset();
-
 			gameObject = null;
 			layerIndex = null;
 			
 			name = null;
 			nameHash = null;
-			
-			#if UNITY_5
-			fullPathHash = null;
-			shortPathHash = null;
-			#endif
-			
 			tagHash = null;
 			length = null;
 			normalizedTime = null;
@@ -87,7 +74,7 @@ namespace HutongGames.PlayMaker.Actions
 			
 			everyFrame = false;
 		}
-		
+
 		public override void OnEnter()
 		{
 			// get the animator component
@@ -106,7 +93,13 @@ namespace HutongGames.PlayMaker.Actions
 				Finish();
 				return;
 			}
-
+			
+			_animatorProxy = go.GetComponent<PlayMakerAnimatorMoveProxy>();
+			if (_animatorProxy!=null)
+			{		
+				_animatorProxy.OnAnimatorMoveEvent += OnAnimatorMoveEvent;
+			}
+			
 			GetLayerInfo();
 			
 			if (!everyFrame) 
@@ -114,13 +107,21 @@ namespace HutongGames.PlayMaker.Actions
 				Finish();
 			}
 		}
-		
-		public override void OnActionUpdate()
+	
+		public override void OnUpdate()
 		{
-			GetLayerInfo();
-
+			if (_animatorProxy == null)
+			{
+				GetLayerInfo();
+			}
 		}
-
+		public void OnAnimatorMoveEvent()
+		{
+			if (_animatorProxy!=null)
+			{
+				GetLayerInfo();
+			}
+		}
 		
 		void GetLayerInfo()
 		{		
@@ -128,58 +129,33 @@ namespace HutongGames.PlayMaker.Actions
 			{
 				AnimatorStateInfo _info = _animator.GetCurrentAnimatorStateInfo(layerIndex.Value);
 				
-				#if UNITY_5
-				if (!fullPathHash.IsNone)
-				{
-					fullPathHash.Value = _info.fullPathHash;
-				}
-				if (!shortPathHash.IsNone)
-				{
-					shortPathHash.Value = _info.shortNameHash;
-				}
-				if (!nameHash.IsNone)
-				{
-					nameHash.Value = _info.shortNameHash;
-				}
-				#else
-				if (!nameHash.IsNone)
-				{
-					nameHash.Value = _info.nameHash;
-				}
-				#endif
 				
-				
+				nameHash.Value = _info.nameHash;
 				if (!name.IsNone)
 				{
 					name.Value = _animator.GetLayerName(layerIndex.Value);	
 				}
-
-				if (!tagHash.IsNone)
-				{
-					tagHash.Value = _info.tagHash;
-				}
-
-				if (!length.IsNone)
-				{
-					length.Value = _info.length;
-				}
-
-				if (!isStateLooping.IsNone)
-				{
-					isStateLooping.Value = _info.loop;
-				}
-
-				if (!normalizedTime.IsNone)
-				{
-					normalizedTime.Value = _info.normalizedTime;
-				}
-
+				
+				tagHash.Value = _info.tagHash;
+				length.Value = _info.length;
+				isStateLooping.Value = _info.loop;
+				normalizedTime.Value = _info.normalizedTime;
 				if (!loopCount.IsNone || !currentLoopProgress.IsNone)
 				{
 					loopCount.Value = (int)System.Math.Truncate(_info.normalizedTime);
 					currentLoopProgress.Value = _info.normalizedTime-loopCount.Value;
 				}
 				
+				
+			
+			}
+		}
+		
+		public override void OnExit()
+		{
+			if (_animatorProxy!=null)
+			{
+				_animatorProxy.OnAnimatorMoveEvent -= OnAnimatorMoveEvent;
 			}
 		}	
 	}

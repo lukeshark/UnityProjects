@@ -1,16 +1,16 @@
-// (c) Copyright HutongGames, LLC 2010-2016. All rights reserved.
+﻿// (c) Copyright HutongGames, LLC 2010-2015. All rights reserved.
 
 using UnityEngine;
 
 namespace HutongGames.PlayMaker.Actions
 {
-	[ActionCategory(ActionCategory.Animator)]
+	[ActionCategory("Animator")]
 	[Tooltip("Does tag match the tag of the active state in the statemachine")]
-	public class GetAnimatorCurrentStateInfoIsTag : FsmStateActionAnimatorBase
+	public class GetAnimatorCurrentStateInfoIsTag : FsmStateAction
 	{
 		[RequiredField]
 		[CheckForComponent(typeof(Animator))]
-		[Tooltip("The target. An Animator component is required")]
+		[Tooltip("The target. An Animator component and a PlayMakerAnimatorProxy component are required")]
 		public FsmOwnerDefault gameObject;
 		
 		[RequiredField]
@@ -20,24 +20,22 @@ namespace HutongGames.PlayMaker.Actions
 		[Tooltip("The tag to check the layer against.")]
 		public FsmString tag;
 		
+		public bool everyFrame;
+		
 		[ActionSection("Results")]
-
-		[UIHint(UIHint.Variable)]
-		[Tooltip("True if tag matches")]
+		
 		public FsmBool tagMatch;
-
-		[Tooltip("Event send if tag matches")]
+		
 		public FsmEvent tagMatchEvent;
-
-		[Tooltip("Event send if tag matches")]
 		public FsmEvent tagDoNotMatchEvent;
-
+		
+		
+		private PlayMakerAnimatorMoveProxy _animatorProxy;
+		
 		private Animator _animator;
 		
 		public override void Reset()
 		{
-			base.Reset();
-
 			gameObject = null;
 			layerIndex = null;
 			
@@ -77,7 +75,7 @@ namespace HutongGames.PlayMaker.Actions
 			}
 		}
 		
-		public override void OnActionUpdate()
+		public override void OnUpdate()
 		{
 			IsTag();
 		}

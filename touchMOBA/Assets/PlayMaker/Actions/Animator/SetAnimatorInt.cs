@@ -1,38 +1,42 @@
-// (c) Copyright HutongGames, LLC 2010-2016. All rights reserved.
+// (c) Copyright HutongGames, LLC 2010-2015. All rights reserved.
 
 using UnityEngine;
 
 namespace HutongGames.PlayMaker.Actions
 {
-	[ActionCategory(ActionCategory.Animator)]
+	[ActionCategory("Animator")]
 	[Tooltip("Sets the value of a int parameter")]
-	public class SetAnimatorInt : FsmStateActionAnimatorBase
+	[HelpUrl("https://hutonggames.fogbugz.com/default.asp?W1068")]
+	public class SetAnimatorInt : FsmStateAction
 	{
 		[RequiredField]
 		[CheckForComponent(typeof(Animator))]
-		[Tooltip("The target.")]
+		[Tooltip("The target. An Animator component and a PlayMakerAnimatorProxy component are required")]
 		public FsmOwnerDefault gameObject;
-
-        [RequiredField]
-        [UIHint(UIHint.AnimatorInt)]
+		
 		[Tooltip("The animator parameter")]
 		public FsmString parameter;
 		
 		[Tooltip("The Int value to assign to the animator parameter")]
 		public FsmInt Value;
-
-
+		
+		[Tooltip("Repeat every frame. Useful when changing over time.")]
+		public bool everyFrame;
+		
+		private PlayMakerAnimatorMoveProxy _animatorProxy;
 		private Animator _animator;
 		private int _paramID;
 		
 		public override void Reset()
 		{
-			base.Reset();
 			gameObject = null;
 			parameter = null;
 			Value = null;
+			everyFrame = false;
 		}
-
+		
+		
+		// Code that runs on entering the state.
 		public override void OnEnter()
 		{
 			// get the animator component
@@ -51,7 +55,13 @@ namespace HutongGames.PlayMaker.Actions
 				Finish();
 				return;
 			}
-
+			
+			_animatorProxy = go.GetComponent<PlayMakerAnimatorMoveProxy>();
+			if (_animatorProxy!=null)
+			{
+				_animatorProxy.OnAnimatorMoveEvent += OnAnimatorMoveEvent;
+			}
+			
 			// get hash from the param for efficiency:
 			_paramID = Animator.StringToHash(parameter.Value);
 			
@@ -63,9 +73,20 @@ namespace HutongGames.PlayMaker.Actions
 			}
 		}
 	
-		public override void OnActionUpdate ()
+		public void OnAnimatorMoveEvent()
 		{
-			SetParameter();
+			if (_animatorProxy!=null)
+			{
+				SetParameter();
+			}
+		}	
+		
+		public override void OnUpdate() 
+		{
+			if (_animatorProxy==null)
+			{
+				SetParameter();
+			}
 		}
 		
 		void SetParameter()
@@ -75,5 +96,14 @@ namespace HutongGames.PlayMaker.Actions
 				_animator.SetInteger(_paramID,Value.Value) ;			
 			}
 		}
+		
+		public override void OnExit()
+		{
+			if (_animatorProxy!=null)
+			{
+				_animatorProxy.OnAnimatorMoveEvent -= OnAnimatorMoveEvent;
+			}
+		}
+		
 	}
 }

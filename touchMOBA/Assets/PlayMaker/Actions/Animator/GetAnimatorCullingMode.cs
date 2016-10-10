@@ -1,10 +1,10 @@
-// (c) Copyright HutongGames, LLC 2010-2016. All rights reserved.
+// (c) Copyright HutongGames, LLC 2010-2015. All rights reserved.
 
 using UnityEngine;
 
 namespace HutongGames.PlayMaker.Actions
 {
-	[ActionCategory(ActionCategory.Animator)]
+	[ActionCategory("Animator")]
 	[Tooltip("Returns the culling of this Animator component. Optionnaly sends events.\n" +
 		"If true ('AlwaysAnimate'): always animate the entire character. Object is animated even when offscreen.\n" +
 		 "If False ('BasedOnRenderers') animation is disabled when renderers are not visible.")]

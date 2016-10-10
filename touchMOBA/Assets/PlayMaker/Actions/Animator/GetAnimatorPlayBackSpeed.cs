@@ -1,11 +1,12 @@
-// (c) Copyright HutongGames, LLC 2010-2016. All rights reserved.
+// (c) Copyright HutongGames, LLC 2010-2015. All rights reserved.
 
 using UnityEngine;
 
 namespace HutongGames.PlayMaker.Actions
 {
-	[ActionCategory(ActionCategory.Animator)]
+	[ActionCategory("Animator")]
 	[Tooltip("Gets the playback speed of the Animator. 1 is normal playback speed")]
+	[HelpUrl("https://hutonggames.fogbugz.com/default.asp?W1056")]
 	public class GetAnimatorPlayBackSpeed : FsmStateAction
 	{
 		[RequiredField]

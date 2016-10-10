@@ -1,11 +1,12 @@
-// (c) Copyright HutongGames, LLC 2010-2016. All rights reserved.
+// (c) Copyright HutongGames, LLC 2010-2015. All rights reserved.
 
 using UnityEngine;
 
 namespace HutongGames.PlayMaker.Actions
 {
-	[ActionCategory(ActionCategory.Animator)]
+	[ActionCategory("Animator")]
 	[Tooltip("Set Apply Root Motion: If true, Root is controlled by animations")]
+	[HelpUrl("https://hutonggames.fogbugz.com/default.asp?W1061")]
 	public class SetAnimatorApplyRootMotion: FsmStateAction
 	{
 		[RequiredField]
