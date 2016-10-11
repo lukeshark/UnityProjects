@@ -1,27 +1,38 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &100000
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1000011379906046}
+  m_IsPrefabParent: 1
+--- !u!1 &1000011379906046
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 400000}
-  - 114: {fileID: 11400000}
+  - 4: {fileID: 4000013390135618}
+  - 114: {fileID: 114000010260484778}
   m_Layer: 0
-  m_Name: Random Enemy Spawner
+  m_Name: Random TeamMate Spawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &400000
+--- !u!4 &4000013390135618
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
+  m_GameObject: {fileID: 1000011379906046}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 132.01653, y: 13.69294, z: 95.76013}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -29,12 +40,12 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!114 &11400000
+--- !u!114 &114000010260484778
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
+  m_GameObject: {fileID: 1000011379906046}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1384774831, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
@@ -144,7 +155,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: {fileID: 100076, guid: 268dfc8f867fce046a397a52dbf2ecbd, type: 2}
+          value: {fileID: 100090, guid: 7eabf15d59033584098cd816e62a2462, type: 2}
         - useVariable: 1
           name: temp_chosenunit
           tooltip: 
@@ -380,6 +391,7 @@ MonoBehaviour:
         colorIndex: 0
       actionData:
         actionNames:
+        - HutongGames.PlayMaker.Actions.SetTag
         - HutongGames.PlayMaker.Actions.EnableFSM
         - HutongGames.PlayMaker.Actions.SetFsmGameObject
         - HutongGames.PlayMaker.Actions.SetFsmString
@@ -389,10 +401,11 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 01010101
-        actionIsOpen: 01010101
-        actionStartIndex: 0000000004000000090000000e000000
-        actionHashCodes: 87aa97005b66cf0052221a0287aa9700
+        - 
+        actionEnabled: 0101010101
+        actionIsOpen: 0101010101
+        actionStartIndex: 0000000002000000060000000b00000010000000
+        actionHashCodes: 9bd6f80187aa97005b66cf0052221a0287aa9700
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
@@ -434,6 +447,14 @@ MonoBehaviour:
             showInInspector: 0
             networkSync: 0
             value: {fileID: 0}
+        - ownerOption: 1
+          gameObject:
+            useVariable: 1
+            name: temp_spawnedunit
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -441,6 +462,12 @@ MonoBehaviour:
         fsmPropertyParams: []
         layoutOptionParams: []
         fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Team4
         - useVariable: 0
           name: 
           tooltip: 
@@ -501,9 +528,11 @@ MonoBehaviour:
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 140000001200000011000000110000001400000012000000120000001300000001000000140000001200000012000000120000000100000014000000120000001100000011000000
+        paramDataType: 1400000012000000140000001200000011000000110000001400000012000000120000001300000001000000140000001200000012000000120000000100000014000000120000001100000011000000
         paramName:
         - gameObject
+        - tag
+        - gameObject
         - fsmName
         - enable
         - resetOnExit
@@ -521,8 +550,8 @@ MonoBehaviour:
         - fsmName
         - enable
         - resetOnExit
-        paramDataPos: 000000000000000000000000020000000100000001000000020000000000000004000000020000000300000004000000050000000500000003000000060000000600000008000000
-        paramByteDataSize: 000000000000000002000000020000000000000000000000000000000000000001000000000000000000000000000000000000000100000000000000000000000200000002000000
+        paramDataPos: 0000000000000000010000000100000000000000020000000200000002000000030000000000000004000000030000000400000005000000060000000500000004000000070000000600000008000000
+        paramByteDataSize: 0000000000000000000000000000000002000000020000000000000000000000000000000000000001000000000000000000000000000000000000000100000000000000000000000200000002000000
     - name: Wait
       description: 
       colorIndex: 0
@@ -576,7 +605,7 @@ MonoBehaviour:
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams: []
-        byteData: 0000304101537061776e2054696d65537061776e20416761696e00
+        byteData: 0000204001537061776e2054696d65537061776e20416761696e00
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
@@ -603,7 +632,7 @@ MonoBehaviour:
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        value: 11
+        value: 2.5
       intVariables:
       - useVariable: 1
         name: temp_rndunit
@@ -672,7 +701,7 @@ MonoBehaviour:
     locked: 0
     manualUpdate: 0
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 0
+    preprocessed: 1
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0
@@ -704,14 +733,3 @@ MonoBehaviour:
     handleAnimatorIK: 0
   fsmTemplate: {fileID: 0}
   eventHandlerComponentsAdded: 0
---- !u!1001 &100100000
-Prefab:
-  m_ObjectHideFlags: 1
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications: []
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 100000}
-  m_IsPrefabParent: 1
