@@ -2151,11 +2151,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ba2d16d1218aee4b9f39fc8ce0bce8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  displayColor:
-    r: 0
-    g: 1
-    b: 0
-    a: 1
+  displayColor: {r: 0, g: 1, b: 0, a: 1}
   customSkin: {fileID: 0}
   guiCamera: {fileID: 0}
   fadeDistance: 400
@@ -2173,7 +2169,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fsm:
-    dataVersion: 0
+    dataVersion: 1
     usedInTemplate: {fileID: 0}
     name: Movement
     startState: 'Init Character: Obstacle Avoidance 2'
@@ -2244,7 +2240,7 @@ MonoBehaviour:
         actionEnabled: 01010101010101010101010101
         actionIsOpen: 00000000010000000000000000
         actionStartIndex: 00000000050000000c0000000f0000001400000016000000180000001a0000001c0000001e00000023000000280000002a000000
-        actionHashCodes: cc35dfe8a290608e09e362993373b91f6afdd6d86afdd6d86afdd6d86afdd6d86afdd6d80c0142c93373b91f1cc678f61cc678f6
+        actionHashCodes: 5b66cf005552ad0571c75a0387604502e8ea3902e8ea3902e8ea3902e8ea3902e8ea390252221a028760450215264c0115264c01
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
@@ -2436,7 +2432,7 @@ MonoBehaviour:
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams: []
-        byteData: 0000000000000000000000000001696e697469616c5f706f736974696f6e000000000100000000010000000001000000000000000000000174656d705f6669726572616e6765000000803f0163686172535441545f5061746866696e64696e6753746f70446973740000f0420163686172535441545f4e61764d6573685475726e5370640000a0400163686172535441545f52756e5370640000a0400163686172535441545f52756e5370640000c03f0163686172535441545f50617468436f6c6c6964657252616469757300000096430174656d705f536967687452616e67650001000000
+        byteData: 0000000000000000000000000001696e697469616c5f706f736974696f6e000000000100000000010000000001000000000000000000000174656d705f6669726572616e676500000000400163686172535441545f5061746866696e64696e6753746f70446973740000f0420163686172535441545f4e61764d6573685475726e5370640000a0400163686172535441545f52756e5370640000a0400163686172535441545f52756e5370640000003f0163686172535441545f50617468436f6c6c6964657252616469757300000096430174656d705f536967687452616e67650001000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
@@ -2646,7 +2642,7 @@ MonoBehaviour:
         actionEnabled: 0100010101010101010101010101010101010101
         actionIsOpen: 0000000000000000000000000000000000000000
         actionStartIndex: 0000000003000000050000000a00000010000000160000001c00000022000000280000002e000000340000003a00000040000000460000004c00000051000000560000005b0000006000000064000000
-        actionHashCodes: 29b4727b1cc678f60c0142c93ba149573ba149573ba149573ba149573ba149573ba149573ba149573ba149573ba149573ba149573ba1495706efdc2ccc35dfe83373b91fa51886f03334d172d6de6f6d
+        actionHashCodes: 27fbe10315264c0152221a020c0e55020c0e55020c0e55020c0e55020c0e55020c0e55020c0e55020c0e55020c0e55020c0e55020c0e5502081bbf055b66cf008760450268fece05a4c8bf0015656205
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
@@ -3103,7 +3099,7 @@ MonoBehaviour:
         actionEnabled: 01010101010101010101
         actionIsOpen: 00000000000000000000
         actionStartIndex: 00000000050000000c0000001000000014000000180000001b0000001e0000002000000022000000
-        actionHashCodes: 3373b91f53489ed184729c6684729c6684729c6629b4727b29b4727b6afdd6d86afdd6d862b382d9
+        actionHashCodes: 876045021bcdca0409fbab0409fbab0409fbab0427fbe10327fbe103e8ea3902e8ea39028d4bb503
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -3307,7 +3303,7 @@ MonoBehaviour:
         actionEnabled: 01000000010101010101
         actionIsOpen: 01010101010101010101
         actionStartIndex: 000000000300000004000000060000000b0000000f00000013000000170000001c00000022000000
-        actionHashCodes: 29b4727b62b382d9c3e6a958ae0fce0984729c6684729c6684729c660c0142c93ba149571cc678f6
+        actionHashCodes: 27fbe1038d4bb5039bd6f8016d52840409fbab0409fbab0409fbab0452221a020c0e550215264c01
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -3539,7 +3535,7 @@ MonoBehaviour:
         actionEnabled: 0101
         actionIsOpen: 0101
         actionStartIndex: 0000000005000000
-        actionHashCodes: 3373b91f53489ed1
+        actionHashCodes: 876045021bcdca04
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -3633,7 +3629,7 @@ MonoBehaviour:
         actionEnabled: 01
         actionIsOpen: 01
         actionStartIndex: 00000000
-        actionHashCodes: 3708ec1a
+        actionHashCodes: 48c01101
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -3756,7 +3752,7 @@ MonoBehaviour:
         actionEnabled: 0101
         actionIsOpen: 0001
         actionStartIndex: 0000000002000000
-        actionHashCodes: 837b830ba290608e
+        actionHashCodes: d97b72025552ad05
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
@@ -3865,7 +3861,7 @@ MonoBehaviour:
         actionEnabled: 0101010101
         actionIsOpen: 0101010101
         actionStartIndex: 0000000002000000060000000c0000000f000000
-        actionHashCodes: 7dde7f390fa2435b71d53d189ffa9c66a290608e
+        actionHashCodes: 8124dc019fe21b0009faa102603dd9055552ad05
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
@@ -3994,7 +3990,7 @@ MonoBehaviour:
         actionEnabled: 01010101010101
         actionIsOpen: 00000000000000
         actionStartIndex: 000000000300000006000000090000000c0000001200000019000000
-        actionHashCodes: 79fc1ded980ad196980ad196980ad196f922f9b0a290608e0afe47cb
+        actionHashCodes: 9845b3052ee017042ee017042ee01704dfd72a045552ad0589639805
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -4107,7 +4103,7 @@ MonoBehaviour:
         actionEnabled: 01010101
         actionIsOpen: 01010101
         actionStartIndex: 00000000050000000a00000010000000
-        actionHashCodes: a51886f0a51886f0818d95d724f03ab9
+        actionHashCodes: 68fece0568fece0580768705e936b804
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -4270,7 +4266,7 @@ MonoBehaviour:
         actionEnabled: 0101000101010101
         actionIsOpen: 0101010101010101
         actionStartIndex: 000000000100000004000000080000000f00000012000000140000001b000000
-        actionHashCodes: 62b382d929b4727bf4c9cbe6a290608e610827fd048cd8e053489ed119597ffa
+        actionHashCodes: 8d4bb50327fbe10336f094005552ad05090b89011b2ab2041bcdca04a7a4ea03
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
@@ -4437,7 +4433,7 @@ MonoBehaviour:
         actionEnabled: 0101010100000001010101
         actionIsOpen: 0000000001010101010101
         actionStartIndex: 0000000003000000050000000b000000110000001300000014000000190000001c0000002000000024000000
-        actionHashCodes: 29b4727b1cc678f671d53d183ba14957c3e6a95862b382d9ae0fce093708ec1a84729c6684729c6684729c66
+        actionHashCodes: 27fbe10315264c0109faa1020c0e55029bd6f8018d4bb5036d52840448c0110109fbab0409fbab0409fbab04
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -4647,7 +4643,7 @@ MonoBehaviour:
         actionEnabled: 010101010101
         actionIsOpen: 010101010101
         actionStartIndex: 0000000004000000080000000c0000001100000018000000
-        actionHashCodes: 84729c6684729c6684729c66cc35dfe8a290608e24f03ab9
+        actionHashCodes: 09fbab0409fbab0409fbab045b66cf005552ad05e936b804
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
@@ -4832,7 +4828,7 @@ MonoBehaviour:
         actionEnabled: 000101
         actionIsOpen: 010101
         actionStartIndex: 00000000050000000c000000
-        actionHashCodes: 3373b91f53489ed13708ec1a
+        actionHashCodes: 876045021bcdca0448c01101
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -4876,7 +4872,7 @@ MonoBehaviour:
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams: []
-        byteData: 000000000174656d705f44697374546f43757272656e7454617267657400000000000174656d705f44697374546f43757272656e745461726765740000803f0163686172535441545f5061746866696e64696e6753746f704469737400000000004172726976656420417420546172676574417272697665642041742054617267657400000000400163686172535441545f436861736555706461746554696d655468696e6b00
+        byteData: 000000000174656d705f44697374546f43757272656e7454617267657400000000000174656d705f44697374546f43757272656e74546172676574000000400163686172535441545f5061746866696e64696e6753746f704469737400000000004172726976656420417420546172676574417272697665642041742054617267657400000000400163686172535441545f436861736555706461746554696d655468696e6b00
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
@@ -4951,7 +4947,7 @@ MonoBehaviour:
         actionEnabled: 01010101
         actionIsOpen: 01010101
         actionStartIndex: 0000000003000000080000000d000000
-        actionHashCodes: 29b4727ba51886f0a51886f03334d172
+        actionHashCodes: 27fbe10368fece0568fece05a4c8bf00
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -5070,7 +5066,7 @@ MonoBehaviour:
         actionEnabled: 01
         actionIsOpen: 01
         actionStartIndex: 00000000
-        actionHashCodes: ea89b499
+        actionHashCodes: de201503
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -5150,7 +5146,7 @@ MonoBehaviour:
         actionEnabled: 01
         actionIsOpen: 01
         actionStartIndex: 00000000
-        actionHashCodes: ea89b499
+        actionHashCodes: de201503
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -5239,7 +5235,7 @@ MonoBehaviour:
         actionEnabled: 01
         actionIsOpen: 00
         actionStartIndex: 00000000
-        actionHashCodes: 3334d172
+        actionHashCodes: a4c8bf00
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -5322,7 +5318,7 @@ MonoBehaviour:
         actionEnabled: 0100000000000000
         actionIsOpen: 0101010101010101
         actionStartIndex: 000000000300000004000000060000000b0000000f0000001300000017000000
-        actionHashCodes: 29b4727b62b382d9c3e6a958ae0fce0984729c6684729c6684729c661cc678f6
+        actionHashCodes: 27fbe1038d4bb5039bd6f8016d52840409fbab0409fbab0409fbab0415264c01
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -5506,7 +5502,7 @@ MonoBehaviour:
         actionEnabled: 0100000000
         actionIsOpen: 0101010101
         actionStartIndex: 000000000300000004000000090000000b000000
-        actionHashCodes: 29b4727b62b382d9ae0fce09c3e6a9581cc678f6
+        actionHashCodes: 27fbe1038d4bb5036d5284049bd6f80115264c01
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -5625,7 +5621,7 @@ MonoBehaviour:
         actionEnabled: 01
         actionIsOpen: 01
         actionStartIndex: 00000000
-        actionHashCodes: 3708ec1a
+        actionHashCodes: 48c01101
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -5706,7 +5702,7 @@ MonoBehaviour:
         actionEnabled: 0101010101
         actionIsOpen: 0101010101
         actionStartIndex: 0000000001000000030000000900000010000000
-        actionHashCodes: 62b382d900df0cd871d53d1873290852d6de6f6d
+        actionHashCodes: 8d4bb5036513a70109faa102d899af0215656205
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
@@ -5843,7 +5839,7 @@ MonoBehaviour:
         actionEnabled: 01010101
         actionIsOpen: 01010101
         actionStartIndex: 0000000002000000080000000f000000
-        actionHashCodes: 00df0cd871d53d1873290852d6de6f6d
+        actionHashCodes: 6513a70109faa102d899af0215656205
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
@@ -5957,7 +5953,7 @@ MonoBehaviour:
         actionEnabled: 01
         actionIsOpen: 01
         actionStartIndex: 00000000
-        actionHashCodes: 3708ec1a
+        actionHashCodes: 48c01101
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -6022,7 +6018,7 @@ MonoBehaviour:
         actionEnabled: 01
         actionIsOpen: 01
         actionStartIndex: 00000000
-        actionHashCodes: 24f03ab9
+        actionHashCodes: e936b804
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -6097,7 +6093,7 @@ MonoBehaviour:
         actionEnabled: 0101
         actionIsOpen: 0101
         actionStartIndex: 0000000004000000
-        actionHashCodes: 19597ffa53489ed1
+        actionHashCodes: a7a4ea031bcdca04
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -6129,7 +6125,7 @@ MonoBehaviour:
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams: []
-        byteData: 0000000001696e74656c5f44697374546f43757272656e74576179706f696e744172726976656420417420546172676574010000000001696e74656c5f44697374546f43757272656e74576179706f696e740000803f0163686172535441545f5061746866696e64696e6753746f704469737400000000004172726976656420417420546172676574417272697665642041742054617267657401
+        byteData: 0000000001696e74656c5f44697374546f43757272656e74576179706f696e744172726976656420417420546172676574010000000001696e74656c5f44697374546f43757272656e74576179706f696e74000000400163686172535441545f5061746866696e64696e6753746f704469737400000000004172726976656420417420546172676574417272697665642041742054617267657401
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
@@ -6190,7 +6186,7 @@ MonoBehaviour:
         actionEnabled: 010101
         actionIsOpen: 010101
         actionStartIndex: 000000000500000009000000
-        actionHashCodes: a51886f03334d1723708ec1a
+        actionHashCodes: 68fece05a4c8bf0048c01101
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -6296,7 +6292,7 @@ MonoBehaviour:
         actionEnabled: 010101
         actionIsOpen: 000101
         actionStartIndex: 000000000300000009000000
-        actionHashCodes: 9ffa9c663ba14957a290608e
+        actionHashCodes: 603dd9050c0e55025552ad05
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -6405,7 +6401,7 @@ MonoBehaviour:
         actionEnabled: 0101
         actionIsOpen: 0101
         actionStartIndex: 0000000002000000
-        actionHashCodes: 7dde7f393334d172
+        actionHashCodes: 8124dc01a4c8bf00
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -6495,7 +6491,7 @@ MonoBehaviour:
         actionEnabled: 01010101
         actionIsOpen: 01010101
         actionStartIndex: 00000000030000000a0000000d000000
-        actionHashCodes: 886289e3a290608e9ffa9c6671d53d18
+        actionHashCodes: 280cdd055552ad05603dd90509faa102
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
@@ -6600,7 +6596,7 @@ MonoBehaviour:
         actionEnabled: 0101
         actionIsOpen: 0101
         actionStartIndex: 0000000003000000
-        actionHashCodes: 9ffa9c6629b4727b
+        actionHashCodes: 603dd90527fbe103
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -6682,7 +6678,7 @@ MonoBehaviour:
         actionEnabled: 01010101
         actionIsOpen: 01010101
         actionStartIndex: 0000000003000000060000000c000000
-        actionHashCodes: 886289e39ffa9c6671d53d18a290608e
+        actionHashCodes: 280cdd05603dd90509faa1025552ad05
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
@@ -6787,7 +6783,7 @@ MonoBehaviour:
         actionEnabled: 0101
         actionIsOpen: 0101
         actionStartIndex: 0000000003000000
-        actionHashCodes: 9ffa9c6629b4727b
+        actionHashCodes: 603dd90527fbe103
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -6855,7 +6851,7 @@ MonoBehaviour:
         actionEnabled: 01
         actionIsOpen: 01
         actionStartIndex: 00000000
-        actionHashCodes: 3708ec1a
+        actionHashCodes: 48c01101
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -6920,7 +6916,7 @@ MonoBehaviour:
         actionEnabled: 01
         actionIsOpen: 01
         actionStartIndex: 00000000
-        actionHashCodes: 3708ec1a
+        actionHashCodes: 48c01101
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -6985,7 +6981,7 @@ MonoBehaviour:
         actionEnabled: 01
         actionIsOpen: 01
         actionStartIndex: 00000000
-        actionHashCodes: 29b4727b
+        actionHashCodes: 27fbe103
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -7064,7 +7060,7 @@ MonoBehaviour:
         actionEnabled: 01010101
         actionIsOpen: 01010101
         actionStartIndex: 00000000050000000a00000010000000
-        actionHashCodes: a51886f0a51886f0818d95d724f03ab9
+        actionHashCodes: 68fece0568fece0580768705e936b804
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -7220,7 +7216,7 @@ MonoBehaviour:
         actionEnabled: 01010101000001010101
         actionIsOpen: 01010101010101010101
         actionStartIndex: 000000000400000006000000090000000e0000000f00000014000000170000001b0000001f000000
-        actionHashCodes: 3334d1721cc678f629b4727ba51886f062b382d9ae0fce093708ec1a84729c6684729c6684729c66
+        actionHashCodes: a4c8bf0015264c0127fbe10368fece058d4bb5036d52840448c0110109fbab0409fbab0409fbab04
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -7437,7 +7433,7 @@ MonoBehaviour:
         actionEnabled: 010101010101
         actionIsOpen: 010101010101
         actionStartIndex: 0000000001000000060000000b0000001100000015000000
-        actionHashCodes: 62b382d9a51886f0a51886f0818d95d719597ffa53489ed1
+        actionHashCodes: 8d4bb50368fece0568fece0580768705a7a4ea031bcdca04
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -7517,7 +7513,7 @@ MonoBehaviour:
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams: []
-        byteData: 000174656d705f656e656d7964657401000174656d705f746163746963616c5f706174726f6c636861736501000174656d705f656e656d79646574000174656d705f6d6f766563686173654368617365205461726765740001010000000001696e74656c5f44697374546f43757272656e74576179706f696e744172726976656420417420546172676574010000000001696e74656c5f44697374546f43757272656e74576179706f696e740000803f0163686172535441545f5061746866696e64696e6753746f70446973740000000000417272697665642041742054617267657441727269766564204174205461726765745570646174655061746801
+        byteData: 000174656d705f656e656d7964657401000174656d705f746163746963616c5f706174726f6c636861736501000174656d705f656e656d79646574000174656d705f6d6f766563686173654368617365205461726765740001010000000001696e74656c5f44697374546f43757272656e74576179706f696e744172726976656420417420546172676574010000000001696e74656c5f44697374546f43757272656e74576179706f696e74000000400163686172535441545f5061746866696e64696e6753746f70446973740000000000417272697665642041742054617267657441727269766564204174205461726765745570646174655061746801
         arrayParamSizes: 02000000
         arrayParamTypes:
         - HutongGames.PlayMaker.FsmBool
@@ -7584,7 +7580,7 @@ MonoBehaviour:
         actionEnabled: 01
         actionIsOpen: 01
         actionStartIndex: 00000000
-        actionHashCodes: 29b4727b
+        actionHashCodes: 27fbe103
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -7651,7 +7647,7 @@ MonoBehaviour:
         actionEnabled: 0101
         actionIsOpen: 0101
         actionStartIndex: 0000000003000000
-        actionHashCodes: 29b4727ba51886f0
+        actionHashCodes: 27fbe10368fece05
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -7749,7 +7745,7 @@ MonoBehaviour:
         actionEnabled: 01
         actionIsOpen: 01
         actionStartIndex: 00000000
-        actionHashCodes: 3334d172
+        actionHashCodes: a4c8bf00
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -7829,7 +7825,7 @@ MonoBehaviour:
         actionEnabled: 0101010000010101
         actionIsOpen: 0000000101010101
         actionStartIndex: 000000000300000005000000070000000c0000000e0000001200000016000000
-        actionHashCodes: 29b4727b6afdd6d86afdd6d8ae0fce09c3e6a95884729c6684729c6684729c66
+        actionHashCodes: 27fbe103e8ea3902e8ea39026d5284049bd6f80109fbab0409fbab0409fbab04
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -7939,7 +7935,7 @@ MonoBehaviour:
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams: []
-        byteData: 000149735f4d6f76696e67010000000000400163686172535441545f57616c6b537064000000400163686172535441545f57616c6b537064cdcccc3e0000000000010000000001000000010000000000
+        byteData: 000149735f4d6f76696e670100000000803f0163686172535441545f57616c6b5370640000803f0163686172535441545f57616c6b537064cdcccc3e0000000000010000000001000000010000000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
@@ -8017,7 +8013,7 @@ MonoBehaviour:
         actionEnabled: 0101010000010101
         actionIsOpen: 0101010101010101
         actionStartIndex: 000000000300000005000000070000000c0000000e0000001200000016000000
-        actionHashCodes: 29b4727b6afdd6d86afdd6d8ae0fce09c3e6a95884729c6684729c6684729c66
+        actionHashCodes: 27fbe103e8ea3902e8ea39026d5284049bd6f80109fbab0409fbab0409fbab04
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -8191,7 +8187,7 @@ MonoBehaviour:
         actionEnabled: 01
         actionIsOpen: 01
         actionStartIndex: 00000000
-        actionHashCodes: 3708ec1a
+        actionHashCodes: 48c01101
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -8266,7 +8262,7 @@ MonoBehaviour:
         actionEnabled: 0101
         actionIsOpen: 0101
         actionStartIndex: 0000000004000000
-        actionHashCodes: 3334d172a290608e
+        actionHashCodes: a4c8bf005552ad05
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -8355,7 +8351,7 @@ MonoBehaviour:
         actionEnabled: 01
         actionIsOpen: 01
         actionStartIndex: 00000000
-        actionHashCodes: 3334d172
+        actionHashCodes: a4c8bf00
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -8433,7 +8429,7 @@ MonoBehaviour:
         actionEnabled: 00000101010101
         actionIsOpen: 01010101010101
         actionStartIndex: 0000000005000000070000000b0000000f0000001300000015000000
-        actionHashCodes: ae0fce09c3e6a95884729c6684729c6684729c666afdd6d86afdd6d8
+        actionHashCodes: 6d5284049bd6f80109fbab0409fbab0409fbab04e8ea3902e8ea3902
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -8543,7 +8539,7 @@ MonoBehaviour:
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams: []
-        byteData: cdcccc3e0000000000010000000001000000010000000000000000400163686172535441545f57616c6b537064000000400163686172535441545f57616c6b537064
+        byteData: cdcccc3e00000000000100000000010000000100000000000000803f0163686172535441545f57616c6b5370640000803f0163686172535441545f57616c6b537064
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
@@ -8616,7 +8612,7 @@ MonoBehaviour:
         actionEnabled: 00000101010101
         actionIsOpen: 01010101010101
         actionStartIndex: 0000000005000000070000000b0000000f0000001300000015000000
-        actionHashCodes: ae0fce09c3e6a95884729c6684729c6684729c666afdd6d86afdd6d8
+        actionHashCodes: 6d5284049bd6f80109fbab0409fbab0409fbab04e8ea3902e8ea3902
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -8726,7 +8722,7 @@ MonoBehaviour:
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams: []
-        byteData: cdcccc3e0000000000010000000001010000000000000000000000000163686172535441545f52756e537064000000000163686172535441545f52756e537064
+        byteData: cdcccc3e00000000000100000000010100000000000000000000a0400163686172535441545f52756e5370640000a0400163686172535441545f52756e537064
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
@@ -8797,7 +8793,7 @@ MonoBehaviour:
         actionEnabled: 0101
         actionIsOpen: 0101
         actionStartIndex: 0000000001000000
-        actionHashCodes: 62b382d93334d172
+        actionHashCodes: 8d4bb503a4c8bf00
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -8876,7 +8872,7 @@ MonoBehaviour:
         actionEnabled: 010101
         actionIsOpen: 010101
         actionStartIndex: 000000000500000007000000
-        actionHashCodes: ae0fce096afdd6d86afdd6d8
+        actionHashCodes: 6d528404e8ea3902e8ea3902
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -8930,7 +8926,7 @@ MonoBehaviour:
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams: []
-        byteData: cdcccc3e00000000000100000000010000a0400163686172535441545f52756e537064000000400163686172535441545f57616c6b537064
+        byteData: cdcccc3e00000000000100000000010000a0400163686172535441545f52756e5370640000803f0163686172535441545f57616c6b537064
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
@@ -8987,7 +8983,7 @@ MonoBehaviour:
         actionEnabled: 000101010101
         actionIsOpen: 010101010101
         actionStartIndex: 0000000005000000090000000d0000001100000013000000
-        actionHashCodes: ae0fce0984729c6684729c6684729c666afdd6d86afdd6d8
+        actionHashCodes: 6d52840409fbab0409fbab0409fbab04e8ea3902e8ea3902
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -9174,7 +9170,7 @@ MonoBehaviour:
         actionEnabled: 0101010000
         actionIsOpen: 0101010101
         actionStartIndex: 00000000050000000a0000001000000015000000
-        actionHashCodes: a51886f0a51886f0818d95d73373b91f53489ed1
+        actionHashCodes: 68fece0568fece0580768705876045021bcdca04
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -9325,7 +9321,7 @@ MonoBehaviour:
         actionEnabled: 01
         actionIsOpen: 01
         actionStartIndex: 00000000
-        actionHashCodes: 3708ec1a
+        actionHashCodes: 48c01101
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -9404,7 +9400,7 @@ MonoBehaviour:
         actionEnabled: 01010101
         actionIsOpen: 01010101
         actionStartIndex: 00000000050000000a00000010000000
-        actionHashCodes: a51886f0a51886f0818d95d77f6e5596
+        actionHashCodes: 68fece0568fece0580768705ba7ea101
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -9575,7 +9571,7 @@ MonoBehaviour:
         actionEnabled: 010000010101
         actionIsOpen: 010101010101
         actionStartIndex: 0000000003000000080000000a0000000e00000012000000
-        actionHashCodes: 29b4727bae0fce09c3e6a95884729c6684729c6684729c66
+        actionHashCodes: 27fbe1036d5284049bd6f80109fbab0409fbab0409fbab04
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -9729,7 +9725,7 @@ MonoBehaviour:
         actionEnabled: 01
         actionIsOpen: 01
         actionStartIndex: 00000000
-        actionHashCodes: 3708ec1a
+        actionHashCodes: 48c01101
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -9794,7 +9790,7 @@ MonoBehaviour:
         actionEnabled: 01
         actionIsOpen: 01
         actionStartIndex: 00000000
-        actionHashCodes: 3708ec1a
+        actionHashCodes: 48c01101
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -9871,7 +9867,7 @@ MonoBehaviour:
         actionEnabled: 010101
         actionIsOpen: 010101
         actionStartIndex: 00000000050000000a000000
-        actionHashCodes: a51886f0a51886f0818d95d7
+        actionHashCodes: 68fece0568fece0580768705
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -9996,7 +9992,7 @@ MonoBehaviour:
         actionEnabled: 00010101
         actionIsOpen: 01010101
         actionStartIndex: 0000000002000000060000000a000000
-        actionHashCodes: c3e6a95884729c6684729c6684729c66
+        actionHashCodes: 9bd6f80109fbab0409fbab0409fbab04
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -10136,7 +10132,7 @@ MonoBehaviour:
         actionEnabled: 0001010101
         actionIsOpen: 0101010101
         actionStartIndex: 000000000200000004000000080000000c000000
-        actionHashCodes: c3e6a9581cc678f684729c6684729c6684729c66
+        actionHashCodes: 9bd6f80115264c0109fbab0409fbab0409fbab04
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -10629,7 +10625,7 @@ MonoBehaviour:
       enumVariables: []
       categories:
       - 
-      variableCategoryIDs: 
+      variableCategoryIDs: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
     description: 'Variables with the following prefixes may be freely edited before
       and during run-time:
 
@@ -10655,7 +10651,7 @@ MonoBehaviour:
     locked: 0
     manualUpdate: 0
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 0
+    preprocessed: 1
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0
@@ -10711,7 +10707,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fsm:
-    dataVersion: 0
+    dataVersion: 1
     usedInTemplate: {fileID: 0}
     name: RandomizeStats
     startState: Randomize
@@ -10761,7 +10757,7 @@ MonoBehaviour:
         actionEnabled: 01
         actionIsOpen: 01
         actionStartIndex: 00000000
-        actionHashCodes: 3334d172
+        actionHashCodes: a4c8bf00
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -10883,7 +10879,7 @@ MonoBehaviour:
         actionEnabled: 010101
         actionIsOpen: 010101
         actionStartIndex: 000000000300000008000000
-        actionHashCodes: 980ad1963373b91f3373b91f
+        actionHashCodes: 2ee017048760450287604502
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -10947,7 +10943,7 @@ MonoBehaviour:
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams: []
-        byteData: 00007041016865616c74685f6d696e00009642016865616c74685f6d617800000000016865616c746800000000016865616c74680000000000016865616c746800
+        byteData: 00001643016865616c74685f6d696e00009643016865616c74685f6d617800000000016865616c746800000000016865616c74680000000000016865616c746800
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
@@ -11004,7 +11000,7 @@ MonoBehaviour:
         actionEnabled: 01010101
         actionIsOpen: 01010101
         actionStartIndex: 0000000004000000070000000c000000
-        actionHashCodes: c3addc63980ad1963373b91fc3addc63
+        actionHashCodes: 87aa97002ee017048760450287aa9700
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -11076,7 +11072,7 @@ MonoBehaviour:
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams: []
-        byteData: 00000000000000400172756e7370645f6d696e000080400172756e7370645f6d6178000000000172756e737064000000000172756e7370640001000000
+        byteData: 000000000000803f0172756e7370645f6d696e000040400172756e7370645f6d6178000000000172756e737064000000000172756e7370640001000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
@@ -11132,7 +11128,7 @@ MonoBehaviour:
         actionEnabled: 0101
         actionIsOpen: 0101
         actionStartIndex: 0000000003000000
-        actionHashCodes: 980ad1963373b91f
+        actionHashCodes: 2ee0170487604502
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -11176,7 +11172,7 @@ MonoBehaviour:
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams: []
-        byteData: cdcccc3d01726573706f6e736574696d655f6d696e0000004001726573706f6e736574696d655f6d61780000000001726573706f6e736574696d650000000001726573706f6e736574696d6500
+        byteData: cdcccc3d01726573706f6e736574696d655f6d696e9a99993e01726573706f6e736574696d655f6d61780000000001726573706f6e736574696d650000000001726573706f6e736574696d6500
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
@@ -11279,7 +11275,7 @@ MonoBehaviour:
       enumVariables: []
       categories:
       - 
-      variableCategoryIDs: 
+      variableCategoryIDs: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
     description: 'Use this module to create random stats for this character upon initiatation.
 
 
@@ -11298,7 +11294,7 @@ MonoBehaviour:
     locked: 0
     manualUpdate: 0
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 0
+    preprocessed: 1
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0
@@ -11342,7 +11338,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fsm:
-    dataVersion: 0
+    dataVersion: 1
     usedInTemplate: {fileID: 0}
     name: CharacterNoise
     startState: Update Noise
@@ -11386,7 +11382,7 @@ MonoBehaviour:
         actionEnabled: 0101
         actionIsOpen: 0101
         actionStartIndex: 0000000005000000
-        actionHashCodes: a51886f03334d172
+        actionHashCodes: 68fece05a4c8bf00
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -11477,7 +11473,7 @@ MonoBehaviour:
         actionEnabled: 01
         actionIsOpen: 01
         actionStartIndex: 00000000
-        actionHashCodes: 3708ec1a
+        actionHashCodes: 48c01101
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -11542,7 +11538,7 @@ MonoBehaviour:
         actionEnabled: 01
         actionIsOpen: 01
         actionStartIndex: 00000000
-        actionHashCodes: 79fc1ded
+        actionHashCodes: 9845b305
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -11607,7 +11603,7 @@ MonoBehaviour:
         actionEnabled: 01
         actionIsOpen: 01
         actionStartIndex: 00000000
-        actionHashCodes: 22e89522
+        actionHashCodes: 2a6e8a00
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -11683,7 +11679,7 @@ MonoBehaviour:
         actionEnabled: 0101
         actionIsOpen: 0101
         actionStartIndex: 0000000005000000
-        actionHashCodes: a51886f03334d172
+        actionHashCodes: 68fece05a4c8bf00
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -11774,7 +11770,7 @@ MonoBehaviour:
         actionEnabled: 01
         actionIsOpen: 01
         actionStartIndex: 00000000
-        actionHashCodes: 22e89522
+        actionHashCodes: 2a6e8a00
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -11933,7 +11929,7 @@ MonoBehaviour:
       enumVariables: []
       categories:
       - 
-      variableCategoryIDs: 
+      variableCategoryIDs: 0000000000000000000000000000000000000000
     description: 'Note: This is not for generating "audio"!
 
       It is to generate a Noise number for the AI Bots to understand.
@@ -11958,7 +11954,7 @@ MonoBehaviour:
     locked: 0
     manualUpdate: 0
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 0
+    preprocessed: 1
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0
@@ -12002,7 +11998,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fsm:
-    dataVersion: 0
+    dataVersion: 1
     usedInTemplate: {fileID: 0}
     name: Awareness
     startState: Init Update Area Info 2
@@ -12038,7 +12034,7 @@ MonoBehaviour:
         actionEnabled: 0101
         actionIsOpen: 0101
         actionStartIndex: 0000000005000000
-        actionHashCodes: cc35dfe809e36299
+        actionHashCodes: 5b66cf0071c75a03
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
@@ -12146,7 +12142,7 @@ MonoBehaviour:
         actionEnabled: 01
         actionIsOpen: 01
         actionStartIndex: 00000000
-        actionHashCodes: 3708ec1a
+        actionHashCodes: 48c01101
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -12286,7 +12282,7 @@ MonoBehaviour:
         actionEnabled: 01010101010101
         actionIsOpen: 01010101010101
         actionStartIndex: 000000000200000004000000070000000d0000001400000019000000
-        actionHashCodes: 00df0cd800df0cd89ffa9c6671d53d1873290852d6de6f6d53489ed1
+        actionHashCodes: 6513a7016513a701603dd90509faa102d899af02156562051bcdca04
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
@@ -12424,7 +12420,7 @@ MonoBehaviour:
         actionEnabled: 00010101
         actionIsOpen: 01010101
         actionStartIndex: 0000000003000000060000000a000000
-        actionHashCodes: 49d1941929b4727bc3addc6384729c66
+        actionHashCodes: 4d51cf0427fbe10387aa970009fbab04
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
@@ -12565,7 +12561,7 @@ MonoBehaviour:
         actionEnabled: 0101010101
         actionIsOpen: 0101010101
         actionStartIndex: 00000000050000000a0000001000000013000000
-        actionHashCodes: a51886f0a51886f0818d95d729b4727b3334d172
+        actionHashCodes: 68fece0568fece058076870527fbe103a4c8bf00
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -12713,7 +12709,7 @@ MonoBehaviour:
         actionEnabled: 0101010101010101
         actionIsOpen: 0101010101010000
         actionStartIndex: 00000000070000000e000000140000001a000000200000003000000033000000
-        actionHashCodes: a290608ea290608e2688491f2688491f1071e8a93361648009e362993ba14957
+        actionHashCodes: 5552ad055552ad051921940519219405a7550203d3bd7b0571c75a030c0e5502
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
@@ -12899,7 +12895,7 @@ MonoBehaviour:
         actionEnabled: 010101
         actionIsOpen: 010101
         actionStartIndex: 000000000500000009000000
-        actionHashCodes: 3373b91f22e8952253489ed1
+        actionHashCodes: 876045022a6e8a001bcdca04
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -13008,7 +13004,7 @@ MonoBehaviour:
         actionEnabled: 0101
         actionIsOpen: 0101
         actionStartIndex: 0000000005000000
-        actionHashCodes: 3373b91f53489ed1
+        actionHashCodes: 876045021bcdca04
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -13102,7 +13098,7 @@ MonoBehaviour:
         actionEnabled: 01
         actionIsOpen: 01
         actionStartIndex: 00000000
-        actionHashCodes: 29b4727b
+        actionHashCodes: 27fbe103
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -13167,7 +13163,7 @@ MonoBehaviour:
         actionEnabled: 01
         actionIsOpen: 01
         actionStartIndex: 00000000
-        actionHashCodes: 29b4727b
+        actionHashCodes: 27fbe103
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -13250,7 +13246,7 @@ MonoBehaviour:
         actionEnabled: 0101
         actionIsOpen: 0101
         actionStartIndex: 0000000004000000
-        actionHashCodes: c3addc633334d172
+        actionHashCodes: 87aa9700a4c8bf00
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -13339,7 +13335,7 @@ MonoBehaviour:
         actionEnabled: 010101
         actionIsOpen: 010101
         actionStartIndex: 000000000500000009000000
-        actionHashCodes: a51886f0c3addc6384729c66
+        actionHashCodes: 68fece0587aa970009fbab04
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -13464,7 +13460,7 @@ MonoBehaviour:
         actionEnabled: 0101
         actionIsOpen: 0101
         actionStartIndex: 0000000004000000
-        actionHashCodes: c3addc631cc678f6
+        actionHashCodes: 87aa970015264c01
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -13554,7 +13550,7 @@ MonoBehaviour:
         actionEnabled: 01
         actionIsOpen: 01
         actionStartIndex: 00000000
-        actionHashCodes: c3addc63
+        actionHashCodes: 87aa9700
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -13820,7 +13816,7 @@ MonoBehaviour:
       enumVariables: []
       categories:
       - 
-      variableCategoryIDs: 
+      variableCategoryIDs: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
     description: Updates variables related to the bot's environment "Awareness"...
       these variables are used by other FSMs to help in decision-making.
     docUrl: 
@@ -13831,7 +13827,7 @@ MonoBehaviour:
     locked: 0
     manualUpdate: 0
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 0
+    preprocessed: 1
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0
@@ -13875,7 +13871,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fsm:
-    dataVersion: 0
+    dataVersion: 1
     usedInTemplate: {fileID: 0}
     name: HealthAndDamage
     startState: Init 2
@@ -13917,7 +13913,7 @@ MonoBehaviour:
         actionEnabled: 01
         actionIsOpen: 01
         actionStartIndex: 00000000
-        actionHashCodes: 53489ed1
+        actionHashCodes: 1bcdca04
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -13941,7 +13937,7 @@ MonoBehaviour:
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams: []
-        byteData: 000048420143686172535441545f4865616c74680000000000000000000044656d69736544656d69736501
+        byteData: 000016430143686172535441545f4865616c74680000000000000000000044656d69736544656d69736501
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
@@ -14044,7 +14040,7 @@ MonoBehaviour:
         actionEnabled: 010101010101010101
         actionIsOpen: 000000000000000000
         actionStartIndex: 0000000004000000080000000f00000013000000180000001c0000002100000028000000
-        actionHashCodes: 3334d17222e8952253489ed122e89522a51886f03334d172e075084053489ed13334d172
+        actionHashCodes: a4c8bf002a6e8a001bcdca042a6e8a0068fece05a4c8bf000cdb04051bcdca04a4c8bf00
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -14165,7 +14161,7 @@ MonoBehaviour:
         actionEnabled: 0101
         actionIsOpen: 0101
         actionStartIndex: 0000000007000000
-        actionHashCodes: ac65eef13ee6a00a
+        actionHashCodes: 3e28c60362f95203
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
@@ -14286,7 +14282,7 @@ MonoBehaviour:
         actionEnabled: 01010001010101010101010101
         actionIsOpen: 00010101000000000000000001
         actionStartIndex: 00000000020000000400000006000000080000000d0000001100000015000000190000001b0000001f0000002300000027000000
-        actionHashCodes: 1cc678f6c3e6a958c3e6a958c3e6a958ae0fce09ef9258dec3addc63c3addc63c3e6a958c3addc63c3addc63c3addc633708ec1a
+        actionHashCodes: 15264c019bd6f8019bd6f8019bd6f8016d5284041b142f0187aa970087aa97009bd6f80187aa970087aa970087aa970048c01101
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -14619,7 +14615,7 @@ MonoBehaviour:
         actionEnabled: 01010101
         actionIsOpen: 01010101
         actionStartIndex: 0000000004000000090000000d000000
-        actionHashCodes: c3addc630c0142c9c3addc6329b4727b
+        actionHashCodes: 87aa970052221a0287aa970027fbe103
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -14771,7 +14767,7 @@ MonoBehaviour:
         actionEnabled: 010101
         actionIsOpen: 010101
         actionStartIndex: 000000000400000008000000
-        actionHashCodes: 3334d1723334d172a51886f0
+        actionHashCodes: a4c8bf00a4c8bf0068fece05
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -14866,7 +14862,7 @@ MonoBehaviour:
         actionEnabled: 01
         actionIsOpen: 01
         actionStartIndex: 00000000
-        actionHashCodes: 79fc1ded
+        actionHashCodes: 9845b305
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -14931,7 +14927,7 @@ MonoBehaviour:
         actionEnabled: 01
         actionIsOpen: 01
         actionStartIndex: 00000000
-        actionHashCodes: 3708ec1a
+        actionHashCodes: 48c01101
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -15004,7 +15000,7 @@ MonoBehaviour:
         actionEnabled: 0101010101
         actionIsOpen: 0101010101
         actionStartIndex: 0000000002000000090000000c00000012000000
-        actionHashCodes: c3e6a958a290608e980ad1962688491f4af3fe16
+        actionHashCodes: 9bd6f8015552ad052ee0170419219405ed711102
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -15121,7 +15117,7 @@ MonoBehaviour:
         actionEnabled: 01
         actionIsOpen: 01
         actionStartIndex: 00000000
-        actionHashCodes: 3708ec1a
+        actionHashCodes: 48c01101
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -15256,7 +15252,7 @@ MonoBehaviour:
         actionEnabled: 0101
         actionIsOpen: 0101
         actionStartIndex: 0000000003000000
-        actionHashCodes: 980ad19653489ed1
+        actionHashCodes: 2ee017041bcdca04
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -15445,7 +15441,7 @@ MonoBehaviour:
       enumVariables: []
       categories:
       - 
-      variableCategoryIDs: 
+      variableCategoryIDs: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
     description: 
     docUrl: 
     showStateLabel: 1
@@ -15455,7 +15451,7 @@ MonoBehaviour:
     locked: 0
     manualUpdate: 0
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 0
+    preprocessed: 1
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0
@@ -15481,7 +15477,7 @@ MonoBehaviour:
     handleJointBreak: 0
     handleJointBreak2D: 0
     handleOnGUI: 0
-    handleFixedUpdate: 0
+    handleFixedUpdate: 1
     handleApplicationEvents: 0
     handleAnimatorMove: 0
     handleAnimatorIK: 0
@@ -15499,7 +15495,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fsm:
-    dataVersion: 0
+    dataVersion: 2
     usedInTemplate: {fileID: 0}
     name: Identity
     startState: Do Nothing
@@ -15613,7 +15609,7 @@ MonoBehaviour:
       enumVariables: []
       categories:
       - 
-      variableCategoryIDs: 
+      variableCategoryIDs: 000000000000000000000000000000000000000000000000
     description: This is used to store variables - meta info about your character.  These
       variables are used by other FSMs.  No actions should be taken in this FSM.
     docUrl: 
@@ -15624,7 +15620,7 @@ MonoBehaviour:
     locked: 0
     manualUpdate: 0
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 0
+    preprocessed: 1
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0
@@ -15668,7 +15664,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fsm:
-    dataVersion: 0
+    dataVersion: 1
     usedInTemplate: {fileID: 0}
     name: Tactics
     startState: Tactical Triggers
@@ -15776,7 +15772,7 @@ MonoBehaviour:
         actionEnabled: 0101
         actionIsOpen: 0101
         actionStartIndex: 0000000004000000
-        actionHashCodes: c3addc63c3addc63
+        actionHashCodes: 87aa970087aa9700
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -15876,7 +15872,7 @@ MonoBehaviour:
         actionEnabled: 0101
         actionIsOpen: 0101
         actionStartIndex: 0000000004000000
-        actionHashCodes: c3addc63c3addc63
+        actionHashCodes: 87aa970087aa9700
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -15989,7 +15985,7 @@ MonoBehaviour:
       enumVariables: []
       categories:
       - 
-      variableCategoryIDs: 
+      variableCategoryIDs: 0000000000000000
     description: 
     docUrl: 
     showStateLabel: 1
@@ -15999,7 +15995,7 @@ MonoBehaviour:
     locked: 0
     manualUpdate: 0
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 0
+    preprocessed: 1
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0
@@ -16043,7 +16039,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fsm:
-    dataVersion: 0
+    dataVersion: 1
     usedInTemplate: {fileID: 0}
     name: Attack
     startState: Init Attack FSM
@@ -16079,7 +16075,7 @@ MonoBehaviour:
         actionEnabled: 0101
         actionIsOpen: 0101
         actionStartIndex: 0000000005000000
-        actionHashCodes: 0c0142c90c0142c9
+        actionHashCodes: 52221a0252221a02
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -16226,7 +16222,7 @@ MonoBehaviour:
         actionEnabled: 01010101
         actionIsOpen: 01010101
         actionStartIndex: 0000000004000000090000000e000000
-        actionHashCodes: 3334d172cc35dfe8a51886f03334d172
+        actionHashCodes: a4c8bf005b66cf0068fece05a4c8bf00
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
@@ -16371,7 +16367,7 @@ MonoBehaviour:
         actionEnabled: 0101
         actionIsOpen: 0101
         actionStartIndex: 0000000003000000
-        actionHashCodes: 9ffa9c6684729c66
+        actionHashCodes: 603dd90509fbab04
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -16563,7 +16559,7 @@ MonoBehaviour:
         actionEnabled: 010100010101010101010101010101
         actionIsOpen: 000000000000000000000000000000
         actionStartIndex: 00000000040000000a0000000e000000170000001f000000260000002d00000032000000370000003c000000430000004c0000004f00000052000000
-        actionHashCodes: 84729c6671d53d18ef9258de018d7262b36ac7f2ac65eef1ac65eef10c0142c90c0142c9a51886f0a290608ee319600b9ffa9c669ffa9c6671d53d18
+        actionHashCodes: 09fbab0409faa1021b142f014e661301d57998053e28c6033e28c60352221a0252221a0268fece055552ad05febdb401603dd905603dd90509faa102
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
@@ -16601,7 +16597,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: {fileID: 100000, guid: ee1de4c0d26bf014b81bb42232672a7b, type: 2}
+          value: {fileID: 100000, guid: 9be65d0f73aeaa34598ba54f0a7b7a58, type: 2}
         - useVariable: 1
           name: charSTAT_currentFirePos
           tooltip: 
@@ -16768,7 +16764,7 @@ MonoBehaviour:
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams: []
-        byteData: 0100001e0000000163686172535441545f616d6d6f52656d61696e696e67000000000052656c6f616452656c6f6164000000803f0000000000000000000000000001000000000000000000000000010100000000400163686172535441545f5475726e546f53686f6f7453706400000000803f000000000000000000000000000163757272656e74546172676574506f7300000000000000000000000001000000000000803feceb6b3f8180803c0000803f00000000000000000000000000000100000000000000000000000001000000000000000000000000000000000000000100000000000000000000000001000000000000000000000163686172535441545f42756c6c657455736552617963617374000000000000000000000000000163757272656e7442756c6c6574504f53763300000000010000000001000000000100000000000000000000000000000000000163757272656e7442756c6c6574504f5376330000000000000000000000000100000000010000000001008089440163686172535441545f63757272656e7442756c6c6574537064010000000000000000000000000174656d705f73686f747366697265640100000000001e0000000163686172535441545f616d6d6f52656d61696e696e67ffffffff0000000000000174656d705f73686f74736669726564030000000163686172535441545f67756e427572737453697a6553686f6f74416761696e4f725468696e6b66697265416e6f74686572427572737453686f7453686f6f74416761696e4f725468696e6b00
+        byteData: 0100001e0000000163686172535441545f616d6d6f52656d61696e696e67000000000052656c6f616452656c6f6164000000803f0000000000000000000000000001000000000000000000000000010100000000400163686172535441545f5475726e546f53686f6f7453706400000000803f000000000000000000000000000163757272656e74546172676574506f7300000000000000000000000001000000000000803feceb6b3f8180803c0000803f00000000000000000000000000000100000000000000000000000001000000000000000000000000000000000000000100000000000000000000000001000000000000000000010163686172535441545f42756c6c657455736552617963617374000000000000000000000000000163757272656e7442756c6c6574504f53763300000000010000000001000000000100000000000000000000000000000000000163757272656e7442756c6c6574504f5376330000000000000000000000000100000000010000000001008089440163686172535441545f63757272656e7442756c6c6574537064010000000000000000000000000174656d705f73686f747366697265640100000000001e0000000163686172535441545f616d6d6f52656d61696e696e67ffffffff0000000000000174656d705f73686f74736669726564030000000163686172535441545f67756e427572737453697a6553686f6f74416761696e4f725468696e6b66697265416e6f74686572427572737453686f7453686f6f74416761696e4f725468696e6b00
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
@@ -16899,7 +16895,7 @@ MonoBehaviour:
         actionEnabled: 01
         actionIsOpen: 01
         actionStartIndex: 00000000
-        actionHashCodes: 3708ec1a
+        actionHashCodes: 48c01101
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -16991,7 +16987,7 @@ MonoBehaviour:
         actionEnabled: 010101010101
         actionIsOpen: 010101010101
         actionStartIndex: 0000000005000000090000000d0000001200000019000000
-        actionHashCodes: a51886f03334d1723334d172cc35dfe8a290608e3708ec1a
+        actionHashCodes: 68fece05a4c8bf00a4c8bf005b66cf005552ad0548c01101
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
@@ -17187,7 +17183,7 @@ MonoBehaviour:
         actionEnabled: 010101010101
         actionIsOpen: 010000000000
         actionStartIndex: 0000000004000000060000000b0000001100000015000000
-        actionHashCodes: 3334d1721cc678f6d6de6f6d71d53d187a945dbd71d53d18
+        actionHashCodes: a4c8bf0015264c011565620509faa1022181e80209faa102
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
@@ -17290,7 +17286,7 @@ MonoBehaviour:
         actionEnabled: 01
         actionIsOpen: 01
         actionStartIndex: 00000000
-        actionHashCodes: 3708ec1a
+        actionHashCodes: 48c01101
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -17356,7 +17352,7 @@ MonoBehaviour:
         actionEnabled: 01
         actionIsOpen: 01
         actionStartIndex: 00000000
-        actionHashCodes: 3708ec1a
+        actionHashCodes: 48c01101
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -17429,7 +17425,7 @@ MonoBehaviour:
         actionEnabled: 0101000101
         actionIsOpen: 0101010101
         actionStartIndex: 0000000004000000060000000b0000000e000000
-        actionHashCodes: 84729c66c3e6a958ae0fce099ffa9c669ffa9c66
+        actionHashCodes: 09fbab049bd6f8016d528404603dd905603dd905
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -17550,7 +17546,7 @@ MonoBehaviour:
         actionEnabled: 01
         actionIsOpen: 01
         actionStartIndex: 00000000
-        actionHashCodes: 3708ec1a
+        actionHashCodes: 48c01101
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -17621,7 +17617,7 @@ MonoBehaviour:
         actionEnabled: 0101
         actionIsOpen: 0101
         actionStartIndex: 0000000005000000
-        actionHashCodes: 3373b91fc3e6a958
+        actionHashCodes: 876045029bd6f801
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -17727,7 +17723,7 @@ MonoBehaviour:
         actionEnabled: 0101
         actionIsOpen: 0101
         actionStartIndex: 0000000003000000
-        actionHashCodes: 49d1941929b4727b
+        actionHashCodes: 4d51cf0427fbe103
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
@@ -17808,7 +17804,7 @@ MonoBehaviour:
         actionEnabled: 01
         actionIsOpen: 01
         actionStartIndex: 00000000
-        actionHashCodes: 3708ec1a
+        actionHashCodes: 48c01101
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -17887,7 +17883,7 @@ MonoBehaviour:
         actionEnabled: 010101
         actionIsOpen: 010101
         actionStartIndex: 00000000050000000c000000
-        actionHashCodes: 3373b91f53489ed153489ed1
+        actionHashCodes: 876045021bcdca041bcdca04
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -17931,7 +17927,7 @@ MonoBehaviour:
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams: []
-        byteData: 000000000174656d705f64697374616e6365546f43757272656e7454617267657401000000000174656d705f64697374616e6365546f43757272656e745461726765740000803f0163686172535441545f4d656c656552616e676500000000004761746865722054617267657420496e74656c4761746865722054617267657420496e74656c00000000000174656d705f64697374616e6365546f43757272656e74546172676574000048420163686172535441545f4669726552616e676500000000004761746865722054617267657420496e74656c4761746865722054617267657420496e74656c5468696e6b00
+        byteData: 000000000174656d705f64697374616e6365546f43757272656e7454617267657401000000000174656d705f64697374616e6365546f43757272656e74546172676574000020400163686172535441545f4d656c656552616e676500000000004761746865722054617267657420496e74656c4761746865722054617267657420496e74656c00000000000174656d705f64697374616e6365546f43757272656e7454617267657400007a440163686172535441545f4669726552616e676500000000004761746865722054617267657420496e74656c4761746865722054617267657420496e74656c5468696e6b00
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
@@ -18011,7 +18007,7 @@ MonoBehaviour:
         actionEnabled: 01010101
         actionIsOpen: 01010101
         actionStartIndex: 0000000003000000070000000e000000
-        actionHashCodes: 29b4727b3334d172a290608e018d7262
+        actionHashCodes: 27fbe103a4c8bf005552ad054e661301
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
@@ -18154,7 +18150,7 @@ MonoBehaviour:
         actionEnabled: 010101010101010101
         actionIsOpen: 000000000000000000
         actionStartIndex: 00000000050000000a0000000f00000014000000190000001b0000001e00000023000000
-        actionHashCodes: 3373b91f0c0142c90c0142c90c0142c90c0142c91cc678f629b4727b06efdc2ce05d9b87
+        actionHashCodes: 8760450252221a0252221a0252221a0252221a0215264c0127fbe103081bbf05d9574a02
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -18525,7 +18521,7 @@ MonoBehaviour:
         actionEnabled: 010101
         actionIsOpen: 010101
         actionStartIndex: 00000000060000000c000000
-        actionHashCodes: 3ba149573ba1495753489ed1
+        actionHashCodes: 0c0e55020c0e55021bcdca04
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -18758,7 +18754,7 @@ MonoBehaviour:
         actionEnabled: 01010101
         actionIsOpen: 00000000
         actionStartIndex: 00000000070000000c00000010000000
-        actionHashCodes: a290608ed725921e0afe47cb018d7262
+        actionHashCodes: 5552ad0560ed8d00896398054e661301
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 0
@@ -18869,7 +18865,7 @@ MonoBehaviour:
         actionEnabled: 0101
         actionIsOpen: 0101
         actionStartIndex: 0000000003000000
-        actionHashCodes: 29b4727bc3addc63
+        actionHashCodes: 27fbe10387aa9700
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -18964,7 +18960,7 @@ MonoBehaviour:
         actionEnabled: 010101
         actionIsOpen: 010101
         actionStartIndex: 000000000400000009000000
-        actionHashCodes: 3334d1723373b91f53489ed1
+        actionHashCodes: a4c8bf00876045021bcdca04
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -19008,7 +19004,7 @@ MonoBehaviour:
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams: []
-        byteData: 010163686172524f4c455f4d656c6565456e61626c65644e6f00000000000174656d705f64697374616e6365546f43757272656e7454617267657401000000000174656d705f64697374616e6365546f43757272656e745461726765740000803f0163686172535441545f4d656c656552616e676500000000005965735965734e6f00
+        byteData: 010163686172524f4c455f4d656c6565456e61626c65644e6f00000000000174656d705f64697374616e6365546f43757272656e7454617267657401000000000174656d705f64697374616e6365546f43757272656e74546172676574000020400163686172535441545f4d656c656552616e676500000000005965735965734e6f00
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
@@ -19072,7 +19068,7 @@ MonoBehaviour:
         actionEnabled: 010100000101
         actionIsOpen: 010101010101
         actionStartIndex: 00000000080000000c000000100000001500000017000000
-        actionHashCodes: b36ac7f2ef9258de84729c66ae0fce09c3e6a958ac65eef1
+        actionHashCodes: d57998051b142f0109fbab046d5284049bd6f8013e28c603
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
@@ -19255,7 +19251,7 @@ MonoBehaviour:
         actionEnabled: 0001
         actionIsOpen: 0101
         actionStartIndex: 0000000004000000
-        actionHashCodes: 84729c663708ec1a
+        actionHashCodes: 09fbab0448c01101
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -19342,7 +19338,7 @@ MonoBehaviour:
         actionEnabled: 010101
         actionIsOpen: 010101
         actionStartIndex: 000000000500000009000000
-        actionHashCodes: 3373b91f7f6e5596ac65eef1
+        actionHashCodes: 87604502ba7ea1013e28c603
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
@@ -19350,7 +19346,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: {fileID: 100000, guid: 7a598717ded698c4dbdd57c2260fa1e1, type: 2}
+          value: {fileID: 100000, guid: b33c5ca497c9b164ca611af2d01f3851, type: 2}
         - useVariable: 1
           name: currentTarget
           tooltip: 
@@ -19496,7 +19492,7 @@ MonoBehaviour:
         actionEnabled: 01
         actionIsOpen: 01
         actionStartIndex: 00000000
-        actionHashCodes: 3334d172
+        actionHashCodes: a4c8bf00
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -19565,7 +19561,7 @@ MonoBehaviour:
         actionEnabled: 01
         actionIsOpen: 01
         actionStartIndex: 00000000
-        actionHashCodes: 3708ec1a
+        actionHashCodes: 48c01101
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -19635,7 +19631,7 @@ MonoBehaviour:
         actionEnabled: 0101
         actionIsOpen: 0101
         actionStartIndex: 0000000002000000
-        actionHashCodes: 6afdd6d829b4727b
+        actionHashCodes: e8ea390227fbe103
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -19725,7 +19721,7 @@ MonoBehaviour:
         actionEnabled: 010101010101
         actionIsOpen: 010101010101
         actionStartIndex: 00000000050000000c0000000e0000001100000017000000
-        actionHashCodes: cc35dfe8a290608e6afdd6d879fc1ded2688491f3708ec1a
+        actionHashCodes: 5b66cf005552ad05e8ea39029845b3051921940548c01101
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
@@ -20203,7 +20199,7 @@ MonoBehaviour:
       enumVariables: []
       categories:
       - 
-      variableCategoryIDs: 
+      variableCategoryIDs: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
     description: This FSM is only activated when the bot makes the decision to attack.
       It is activated by the AWARENESS Fsm, trigged by a target moving into the bot's
       melee or ranged attack space.
