@@ -1826,7 +1826,6 @@ MonoBehaviour:
         colorIndex: 0
       actionData:
         actionNames:
-        - HutongGames.PlayMaker.Actions.SetFsmBool
         - HutongGames.PlayMaker.Actions.BoolTest
         - HutongGames.PlayMaker.Actions.GetFsmGameObject
         - HutongGames.PlayMaker.Actions.GetFsmBool
@@ -1838,11 +1837,10 @@ MonoBehaviour:
         - 
         - 
         - 
-        - 
-        actionEnabled: 010101010101
-        actionIsOpen: 010101010101
-        actionStartIndex: 0000000005000000090000000e0000001300000019000000
-        actionHashCodes: 68fece05a4c8bf005b66cf0068fece057b312602a4c8bf00
+        actionEnabled: 0101010101
+        actionIsOpen: 0101010101
+        actionStartIndex: 0000000004000000090000000e00000014000000
+        actionHashCodes: a4c8bf005b66cf0068fece057b312602a4c8bf00
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
@@ -1874,14 +1872,6 @@ MonoBehaviour:
             showInInspector: 0
             networkSync: 0
             value: {fileID: 0}
-        - ownerOption: 0
-          gameObject:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {fileID: 0}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -1889,18 +1879,6 @@ MonoBehaviour:
         fsmPropertyParams: []
         layoutOptionParams: []
         fsmStringParams:
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: Awareness
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: charROLE_stopWhenAttacking
         - useVariable: 0
           name: 
           tooltip: 
@@ -1944,18 +1922,13 @@ MonoBehaviour:
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams: []
-        byteData: 0000000001686f6c6466697265486f6c6420466972650001000174656d705f656e656d7964657401456e656d79204e6f74204465746563746564000100000174656d705f656e656d79646574436865636b206966205461726765742057697468696e20466972652052616e6765456e656d79204e6f7420446574656374656400
+        byteData: 0001686f6c6466697265486f6c6420466972650001000174656d705f656e656d7964657401456e656d79204e6f74204465746563746564000100000174656d705f656e656d79646574436865636b206966205461726765742057697468696e20466972652052616e6765456e656d79204e6f7420446574656374656400
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 1400000012000000120000001100000001000000110000001700000017000000010000001400000012000000120000001300000001000000140000001200000012000000110000000100000013000000120000001700000017000000110000000100000011000000170000001700000001000000
+        paramDataType: 110000001700000017000000010000001400000012000000120000001300000001000000140000001200000012000000110000000100000013000000120000001700000017000000110000000100000011000000170000001700000001000000
         paramName:
-        - gameObject
-        - fsmName
-        - variableName
-        - setValue
-        - everyFrame
         - boolVariable
         - isTrue
         - isFalse
@@ -1980,8 +1953,8 @@ MonoBehaviour:
         - isTrue
         - isFalse
         - everyFrame
-        paramDataPos: 0000000000000000010000000000000002000000030000000d0000001600000016000000010000000200000003000000000000001700000002000000040000000500000018000000270000000100000006000000280000003a0000003a0000003c0000003d0000004c0000006d0000007f000000
-        paramByteDataSize: 00000000000000000000000002000000010000000a00000009000000000000000100000000000000000000000000000000000000010000000000000000000000000000000f000000010000000000000000000000120000000000000002000000010000000f000000210000001200000001000000
+        paramDataPos: 000000000a0000001300000013000000000000000000000001000000000000001400000001000000020000000300000015000000240000000100000004000000250000003700000037000000390000003a000000490000006a0000007c000000
+        paramByteDataSize: 0a00000009000000000000000100000000000000000000000000000000000000010000000000000000000000000000000f000000010000000000000000000000120000000000000002000000010000000f000000210000001200000001000000
     - name: Reset
       description: 'Are we still able to shoot? Has the target pulled out of our firing
         range?
@@ -3837,7 +3810,6 @@ MonoBehaviour:
         colorIndex: 0
       actionData:
         actionNames:
-        - HutongGames.PlayMaker.Actions.SetFsmBool
         - HutongGames.PlayMaker.Actions.SetBoolValue
         - HutongGames.PlayMaker.Actions.BoolTest
         - HutongGames.PlayMaker.Actions.GetPosition
@@ -3847,11 +3819,10 @@ MonoBehaviour:
         - 
         - 
         - 
-        - 
-        actionEnabled: 0101010101
-        actionIsOpen: 0101010101
-        actionStartIndex: 0000000005000000080000000c00000013000000
-        actionHashCodes: 68fece0527fbe103a4c8bf005552ad054e661301
+        actionEnabled: 01010101
+        actionIsOpen: 01010101
+        actionStartIndex: 0000000003000000070000000e000000
+        actionHashCodes: 27fbe103a4c8bf005552ad054e661301
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
@@ -3861,14 +3832,6 @@ MonoBehaviour:
           networkSync: 0
           value: {fileID: 0}
         fsmOwnerDefaultParams:
-        - ownerOption: 0
-          gameObject:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {fileID: 0}
         - ownerOption: 1
           gameObject:
             useVariable: 1
@@ -3891,19 +3854,7 @@ MonoBehaviour:
         fsmEventTargetParams: []
         fsmPropertyParams: []
         layoutOptionParams: []
-        fsmStringParams:
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: Awareness
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: charROLE_stopWhenAttacking
+        fsmStringParams: []
         fsmObjectParams: []
         fsmVarParams: []
         fsmArrayParams: []
@@ -3917,18 +3868,13 @@ MonoBehaviour:
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams: []
-        byteData: 01000000017374617475735f497341747461636b696e67010000000163686172524f4c455f456e68616e63656441696d456e68616e63652041696d000000000000000000000000000163757272656e74546172676574506f73000000000100000000010000000001000000000000000000000000000000000001000000000000000000000000010100000070410000000000803f0041747461636b546172676574
+        byteData: 00017374617475735f497341747461636b696e67010000000163686172524f4c455f456e68616e63656441696d456e68616e63652041696d000000000000000000000000000163757272656e74546172676574506f73000000000100000000010000000001000000000000000000000000000000000001000000000000000000000000010100000070410000000000803f0041747461636b546172676574
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 140000001200000012000000110000000100000011000000110000000100000011000000170000001700000001000000140000001c0000000f0000000f0000000f000000070000000100000014000000130000001c0000001c000000110000000f000000110000000f00000017000000
+        paramDataType: 11000000110000000100000011000000170000001700000001000000140000001c0000000f0000000f0000000f000000070000000100000014000000130000001c0000001c000000110000000f000000110000000f00000017000000
         paramName:
-        - gameObject
-        - fsmName
-        - variableName
-        - setValue
-        - everyFrame
         - boolVariable
         - boolValue
         - everyFrame
@@ -3952,8 +3898,8 @@ MonoBehaviour:
         - debug
         - finishTolerance
         - finishEvent
-        paramDataPos: 00000000000000000100000000000000020000000300000017000000190000001a000000300000003b0000003b000000010000003c000000590000005e00000063000000680000006c00000002000000000000006d0000007a00000087000000890000008e0000009000000095000000
-        paramByteDataSize: 0000000000000000000000000200000001000000140000000200000001000000160000000b0000000000000001000000000000001d000000050000000500000005000000040000000100000000000000000000000d0000000d000000020000000500000002000000050000000c000000
+        paramDataPos: 000000001400000016000000170000002d00000038000000380000000000000039000000560000005b00000060000000650000006900000001000000000000006a0000007700000084000000860000008b0000008d00000092000000
+        paramByteDataSize: 140000000200000001000000160000000b0000000000000001000000000000001d000000050000000500000005000000040000000100000000000000000000000d0000000d000000020000000500000002000000050000000c000000
     - name: 'MODIFY: Gather Target and Area Intel'
       description: 'Gathers specific target''s info.
 
@@ -6438,7 +6384,7 @@ MonoBehaviour:
     locked: 0
     manualUpdate: 0
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 0
+    preprocessed: 1
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0
@@ -9794,7 +9740,7 @@ MonoBehaviour:
           name: FINISHED
           isSystemEvent: 1
           isGlobal: 0
-        toState: Pause
+        toState: Start Movement FSM
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -11225,7 +11171,7 @@ MonoBehaviour:
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        value: 20
+        value: 0
       - useVariable: 1
         name: charSTAT_LoS_YOffset
         tooltip: 
@@ -11237,7 +11183,7 @@ MonoBehaviour:
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        value: 20
+        value: 15
       - useVariable: 1
         name: intel_ClosestEnemyDist
         tooltip: 
@@ -11317,7 +11263,7 @@ MonoBehaviour:
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        value: 0
+        value: 1
       - useVariable: 1
         name: intel_EnemyDetected
         tooltip: 
@@ -11451,7 +11397,7 @@ MonoBehaviour:
     locked: 0
     manualUpdate: 0
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 1
+    preprocessed: 0
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0
