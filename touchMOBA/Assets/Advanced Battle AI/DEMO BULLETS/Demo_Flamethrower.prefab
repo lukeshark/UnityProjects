@@ -662,7 +662,7 @@ MonoBehaviour:
         - 
         - 
         actionEnabled: 010101010101010101
-        actionIsOpen: 000000000000000000
+        actionIsOpen: 000000000000000001
         actionStartIndex: 0000000003000000070000000b0000000f00000013000000170000001b0000001f000000
         actionHashCodes: 4d51cf049ddbab039ddbab039ddbab039ddbab039ddbab039ddbab039ddbab03a4c8bf00
         unityObjectParams: []
@@ -1378,7 +1378,7 @@ MonoBehaviour:
         - 
         - 
         actionEnabled: 01010101010101
-        actionIsOpen: 00000000010100
+        actionIsOpen: 00000000000001
         actionStartIndex: 0000000007000000090000000c00000011000000150000001c000000
         actionHashCodes: 5552ad05d5af33022ee0170487604502ba7ea1013e28c60362f95203
         unityObjectParams: []
@@ -1703,18 +1703,6 @@ MonoBehaviour:
         networkSync: 0
         value: 
       - useVariable: 1
-        name: ownerTag
-        tooltip: 
-        showInInspector: 0
-        networkSync: 0
-        value: kf3bw803qbflbf3ow3infwonioiwn3fwkef
-      - useVariable: 1
-        name: temp_hitTGTTag
-        tooltip: 
-        showInInspector: 0
-        networkSync: 0
-        value: kf3bw803qbflbf3ow3infwonioiwn3fwkef
-      - useVariable: 1
         name: enemyTag2
         tooltip: 
         showInInspector: 0
@@ -1732,6 +1720,18 @@ MonoBehaviour:
         showInInspector: 0
         networkSync: 0
         value: Blank
+      - useVariable: 1
+        name: ownerTag
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: kf3bw803qbflbf3ow3infwonioiwn3fwkef
+      - useVariable: 1
+        name: temp_hitTGTTag
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: kf3bw803qbflbf3ow3infwonioiwn3fwkef
       vector2Variables: []
       vector3Variables:
       - useVariable: 1
@@ -1799,7 +1799,7 @@ MonoBehaviour:
       enumVariables: []
       categories:
       - 
-      variableCategoryIDs: 
+      variableCategoryIDs: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
     description: 
     docUrl: 
     showStateLabel: 1
