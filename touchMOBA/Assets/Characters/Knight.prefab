@@ -829,7 +829,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013345484104}
-  m_LocalRotation: {x: -0.2771483, y: 0.6428172, z: 0.6424715, w: 0.31177753}
+  m_LocalRotation: {x: -0.27714834, y: 0.64281726, z: 0.64247155, w: 0.31177756}
   m_LocalPosition: {x: -0.009302065, y: 0.94418985, z: 0.03269053}
   m_LocalScale: {x: 1.0000002, y: 1.0000001, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1482,7 +1482,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 0
@@ -20276,7 +20276,7 @@ MonoBehaviour:
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        value: 8
+        value: 12
       - useVariable: 1
         name: charSTAT_WalkSpd
         tooltip: 
@@ -20547,7 +20547,7 @@ MonoBehaviour:
     locked: 0
     manualUpdate: 0
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 1
+    preprocessed: 0
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0
