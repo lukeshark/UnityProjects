@@ -11347,38 +11347,22 @@ MonoBehaviour:
       actionData:
         actionNames:
         - HutongGames.PlayMaker.Actions.SetIntValue
-        - HutongGames.PlayMaker.Actions.SetAnimatorBool
         customNames:
         - 
-        - 
-        actionEnabled: 0101
-        actionIsOpen: 0101
-        actionStartIndex: 0000000003000000
-        actionHashCodes: 603dd9055f913504
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: 603dd905
         unityObjectParams: []
         fsmGameObjectParams: []
-        fsmOwnerDefaultParams:
-        - ownerOption: 0
-          gameObject:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {fileID: 0}
+        fsmOwnerDefaultParams: []
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
         fsmEventTargetParams: []
         fsmPropertyParams: []
         layoutOptionParams: []
-        fsmStringParams:
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: Shoot
+        fsmStringParams: []
         fsmObjectParams: []
         fsmVarParams: []
         fsmArrayParams: []
@@ -11392,23 +11376,18 @@ MonoBehaviour:
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams: []
-        byteData: 000000000174656d705f73686f7473666972656400000000000000000000000000
+        byteData: 000000000174656d705f73686f74736669726564000000000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 1000000010000000010000001400000012000000110000000100000007000000
+        paramDataType: 100000001000000001000000
         paramName:
         - intVariable
         - intValue
         - everyFrame
-        - gameObject
-        - parameter
-        - Value
-        - everyFrame
-        - everyFrameOption
-        paramDataPos: 00000000140000001900000000000000000000001a0000001c0000001d000000
-        paramByteDataSize: 1400000005000000010000000000000000000000020000000100000004000000
+        paramDataPos: 000000001400000019000000
+        paramByteDataSize: 140000000500000001000000
     - name: 'INIT ATTACK DECISION: Shoot or Throw Grenades?'
       description: 'Reserved for anything you wish to do right before taking the shot.
 
@@ -12572,40 +12551,20 @@ MonoBehaviour:
         colorIndex: 0
       actionData:
         actionNames:
-        - HutongGames.PlayMaker.Actions.SetAnimatorBool
         - HutongGames.PlayMaker.Actions.SetAnimatorTrigger
-        - HutongGames.PlayMaker.Actions.AnimatorCrossFade
         - HutongGames.PlayMaker.Actions.SetIntValue
         - HutongGames.PlayMaker.Actions.IntAdd
         customNames:
         - 
         - 
         - 
-        - 
-        - 
-        actionEnabled: 0101000101
-        actionIsOpen: 0101010101
-        actionStartIndex: 0000000005000000070000000c0000000f000000
-        actionHashCodes: 5f9135049bd6f8016d528404603dd905603dd905
+        actionEnabled: 010101
+        actionIsOpen: 010101
+        actionStartIndex: 000000000200000005000000
+        actionHashCodes: 9bd6f801603dd905603dd905
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
-        - ownerOption: 0
-          gameObject:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {fileID: 0}
-        - ownerOption: 0
-          gameObject:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {fileID: 0}
         - ownerOption: 0
           gameObject:
             useVariable: 0
@@ -12626,18 +12585,6 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: Shoot
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: Reload
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
           value: Reload
         fsmObjectParams: []
         fsmVarParams: []
@@ -12652,33 +12599,23 @@ MonoBehaviour:
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams: []
-        byteData: 00000000000000cdcc4c3e00010000000000000000011e0000000163686172535441545f616d6d6f52656d61696e696e671e0000000163686172535441545f576561706f6e416d6d6f506572436c697000630000000163686172535441545f576561706f6e436c697073ffffffff0000
+        byteData: 0f2700000163686172535441545f616d6d6f52656d61696e696e670f2700000163686172535441545f576561706f6e416d6d6f506572436c6970000f2700000163686172535441545f576561706f6e436c697073ffffffff0000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 1400000012000000110000000100000007000000140000001200000014000000120000000f000000100000000f000000100000001000000001000000100000001000000001000000
+        paramDataType: 1400000012000000100000001000000001000000100000001000000001000000
         paramName:
         - gameObject
-        - parameter
-        - Value
-        - everyFrame
-        - everyFrameOption
-        - gameObject
         - trigger
-        - gameObject
-        - stateName
-        - transitionDuration
-        - layer
-        - normalizedTime
         - intVariable
         - intValue
         - everyFrame
         - intVariable
         - add
         - everyFrame
-        paramDataPos: 000000000000000000000000020000000300000001000000010000000200000002000000070000000c00000011000000160000003100000050000000510000006a0000006f000000
-        paramByteDataSize: 0000000000000000020000000100000004000000000000000000000000000000000000000500000005000000050000001b0000001f00000001000000190000000500000001000000
+        paramDataPos: 0000000000000000000000001b0000003a0000003b0000005400000059000000
+        paramByteDataSize: 00000000000000001b0000001f00000001000000190000000500000001000000
     - name: Pause Briefly After Reloading
       description: Briefly waits for previous reload to finish
       colorIndex: 6
