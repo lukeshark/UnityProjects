@@ -16,6 +16,8 @@ namespace HutongGames.PlayMaker.Actions
 	{
 		[ActionSection("Set up")]
 		
+		public FsmEventTarget eventTarget;
+		
 		[RequiredField]
 		[Tooltip("The gameObject with the PlayMaker ArrayList Proxy component")]
 		[CheckForComponent(typeof(PlayMakerArrayListProxy))]
@@ -32,9 +34,14 @@ namespace HutongGames.PlayMaker.Actions
 		
 		public FsmBool sendToChildren;
 	
+		
+		
 		public override void Reset()
 		{
-		
+			eventTarget = new FsmEventTarget();
+				
+			eventTarget.target = FsmEventTarget.EventTarget.BroadcastAll;
+			
 			gameObject = null;
 			reference = null;
 			sendEvent = null;
@@ -46,13 +53,12 @@ namespace HutongGames.PlayMaker.Actions
 		public override void OnEnter()
 		{
 
-			if (! SetUpArrayListProxyPointer(Fsm.GetOwnerDefaultTarget(gameObject),reference.Value) )
+			if (SetUpArrayListProxyPointer(Fsm.GetOwnerDefaultTarget(gameObject),reference.Value) )
 			{
-				Finish();
+				DoSendEvent();
 			}
-			
-			DoSendEvent();
 
+			Finish ();
 		}
 
 		void DoSendEvent()
@@ -78,7 +84,7 @@ namespace HutongGames.PlayMaker.Actions
 			FsmOwnerDefault owner = new FsmOwnerDefault();
 			owner.OwnerOption = OwnerDefaultOption.SpecifyGameObject;
 			owner.GameObject = new FsmGameObject();
-			owner.GameObject.Value = this.Owner;
+			owner.GameObject.Value = _go;
 			_eventTarget.gameObject = owner;
 			_eventTarget.target = FsmEventTarget.EventTarget.GameObject;	
 				

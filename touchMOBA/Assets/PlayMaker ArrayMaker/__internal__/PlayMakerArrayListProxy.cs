@@ -236,6 +236,12 @@ public class PlayMakerArrayListProxy : PlayMakerCollectionProxy {
 			case (VariableEnum.AudioClip):
 				arrayList.InsertRange(0,preFillAudioClipList);		
 				break;
+			case (VariableEnum.Byte):
+				arrayList.InsertRange(0,preFillByteList);		
+				break;
+			case (VariableEnum.Sprite):
+				arrayList.InsertRange(0,preFillSpriteList);		
+				break;
 			default:
 				break;
 		}

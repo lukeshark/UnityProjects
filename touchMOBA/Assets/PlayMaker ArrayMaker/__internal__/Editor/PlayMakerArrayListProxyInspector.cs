@@ -166,6 +166,8 @@ public class PlayMakerArrayListProxyInspector : PlayMakerCollectionProxyInspecto
 						proxy.arrayList[i]= (Vector3)EditorGUILayout.Vector3Field(label, (Vector3)proxy.arrayList[i]);
 					}else if (proxy.arrayList[i].GetType() == typeof(AudioClip)) {
 							proxy.arrayList[i]= (AudioClip)EditorGUILayout.ObjectField(label, (AudioClip)proxy.arrayList[i],typeof(AudioClip),true);
+					}else if (proxy.arrayList[i].GetType() == typeof(Sprite)) {
+						proxy.arrayList[i]= (Sprite)EditorGUILayout.ObjectField(label, (Sprite)proxy.arrayList[i],typeof(Sprite),true);
 					}else{
 						//(FsmBool)proxy.arrayList[i].Value = (bool)EditorGUILayout.Toggle(label, (FsmBool)proxy.arrayList[i].Value);	
 						// OUPS

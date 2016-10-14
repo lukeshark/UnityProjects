@@ -25,8 +25,7 @@ namespace HutongGames.PlayMaker.Actions
 		public FsmString reference;
 		
 		[ActionSection("Result")]
-
-		[UIHint(UIHint.FsmInt)]
+		[UIHint(UIHint.Variable)]
 		[Tooltip("Store the count value")]
 		public FsmInt count;
 		

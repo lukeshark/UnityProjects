@@ -1,4 +1,5 @@
-// (c) copyright Hutong Games, LLC 2010-2012. All rights reserved.
+// (c) Copyright HutongGames, LLC 2010-2015. All rights reserved.
+
 using System.Collections;
 using UnityEngine;
 using HutongGames.PlayMaker;

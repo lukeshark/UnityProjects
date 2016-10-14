@@ -29,7 +29,10 @@ namespace HutongGames.PlayMaker.Actions
 		[Tooltip("The index of the Data in the ArrayList")]
 		[UIHint(UIHint.FsmString)]		
 		public FsmInt atIndex;
-		
+
+		[Tooltip("Will resize the ArrayList to the index if needed. else it fires an 'Out of bound' exception.'")]
+		public bool forceResizeIdNeeded;
+
 		public bool everyFrame;
 		
 		[ActionSection("Data")]
@@ -45,6 +48,7 @@ namespace HutongGames.PlayMaker.Actions
 			gameObject = null;
 			reference = null;
 			variable = null;
+			forceResizeIdNeeded = false;
 			everyFrame = false;
 		}
 		
@@ -68,6 +72,15 @@ namespace HutongGames.PlayMaker.Actions
 		{
 			
 			if (! isProxyValid() ) return;
+	
+			if (proxy._arrayList.Count<=atIndex.Value && forceResizeIdNeeded)
+			{
+
+				while(proxy._arrayList.Count <= atIndex.Value)
+				{
+					proxy._arrayList.Add(null);
+				}
+			}
 
 			proxy.Set(atIndex.Value,PlayMakerUtils.GetValueFromFsmVar(Fsm,variable),variable.Type.ToString());
 		}

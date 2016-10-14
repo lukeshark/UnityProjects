@@ -135,7 +135,7 @@ namespace HutongGames.PlayMaker.Actions
 			// no more items?
 			// check a second time to avoid process lock and possible infinite loop if the action is called again.
 			// Practically, this enabled calling again this state and it will start again iterating from the first child.
-			if (nextItemIndex >= countBase)
+			if (nextItemIndex > countBase)
 			{
 				nextItemIndex = 0;
 				Fsm.Event(finishedEvent);

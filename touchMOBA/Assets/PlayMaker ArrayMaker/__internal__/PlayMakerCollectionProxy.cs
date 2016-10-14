@@ -1,4 +1,4 @@
-//	(c) Jean Fabre, 2011-2013 All rights reserved.
+//	(c) Jean Fabre, 2011-2015 All rights reserved.
 //	http://www.fabrejean.net
 
 //using UnityEditor;
@@ -11,7 +11,7 @@ public abstract class PlayMakerCollectionProxy : MonoBehaviour {
 	
 
 	
-	public enum VariableEnum{ // WARNING: DO NOT INSERT ITEM: IT CORRUPTS EXISTING PROXIES SELECTION
+	public enum VariableEnum{ // WARNING: DO NOT INSERT ITEM: IT CORRUPTS EXISTING PROXIES SELECTION, only append
 		GameObject,
 		Int,
 		Float,
@@ -24,7 +24,9 @@ public abstract class PlayMakerCollectionProxy : MonoBehaviour {
 		Material,
 		Texture,
 		Vector2,
-		AudioClip
+		AudioClip,
+		Byte,
+		Sprite
 	}
 		
 	//- EDITING STUFF
@@ -76,7 +78,9 @@ public abstract class PlayMakerCollectionProxy : MonoBehaviour {
 	public List<Vector2> preFillVector2List = new List<Vector2>();
 	public List<Vector3> preFillVector3List = new List<Vector3>();
 	public List<AudioClip> preFillAudioClipList = new List<AudioClip>();
-	
+	public List<byte> preFillByteList = new List<byte>();
+	public List<Sprite> preFillSpriteList = new List<Sprite>();
+
 	internal string getFsmVariableType(VariableType _type)
 	{
 		return _type.ToString();
@@ -202,6 +206,12 @@ public abstract class PlayMakerCollectionProxy : MonoBehaviour {
 		}
 		if (preFillAudioClipList.Count>preFillCount){
 			preFillAudioClipList.RemoveRange(preFillCount,(preFillAudioClipList.Count-preFillCount));	
+		}
+		if (preFillByteList.Count>preFillCount){
+			preFillByteList.RemoveRange(preFillCount,(preFillByteList.Count-preFillCount));	
+		}
+		if (preFillSpriteList.Count>preFillCount){
+			preFillSpriteList.RemoveRange(preFillCount,(preFillSpriteList.Count-preFillCount));	
 		}
 		
 	}// cleanPrefilledLists

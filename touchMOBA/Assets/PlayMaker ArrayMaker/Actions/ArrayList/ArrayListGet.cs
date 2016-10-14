@@ -30,7 +30,7 @@ namespace HutongGames.PlayMaker.Actions
 		
 
 		[ActionSection("Result")]
-		
+		[RequiredField]
 		[UIHint(UIHint.Variable)]
 		public FsmVar result;
 		
@@ -67,6 +67,11 @@ namespace HutongGames.PlayMaker.Actions
 			if (! isProxyValid())
 				return;
 		
+			if (result.IsNone)
+			{
+				Fsm.Event(failureEvent);
+				return;
+			}
 			
 			object element = null;
 			

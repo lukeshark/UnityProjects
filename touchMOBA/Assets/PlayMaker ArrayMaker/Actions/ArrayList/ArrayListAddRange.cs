@@ -6,6 +6,7 @@
 // In this Action interface, link that GameObject in "arrayListObject" and input the reference name if defined. 
 // Note: You can directly reference that GameObject or store it in an Fsm variable or global Fsm variable
 
+
 using UnityEngine;
 using System.Collections;
 
@@ -33,12 +34,16 @@ namespace HutongGames.PlayMaker.Actions
 		[Tooltip("The variables to add.")]
 		public FsmVar[] variables;
 
-		
+		[Tooltip("Ints can be stored as bytes, useful when serializing over network for efficiency")]
+		public bool convertIntsToBytes;
+
 		public override void Reset()
 		{
 			gameObject = null;
 			reference = null;
 			variables = new FsmVar[2];
+
+			convertIntsToBytes = false;
 		}
 		
 		
@@ -49,8 +54,7 @@ namespace HutongGames.PlayMaker.Actions
 			
 			Finish();
 		}
-		
-		
+
 		public void DoArrayListAddRange()
 		{
 			if (! isProxyValid() ) 
@@ -58,7 +62,15 @@ namespace HutongGames.PlayMaker.Actions
 			
 			foreach(FsmVar _var in variables)
 			{
-				proxy.Add(PlayMakerUtils.GetValueFromFsmVar(Fsm,_var),_var.Type.ToString(),true);
+				var _value = PlayMakerUtils.GetValueFromFsmVar(Fsm,_var);
+				
+				if (_var.Type == VariableType.Int && convertIntsToBytes)
+				{
+					proxy.Add(System.Convert.ToByte(_value),_var.Type.ToString(),true);
+				}else{
+					proxy.Add(_value,_var.Type.ToString(),true);
+				}
+
 			}
 			
 		}

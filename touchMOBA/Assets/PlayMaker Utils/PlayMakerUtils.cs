@@ -1,8 +1,6 @@
-//	(c) Jean Fabre, 2013 All rights reserved.
-//	http://www.fabrejean.net
-//  contact: http://www.fabrejean.net/contact.htm
-//
-// Version Alpha 0.1
+// (c) Copyright HutongGames, LLC 2010-2015. All rights reserved.
+
+// edited in project using this as a submodule
 
 // INSTRUCTIONS
 // This set of utils is here to help custom action development, and scripts in general that wants to connect and work with PlayMaker API.

@@ -1,72 +1,8 @@
-(c) Jean Fabre, 2011-2014 All rights reserved.
+(c) Jean Fabre, 2011-2015 All rights reserved.
 This package is released under LGPL license: http://opensource.org/licenses/LGPL-3.0.
 This content is released under the (http://opensource.org/licenses/MIT) MIT License.
 http://www.fabrejean.net
 contact: http://www.fabrejean.net/contact.htm
-
-ArrayMaker Addon for PlayMaker. Version Alpha 0.99
-
-changes from 0.98
--- MIT License Addition
--- Windows Phone compatibility work in progress, with extensions for ArrayList LastIndexOf and manual snapshots for lists copies and removal of commented lines giving a hard time to the compiler
--- fixed easySave addon HashTableEasyLoad action
--- fixed texture usage in EasySave sample to use it's own texture set to read write properly.
-
-changes from 0.97
--- removed undo when adding proxies to selection, just not finding the right way to do a consistent behavior... and it created obsolete warnings on 4.x
--- added reset to iterative actions to make sure we have a way to force iterating back from the the first item if we exited the loop early.
--- added currentIndex in iterative actions to know where we are, not just to get the value itself.
--- added ArrayListIsEmpty and HashTableIsEmpty action
--- added ArrayListGetFarthestGameObjectInSight
--- added HashtableEditKey action
--- remove obsolete warnings on U4
--- added arrayList min max and average values custom actions to start some statistic actions around content.
-
-changes from 0.96
--- added snapshots: prefilled data is stored and use RevertToSnapshot to get back to it, and TakeSnapShot to record the current state of things.
-
-changes from 0.95
--- fixed prefill setup when downsizing the number of prefilled items.
-
-changes from 0.94
--- added ArrayListSwapIndex
-
-changes from 0.93
--- added ArrayListGetGameObjectMaxFsmFloatIndex, thanks for FlyingRobot: http://hutonggames.com/playmakerforum/index.php?topic=5116
--- added ArrayListGetClosestGameObjectInSight, thanks to FlyingRobot: http://hutonggames.com/playmakerforum/index.php?topic=5056
--- added ArrayListInsert, thanks to FlyingRobot: http://hutonggames.com/playmakerforum/index.php?topic=5146.0
--- added backEvent properties actions.
-
-changes from 0.92
-
--- fixed vector2 support ( display of vector2 data in inspector)
--- added AudioClip support
--- added HashTableAddMany, HashTableSetMany, HashTableGetMany
-
-changes from 0.91
--- Using now utomate to automate packaging
--- Packages now separated, just the framework, with samples and addons
--- Added addons for EasySave serialization
--- Added proper support for Vector2 in arrayList and HashTable inspector
--- fixed null values display in inspector for arrayList nad HashTable.
-
-changes from 0.9
- WARNING: NOT COMPATIBLE WITH PREVIOUS VERSIONS: many actions public interface changed, so you will need to re-assign setters and getters on all of them.
- This version is a huge improvment in terms of ease of use, with now much more comprehensive and logical actions interfaces, no more lenghtly actions for nothing, 
- the latest playmaker version features a new FsmVar class that let the user select first the variable type, and then select it or feed some values, 
- I don't have to expose ALL possibilities anymore which was confusing, prone to error and frustrations and totally messy.
- 
-changes from 0.7
- WARNING: previous version had a different file organisation, so now it sits in its own folder and not within "PlayMaker" which was a mistake, 
- I assumed actions would only be detected if within the Actions folder...
--- goes to 0.9 because I can :) well I had a 0.8 version sort of, but so much went that I moved to 0.9
--- new actions
--- incorporate fixes for Texture and proceduralMaterial assignment
--- fixed prefab instance editing not serializing properly
--- fixed ArrayListCopyTo action
-
-changes from 0.6
--- now using gamObject for reference instead of the component itself via fsmObject, since this doesn't bring any advantages ( as we still need a string reference...)
 
 
 DESCRIPTION:

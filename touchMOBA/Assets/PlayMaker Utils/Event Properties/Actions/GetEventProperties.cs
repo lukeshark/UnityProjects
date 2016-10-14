@@ -1,4 +1,4 @@
-// (c) Copyright HutongGames, LLC 2010-2013. All rights reserved.
+// (c) Copyright HutongGames, LLC 2010-2015. All rights reserved.
 
 using UnityEngine;
 using System;
@@ -35,14 +35,14 @@ namespace HutongGames.PlayMaker.Actions
 			
 				for (int i = 0; i < keys.Length; i++) 
 				{
-					Debug.Log(keys[i].Value);
+					//Debug.Log(keys[i].Value);
 					
 					if (SetEventProperties.properties.ContainsKey(keys[i].Value))
 					{
-						Debug.Log("found");
+					//	Debug.Log("found");
 						PlayMakerUtils.ApplyValueToFsmVar(this.Fsm,datas[i],SetEventProperties.properties[keys[i].Value]);
 					}else{
-						Debug.Log("not found");
+					//	Debug.Log("not found");
 					}
 				}
 				

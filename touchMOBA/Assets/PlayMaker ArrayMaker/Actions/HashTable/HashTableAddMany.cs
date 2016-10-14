@@ -37,7 +37,10 @@ namespace HutongGames.PlayMaker.Actions
 		[RequiredField]
 		[Tooltip("The value for that key")]
 		public FsmVar[] variables;
-		
+
+		[Tooltip("Ints can be stored as bytes, useful when serializing over network for efficiency")]
+		public bool convertIntsToBytes;
+
 		[ActionSection("Result")]
 		
 		[UIHint(UIHint.FsmEvent)]
@@ -54,7 +57,7 @@ namespace HutongGames.PlayMaker.Actions
 			reference = null;
 			keys = null;
 			variables = null;
-			
+			convertIntsToBytes = false;
 			successEvent = null;
 			keyExistsAlreadyEvent = null;
 		}
@@ -94,7 +97,16 @@ namespace HutongGames.PlayMaker.Actions
 			
 			for(int i = 0;i<keys.Length;i++)
 			{
-				proxy.hashTable.Add(keys[i].Value,PlayMakerUtils.GetValueFromFsmVar(Fsm,variables[i]));
+				var _value = PlayMakerUtils.GetValueFromFsmVar(Fsm,variables[i]);
+				
+				if (variables[i].Type == VariableType.Int && convertIntsToBytes)
+				{
+					proxy.hashTable.Add(keys[i].Value,System.Convert.ToByte(_value));
+				}else{
+					proxy.hashTable.Add(keys[i].Value,_value);
+				}
+
+
 			}
 
 		}

@@ -36,19 +36,22 @@ namespace HutongGames.PlayMaker.Actions
 		[Tooltip("Set Value if key exists already")]
 		public FsmBool setValueIfKeyExists;	
 		*/
-		
-		
-		[ActionSection("Result")]
+	
+		[ActionSection("Data")]
 		
 		[Tooltip("The variable to set.")]
 		public FsmVar variable;
-		
+
+		[Tooltip("Ints can be stored as bytes, useful when serializing over network for efficiency")]
+		public bool convertIntToByte;
+
 		public override void Reset()
 		{
 			gameObject = null;
 			reference = null;
 			key = null;
 			//setValueIfKeyExists = null;
+			convertIntToByte = false;
 			variable = null;
 		}
 		
@@ -68,9 +71,16 @@ namespace HutongGames.PlayMaker.Actions
 
 			if (!isProxyValid()) 
 				return;
-			
-			proxy.hashTable[key.Value] = PlayMakerUtils.GetValueFromFsmVar(Fsm,variable);
-			
+
+			var _value = PlayMakerUtils.GetValueFromFsmVar(Fsm,variable);
+
+			if (variable.Type == VariableType.Int && convertIntToByte)
+			{
+				proxy.hashTable[key.Value] = System.Convert.ToByte(_value);
+			}else{
+				proxy.hashTable[key.Value] = _value;
+			}
+
 		}
 		
 		

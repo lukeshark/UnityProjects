@@ -73,7 +73,7 @@ namespace HutongGames.PlayMaker.Actions
 						foreach(object element in proxy.arrayList){
 							
 							source.Add(element);
-							Debug.Log("count "+source.Count);
+							//Debug.Log("count "+source.Count);
 						}
 							
 					}

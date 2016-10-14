@@ -39,8 +39,10 @@ public class PlayMakerCollectionProxyInspector : Editor {
 		
 	}// BuildPreviewInspectorHeaderGUI
 	
-	
-	
+	bool PrefillEditing;
+
+	int _tempPrefillEditValue;
+
 	protected void BuildPreFillInspectorGUI(bool withKeys)
 	{
 		PlayMakerCollectionProxy proxy = (PlayMakerCollectionProxy)target;
@@ -64,10 +66,50 @@ public class PlayMakerCollectionProxyInspector : Editor {
 
 			EditorGUI.indentLevel = 1;
 			
-			proxy.preFillType =  (PlayMakerHashTableProxy.VariableEnum)EditorGUILayout.EnumPopup("Prefill type", proxy.preFillType);               
-			int newPrefillCount  = Mathf.Max(0,EditorGUILayout.IntField("Prefill count",proxy.preFillCount));
+			proxy.preFillType =  (PlayMakerHashTableProxy.VariableEnum)EditorGUILayout.EnumPopup("Prefill type", proxy.preFillType);
+
+			int _prefillValue = proxy.preFillCount;
+			if (PrefillEditing)
+			{
+				_prefillValue = _tempPrefillEditValue;
+			}
+
+			bool _saveEdit = false;
+
+			GUILayout.BeginHorizontal();
+			int newPrefillCount  = Mathf.Max(0,EditorGUILayout.IntField("Prefill count",_prefillValue));
+
 			if (proxy.preFillCount != newPrefillCount)
 			{
+				_tempPrefillEditValue = newPrefillCount;
+
+				if (!PrefillEditing) PrefillEditing = true;
+
+				if (PrefillEditing)
+				{
+					if (GUILayout.Button("Save","MiniButton",GUILayout.Width(40)))
+					{
+						_saveEdit = true;
+						GUI.SetNextControlName("");
+						GUI.FocusControl("");
+					}
+					if (GUILayout.Button("Cancel","MiniButton",GUILayout.Width(40)))
+					{
+						PrefillEditing = false;
+						_tempPrefillEditValue = proxy.preFillCount;
+						_saveEdit = false;
+						GUI.SetNextControlName("");
+						GUI.FocusControl("");
+					}
+				}
+			}
+			GUILayout.EndHorizontal();
+
+			if (_saveEdit && proxy.preFillCount != newPrefillCount)
+			{
+				PrefillEditing = false;
+				_saveEdit = false;
+
 				//Debug.Log("new prefill count");
 				proxy.preFillCount = newPrefillCount;
 			 	proxy.cleanPrefilledLists();
@@ -481,7 +523,55 @@ public class PlayMakerCollectionProxyInspector : Editor {
 							EditorGUILayout.EndHorizontal();
 						}
 						break;
-				
+					case (PlayMakerCollectionProxy.VariableEnum.Byte):
+						for(int i=0;i<proxy.preFillCount;i++){
+							if (proxy.preFillByteList.Count<(i+1)){
+								proxy.preFillByteList.Add(0);
+							}
+							EditorGUILayout.BeginHorizontal();
+							buildItemSelector(i);
+							if( proxy.condensedView && withKeys){
+								
+								buildKeyField(proxy,i);
+								proxy.preFillIntList[i]= (byte)EditorGUILayout.IntField((int)proxy.preFillByteList[i]);
+								
+							}else{
+								if (withKeys) {
+									buildKeyField(proxy,i);
+									EditorGUILayout.EndHorizontal();
+									EditorGUILayout.BeginHorizontal();
+								}
+							proxy.preFillByteList[i]= (byte)EditorGUILayout.IntField("Item "+i, (int)proxy.preFillByteList[i]);
+							}
+							EditorGUILayout.EndHorizontal();
+						}
+						break;
+					case (PlayMakerCollectionProxy.VariableEnum.Sprite):
+						for(int i=0;i<proxy.preFillCount;i++){
+							if (proxy.preFillSpriteList.Count<(i+1)){
+						proxy.preFillSpriteList.Add(null);
+							}
+							EditorGUILayout.BeginHorizontal();
+							buildItemSelector(i);
+							if( proxy.condensedView && withKeys){
+								
+								buildKeyField(proxy,i);
+							proxy.preFillSpriteList[i]= (Sprite)EditorGUILayout.ObjectField(proxy.preFillSpriteList[i],typeof(Sprite),false);
+
+								
+								
+							}else{
+								if (withKeys) {
+									buildKeyField(proxy,i);
+									EditorGUILayout.EndHorizontal();
+									EditorGUILayout.BeginHorizontal();
+								}
+							proxy.preFillSpriteList[i]= (Sprite)EditorGUILayout.ObjectField("Item "+i, proxy.preFillSpriteList[i],typeof(Sprite),false);
+
+							}
+							EditorGUILayout.EndHorizontal();
+						}
+						break;
 					default:
 						//ERROR
 						break;

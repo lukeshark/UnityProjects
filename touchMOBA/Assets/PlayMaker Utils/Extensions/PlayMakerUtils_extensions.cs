@@ -1,3 +1,6 @@
+// (c) Copyright HutongGames, LLC 2010-2015. All rights reserved.
+
+
 using System;
 using System.Collections;
 
@@ -17,9 +20,7 @@ public static class PlayMakerUtils_Extensions
     }
 
     public static int IndexOf(ArrayList target,Object value, int startIndex, int count) {
-		
-		UnityEngine.Debug.Log(startIndex+" "+count);
-		
+
         if (startIndex<0 || startIndex >= target.Count)
             throw new ArgumentOutOfRangeException("startIndex", "ArgumentOutOfRange_Index");
         if (count <0 || startIndex > target.Count - count) throw new ArgumentOutOfRangeException("count", "ArgumentOutOfRange_Count");
@@ -79,6 +80,23 @@ public static class PlayMakerUtils_Extensions
 	}
 	
 	#endregion
-	
+
+	#region Transform
+
+	public static string GetPath(this UnityEngine.Transform current) {
+		if (current.parent == null)
+			return "/" + current.name;
+		return current.parent.GetPath() + "/" + current.name;
+	}
+	#endregion
+
+	#region Component
+
+	public static string GetPath(this UnityEngine.Component component) {
+		return component.transform.GetPath();
+	}
+
+	#endregion
+
 }
 

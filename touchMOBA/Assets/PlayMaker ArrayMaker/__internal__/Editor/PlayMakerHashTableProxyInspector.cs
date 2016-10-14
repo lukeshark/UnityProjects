@@ -1,6 +1,4 @@
-//	(c) Jean Fabre, 2011-2013 All rights reserved.
-//	http://www.fabrejean.net
-
+//	(c) Jean Fabre, 2011-2015 All rights reserved.
 
 using UnityEditor;
 using UnityEngine;
@@ -137,15 +135,18 @@ public class PlayMakerHashTableProxyInspector : PlayMakerCollectionProxyInspecto
 						proxy.hashTable[keysList[i]]= (Vector2)EditorGUILayout.Vector2Field(label, (Vector2)proxy.hashTable[keysList[i]]);
 					}else if (proxy.hashTable[keysList[i]].GetType() == typeof(Vector3)) {
 						proxy.hashTable[keysList[i]]= (Vector3)EditorGUILayout.Vector3Field(label, (Vector3)proxy.hashTable[keysList[i]]);
-						}else if (proxy.hashTable[keysList[i]].GetType() == typeof(AudioClip)) {
+					}else if (proxy.hashTable[keysList[i]].GetType() == typeof(AudioClip)) {
 						proxy.hashTable[keysList[i]]= (AudioClip)EditorGUILayout.ObjectField(label, (AudioClip)proxy.hashTable[keysList[i]],typeof(AudioClip),true);
+					}else if (proxy.hashTable[keysList[i]].GetType() == typeof(byte)) {
+						int _val = System.Convert.ToInt32(proxy.hashTable[keysList[i]]);
+						proxy.hashTable[keysList[i]]= (byte)EditorGUILayout.IntField(label,_val );
+					}else if (proxy.hashTable[keysList[i]].GetType() == typeof(Sprite)) {
+						proxy.hashTable[keysList[i]]= (Sprite)EditorGUILayout.ObjectField(label, (Sprite)proxy.hashTable[keysList[i]],typeof(Sprite),true);
 					}else{
 						// OUPS
 						Debug.Log(proxy.hashTable[keysList[i]].GetType());
-							//EditorGUILayout.TextField(label, (string)proxy.hashTable[keysList[i]]);
+						//	EditorGUILayout.TextField(label, (string)proxy.hashTable[keysList[i]]);
 					}
-					
-
 				}else{
 					EditorGUILayout.LabelField(label,"-- NULL --");
 				}

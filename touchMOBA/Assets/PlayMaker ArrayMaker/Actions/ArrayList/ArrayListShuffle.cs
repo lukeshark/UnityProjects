@@ -79,8 +79,8 @@ namespace HutongGames.PlayMaker.Actions
 				end = Mathf.Min(proxy.arrayList.Count-1,start + shufflingRange.Value);
 				
 			}
-			Debug.Log(start);
-			Debug.Log(end);
+			//Debug.Log(start);
+			//Debug.Log(end);
 			// Knuth-Fisher-Yates algo
 
 		//	for (int i = proxy.arrayList.Count - 1; i > 0; i--)

@@ -94,7 +94,6 @@ namespace HutongGames.PlayMaker.Actions
 			
 			try{
 				if (startIndex.IsNone){
-					UnityEngine.Debug.Log("hello");
 					indexOfResult = PlayMakerUtils_Extensions.IndexOf(proxy.arrayList,item);
 		
 				}else if (count.IsNone || count.Value == 0 ){

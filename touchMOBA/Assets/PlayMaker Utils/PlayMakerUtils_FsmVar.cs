@@ -1,8 +1,4 @@
-//	(c) Jean Fabre, 2013 All rights reserved.
-//	http://www.fabrejean.net
-//  contact: http://www.fabrejean.net/contact.htm
-//
-// Version Alpha 0.1
+// (c) Copyright HutongGames, LLC 2010-2015. All rights reserved.
 
 // INSTRUCTIONS
 // This set of utils is here to help custom action development, and scripts in general that wants to connect and work with PlayMaker API.
@@ -80,6 +76,14 @@ public partial class PlayMakerUtils {
 		case VariableType.GameObject:
 			fsmVar.GetValueFrom( (NamedVariable)fromFsm.Variables.GetFsmGameObject(fsmVar.variableName));
 			break;
+		#if PLAYMAKER_1_8
+		case VariableType.Enum:
+			fsmVar.GetValueFrom( (NamedVariable)fromFsm.Variables.GetFsmEnum(fsmVar.variableName));
+			break;
+		case VariableType.Array:
+			fsmVar.GetValueFrom( (NamedVariable)fromFsm.Variables.GetFsmArray(fsmVar.variableName));
+			break;
+		#endif
 		}
 	}
 	
@@ -125,8 +129,13 @@ public partial class PlayMakerUtils {
 				return fromFsm.Variables.GetFsmGameObject(_name).Value;
 			case VariableType.Object:
 				return fromFsm.Variables.GetFsmObject(_name).Value;
+			#if PLAYMAKER_1_8
+			case VariableType.Enum:
+				return fromFsm.Variables.GetFsmEnum(_name).Value;
+			case VariableType.Array:
+				return fromFsm.Variables.GetFsmArray(_name).Values;
+			#endif
 			}
-			
 		}else{
 			
 			switch (fsmVar.Type){
@@ -156,14 +165,53 @@ public partial class PlayMakerUtils {
 				return fsmVar.gameObjectValue;
 			case VariableType.Object:
 				return fsmVar.objectReference;
+			#if PLAYMAKER_1_8
+			case VariableType.Enum:
+				return fsmVar.EnumValue;
+			case VariableType.Array:
+				return fsmVar.arrayValue;
+			#endif
 			}
 		}
-		
-		
+
 		return null;
 	}
-	
-	
+	#if PLAYMAKER_1_8
+	public static bool ApplyValueToFsmVar(Fsm fromFsm,FsmVar fsmVar, object[] value)
+	{
+		if (fromFsm==null)
+		{
+			return false;
+		}
+		if (fsmVar==null)
+		{
+			return false;
+		}
+		FsmArray _target;
+
+		if (value==null || value.Length == 0)
+		{
+			if(fsmVar.Type == VariableType.Array ){
+				_target= fromFsm.Variables.GetFsmArray(fsmVar.variableName);
+				_target.Reset();
+			}
+			return true;
+		}
+
+		if (fsmVar.Type != VariableType.Array)
+		{
+			Debug.LogError("The fsmVar value <"+fsmVar.Type+"> doesn't match the value <FsmArray> on state"+fromFsm.ActiveStateName+" on fsm:"+fromFsm.Name+" on GameObject:"+fromFsm.GameObjectName);
+			return false;
+		}
+
+		_target= fromFsm.Variables.GetFsmArray(fsmVar.variableName);
+		_target.Values = value;
+
+		return true;
+	}
+	#endif
+
+
 	public static bool ApplyValueToFsmVar(Fsm fromFsm,FsmVar fsmVar, object value)
 	{
 		if (fromFsm==null)
@@ -231,7 +279,15 @@ public partial class PlayMakerUtils {
 				_target.Value = Vector3.zero;
 				
 			}
-			
+			#if PLAYMAKER_1_8
+			else if(fsmVar.Type == VariableType.Enum ){
+				FsmEnum _target= fromFsm.Variables.GetFsmEnum(fsmVar.variableName);
+				_target.ResetValue();
+			}else if(fsmVar.Type == VariableType.Array ){
+				FsmArray _target= fromFsm.Variables.GetFsmArray(fsmVar.variableName);
+				_target.Reset();
+			}
+			#endif
 			return true;
 		}
 		
@@ -284,6 +340,14 @@ public partial class PlayMakerUtils {
 		case VariableType.Material:
 			storageType = typeof(Material);
 			break;
+		#if PLAYMAKER_1_8
+		case VariableType.Enum:
+			storageType = typeof(System.Enum);
+			break;
+		case VariableType.Array:
+			storageType = typeof(System.Array);
+			break;
+		#endif
 		}
 		
 		bool ok = true;
@@ -293,15 +357,23 @@ public partial class PlayMakerUtils {
 			if (storageType.Equals(typeof(Object))) // we are ok
 			{
 				ok = true;
-				
 			}
-			
+			#if PLAYMAKER_1_8
+			if (storageType.Equals(typeof(System.Enum))) // we are ok
+			{
+				ok = true;
+			}
+			#endif
 			if (!ok)
 			{
+				#if UNITY_WEBGL
+				// proceduralMaterial not supported
+				#else
 				if (valueType.Equals(typeof(ProceduralMaterial))) // we are ok
 				{
 					ok = true;
 				}
+				#endif
 				if (valueType.Equals(typeof(double))) // we are ok
 				{
 					ok = true;
@@ -310,13 +382,18 @@ public partial class PlayMakerUtils {
 				{
 					ok = true;
 				}
+				if (valueType.Equals(typeof(System.Byte))) // we are ok
+				{
+					ok = true;
+				}
+
 			}
 		}
 		
 		
 		if (!ok)
 		{
-			Debug.LogError("The fsmVar value <"+storageType+"> doesn't match the value <"+valueType+">");
+			Debug.LogError("The fsmVar value <"+storageType+"> doesn't match the value <"+valueType+"> on state"+fromFsm.ActiveStateName+" on fsm:"+fromFsm.Name+" on GameObject:"+fromFsm.GameObjectName);
 			return false;
 		}
 		
@@ -332,7 +409,12 @@ public partial class PlayMakerUtils {
 		}else if(valueType == typeof(int)){
 			FsmInt _target= fromFsm.Variables.GetFsmInt(fsmVar.variableName);
 			_target.Value = System.Convert.ToInt32(value);
-			
+
+		}else if(valueType == typeof(byte)){
+			FsmInt _target= fromFsm.Variables.GetFsmInt(fsmVar.variableName);
+			_target.Value = System.Convert.ToInt32(value);
+
+
 		}else if(valueType == typeof(System.Int64)){
 			
 			if (fsmVar.Type == VariableType.Int)
@@ -361,11 +443,15 @@ public partial class PlayMakerUtils {
 		}else if(valueType == typeof(Material) ){
 			FsmMaterial _target= fromFsm.Variables.GetFsmMaterial(fsmVar.variableName);
 			_target.Value = (Material)value;
-			
+
+		#if UNITY_WEBGL
+		// proceduralMaterial not supported
+		#else
 		}else if(valueType == typeof(ProceduralMaterial) ){
 			FsmMaterial _target= fromFsm.Variables.GetFsmMaterial(fsmVar.variableName);
 			_target.Value = (ProceduralMaterial)value;
-			
+		#endif
+
 		}else if(valueType == typeof(Object) || storageType == typeof(Object) ){
 			FsmObject _target= fromFsm.Variables.GetFsmObject(fsmVar.variableName);
 			_target.Value = (Object)value;
@@ -393,7 +479,12 @@ public partial class PlayMakerUtils {
 		}else if(valueType == typeof(Vector3) ){
 			FsmVector3 _target= fromFsm.Variables.GetFsmVector3(fsmVar.variableName);
 			_target.Value = (Vector3)value;
-			
+
+		#if PLAYMAKER_1_8
+		}else if(valueType.BaseType == typeof(System.Enum) ){
+			FsmEnum _target= fromFsm.Variables.GetFsmEnum(fsmVar.variableName);
+			_target.Value = (System.Enum)value;
+		#endif
 		}else{
 			Debug.LogWarning("?!?!"+valueType);
 			//  don't know, should I put in FsmObject?	
