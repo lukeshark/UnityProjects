@@ -1980,7 +1980,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 0
@@ -2035,7 +2035,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 0
+    m_RotationOrder: 4
   spreadCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -2057,7 +2057,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 0
+    m_RotationOrder: 4
 --- !u!95 &95000010975295436
 Animator:
   serializedVersion: 3
@@ -7743,7 +7743,7 @@ MonoBehaviour:
         - 
         - 
         actionEnabled: 0101010000010101
-        actionIsOpen: 0000000000010101
+        actionIsOpen: 0000000101010101
         actionStartIndex: 000000000300000005000000070000000c0000000e0000001300000018000000
         actionHashCodes: 27fbe103e8ea3902e8ea39026d5284049bd6f8015f9135045f9135045f913504
         unityObjectParams: []
@@ -10287,13 +10287,13 @@ MonoBehaviour:
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        value: 0.01
+        value: 0.1
       - useVariable: 1
         name: charSTAT_JumpPower
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        value: 0
+        value: 10
       - useVariable: 1
         name: charSTAT_NavMeshTurnSpd
         tooltip: 
@@ -10305,13 +10305,13 @@ MonoBehaviour:
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        value: 0.1
+        value: 0.5
       - useVariable: 1
         name: charSTAT_PathfindingStopDist
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        value: 2
+        value: 3
       - useVariable: 1
         name: charSTAT_RandomMoveRadius
         tooltip: 
@@ -10323,19 +10323,19 @@ MonoBehaviour:
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        value: 4
+        value: 12
       - useVariable: 1
         name: charSTAT_WalkSpd
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        value: 4
+        value: 2
       - useVariable: 1
         name: charSTAT_WaypointIdleTime
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        value: 0
+        value: 0.01
       - useVariable: 1
         name: intel_DistToCurrentWaypoint
         tooltip: 
@@ -10594,7 +10594,7 @@ MonoBehaviour:
     locked: 0
     manualUpdate: 0
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 0
+    preprocessed: 1
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0
@@ -21968,7 +21968,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5
+  m_Radius: 0.25
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 1, z: 0}
