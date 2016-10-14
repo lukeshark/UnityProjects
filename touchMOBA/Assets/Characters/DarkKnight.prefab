@@ -2176,7 +2176,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 0
@@ -2231,7 +2231,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   spreadCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -2253,7 +2253,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
 --- !u!95 &95000010680351616
 Animator:
   serializedVersion: 3
@@ -11218,13 +11218,13 @@ MonoBehaviour:
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        value: 0.1
+        value: 0.01
       - useVariable: 1
         name: charSTAT_JumpPower
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        value: 10
+        value: 0
       - useVariable: 1
         name: charSTAT_NavMeshTurnSpd
         tooltip: 
@@ -11236,13 +11236,13 @@ MonoBehaviour:
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        value: 0.5
+        value: 2
       - useVariable: 1
         name: charSTAT_PathfindingStopDist
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        value: 3
+        value: 2
       - useVariable: 1
         name: charSTAT_RandomMoveRadius
         tooltip: 
@@ -11254,19 +11254,19 @@ MonoBehaviour:
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        value: 12
+        value: 4
       - useVariable: 1
         name: charSTAT_WalkSpd
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        value: 2
+        value: 4
       - useVariable: 1
         name: charSTAT_WaypointIdleTime
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        value: 0.01
+        value: 0
       - useVariable: 1
         name: intel_DistToCurrentWaypoint
         tooltip: 
@@ -16953,7 +16953,7 @@ MonoBehaviour:
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        value: PATROL_WAYPOINT
+        value: PATROL_SEQWAYPOINT
       vector2Variables: []
       vector3Variables: []
       colorVariables: []
@@ -16977,7 +16977,7 @@ MonoBehaviour:
     locked: 0
     manualUpdate: 0
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 1
+    preprocessed: 0
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0
@@ -22286,7 +22286,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.25
+  m_Radius: 0.5
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 1, z: 0}
