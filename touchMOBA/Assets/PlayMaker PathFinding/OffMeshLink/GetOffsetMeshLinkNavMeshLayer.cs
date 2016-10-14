@@ -1,13 +1,13 @@
-﻿// (c) Copyright HutongGames, LLC 2010-2014. All rights reserved.
+﻿// (c) Copyright HutongGames, LLC 2010-2015. All rights reserved.
 
 using UnityEngine;
 
 namespace HutongGames.PlayMaker.Actions
 {
 	[ActionCategory(ActionCategory.NavMesh)]
-	[Tooltip("Gets the NavMeshLayer for this OffMeshLink component. \n" +
+	[Tooltip("Gets the area for this OffMeshLink component. \n" +
 	         "NOTE: The Game Object must have an OffMeshLink component attached.")]
-	public class GetOffMeshLinkNavMeshLayer : FsmStateAction
+	public class GetOffMeshLinkNavMeshArea : FsmStateAction
 	{
 		
 		[RequiredField]
@@ -16,7 +16,7 @@ namespace HutongGames.PlayMaker.Actions
 		public FsmOwnerDefault gameObject;
 		
 		[RequiredField]
-		[Tooltip("Store the NavMeshLayer for this OffMeshLink component")]
+		[Tooltip("Store the area for this OffMeshLink component")]
 		[UIHint(UIHint.Variable)]
 		public FsmInt storeResult;
 
@@ -47,7 +47,7 @@ namespace HutongGames.PlayMaker.Actions
 		{
 			_getOffMeshLink();
 			
-			DoGetOccupied();
+			DoGetArea();
 			
 			if (!everyFrame)
 			{
@@ -57,17 +57,17 @@ namespace HutongGames.PlayMaker.Actions
 		
 		public override void OnUpdate()
 		{
-			DoGetOccupied();
+			DoGetArea();
 		}
 		
-		void DoGetOccupied()
+		void DoGetArea()
 		{
 			if (storeResult == null || _offMeshLink == null) 
 			{
 				return;
 			}
 			
-			storeResult.Value = _offMeshLink.navMeshLayer;
+			storeResult.Value = _offMeshLink.area;
 		}
 		
 	}

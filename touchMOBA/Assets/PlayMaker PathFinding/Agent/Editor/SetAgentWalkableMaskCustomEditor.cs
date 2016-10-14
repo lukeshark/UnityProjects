@@ -12,16 +12,16 @@ using System.Collections.Generic;
 namespace HutongGames.PlayMakerEditor
 {
 
-	[CustomActionEditor(typeof(SetAgentWalkableMask))]
-	public class SetAgentWalkableMaskCustomEditor : CustomActionEditor
+	[CustomActionEditor(typeof(SetAgentAreaMask))]
+	public class SetAgentAreaMaskCustomEditor : CustomActionEditor
 	{
 
-		private PlayMakerNavMeshMaskField _maskField;
+		private PlayMakerNavMeshAreaMaskField _maskField;
 
 	    public override bool OnGUI()
 	    {
 		
-			SetAgentWalkableMask _target = (SetAgentWalkableMask)target;
+			SetAgentAreaMask _target = (SetAgentAreaMask)target;
 			
 			bool edited = false;
 			
@@ -29,24 +29,24 @@ namespace HutongGames.PlayMakerEditor
 			
 			EditField("gameObject");
 
-			if (_target.NavMeshlayerMask ==null)
+			if (_target.NavMeshAreaMask ==null)
 			{
-				_target.NavMeshlayerMask =  new FsmInt();
-				_target.NavMeshlayerMask.Value = -1;
+				_target.NavMeshAreaMask =  new FsmInt();
+				_target.NavMeshAreaMask.Value = -1;
 			}
 			
-			LayerMask _mask = _target.NavMeshlayerMask.Value;
+			LayerMask _mask = _target.NavMeshAreaMask.Value;
 
 			if (_maskField==null)
 			{
-				_maskField = new PlayMakerNavMeshMaskField();
+				_maskField = new PlayMakerNavMeshAreaMaskField();
 			}
-			LayerMask _newMask = _maskField.LayerMaskField("NavMesh layerMask",_mask,true);
+			LayerMask _newMask = _maskField.AreaMaskField("Area Mask",_mask,true);
 
 			if (_newMask!=_mask)
 			{
 				edited = true;
-				_target.NavMeshlayerMask.Value = _newMask.value;
+				_target.NavMeshAreaMask.Value = _newMask.value;
 			}
 
 			return GUI.changed || edited;

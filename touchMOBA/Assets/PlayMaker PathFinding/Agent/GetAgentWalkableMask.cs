@@ -1,13 +1,13 @@
-// (c) Copyright HutongGames, LLC 2010-2014. All rights reserved.
+// (c) Copyright HutongGames, LLC 2010-2015. All rights reserved.
 
 using UnityEngine;
 
 namespace HutongGames.PlayMaker.Actions
 {
 	[ActionCategory(ActionCategory.NavMeshAgent)]
-	[Tooltip("Gets the walkable mask of a NavMesh Agent. \n" +
+	[Tooltip("Gets the area mask of a NavMesh Agent. \n" +
 		"NOTE: The Game Object must have a NavMeshAgentcomponent attached.")]
-	public class GetAgentWalkableMask : FsmStateAction
+	public class GetAgentAreaMask : FsmStateAction
 	{
 		[RequiredField]
 		[Tooltip("The Game Object to work with. NOTE: The Game Object must have a NavMeshAgent component attached.")]
@@ -54,7 +54,7 @@ namespace HutongGames.PlayMaker.Actions
 				return;
 			}
 
-			storeResult.Value = _agent.walkableMask;
+			storeResult.Value = _agent.areaMask;
 		
 			
 		}

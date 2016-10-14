@@ -61,9 +61,9 @@ namespace HutongGames.PlayMaker.Actions
 		[UIHint(UIHint.Variable)]
 		public FsmBool autoUpdatePositions; 
 
-		[Tooltip("The NavMeshLayer for this OffMeshLink component")]
+		[Tooltip("The area for this OffMeshLink component")]
 		[UIHint(UIHint.Variable)]
-		public FsmInt navmeshLayer; 
+		public FsmInt navmeshArea;
 
 
 		private NavMeshAgent _agent;
@@ -92,7 +92,7 @@ namespace HutongGames.PlayMaker.Actions
 			OffMeshlinkType = new FsmString { UseVariable = true};
 			biDirectional = new FsmBool { UseVariable = true};
 			autoUpdatePositions = new FsmBool { UseVariable = true};
-			navmeshLayer = new FsmInt { UseVariable = true};
+			navmeshArea = new FsmInt { UseVariable = true};
 			costOverride = new FsmFloat { UseVariable = true};
 		}
 
@@ -171,9 +171,9 @@ namespace HutongGames.PlayMaker.Actions
 				autoUpdatePositions.Value = link.offMeshLink.autoUpdatePositions;
 			}
 
-			if(!navmeshLayer.IsNone)
+			if(!navmeshArea.IsNone)
 			{
-				navmeshLayer.Value = link.offMeshLink.navMeshLayer;
+				navmeshArea.Value = link.offMeshLink.area;
 			}
 
 			if(!startGameObject.IsNone)

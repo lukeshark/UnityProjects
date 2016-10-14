@@ -5,16 +5,17 @@ using UnityEngine;
 namespace HutongGames.PlayMaker.Actions
 {
 	[ActionCategory(ActionCategory.NavMesh)]
-	[Tooltip("Gets the cost for traversing over geometry of the layer type on all agents.")]
-	public class NavMeshGetLayerCost : FsmStateAction
+	[Tooltip("Gets the cost for path finding over geometry of the area type.\n" +
+	         "The value applies to all agents unless you the value has been customized per agent by calling NavMeshAgentSetAreaCost.")]
+	public class NavMeshGetAreaCost : FsmStateAction
 	{	
 		[ActionSection("Set up")]
 		
-		[Tooltip("The layer index.")]
-		public FsmInt layer;
+		[Tooltip("The Area index.")]
+		public FsmInt area;
 
-		[Tooltip("OR The layer name.")]
-		public FsmString ORlayerName;
+		[Tooltip("OR the layer name.")]
+		public FsmString orAreaName;
 		
 		[ActionSection("Result")]
 		
@@ -26,41 +27,41 @@ namespace HutongGames.PlayMaker.Actions
 		
 		public override void Reset()
 		{
-			layer = null;
-			ORlayerName = null;
+			area = null;
+			orAreaName = new FsmString(){UseVariable=true};
 			storeResult = null;
 		}
 
 		public override void OnEnter()
 		{	
-			DoGetLayerCost();
+			DoGetAreaCost();
 
 			Finish();		
 		}
 		
-		void DoGetLayerCost()
+		void DoGetAreaCost()
 		{
-			int layerId = layer.Value;
-			if (ORlayerName.Value!=""){
+			int areaId = area.Value;
+			if (orAreaName.Value!=""){
 				
-				layerId = NavMesh.GetNavMeshLayerFromName(ORlayerName.Value);
+				areaId = NavMesh.GetAreaFromName(orAreaName.Value);
 			}
 			
-			storeResult.Value =	NavMesh.GetLayerCost(layerId);
+			storeResult.Value =	NavMesh.GetAreaCost(areaId);
 		}
 		
 		public override string ErrorCheck()
 		{
-			if (ORlayerName.Value!="")
+			if (orAreaName.Value!="")
 			{
-				int layerID = NavMesh.GetNavMeshLayerFromName(ORlayerName.Value);
-				if (layerID==-1){
-					return "Layer Name '"+ORlayerName.Value+"' doesn't exists";
-				}else if(layer.Value != 0){
-					if (layerID == layer.Value){
-						return "Layer reference redundancy. Use Layer OR Layer Name.";
+				int areaId = NavMesh.GetAreaFromName(orAreaName.Value);
+				if (areaId==-1){
+					return "Layer Name '"+orAreaName.Value+"' doesn't exists";
+				}else if(area.Value != 0){
+					if (areaId == area.Value){
+						return "Area reference redundancy. Use 'Area' OR 'Area Name', not both at the same time..";
 					}else{
-						return "Layer conflict, layer name '"+ORlayerName.Value+"' will be used";
+						return "Area conflict, area name '"+orAreaName.Value+"' will be used";
 					}
 					
 				}

@@ -14,9 +14,6 @@ namespace HutongGames.PlayMaker.Actions
 		[CheckForComponent(typeof(NavMeshAgent))]
 		public FsmOwnerDefault gameObject;
 		
-		[Tooltip("If true, the agent position and orientation is no longer controlled by the NavMeshAgent.")]
-		public FsmBool stopUpdates;
-		
 		private NavMeshAgent _agent;
 		
 		private void _getAgent()
@@ -33,7 +30,6 @@ namespace HutongGames.PlayMaker.Actions
 		public override void Reset()
 		{
 			gameObject = null;
-			stopUpdates = null;
 		}
 
 		public override void OnEnter()
@@ -52,7 +48,7 @@ namespace HutongGames.PlayMaker.Actions
 				return;
 			}
 			
-			_agent.Stop(stopUpdates.Value);
+			_agent.Stop();
 		}
 
 	}

@@ -1,4 +1,4 @@
-// (c) Copyright HutongGames, LLC 2010-2014. All rights reserved.
+// (c) Copyright HutongGames, LLC 2010-2015. All rights reserved.
 
 using UnityEngine;
 
@@ -28,7 +28,9 @@ namespace HutongGames.PlayMaker.Actions
 		private float lastDistance;
 		
 		private float squareDistance;
-		
+
+		GameObject _lastGo;
+
 		private void _getAgent()
 		{
 			GameObject go = Fsm.GetOwnerDefaultTarget(gameObject);
@@ -50,6 +52,9 @@ namespace HutongGames.PlayMaker.Actions
 
 		public override void OnEnter()
 		{
+			// force refresh
+			_lastGo = null;
+
 			_getAgent();
 			
 			DoSetDestination();
@@ -63,10 +68,18 @@ namespace HutongGames.PlayMaker.Actions
 
 		void DoSetDestination()
 		{
-			if (destination == null || _agent == null) 
+			if (destination.Value == null || _agent == null) 
 			{
 				return;
 			}
+
+			bool forceUpdate = false;
+			if (_lastGo != destination.Value)
+			{
+				forceUpdate = true;
+				_lastGo = destination.Value;
+			}
+
 			if (lastDistance!= triggerThreshold.Value){
 				lastDistance = triggerThreshold.Value;
 				squareDistance = lastDistance*lastDistance;
@@ -74,7 +87,7 @@ namespace HutongGames.PlayMaker.Actions
 		
 			Vector3 newPosition = destination.Value.transform.position;
 			Vector3 deltaPosition = newPosition-lastPosition;
-			if (deltaPosition.sqrMagnitude>squareDistance)
+			if (deltaPosition.sqrMagnitude>squareDistance || forceUpdate)
 			{
 				_agent.SetDestination(newPosition);
 				lastPosition = destination.Value.transform.position;

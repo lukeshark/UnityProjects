@@ -8,8 +8,8 @@ namespace HutongGames.PlayMaker.Actions
 	[Tooltip("Locate the closest NavMesh edge from a point close to the NavMesh. \nYou can dispatch events If terminated before reaching the target position or not. \nYou can then store information about the location (navMeshHit).")]
 	public class NavMeshFindClosestEdge : FsmStateAction
 	{
-		[ActionSection("Set up")]
-		
+		//[ActionSection("Set up")]
+
 		[RequiredField]
 		[Tooltip("The origin of the distance query.")]
 		public FsmVector3 sourcePosition;
@@ -104,7 +104,8 @@ namespace HutongGames.PlayMaker.Actions
 			
 			
 		}
-		
+			
 
 	}
+
 }

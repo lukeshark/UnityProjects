@@ -16,13 +16,13 @@ namespace HutongGames.PlayMakerEditor
 	public class NavMeshFindClosestEdgeCustomEditor : CustomActionEditor
 	{
 		
-		private PlayMakerNavMeshMaskField _maskField;
+		private PlayMakerNavMeshAreaMaskField _maskField;
 		
 		
 		public override bool OnGUI()
 		{
 			
-			NavMeshRaycast _target = (NavMeshRaycast)target;
+			NavMeshFindClosestEdge _target = (NavMeshFindClosestEdge)target;
 			
 			bool edited = false;
 			
@@ -44,7 +44,7 @@ namespace HutongGames.PlayMakerEditor
 			return GUI.changed || edited;
 		}
 		
-		bool EditMaskField(NavMeshRaycast _target)
+		bool EditMaskField(NavMeshFindClosestEdge _target)
 		{
 			bool edited = false;
 			
@@ -66,9 +66,9 @@ namespace HutongGames.PlayMakerEditor
 				
 				if (_maskField==null)
 				{
-					_maskField = new PlayMakerNavMeshMaskField();
+					_maskField = new PlayMakerNavMeshAreaMaskField();
 				}
-				LayerMask _newMask = _maskField.LayerMaskField("Passable Mask",_mask,true);
+				LayerMask _newMask = _maskField.AreaMaskField("Passable Mask",_mask,true);
 				
 				
 				if (_newMask!=_mask)

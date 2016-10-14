@@ -16,7 +16,7 @@ namespace HutongGames.PlayMakerEditor
 	public class NavMeshSamplePositionCustomEditor : CustomActionEditor
 	{
 		
-		private PlayMakerNavMeshMaskField _maskField;
+		private PlayMakerNavMeshAreaMaskField _maskField;
 		
 		
 		public override bool OnGUI()
@@ -68,9 +68,9 @@ namespace HutongGames.PlayMakerEditor
 				
 				if (_maskField==null)
 				{
-					_maskField = new PlayMakerNavMeshMaskField();
+					_maskField = new PlayMakerNavMeshAreaMaskField();
 				}
-				LayerMask _newMask = _maskField.LayerMaskField("Allowed Mask",_mask,true);
+				LayerMask _newMask = _maskField.AreaMaskField("Allowed Mask",_mask,true);
 
 				if (_newMask!=_mask)
 				{

@@ -5,18 +5,18 @@ using UnityEngine;
 namespace HutongGames.PlayMaker.Actions
 {
 	[ActionCategory(ActionCategory.NavMeshAgent)]
-	[Tooltip("Specifies witch NavMesh layers are passable (bitfield). \n" +
-		"Changing walkableMask will make the path stale (see isPathStale). \n" +
+	[Tooltip("Specifies which NavMesh areas are passable. \n" +
+		"Changing AreaMask will make the path stale (see isPathStale). \n" +
 		"NOTE: The Game Object must have a NavMeshAgent component attached.")]
-	public class SetAgentWalkableMask : FsmStateAction
+	public class SetAgentAreaMask : FsmStateAction
 	{
 		[RequiredField]
 		[Tooltip("The Game Object to work with. NOTE: The Game Object must have a NavMeshAgent component attached.")]
 		[CheckForComponent(typeof(NavMeshAgent))]
 		public FsmOwnerDefault gameObject;
 		
-		[Tooltip("Pick the walkable NavMesh layers")]
-		public FsmInt NavMeshlayerMask;
+		[Tooltip("Pick the walkable NavMesh areas")]
+		public FsmInt NavMeshAreaMask;
 		
 		private NavMeshAgent _agent;
 
@@ -34,26 +34,26 @@ namespace HutongGames.PlayMaker.Actions
 		public override void Reset()
 		{
 			gameObject = null;
-			NavMeshlayerMask = -1;  // so that by default mask is "everything"
+			NavMeshAreaMask =  NavMesh.AllAreas;  // so that by default mask is "everything"
 		}
 
 		public override void OnEnter()
 		{
 			_getAgent();
 			
-			DoSetWalkableMask();
+			DoSetAreaMask();
 
 			Finish();		
 		}
 		
-		void DoSetWalkableMask()
+		void DoSetAreaMask()
 		{
 			if ( _agent == null) 
 			{
 				return;
 			}
 			
-			_agent.walkableMask = NavMeshlayerMask.Value;
+			_agent.areaMask = NavMeshAreaMask.Value;
 
 		}
 	}

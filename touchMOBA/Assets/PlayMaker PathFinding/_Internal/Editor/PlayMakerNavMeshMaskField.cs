@@ -1,4 +1,4 @@
-﻿// (c) Copyright HutongGames, LLC 2010-2014. All rights reserved.
+﻿// (c) Copyright HutongGames, LLC 2010-2015. All rights reserved.
 
 using System;
 using System.Collections.Generic;
@@ -6,12 +6,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
-public class PlayMakerNavMeshMaskField {
+public class PlayMakerNavMeshAreaMaskField {
 
 	
-	public List<string> layers;
-	public List<int> layerNumbers;
-	public string[] layerNames;
+	public List<string> areas;
+	public List<int> areaNumbers;
+	public string[] areaNames;
 	public long lastUpdateTick;
 	
 	// http://answers.unity3d.com/questions/42996/how-to-create-layermask-field-in-a-custom-editorwi.html
@@ -21,22 +21,22 @@ public class PlayMakerNavMeshMaskField {
 	 * \param selected Current LayerMask
 	 * \version Unity 3.5 and up will use the EditorGUILayout.MaskField instead of a custom written one.
 	 */
-	public LayerMask LayerMaskField (string label, LayerMask selected, bool showSpecial) {
+	public LayerMask AreaMaskField (string label, LayerMask selected, bool showSpecial) {
 		
 		//Unity 3.5 and up
 		
-		if (layers == null || (System.DateTime.Now.Ticks - lastUpdateTick > 10000000L && Event.current.type == EventType.Layout)) {
+		if (areas == null || (System.DateTime.Now.Ticks - lastUpdateTick > 10000000L && Event.current.type == EventType.Layout)) {
 			lastUpdateTick = System.DateTime.Now.Ticks;
-			if (layers == null) {
-				layers = new List<string>();
-				layerNumbers = new List<int>();
-				layerNames = new string[4];
+			if (areas == null) {
+				areas = new List<string>();
+				areaNumbers = new List<int>();
+				areaNames = new string[4];
 			} else {
-				layers.Clear ();
-				layerNumbers.Clear ();
+				areas.Clear ();
+				areaNumbers.Clear ();
 			}
 			
-			string[] _layers = GameObjectUtility.GetNavMeshLayerNames();
+			string[] _layers = GameObjectUtility.GetNavMeshAreaNames();
 			
 			int emptyLayers = 0;
 			for (int i=0;i<_layers.Length;i++) {
@@ -44,23 +44,23 @@ public class PlayMakerNavMeshMaskField {
 				
 				if (layerName != "") {
 					
-					for (;emptyLayers>0;emptyLayers--) layers.Add ("Layer "+(i-emptyLayers));
-					layerNumbers.Add (i);
-					layers.Add (layerName);
+					for (;emptyLayers>0;emptyLayers--) areas.Add ("Area "+(i-emptyLayers));
+					areaNumbers.Add (i);
+					areas.Add (layerName);
 				} else {
 					emptyLayers++;
 				}
 			}
 			
-			if (layerNames.Length != layers.Count) {
-				layerNames = new string[layers.Count];
+			if (areaNames.Length != areas.Count) {
+				areaNames = new string[areas.Count];
 			}
-			for (int i=0;i<layerNames.Length;i++) layerNames[i] = layers[i];
+			for (int i=0;i<areaNames.Length;i++) areaNames[i] = areas[i];
 		}
 		
-		selected.value =  EditorGUILayout.MaskField (label,selected.value,layerNames);
+		selected.value =  EditorGUILayout.MaskField (label,selected.value,areaNames);
 
-		GUILayout.Label(" "+selected.value,GUILayout.ExpandWidth(false));
+		//GUILayout.Label(" "+selected.value,GUILayout.ExpandWidth(false));
 
 		return selected;
 	}

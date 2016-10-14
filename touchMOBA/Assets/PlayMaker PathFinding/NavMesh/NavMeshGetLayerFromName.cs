@@ -5,35 +5,35 @@ using UnityEngine;
 namespace HutongGames.PlayMaker.Actions
 {
 	[ActionCategory(ActionCategory.NavMesh)]
-	[Tooltip("Gets the layer index for a named layer.")]
+	[Tooltip("Gets the area index for a named area.")]
 	public class NavMeshGetLayerFromName : FsmStateAction
 	{	
-		[Tooltip("The layer Name")]
-		public FsmString layerName;
+		[Tooltip("The area Name")]
+		public FsmString areaName;
 		
 		[ActionSection("Result")]
 		
-		[Tooltip("Store the layer Index for this layer Name")]
+		[Tooltip("Store the area Index for this area Name")]
 		[UIHint(UIHint.Variable)]
-		public FsmInt layerIndex;
+		public FsmInt areaIndex;
 
 		
 		public override void Reset()
 		{
-			layerName = null;
-			layerIndex = null;
+			areaName = null;
+			areaIndex = null;
 		}
 		
 		public override void OnEnter()
 		{	
-			DoGetLayerFromName();
+			DoGetAreaFromName();
 			
 			Finish();		
 		}
 		
-		void DoGetLayerFromName()
+		void DoGetAreaFromName()
 		{
-			layerIndex.Value = NavMesh.GetNavMeshLayerFromName(layerName.Value);
+			areaIndex.Value = NavMesh.GetAreaFromName(areaName.Value);
 		}
 		
 
