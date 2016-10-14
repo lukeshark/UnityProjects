@@ -1,24 +1,21 @@
-// (c) Copyright HutongGames, LLC 2010-2015. All rights reserved.
+// (c) Copyright HutongGames, LLC 2010-2016. All rights reserved.
 
 using UnityEngine;
 
 namespace HutongGames.PlayMaker.Actions
 {
-	[ActionCategory("Animator")]
+	[ActionCategory(ActionCategory.Animator)]
 	[Tooltip("Returns true if the specified layer is in a transition. Can also send events")]
-	public class GetAnimatorIsLayerInTransition: FsmStateAction
+	public class GetAnimatorIsLayerInTransition: FsmStateActionAnimatorBase
 	{
 		[RequiredField]
 		[CheckForComponent(typeof(Animator))]
-		[Tooltip("The target. An Animator component and a PlayMakerAnimatorProxy component are required")]
+		[Tooltip("The target. An Animator component is required")]
 		public FsmOwnerDefault gameObject;
 		
 		[RequiredField]
 		[Tooltip("The layer's index")]
 		public FsmInt layerIndex;
-		
-		[Tooltip("Repeat every frame. Useful when value is subject to change over time.")]
-		public bool everyFrame;
 		
 		[ActionSection("Results")]
 		
@@ -31,18 +28,17 @@ namespace HutongGames.PlayMaker.Actions
 		
 		[Tooltip("Event send if automatic matching is not active")]
 		public FsmEvent isNotInTransitionEvent;
-		
-		private PlayMakerAnimatorMoveProxy _animatorProxy;
-		
+
 		private Animator _animator;
 		
 		public override void Reset()
 		{
+			base.Reset();
+
 			gameObject = null;
 			isInTransition = null;
 			isInTransitionEvent = null;
 			isNotInTransitionEvent = null;
-			everyFrame = false;
 		}
 		
 		public override void OnEnter()
@@ -63,14 +59,7 @@ namespace HutongGames.PlayMaker.Actions
 				Finish();
 				return;
 			}
-			
-			_animatorProxy = go.GetComponent<PlayMakerAnimatorMoveProxy>();
-			if (_animatorProxy!=null)
-			{
-				_animatorProxy.OnAnimatorMoveEvent += OnAnimatorMoveEvent;
-			}
-			
-			
+
 			DoCheckIsInTransition();
 			
 			if(!everyFrame)
@@ -78,21 +67,10 @@ namespace HutongGames.PlayMaker.Actions
 				Finish();
 			}
 		}
-			
-		public void OnAnimatorMoveEvent()
+
+		public override void OnActionUpdate() 
 		{
-			if (_animatorProxy!=null)
-			{
-				DoCheckIsInTransition();
-			}
-		}	
-		
-		public override void OnUpdate() 
-		{
-			if (_animatorProxy==null)
-			{
-				DoCheckIsInTransition();
-			}
+			DoCheckIsInTransition();
 		}
 		
 		
@@ -104,21 +82,17 @@ namespace HutongGames.PlayMaker.Actions
 			}
 			
 			bool _isInTransition = _animator.IsInTransition(layerIndex.Value);
-			isInTransition.Value = _isInTransition;
-			
+
+			if (!isInTransition.IsNone)
+			{
+				isInTransition.Value = _isInTransition;
+			}
+
 			if (_isInTransition)
 			{
 				Fsm.Event(isInTransitionEvent);
 			}else{
 				Fsm.Event(isNotInTransitionEvent);
-			}
-		}
-		
-		public override void OnExit()
-		{
-			if (_animatorProxy!=null)
-			{
-				_animatorProxy.OnAnimatorMoveEvent -= OnAnimatorMoveEvent;
 			}
 		}
 	}

@@ -1,12 +1,11 @@
-﻿// (c) Copyright HutongGames, LLC 2010-2015. All rights reserved.
+﻿// (c) Copyright HutongGames, LLC 2010-2016. All rights reserved.
 
 using UnityEngine;
 
 namespace HutongGames.PlayMaker.Actions
 {
-	[ActionCategory("Animator")]
+	[ActionCategory(ActionCategory.Animator)]
 	[Tooltip("Sets the playback position in the recording buffer. When in playback mode (use AnimatorStartPlayback), this value is used for controlling the current playback position in the buffer (in seconds). The value can range between recordingStartTime and recordingStopTime ")]
-	//[HelpUrl("https://hutonggames.fogbugz.com/default.asp?W1072")]
 	public class SetAnimatorPlayBackTime: FsmStateAction
 	{
 		[RequiredField]

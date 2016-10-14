@@ -1,16 +1,16 @@
-﻿// (c) Copyright HutongGames, LLC 2010-2015. All rights reserved.
+﻿// (c) Copyright HutongGames, LLC 2010-2016. All rights reserved.
 
 using UnityEngine;
 
 namespace HutongGames.PlayMaker.Actions
 {
-	[ActionCategory("Animator")]
+	[ActionCategory(ActionCategory.Animator)]
 	[Tooltip("Check the active Transition name on a specified layer. Format is 'CURRENT_STATE -> NEXT_STATE'.")]
-	public class GetAnimatorCurrentTransitionInfoIsName : FsmStateAction
+	public class GetAnimatorCurrentTransitionInfoIsName : FsmStateActionAnimatorBase
 	{
 		[RequiredField]
 		[CheckForComponent(typeof(Animator))]
-		[Tooltip("The target. An Animator component and a PlayMakerAnimatorProxy component are required")]
+		[Tooltip("The target. An Animator component is required")]
 		public FsmOwnerDefault gameObject;
 		
 		[RequiredField]
@@ -19,23 +19,25 @@ namespace HutongGames.PlayMaker.Actions
 		
 		[Tooltip("The name to check the transition against.")]
 		public FsmString name;
-		
-		public bool everyFrame;
-		
+
 		[ActionSection("Results")]
 		
+		[UIHint(UIHint.Variable)]
+		[Tooltip("True if name matches")]
 		public FsmBool nameMatch;
 		
+		[Tooltip("Event send if name matches")]
 		public FsmEvent nameMatchEvent;
+		
+		[Tooltip("Event send if name doesn't match")]
 		public FsmEvent nameDoNotMatchEvent;
-		
-		
-		private PlayMakerAnimatorMoveProxy _animatorProxy;
-		
+
 		private Animator _animator;
 		
 		public override void Reset()
 		{
+			base.Reset();
+
 			gameObject = null;
 			layerIndex = null;
 			
@@ -44,8 +46,6 @@ namespace HutongGames.PlayMaker.Actions
 			nameMatch = null;
 			nameMatchEvent = null;
 			nameDoNotMatchEvent = null;
-			
-			everyFrame = false;
 		}
 		
 		public override void OnEnter()
@@ -75,7 +75,7 @@ namespace HutongGames.PlayMaker.Actions
 			}
 		}
 		
-		public override void OnUpdate()
+		public override void OnActionUpdate()
 		{
 			IsName();
 		}

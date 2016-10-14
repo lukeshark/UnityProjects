@@ -1,16 +1,16 @@
-﻿// (c) Copyright HutongGames, LLC 2010-2015. All rights reserved.
+﻿// (c) Copyright HutongGames, LLC 2010-2016. All rights reserved.
 
 using UnityEngine;
 
 namespace HutongGames.PlayMaker.Actions
 {
-	[ActionCategory("Animator")]
+	[ActionCategory(ActionCategory.Animator)]
 	[Tooltip("Sets the animator in recording mode, and allocates a circular buffer of size frameCount. After this call, the recorder starts collecting up to frameCount frames in the buffer. Note it is not possible to start playback until a call to StopRecording is made")]
 	public class AnimatorStartRecording : FsmStateAction
 	{
 		[RequiredField]
 		[CheckForComponent(typeof(Animator))]
-		[Tooltip("The target. An Animator component and a PlayMakerAnimatorProxy component are required")]
+		[Tooltip("The target. An Animator component is required")]
 		public FsmOwnerDefault gameObject;
 
 		[RequiredField]

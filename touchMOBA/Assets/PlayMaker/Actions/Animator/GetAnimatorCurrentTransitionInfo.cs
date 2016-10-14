@@ -1,24 +1,21 @@
-﻿// (c) Copyright HutongGames, LLC 2010-2015. All rights reserved.
+// (c) Copyright HutongGames, LLC 2010-2016. All rights reserved.
 
 using UnityEngine;
 
 namespace HutongGames.PlayMaker.Actions
 {
-	[ActionCategory("Animator")]
+	[ActionCategory(ActionCategory.Animator)]
 	[Tooltip("Gets the current transition information on a specified layer. Only valid when during a transition.")]
-	public class GetAnimatorCurrentTransitionInfo : FsmStateAction
+	public class GetAnimatorCurrentTransitionInfo : FsmStateActionAnimatorBase
 	{
 		[RequiredField]
 		[CheckForComponent(typeof(Animator))]
-		[Tooltip("The target. An Animator component and a PlayMakerAnimatorProxy component are required")]
+		[Tooltip("The target. An Animator component is required")]
 		public FsmOwnerDefault gameObject;
 		
 		[RequiredField]
 		[Tooltip("The layer's index")]
 		public FsmInt layerIndex;
-		
-		[Tooltip("Repeat every frame. Useful when value is subject to change over time.")]
-		public bool everyFrame;
 		
 		[ActionSection("Results")]
 		
@@ -38,13 +35,12 @@ namespace HutongGames.PlayMaker.Actions
 		[Tooltip("Normalized time of the Transition")]
 		public FsmFloat normalizedTime;
 
-		
-		private PlayMakerAnimatorMoveProxy _animatorProxy;
-		
 		private Animator _animator;
 		
 		public override void Reset()
 		{
+			base.Reset();
+
 			gameObject = null;
 			layerIndex = null;
 			
@@ -74,13 +70,7 @@ namespace HutongGames.PlayMaker.Actions
 				Finish();
 				return;
 			}
-			
-			_animatorProxy = go.GetComponent<PlayMakerAnimatorMoveProxy>();
-			if (_animatorProxy!=null)
-			{		
-				_animatorProxy.OnAnimatorMoveEvent += OnAnimatorMoveEvent;
-			}
-			
+
 			GetTransitionInfo();
 			
 			if (!everyFrame) 
@@ -89,19 +79,9 @@ namespace HutongGames.PlayMaker.Actions
 			}
 		}
 		
-		public override void OnUpdate()
+		public override void OnActionUpdate()
 		{
-			if (_animatorProxy == null)
-			{
 				GetTransitionInfo();
-			}
-		}
-		public void OnAnimatorMoveEvent()
-		{
-			if (_animatorProxy!=null)
-			{
-				GetTransitionInfo();
-			}
 		}
 		
 		void GetTransitionInfo()
@@ -115,18 +95,22 @@ namespace HutongGames.PlayMaker.Actions
 					name.Value = _animator.GetLayerName(layerIndex.Value);	
 				}
 
-				nameHash.Value = _info.nameHash;
-				userNameHash.Value = _info.userNameHash;
-				normalizedTime.Value = _info.normalizedTime;
+				if (!nameHash.IsNone)
+				{
+					nameHash.Value = _info.nameHash;
+				}
+
+				if (!userNameHash.IsNone)
+				{
+					userNameHash.Value = _info.userNameHash;
+				}
+
+				if (!normalizedTime.IsNone)
+				{
+					normalizedTime.Value = _info.normalizedTime;
+				}
 			}
 		}
-		
-		public override void OnExit()
-		{
-			if (_animatorProxy!=null)
-			{
-				_animatorProxy.OnAnimatorMoveEvent -= OnAnimatorMoveEvent;
-			}
-		}	
+			
 	}
 }

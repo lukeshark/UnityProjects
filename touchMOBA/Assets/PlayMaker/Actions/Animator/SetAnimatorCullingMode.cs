@@ -1,14 +1,13 @@
-// (c) Copyright HutongGames, LLC 2010-2015. All rights reserved.
+// (c) Copyright HutongGames, LLC 2010-2016. All rights reserved.
 
 using UnityEngine;
 
 namespace HutongGames.PlayMaker.Actions
 {
-	[ActionCategory("Animator")]
+	[ActionCategory(ActionCategory.Animator)]
 	[Tooltip("Controls culling of this Animator component.\n" +
 		"If true, set to 'AlwaysAnimate': always animate the entire character. Object is animated even when offscreen.\n" +
-		 "If False, set to 'BasedOnRenderes' animation is disabled when renderers are not visible.")]
-	[HelpUrl("https://hutonggames.fogbugz.com/default.asp?W1064")]
+	         "If False, set to 'BasedOnRenderes' or CullUpdateTransforms ( On Unity 5) animation is disabled when renderers are not visible.")]
 	public class SetAnimatorCullingMode: FsmStateAction
 	{
 		[RequiredField]
@@ -58,8 +57,12 @@ namespace HutongGames.PlayMaker.Actions
 			{
 				return;
 			}
-			
+
+			#if UNITY_5
 			_animator.cullingMode = alwaysAnimate.Value?AnimatorCullingMode.AlwaysAnimate:AnimatorCullingMode.CullUpdateTransforms;
+			#else
+			_animator.cullingMode = alwaysAnimate.Value?AnimatorCullingMode.AlwaysAnimate:AnimatorCullingMode.BasedOnRenderers;
+			#endif
 			
 		}
 		

@@ -1,17 +1,16 @@
-﻿// (c) Copyright HutongGames, LLC 2010-2015. All rights reserved.
+﻿// (c) Copyright HutongGames, LLC 2010-2016. All rights reserved.
 
 using UnityEngine;
 
 namespace HutongGames.PlayMaker.Actions
 {
-	[ActionCategory("Animator")]
+	[ActionCategory(ActionCategory.Animator)]
 	[Tooltip("Sets an AvatarTarget and a targetNormalizedTime for the current state")]
-	//[HelpUrl("https://hutonggames.fogbugz.com/default.asp?W1066")]
 	public class SetAnimatorTarget : FsmStateAction
 	{
 		[RequiredField]
 		[CheckForComponent(typeof(Animator))]
-		[Tooltip("The target. An Animator component and a PlayMakerAnimatorProxy component are required")]
+		[Tooltip("The target.")]
 		public FsmOwnerDefault gameObject;
 		
 		[Tooltip("The avatar target")]
@@ -20,10 +19,9 @@ namespace HutongGames.PlayMaker.Actions
 		[Tooltip("The current state Time that is queried")]
 		public FsmFloat targetNormalizedTime;
 
-		[Tooltip("Repeat every frame. Useful when changing over time.")]
+		[Tooltip("Repeat every frame during OnAnimatorMove. Useful when changing over time.")]
 		public bool everyFrame;
-		
-		private PlayMakerAnimatorMoveProxy _animatorProxy;
+
 		private Animator _animator;
 		
 		public override void Reset()
@@ -32,6 +30,11 @@ namespace HutongGames.PlayMaker.Actions
 			avatarTarget = AvatarTarget.Body;
 			targetNormalizedTime = null;
 			everyFrame = false;
+		}
+		
+		public override void OnPreprocess ()
+		{
+			Fsm.HandleAnimatorMove = true;
 		}
 		
 		public override void OnEnter()
@@ -52,13 +55,6 @@ namespace HutongGames.PlayMaker.Actions
 				Finish();
 				return;
 			}
-			
-			_animatorProxy = go.GetComponent<PlayMakerAnimatorMoveProxy>();
-			if (_animatorProxy!=null)
-			{
-				_animatorProxy.OnAnimatorMoveEvent += OnAnimatorMoveEvent;
-			}
-
 
 			SetTarget();
 			
@@ -67,39 +63,18 @@ namespace HutongGames.PlayMaker.Actions
 				Finish();
 			}
 		}
-		
-		public void OnAnimatorMoveEvent()
+
+		public override void DoAnimatorMove ()
 		{
-			if (_animatorProxy!=null)
-			{
-				SetTarget();
-			}
-		}	
-		
-		
-		
-		public override void OnUpdate() 
-		{
-			if (_animatorProxy==null)
-			{
-				SetTarget();
-			}
+			SetTarget();
 		}
 		
 		void SetTarget()
 		{		
 			if (_animator!=null)
 			{
-					_animator.SetTarget(avatarTarget,targetNormalizedTime.Value) ;
+				_animator.SetTarget(avatarTarget,targetNormalizedTime.Value) ;
 			}
 		}
-		
-		public override void OnExit()
-		{
-			if (_animatorProxy!=null)
-			{
-				_animatorProxy.OnAnimatorMoveEvent -= OnAnimatorMoveEvent;
-			}
-		}		
 	}
 }

@@ -1,12 +1,11 @@
-// (c) Copyright HutongGames, LLC 2010-2015. All rights reserved.
+// (c) Copyright HutongGames, LLC 2010-2016. All rights reserved.
 
 using UnityEngine;
 
 namespace HutongGames.PlayMaker.Actions
 {
-	[ActionCategory("Animator")]
+	[ActionCategory(ActionCategory.Animator)]
 	[Tooltip("If true, additionnal layers affects the mass center")]
-	[HelpUrl("https://hutonggames.fogbugz.com/default.asp?W1070")]
 	public class SetAnimatorLayersAffectMassCenter: FsmStateAction
 	{
 		[RequiredField]

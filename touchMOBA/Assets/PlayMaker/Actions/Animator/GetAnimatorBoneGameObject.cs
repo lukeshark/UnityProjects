@@ -1,10 +1,11 @@
-﻿// (c) Copyright HutongGames, LLC 2010-2015. All rights reserved.
+﻿// (c) Copyright HutongGames, LLC 2010-2016. All rights reserved.
 
 using UnityEngine;
 using System;
+
 namespace HutongGames.PlayMaker.Actions
 {
-	[ActionCategory("Animator")]
+	[ActionCategory(ActionCategory.Animator)]
 	[Tooltip("Gets the GameObject mapped to this human bone id")]
 	public class GetAnimatorBoneGameObject : FsmStateAction
 	{
@@ -14,27 +15,24 @@ namespace HutongGames.PlayMaker.Actions
 		public FsmOwnerDefault gameObject;
 
 		[Tooltip("The bone reference")]
-		public HumanBodyBones bone;
+		[ObjectType(typeof(HumanBodyBones))]
+		public FsmEnum bone;
 
-		[Tooltip("The bone reference as a string, case insensitive")]
-		public FsmString boneAsString;
-
-		
 		[ActionSection("Results")]
 		
 		[UIHint(UIHint.Variable)]
 		[Tooltip("The Bone's GameObject")]
 		public FsmGameObject boneGameObject;
 
-		private Animator _animator;
+		Animator _animator;
 
 		public override void Reset()
 		{
 			gameObject = null;
 			bone = HumanBodyBones.Hips;
-			boneAsString = new FsmString(){UseVariable=false};
 			boneGameObject = null;
 		}
+
 		
 		public override void OnEnter()
 		{
@@ -63,8 +61,7 @@ namespace HutongGames.PlayMaker.Actions
 
 		void GetBoneTransform()
 		{
-			HumanBodyBones _boneid =  boneAsString.IsNone?bone:(HumanBodyBones)Enum.Parse(typeof(HumanBodyBones),boneAsString.Value,true);
-			boneGameObject.Value = _animator.GetBoneTransform(_boneid).gameObject;
+			boneGameObject.Value = _animator.GetBoneTransform((HumanBodyBones)bone.Value).gameObject;
 		}
 		
 

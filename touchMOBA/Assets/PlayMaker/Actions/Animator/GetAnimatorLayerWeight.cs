@@ -1,44 +1,38 @@
-// (c) Copyright HutongGames, LLC 2010-2015. All rights reserved.
+// (c) Copyright HutongGames, LLC 2010-2016. All rights reserved.
 
 using UnityEngine;
 
 namespace HutongGames.PlayMaker.Actions
 {
-	[ActionCategory("Animator")]
+	[ActionCategory(ActionCategory.Animator)]
 	[Tooltip("Gets the layer's current weight")]
-	[HelpUrl("https://hutonggames.fogbugz.com/default.asp?W1052")]
-	public class GetAnimatorLayerWeight : FsmStateAction
+	public class GetAnimatorLayerWeight : FsmStateActionAnimatorBase
 	{
 		[RequiredField]
 		[CheckForComponent(typeof(Animator))]
-		[Tooltip("The target. An Animator component and a PlayMakerAnimatorProxy component are required")]
+		[Tooltip("The target.")]
 		public FsmOwnerDefault gameObject;
 		
 		[RequiredField]
 		[Tooltip("The layer's index")]
 		public FsmInt layerIndex;
-		
-		[Tooltip("Repeat every frame. Useful when value is subject to change over time.")]
-		public bool everyFrame;
-		
-		
+
 		[ActionSection("Results")]
 		
 		[RequiredField]
 		[UIHint(UIHint.Variable)]
 		[Tooltip("The layer's current weight")]
 		public FsmFloat layerWeight;
-		
-		private PlayMakerAnimatorMoveProxy _animatorProxy;
-		
+
 		private Animator _animator;
 		
 		public override void Reset()
 		{
+			base.Reset();
+
 			gameObject = null;
 			layerIndex = null;
 			layerWeight = null;
-			everyFrame = false;
 		}
 
 		public override void OnEnter()
@@ -59,14 +53,7 @@ namespace HutongGames.PlayMaker.Actions
 				Finish();
 				return;
 			}
-			
-			_animatorProxy = go.GetComponent<PlayMakerAnimatorMoveProxy>();
-			if (_animatorProxy!=null)
-			{
-				_animatorProxy.OnAnimatorMoveEvent += OnAnimatorMoveEvent;
-			}
-			
-			
+
 			GetLayerWeight();
 			
 			if (!everyFrame) 
@@ -74,21 +61,10 @@ namespace HutongGames.PlayMaker.Actions
 				Finish();
 			}
 		}
-	
-		public void OnAnimatorMoveEvent()
+
+		public override void OnActionUpdate() 
 		{
-			if (_animatorProxy!=null)
-			{
-				GetLayerWeight();
-			}
-		}	
-		
-		public override void OnUpdate() 
-		{
-			if (_animatorProxy==null)
-			{
-				GetLayerWeight();
-			}
+			GetLayerWeight();
 		}
 		
 		void GetLayerWeight()
@@ -96,14 +72,6 @@ namespace HutongGames.PlayMaker.Actions
 			if (_animator!=null)
 			{
 				layerWeight.Value = _animator.GetLayerWeight(layerIndex.Value);
-			}
-		}
-		
-		public override void OnExit()
-		{
-			if (_animatorProxy!=null)
-			{
-				_animatorProxy.OnAnimatorMoveEvent -= OnAnimatorMoveEvent;
 			}
 		}
 	}

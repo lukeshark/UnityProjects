@@ -1,10 +1,10 @@
-// (c) Copyright HutongGames, LLC 2010-2015. All rights reserved.
+// (c) Copyright HutongGames, LLC 2010-2016. All rights reserved.
 
 using UnityEngine;
 
 namespace HutongGames.PlayMaker.Actions
 {
-	[ActionCategory("Animator")]
+	[ActionCategory(ActionCategory.Animator)]
 	[Tooltip("Returns true if the current rig is humanoid, false if it is generic. Can also sends events")]
 	public class GetAnimatorIsHuman : FsmStateAction
 	{
@@ -68,8 +68,12 @@ namespace HutongGames.PlayMaker.Actions
 			}
 			
 			bool _isHuman = _animator.isHuman;
-			isHuman.Value = _isHuman;
-			
+
+			if (! isHuman.IsNone)
+			{
+				isHuman.Value = _isHuman;
+			}		
+
 			if (_isHuman)
 			{
 				Fsm.Event(isHumanEvent);

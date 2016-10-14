@@ -1,12 +1,12 @@
-// (c) Copyright HutongGames, LLC 2010-2015. All rights reserved.
+// (c) Copyright HutongGames, LLC 2010-2016. All rights reserved.
 
 using UnityEngine;
 
 namespace HutongGames.PlayMaker.Actions
 {
-	[ActionCategory("Animator")]
+	[ActionCategory(ActionCategory.Animator)]
 	[Tooltip("Check the current State name on a specified layer, this is more than the layer name, it holds the current state as well.")]
-	public class GetAnimatorCurrentStateInfoIsName : FsmStateAction
+	public class GetAnimatorCurrentStateInfoIsName : FsmStateActionAnimatorBase
 	{
 		[RequiredField]
 		[CheckForComponent(typeof(Animator))]
@@ -20,20 +20,24 @@ namespace HutongGames.PlayMaker.Actions
 		[Tooltip("The name to check the layer against.")]
 		public FsmString name;
 		
-		public bool everyFrame;
-		
 		[ActionSection("Results")]
-		
+
+		[UIHint(UIHint.Variable)]
+		[Tooltip("True if name matches")]
+		public FsmBool isMatching;
+
+		[Tooltip("Event send if name matches")]
 		public FsmEvent nameMatchEvent;
+
+		[Tooltip("Event send if name doesn't match")]
 		public FsmEvent nameDoNotMatchEvent;
-		
-		
-		private PlayMakerAnimatorMoveProxy _animatorProxy;
-		
+
 		private Animator _animator;
 		
 		public override void Reset()
 		{
+			base.Reset();
+
 			gameObject = null;
 			layerIndex = null;
 			
@@ -72,7 +76,7 @@ namespace HutongGames.PlayMaker.Actions
 			}
 		}
 	
-		public override void OnUpdate()
+		public override void OnActionUpdate()
 		{
 			IsName();
 		}
@@ -82,7 +86,12 @@ namespace HutongGames.PlayMaker.Actions
 			if (_animator!=null)
 			{
 				AnimatorStateInfo _info = _animator.GetCurrentAnimatorStateInfo(layerIndex.Value);
-				
+
+				if (!isMatching.IsNone)
+				{
+					isMatching.Value = _info.IsName(name.Value);
+				}
+
 				if (_info.IsName(name.Value))
 				{
 					Fsm.Event(nameMatchEvent);

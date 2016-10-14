@@ -1,21 +1,17 @@
-// (c) Copyright HutongGames, LLC 2010-2015. All rights reserved.
+// (c) Copyright HutongGames, LLC 2010-2016. All rights reserved.
 
 using UnityEngine;
 
 namespace HutongGames.PlayMaker.Actions
 {
-	[ActionCategory("Animator")]
+	[ActionCategory(ActionCategory.Animator)]
 	[Tooltip("Gets the avatar body mass center position and rotation.Optionally accept a GameObject to get the body transform. \nThe position and rotation are local to the gameobject")]
-	[HelpUrl("https://hutonggames.fogbugz.com/default.asp?W1036")]
-	public class GetAnimatorRoot: FsmStateAction
+	public class GetAnimatorRoot: FsmStateActionAnimatorBase
 	{
 		[RequiredField]
 		[CheckForComponent(typeof(Animator))]
 		[Tooltip("The target.")]
 		public FsmOwnerDefault gameObject;
-		
-		[Tooltip("Repeat every frame. Useful when changing over time.")]
-		public bool everyFrame;
 		
 		[ActionSection("Results")]
 			
@@ -29,20 +25,20 @@ namespace HutongGames.PlayMaker.Actions
 		
 		[Tooltip("If set, apply the body mass center position and rotation to this gameObject")]
 		public FsmGameObject bodyGameObject;
-		
-		private PlayMakerAnimatorMoveProxy _animatorProxy;
-		
+			
 		private Animator _animator;
 		
 		private Transform _transform;
 		
 		public override void Reset()
 		{
+			base.Reset();
+
 			gameObject = null;
 			rootPosition= null;
 			rootRotation = null;
 			bodyGameObject = null;
-			everyFrame = false;
+
 		}
 		
 		public override void OnEnter()
@@ -63,14 +59,7 @@ namespace HutongGames.PlayMaker.Actions
 				Finish();
 				return;
 			}
-			
-			_animatorProxy = go.GetComponent<PlayMakerAnimatorMoveProxy>();
-			if (_animatorProxy!=null)
-			{
-				_animatorProxy.OnAnimatorMoveEvent += OnAnimatorMoveEvent;
-			}
-			
-			
+
 			GameObject _body = bodyGameObject.Value;
 			if (_body!=null)
 			{
@@ -85,21 +74,10 @@ namespace HutongGames.PlayMaker.Actions
 			}
 			
 		}
-	
-		public void OnAnimatorMoveEvent()
+
+		public override void OnActionUpdate() 
 		{
-			if (_animatorProxy!=null)
-			{
-				DoGetBodyPosition();
-			}
-		}	
-		
-		public override void OnUpdate() 
-		{
-			if (_animatorProxy==null)
-			{
-				DoGetBodyPosition();
-			}
+			DoGetBodyPosition();
 		}
 		
 		void DoGetBodyPosition()
@@ -118,13 +96,6 @@ namespace HutongGames.PlayMaker.Actions
 				_transform.rotation = _animator.rootRotation;
 			}
 		}
-		
-		public override void OnExit()
-		{
-			if (_animatorProxy!=null)
-			{
-				_animatorProxy.OnAnimatorMoveEvent -= OnAnimatorMoveEvent;
-			}
-		}
+
 	}
 }

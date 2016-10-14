@@ -1,10 +1,10 @@
-﻿// (c) Copyright HutongGames, LLC 2010-2015. All rights reserved.
+﻿// (c) Copyright HutongGames, LLC 2010-2016. All rights reserved.
 
 using UnityEngine;
 
 namespace HutongGames.PlayMaker.Actions
 {
-	[ActionCategory("Animator")]
+	[ActionCategory(ActionCategory.Animator)]
 	[Tooltip("Plays a state. This could be used to synchronize your animation with audio or synchronize an Animator over the network.")]
 	public class AnimatorPlay : FsmStateAction
 	{
@@ -22,7 +22,10 @@ namespace HutongGames.PlayMaker.Actions
 		[Tooltip("The normalized time at which the state will play")]
 		public FsmFloat normalizedTime;
 
-		private Animator _animator;
+		[Tooltip("Repeat every frame. Useful when using normalizedTime to manually control the animation.")]
+		public bool everyFrame;
+
+		Animator _animator;
 
 		public override void Reset()
 		{
@@ -30,6 +33,7 @@ namespace HutongGames.PlayMaker.Actions
 			stateName = null;
 			layer = new FsmInt(){UseVariable=true};
 			normalizedTime = new FsmFloat(){UseVariable=true};
+			everyFrame = false;
 		}
 		
 		public override void OnEnter()
@@ -45,6 +49,20 @@ namespace HutongGames.PlayMaker.Actions
 			
 			_animator = go.GetComponent<Animator>();
 			
+			DoAnimatorPlay();
+			if (!everyFrame)
+			{
+				Finish();
+			}
+		}
+
+		public override void OnUpdate()
+		{
+			DoAnimatorPlay();
+		}
+
+		void DoAnimatorPlay()
+		{
 			if (_animator!=null)
 			{
 				int _layer = layer.IsNone?-1:layer.Value;
@@ -54,9 +72,9 @@ namespace HutongGames.PlayMaker.Actions
 				_animator.Play(stateName.Value,_layer,_normalizedTime);
 			}
 
-			Finish();
-			
 		}
+
+
 
 
 	}

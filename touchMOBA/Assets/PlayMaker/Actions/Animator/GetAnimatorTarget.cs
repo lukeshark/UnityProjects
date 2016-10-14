@@ -1,22 +1,18 @@
-// (c) Copyright HutongGames, LLC 2010-2015. All rights reserved.
+// (c) Copyright HutongGames, LLC 2010-2016. All rights reserved.
 
 using UnityEngine;
 
 namespace HutongGames.PlayMaker.Actions
 {
-	[ActionCategory("Animator")]
+	[ActionCategory(ActionCategory.Animator)]
 	[Tooltip("Gets the position and rotation of the target specified by SetTarget(AvatarTarget targetIndex, float targetNormalizedTime)).\n" +
 		"The position and rotation are only valid when a frame has being evaluated after the SetTarget call")]
-	[HelpUrl("https://hutonggames.fogbugz.com/default.asp?W1058")]
-	public class GetAnimatorTarget: FsmStateAction
+	public class GetAnimatorTarget: FsmStateActionAnimatorBase
 	{
 		[RequiredField]
 		[CheckForComponent(typeof(Animator))]
-		[Tooltip("The target. An Animator component and a PlayMakerAnimatorProxy component are required")]
+		[Tooltip("The target. An Animator component is required")]
 		public FsmOwnerDefault gameObject;
-		
-		[Tooltip("Repeat every frame. Useful when value is subject to change over time.")]
-		public bool everyFrame;
 		
 		[ActionSection("Results")]
 		
@@ -30,15 +26,15 @@ namespace HutongGames.PlayMaker.Actions
 		
 		[Tooltip("If set, apply the position and rotation to this gameObject")]
 		public FsmGameObject targetGameObject;
-		
-		private PlayMakerAnimatorMoveProxy _animatorProxy;
-		
+
 		private Animator _animator;
 		
 		private Transform _transform;
 		
 		public override void Reset()
 		{
+			base.Reset();
+
 			gameObject = null;
 			targetPosition= null;
 			targetRotation = null;
@@ -64,14 +60,7 @@ namespace HutongGames.PlayMaker.Actions
 				Finish();
 				return;
 			}
-			
-			_animatorProxy = go.GetComponent<PlayMakerAnimatorMoveProxy>();
-			if (_animatorProxy!=null)
-			{
-				_animatorProxy.OnAnimatorMoveEvent += OnAnimatorMoveEvent;
-			}
-			
-			
+
 			GameObject _target = targetGameObject.Value;
 			if (_target!=null)
 			{
@@ -86,20 +75,11 @@ namespace HutongGames.PlayMaker.Actions
 			}
 		}
 		
-		public override void OnUpdate() 
-		{
-			if (_animatorProxy==null)
-			{
-				DoGetTarget();
-			}
-		}
-		
-		public void OnAnimatorMoveEvent()
+		public override void OnActionUpdate() 
 		{
 			DoGetTarget();
 		}
 
-		
 		void DoGetTarget()
 		{		
 			if (_animator==null)
@@ -114,14 +94,6 @@ namespace HutongGames.PlayMaker.Actions
 			{
 				_transform.position = _animator.targetPosition;
 				_transform.rotation = _animator.targetRotation;
-			}
-		}
-		
-		public override void OnExit()
-		{
-			if (_animatorProxy!=null)
-			{
-				_animatorProxy.OnAnimatorMoveEvent -= OnAnimatorMoveEvent;
 			}
 		}
 	}

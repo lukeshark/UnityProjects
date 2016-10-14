@@ -1,12 +1,11 @@
-﻿// (c) Copyright HutongGames, LLC 2010-2015. All rights reserved.
+﻿// (c) Copyright HutongGames, LLC 2010-2016. All rights reserved.
 
 using UnityEngine;
 
 namespace HutongGames.PlayMaker.Actions
 {
-	[ActionCategory("Animator")]
+	[ActionCategory(ActionCategory.Animator)]
 	[Tooltip("Get the right foot bottom height.")]
-	//[HelpUrl("https://hutonggames.fogbugz.com/default.asp?W1056")]
 	public class GetAnimatorRightFootBottomHeight : FsmStateAction
 	{
 		[RequiredField]
@@ -20,14 +19,16 @@ namespace HutongGames.PlayMaker.Actions
 		[UIHint(UIHint.Variable)]
 		[Tooltip("The right foot bottom height.")]
 		public FsmFloat rightFootHeight;
-		
-		[Tooltip("Repeat every frame. Useful when value is subject to change over time.")]
+
+		[Tooltip("Repeat every frame during LateUpdate. Useful when value is subject to change over time.")]
 		public bool everyFrame;
-		
+
 		private Animator _animator;
 		
 		public override void Reset()
 		{
+			base.Reset();
+
 			gameObject = null;
 			rightFootHeight = null;
 			everyFrame = false;

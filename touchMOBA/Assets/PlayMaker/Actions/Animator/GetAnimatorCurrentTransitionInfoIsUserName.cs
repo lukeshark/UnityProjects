@@ -1,16 +1,16 @@
-﻿// (c) Copyright HutongGames, LLC 2010-2015. All rights reserved.
+// (c) Copyright HutongGames, LLC 2010-2016. All rights reserved.
 
 using UnityEngine;
 
 namespace HutongGames.PlayMaker.Actions
 {
-	[ActionCategory("Animator")]
+	[ActionCategory(ActionCategory.Animator)]
 	[Tooltip("Check the active Transition user-specified name on a specified layer.")]
-	public class GetAnimatorCurrentTransitionInfoIsUserName : FsmStateAction
+	public class GetAnimatorCurrentTransitionInfoIsUserName : FsmStateActionAnimatorBase
 	{
 		[RequiredField]
 		[CheckForComponent(typeof(Animator))]
-		[Tooltip("The target. An Animator component and a PlayMakerAnimatorProxy component are required")]
+		[Tooltip("The target. An Animator component is required")]
 		public FsmOwnerDefault gameObject;
 		
 		[RequiredField]
@@ -19,23 +19,25 @@ namespace HutongGames.PlayMaker.Actions
 		
 		[Tooltip("The user-specified name to check the transition against.")]
 		public FsmString userName;
-		
-		public bool everyFrame;
-		
+
 		[ActionSection("Results")]
-		
+
+		[UIHint(UIHint.Variable)]
+		[Tooltip("True if name matches")]
 		public FsmBool nameMatch;
 		
+		[Tooltip("Event send if name matches")]
 		public FsmEvent nameMatchEvent;
+		
+		[Tooltip("Event send if name doesn't match")]
 		public FsmEvent nameDoNotMatchEvent;
-		
-		
-		private PlayMakerAnimatorMoveProxy _animatorProxy;
-		
+
 		private Animator _animator;
 		
 		public override void Reset()
 		{
+			base.Reset();
+
 			gameObject = null;
 			layerIndex = null;
 			
@@ -44,8 +46,7 @@ namespace HutongGames.PlayMaker.Actions
 			nameMatch = null;
 			nameMatchEvent = null;
 			nameDoNotMatchEvent = null;
-			
-			everyFrame = false;
+
 		}
 		
 		public override void OnEnter()
@@ -75,7 +76,7 @@ namespace HutongGames.PlayMaker.Actions
 			}
 		}
 		
-		public override void OnUpdate()
+		public override void OnActionUpdate()
 		{
 			IsName();
 		}
@@ -85,13 +86,18 @@ namespace HutongGames.PlayMaker.Actions
 			if (_animator!=null)
 			{
 				AnimatorTransitionInfo _info = _animator.GetAnimatorTransitionInfo(layerIndex.Value);
-				
-				if (_info.IsUserName(userName.Value))
+
+				bool _isMatch = _info.IsUserName(userName.Value);
+
+				if (! nameMatch.IsNone)
 				{
-					nameMatch.Value = true;
+					nameMatch.Value = _isMatch;
+				}
+
+				if (_isMatch)
+				{
 					Fsm.Event(nameMatchEvent);
 				}else{
-					nameMatch.Value = false;
 					Fsm.Event(nameDoNotMatchEvent);
 				}
 			}

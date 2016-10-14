@@ -1,16 +1,16 @@
-// (c) Copyright HutongGames, LLC 2010-2015. All rights reserved.
+// (c) Copyright HutongGames, LLC 2010-2016. All rights reserved.
 
 using UnityEngine;
 
 namespace HutongGames.PlayMaker.Actions
 {
-	[ActionCategory("Animator")]
+	[ActionCategory(ActionCategory.Animator)]
 	[Tooltip("Gets the avatar delta position and rotation for the last evaluated frame.")]
-	public class GetAnimatorDelta: FsmStateAction
+	public class GetAnimatorDelta: FsmStateActionAnimatorBase
 	{
 		[RequiredField]
 		[CheckForComponent(typeof(Animator))]
-		[Tooltip("The target. An Animator component and a PlayMakerAnimatorProxy component are required")]
+		[Tooltip("The target. An Animator component is required")]
 		public FsmOwnerDefault gameObject;
 		
 		[UIHint(UIHint.Variable)]
@@ -20,23 +20,17 @@ namespace HutongGames.PlayMaker.Actions
 		[UIHint(UIHint.Variable)]
 		[Tooltip("The avatar delta position for the last evaluated frame")]
 		public FsmQuaternion deltaRotation;
-		
-		[Tooltip("Repeat every frame. Useful when changing over time.")]
-		public bool everyFrame;
-		
-		private PlayMakerAnimatorMoveProxy _animatorProxy;
-		
+
 		private Transform _transform;
 		
 		private Animator _animator;
 		
 		public override void Reset()
 		{
+			base.Reset();
 			gameObject = null;
 			deltaPosition= null;
 			deltaRotation = null;
-			everyFrame = false;
-			
 		}
 		
 		public override void OnEnter()
@@ -57,33 +51,19 @@ namespace HutongGames.PlayMaker.Actions
 				Finish();
 				return;
 			}
-			
-			_animatorProxy = go.GetComponent<PlayMakerAnimatorMoveProxy>();
-			if (_animatorProxy!=null)
-			{
-				_animatorProxy.OnAnimatorMoveEvent += OnAnimatorMoveEvent;
-			}
-			
-			
+
 			DoGetDeltaPosition();
 			
 			Finish();
 			
 		}
 	
-		public override void OnUpdate() 
-		{
-			if (_animatorProxy==null)
-			{
-				DoGetDeltaPosition();
-			}
-		}
-		
-		public void OnAnimatorMoveEvent()
+		public override void OnActionUpdate() 
 		{
 			DoGetDeltaPosition();
+
 		}
-		
+
 		void DoGetDeltaPosition()
 		{		
 			if (_animator==null)
@@ -94,13 +74,6 @@ namespace HutongGames.PlayMaker.Actions
 			deltaPosition.Value = _animator.deltaPosition;
 			deltaRotation.Value = _animator.deltaRotation;
 		}
-		
-		public override void OnExit()
-		{
-			if (_animatorProxy!=null)
-			{
-				_animatorProxy.OnAnimatorMoveEvent -= OnAnimatorMoveEvent;
-			}
-		}
+
 	}
 }

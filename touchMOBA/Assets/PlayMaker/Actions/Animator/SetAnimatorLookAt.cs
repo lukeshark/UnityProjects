@@ -1,18 +1,16 @@
-// (c) Copyright HutongGames, LLC 2010-2015. All rights reserved.
+﻿// (c) Copyright HutongGames, LLC 2010-2016. All rights reserved.
 
 using UnityEngine;
 
 namespace HutongGames.PlayMaker.Actions
 {
-	[ActionCategory("Animator")]
+	[ActionCategory(ActionCategory.Animator)]
 	[Tooltip("Sets look at position and weights. A GameObject can be set to control the look at position, or it can be manually expressed.")]
-	[HelpUrl("https://hutonggames.fogbugz.com/default.asp?W1071")]
 	public class SetAnimatorLookAt: FsmStateAction
 	{
 		[RequiredField]
-		//[CheckForComponent(typeof(PlayMakerAnimatorProxy))]
 		[CheckForComponent(typeof(Animator))]
-		[Tooltip("The target. An Animator component and a PlayMakerAnimatorProxy component are required")]
+		[Tooltip("The target. An Animator component is required.")]
 		public FsmOwnerDefault gameObject;
 		
 		[Tooltip("The gameObject to look at")]
@@ -41,11 +39,9 @@ namespace HutongGames.PlayMaker.Actions
 		[Tooltip("0.0 means the character is completely unrestrained in motion, 1.0 means he's completely clamped (look at becomes impossible), and 0.5 means he'll be able to move on half of the possible range (180 degrees).")]
 		public FsmFloat clampWeight;
 		
-		[Tooltip("Repeat every frame. Useful for changing over time.")]
+		[Tooltip("Repeat every frame during OnAnimatorIK(). Useful for changing over time.")]
 		public bool everyFrame;
-		
-		private PlayMakerAnimatorMoveProxy _animatorProxy;
-		
+
 		private Animator _animator;
 		
 		private Transform _transform;
@@ -62,6 +58,11 @@ namespace HutongGames.PlayMaker.Actions
 			clampWeight = 0.5f;
 			
 			everyFrame = false;
+		}
+		
+		public override void OnPreprocess ()
+		{
+			Fsm.HandleAnimatorIK = true;
 		}
 		
 		public override void OnEnter()
@@ -88,35 +89,17 @@ namespace HutongGames.PlayMaker.Actions
 			{
 				_transform = _target.transform;
 			}
+
 			
-			_animatorProxy = go.GetComponent<PlayMakerAnimatorMoveProxy>();
-			if (_animatorProxy!=null)
-			{
-				_animatorProxy.OnAnimatorMoveEvent += OnAnimatorMoveEvent;
-			}
-			
-			
+		}
+
+		public override void DoAnimatorIK (int layerIndex)
+		{
 			DoSetLookAt();
 			
 			if (!everyFrame) 
 			{
 				Finish();
-			}
-		}
-	
-		public void OnAnimatorMoveEvent()
-		{
-			if (_animatorProxy!=null)
-			{
-				DoSetLookAt();
-			}
-		}	
-		
-		public override void OnUpdate() 
-		{
-			if (_animatorProxy==null)
-			{
-				DoSetLookAt();
 			}
 		}
 		
@@ -160,16 +143,6 @@ namespace HutongGames.PlayMaker.Actions
 			}else if (!weight.IsNone) 
 			{
 				_animator.SetLookAtWeight(weight.Value);
-			}
-
-		
-		}
-		
-		public override void OnExit()
-		{
-			if (_animatorProxy!=null)
-			{
-				_animatorProxy.OnAnimatorMoveEvent -= OnAnimatorMoveEvent;
 			}
 		}
 	}

@@ -1,23 +1,19 @@
-// (c) Copyright HutongGames, LLC 2010-2015. All rights reserved.
+// (c) Copyright HutongGames, LLC 2010-2016. All rights reserved.
 
 using UnityEngine;
 
 namespace HutongGames.PlayMaker.Actions
 {
-	[ActionCategory("Animator")]
+	[ActionCategory(ActionCategory.Animator)]
 	[Tooltip("Synchronize a NavMesh Agent velocity and rotation with the animator process.")]
-	//[HelpUrl("https://hutonggames.fogbugz.com/default.asp?W1068")]
 	public class NavMeshAgentAnimatorSynchronizer : FsmStateAction
 	{
 		[RequiredField]
 		[CheckForComponent(typeof(NavMeshAgent))]
 		[CheckForComponent(typeof(Animator))]
-		[CheckForComponent(typeof(PlayMakerAnimatorMoveProxy))]
-		[Tooltip("The Agent target. An Animator component and a PlayMakerAnimatorMoveProxy component are required")]
+		[Tooltip("The Agent target. An Animator component and a NavMeshAgent component are required")]
 		public FsmOwnerDefault gameObject;
-		
-		
-		private PlayMakerAnimatorMoveProxy _animatorProxy;
+
 		private Animator _animator;
 		private NavMeshAgent _agent;
 		
@@ -27,9 +23,12 @@ namespace HutongGames.PlayMaker.Actions
 		{
 			gameObject = null;
 		}
-		
-		
-		// Code that runs on entering the state.
+
+		public override void OnPreprocess ()
+		{
+			Fsm.HandleAnimatorMove = true;
+		}
+
 		public override void OnEnter()
 		{
 			
@@ -42,8 +41,7 @@ namespace HutongGames.PlayMaker.Actions
 				return;
 			}
 			_agent = go.GetComponent<NavMeshAgent>();
-			
-			
+
 			_animator = go.GetComponent<Animator>();
 			
 			if (_animator==null)
@@ -53,28 +51,13 @@ namespace HutongGames.PlayMaker.Actions
 			}
 			
 			_trans = go.transform;
-			
-			_animatorProxy = go.GetComponent<PlayMakerAnimatorMoveProxy>();
-			if (_animatorProxy!=null)
-			{
-				_animatorProxy.OnAnimatorMoveEvent += OnAnimatorMoveEvent;
-			}
-	
 		}
 	
-		public void OnAnimatorMoveEvent()
+		public override void DoAnimatorMove()
 		{
 			_agent.velocity = _animator.deltaPosition / Time.deltaTime;
 			_trans.rotation = _animator.rootRotation;
 		}	
-		
-		public override void OnExit()
-		{
-			if (_animatorProxy!=null)
-			{
-				_animatorProxy.OnAnimatorMoveEvent -= OnAnimatorMoveEvent;
-			}
-		}
 		
 	}
 }
