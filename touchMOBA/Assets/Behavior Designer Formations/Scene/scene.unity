@@ -1,0 +1,2215 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!29 &1
+SceneSettings:
+  m_ObjectHideFlags: 0
+  m_PVSData: 
+  m_PVSObjectsArray: []
+  m_PVSPortalsArray: []
+  m_OcclusionBakeSettings:
+    smallestOccluder: 5
+    smallestHole: 0.25
+    backfaceThreshold: 100
+--- !u!104 &2
+RenderSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 7
+  m_Fog: 0
+  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_FogMode: 3
+  m_FogDensity: 0.01
+  m_LinearFogStart: 0
+  m_LinearFogEnd: 300
+  m_AmbientSkyColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
+  m_AmbientEquatorColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
+  m_AmbientGroundColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
+  m_AmbientIntensity: 1
+  m_AmbientMode: 3
+  m_SkyboxMaterial: {fileID: 0}
+  m_HaloStrength: 0.5
+  m_FlareStrength: 1
+  m_FlareFadeSpeed: 3
+  m_HaloTexture: {fileID: 0}
+  m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
+  m_DefaultReflectionMode: 0
+  m_DefaultReflectionResolution: 128
+  m_ReflectionBounces: 1
+  m_ReflectionIntensity: 1
+  m_CustomReflection: {fileID: 0}
+  m_Sun: {fileID: 0}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+--- !u!157 &4
+LightmapSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 7
+  m_GIWorkflowMode: 1
+  m_GISettings:
+    serializedVersion: 2
+    m_BounceScale: 1
+    m_IndirectOutputScale: 1
+    m_AlbedoBoost: 1
+    m_TemporalCoherenceThreshold: 1
+    m_EnvironmentLightingMode: 0
+    m_EnableBakedLightmaps: 1
+    m_EnableRealtimeLightmaps: 0
+  m_LightmapEditorSettings:
+    serializedVersion: 4
+    m_Resolution: 1
+    m_BakeResolution: 50
+    m_TextureWidth: 1024
+    m_TextureHeight: 1024
+    m_AO: 0
+    m_AOMaxDistance: 1
+    m_CompAOExponent: 0
+    m_CompAOExponentDirect: 0
+    m_Padding: 2
+    m_LightmapParameters: {fileID: 0}
+    m_LightmapsBakeMode: 1
+    m_TextureCompression: 0
+    m_DirectLightInLightProbes: 1
+    m_FinalGather: 0
+    m_FinalGatherFiltering: 1
+    m_FinalGatherRayCount: 1024
+    m_ReflectionCompression: 2
+  m_LightingDataAsset: {fileID: 0}
+  m_RuntimeCPUUsage: 25
+--- !u!196 &5
+NavMeshSettings:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_BuildSettings:
+    serializedVersion: 2
+    agentRadius: 0.5
+    agentHeight: 2
+    agentSlope: 45
+    agentClimb: 0.4
+    ledgeDropHeight: 0
+    maxJumpAcrossDistance: 0
+    accuratePlacement: 0
+    minRegionArea: 2
+    cellSize: 0.16666666
+    manualCellSize: 0
+  m_NavMeshData: {fileID: 23800000, guid: ae6338be303f2464b9df57797a257e32, type: 2}
+--- !u!1 &82588030
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 82588035}
+  - 20: {fileID: 82588034}
+  - 92: {fileID: 82588033}
+  - 124: {fileID: 82588032}
+  - 81: {fileID: 82588031}
+  - 114: {fileID: 82588036}
+  m_Layer: 0
+  m_Name: Main Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!81 &82588031
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 82588030}
+  m_Enabled: 1
+--- !u!124 &82588032
+Behaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 82588030}
+  m_Enabled: 1
+--- !u!92 &82588033
+Behaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 82588030}
+  m_Enabled: 1
+--- !u!20 &82588034
+Camera:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 82588030}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0.019607844}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+  m_StereoMirrorMode: 0
+--- !u!4 &82588035
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 82588030}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 43, z: -2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+--- !u!114 &82588036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 82588030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10af8064b472cac469fc478c944aca9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leader: {fileID: 1201778811}
+  descriptionGUISkin: {fileID: 11400000, guid: 921a8d349e61f0943b646194e4c6497c, type: 2}
+--- !u!1 &129830234
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 129830235}
+  - 33: {fileID: 129830239}
+  - 23: {fileID: 129830238}
+  - 195: {fileID: 129830237}
+  - 114: {fileID: 129830236}
+  m_Layer: 0
+  m_Name: Agent 7
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &129830235
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 129830234}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.591941, y: 0, z: -19.52505}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+--- !u!114 &129830236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 129830234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d7b55c7ecdb49a4a89fa5e6f9022861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startWhenEnabled: 0
+  pauseWhenDisabled: 0
+  restartWhenComplete: 0
+  logTaskChanges: 0
+  group: 0
+  resetValuesOnRestart: 0
+  externalBehavior: {fileID: 0}
+  mBehaviorSource:
+    behaviorName: Behavior
+    behaviorDescription: 
+    mTaskData:
+      types: []
+      parentIndex: 
+      startIndex: 
+      variableStartIndex: 
+      JSONSerialization: "{\n\t\"EntryTask\":{\n\t\t\"ObjectType\":\"BehaviorDesigner.Runtime.Tasks.EntryTask\",\n\t\t\"NodeData\":{\n\t\t\t\"Offset\":\"(0,0)\"\n\t\t},\n\t\t\"ID\":0,\n\t\t\"Name\":\"Entry\",\n\t\t\"Instant\":true\n\t},\n\t\"RootTask\":{\n\t\t\"ObjectType\":\"BehaviorDesigner.Runtime.Formations.Tasks.FollowOrders\",\n\t\t\"NodeData\":{\n\t\t\t\"Offset\":\"(0,120)\"\n\t\t},\n\t\t\"ID\":1,\n\t\t\"Name\":\"Follow
+        Orders\",\n\t\t\"Instant\":true,\n\t\t\"BehaviorDesigner.Runtime.SharedGameObject,leader\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedGameObject\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"UnityEngine.GameObject,mValue\":0\n\t\t}\n\t}\n}"
+      fieldSerializationData:
+        typeName: []
+        fieldNameHash: 
+        startIndex: 
+        dataPosition: 
+        unityObjects:
+        - {fileID: 1201778811}
+        byteData: 
+        byteDataArray: 
+      Version: 
+--- !u!195 &129830237
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 129830234}
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 1200
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 0
+  m_AutoBraking: 1
+  m_AutoRepath: 0
+  m_Height: 0.5
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!23 &129830238
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 129830234}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: d9a66e07befebab458ac293b608d0cce, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedWireframeHidden: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!33 &129830239
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 129830234}
+  m_Mesh: {fileID: 4300000, guid: be635f8f1450b7448a3f2b680ae93a4c, type: 3}
+--- !u!1 &365387958
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 365387959}
+  - 33: {fileID: 365387963}
+  - 23: {fileID: 365387962}
+  - 195: {fileID: 365387961}
+  - 114: {fileID: 365387960}
+  m_Layer: 0
+  m_Name: Agent 4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &365387959
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 365387958}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.2216458, y: 0, z: -21.345488}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+--- !u!114 &365387960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 365387958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d7b55c7ecdb49a4a89fa5e6f9022861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startWhenEnabled: 0
+  pauseWhenDisabled: 0
+  restartWhenComplete: 0
+  logTaskChanges: 0
+  group: 0
+  resetValuesOnRestart: 0
+  externalBehavior: {fileID: 0}
+  mBehaviorSource:
+    behaviorName: Behavior
+    behaviorDescription: 
+    mTaskData:
+      types: []
+      parentIndex: 
+      startIndex: 
+      variableStartIndex: 
+      JSONSerialization: "{\n\t\"EntryTask\":{\n\t\t\"ObjectType\":\"BehaviorDesigner.Runtime.Tasks.EntryTask\",\n\t\t\"NodeData\":{\n\t\t\t\"Offset\":\"(0,0)\"\n\t\t},\n\t\t\"ID\":0,\n\t\t\"Name\":\"Entry\",\n\t\t\"Instant\":true\n\t},\n\t\"RootTask\":{\n\t\t\"ObjectType\":\"BehaviorDesigner.Runtime.Formations.Tasks.FollowOrders\",\n\t\t\"NodeData\":{\n\t\t\t\"Offset\":\"(0,120)\"\n\t\t},\n\t\t\"ID\":1,\n\t\t\"Name\":\"Follow
+        Orders\",\n\t\t\"Instant\":true,\n\t\t\"BehaviorDesigner.Runtime.SharedGameObject,leader\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedGameObject\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"UnityEngine.GameObject,mValue\":0\n\t\t}\n\t}\n}"
+      fieldSerializationData:
+        typeName: []
+        fieldNameHash: 
+        startIndex: 
+        dataPosition: 
+        unityObjects:
+        - {fileID: 1201778811}
+        byteData: 
+        byteDataArray: 
+      Version: 
+--- !u!195 &365387961
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 365387958}
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 1200
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 0
+  m_AutoBraking: 1
+  m_AutoRepath: 0
+  m_Height: 0.5
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!23 &365387962
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 365387958}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: d9a66e07befebab458ac293b608d0cce, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedWireframeHidden: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!33 &365387963
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 365387958}
+  m_Mesh: {fileID: 4300000, guid: be635f8f1450b7448a3f2b680ae93a4c, type: 3}
+--- !u!1 &645014927
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 645014931}
+  - 33: {fileID: 645014930}
+  - 65: {fileID: 645014929}
+  - 23: {fileID: 645014928}
+  m_Layer: 0
+  m_Name: Cube
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!23 &645014928
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 645014927}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 13ff452dc904e3f4d9411334d3c6a43d, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedWireframeHidden: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!65 &645014929
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 645014927}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &645014930
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 645014927}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &645014931
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 645014927}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -30, y: 1, z: 0}
+  m_LocalScale: {x: 46, y: 2, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 1890991950}
+  m_RootOrder: 0
+--- !u!1 &776495362
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 776495363}
+  - 33: {fileID: 776495367}
+  - 23: {fileID: 776495366}
+  - 195: {fileID: 776495365}
+  - 114: {fileID: 776495364}
+  m_Layer: 0
+  m_Name: Agent 9
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &776495363
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 776495362}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.0830827, y: 0, z: -22.899532}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+--- !u!114 &776495364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 776495362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d7b55c7ecdb49a4a89fa5e6f9022861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startWhenEnabled: 0
+  pauseWhenDisabled: 0
+  restartWhenComplete: 0
+  logTaskChanges: 0
+  group: 0
+  resetValuesOnRestart: 0
+  externalBehavior: {fileID: 0}
+  mBehaviorSource:
+    behaviorName: Behavior
+    behaviorDescription: 
+    mTaskData:
+      types: []
+      parentIndex: 
+      startIndex: 
+      variableStartIndex: 
+      JSONSerialization: "{\n\t\"EntryTask\":{\n\t\t\"ObjectType\":\"BehaviorDesigner.Runtime.Tasks.EntryTask\",\n\t\t\"NodeData\":{\n\t\t\t\"Offset\":\"(0,0)\"\n\t\t},\n\t\t\"ID\":0,\n\t\t\"Name\":\"Entry\",\n\t\t\"Instant\":true\n\t},\n\t\"RootTask\":{\n\t\t\"ObjectType\":\"BehaviorDesigner.Runtime.Formations.Tasks.FollowOrders\",\n\t\t\"NodeData\":{\n\t\t\t\"Offset\":\"(0,120)\"\n\t\t},\n\t\t\"ID\":1,\n\t\t\"Name\":\"Follow
+        Orders\",\n\t\t\"Instant\":true,\n\t\t\"BehaviorDesigner.Runtime.SharedGameObject,leader\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedGameObject\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"UnityEngine.GameObject,mValue\":0\n\t\t}\n\t}\n}"
+      fieldSerializationData:
+        typeName: []
+        fieldNameHash: 
+        startIndex: 
+        dataPosition: 
+        unityObjects:
+        - {fileID: 1201778811}
+        byteData: 
+        byteDataArray: 
+      Version: 
+--- !u!195 &776495365
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 776495362}
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 1200
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 0
+  m_AutoBraking: 1
+  m_AutoRepath: 0
+  m_Height: 0.5
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!23 &776495366
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 776495362}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: d9a66e07befebab458ac293b608d0cce, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedWireframeHidden: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!33 &776495367
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 776495362}
+  m_Mesh: {fileID: 4300000, guid: be635f8f1450b7448a3f2b680ae93a4c, type: 3}
+--- !u!1 &786746961
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 786746965}
+  - 33: {fileID: 786746964}
+  - 65: {fileID: 786746963}
+  - 23: {fileID: 786746962}
+  m_Layer: 0
+  m_Name: Cube
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!23 &786746962
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 786746961}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 13ff452dc904e3f4d9411334d3c6a43d, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedWireframeHidden: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!65 &786746963
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 786746961}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &786746964
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 786746961}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &786746965
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 786746961}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 30, y: 1, z: 0}
+  m_LocalScale: {x: 46, y: 2, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 1890991950}
+  m_RootOrder: 1
+--- !u!1 &1034244074
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1034244075}
+  m_Layer: 0
+  m_Name: Target
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1034244075
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1034244074}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.37283325, y: 0, z: 21.478704}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+--- !u!1 &1152071789
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1152071790}
+  - 33: {fileID: 1152071794}
+  - 23: {fileID: 1152071793}
+  - 195: {fileID: 1152071792}
+  - 114: {fileID: 1152071791}
+  m_Layer: 0
+  m_Name: Agent 5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1152071790
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1152071789}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.990248, y: 0, z: -24.156658}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+--- !u!114 &1152071791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1152071789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d7b55c7ecdb49a4a89fa5e6f9022861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startWhenEnabled: 0
+  pauseWhenDisabled: 0
+  restartWhenComplete: 0
+  logTaskChanges: 0
+  group: 0
+  resetValuesOnRestart: 0
+  externalBehavior: {fileID: 0}
+  mBehaviorSource:
+    behaviorName: Behavior
+    behaviorDescription: 
+    mTaskData:
+      types: []
+      parentIndex: 
+      startIndex: 
+      variableStartIndex: 
+      JSONSerialization: "{\n\t\"EntryTask\":{\n\t\t\"ObjectType\":\"BehaviorDesigner.Runtime.Tasks.EntryTask\",\n\t\t\"NodeData\":{\n\t\t\t\"Offset\":\"(0,0)\"\n\t\t},\n\t\t\"ID\":0,\n\t\t\"Name\":\"Entry\",\n\t\t\"Instant\":true\n\t},\n\t\"RootTask\":{\n\t\t\"ObjectType\":\"BehaviorDesigner.Runtime.Formations.Tasks.FollowOrders\",\n\t\t\"NodeData\":{\n\t\t\t\"Offset\":\"(0,120)\"\n\t\t},\n\t\t\"ID\":1,\n\t\t\"Name\":\"Follow
+        Orders\",\n\t\t\"Instant\":true,\n\t\t\"BehaviorDesigner.Runtime.SharedGameObject,leader\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedGameObject\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"UnityEngine.GameObject,mValue\":0\n\t\t}\n\t}\n}"
+      fieldSerializationData:
+        typeName: []
+        fieldNameHash: 
+        startIndex: 
+        dataPosition: 
+        unityObjects:
+        - {fileID: 1201778811}
+        byteData: 
+        byteDataArray: 
+      Version: 
+--- !u!195 &1152071792
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1152071789}
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 1200
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 0
+  m_AutoBraking: 1
+  m_AutoRepath: 0
+  m_Height: 0.5
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!23 &1152071793
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1152071789}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: d9a66e07befebab458ac293b608d0cce, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedWireframeHidden: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!33 &1152071794
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1152071789}
+  m_Mesh: {fileID: 4300000, guid: be635f8f1450b7448a3f2b680ae93a4c, type: 3}
+--- !u!1 &1199843938
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1199843942}
+  - 33: {fileID: 1199843941}
+  - 64: {fileID: 1199843940}
+  - 23: {fileID: 1199843939}
+  m_Layer: 0
+  m_Name: Plane
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!23 &1199843939
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1199843938}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 4876fc9dc009bbe4493553020a561611, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedWireframeHidden: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!64 &1199843940
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1199843938}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!33 &1199843941
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1199843938}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1199843942
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1199843938}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 11, y: 1, z: 11}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+--- !u!1 &1201778811
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1201778812}
+  - 33: {fileID: 1201778830}
+  - 23: {fileID: 1201778829}
+  - 195: {fileID: 1201778813}
+  - 114: {fileID: 1201778828}
+  - 114: {fileID: 1201778827}
+  - 114: {fileID: 1201778826}
+  - 114: {fileID: 1201778825}
+  - 114: {fileID: 1201778824}
+  - 114: {fileID: 1201778823}
+  - 114: {fileID: 1201778822}
+  - 114: {fileID: 1201778821}
+  - 114: {fileID: 1201778820}
+  - 114: {fileID: 1201778819}
+  - 114: {fileID: 1201778818}
+  - 114: {fileID: 1201778817}
+  - 114: {fileID: 1201778816}
+  - 114: {fileID: 1201778815}
+  - 114: {fileID: 1201778814}
+  m_Layer: 0
+  m_Name: Agent 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1201778812
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1201778811}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.5513334, y: 0, z: -21.345488}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!195 &1201778813
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1201778811}
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 1200
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 0
+  m_AutoBraking: 1
+  m_AutoRepath: 0
+  m_Height: 0.5
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!114 &1201778814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1201778811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d7b55c7ecdb49a4a89fa5e6f9022861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startWhenEnabled: 0
+  pauseWhenDisabled: 0
+  restartWhenComplete: 0
+  logTaskChanges: 0
+  group: 14
+  resetValuesOnRestart: 0
+  externalBehavior: {fileID: 0}
+  mBehaviorSource:
+    behaviorName: Dynamic Group
+    behaviorDescription: 
+    mTaskData:
+      types: []
+      parentIndex: 
+      startIndex: 
+      variableStartIndex: 
+      JSONSerialization: "{\n\t\"EntryTask\":{\n\t\t\"ObjectType\":\"BehaviorDesigner.Runtime.Tasks.EntryTask\",\n\t\t\"NodeData\":{\n\t\t\t\"Offset\":\"(0,0)\"\n\t\t},\n\t\t\"ID\":0,\n\t\t\"Name\":\"Entry\",\n\t\t\"Instant\":true\n\t},\n\t\"RootTask\":{\n\t\t\"ObjectType\":\"BehaviorDesigner.Runtime.Formations.Tasks.Circle\",\n\t\t\"NodeData\":{\n\t\t\t\"Offset\":\"(0,120)\"\n\t\t},\n\t\t\"ID\":1,\n\t\t\"Name\":\"Circle\",\n\t\t\"Instant\":true,\n\t\t\"BehaviorDesigner.Runtime.SharedFloat,radius\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Single,mValue\":5\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedTransform,targetTransform\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedTransform\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"UnityEngine.Transform,mValue\":0\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedVector3,targetPosition\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedVector3\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"UnityEngine.Vector3,mValue\":\"(0,0,0)\"\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedFloat,lookAhead\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\"Name\":null,\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Single,mValue\":1\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedFloat,fullSpeed\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Single,mValue\":3.5\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedFloat,formationSpeed\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Single,mValue\":1\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedFloat,slowdownSpeed\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\"Name\":null,\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Single,mValue\":1\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedFloat,waitTime\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Single,mValue\":0\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedBool,isLeader\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedBool\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Boolean,mValue\":false\n\t\t}\n\t}\n}"
+      fieldSerializationData:
+        typeName: []
+        fieldNameHash: 
+        startIndex: 
+        dataPosition: 
+        unityObjects:
+        - {fileID: 1034244075}
+        byteData: 
+        byteDataArray: 
+      Version: 
+--- !u!114 &1201778815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1201778811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d7b55c7ecdb49a4a89fa5e6f9022861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startWhenEnabled: 0
+  pauseWhenDisabled: 0
+  restartWhenComplete: 0
+  logTaskChanges: 0
+  group: 13
+  resetValuesOnRestart: 0
+  externalBehavior: {fileID: 0}
+  mBehaviorSource:
+    behaviorName: Circle
+    behaviorDescription: 
+    mTaskData:
+      types: []
+      parentIndex: 
+      startIndex: 
+      variableStartIndex: 
+      JSONSerialization: "{\n\t\"EntryTask\":{\n\t\t\"ObjectType\":\"BehaviorDesigner.Runtime.Tasks.EntryTask\",\n\t\t\"NodeData\":{\n\t\t\t\"Offset\":\"(0,0)\"\n\t\t},\n\t\t\"ID\":0,\n\t\t\"Name\":\"Entry\",\n\t\t\"Instant\":true\n\t},\n\t\"RootTask\":{\n\t\t\"ObjectType\":\"BehaviorDesigner.Runtime.Formations.Tasks.Circle\",\n\t\t\"NodeData\":{\n\t\t\t\"Offset\":\"(0,120)\"\n\t\t},\n\t\t\"ID\":1,\n\t\t\"Name\":\"Circle\",\n\t\t\"Instant\":true,\n\t\t\"BehaviorDesigner.Runtime.SharedFloat,radius\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Single,mValue\":3\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedTransform,targetTransform\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedTransform\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedVector3,targetPosition\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedVector3\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"UnityEngine.Vector3,mValue\":\"(0,0,0)\"\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedFloat,lookAhead\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\"Name\":null,\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Single,mValue\":6\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedFloat,fullSpeed\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Single,mValue\":3.5\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedFloat,formationSpeed\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Single,mValue\":2\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedFloat,slowdownSpeed\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\"Name\":null,\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Single,mValue\":1.5\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedFloat,waitTime\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Single,mValue\":0\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedBool,isLeader\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedBool\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Boolean,mValue\":false\n\t\t}\n\t}\n}"
+      fieldSerializationData:
+        typeName: []
+        fieldNameHash: 
+        startIndex: 
+        dataPosition: 
+        unityObjects: []
+        byteData: 
+        byteDataArray: 
+      Version: 
+--- !u!114 &1201778816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1201778811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d7b55c7ecdb49a4a89fa5e6f9022861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startWhenEnabled: 0
+  pauseWhenDisabled: 0
+  restartWhenComplete: 0
+  logTaskChanges: 0
+  group: 12
+  resetValuesOnRestart: 0
+  externalBehavior: {fileID: 0}
+  mBehaviorSource:
+    behaviorName: Square
+    behaviorDescription: 
+    mTaskData:
+      types: []
+      parentIndex: 
+      startIndex: 
+      variableStartIndex: 
+      JSONSerialization: "{\n\t\"EntryTask\":{\n\t\t\"ObjectType\":\"BehaviorDesigner.Runtime.Tasks.EntryTask\",\n\t\t\"NodeData\":{\n\t\t\t\"Offset\":\"(0,0)\"\n\t\t},\n\t\t\"ID\":0,\n\t\t\"Name\":\"Entry\",\n\t\t\"Instant\":true\n\t},\n\t\"RootTask\":{\n\t\t\"ObjectType\":\"BehaviorDesigner.Runtime.Formations.Tasks.Square\",\n\t\t\"NodeData\":{\n\t\t\t\"Offset\":\"(0,120)\"\n\t\t},\n\t\t\"ID\":1,\n\t\t\"Name\":\"Square\",\n\t\t\"Instant\":true,\n\t\t\"BehaviorDesigner.Runtime.SharedFloat,length\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Single,mValue\":5\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedTransform,targetTransform\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedTransform\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"UnityEngine.Transform,mValue\":0\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedVector3,targetPosition\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedVector3\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"UnityEngine.Vector3,mValue\":\"(0,0,0)\"\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedFloat,lookAhead\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\"Name\":null,\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Single,mValue\":6\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedFloat,fullSpeed\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Single,mValue\":3.5\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedFloat,formationSpeed\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Single,mValue\":2\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedFloat,slowdownSpeed\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\"Name\":null,\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Single,mValue\":1.5\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedFloat,waitTime\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Single,mValue\":0\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedBool,isLeader\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedBool\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Boolean,mValue\":false\n\t\t}\n\t}\n}"
+      fieldSerializationData:
+        typeName: []
+        fieldNameHash: 
+        startIndex: 
+        dataPosition: 
+        unityObjects:
+        - {fileID: 1034244075}
+        byteData: 
+        byteDataArray: 
+      Version: 
+--- !u!114 &1201778817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1201778811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d7b55c7ecdb49a4a89fa5e6f9022861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startWhenEnabled: 0
+  pauseWhenDisabled: 0
+  restartWhenComplete: 0
+  logTaskChanges: 0
+  group: 11
+  resetValuesOnRestart: 0
+  externalBehavior: {fileID: 0}
+  mBehaviorSource:
+    behaviorName: Triangle
+    behaviorDescription: 
+    mTaskData:
+      types: []
+      parentIndex: 
+      startIndex: 
+      variableStartIndex: 
+      JSONSerialization: "{\n\t\"EntryTask\":{\n\t\t\"ObjectType\":\"BehaviorDesigner.Runtime.Tasks.EntryTask\",\n\t\t\"NodeData\":{\n\t\t\t\"Offset\":\"(0,0)\"\n\t\t},\n\t\t\"ID\":0,\n\t\t\"Name\":\"Entry\",\n\t\t\"Instant\":true\n\t},\n\t\"RootTask\":{\n\t\t\"ObjectType\":\"BehaviorDesigner.Runtime.Formations.Tasks.Triangle\",\n\t\t\"NodeData\":{\n\t\t\t\"Offset\":\"(0,120)\"\n\t\t},\n\t\t\"ID\":1,\n\t\t\"Name\":\"Triangle\",\n\t\t\"Instant\":true,\n\t\t\"BehaviorDesigner.Runtime.SharedFloat,length\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Single,mValue\":5\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedTransform,targetTransform\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedTransform\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"UnityEngine.Transform,mValue\":0\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedVector3,targetPosition\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedVector3\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"UnityEngine.Vector3,mValue\":\"(0,0,0)\"\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedFloat,lookAhead\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\"Name\":null,\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Single,mValue\":6\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedFloat,fullSpeed\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Single,mValue\":3.5\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedFloat,formationSpeed\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Single,mValue\":2\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedFloat,slowdownSpeed\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\"Name\":null,\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Single,mValue\":1.5\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedFloat,waitTime\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Single,mValue\":0\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedBool,isLeader\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedBool\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Boolean,mValue\":false\n\t\t}\n\t}\n}"
+      fieldSerializationData:
+        typeName: []
+        fieldNameHash: 
+        startIndex: 
+        dataPosition: 
+        unityObjects:
+        - {fileID: 1034244075}
+        byteData: 
+        byteDataArray: 
+      Version: 
+--- !u!114 &1201778818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1201778811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d7b55c7ecdb49a4a89fa5e6f9022861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startWhenEnabled: 0
+  pauseWhenDisabled: 0
+  restartWhenComplete: 0
+  logTaskChanges: 0
+  group: 10
+  resetValuesOnRestart: 0
+  externalBehavior: {fileID: 0}
+  mBehaviorSource:
+    behaviorName: Diamond
+    behaviorDescription: 
+    mTaskData:
+      types: []
+      parentIndex: 
+      startIndex: 
+      variableStartIndex: 
+      JSONSerialization: "{\n\t\"EntryTask\":{\n\t\t\"ObjectType\":\"BehaviorDesigner.Runtime.Tasks.EntryTask\",\n\t\t\"NodeData\":{\n\t\t\t\"Offset\":\"(0,0)\"\n\t\t},\n\t\t\"ID\":0,\n\t\t\"Name\":\"Entry\",\n\t\t\"Instant\":true\n\t},\n\t\"RootTask\":{\n\t\t\"ObjectType\":\"BehaviorDesigner.Runtime.Formations.Tasks.Diamond\",\n\t\t\"NodeData\":{\n\t\t\t\"Offset\":\"(0,120)\"\n\t\t},\n\t\t\"ID\":1,\n\t\t\"Name\":\"Diamond\",\n\t\t\"Instant\":true,\n\t\t\"BehaviorDesigner.Runtime.SharedVector2,separation\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedVector2\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"UnityEngine.Vector2,mValue\":\"(2,2)\"\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedBool,backPositionOffset\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedBool\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Boolean,mValue\":true\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedTransform,targetTransform\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedTransform\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"UnityEngine.Transform,mValue\":0\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedVector3,targetPosition\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedVector3\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"UnityEngine.Vector3,mValue\":\"(0,0,0)\"\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedFloat,lookAhead\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\"Name\":null,\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Single,mValue\":6\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedFloat,fullSpeed\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Single,mValue\":3.5\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedFloat,formationSpeed\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Single,mValue\":2\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedFloat,slowdownSpeed\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\"Name\":null,\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Single,mValue\":1.5\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedFloat,waitTime\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Single,mValue\":0\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedBool,isLeader\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedBool\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Boolean,mValue\":false\n\t\t}\n\t}\n}"
+      fieldSerializationData:
+        typeName: []
+        fieldNameHash: 
+        startIndex: 
+        dataPosition: 
+        unityObjects:
+        - {fileID: 1034244075}
+        byteData: 
+        byteDataArray: 
+      Version: 
+--- !u!114 &1201778819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1201778811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d7b55c7ecdb49a4a89fa5e6f9022861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startWhenEnabled: 0
+  pauseWhenDisabled: 0
+  restartWhenComplete: 0
+  logTaskChanges: 0
+  group: 9
+  resetValuesOnRestart: 0
+  externalBehavior: {fileID: 0}
+  mBehaviorSource:
+    behaviorName: Swarm
+    behaviorDescription: 
+    mTaskData:
+      types: []
+      parentIndex: 
+      startIndex: 
+      variableStartIndex: 
+      JSONSerialization: "{\n\t\"EntryTask\":{\n\t\t\"ObjectType\":\"BehaviorDesigner.Runtime.Tasks.EntryTask\",\n\t\t\"NodeData\":{\n\t\t\t\"Offset\":\"(0,0)\"\n\t\t},\n\t\t\"ID\":0,\n\t\t\"Name\":\"Entry\",\n\t\t\"Instant\":true\n\t},\n\t\"RootTask\":{\n\t\t\"ObjectType\":\"BehaviorDesigner.Runtime.Formations.Tasks.Swarm\",\n\t\t\"NodeData\":{\n\t\t\t\"Offset\":\"(0,120)\"\n\t\t},\n\t\t\"ID\":1,\n\t\t\"Name\":\"Swarm\",\n\t\t\"Instant\":true,\n\t\t\"BehaviorDesigner.Runtime.SharedFloat,radius\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Single,mValue\":5\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedInt,maxPlacementAttempts\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedInt\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Int32,mValue\":10\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedTransform,targetTransform\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedTransform\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"UnityEngine.Transform,mValue\":0\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedVector3,targetPosition\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedVector3\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"UnityEngine.Vector3,mValue\":\"(0,0,0)\"\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedFloat,lookAhead\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\"Name\":null,\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Single,mValue\":6\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedFloat,fullSpeed\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Single,mValue\":3.5\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedFloat,formationSpeed\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Single,mValue\":2\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedFloat,slowdownSpeed\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\"Name\":null,\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Single,mValue\":1.5\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedFloat,waitTime\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Single,mValue\":0\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedBool,isLeader\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedBool\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Boolean,mValue\":false\n\t\t}\n\t}\n}"
+      fieldSerializationData:
+        typeName: []
+        fieldNameHash: 
+        startIndex: 
+        dataPosition: 
+        unityObjects:
+        - {fileID: 1034244075}
+        byteData: 
+        byteDataArray: 
+      Version: 
+--- !u!114 &1201778820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1201778811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d7b55c7ecdb49a4a89fa5e6f9022861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startWhenEnabled: 0
+  pauseWhenDisabled: 0
+  restartWhenComplete: 0
+  logTaskChanges: 0
+  group: 8
+  resetValuesOnRestart: 0
+  externalBehavior: {fileID: 0}
+  mBehaviorSource:
+    behaviorName: Skrimisher
+    behaviorDescription: 
+    mTaskData:
+      types: []
+      parentIndex: 
+      startIndex: 
+      variableStartIndex: 
+      JSONSerialization: "{\n\t\"EntryTask\":{\n\t\t\"ObjectType\":\"BehaviorDesigner.Runtime.Tasks.EntryTask\",\n\t\t\"NodeData\":{\n\t\t\t\"Offset\":\"(0,0)\"\n\t\t},\n\t\t\"ID\":0,\n\t\t\"Name\":\"Entry\",\n\t\t\"Instant\":true\n\t},\n\t\"RootTask\":{\n\t\t\"ObjectType\":\"BehaviorDesigner.Runtime.Formations.Tasks.Skirmisher\",\n\t\t\"NodeData\":{\n\t\t\t\"Offset\":\"(0,120)\"\n\t\t},\n\t\t\"ID\":1,\n\t\t\"Name\":\"Skirmisher\",\n\t\t\"Instant\":true,\n\t\t\"BehaviorDesigner.Runtime.SharedVector2,minSeparation\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedVector2\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"UnityEngine.Vector2,mValue\":\"(1,1)\"\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedVector2,maxSeparation\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedVector2\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"UnityEngine.Vector2,mValue\":\"(3,2)\"\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedTransform,targetTransform\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedTransform\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"UnityEngine.Transform,mValue\":0\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedVector3,targetPosition\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedVector3\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"UnityEngine.Vector3,mValue\":\"(0,0,0)\"\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedFloat,lookAhead\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\"Name\":null,\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Single,mValue\":0\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedFloat,fullSpeed\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Single,mValue\":3.5\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedFloat,formationSpeed\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Single,mValue\":2\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedFloat,slowdownSpeed\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\"Name\":null,\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Single,mValue\":1.5\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedFloat,waitTime\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Single,mValue\":0\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedBool,isLeader\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedBool\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Boolean,mValue\":false\n\t\t}\n\t}\n}"
+      fieldSerializationData:
+        typeName: []
+        fieldNameHash: 
+        startIndex: 
+        dataPosition: 
+        unityObjects:
+        - {fileID: 1034244075}
+        byteData: 
+        byteDataArray: 
+      Version: 
+--- !u!114 &1201778821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1201778811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d7b55c7ecdb49a4a89fa5e6f9022861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startWhenEnabled: 0
+  pauseWhenDisabled: 0
+  restartWhenComplete: 0
+  logTaskChanges: 0
+  group: 7
+  resetValuesOnRestart: 0
+  externalBehavior: {fileID: 0}
+  mBehaviorSource:
+    behaviorName: Arc
+    behaviorDescription: 
+    mTaskData:
+      types: []
+      parentIndex: 
+      startIndex: 
+      variableStartIndex: 
+      JSONSerialization: "{\n\t\"EntryTask\":{\n\t\t\"ObjectType\":\"BehaviorDesigner.Runtime.Tasks.EntryTask\",\n\t\t\"NodeData\":{\n\t\t\t\"Offset\":\"(0,0)\"\n\t\t},\n\t\t\"ID\":0,\n\t\t\"Name\":\"Entry\",\n\t\t\"Instant\":true\n\t},\n\t\"RootTask\":{\n\t\t\"ObjectType\":\"BehaviorDesigner.Runtime.Formations.Tasks.Arc\",\n\t\t\"NodeData\":{\n\t\t\t\"Offset\":\"(0,120)\"\n\t\t},\n\t\t\"ID\":1,\n\t\t\"Name\":\"Arc\",\n\t\t\"Instant\":true,\n\t\t\"BehaviorDesigner.Runtime.SharedFloat,radius\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Single,mValue\":10\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedBool,concave\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedBool\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Boolean,mValue\":true\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedTransform,targetTransform\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedTransform\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"UnityEngine.Transform,mValue\":0\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedVector3,targetPosition\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedVector3\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"UnityEngine.Vector3,mValue\":\"(0,0,0)\"\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedFloat,lookAhead\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\"Name\":null,\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Single,mValue\":6\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedFloat,fullSpeed\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Single,mValue\":3.5\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedFloat,formationSpeed\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Single,mValue\":2\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedFloat,slowdownSpeed\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\"Name\":null,\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Single,mValue\":1.5\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedFloat,waitTime\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Single,mValue\":0\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedBool,isLeader\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedBool\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Boolean,mValue\":false\n\t\t}\n\t}\n}"
+      fieldSerializationData:
+        typeName: []
+        fieldNameHash: 
+        startIndex: 
+        dataPosition: 
+        unityObjects:
+        - {fileID: 1034244075}
+        byteData: 
+        byteDataArray: 
+      Version: 
+--- !u!114 &1201778822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1201778811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d7b55c7ecdb49a4a89fa5e6f9022861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startWhenEnabled: 0
+  pauseWhenDisabled: 0
+  restartWhenComplete: 0
+  logTaskChanges: 0
+  group: 6
+  resetValuesOnRestart: 0
+  externalBehavior: {fileID: 0}
+  mBehaviorSource:
+    behaviorName: V
+    behaviorDescription: 
+    mTaskData:
+      types: []
+      parentIndex: 
+      startIndex: 
+      variableStartIndex: 
+      JSONSerialization: "{\n\t\"EntryTask\":{\n\t\t\"ObjectType\":\"BehaviorDesigner.Runtime.Tasks.EntryTask\",\n\t\t\"NodeData\":{\n\t\t\t\"Offset\":\"(0,0)\"\n\t\t},\n\t\t\"ID\":0,\n\t\t\"Name\":\"Entry\",\n\t\t\"Instant\":true\n\t},\n\t\"RootTask\":{\n\t\t\"ObjectType\":\"BehaviorDesigner.Runtime.Formations.Tasks.V\",\n\t\t\"NodeData\":{\n\t\t\t\"Offset\":\"(0,120)\"\n\t\t},\n\t\t\"ID\":1,\n\t\t\"Name\":\"V\",\n\t\t\"Instant\":true,\n\t\t\"BehaviorDesigner.Runtime.SharedVector2,separation\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedVector2\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"UnityEngine.Vector2,mValue\":\"(2,2)\"\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedTransform,targetTransform\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedTransform\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"UnityEngine.Transform,mValue\":0\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedVector3,targetPosition\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedVector3\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"UnityEngine.Vector3,mValue\":\"(0,0,0)\"\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedFloat,lookAhead\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\"Name\":null,\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Single,mValue\":6\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedFloat,fullSpeed\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Single,mValue\":3.5\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedFloat,formationSpeed\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Single,mValue\":2\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedFloat,slowdownSpeed\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\"Name\":null,\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Single,mValue\":1.5\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedFloat,waitTime\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Single,mValue\":0\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedBool,isLeader\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedBool\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Boolean,mValue\":false\n\t\t}\n\t}\n}"
+      fieldSerializationData:
+        typeName: []
+        fieldNameHash: 
+        startIndex: 
+        dataPosition: 
+        unityObjects:
+        - {fileID: 1034244075}
+        byteData: 
+        byteDataArray: 
+      Version: 
+--- !u!114 &1201778823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1201778811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d7b55c7ecdb49a4a89fa5e6f9022861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startWhenEnabled: 0
+  pauseWhenDisabled: 0
+  restartWhenComplete: 0
+  logTaskChanges: 0
+  group: 5
+  resetValuesOnRestart: 0
+  externalBehavior: {fileID: 0}
+  mBehaviorSource:
+    behaviorName: Wedge
+    behaviorDescription: 
+    mTaskData:
+      types: []
+      parentIndex: 
+      startIndex: 
+      variableStartIndex: 
+      JSONSerialization: "{\n\t\"EntryTask\":{\n\t\t\"ObjectType\":\"BehaviorDesigner.Runtime.Tasks.EntryTask\",\n\t\t\"NodeData\":{\n\t\t\t\"Offset\":\"(0,0)\"\n\t\t},\n\t\t\"ID\":0,\n\t\t\"Name\":\"Entry\",\n\t\t\"Instant\":true\n\t},\n\t\"RootTask\":{\n\t\t\"ObjectType\":\"BehaviorDesigner.Runtime.Formations.Tasks.Wedge\",\n\t\t\"NodeData\":{\n\t\t\t\"Offset\":\"(0,120)\"\n\t\t},\n\t\t\"ID\":1,\n\t\t\"Name\":\"Wedge\",\n\t\t\"Instant\":true,\n\t\t\"BehaviorDesigner.Runtime.SharedVector2,separation\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedVector2\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"UnityEngine.Vector2,mValue\":\"(2,2)\"\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedBool,fill\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedBool\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Boolean,mValue\":false\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedTransform,targetTransform\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedTransform\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"UnityEngine.Transform,mValue\":0\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedVector3,targetPosition\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedVector3\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"UnityEngine.Vector3,mValue\":\"(0,0,0)\"\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedFloat,lookAhead\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\"Name\":null,\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Single,mValue\":6\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedFloat,fullSpeed\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Single,mValue\":3.5\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedFloat,formationSpeed\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Single,mValue\":2\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedFloat,slowdownSpeed\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\"Name\":null,\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Single,mValue\":1.5\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedFloat,waitTime\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Single,mValue\":0\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedBool,isLeader\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedBool\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Boolean,mValue\":false\n\t\t}\n\t}\n}"
+      fieldSerializationData:
+        typeName: []
+        fieldNameHash: 
+        startIndex: 
+        dataPosition: 
+        unityObjects:
+        - {fileID: 1034244075}
+        byteData: 
+        byteDataArray: 
+      Version: 
+--- !u!114 &1201778824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1201778811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d7b55c7ecdb49a4a89fa5e6f9022861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startWhenEnabled: 0
+  pauseWhenDisabled: 0
+  restartWhenComplete: 0
+  logTaskChanges: 0
+  group: 4
+  resetValuesOnRestart: 0
+  externalBehavior: {fileID: 0}
+  mBehaviorSource:
+    behaviorName: Echelon
+    behaviorDescription: 
+    mTaskData:
+      types: []
+      parentIndex: 
+      startIndex: 
+      variableStartIndex: 
+      JSONSerialization: "{\n\t\"EntryTask\":{\n\t\t\"ObjectType\":\"BehaviorDesigner.Runtime.Tasks.EntryTask\",\n\t\t\"NodeData\":{\n\t\t\t\"Offset\":\"(0,0)\"\n\t\t},\n\t\t\"ID\":0,\n\t\t\"Name\":\"Entry\",\n\t\t\"Instant\":true\n\t},\n\t\"RootTask\":{\n\t\t\"ObjectType\":\"BehaviorDesigner.Runtime.Formations.Tasks.Echelon\",\n\t\t\"NodeData\":{\n\t\t\t\"Offset\":\"(0,120)\"\n\t\t},\n\t\t\"ID\":1,\n\t\t\"Name\":\"Echelon\",\n\t\t\"Instant\":true,\n\t\t\"BehaviorDesigner.Runtime.SharedVector2,separation\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedVector2\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"UnityEngine.Vector2,mValue\":\"(2,2)\"\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedBool,right\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedBool\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Boolean,mValue\":false\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedTransform,targetTransform\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedTransform\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"UnityEngine.Transform,mValue\":0\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedVector3,targetPosition\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedVector3\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"UnityEngine.Vector3,mValue\":\"(0,0,0)\"\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedFloat,lookAhead\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\"Name\":null,\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Single,mValue\":6\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedFloat,fullSpeed\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Single,mValue\":3.5\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedFloat,formationSpeed\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Single,mValue\":2\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedFloat,slowdownSpeed\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\"Name\":null,\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Single,mValue\":1.5\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedFloat,waitTime\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Single,mValue\":0\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedBool,isLeader\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedBool\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Boolean,mValue\":false\n\t\t}\n\t}\n}"
+      fieldSerializationData:
+        typeName: []
+        fieldNameHash: 
+        startIndex: 
+        dataPosition: 
+        unityObjects:
+        - {fileID: 1034244075}
+        byteData: 
+        byteDataArray: 
+      Version: 
+--- !u!114 &1201778825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1201778811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d7b55c7ecdb49a4a89fa5e6f9022861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startWhenEnabled: 0
+  pauseWhenDisabled: 0
+  restartWhenComplete: 0
+  logTaskChanges: 0
+  group: 3
+  resetValuesOnRestart: 0
+  externalBehavior: {fileID: 0}
+  mBehaviorSource:
+    behaviorName: Line
+    behaviorDescription: 
+    mTaskData:
+      types: []
+      parentIndex: 
+      startIndex: 
+      variableStartIndex: 
+      JSONSerialization: "{\n\t\"EntryTask\":{\n\t\t\"ObjectType\":\"BehaviorDesigner.Runtime.Tasks.EntryTask\",\n\t\t\"NodeData\":{\n\t\t\t\"Offset\":\"(0,0)\"\n\t\t},\n\t\t\"ID\":0,\n\t\t\"Name\":\"Entry\",\n\t\t\"Instant\":true\n\t},\n\t\"RootTask\":{\n\t\t\"ObjectType\":\"BehaviorDesigner.Runtime.Formations.Tasks.Line\",\n\t\t\"NodeData\":{\n\t\t\t\"Offset\":\"(0,120)\"\n\t\t},\n\t\t\"ID\":1,\n\t\t\"Name\":\"Line\",\n\t\t\"Instant\":true,\n\t\t\"BehaviorDesigner.Runtime.SharedFloat,separation\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Single,mValue\":2\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedBool,right\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedBool\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Boolean,mValue\":false\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedTransform,targetTransform\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedTransform\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"UnityEngine.Transform,mValue\":0\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedVector3,targetPosition\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedVector3\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"UnityEngine.Vector3,mValue\":\"(0,0,0)\"\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedFloat,lookAhead\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\"Name\":null,\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Single,mValue\":6\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedFloat,fullSpeed\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Single,mValue\":3.5\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedFloat,formationSpeed\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Single,mValue\":2\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedFloat,slowdownSpeed\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\"Name\":null,\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Single,mValue\":1.5\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedFloat,waitTime\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Single,mValue\":0\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedBool,isLeader\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedBool\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Boolean,mValue\":false\n\t\t}\n\t}\n}"
+      fieldSerializationData:
+        typeName: []
+        fieldNameHash: 
+        startIndex: 
+        dataPosition: 
+        unityObjects:
+        - {fileID: 1034244075}
+        byteData: 
+        byteDataArray: 
+      Version: 
+--- !u!114 &1201778826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1201778811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d7b55c7ecdb49a4a89fa5e6f9022861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startWhenEnabled: 0
+  pauseWhenDisabled: 0
+  restartWhenComplete: 0
+  logTaskChanges: 0
+  group: 2
+  resetValuesOnRestart: 0
+  externalBehavior: {fileID: 0}
+  mBehaviorSource:
+    behaviorName: Grid
+    behaviorDescription: 
+    mTaskData:
+      types: []
+      parentIndex: 
+      startIndex: 
+      variableStartIndex: 
+      JSONSerialization: "{\n\t\"EntryTask\":{\n\t\t\"ObjectType\":\"BehaviorDesigner.Runtime.Tasks.EntryTask\",\n\t\t\"NodeData\":{\n\t\t\t\"Offset\":\"(0,0)\"\n\t\t},\n\t\t\"ID\":0,\n\t\t\"Name\":\"Entry\",\n\t\t\"Instant\":true\n\t},\n\t\"RootTask\":{\n\t\t\"ObjectType\":\"BehaviorDesigner.Runtime.Formations.Tasks.Grid\",\n\t\t\"NodeData\":{\n\t\t\t\"Offset\":\"(0,120)\"\n\t\t},\n\t\t\"ID\":1,\n\t\t\"Name\":\"Grid\",\n\t\t\"Instant\":true,\n\t\t\"BehaviorDesigner.Runtime.SharedVector2,separation\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedVector2\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"UnityEngine.Vector2,mValue\":\"(2,2)\"\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedTransform,targetTransform\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedTransform\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"UnityEngine.Transform,mValue\":0\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedVector3,targetPosition\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedVector3\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"UnityEngine.Vector3,mValue\":\"(0,0,0)\"\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedFloat,lookAhead\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\"Name\":null,\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Single,mValue\":6\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedFloat,fullSpeed\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Single,mValue\":3.5\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedFloat,formationSpeed\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Single,mValue\":2\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedFloat,slowdownSpeed\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\"Name\":null,\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Single,mValue\":1.5\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedFloat,waitTime\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Single,mValue\":0\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedBool,isLeader\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedBool\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Boolean,mValue\":false\n\t\t}\n\t}\n}"
+      fieldSerializationData:
+        typeName: []
+        fieldNameHash: 
+        startIndex: 
+        dataPosition: 
+        unityObjects:
+        - {fileID: 1034244075}
+        byteData: 
+        byteDataArray: 
+      Version: 
+--- !u!114 &1201778827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1201778811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d7b55c7ecdb49a4a89fa5e6f9022861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startWhenEnabled: 0
+  pauseWhenDisabled: 0
+  restartWhenComplete: 0
+  logTaskChanges: 0
+  group: 1
+  resetValuesOnRestart: 0
+  externalBehavior: {fileID: 0}
+  mBehaviorSource:
+    behaviorName: Row
+    behaviorDescription: 
+    mTaskData:
+      types: []
+      parentIndex: 
+      startIndex: 
+      variableStartIndex: 
+      JSONSerialization: "{\n\t\"EntryTask\":{\n\t\t\"ObjectType\":\"BehaviorDesigner.Runtime.Tasks.EntryTask\",\n\t\t\"NodeData\":{\n\t\t\t\"Offset\":\"(0,0)\"\n\t\t},\n\t\t\"ID\":0,\n\t\t\"Name\":\"Entry\",\n\t\t\"Instant\":true\n\t},\n\t\"RootTask\":{\n\t\t\"ObjectType\":\"BehaviorDesigner.Runtime.Formations.Tasks.Row\",\n\t\t\"NodeData\":{\n\t\t\t\"Offset\":\"(0,120)\"\n\t\t},\n\t\t\"ID\":1,\n\t\t\"Name\":\"Row\",\n\t\t\"Instant\":true,\n\t\t\"BehaviorDesigner.Runtime.SharedVector2,separation\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedVector2\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"UnityEngine.Vector2,mValue\":\"(2,2)\"\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedInt,rows\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedInt\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Int32,mValue\":2\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedTransform,targetTransform\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedTransform\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"UnityEngine.Transform,mValue\":0\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedVector3,targetPosition\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedVector3\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"UnityEngine.Vector3,mValue\":\"(0,0,0)\"\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedFloat,lookAhead\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\"Name\":null,\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Single,mValue\":6\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedFloat,fullSpeed\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Single,mValue\":3.5\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedFloat,formationSpeed\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Single,mValue\":2\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedFloat,slowdownSpeed\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\"Name\":null,\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Single,mValue\":1.5\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedFloat,waitTime\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Single,mValue\":0\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedBool,isLeader\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedBool\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Boolean,mValue\":false\n\t\t}\n\t}\n}"
+      fieldSerializationData:
+        typeName: []
+        fieldNameHash: 
+        startIndex: 
+        dataPosition: 
+        unityObjects:
+        - {fileID: 1034244075}
+        byteData: 
+        byteDataArray: 
+      Version: 
+--- !u!114 &1201778828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1201778811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d7b55c7ecdb49a4a89fa5e6f9022861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startWhenEnabled: 0
+  pauseWhenDisabled: 0
+  restartWhenComplete: 0
+  logTaskChanges: 0
+  group: 0
+  resetValuesOnRestart: 0
+  externalBehavior: {fileID: 0}
+  mBehaviorSource:
+    behaviorName: Column
+    behaviorDescription: 
+    mTaskData:
+      types: []
+      parentIndex: 
+      startIndex: 
+      variableStartIndex: 
+      JSONSerialization: "{\n\t\"EntryTask\":{\n\t\t\"ObjectType\":\"BehaviorDesigner.Runtime.Tasks.EntryTask\",\n\t\t\"NodeData\":{\n\t\t\t\"Offset\":\"(0,0)\"\n\t\t},\n\t\t\"ID\":0,\n\t\t\"Name\":\"Entry\",\n\t\t\"Instant\":true\n\t},\n\t\"RootTask\":{\n\t\t\"ObjectType\":\"BehaviorDesigner.Runtime.Formations.Tasks.Column\",\n\t\t\"NodeData\":{\n\t\t\t\"Offset\":\"(0,120)\"\n\t\t},\n\t\t\"ID\":1,\n\t\t\"Name\":\"Column\",\n\t\t\"Instant\":true,\n\t\t\"BehaviorDesigner.Runtime.SharedVector2,separation\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedVector2\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"UnityEngine.Vector2,mValue\":\"(2,2)\"\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedInt,columns\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedInt\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Int32,mValue\":2\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedTransform,targetTransform\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedTransform\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"UnityEngine.Transform,mValue\":0\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedVector3,targetPosition\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedVector3\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"UnityEngine.Vector3,mValue\":\"(0,0,0)\"\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedFloat,lookAhead\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\"Name\":null,\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Single,mValue\":6\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedFloat,fullSpeed\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Single,mValue\":3.5\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedFloat,formationSpeed\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Single,mValue\":2\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedFloat,slowdownSpeed\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\"Name\":null,\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Single,mValue\":1.5\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedFloat,waitTime\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Single,mValue\":0\n\t\t},\n\t\t\"BehaviorDesigner.Runtime.SharedBool,isLeader\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedBool\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"System.Boolean,mValue\":false\n\t\t}\n\t}\n}"
+      fieldSerializationData:
+        typeName: []
+        fieldNameHash: 
+        startIndex: 
+        dataPosition: 
+        unityObjects:
+        - {fileID: 1034244075}
+        byteData: 
+        byteDataArray: 
+      Version: 
+--- !u!23 &1201778829
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1201778811}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: d9a66e07befebab458ac293b608d0cce, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedWireframeHidden: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!33 &1201778830
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1201778811}
+  m_Mesh: {fileID: 4300000, guid: be635f8f1450b7448a3f2b680ae93a4c, type: 3}
+--- !u!1 &1404436970
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1404436973}
+  - 195: {fileID: 1404436972}
+  - 114: {fileID: 1404436971}
+  - 33: {fileID: 1404436975}
+  - 23: {fileID: 1404436974}
+  m_Layer: 0
+  m_Name: Agent 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1404436971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1404436970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d7b55c7ecdb49a4a89fa5e6f9022861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startWhenEnabled: 0
+  pauseWhenDisabled: 0
+  restartWhenComplete: 0
+  logTaskChanges: 0
+  group: 0
+  resetValuesOnRestart: 0
+  externalBehavior: {fileID: 0}
+  mBehaviorSource:
+    behaviorName: Behavior
+    behaviorDescription: 
+    mTaskData:
+      types: []
+      parentIndex: 
+      startIndex: 
+      variableStartIndex: 
+      JSONSerialization: "{\n\t\"EntryTask\":{\n\t\t\"ObjectType\":\"BehaviorDesigner.Runtime.Tasks.EntryTask\",\n\t\t\"NodeData\":{\n\t\t\t\"Offset\":\"(0,0)\"\n\t\t},\n\t\t\"ID\":0,\n\t\t\"Name\":\"Entry\",\n\t\t\"Instant\":true\n\t},\n\t\"RootTask\":{\n\t\t\"ObjectType\":\"BehaviorDesigner.Runtime.Formations.Tasks.FollowOrders\",\n\t\t\"NodeData\":{\n\t\t\t\"Offset\":\"(0,120)\"\n\t\t},\n\t\t\"ID\":1,\n\t\t\"Name\":\"Follow
+        Orders\",\n\t\t\"Instant\":true,\n\t\t\"BehaviorDesigner.Runtime.SharedGameObject,leader\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedGameObject\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"UnityEngine.GameObject,mValue\":0\n\t\t}\n\t}\n}"
+      fieldSerializationData:
+        typeName: []
+        fieldNameHash: 
+        startIndex: 
+        dataPosition: 
+        unityObjects:
+        - {fileID: 1201778811}
+        byteData: 
+        byteDataArray: 
+      Version: 
+--- !u!195 &1404436972
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1404436970}
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 1200
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 0
+  m_AutoBraking: 1
+  m_AutoRepath: 0
+  m_Height: 0.5
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!4 &1404436973
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1404436970}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.5965333, y: 0, z: -23.79904}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+--- !u!23 &1404436974
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1404436970}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: d9a66e07befebab458ac293b608d0cce, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedWireframeHidden: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!33 &1404436975
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1404436970}
+  m_Mesh: {fileID: 4300000, guid: be635f8f1450b7448a3f2b680ae93a4c, type: 3}
+--- !u!1 &1442329556
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1442329558}
+  - 108: {fileID: 1442329557}
+  m_Layer: 0
+  m_Name: Directional light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!108 &1442329557
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1442329556}
+  m_Enabled: 1
+  serializedVersion: 7
+  m_Type: 1
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 1
+  m_Range: 10
+  m_SpotAngle: 30
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 1
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+--- !u!4 &1442329558
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1442329556}
+  m_LocalRotation: {x: 0.40821794, y: -0.23456973, z: 0.10938166, w: 0.8754261}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+--- !u!1 &1574764797
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1574764798}
+  - 33: {fileID: 1574764802}
+  - 23: {fileID: 1574764801}
+  - 195: {fileID: 1574764800}
+  - 114: {fileID: 1574764799}
+  m_Layer: 0
+  m_Name: Agent 6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1574764798
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1574764797}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.993073, y: 0, z: -21.345488}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+--- !u!114 &1574764799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1574764797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d7b55c7ecdb49a4a89fa5e6f9022861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startWhenEnabled: 0
+  pauseWhenDisabled: 0
+  restartWhenComplete: 0
+  logTaskChanges: 0
+  group: 0
+  resetValuesOnRestart: 0
+  externalBehavior: {fileID: 0}
+  mBehaviorSource:
+    behaviorName: Behavior
+    behaviorDescription: 
+    mTaskData:
+      types: []
+      parentIndex: 
+      startIndex: 
+      variableStartIndex: 
+      JSONSerialization: "{\n\t\"EntryTask\":{\n\t\t\"ObjectType\":\"BehaviorDesigner.Runtime.Tasks.EntryTask\",\n\t\t\"NodeData\":{\n\t\t\t\"Offset\":\"(0,0)\"\n\t\t},\n\t\t\"ID\":0,\n\t\t\"Name\":\"Entry\",\n\t\t\"Instant\":true\n\t},\n\t\"RootTask\":{\n\t\t\"ObjectType\":\"BehaviorDesigner.Runtime.Formations.Tasks.FollowOrders\",\n\t\t\"NodeData\":{\n\t\t\t\"Offset\":\"(0,120)\"\n\t\t},\n\t\t\"ID\":1,\n\t\t\"Name\":\"Follow
+        Orders\",\n\t\t\"Instant\":true,\n\t\t\"BehaviorDesigner.Runtime.SharedGameObject,leader\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedGameObject\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"UnityEngine.GameObject,mValue\":0\n\t\t}\n\t}\n}"
+      fieldSerializationData:
+        typeName: []
+        fieldNameHash: 
+        startIndex: 
+        dataPosition: 
+        unityObjects:
+        - {fileID: 1201778811}
+        byteData: 
+        byteDataArray: 
+      Version: 
+--- !u!195 &1574764800
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1574764797}
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 1200
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 0
+  m_AutoBraking: 1
+  m_AutoRepath: 0
+  m_Height: 0.5
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!23 &1574764801
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1574764797}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: d9a66e07befebab458ac293b608d0cce, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedWireframeHidden: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!33 &1574764802
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1574764797}
+  m_Mesh: {fileID: 4300000, guid: be635f8f1450b7448a3f2b680ae93a4c, type: 3}
+--- !u!1 &1608916890
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1608916893}
+  - 33: {fileID: 1608916895}
+  - 23: {fileID: 1608916894}
+  - 195: {fileID: 1608916892}
+  - 114: {fileID: 1608916891}
+  m_Layer: 0
+  m_Name: Agent 8
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1608916891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1608916890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d7b55c7ecdb49a4a89fa5e6f9022861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startWhenEnabled: 0
+  pauseWhenDisabled: 0
+  restartWhenComplete: 0
+  logTaskChanges: 0
+  group: 0
+  resetValuesOnRestart: 0
+  externalBehavior: {fileID: 0}
+  mBehaviorSource:
+    behaviorName: Behavior
+    behaviorDescription: 
+    mTaskData:
+      types: []
+      parentIndex: 
+      startIndex: 
+      variableStartIndex: 
+      JSONSerialization: "{\n\t\"EntryTask\":{\n\t\t\"ObjectType\":\"BehaviorDesigner.Runtime.Tasks.EntryTask\",\n\t\t\"NodeData\":{\n\t\t\t\"Offset\":\"(0,0)\"\n\t\t},\n\t\t\"ID\":0,\n\t\t\"Name\":\"Entry\",\n\t\t\"Instant\":true\n\t},\n\t\"RootTask\":{\n\t\t\"ObjectType\":\"BehaviorDesigner.Runtime.Formations.Tasks.FollowOrders\",\n\t\t\"NodeData\":{\n\t\t\t\"Offset\":\"(0,120)\"\n\t\t},\n\t\t\"ID\":1,\n\t\t\"Name\":\"Follow
+        Orders\",\n\t\t\"Instant\":true,\n\t\t\"BehaviorDesigner.Runtime.SharedGameObject,leader\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedGameObject\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"UnityEngine.GameObject,mValue\":0\n\t\t}\n\t}\n}"
+      fieldSerializationData:
+        typeName: []
+        fieldNameHash: 
+        startIndex: 
+        dataPosition: 
+        unityObjects:
+        - {fileID: 1201778811}
+        byteData: 
+        byteDataArray: 
+      Version: 
+--- !u!195 &1608916892
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1608916890}
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 1200
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 0
+  m_AutoBraking: 1
+  m_AutoRepath: 0
+  m_Height: 0.5
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!4 &1608916893
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1608916890}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.484272, y: 0, z: -23.27586}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+--- !u!23 &1608916894
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1608916890}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: d9a66e07befebab458ac293b608d0cce, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedWireframeHidden: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!33 &1608916895
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1608916890}
+  m_Mesh: {fileID: 4300000, guid: be635f8f1450b7448a3f2b680ae93a4c, type: 3}
+--- !u!1 &1740397521
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1740397522}
+  - 195: {fileID: 1740397524}
+  - 114: {fileID: 1740397523}
+  - 33: {fileID: 1740397526}
+  - 23: {fileID: 1740397525}
+  m_Layer: 0
+  m_Name: Agent 3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1740397522
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1740397521}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.13581157, y: 0, z: -23.097345}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+--- !u!114 &1740397523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1740397521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d7b55c7ecdb49a4a89fa5e6f9022861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startWhenEnabled: 0
+  pauseWhenDisabled: 0
+  restartWhenComplete: 0
+  logTaskChanges: 0
+  group: 0
+  resetValuesOnRestart: 0
+  externalBehavior: {fileID: 0}
+  mBehaviorSource:
+    behaviorName: Behavior
+    behaviorDescription: 
+    mTaskData:
+      types: []
+      parentIndex: 
+      startIndex: 
+      variableStartIndex: 
+      JSONSerialization: "{\n\t\"EntryTask\":{\n\t\t\"ObjectType\":\"BehaviorDesigner.Runtime.Tasks.EntryTask\",\n\t\t\"NodeData\":{\n\t\t\t\"Offset\":\"(0,0)\"\n\t\t},\n\t\t\"ID\":0,\n\t\t\"Name\":\"Entry\",\n\t\t\"Instant\":true\n\t},\n\t\"RootTask\":{\n\t\t\"ObjectType\":\"BehaviorDesigner.Runtime.Formations.Tasks.FollowOrders\",\n\t\t\"NodeData\":{\n\t\t\t\"Offset\":\"(0,120)\"\n\t\t},\n\t\t\"ID\":1,\n\t\t\"Name\":\"Follow
+        Orders\",\n\t\t\"Instant\":true,\n\t\t\"BehaviorDesigner.Runtime.SharedGameObject,leader\":{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedGameObject\",\n\t\t\t\"Name\":\"\",\n\t\t\t\"IsShared\":false,\n\t\t\t\"IsGlobal\":false,\n\t\t\t\"UnityEngine.GameObject,mValue\":0\n\t\t}\n\t}\n}"
+      fieldSerializationData:
+        typeName: []
+        fieldNameHash: 
+        startIndex: 
+        dataPosition: 
+        unityObjects:
+        - {fileID: 1201778811}
+        byteData: 
+        byteDataArray: 
+      Version: 
+--- !u!195 &1740397524
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1740397521}
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 1200
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 0
+  m_AutoBraking: 1
+  m_AutoRepath: 0
+  m_Height: 0.5
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!23 &1740397525
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1740397521}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: d9a66e07befebab458ac293b608d0cce, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedWireframeHidden: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!33 &1740397526
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1740397521}
+  m_Mesh: {fileID: 4300000, guid: be635f8f1450b7448a3f2b680ae93a4c, type: 3}
+--- !u!1 &1890991949
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1890991950}
+  m_Layer: 0
+  m_Name: Obstacles
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1890991950
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1890991949}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 645014931}
+  - {fileID: 786746965}
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
