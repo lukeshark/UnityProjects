@@ -15,8 +15,8 @@ MonoBehaviour:
   fsm:
     dataVersion: 2
     usedInTemplate: {fileID: 11400000}
-    name: FSM
-    startState: Find closest human
+    name: AI
+    startState: Init
     states:
     - name: Find closest human
       description: 
@@ -24,7 +24,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 50.328125
-        y: 100.27344
+        y: 228.27344
         width: 142
         height: 32
       isBreakpoint: 0
@@ -57,7 +57,7 @@ MonoBehaviour:
         - useVariable: 1
           name: Target
           tooltip: 
-          showInInspector: 0
+          showInInspector: 1
           networkSync: 0
           value: {fileID: 0}
         - useVariable: 0
@@ -80,7 +80,7 @@ MonoBehaviour:
             useVariable: 1
             name: Target
             tooltip: 
-            showInInspector: 0
+            showInInspector: 1
             networkSync: 0
             value: {fileID: 0}
         - ownerOption: 0
@@ -98,12 +98,12 @@ MonoBehaviour:
         fsmPropertyParams: []
         layoutOptionParams: []
         fsmStringParams:
-        - useVariable: 0
-          name: 
+        - useVariable: 1
+          name: TagEnemy
           tooltip: 
-          showInInspector: 0
+          showInInspector: 1
           networkSync: 0
-          value: RedTeam
+          value: 
         fsmObjectParams: []
         fsmVarParams: []
         fsmArrayParams: []
@@ -172,7 +172,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 314.78906
-        y: 169.22656
+        y: 297.22656
         width: 100
         height: 32
       isBreakpoint: 0
@@ -207,7 +207,7 @@ MonoBehaviour:
         - useVariable: 1
           name: Target
           tooltip: 
-          showInInspector: 0
+          showInInspector: 1
           networkSync: 0
           value: {fileID: 0}
         - useVariable: 1
@@ -219,13 +219,13 @@ MonoBehaviour:
         - useVariable: 1
           name: Target
           tooltip: 
-          showInInspector: 0
+          showInInspector: 1
           networkSync: 0
           value: {fileID: 0}
         - useVariable: 1
           name: Target
           tooltip: 
-          showInInspector: 0
+          showInInspector: 1
           networkSync: 0
           value: {fileID: 0}
         fsmOwnerDefaultParams:
@@ -279,12 +279,12 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 360
-        - useVariable: 0
-          name: 
+        - useVariable: 1
+          name: AttackRange
           tooltip: 
-          showInInspector: 0
+          showInInspector: 1
           networkSync: 0
-          value: 10
+          value: 0
         - useVariable: 0
           name: 
           tooltip: 
@@ -408,7 +408,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 525.0625
-        y: 221.63281
+        y: 349.6328
         width: 145
         height: 48
       isBreakpoint: 0
@@ -445,7 +445,7 @@ MonoBehaviour:
         - 
         - 
         actionEnabled: 0101010101
-        actionIsOpen: 0000000000
+        actionIsOpen: 0000000001
         actionStartIndex: 000000000400000005000000070000000a000000
         actionHashCodes: 36f094008d4bb5039bd6f80148c011011bcdca04
         unityObjectParams: []
@@ -453,7 +453,7 @@ MonoBehaviour:
         - useVariable: 1
           name: Target
           tooltip: 
-          showInInspector: 0
+          showInInspector: 1
           networkSync: 0
           value: {fileID: 0}
         fsmOwnerDefaultParams:
@@ -500,9 +500,9 @@ MonoBehaviour:
         fsmEnumParams: []
         fsmFloatParams:
         - useVariable: 1
-          name: DistanceBetweenTargetAndZombie
+          name: DistanceBetweenTargetAndSelf
           tooltip: 
-          showInInspector: 0
+          showInInspector: 1
           networkSync: 0
           value: 0
         - useVariable: 0
@@ -512,9 +512,9 @@ MonoBehaviour:
           networkSync: 0
           value: 1.4
         - useVariable: 1
-          name: DistanceBetweenTargetAndZombie
+          name: DistanceBetweenTargetAndSelf
           tooltip: 
-          showInInspector: 0
+          showInInspector: 1
           networkSync: 0
           value: 0
         - useVariable: 0
@@ -573,7 +573,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 720.8906
-        y: 230.17188
+        y: 358.17188
         width: 129
         height: 32
       isBreakpoint: 0
@@ -590,16 +590,26 @@ MonoBehaviour:
         colorIndex: 0
       actionData:
         actionNames:
+        - HutongGames.PlayMaker.Actions.SetFsmInt
         - HutongGames.PlayMaker.Actions.SendEvent
         customNames:
         - 
-        actionEnabled: 01
-        actionIsOpen: 01
-        actionStartIndex: 00000000
-        actionHashCodes: 5e69bb04
+        - 
+        actionEnabled: 0101
+        actionIsOpen: 0101
+        actionStartIndex: 0000000005000000
+        actionHashCodes: 081bbf055e69bb04
         unityObjectParams: []
         fsmGameObjectParams: []
-        fsmOwnerDefaultParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 1
+          gameObject:
+            useVariable: 1
+            name: Target
+            tooltip: 
+            showInInspector: 1
+            networkSync: 0
+            value: {fileID: 0}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -618,7 +628,7 @@ MonoBehaviour:
               useVariable: 1
               name: Target
               tooltip: 
-              showInInspector: 0
+              showInInspector: 1
               networkSync: 0
               value: {fileID: 0}
           fsmName:
@@ -638,7 +648,19 @@ MonoBehaviour:
           fsmComponent: {fileID: 0}
         fsmPropertyParams: []
         layoutOptionParams: []
-        fsmStringParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Health
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: damageAmount
         fsmObjectParams: []
         fsmVarParams: []
         fsmArrayParams: []
@@ -650,7 +672,13 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 0
-        fsmIntParams: []
+        fsmIntParams:
+        - useVariable: 1
+          name: AttackDamage
+          tooltip: 
+          showInInspector: 1
+          networkSync: 0
+          value: 0
         fsmBoolParams: []
         fsmVector2Params: []
         fsmVector3Params: []
@@ -659,26 +687,31 @@ MonoBehaviour:
         fsmQuaternionParams: []
         stringParams:
         - Get Damage
-        byteData: 00
+        byteData: 0000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 1f000000170000000f00000001000000
+        paramDataType: 14000000120000001200000010000000010000001f000000170000000f00000001000000
         paramName:
+        - gameObject
+        - fsmName
+        - variableName
+        - setValue
+        - everyFrame
         - eventTarget
         - sendEvent
         - delay
         - everyFrame
-        paramDataPos: 00000000000000000000000000000000
-        paramByteDataSize: 00000000000000000000000001000000
+        paramDataPos: 000000000000000001000000000000000000000000000000000000000000000001000000
+        paramByteDataSize: 000000000000000000000000000000000100000000000000000000000000000001000000
     - name: stop
       description: 
       colorIndex: 0
       position:
         serializedVersion: 2
         x: 726.1094
-        y: 126.00781
+        y: 254.00781
         width: 100
         height: 16
       isBreakpoint: 0
@@ -735,6 +768,84 @@ MonoBehaviour:
         - gameObject
         paramDataPos: 00000000
         paramByteDataSize: 00000000
+    - name: Init
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 74.625
+        y: 103.99219
+        width: 100
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: Find closest human
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.SetAgentRadius
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: e8ea3902
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams:
+        - useVariable: 1
+          name: StopRadius
+          tooltip: 
+          showInInspector: 1
+          networkSync: 0
+          value: 0
+        fsmIntParams: []
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams: []
+        byteData: 
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 140000000f000000
+        paramName:
+        - gameObject
+        - radius
+        paramDataPos: 0000000000000000
+        paramByteDataSize: 0000000000000000
     events:
     - name: FINISHED
       isSystemEvent: 1
@@ -769,20 +880,56 @@ MonoBehaviour:
     variables:
       floatVariables:
       - useVariable: 1
-        name: DistanceBetweenTargetAndZombie
+        name: AttackRange
         tooltip: 
-        showInInspector: 0
+        showInInspector: 1
+        networkSync: 0
+        value: 0
+      - useVariable: 1
+        name: DistanceBetweenTargetAndSelf
+        tooltip: 
+        showInInspector: 1
         networkSync: 0
         value: 0
       - useVariable: 1
         name: Force
         tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        value: 0
+      - useVariable: 1
+        name: MoveSpeed
+        tooltip: 
         showInInspector: 0
         networkSync: 0
         value: 0
-      intVariables: []
+      - useVariable: 1
+        name: StopRadius
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        value: 0
+      intVariables:
+      - useVariable: 1
+        name: AttackDamage
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        value: 0
       boolVariables: []
-      stringVariables: []
+      stringVariables:
+      - useVariable: 1
+        name: TagEnemy
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        value: 
+      - useVariable: 1
+        name: TagFriendly
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        value: 
       vector2Variables: []
       vector3Variables: []
       colorVariables: []
@@ -792,7 +939,7 @@ MonoBehaviour:
       - useVariable: 1
         name: Target
         tooltip: 
-        showInInspector: 0
+        showInInspector: 1
         networkSync: 0
         value: {fileID: 0}
       objectVariables: []
@@ -802,7 +949,7 @@ MonoBehaviour:
       enumVariables: []
       categories:
       - 
-      variableCategoryIDs: 000000000000000000000000
+      variableCategoryIDs: 000000000000000000000000000000000000000000000000000000000000000000000000
     description: 
     docUrl: 
     showStateLabel: 1
