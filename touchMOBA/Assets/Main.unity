@@ -18745,7 +18745,7 @@ MonoBehaviour:
       isGlobal: 1
     - name: GameOn
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: GameOver
       isSystemEvent: 0
       isGlobal: 1
@@ -18815,7 +18815,7 @@ MonoBehaviour:
     locked: 0
     manualUpdate: 0
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 0
+    preprocessed: 1
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0
@@ -28296,6 +28296,86 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 817431286}
     m_Modifications:
+    - target: {fileID: 114000010302064030, guid: 56080f0bf02eae54bb66c374489a43ea,
+        type: 2}
+      propertyPath: fsm.states.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010302064030, guid: 56080f0bf02eae54bb66c374489a43ea,
+        type: 2}
+      propertyPath: fsm.events.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010302064030, guid: 56080f0bf02eae54bb66c374489a43ea,
+        type: 2}
+      propertyPath: fsm.globalTransitions.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010302064030, guid: 56080f0bf02eae54bb66c374489a43ea,
+        type: 2}
+      propertyPath: fsm.states.Array.data[0].transitions.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010302064030, guid: 56080f0bf02eae54bb66c374489a43ea,
+        type: 2}
+      propertyPath: fsm.states.Array.data[0].actionData.byteData.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010302064030, guid: 56080f0bf02eae54bb66c374489a43ea,
+        type: 2}
+      propertyPath: fsm.states.Array.data[0].actionData.paramName.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010302064030, guid: 56080f0bf02eae54bb66c374489a43ea,
+        type: 2}
+      propertyPath: fsm.states.Array.data[0].actionData.actionNames.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010302064030, guid: 56080f0bf02eae54bb66c374489a43ea,
+        type: 2}
+      propertyPath: fsm.states.Array.data[0].actionData.customNames.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010302064030, guid: 56080f0bf02eae54bb66c374489a43ea,
+        type: 2}
+      propertyPath: fsm.states.Array.data[0].actionData.actionIsOpen.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010302064030, guid: 56080f0bf02eae54bb66c374489a43ea,
+        type: 2}
+      propertyPath: fsm.states.Array.data[0].actionData.fsmIntParams.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010302064030, guid: 56080f0bf02eae54bb66c374489a43ea,
+        type: 2}
+      propertyPath: fsm.states.Array.data[0].actionData.paramDataPos.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010302064030, guid: 56080f0bf02eae54bb66c374489a43ea,
+        type: 2}
+      propertyPath: fsm.states.Array.data[0].actionData.actionEnabled.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010302064030, guid: 56080f0bf02eae54bb66c374489a43ea,
+        type: 2}
+      propertyPath: fsm.states.Array.data[0].actionData.paramDataType.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010302064030, guid: 56080f0bf02eae54bb66c374489a43ea,
+        type: 2}
+      propertyPath: fsm.states.Array.data[0].actionData.actionHashCodes.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010302064030, guid: 56080f0bf02eae54bb66c374489a43ea,
+        type: 2}
+      propertyPath: fsm.states.Array.data[0].actionData.actionStartIndex.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010302064030, guid: 56080f0bf02eae54bb66c374489a43ea,
+        type: 2}
+      propertyPath: fsm.states.Array.data[0].actionData.paramByteDataSize.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010532351282, guid: 56080f0bf02eae54bb66c374489a43ea, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -28331,12 +28411,12 @@ Prefab:
     - target: {fileID: 224000013407647968, guid: 56080f0bf02eae54bb66c374489a43ea,
         type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224000013407647968, guid: 56080f0bf02eae54bb66c374489a43ea,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4000010532351282, guid: 56080f0bf02eae54bb66c374489a43ea, type: 2}
       propertyPath: m_LocalScale.x
@@ -28345,6 +28425,50 @@ Prefab:
     - target: {fileID: 4000010532351282, guid: 56080f0bf02eae54bb66c374489a43ea, type: 2}
       propertyPath: m_LocalScale.z
       value: 1.2700006
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000012701299574, guid: 56080f0bf02eae54bb66c374489a43ea, type: 2}
+      propertyPath: m_Name
+      value: BlueTeamBase
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010302064030, guid: 56080f0bf02eae54bb66c374489a43ea,
+        type: 2}
+      propertyPath: fsm.startState
+      value: State 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010302064030, guid: 56080f0bf02eae54bb66c374489a43ea,
+        type: 2}
+      propertyPath: fsm.states.Array.data[0].name
+      value: State 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010302064030, guid: 56080f0bf02eae54bb66c374489a43ea,
+        type: 2}
+      propertyPath: fsm.states.Array.data[0].position.x
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010302064030, guid: 56080f0bf02eae54bb66c374489a43ea,
+        type: 2}
+      propertyPath: fsm.states.Array.data[0].position.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010302064030, guid: 56080f0bf02eae54bb66c374489a43ea,
+        type: 2}
+      propertyPath: fsm.states.Array.data[0].position.width
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010302064030, guid: 56080f0bf02eae54bb66c374489a43ea,
+        type: 2}
+      propertyPath: fsm.states.Array.data[0].position.height
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010302064030, guid: 56080f0bf02eae54bb66c374489a43ea,
+        type: 2}
+      propertyPath: fsm.variables.stringVariables.Array.data[0].value
+      value: BlueTeamBase
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010302064030, guid: 56080f0bf02eae54bb66c374489a43ea,
+        type: 2}
+      propertyPath: fsm.preprocessed
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 56080f0bf02eae54bb66c374489a43ea, type: 2}
@@ -30995,7 +31119,7 @@ MonoBehaviour:
     locked: 0
     manualUpdate: 0
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 0
+    preprocessed: 1
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0
@@ -32221,17 +32345,17 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1000010993810252, guid: 58690c2c89c1e014cb88d7a9d943faac, type: 2}
       propertyPath: m_Name
-      value: RedTeamBaseCrystal (1)
+      value: RedTeamBase
       objectReference: {fileID: 0}
     - target: {fileID: 224000013446611002, guid: 58690c2c89c1e014cb88d7a9d943faac,
         type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224000013446611002, guid: 58690c2c89c1e014cb88d7a9d943faac,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114000010939085366, guid: 58690c2c89c1e014cb88d7a9d943faac,
         type: 2}
