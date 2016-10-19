@@ -111,13 +111,12 @@ MonoBehaviour:
         actionHashCodes: 0cec9004
         unityObjectParams: []
         fsmGameObjectParams:
-        - useVariable: 0
-          name: 
+        - useVariable: 1
+          name: Unit1
           tooltip: 
-          showInInspector: 0
+          showInInspector: 1
           networkSync: 0
-          value: {fileID: 1000014027696624, guid: 8da1bd2cfbbcaf944abcaf626f83a0c7,
-            type: 2}
+          value: {fileID: 0}
         - useVariable: 1
           name: temp_chosenunit
           tooltip: 
@@ -794,6 +793,12 @@ MonoBehaviour:
         networkSync: 0
         value: {fileID: 0}
       - useVariable: 1
+        name: Unit1
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        value: {fileID: 0}
+      - useVariable: 1
         name: Waypoint1Orders
         tooltip: 
         showInInspector: 1
@@ -830,7 +835,7 @@ MonoBehaviour:
       enumVariables: []
       categories:
       - 
-      variableCategoryIDs: 000000000000000000000000000000000000000000000000000000000000000000000000
+      variableCategoryIDs: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
     description: 
     docUrl: 
     showStateLabel: 1

@@ -3,7 +3,59 @@ guid: a09c7fdb2fad5d04684045c6a9d23392
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
+    100000: body_zomb
+    100002: brian
+    100004: butt_zomb
+    100006: face_zomb
+    100008: hair_zomb
+    100010: head_zomb
+    100012: left_arm_zomb
+    100014: left_hand_zomb
+    100016: left_shoulder_zomb
+    100018: //RootNode
+    100020: right_arm_zomb
+    100022: right_hand_zomb
+    100024: right_shoulder_zomb
+    100026: root
+    400000: body_zomb
+    400002: brian
+    400004: butt_zomb
+    400006: face_zomb
+    400008: hair_zomb
+    400010: head_zomb
+    400012: left_arm_zomb
+    400014: left_hand_zomb
+    400016: left_shoulder_zomb
+    400018: //RootNode
+    400020: right_arm_zomb
+    400022: right_hand_zomb
+    400024: right_shoulder_zomb
+    400026: root
     4300000: brian
+    7400000: zombie_bind
+    7400002: zombie_idle1
+    7400004: zombie_idle2
+    7400006: zombie_walk
+    7400008: zombie_bite
+    7400010: zombie_hit_front
+    7400012: zombie_hit_left
+    7400014: zombie_hit_right
+    7400016: zombie_panic
+    7400018: zombie_jump
+    7400020: zombie_flyUp
+    7400022: zombie_trans_fall
+    7400024: zombie_fall
+    7400026: zombie_land
+    7400028: zombie_die
+    7400030: zombie_roll_ground
+    7400032: zombie_get_up
+    7400034: zombie_attack
+    7400036: zombie_dizzy
+    7400038: zombie_talk
+    7400040: zombie_laugh
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: brian
   materials:
     importMaterials: 1
     materialName: 1
@@ -64,7 +116,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -80,7 +132,7 @@ ModelImporter:
       transformMask: []
       maskType: 0
       maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
+      additiveReferencePoseFrame: 0.96
     - serializedVersion: 16
       name: zombie_idle2
       takeName: 
@@ -92,7 +144,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -108,7 +160,7 @@ ModelImporter:
       transformMask: []
       maskType: 0
       maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
+      additiveReferencePoseFrame: 1
     - serializedVersion: 16
       name: zombie_walk
       takeName: 
@@ -120,7 +172,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -136,7 +188,7 @@ ModelImporter:
       transformMask: []
       maskType: 0
       maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
+      additiveReferencePoseFrame: 1
     - serializedVersion: 16
       name: zombie_bite
       takeName: 
@@ -650,7 +702,7 @@ ModelImporter:
     rootMotionBoneName: 
     hasTranslationDoF: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 1
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
