@@ -11,6 +11,21 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 1000014027696624}
   m_IsPrefabParent: 1
+--- !u!1 &1000010037810056
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 4000011291268102}
+  m_Layer: 9
+  m_Name: MissileAnchor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1000010045602912
 GameObject:
   m_ObjectHideFlags: 1
@@ -489,6 +504,19 @@ Transform:
   - {fileID: 4000013547563080}
   m_Father: {fileID: 4000010380913370}
   m_RootOrder: 0
+--- !u!4 &4000011291268102
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010037810056}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.76, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 4000013953480700}
+  m_RootOrder: 3
 --- !u!4 &4000012228651254
 Transform:
   m_ObjectHideFlags: 1
@@ -583,6 +611,7 @@ Transform:
   - {fileID: 4000010992994942}
   - {fileID: 4000010403590622}
   - {fileID: 224000012796993178}
+  - {fileID: 4000011291268102}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!23 &23000013146645098
@@ -768,7 +797,7 @@ MonoBehaviour:
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        value: 300
+        value: 125
       boolVariables: []
       stringVariables:
       - useVariable: 1
@@ -969,13 +998,13 @@ MonoBehaviour:
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        value: 4
+        value: 15
       - useVariable: 1
         name: AttackSpeed
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        value: 1.5
+        value: 1.2
       - useVariable: 1
         name: DistanceToEnemy
         tooltip: 
@@ -1001,6 +1030,12 @@ MonoBehaviour:
         networkSync: 0
         value: 0.1
       - useVariable: 1
+        name: RangedMissileSpeed
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        value: 10
+      - useVariable: 1
         name: ThinkTime
         tooltip: 
         showInInspector: 1
@@ -1012,14 +1047,20 @@ MonoBehaviour:
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        value: 75
+        value: 41
       - useVariable: 1
         name: TargetHealth
         tooltip: 
         showInInspector: 0
         networkSync: 0
         value: 0
-      boolVariables: []
+      boolVariables:
+      - useVariable: 1
+        name: Ranged
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        value: 1
       stringVariables:
       - useVariable: 1
         name: TagEnemy
@@ -1039,6 +1080,25 @@ MonoBehaviour:
       rectVariables: []
       quaternionVariables: []
       gameObjectVariables:
+      - useVariable: 1
+        name: RangedMissile
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        value: {fileID: 1000010981142710, guid: 4dcbc81f43f94f84c9f3daa9fe9eb8b0,
+          type: 2}
+      - useVariable: 1
+        name: RangedMissileAnchor
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        value: {fileID: 1000010037810056}
+      - useVariable: 1
+        name: RangedMissileInstance
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: {fileID: 0}
       - useVariable: 1
         name: Target
         tooltip: 
@@ -1070,7 +1130,7 @@ MonoBehaviour:
       enumVariables: []
       categories:
       - 
-      variableCategoryIDs: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+      variableCategoryIDs: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
     description: 
     docUrl: 
     showStateLabel: 1
@@ -1080,7 +1140,7 @@ MonoBehaviour:
     locked: 0
     manualUpdate: 0
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 1
+    preprocessed: 0
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0

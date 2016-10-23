@@ -7161,7 +7161,7 @@ MonoBehaviour:
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        value: {fileID: 1000014027696624, guid: 8da1bd2cfbbcaf944abcaf626f83a0c7,
+        value: {fileID: 1000014027696624, guid: ca00c433761a1404186c21b87fb44cc5,
           type: 2}
       - useVariable: 1
         name: UnitController
@@ -19692,7 +19692,7 @@ MonoBehaviour:
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        value: {fileID: 1000014027696624, guid: 8da1bd2cfbbcaf944abcaf626f83a0c7,
+        value: {fileID: 1000014027696624, guid: ca00c433761a1404186c21b87fb44cc5,
           type: 2}
       - useVariable: 1
         name: Waypoint1Orders
@@ -19741,7 +19741,7 @@ MonoBehaviour:
     locked: 0
     manualUpdate: 0
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 1
+    preprocessed: 0
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0
@@ -32099,6 +32099,34 @@ MonoBehaviour:
     _logMessages: 0
     spawnPool: {fileID: 0}
   - prefab: {fileID: 4000011124561074, guid: 521bab3601f9faa4ba33008143dccffa, type: 2}
+    preloadAmount: 1
+    preloadTime: 0
+    preloadFrames: 2
+    preloadDelay: 0
+    limitInstances: 0
+    limitAmount: 100
+    limitFIFO: 0
+    cullDespawned: 0
+    cullAbove: 50
+    cullDelay: 60
+    cullMaxPerPass: 5
+    _logMessages: 0
+    spawnPool: {fileID: 0}
+  - prefab: {fileID: 4000013953480700, guid: ca00c433761a1404186c21b87fb44cc5, type: 2}
+    preloadAmount: 1
+    preloadTime: 0
+    preloadFrames: 2
+    preloadDelay: 0
+    limitInstances: 0
+    limitAmount: 100
+    limitFIFO: 0
+    cullDespawned: 0
+    cullAbove: 50
+    cullDelay: 60
+    cullMaxPerPass: 5
+    _logMessages: 0
+    spawnPool: {fileID: 0}
+  - prefab: {fileID: 4000012263887310, guid: 4dcbc81f43f94f84c9f3daa9fe9eb8b0, type: 2}
     preloadAmount: 1
     preloadTime: 0
     preloadFrames: 2
