@@ -24,7 +24,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 725.4922
-        y: 379.72656
+        y: 507.72656
         width: 100
         height: 32
       isBreakpoint: 0
@@ -55,7 +55,7 @@ MonoBehaviour:
         - useVariable: 1
           name: temp_chosenunit
           tooltip: 
-          showInInspector: 0
+          showInInspector: 1
           networkSync: 0
           value: {fileID: 0}
         - useVariable: 1
@@ -143,7 +143,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 556
-        y: 100
+        y: 228
         width: 100
         height: 16
       isBreakpoint: 0
@@ -190,14 +190,13 @@ MonoBehaviour:
         paramDataPos: 
         paramByteDataSize: 
     - name: 'Tap '
-      description: Spawns a random enemy at a random spawn point, and gives that enemy
-        a patrol command to patrol waypoints in sequential order.
+      description: 
       colorIndex: 0
       position:
         serializedVersion: 2
         x: 61.25
-        y: 218.10156
-        width: 400
+        y: 346.10156
+        width: 100
         height: 32
       isBreakpoint: 0
       isSequence: 0
@@ -264,7 +263,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 526.5781
-        y: 287.0078
+        y: 415.0078
         width: 120
         height: 32
       isBreakpoint: 0
@@ -378,7 +377,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 696.25
-        y: 315.10156
+        y: 443.10156
         width: 118
         height: 32
       isBreakpoint: 0
@@ -396,21 +395,31 @@ MonoBehaviour:
       actionData:
         actionNames:
         - HutongGames.PlayMaker.Actions.GetFsmGameObject
+        - HutongGames.PlayMaker.Actions.GetFsmFloat
         customNames:
         - 
-        actionEnabled: 01
-        actionIsOpen: 01
-        actionStartIndex: 00000000
-        actionHashCodes: 5b66cf00
+        - 
+        actionEnabled: 0101
+        actionIsOpen: 0101
+        actionStartIndex: 0000000005000000
+        actionHashCodes: 5b66cf0087604502
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
           name: temp_chosenunit
           tooltip: 
-          showInInspector: 0
+          showInInspector: 1
           networkSync: 0
           value: {fileID: 0}
         fsmOwnerDefaultParams:
+        - ownerOption: 1
+          gameObject:
+            useVariable: 1
+            name: UnitController
+            tooltip: 
+            showInInspector: 1
+            networkSync: 0
+            value: {fileID: 0}
         - ownerOption: 1
           gameObject:
             useVariable: 1
@@ -438,11 +447,29 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: SelectedUnit
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Units
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: UnitAmount
         fsmObjectParams: []
         fsmVarParams: []
         fsmArrayParams: []
         fsmEnumParams: []
-        fsmFloatParams: []
+        fsmFloatParams:
+        - useVariable: 1
+          name: UnitAmount
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
         fsmIntParams: []
         fsmBoolParams: []
         fsmVector2Params: []
@@ -451,27 +478,32 @@ MonoBehaviour:
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams: []
-        byteData: 00
+        byteData: 0000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 1400000012000000120000001300000001000000
+        paramDataType: 14000000120000001200000013000000010000001400000012000000120000000f00000001000000
         paramName:
         - gameObject
         - fsmName
         - variableName
         - storeValue
         - everyFrame
-        paramDataPos: 0000000000000000010000000000000000000000
-        paramByteDataSize: 0000000000000000000000000000000001000000
+        - gameObject
+        - fsmName
+        - variableName
+        - storeValue
+        - everyFrame
+        paramDataPos: 00000000000000000100000000000000000000000100000002000000030000000000000001000000
+        paramByteDataSize: 00000000000000000000000000000000010000000000000000000000000000000000000001000000
     - name: ClearSelectedUnit
       description: 
       colorIndex: 0
       position:
         serializedVersion: 2
         x: 131.25
-        y: 384.10156
+        y: 512.10156
         width: 139
         height: 32
       isBreakpoint: 0
@@ -592,18 +624,14 @@ MonoBehaviour:
         paramDataPos: 00000000000000000100000000000000000000000100000002000000030000000000000001000000
         paramByteDataSize: 00000000000000000000000000000000010000000000000000000000000000000000000001000000
     - name: Give Unit Initial Command 3
-      description: '1) Send the new unit the waypoint system to patrol.
-
-        2) Give him the PATROL-RANDOM command
-
-        3) Reset his movement FSM.'
+      description: 
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 436.40625
-        y: 430.20312
-        width: 285
-        height: 32
+        x: 400.53906
+        y: 580.5469
+        width: 206
+        height: 48
       isBreakpoint: 0
       isSequence: 0
       hideUnused: 0
@@ -616,6 +644,14 @@ MonoBehaviour:
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
+      - fsmEvent:
+          name: Spawn Again
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Spawn Unit
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
       actionData:
         actionNames:
         - HutongGames.PlayMaker.Actions.SetFsmString
@@ -623,16 +659,20 @@ MonoBehaviour:
         - HutongGames.PlayMaker.Actions.SetFsmGameObject
         - HutongGames.PlayMaker.Actions.SetFsmGameObject
         - HutongGames.PlayMaker.Actions.ActivateGameObject
+        - HutongGames.PlayMaker.Actions.FloatSubtract
+        - HutongGames.PlayMaker.Actions.FloatCompare
         customNames:
         - 
         - 
         - 
         - 
         - 
-        actionEnabled: 0101010101
-        actionIsOpen: 0101010101
-        actionStartIndex: 00000000050000000a0000000f00000014000000
-        actionHashCodes: 52221a0252221a025b66cf005b66cf00b2cf1000
+        - 
+        - 
+        actionEnabled: 01010101010101
+        actionIsOpen: 00000000000101
+        actionStartIndex: 00000000050000000a0000000f00000014000000190000001d000000
+        actionHashCodes: 52221a0252221a025b66cf005b66cf00b2cf10002a6e8a001bcdca04
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
@@ -759,7 +799,37 @@ MonoBehaviour:
         fsmVarParams: []
         fsmArrayParams: []
         fsmEnumParams: []
-        fsmFloatParams: []
+        fsmFloatParams:
+        - useVariable: 1
+          name: UnitAmount
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 1
+        - useVariable: 1
+          name: UnitAmount
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
         fsmIntParams: []
         fsmBoolParams:
         - useVariable: 0
@@ -779,13 +849,16 @@ MonoBehaviour:
         fsmColorParams: []
         fsmRectParams: []
         fsmQuaternionParams: []
-        stringParams: []
-        byteData: 000000000000
+        stringParams:
+        - FINISHED
+        - FINISHED
+        - Spawn Again
+        byteData: 000000000000000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 14000000120000001200000012000000010000001400000012000000120000001200000001000000140000001200000012000000130000000100000014000000120000001200000013000000010000001400000011000000110000000100000001000000
+        paramDataType: 140000001200000012000000120000000100000014000000120000001200000012000000010000001400000012000000120000001300000001000000140000001200000012000000130000000100000014000000110000001100000001000000010000000f0000000f00000001000000010000000f0000000f0000000f00000017000000170000001700000001000000
         paramName:
         - gameObject
         - fsmName
@@ -812,8 +885,19 @@ MonoBehaviour:
         - recursive
         - resetOnExit
         - everyFrame
-        paramDataPos: 00000000000000000100000002000000000000000100000003000000040000000500000001000000020000000600000007000000000000000200000003000000080000000900000001000000030000000400000000000000010000000400000005000000
-        paramByteDataSize: 00000000000000000000000000000000010000000000000000000000000000000000000001000000000000000000000000000000000000000100000000000000000000000000000000000000010000000000000000000000000000000100000001000000
+        - floatVariable
+        - subtract
+        - everyFrame
+        - perSecond
+        - float1
+        - float2
+        - tolerance
+        - equal
+        - lessThan
+        - greaterThan
+        - everyFrame
+        paramDataPos: 000000000000000001000000020000000000000001000000030000000400000005000000010000000200000006000000070000000000000002000000030000000800000009000000010000000300000004000000000000000100000004000000050000000000000001000000060000000700000002000000030000000400000000000000010000000200000008000000
+        paramByteDataSize: 000000000000000000000000000000000100000000000000000000000000000000000000010000000000000000000000000000000000000001000000000000000000000000000000000000000100000000000000000000000000000001000000010000000000000000000000010000000100000000000000000000000000000000000000000000000000000001000000
     - name: SetWaypoint0
       description: 'Cool State that calculates the nearest waypoint to the mouse click
         and sets it as the destination... might use later
@@ -822,8 +906,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 857.5703
-        y: 221.04688
+        x: 773.9453
+        y: 114.671875
         width: 400
         height: 16
       isBreakpoint: 0
@@ -1019,6 +1103,12 @@ MonoBehaviour:
         showInInspector: 1
         networkSync: 0
         value: 4
+      - useVariable: 1
+        name: UnitAmount
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
       intVariables: []
       boolVariables: []
       stringVariables:
@@ -1113,7 +1203,7 @@ MonoBehaviour:
       enumVariables: []
       categories:
       - 
-      variableCategoryIDs: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+      variableCategoryIDs: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
     description: 
     docUrl: 
     showStateLabel: 1
