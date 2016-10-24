@@ -24,7 +24,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 418.32812
-        y: 116.27344
+        y: 100.27344
         width: 134
         height: 48
       isBreakpoint: 0
@@ -244,8 +244,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 662.2422
-        y: 104.08594
+        x: 660.47656
+        y: 102.71094
         width: 115
         height: 48
       isBreakpoint: 0
@@ -467,7 +467,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 874.1719
-        y: 280.17188
+        y: 264.17188
         width: 292.5
         height: 64
       isBreakpoint: 0
@@ -647,7 +647,7 @@ MonoBehaviour:
           networkSync: 0
           value: 0
         - useVariable: 1
-          name: Ranged
+          name: IsRanged
           tooltip: 
           showInInspector: 1
           networkSync: 0
@@ -734,7 +734,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 1284.6719
-        y: 263.9297
+        y: 247.92969
         width: 101
         height: 32
       isBreakpoint: 0
@@ -929,7 +929,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 1094.1094
-        y: 142.00781
+        y: 126.00781
         width: 100
         height: 16
       isBreakpoint: 0
@@ -1015,7 +1015,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 443.4297
-        y: 294.52344
+        y: 278.52344
         width: 134
         height: 48
       isBreakpoint: 0
@@ -1298,7 +1298,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 647
-        y: 294
+        y: 278
         width: 153
         height: 32
       isBreakpoint: 0
@@ -1375,7 +1375,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 212
-        y: 120
+        y: 104
         width: 100
         height: 32
       isBreakpoint: 0
@@ -1464,7 +1464,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 57
-        y: 119
+        y: 103
         width: 100
         height: 16
       isBreakpoint: 0
@@ -1577,7 +1577,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 985.4219
-        y: 190.875
+        y: 174.875
         width: 100
         height: 32
       isBreakpoint: 0
@@ -1703,7 +1703,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 1284.0469
-        y: 334.03906
+        y: 318.03906
         width: 111
         height: 32
       isBreakpoint: 0
@@ -2082,7 +2082,19 @@ MonoBehaviour:
         value: 0
       boolVariables:
       - useVariable: 1
-        name: Ranged
+        name: IsBuilding
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        value: 0
+      - useVariable: 1
+        name: IsFlying
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        value: 0
+      - useVariable: 1
+        name: IsRanged
         tooltip: 
         showInInspector: 1
         networkSync: 0
@@ -2155,7 +2167,7 @@ MonoBehaviour:
       enumVariables: []
       categories:
       - 
-      variableCategoryIDs: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+      variableCategoryIDs: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
     description: 
     docUrl: 
     showStateLabel: 1
