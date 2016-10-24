@@ -19,14 +19,13 @@ MonoBehaviour:
     startState: Init
     states:
     - name: Init
-      description: Spawns a random enemy at a random spawn point, and gives that enemy
-        a patrol command to patrol waypoints in sequential order.
+      description: 
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 796.7867
-        y: 136.26227
-        width: 400
+        x: 448.3203
+        y: 189.65625
+        width: 100
         height: 32
       isBreakpoint: 0
       isSequence: 0
@@ -41,12 +40,14 @@ MonoBehaviour:
         linkConstraint: 0
         colorIndex: 0
       actionData:
-        actionNames: []
-        customNames: []
-        actionEnabled: 
-        actionIsOpen: 
-        actionStartIndex: 
-        actionHashCodes: 
+        actionNames:
+        - HutongGames.PlayMaker.Actions.Wait
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: 48c01101
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -61,7 +62,13 @@ MonoBehaviour:
         fsmVarParams: []
         fsmArrayParams: []
         fsmEnumParams: []
-        fsmFloatParams: []
+        fsmFloatParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 2
         fsmIntParams: []
         fsmBoolParams: []
         fsmVector2Params: []
@@ -69,23 +76,27 @@ MonoBehaviour:
         fsmColorParams: []
         fsmRectParams: []
         fsmQuaternionParams: []
-        stringParams: []
-        byteData: 
+        stringParams:
+        - 
+        byteData: 00
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 
-        paramName: []
-        paramDataPos: 
-        paramByteDataSize: 
+        paramDataType: 0f0000001700000001000000
+        paramName:
+        - time
+        - finishEvent
+        - realTime
+        paramDataPos: 000000000000000000000000
+        paramByteDataSize: 000000000000000001000000
     - name: Random Enemy [SET UP UNITS IN HERE]
       description: 
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 1015.7867
-        y: 288.26227
+        x: 583.78906
+        y: 288.26562
         width: 291
         height: 32
       isBreakpoint: 0
@@ -144,8 +155,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 1016.7867
-        y: 351.26227
+        x: 584.78906
+        y: 351.26562
         width: 155
         height: 32
       isBreakpoint: 0
@@ -222,8 +233,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 1019.7867
-        y: 423.26227
+        x: 587.78906
+        y: 423.26562
         width: 100
         height: 32
       isBreakpoint: 0
@@ -337,17 +348,13 @@ MonoBehaviour:
         paramDataPos: 000000000000000001000000000000000200000000000000010000000000000001000000
         paramByteDataSize: 000000000000000000000000000000000000000000000000000000000000000000000000
     - name: Give Unit Initial Command
-      description: '1) Send the new unit the waypoint system to patrol.
-
-        2) Give him the PATROL-RANDOM command
-
-        3) Reset his movement FSM.'
+      description: 
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 1017.7867
-        y: 503.26227
-        width: 278.5
+        x: 585.78906
+        y: 503.26562
+        width: 193
         height: 32
       isBreakpoint: 0
       isSequence: 0
@@ -564,8 +571,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 762.8726
-        y: 511.74664
+        x: 330.875
+        y: 511.75
         width: 106
         height: 32
       isBreakpoint: 0
@@ -636,8 +643,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 524
-        y: 132
+        x: 61.3125
+        y: 106.99219
         width: 100
         height: 16
       isBreakpoint: 0
@@ -693,6 +700,12 @@ MonoBehaviour:
     - name: Death
       isSystemEvent: 0
       isGlobal: 1
+    - name: GameOn
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: GameOver
+      isSystemEvent: 0
+      isGlobal: 1
     - name: Get Damage
       isSystemEvent: 0
       isGlobal: 1
@@ -708,9 +721,6 @@ MonoBehaviour:
     - name: Spawn Again
       isSystemEvent: 0
       isGlobal: 0
-    - name: GameOver
-      isSystemEvent: 0
-      isGlobal: 1
     globalTransitions:
     - fsmEvent:
         name: GameOver
@@ -768,6 +778,12 @@ MonoBehaviour:
         networkSync: 0
         value: {fileID: 0}
       - useVariable: 1
+        name: UnitController
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        value: {fileID: 0}
+      - useVariable: 1
         name: Waypoint1Orders
         tooltip: 
         showInInspector: 1
@@ -804,7 +820,7 @@ MonoBehaviour:
       enumVariables: []
       categories:
       - 
-      variableCategoryIDs: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+      variableCategoryIDs: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
     description: 
     docUrl: 
     showStateLabel: 1
