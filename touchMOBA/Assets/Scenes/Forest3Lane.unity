@@ -2144,6 +2144,12 @@ MonoBehaviour:
     variables:
       floatVariables:
       - useVariable: 1
+        name: ManaAvailable
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
+      - useVariable: 1
         name: UnitAmount
         tooltip: 
         showInInspector: 1
@@ -2184,7 +2190,7 @@ MonoBehaviour:
       enumVariables: []
       categories:
       - 
-      variableCategoryIDs: 00000000000000000000000000000000
+      variableCategoryIDs: 0000000000000000000000000000000000000000
     description: 
     docUrl: 
     showStateLabel: 1
@@ -6410,12 +6416,24 @@ MonoBehaviour:
         networkSync: 0
         value: {fileID: 1509783000}
       - useVariable: 1
+        name: SpawnedUnit
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: {fileID: 0}
+      - useVariable: 1
         name: Unit1
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        value: {fileID: 1000012270001650, guid: 521bab3601f9faa4ba33008143dccffa,
+        value: {fileID: 1000012021405246, guid: 5d6a91096b0b2f1499d2538857f713c1,
           type: 2}
+      - useVariable: 1
+        name: UnitController
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        value: {fileID: 0}
       - useVariable: 1
         name: Waypoint1Orders
         tooltip: 
@@ -6453,7 +6471,7 @@ MonoBehaviour:
       enumVariables: []
       categories:
       - 
-      variableCategoryIDs: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+      variableCategoryIDs: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
     description: 
     docUrl: 
     showStateLabel: 1
@@ -6881,6 +6899,12 @@ MonoBehaviour:
     variables:
       floatVariables:
       - useVariable: 1
+        name: ManaAvailable
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
+      - useVariable: 1
         name: UnitAmount
         tooltip: 
         showInInspector: 1
@@ -6921,7 +6945,7 @@ MonoBehaviour:
       enumVariables: []
       categories:
       - 
-      variableCategoryIDs: 00000000000000000000000000000000
+      variableCategoryIDs: 0000000000000000000000000000000000000000
     description: 
     docUrl: 
     showStateLabel: 1
@@ -16237,6 +16261,12 @@ MonoBehaviour:
     variables:
       floatVariables:
       - useVariable: 1
+        name: ManaAvailable
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
+      - useVariable: 1
         name: UnitAmount
         tooltip: 
         showInInspector: 1
@@ -16277,7 +16307,7 @@ MonoBehaviour:
       enumVariables: []
       categories:
       - 
-      variableCategoryIDs: 00000000000000000000000000000000
+      variableCategoryIDs: 0000000000000000000000000000000000000000
     description: 
     docUrl: 
     showStateLabel: 1
@@ -16751,6 +16781,12 @@ MonoBehaviour:
         value: {fileID: 1000012270001650, guid: 521bab3601f9faa4ba33008143dccffa,
           type: 2}
       - useVariable: 1
+        name: UnitController
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        value: {fileID: 0}
+      - useVariable: 1
         name: Waypoint1Orders
         tooltip: 
         showInInspector: 1
@@ -16787,7 +16823,7 @@ MonoBehaviour:
       enumVariables: []
       categories:
       - 
-      variableCategoryIDs: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+      variableCategoryIDs: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
     description: 
     docUrl: 
     showStateLabel: 1
@@ -20908,12 +20944,12 @@ Prefab:
     - target: {fileID: 224000013407647968, guid: 56080f0bf02eae54bb66c374489a43ea,
         type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224000013407647968, guid: 56080f0bf02eae54bb66c374489a43ea,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4000010532351282, guid: 56080f0bf02eae54bb66c374489a43ea, type: 2}
       propertyPath: m_LocalScale.x
@@ -24387,6 +24423,12 @@ MonoBehaviour:
     variables:
       floatVariables:
       - useVariable: 1
+        name: ManaAvailable
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
+      - useVariable: 1
         name: UnitAmount
         tooltip: 
         showInInspector: 1
@@ -24427,7 +24469,7 @@ MonoBehaviour:
       enumVariables: []
       categories:
       - 
-      variableCategoryIDs: 00000000000000000000000000000000
+      variableCategoryIDs: 0000000000000000000000000000000000000000
     description: 
     docUrl: 
     showStateLabel: 1
@@ -25202,12 +25244,12 @@ Prefab:
     - target: {fileID: 224000013446611002, guid: 58690c2c89c1e014cb88d7a9d943faac,
         type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224000013446611002, guid: 58690c2c89c1e014cb88d7a9d943faac,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1000010993810252, guid: 58690c2c89c1e014cb88d7a9d943faac, type: 2}
       propertyPath: m_TagString
@@ -33565,7 +33607,7 @@ MonoBehaviour:
   _dontDestroyOnLoad: 0
   logMessages: 0
   _perPrefabPoolOptions:
-  - prefab: {fileID: 4000013953480700, guid: 8da1bd2cfbbcaf944abcaf626f83a0c7, type: 2}
+  - prefab: {fileID: 4000013131368802, guid: ee410fecd44d3f44297aec3bc8c2fadf, type: 2}
     preloadAmount: 1
     preloadTime: 0
     preloadFrames: 2
@@ -33579,7 +33621,21 @@ MonoBehaviour:
     cullMaxPerPass: 5
     _logMessages: 0
     spawnPool: {fileID: 0}
-  - prefab: {fileID: 4000011124561074, guid: 521bab3601f9faa4ba33008143dccffa, type: 2}
+  - prefab: {fileID: 4000012291359010, guid: 5d6a91096b0b2f1499d2538857f713c1, type: 2}
+    preloadAmount: 1
+    preloadTime: 0
+    preloadFrames: 2
+    preloadDelay: 0
+    limitInstances: 0
+    limitAmount: 100
+    limitFIFO: 0
+    cullDespawned: 0
+    cullAbove: 50
+    cullDelay: 60
+    cullMaxPerPass: 5
+    _logMessages: 0
+    spawnPool: {fileID: 0}
+  - prefab: {fileID: 4000013392367222, guid: d817a87be04e9df448844a525df4b0d4, type: 2}
     preloadAmount: 1
     preloadTime: 0
     preloadFrames: 2
@@ -33740,7 +33796,7 @@ MonoBehaviour:
     locked: 0
     manualUpdate: 0
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 0
+    preprocessed: 1
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0
