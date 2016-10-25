@@ -1,23 +1,5 @@
 #PlayMaker Utils Change log
 
-
-###1.2.9
-**Release Date:** 27/09/2016  
-
-**new**: Conditional Expression addition ( manual for now)  
-
-**Fix**: Windows store publishing  
-
-###1.2.8
-**Release Date:** 21/09/2016  
-
-**new**: RequiredAttribute  
-
-**update**: LinkerWizard support for PlayMaker 1.8.3  
-
-**Improvement:** LinkerWizard do not spam logs when published, debug all actions set to false by default 
-
-
 ###1.2.7
 **Release Date:** 30/08/2016  
 
