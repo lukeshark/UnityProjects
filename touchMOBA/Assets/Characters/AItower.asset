@@ -42,6 +42,7 @@ MonoBehaviour:
       actionData:
         actionNames:
         - HutongGames.PlayMaker.Actions.FindClosest
+        - HutongGames.PlayMaker.Actions.FindClosest2
         - HutongGames.PlayMaker.Actions.GetDistance
         - HutongGames.PlayMaker.Actions.FloatCompare
         - HutongGames.PlayMaker.Actions.AgentStop
@@ -50,10 +51,11 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 01010101
-        actionIsOpen: 01010101
-        actionStartIndex: 00000000070000000b00000012000000
-        actionHashCodes: d899af0236f094001bcdca048d4bb503
+        - 
+        actionEnabled: 0101010101
+        actionIsOpen: 0101010101
+        actionStartIndex: 000000000700000010000000140000001b000000
+        actionHashCodes: d899af022df6c90536f094001bcdca048d4bb503
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
@@ -63,12 +65,26 @@ MonoBehaviour:
           networkSync: 0
           value: {fileID: 0}
         - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 0}
+        - useVariable: 1
           name: WayPointCurrent
           tooltip: 
           showInInspector: 1
           networkSync: 0
           value: {fileID: 0}
         fsmOwnerDefaultParams:
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
         - ownerOption: 0
           gameObject:
             useVariable: 0
@@ -106,6 +122,12 @@ MonoBehaviour:
           showInInspector: 1
           networkSync: 0
           value: 
+        - useVariable: 1
+          name: TagEnemy
+          tooltip: 
+          showInInspector: 1
+          networkSync: 0
+          value: 
         fsmObjectParams: []
         fsmVarParams: []
         fsmArrayParams: []
@@ -115,6 +137,12 @@ MonoBehaviour:
           name: DistanceToEnemy
           tooltip: 
           showInInspector: 1
+          networkSync: 0
+          value: 0
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
           networkSync: 0
           value: 0
         - useVariable: 1
@@ -154,7 +182,25 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
           value: 1
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
         fsmVector2Params: []
         fsmVector3Params: []
         fsmColorParams: []
@@ -164,17 +210,27 @@ MonoBehaviour:
         - 
         - MoveToEnemy
         - 
-        byteData: 010101
-        arrayParamSizes: 
-        arrayParamTypes: []
+        byteData: 01000101
+        arrayParamSizes: 00000000
+        arrayParamTypes:
+        - HutongGames.PlayMaker.FsmInt
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 14000000120000001100000011000000130000000f0000000100000014000000130000000f000000010000000f0000000f0000000f0000001700000017000000170000000100000014000000
+        paramDataType: 14000000120000001100000011000000130000000f00000001000000140000001200000011000000110000000c00000011000000130000000f0000000100000014000000130000000f000000010000000f0000000f0000000f0000001700000017000000170000000100000014000000
         paramName:
         - gameObject
         - withTag
         - ignoreOwner
         - mustBeVisible
+        - storeObject
+        - storeDistance
+        - everyFrame
+        - gameObject
+        - withTag
+        - ignoreOwner
+        - mustBeVisible
+        - layerMask
+        - invertMask
         - storeObject
         - storeDistance
         - everyFrame
@@ -190,8 +246,8 @@ MonoBehaviour:
         - greaterThan
         - everyFrame
         - gameObject
-        paramDataPos: 00000000000000000000000001000000000000000000000000000000010000000100000001000000010000000200000003000000040000000000000001000000020000000200000002000000
-        paramByteDataSize: 00000000000000000000000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000000000000000000000000000100000000000000
+        paramDataPos: 00000000000000000000000001000000000000000000000000000000010000000100000002000000030000000000000004000000010000000100000001000000020000000200000002000000020000000300000004000000050000000000000001000000020000000300000003000000
+        paramByteDataSize: 00000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000000000000000000000000000100000000000000
     - name: MoveToEnemy
       description: 
       colorIndex: 0
