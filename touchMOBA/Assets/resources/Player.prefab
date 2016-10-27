@@ -324,7 +324,7 @@ MonoBehaviour:
     dataVersion: 2
     usedInTemplate: {fileID: 0}
     name: Movement
-    startState: IsMine
+    startState: CheckIsMine
     states:
     - name: IsMine
       description: 
@@ -797,7 +797,7 @@ MonoBehaviour:
         fsmOwnerDefaultParams:
         - ownerOption: 0
           gameObject:
-            useVariable: 0
+            useVariable: 1
             name: 
             tooltip: 
             showInInspector: 0
@@ -829,8 +829,8 @@ MonoBehaviour:
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams:
-        - 
-        - 
+        - Yes
+        - No
         byteData: 
         arrayParamSizes: 
         arrayParamTypes: []
@@ -1104,7 +1104,7 @@ MonoBehaviour:
           networkSync: 0
           value: {x: 0, y: 0, z: 0}
         - useVariable: 1
-          name: currentRotation
+          name: recievedRotation
           tooltip: 
           showInInspector: 0
           networkSync: 0
