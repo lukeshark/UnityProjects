@@ -19467,6 +19467,7 @@ MonoBehaviour:
         actionNames:
         - HutongGames.PlayMaker.Actions.SetFsmString
         - HutongGames.PlayMaker.Actions.SetFsmString
+        - HutongGames.PlayMaker.Actions.SetFsmString
         - HutongGames.PlayMaker.Actions.SetFsmGameObject
         - HutongGames.PlayMaker.Actions.SetFsmGameObject
         - HutongGames.PlayMaker.Actions.ActivateGameObject
@@ -19480,10 +19481,11 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 01010101010101
-        actionIsOpen: 00000000000100
-        actionStartIndex: 00000000050000000a0000000f00000014000000190000001d000000
-        actionHashCodes: 52221a0252221a025b66cf005b66cf00b2cf10002a6e8a001bcdca04
+        - 
+        actionEnabled: 0101010101010101
+        actionIsOpen: 0100000000000000
+        actionStartIndex: 00000000050000000a0000000f00000014000000190000001e00000022000000
+        actionHashCodes: 52221a0252221a0252221a025b66cf005b66cf00b2cf10002a6e8a001bcdca04
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
@@ -19539,6 +19541,14 @@ MonoBehaviour:
             showInInspector: 0
             networkSync: 0
             value: {fileID: 0}
+        - ownerOption: 1
+          gameObject:
+            useVariable: 1
+            name: temp_spawnedunit
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -19546,6 +19556,24 @@ MonoBehaviour:
         fsmPropertyParams: []
         layoutOptionParams: []
         fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: VariableNetworkSync
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: RecievedUnitParams
+        - useVariable: 1
+          name: RecievedUnitParams
+          tooltip: 
+          showInInspector: 0
+          networkSync: 1
+          value: 
         - useVariable: 0
           name: 
           tooltip: 
@@ -19664,13 +19692,18 @@ MonoBehaviour:
         - FINISHED
         - FINISHED
         - Spawn Again
-        byteData: 000000000000000000
+        byteData: 00000000000000000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 140000001200000012000000120000000100000014000000120000001200000012000000010000001400000012000000120000001300000001000000140000001200000012000000130000000100000014000000110000001100000001000000010000000f0000000f00000001000000010000000f0000000f0000000f00000017000000170000001700000001000000
+        paramDataType: 1400000012000000120000001200000001000000140000001200000012000000120000000100000014000000120000001200000012000000010000001400000012000000120000001300000001000000140000001200000012000000130000000100000014000000110000001100000001000000010000000f0000000f00000001000000010000000f0000000f0000000f00000017000000170000001700000001000000
         paramName:
+        - gameObject
+        - fsmName
+        - variableName
+        - setValue
+        - everyFrame
         - gameObject
         - fsmName
         - variableName
@@ -19707,8 +19740,8 @@ MonoBehaviour:
         - lessThan
         - greaterThan
         - everyFrame
-        paramDataPos: 000000000000000001000000020000000000000001000000030000000400000005000000010000000200000006000000070000000000000002000000030000000800000009000000010000000300000004000000000000000100000004000000050000000000000001000000060000000700000002000000030000000400000000000000010000000200000008000000
-        paramByteDataSize: 000000000000000000000000000000000100000000000000000000000000000000000000010000000000000000000000000000000000000001000000000000000000000000000000000000000100000000000000000000000000000001000000010000000000000000000000010000000100000000000000000000000000000000000000000000000000000001000000
+        paramDataPos: 00000000000000000100000002000000000000000100000003000000040000000500000001000000020000000600000007000000080000000200000003000000090000000a0000000000000003000000040000000b0000000c000000010000000400000005000000000000000100000005000000060000000000000001000000070000000800000002000000030000000400000000000000010000000200000009000000
+        paramByteDataSize: 0000000000000000000000000000000001000000000000000000000000000000000000000100000000000000000000000000000000000000010000000000000000000000000000000000000001000000000000000000000000000000000000000100000000000000000000000000000001000000010000000000000000000000010000000100000000000000000000000000000000000000000000000000000001000000
     - name: GetEventAndSplit
       description: 
       colorIndex: 0
@@ -19787,13 +19820,13 @@ MonoBehaviour:
           name: RecievedUnitParams
           tooltip: 
           showInInspector: 0
-          networkSync: 0
+          networkSync: 1
           value: 
         - useVariable: 1
           name: RecievedUnitParams
           tooltip: 
           showInInspector: 0
-          networkSync: 0
+          networkSync: 1
           value: 
         - useVariable: 0
           name: 
@@ -21037,7 +21070,7 @@ MonoBehaviour:
         name: RecievedUnitParams
         tooltip: 
         showInInspector: 0
-        networkSync: 0
+        networkSync: 1
         value: 
       - useVariable: 1
         name: SpawnpointposString
@@ -21206,7 +21239,7 @@ MonoBehaviour:
     locked: 0
     manualUpdate: 0
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 1
+    preprocessed: 0
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0
@@ -39511,6 +39544,89 @@ MonoBehaviour:
     handleAnimatorIK: 0
   fsmTemplate: {fileID: 0}
   eventHandlerComponentsAdded: 0
+--- !u!1001 &1748131274
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4000013131368802, guid: ee410fecd44d3f44297aec3bc8c2fadf, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013131368802, guid: ee410fecd44d3f44297aec3bc8c2fadf, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013131368802, guid: ee410fecd44d3f44297aec3bc8c2fadf, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013131368802, guid: ee410fecd44d3f44297aec3bc8c2fadf, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013131368802, guid: ee410fecd44d3f44297aec3bc8c2fadf, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013131368802, guid: ee410fecd44d3f44297aec3bc8c2fadf, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013131368802, guid: ee410fecd44d3f44297aec3bc8c2fadf, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013131368802, guid: ee410fecd44d3f44297aec3bc8c2fadf, type: 2}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012729241706, guid: ee410fecd44d3f44297aec3bc8c2fadf, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0.2771483
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012729241706, guid: ee410fecd44d3f44297aec3bc8c2fadf, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0.6428172
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012729241706, guid: ee410fecd44d3f44297aec3bc8c2fadf, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0.6424715
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012729241706, guid: ee410fecd44d3f44297aec3bc8c2fadf, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.31177753
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000013788717998, guid: ee410fecd44d3f44297aec3bc8c2fadf,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000013788717998, guid: ee410fecd44d3f44297aec3bc8c2fadf,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000012039871480, guid: ee410fecd44d3f44297aec3bc8c2fadf,
+        type: 2}
+      propertyPath: viewIdField
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000012039871480, guid: ee410fecd44d3f44297aec3bc8c2fadf,
+        type: 2}
+      propertyPath: instantiationId
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000014053023820, guid: ee410fecd44d3f44297aec3bc8c2fadf,
+        type: 2}
+      propertyPath: fsm.preprocessed
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: ee410fecd44d3f44297aec3bc8c2fadf, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1748893307
 GameObject:
   m_ObjectHideFlags: 0
