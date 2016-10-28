@@ -38,7 +38,7 @@ Platform assembly: C:\Users\Luke\Documents\UnityProjects\UnityProjects\touchMOBA
 Loading C:\Users\Luke\Documents\UnityProjects\UnityProjects\touchMOBA\PhotonTest2\wtf_Data\Managed\Photon3Unity3D.dll into Unity Child Domain
 Platform assembly: C:\Users\Luke\Documents\UnityProjects\UnityProjects\touchMOBA\PhotonTest2\wtf_Data\Managed\PlayMaker.dll (this message is harmless)
 Loading C:\Users\Luke\Documents\UnityProjects\UnityProjects\touchMOBA\PhotonTest2\wtf_Data\Managed\PlayMaker.dll into Unity Child Domain
-- Completed reload, in  0.213 seconds
+- Completed reload, in  0.212 seconds
 Platform assembly: C:\Users\Luke\Documents\UnityProjects\UnityProjects\touchMOBA\PhotonTest2\wtf_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\Luke\Documents\UnityProjects\UnityProjects\touchMOBA\PhotonTest2\wtf_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 60Hz; virtual: 3840x1080 at -1920,0
@@ -59,35 +59,7 @@ Did you #ifdef UNITY_EDITOR a section of your serialized properties in any of yo
 (Filename:  Line: 1764)
 
 WARNING: Shader Unsupported: 'Hidden/TerrainEngine/BillboardTree' - Pass '' has no vertex shader
-UnloadTime: 0.998960 ms
-Player awake
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
-
-found fsm to observe : 1
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
-
- photon view observing :  17
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
-
-switching observed
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
-
-network synched FsmString: 'RecievedUnitParams' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight'
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
-
-network synched fsmVector3: 'positionSync' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight'
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
-
-network synched fsmVector3: 'rotationSync' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight'
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
-
+UnloadTime: 0.977754 ms
 Player awake
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
@@ -104,7 +76,15 @@ switching observed
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
 
+network synched fsmInt: 'healthSync' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
 network synched FsmString: 'RecievedUnitParams' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched FsmString: 'TargetNameSync' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
 
@@ -214,10 +194,6 @@ PhotonNetwork.connectionState changed from 'Connecting' to 'InitializingApplicat
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
 
-Could not find FSM: Health
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
-
 PLayMaker Photon proxy:OnConnectedToPhoton
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
@@ -258,55 +234,7 @@ PLayMaker Photon proxy:OnCreatedRoom:
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
 
-PLayMaker Photon proxy:OnJoinedRoom: 11.49472
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
-
-post PHOTON / JOINED ROOM broadcasting
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
-
-PLayMaker Photon proxy: OnPhotonPlayerConnected: #02 
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
-
-The observed monobehaviour (UnitSpawning) of this PhotonView does not implement OnPhotonSerializeView()!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
-
-The observed monobehaviour (WestBaseSpawnZoneBot) of this PhotonView does not implement OnPhotonSerializeView()!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
-
-The observed monobehaviour (WestBaseSpawnZoneTemp) of this PhotonView does not implement OnPhotonSerializeView()!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
-
-The observed monobehaviour (WestBaseSpawnZoneTop) of this PhotonView does not implement OnPhotonSerializeView()!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
-
-The observed monobehaviour (WestBaseSpawnZoneMid) of this PhotonView does not implement OnPhotonSerializeView()!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
-
-The observed monobehaviour (WestBaseSpawnZoneTemp) of this PhotonView does not implement OnPhotonSerializeView()!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
-
-The observed monobehaviour (WestBaseSpawnZoneTemp) of this PhotonView does not implement OnPhotonSerializeView()!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
-
-The observed monobehaviour (WestBaseSpawnZoneTemp) of this PhotonView does not implement OnPhotonSerializeView()!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
-
-RPC to send string:Vector3(28.89373,0.5,30.02324)!RedTeam!BlueTeam!UnitKnight!4!WPMid!WPWest  with global Fsm Event:SPAWNUNIT to target:All
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
-
- sent RPC string:Vector3(28.89373,0.5,30.02324)!RedTeam!BlueTeam!UnitKnight!4!WPMid!WPWest from Fsm Event:SPAWNUNIT
+PLayMaker Photon proxy:OnJoinedRoom: 32.2792
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
 
@@ -326,15 +254,23 @@ switching observed
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
 
-network synched FsmString: 'RecievedUnitParams' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
+network synched fsmInt: 'healthSync' in fsm:'VariableNetworkSync' in gameObject:'RedTeamBase(Clone)'
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
 
-network synched fsmVector3: 'positionSync' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
+network synched FsmString: 'RecievedUnitParams' in fsm:'VariableNetworkSync' in gameObject:'RedTeamBase(Clone)'
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
 
-network synched fsmVector3: 'rotationSync' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
+network synched FsmString: 'TargetNameSync' in fsm:'VariableNetworkSync' in gameObject:'RedTeamBase(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched fsmVector3: 'positionSync' in fsm:'VariableNetworkSync' in gameObject:'RedTeamBase(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched fsmVector3: 'rotationSync' in fsm:'VariableNetworkSync' in gameObject:'RedTeamBase(Clone)'
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
 
@@ -358,19 +294,139 @@ switching observed
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
 
-network synched FsmString: 'RecievedUnitParams' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
+network synched fsmInt: 'healthSync' in fsm:'VariableNetworkSync' in gameObject:'BlueTeamBase(Clone)'
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
 
-network synched fsmVector3: 'positionSync' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
+network synched FsmString: 'RecievedUnitParams' in fsm:'VariableNetworkSync' in gameObject:'BlueTeamBase(Clone)'
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
 
-network synched fsmVector3: 'rotationSync' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
+network synched FsmString: 'TargetNameSync' in fsm:'VariableNetworkSync' in gameObject:'BlueTeamBase(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched fsmVector3: 'positionSync' in fsm:'VariableNetworkSync' in gameObject:'BlueTeamBase(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched fsmVector3: 'rotationSync' in fsm:'VariableNetworkSync' in gameObject:'BlueTeamBase(Clone)'
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
 
 PLayMaker Photon proxy:OnPhotonInstantiate 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+post PHOTON / JOINED ROOM broadcasting
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+sending PHOTON INSTANTIATE event to RedTeamBase(Clone)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+sending PHOTON INSTANTIATE event to BlueTeamBase(Clone)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+PLayMaker Photon proxy: OnPhotonPlayerConnected: #02 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+The observed monobehaviour (UnitSpawning) of this PhotonView does not implement OnPhotonSerializeView()!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Player awake
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+found fsm to observe : 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+ photon view observing :  2001
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+switching observed
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched fsmInt: 'healthSync' in fsm:'VariableNetworkSync' in gameObject:'RedTeamBase(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched FsmString: 'RecievedUnitParams' in fsm:'VariableNetworkSync' in gameObject:'RedTeamBase(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched FsmString: 'TargetNameSync' in fsm:'VariableNetworkSync' in gameObject:'RedTeamBase(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched fsmVector3: 'positionSync' in fsm:'VariableNetworkSync' in gameObject:'RedTeamBase(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched fsmVector3: 'rotationSync' in fsm:'VariableNetworkSync' in gameObject:'RedTeamBase(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+PLayMaker Photon proxy:OnPhotonInstantiate 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Player awake
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+found fsm to observe : 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+ photon view observing :  2002
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+switching observed
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched fsmInt: 'healthSync' in fsm:'VariableNetworkSync' in gameObject:'BlueTeamBase(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched FsmString: 'RecievedUnitParams' in fsm:'VariableNetworkSync' in gameObject:'BlueTeamBase(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched FsmString: 'TargetNameSync' in fsm:'VariableNetworkSync' in gameObject:'BlueTeamBase(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched fsmVector3: 'positionSync' in fsm:'VariableNetworkSync' in gameObject:'BlueTeamBase(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched fsmVector3: 'rotationSync' in fsm:'VariableNetworkSync' in gameObject:'BlueTeamBase(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+PLayMaker Photon proxy:OnPhotonInstantiate 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+sending PHOTON INSTANTIATE event to RedTeamBase(Clone)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+sending PHOTON INSTANTIATE event to BlueTeamBase(Clone)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+ sent RPC string:Vector3(-22.28979,0.5,-24.05798)!BlueTeam!RedTeam!UnitKnight!4!WPMid!WPEast from Fsm Event:SPAWNUNIT
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
 
@@ -390,7 +446,15 @@ switching observed
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
 
+network synched fsmInt: 'healthSync' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
 network synched FsmString: 'RecievedUnitParams' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched FsmString: 'TargetNameSync' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
 
@@ -422,7 +486,1057 @@ switching observed
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
 
+network synched fsmInt: 'healthSync' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
 network synched FsmString: 'RecievedUnitParams' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched FsmString: 'TargetNameSync' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched fsmVector3: 'positionSync' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched fsmVector3: 'rotationSync' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+PLayMaker Photon proxy:OnPhotonInstantiate 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Player awake
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+found fsm to observe : 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+ photon view observing :  1005
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+switching observed
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched fsmInt: 'healthSync' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched FsmString: 'RecievedUnitParams' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched FsmString: 'TargetNameSync' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched fsmVector3: 'positionSync' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched fsmVector3: 'rotationSync' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+PLayMaker Photon proxy:OnPhotonInstantiate 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Player awake
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+found fsm to observe : 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+ photon view observing :  1006
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+switching observed
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched fsmInt: 'healthSync' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched FsmString: 'RecievedUnitParams' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched FsmString: 'TargetNameSync' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched fsmVector3: 'positionSync' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched fsmVector3: 'rotationSync' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+PLayMaker Photon proxy:OnPhotonInstantiate 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+sending PHOTON INSTANTIATE event to UnitKnight(Clone)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+sending PHOTON INSTANTIATE event to UnitKnight(Clone)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+sending PHOTON INSTANTIATE event to UnitKnight(Clone)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+sending PHOTON INSTANTIATE event to UnitKnight(Clone)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+ sent RPC string:Vector3(-4.910012,0.5000001,-5.919059)!BlueTeam!RedTeam!UnitKnight!4!WPMid!WPEast from Fsm Event:SPAWNUNIT
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Player awake
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+found fsm to observe : 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+ photon view observing :  1007
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+switching observed
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched fsmInt: 'healthSync' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched FsmString: 'RecievedUnitParams' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched FsmString: 'TargetNameSync' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched fsmVector3: 'positionSync' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched fsmVector3: 'rotationSync' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+PLayMaker Photon proxy:OnPhotonInstantiate 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Player awake
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+found fsm to observe : 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+ photon view observing :  1008
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+switching observed
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched fsmInt: 'healthSync' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched FsmString: 'RecievedUnitParams' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched FsmString: 'TargetNameSync' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched fsmVector3: 'positionSync' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched fsmVector3: 'rotationSync' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+PLayMaker Photon proxy:OnPhotonInstantiate 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Player awake
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+found fsm to observe : 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+ photon view observing :  1009
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+switching observed
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched fsmInt: 'healthSync' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched FsmString: 'RecievedUnitParams' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched FsmString: 'TargetNameSync' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched fsmVector3: 'positionSync' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched fsmVector3: 'rotationSync' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+PLayMaker Photon proxy:OnPhotonInstantiate 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Player awake
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+found fsm to observe : 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+ photon view observing :  1010
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+switching observed
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched fsmInt: 'healthSync' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched FsmString: 'RecievedUnitParams' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched FsmString: 'TargetNameSync' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched fsmVector3: 'positionSync' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched fsmVector3: 'rotationSync' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+PLayMaker Photon proxy:OnPhotonInstantiate 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+sending PHOTON INSTANTIATE event to UnitKnight(Clone)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+sending PHOTON INSTANTIATE event to UnitKnight(Clone)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+sending PHOTON INSTANTIATE event to UnitKnight(Clone)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+sending PHOTON INSTANTIATE event to UnitKnight(Clone)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1510)
+
+The referenced script on this Behaviour (Game Object 'Loader') is missing!
+ 
+(Filename:  Line: 1656)
+
+A script behaviour (probably EasyTouchSceneProxy?) has a different serialization layout when loading. (Read 32 bytes but expected 36 bytes)
+Did you #ifdef UNITY_EDITOR a section of your serialized properties in any of your scripts?
+ 
+(Filename:  Line: 1764)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 7.023379 ms
+Player awake
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+found fsm to observe : 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+ photon view observing :  0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+switching observed
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched fsmInt: 'healthSync' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched FsmString: 'RecievedUnitParams' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched FsmString: 'TargetNameSync' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched fsmVector3: 'positionSync' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched fsmVector3: 'rotationSync' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Player awake
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+found fsm to observe : 0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+ photon view observing :  0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Player awake
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+found fsm to observe : 0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+ photon view observing :  0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Player awake
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+found fsm to observe : 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+ photon view observing :  0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+switching observed
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched fsmVector3: 'positionSync' in fsm:'VariableNetworkSync' in gameObject:'UnitGiant(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Player awake
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+found fsm to observe : 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+ photon view observing :  0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+switching observed
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched fsmVector3: 'positionSync' in fsm:'VariableNetworkSync' in gameObject:'UnitArcher(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 8617.
+Total: 18.076324 ms (FindLiveObjects: 0.290745 ms CreateObjectMapping: 0.297133 ms MarkObjects: 14.278997 ms  DeleteObjects: 3.208935 ms)
+
+WARNING: Shader Unsupported: 'Hidden/TerrainEngine/BillboardTree' - Pass '' has no vertex shader
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayMakerUGuiComponentProxy.SetupUiListeners () [0x00000] in <filename unknown>:0 
+  at PlayMakerUGuiComponentProxy.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Missing PlayMakerPhotonGameObjectProxy on GameObject 'UnitSpawning' with Fsm 'FSM' containing variables supposed to be synched over the network
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+ConnectToBestCloudServer() failed. Can only connect while in state 'Disconnected'. Current state: Connected
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+The observed monobehaviour (UnitSpawning) of this PhotonView does not implement OnPhotonSerializeView()!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+PhotonNetwork.connectionState changed from 'Disconnected' to 'Connected'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+PLayMaker Photon proxy:OnLeftRoom (local)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+PhotonNetwork.connectionState changed from 'Connected' to 'Connecting'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+PhotonNetwork.connectionState changed from 'Connecting' to 'InitializingApplication'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+PhotonNetwork.connectionState changed from 'InitializingApplication' to 'Connected'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+PLayMaker Photon proxy:OnJoinedLobby
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+PLayMaker Photon proxy:OnReceivedRoomListUpdate
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+PLayMaker Photon proxy:OnReceivedRoomListUpdate
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+PLayMaker Photon proxy:OnReceivedRoomListUpdate
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+PLayMaker Photon proxy:OnLeftLobby
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+PhotonNetwork.connectionState changed from 'Connected' to 'Connecting'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+PhotonNetwork.connectionState changed from 'Connecting' to 'InitializingApplication'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+PhotonNetwork.connectionState changed from 'InitializingApplication' to 'Connected'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+PLayMaker Photon proxy:OnPhotonCustomRoomPropertiesChanged
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+PLayMaker Photon proxy:OnCreatedRoom: 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+PLayMaker Photon proxy:OnJoinedRoom: 5.954493
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Player awake
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+found fsm to observe : 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+ photon view observing :  1001
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+switching observed
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched fsmInt: 'healthSync' in fsm:'VariableNetworkSync' in gameObject:'RedTeamBase(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched FsmString: 'RecievedUnitParams' in fsm:'VariableNetworkSync' in gameObject:'RedTeamBase(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched FsmString: 'TargetNameSync' in fsm:'VariableNetworkSync' in gameObject:'RedTeamBase(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched fsmVector3: 'positionSync' in fsm:'VariableNetworkSync' in gameObject:'RedTeamBase(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched fsmVector3: 'rotationSync' in fsm:'VariableNetworkSync' in gameObject:'RedTeamBase(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+PLayMaker Photon proxy:OnPhotonInstantiate 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Player awake
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+found fsm to observe : 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+ photon view observing :  1002
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+switching observed
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched fsmInt: 'healthSync' in fsm:'VariableNetworkSync' in gameObject:'BlueTeamBase(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched FsmString: 'RecievedUnitParams' in fsm:'VariableNetworkSync' in gameObject:'BlueTeamBase(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched FsmString: 'TargetNameSync' in fsm:'VariableNetworkSync' in gameObject:'BlueTeamBase(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched fsmVector3: 'positionSync' in fsm:'VariableNetworkSync' in gameObject:'BlueTeamBase(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched fsmVector3: 'rotationSync' in fsm:'VariableNetworkSync' in gameObject:'BlueTeamBase(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+PLayMaker Photon proxy:OnPhotonInstantiate 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+post PHOTON / JOINED ROOM broadcasting
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+sending PHOTON INSTANTIATE event to RedTeamBase(Clone)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+sending PHOTON INSTANTIATE event to BlueTeamBase(Clone)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+PLayMaker Photon proxy: OnPhotonPlayerConnected: #02 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Player awake
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+found fsm to observe : 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+ photon view observing :  2001
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+switching observed
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched fsmInt: 'healthSync' in fsm:'VariableNetworkSync' in gameObject:'RedTeamBase(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched FsmString: 'RecievedUnitParams' in fsm:'VariableNetworkSync' in gameObject:'RedTeamBase(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched FsmString: 'TargetNameSync' in fsm:'VariableNetworkSync' in gameObject:'RedTeamBase(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched fsmVector3: 'positionSync' in fsm:'VariableNetworkSync' in gameObject:'RedTeamBase(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched fsmVector3: 'rotationSync' in fsm:'VariableNetworkSync' in gameObject:'RedTeamBase(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+PLayMaker Photon proxy:OnPhotonInstantiate 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Player awake
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+found fsm to observe : 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+ photon view observing :  2002
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+switching observed
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched fsmInt: 'healthSync' in fsm:'VariableNetworkSync' in gameObject:'BlueTeamBase(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched FsmString: 'RecievedUnitParams' in fsm:'VariableNetworkSync' in gameObject:'BlueTeamBase(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched FsmString: 'TargetNameSync' in fsm:'VariableNetworkSync' in gameObject:'BlueTeamBase(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched fsmVector3: 'positionSync' in fsm:'VariableNetworkSync' in gameObject:'BlueTeamBase(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched fsmVector3: 'rotationSync' in fsm:'VariableNetworkSync' in gameObject:'BlueTeamBase(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+PLayMaker Photon proxy:OnPhotonInstantiate 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+sending PHOTON INSTANTIATE event to RedTeamBase(Clone)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+sending PHOTON INSTANTIATE event to BlueTeamBase(Clone)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+The observed monobehaviour (WestBaseSpawnZoneTemp) of this PhotonView does not implement OnPhotonSerializeView()!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+The observed monobehaviour (WestBaseSpawnZoneBot) of this PhotonView does not implement OnPhotonSerializeView()!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+The observed monobehaviour (WestBaseSpawnZoneMid) of this PhotonView does not implement OnPhotonSerializeView()!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+The observed monobehaviour (WestBaseSpawnZoneTop) of this PhotonView does not implement OnPhotonSerializeView()!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+The observed monobehaviour (WestBaseSpawnZoneTemp) of this PhotonView does not implement OnPhotonSerializeView()!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+The observed monobehaviour (WestBaseSpawnZoneTemp) of this PhotonView does not implement OnPhotonSerializeView()!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+The observed monobehaviour (WestBaseSpawnZoneTemp) of this PhotonView does not implement OnPhotonSerializeView()!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+RPC to send string:Vector3(14.12578,0.5000001,16.37393)!RedTeam!BlueTeam!UnitKnight!4!WPMid!WPWest  with global Fsm Event:SPAWNUNIT to target:All
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+ sent RPC string:Vector3(14.12578,0.5000001,16.37393)!RedTeam!BlueTeam!UnitKnight!4!WPMid!WPWest from Fsm Event:SPAWNUNIT
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Player awake
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+found fsm to observe : 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+ photon view observing :  1003
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+switching observed
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched fsmInt: 'healthSync' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched FsmString: 'RecievedUnitParams' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched FsmString: 'TargetNameSync' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched fsmVector3: 'positionSync' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched fsmVector3: 'rotationSync' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+PLayMaker Photon proxy:OnPhotonInstantiate 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Player awake
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+found fsm to observe : 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+ photon view observing :  1004
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+switching observed
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched fsmInt: 'healthSync' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched FsmString: 'RecievedUnitParams' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched FsmString: 'TargetNameSync' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched fsmVector3: 'positionSync' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched fsmVector3: 'rotationSync' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+PLayMaker Photon proxy:OnPhotonInstantiate 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Player awake
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+found fsm to observe : 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+ photon view observing :  1005
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+switching observed
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched fsmInt: 'healthSync' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched FsmString: 'RecievedUnitParams' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched FsmString: 'TargetNameSync' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched fsmVector3: 'positionSync' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched fsmVector3: 'rotationSync' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+PLayMaker Photon proxy:OnPhotonInstantiate 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Player awake
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+found fsm to observe : 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+ photon view observing :  1006
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+switching observed
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched fsmInt: 'healthSync' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched FsmString: 'RecievedUnitParams' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched FsmString: 'TargetNameSync' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched fsmVector3: 'positionSync' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched fsmVector3: 'rotationSync' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+PLayMaker Photon proxy:OnPhotonInstantiate 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+sending PHOTON INSTANTIATE event to UnitKnight(Clone)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+sending PHOTON INSTANTIATE event to UnitKnight(Clone)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+sending PHOTON INSTANTIATE event to UnitKnight(Clone)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+sending PHOTON INSTANTIATE event to UnitKnight(Clone)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+RPC to send string:Vector3(4.896554,0.5000001,4.628198)!RedTeam!BlueTeam!UnitKnight!4!WPMid!WPWest  with global Fsm Event:SPAWNUNIT to target:All
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+ sent RPC string:Vector3(4.896554,0.5000001,4.628198)!RedTeam!BlueTeam!UnitKnight!4!WPMid!WPWest from Fsm Event:SPAWNUNIT
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Player awake
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+found fsm to observe : 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+ photon view observing :  1007
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+switching observed
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched fsmInt: 'healthSync' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched FsmString: 'RecievedUnitParams' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched FsmString: 'TargetNameSync' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched fsmVector3: 'positionSync' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched fsmVector3: 'rotationSync' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+PLayMaker Photon proxy:OnPhotonInstantiate 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Player awake
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+found fsm to observe : 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+ photon view observing :  1008
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+switching observed
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched fsmInt: 'healthSync' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched FsmString: 'RecievedUnitParams' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched FsmString: 'TargetNameSync' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched fsmVector3: 'positionSync' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched fsmVector3: 'rotationSync' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+PLayMaker Photon proxy:OnPhotonInstantiate 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Player awake
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+found fsm to observe : 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+ photon view observing :  1009
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+switching observed
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched fsmInt: 'healthSync' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched FsmString: 'RecievedUnitParams' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched FsmString: 'TargetNameSync' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched fsmVector3: 'positionSync' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched fsmVector3: 'rotationSync' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+PLayMaker Photon proxy:OnPhotonInstantiate 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Player awake
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+found fsm to observe : 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+ photon view observing :  1010
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+switching observed
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched fsmInt: 'healthSync' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched FsmString: 'RecievedUnitParams' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+network synched FsmString: 'TargetNameSync' in fsm:'VariableNetworkSync' in gameObject:'UnitKnight(Clone)'
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
 
@@ -458,3 +1572,6 @@ PLayMaker Photon proxy:OnPlayerDisconneced: #02
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
 
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 25c8 -> priority: 1 
+  Thread -> id: 32d4 -> priority: 1 

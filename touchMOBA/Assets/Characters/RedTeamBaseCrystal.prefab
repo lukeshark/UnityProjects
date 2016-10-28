@@ -495,7 +495,13 @@ MonoBehaviour:
         showInInspector: 1
         networkSync: 0
         value: 1400
-      boolVariables: []
+      boolVariables:
+      - useVariable: 1
+        name: Mine
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 1
       stringVariables:
       - useVariable: 1
         name: Name
@@ -540,7 +546,7 @@ MonoBehaviour:
       enumVariables: []
       categories:
       - 
-      variableCategoryIDs: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+      variableCategoryIDs: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
     description: 
     docUrl: 
     showStateLabel: 1
