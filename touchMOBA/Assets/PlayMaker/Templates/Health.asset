@@ -128,14 +128,14 @@ MonoBehaviour:
         - everyFrame
         paramDataPos: 0000000001000000000000000000000000000000010000000200000001000000
         paramByteDataSize: 0000000000000000010000000000000000000000000000000000000001000000
-    - name: Substract health
+    - name: Subtract health
       description: 
       colorIndex: 0
       position:
         serializedVersion: 2
         x: 431.16406
         y: 186.50781
-        width: 128
+        width: 121
         height: 32
       isBreakpoint: 0
       isSequence: 0
@@ -433,11 +433,11 @@ MonoBehaviour:
         actionNames:
         - HutongGames.PlayMaker.Actions.SetAnimatorTrigger
         - HutongGames.PlayMaker.Actions.SendEvent
+        - HutongGames.PlayMaker.Actions.DestroyObject
         - HutongGames.PlayMaker.Actions.SetTag
         - HutongGames.PlayMaker.Actions.StringCompare
         - HutongGames.PlayMaker.Actions.StringCompare
         - HutongGames.PlayMaker.Actions.Wait
-        - HutongGames.PlayMaker.Actions.DestroyObject
         customNames:
         - 
         - 
@@ -448,8 +448,8 @@ MonoBehaviour:
         - 
         actionEnabled: 01010101010101
         actionIsOpen: 01010101010101
-        actionStartIndex: 000000000200000006000000080000000e0000001400000017000000
-        actionHashCodes: 9bd6f8015e69bb049bd6f8010c0e55020c0e550248c011019ff80c02
+        actionStartIndex: 000000000200000006000000090000000b0000001100000017000000
+        actionHashCodes: 9bd6f8015e69bb049ff80c029bd6f8010c0e55020c0e550248c01101
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
@@ -566,28 +566,28 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 3
+          value: 0
         - useVariable: 0
           name: 
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 0
+          value: 3
         fsmIntParams: []
         fsmBoolParams:
-        - useVariable: 1
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 0
-        - useVariable: 1
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 0
         - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 1
           name: 
           tooltip: 
           showInInspector: 0
@@ -610,7 +610,7 @@ MonoBehaviour:
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 14000000120000001f000000170000000f0000000100000014000000120000001200000012000000170000001700000011000000010000001200000012000000170000001700000011000000010000000f0000001700000001000000130000000f00000011000000
+        paramDataType: 14000000120000001f000000170000000f00000001000000130000000f0000001100000014000000120000001200000012000000170000001700000011000000010000001200000012000000170000001700000011000000010000000f0000001700000001000000
         paramName:
         - gameObject
         - trigger
@@ -618,6 +618,9 @@ MonoBehaviour:
         - sendEvent
         - delay
         - everyFrame
+        - gameObject
+        - delay
+        - detachChildren
         - gameObject
         - tag
         - stringVariable
@@ -635,18 +638,15 @@ MonoBehaviour:
         - time
         - finishEvent
         - realTime
-        - gameObject
-        - delay
-        - detachChildren
-        paramDataPos: 0000000000000000000000000000000000000000000000000100000001000000020000000300000001000000020000000000000001000000040000000500000003000000040000000100000002000000010000000500000003000000000000000200000002000000
-        paramByteDataSize: 0000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000001000000000000000000000001000000000000000000000000000000
+        paramDataPos: 0000000000000000000000000000000000000000000000000000000001000000000000000100000001000000020000000300000001000000020000000100000001000000040000000500000003000000040000000200000002000000020000000500000003000000
+        paramByteDataSize: 0000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000001000000000000000000000001000000
     - name: Desactivate gameobject
       description: 
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 435.40625
-        y: 510.40625
+        x: 443.27344
+        y: 498.53125
         width: 168
         height: 16
       isBreakpoint: 0
@@ -706,8 +706,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 734.6328
-        y: 330.58594
+        x: 734.60156
+        y: 356.8672
         width: 107
         height: 32
       isBreakpoint: 0
@@ -725,14 +725,16 @@ MonoBehaviour:
       actionData:
         actionNames:
         - HutongGames.PlayMaker.Actions.SendEvent
+        - HutongGames.PlayMaker.Actions.Wait
         - HutongGames.PlayMaker.Actions.SendEvent
         customNames:
         - 
         - 
-        actionEnabled: 0101
-        actionIsOpen: 0101
-        actionStartIndex: 0000000004000000
-        actionHashCodes: 5e69bb045e69bb04
+        - 
+        actionEnabled: 010101
+        actionIsOpen: 010101
+        actionStartIndex: 000000000400000007000000
+        actionHashCodes: 5e69bb0448c011015e69bb04
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -823,6 +825,12 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
+          value: 3
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
           value: 0
         fsmIntParams: []
         fsmBoolParams: []
@@ -833,24 +841,28 @@ MonoBehaviour:
         fsmQuaternionParams: []
         stringParams:
         - RedTeamWin
+        - 
         - GameOver
-        byteData: 0000
+        byteData: 000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 1f000000170000000f000000010000001f000000170000000f00000001000000
+        paramDataType: 1f000000170000000f000000010000000f00000017000000010000001f000000170000000f00000001000000
         paramName:
         - eventTarget
         - sendEvent
         - delay
         - everyFrame
+        - time
+        - finishEvent
+        - realTime
         - eventTarget
         - sendEvent
         - delay
         - everyFrame
-        paramDataPos: 0000000000000000000000000000000001000000010000000100000001000000
-        paramByteDataSize: 0000000000000000000000000100000000000000000000000000000001000000
+        paramDataPos: 0000000000000000000000000000000001000000010000000100000001000000020000000200000002000000
+        paramByteDataSize: 0000000000000000000000000100000000000000000000000100000000000000000000000000000001000000
     - name: BlueTeamWin
       description: 
       colorIndex: 0
@@ -875,14 +887,16 @@ MonoBehaviour:
       actionData:
         actionNames:
         - HutongGames.PlayMaker.Actions.SendEvent
+        - HutongGames.PlayMaker.Actions.Wait
         - HutongGames.PlayMaker.Actions.SendEvent
         customNames:
         - 
         - 
-        actionEnabled: 0101
-        actionIsOpen: 0101
-        actionStartIndex: 0000000004000000
-        actionHashCodes: 5e69bb045e69bb04
+        - 
+        actionEnabled: 010101
+        actionIsOpen: 010101
+        actionStartIndex: 000000000400000007000000
+        actionHashCodes: 5e69bb0448c011015e69bb04
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -973,6 +987,12 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
+          value: 3
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
           value: 0
         fsmIntParams: []
         fsmBoolParams: []
@@ -983,24 +1003,28 @@ MonoBehaviour:
         fsmQuaternionParams: []
         stringParams:
         - BlueTeamWin
+        - 
         - GameOver
-        byteData: 0000
+        byteData: 000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 1f000000170000000f000000010000001f000000170000000f00000001000000
+        paramDataType: 1f000000170000000f000000010000000f00000017000000010000001f000000170000000f00000001000000
         paramName:
         - eventTarget
         - sendEvent
         - delay
         - everyFrame
+        - time
+        - finishEvent
+        - realTime
         - eventTarget
         - sendEvent
         - delay
         - everyFrame
-        paramDataPos: 0000000000000000000000000000000001000000010000000100000001000000
-        paramByteDataSize: 0000000000000000000000000100000000000000000000000000000001000000
+        paramDataPos: 0000000000000000000000000000000001000000010000000100000001000000020000000200000002000000
+        paramByteDataSize: 0000000000000000000000000100000000000000000000000100000000000000000000000000000001000000
     - name: SetUpHealthBar
       description: 
       colorIndex: 0
@@ -1546,8 +1570,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 621
-        y: 136
+        x: 618.3047
+        y: 120.140625
         width: 101
         height: 48
       isBreakpoint: 0
@@ -1566,7 +1590,7 @@ MonoBehaviour:
           name: Yes
           isSystemEvent: 0
           isGlobal: 0
-        toState: Substract health
+        toState: Subtract health
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -1628,8 +1652,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 775.10156
-        y: 199.55469
+        x: 775.0703
+        y: 182.42188
         width: 100
         height: 32
       isBreakpoint: 0
