@@ -19062,7 +19062,7 @@ MonoBehaviour:
     locked: 0
     manualUpdate: 0
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 0
+    preprocessed: 1
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0
@@ -19217,8 +19217,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 392.4375
-        y: 401.625
+        x: 304.4375
+        y: 420.625
         width: 100
         height: 16
       isBreakpoint: 0
@@ -19289,15 +19289,17 @@ MonoBehaviour:
         actionNames:
         - HutongGames.PlayMaker.Actions.PhotonNetworkInstantiate
         - HutongGames.PlayMaker.Actions.PmtSpawn
+        - HutongGames.PlayMaker.Actions.ActivateGameObject
         - HutongGames.PlayMaker.Actions.SetTag
         customNames:
         - 
         - 
         - 
-        actionEnabled: 010001
-        actionIsOpen: 010101
-        actionStartIndex: 00000000060000000d000000
-        actionHashCodes: e3e02c0390aefe009bd6f801
+        - 
+        actionEnabled: 01000101
+        actionIsOpen: 01010101
+        actionStartIndex: 00000000060000000d00000012000000
+        actionHashCodes: e3e02c0390aefe00b2cf10009bd6f801
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
@@ -19347,6 +19349,14 @@ MonoBehaviour:
             showInInspector: 0
             networkSync: 0
             value: {fileID: 0}
+        - ownerOption: 1
+          gameObject:
+            useVariable: 1
+            name: temp_spawnedunit
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -19378,7 +19388,19 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 0
-        fsmBoolParams: []
+        fsmBoolParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
         fsmVector2Params: []
         fsmVector3Params:
         - useVariable: 1
@@ -19405,12 +19427,12 @@ MonoBehaviour:
         stringParams:
         - 
         - 
-        byteData: 
+        byteData: 0000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 13000000130000001c0000001c00000010000000130000001200000013000000130000001c0000001300000017000000170000001400000012000000
+        paramDataType: 13000000130000001c0000001c00000010000000130000001200000013000000130000001c00000013000000170000001700000014000000110000001100000001000000010000001400000012000000
         paramName:
         - gameObject
         - spawnPoint
@@ -19426,9 +19448,14 @@ MonoBehaviour:
         - successEvent
         - failEvent
         - gameObject
+        - activate
+        - recursive
+        - resetOnExit
+        - everyFrame
+        - gameObject
         - tag
-        paramDataPos: 000000000100000000000000010000000000000002000000000000000300000004000000020000000500000000000000010000000000000001000000
-        paramByteDataSize: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+        paramDataPos: 0000000001000000000000000100000000000000020000000000000003000000040000000200000005000000000000000100000000000000000000000100000000000000010000000100000001000000
+        paramByteDataSize: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000010000000000000000000000
     - name: Give Unit Initial Command 3
       description: 
       colorIndex: 0
@@ -19468,6 +19495,7 @@ MonoBehaviour:
         - HutongGames.PlayMaker.Actions.ActivateGameObject
         - HutongGames.PlayMaker.Actions.FloatSubtract
         - HutongGames.PlayMaker.Actions.FloatCompare
+        - HutongGames.PlayMaker.Actions.ActivateGameObject
         customNames:
         - 
         - 
@@ -19477,10 +19505,11 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 0101010101010101
-        actionIsOpen: 0101000100000000
-        actionStartIndex: 00000000050000000a0000000f00000014000000190000001e00000022000000
-        actionHashCodes: 52221a0252221a0252221a025b66cf005b66cf00b2cf10002a6e8a001bcdca04
+        - 
+        actionEnabled: 010101010101010101
+        actionIsOpen: 010100010000000001
+        actionStartIndex: 00000000050000000a0000000f00000014000000190000001e0000002200000029000000
+        actionHashCodes: 52221a0252221a0252221a025b66cf005b66cf00b2cf10002a6e8a001bcdca04b2cf1000
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
@@ -19496,6 +19525,14 @@ MonoBehaviour:
           networkSync: 0
           value: {fileID: 0}
         fsmOwnerDefaultParams:
+        - ownerOption: 1
+          gameObject:
+            useVariable: 1
+            name: temp_spawnedunit
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
         - ownerOption: 1
           gameObject:
             useVariable: 1
@@ -19678,6 +19715,18 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 1
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
         fsmVector2Params: []
         fsmVector3Params: []
         fsmColorParams: []
@@ -19687,12 +19736,12 @@ MonoBehaviour:
         - FINISHED
         - FINISHED
         - Spawn Again
-        byteData: 00000000000000000000
+        byteData: 000000000000000000000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 1400000012000000120000001200000001000000140000001200000012000000120000000100000014000000120000001200000012000000010000001400000012000000120000001300000001000000140000001200000012000000130000000100000014000000110000001100000001000000010000000f0000000f00000001000000010000000f0000000f0000000f00000017000000170000001700000001000000
+        paramDataType: 1400000012000000120000001200000001000000140000001200000012000000120000000100000014000000120000001200000012000000010000001400000012000000120000001300000001000000140000001200000012000000130000000100000014000000110000001100000001000000010000000f0000000f00000001000000010000000f0000000f0000000f000000170000001700000017000000010000001400000011000000110000000100000001000000
         paramName:
         - gameObject
         - fsmName
@@ -19735,8 +19784,13 @@ MonoBehaviour:
         - lessThan
         - greaterThan
         - everyFrame
-        paramDataPos: 00000000000000000100000002000000000000000100000003000000040000000500000001000000020000000600000007000000080000000200000003000000090000000a0000000000000003000000040000000b0000000c000000010000000400000005000000000000000100000005000000060000000000000001000000070000000800000002000000030000000400000000000000010000000200000009000000
-        paramByteDataSize: 0000000000000000000000000000000001000000000000000000000000000000000000000100000000000000000000000000000000000000010000000000000000000000000000000000000001000000000000000000000000000000000000000100000000000000000000000000000001000000010000000000000000000000010000000100000000000000000000000000000000000000000000000000000001000000
+        - gameObject
+        - activate
+        - recursive
+        - resetOnExit
+        - everyFrame
+        paramDataPos: 00000000000000000100000002000000000000000100000003000000040000000500000001000000020000000600000007000000080000000200000003000000090000000a0000000000000003000000040000000b0000000c0000000100000004000000050000000000000001000000050000000600000000000000010000000700000008000000020000000300000004000000000000000100000002000000090000000600000002000000030000000a0000000b000000
+        paramByteDataSize: 00000000000000000000000000000000010000000000000000000000000000000000000001000000000000000000000000000000000000000100000000000000000000000000000000000000010000000000000000000000000000000000000001000000000000000000000000000000010000000100000000000000000000000100000001000000000000000000000000000000000000000000000000000000010000000000000000000000000000000100000001000000
     - name: GetEventAndSplit
       description: 
       colorIndex: 0
@@ -21290,7 +21344,7 @@ MonoBehaviour:
       isGlobal: 1
     - name: SPAWNBASES
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: SPAWNUNIT
       isSystemEvent: 0
       isGlobal: 1
@@ -21447,7 +21501,7 @@ MonoBehaviour:
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        value: {fileID: 1000012037923524, guid: 5fa239dc902776240b919279dd6748f5,
+        value: {fileID: 1000012021405246, guid: 5d6a91096b0b2f1499d2538857f713c1,
           type: 2}
       - useVariable: 1
         name: Unit2
@@ -21769,7 +21823,7 @@ MonoBehaviour:
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        value: {fileID: 1000012037923524, guid: 5fa239dc902776240b919279dd6748f5,
+        value: {fileID: 1000012021405246, guid: 5d6a91096b0b2f1499d2538857f713c1,
           type: 2}
       - useVariable: 1
         name: UnitController
@@ -21794,7 +21848,7 @@ MonoBehaviour:
     locked: 0
     manualUpdate: 0
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 0
+    preprocessed: 1
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0
@@ -45190,7 +45244,7 @@ MonoBehaviour:
   _dontDestroyOnLoad: 0
   logMessages: 0
   _perPrefabPoolOptions:
-  - prefab: {fileID: 4000013131368802, guid: ee410fecd44d3f44297aec3bc8c2fadf, type: 2}
+  - prefab: {fileID: 4000013282482338, guid: 7b0f2b03592ad59488616558b22d8847, type: 2}
     preloadAmount: 1
     preloadTime: 0
     preloadFrames: 2
@@ -45204,7 +45258,7 @@ MonoBehaviour:
     cullMaxPerPass: 5
     _logMessages: 0
     spawnPool: {fileID: 0}
-  - prefab: {fileID: 4000012291359010, guid: 5d6a91096b0b2f1499d2538857f713c1, type: 2}
+  - prefab: {fileID: 4000010124441306, guid: d919f841b3cf1194ca0ecbc1aa448e80, type: 2}
     preloadAmount: 1
     preloadTime: 0
     preloadFrames: 2
@@ -45218,7 +45272,7 @@ MonoBehaviour:
     cullMaxPerPass: 5
     _logMessages: 0
     spawnPool: {fileID: 0}
-  - prefab: {fileID: 4000013392367222, guid: d817a87be04e9df448844a525df4b0d4, type: 2}
+  - prefab: {fileID: 4000011752811744, guid: 13c7232a654a27c428e9fb78f92e5ef8, type: 2}
     preloadAmount: 1
     preloadTime: 0
     preloadFrames: 2
@@ -45232,7 +45286,21 @@ MonoBehaviour:
     cullMaxPerPass: 5
     _logMessages: 0
     spawnPool: {fileID: 0}
-  - prefab: {fileID: 4000013953480700, guid: ca00c433761a1404186c21b87fb44cc5, type: 2}
+  - prefab: {fileID: 4000013542664526, guid: ca711f9f6b88e1245a96996b07f08c42, type: 2}
+    preloadAmount: 1
+    preloadTime: 0
+    preloadFrames: 2
+    preloadDelay: 0
+    limitInstances: 0
+    limitAmount: 100
+    limitFIFO: 0
+    cullDespawned: 0
+    cullAbove: 50
+    cullDelay: 60
+    cullMaxPerPass: 5
+    _logMessages: 0
+    spawnPool: {fileID: 0}
+  - prefab: {fileID: 224000011049952994, guid: 848f9dd0c3570324f96b618869450c26, type: 2}
     preloadAmount: 1
     preloadTime: 0
     preloadFrames: 2
