@@ -37325,6 +37325,7 @@ MonoBehaviour:
       transitions: []
       actionData:
         actionNames:
+        - HutongGames.PlayMaker.Actions.PhotonNetworkConnectManually
         - HutongGames.PlayMaker.Actions.PhotonNetworkConnectUsingSettings
         - HutongGames.PlayMaker.Actions.ActivateGameObject
         - HutongGames.PlayMaker.Actions.ActivateGameObject
@@ -37334,10 +37335,11 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 01010101
-        actionIsOpen: 01010101
-        actionStartIndex: 0000000002000000070000000c000000
-        actionHashCodes: 787cae04b2cf1000b2cf100009fbab04
+        - 
+        actionEnabled: 0001010101
+        actionIsOpen: 0101010101
+        actionStartIndex: 0000000004000000060000000b00000010000000
+        actionHashCodes: 2ca5ed02787cae04b2cf1000b2cf100009fbab04
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -37377,6 +37379,24 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
+          value: app-us.exitgamescloud.com
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 828df1bb-3e85-47fd-879c-cb33b275ce5d
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 1.0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
           value: 1.0
         - useVariable: 0
           name: 
@@ -37389,14 +37409,20 @@ MonoBehaviour:
         fsmArrayParams: []
         fsmEnumParams: []
         fsmFloatParams: []
-        fsmIntParams: []
+        fsmIntParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 5055
         fsmBoolParams:
         - useVariable: 0
           name: 
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 1
+          value: 0
         - useVariable: 0
           name: 
           tooltip: 
@@ -37438,8 +37464,12 @@ MonoBehaviour:
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 12000000110000001400000011000000110000000100000001000000140000001100000011000000010000000100000014000000120000001100000001000000
+        paramDataType: 1200000010000000120000001200000012000000110000001400000011000000110000000100000001000000140000001100000011000000010000000100000014000000120000001100000001000000
         paramName:
+        - serverAddress
+        - port
+        - applicationID
+        - clientGameVersion
         - gameVersion
         - connectToBestServer
         - gameObject
@@ -37456,8 +37486,8 @@ MonoBehaviour:
         - text
         - resetOnExit
         - everyFrame
-        paramDataPos: 00000000000000000000000001000000020000000000000001000000010000000300000004000000020000000300000002000000010000000500000004000000
-        paramByteDataSize: 00000000000000000000000000000000000000000100000001000000000000000000000000000000010000000100000000000000000000000000000001000000
+        paramDataPos: 0000000000000000010000000200000003000000000000000000000001000000020000000000000001000000010000000300000004000000020000000300000002000000040000000500000004000000
+        paramByteDataSize: 0000000000000000000000000000000000000000000000000000000000000000000000000100000001000000000000000000000000000000010000000100000000000000000000000000000001000000
     - name: Wait for Join Room
       description: 
       colorIndex: 0
@@ -38763,7 +38793,7 @@ MonoBehaviour:
     locked: 0
     manualUpdate: 0
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 1
+    preprocessed: 0
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0
