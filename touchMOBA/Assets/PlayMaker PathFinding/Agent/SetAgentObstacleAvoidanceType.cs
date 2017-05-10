@@ -13,11 +13,11 @@ namespace HutongGames.PlayMaker.Actions
 	
 		[RequiredField]
 		[Tooltip("The Game Object to work with. NOTE: The Game Object must have a NavMeshAgent component attached.")]
-		[CheckForComponent(typeof(NavMeshAgent))]
+		[CheckForComponent(typeof(UnityEngine.AI.NavMeshAgent))]
 		public FsmOwnerDefault gameObject;
 		
 		[Tooltip("The agent level of quality of avoidance")]
-		public ObstacleAvoidanceType quality;
+		public UnityEngine.AI.ObstacleAvoidanceType quality;
 		
 		[Tooltip("OR The agent level of quality of avoidance as a string. Range: no, low, medium, good, high]")]
 		[UIHint(UIHint.Variable)]
@@ -27,7 +27,7 @@ namespace HutongGames.PlayMaker.Actions
 		[UIHint(UIHint.Variable)]
 		public FsmInt orQualityFromInt;
 		
-		private NavMeshAgent _agent;
+		private UnityEngine.AI.NavMeshAgent _agent;
 		
 		private void _getAgent()
 		{
@@ -37,13 +37,13 @@ namespace HutongGames.PlayMaker.Actions
 				return;
 			}
 			
-			_agent =  go.GetComponent<NavMeshAgent>();
+			_agent =  go.GetComponent<UnityEngine.AI.NavMeshAgent>();
 		}	
 		
 		public override void Reset()
 		{
 			gameObject = null;
-			quality = ObstacleAvoidanceType.NoObstacleAvoidance;
+			quality = UnityEngine.AI.ObstacleAvoidanceType.NoObstacleAvoidance;
 			orQualityFromString = null;
 			orQualityFromInt = null;
 
@@ -65,7 +65,7 @@ namespace HutongGames.PlayMaker.Actions
 				return;
 			}
 			
-			ObstacleAvoidanceType oat = quality;
+			UnityEngine.AI.ObstacleAvoidanceType oat = quality;
 			
 			
 			if (! orQualityFromInt.IsNone)
@@ -73,19 +73,19 @@ namespace HutongGames.PlayMaker.Actions
 				switch( orQualityFromInt.Value)
 				{
 					case 0:
-						oat = ObstacleAvoidanceType.NoObstacleAvoidance;
+						oat = UnityEngine.AI.ObstacleAvoidanceType.NoObstacleAvoidance;
 						break;
 					case 1:
-						oat = ObstacleAvoidanceType.LowQualityObstacleAvoidance;
+						oat = UnityEngine.AI.ObstacleAvoidanceType.LowQualityObstacleAvoidance;
 						break;	
 					case 2:
-						oat = ObstacleAvoidanceType.MedQualityObstacleAvoidance;
+						oat = UnityEngine.AI.ObstacleAvoidanceType.MedQualityObstacleAvoidance;
 						break;
 					case 3:
-						oat = ObstacleAvoidanceType.GoodQualityObstacleAvoidance;
+						oat = UnityEngine.AI.ObstacleAvoidanceType.GoodQualityObstacleAvoidance;
 						break;
 					case 4:
-						oat = ObstacleAvoidanceType.HighQualityObstacleAvoidance;
+						oat = UnityEngine.AI.ObstacleAvoidanceType.HighQualityObstacleAvoidance;
 						break;
 				}
 			}else if (!orQualityFromString.IsNone){
@@ -93,19 +93,19 @@ namespace HutongGames.PlayMaker.Actions
 				switch( orQualityFromString.Value )
 				{
 					case "no":
-						oat = ObstacleAvoidanceType.NoObstacleAvoidance;
+						oat = UnityEngine.AI.ObstacleAvoidanceType.NoObstacleAvoidance;
 						break;
 					case "low":
-						oat = ObstacleAvoidanceType.LowQualityObstacleAvoidance;
+						oat = UnityEngine.AI.ObstacleAvoidanceType.LowQualityObstacleAvoidance;
 						break;	
 					case "medium":
-						oat = ObstacleAvoidanceType.MedQualityObstacleAvoidance;
+						oat = UnityEngine.AI.ObstacleAvoidanceType.MedQualityObstacleAvoidance;
 						break;
 					case "good":
-						oat = ObstacleAvoidanceType.GoodQualityObstacleAvoidance;
+						oat = UnityEngine.AI.ObstacleAvoidanceType.GoodQualityObstacleAvoidance;
 						break;
 					case "high":
-						oat = ObstacleAvoidanceType.HighQualityObstacleAvoidance;
+						oat = UnityEngine.AI.ObstacleAvoidanceType.HighQualityObstacleAvoidance;
 						break;
 				}			
 			}

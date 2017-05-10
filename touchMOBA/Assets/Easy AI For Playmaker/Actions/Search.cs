@@ -10,7 +10,7 @@ namespace HutongGames.PlayMaker.Actions
 	public class Search : FsmStateAction {
 		
 		[RequiredField]
-		[CheckForComponent(typeof(NavMeshAgent))]
+		[CheckForComponent(typeof(UnityEngine.AI.NavMeshAgent))]
 
 		[Tooltip("How far ahead of the current position to look ahead for a wander")]
 		public FsmFloat wanderDistance = 10;
@@ -44,12 +44,12 @@ namespace HutongGames.PlayMaker.Actions
 
 		public FsmEvent FINISHED;
 
-		private NavMeshAgent agent;
+		private UnityEngine.AI.NavMeshAgent agent;
 		private LayerMask Ignore;
 
 		public override void Awake()
 		{
-			agent = Owner.GetComponent<NavMeshAgent> ();
+			agent = Owner.GetComponent<UnityEngine.AI.NavMeshAgent> ();
 
 		}
 

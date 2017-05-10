@@ -3,7 +3,7 @@ using AxlPlay;
 using System.Collections;
 
 //Evade the target specified using the Unity NavMesh.
-[RequireComponent(typeof(NavMeshAgent))]
+[RequireComponent(typeof(UnityEngine.AI.NavMeshAgent))]
 [AddComponentMenu("Easy AI/Evade")]
 
 public class Evade : MonoBehaviour {
@@ -25,7 +25,7 @@ public class Evade : MonoBehaviour {
 	public float StopDistance;
     // The position of the target at the last frame
     private Vector3 targetPosition;
-    private NavMeshAgent agent;
+    private UnityEngine.AI.NavMeshAgent agent;
     // init FSM
     public enum States
     {
@@ -36,7 +36,7 @@ public class Evade : MonoBehaviour {
     private StateMachine<States> fsm;
     void Awake() {
 
-	    agent = GetComponent<NavMeshAgent>();
+	    agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
 
 	    agent.speed = AgentSpeed;
 	    agent.stoppingDistance = StopDistance;

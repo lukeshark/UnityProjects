@@ -1,6 +1,6 @@
 // (c) Copyright HutongGames, LLC 2010-2014. All rights reserved.
 
-using UnityEngine;
+
 
 namespace HutongGames.PlayMaker.Actions
 {
@@ -82,8 +82,8 @@ namespace HutongGames.PlayMaker.Actions
 		
 		void DoSamplePosition()
 		{
-			NavMeshHit _NavMeshHit;
-			bool _nearestPointFound = NavMesh.SamplePosition(sourcePosition.Value,out _NavMeshHit,maxDistance.Value,allowedMask.Value);
+			UnityEngine.AI.NavMeshHit _NavMeshHit;
+			bool _nearestPointFound = UnityEngine.AI.NavMesh.SamplePosition(sourcePosition.Value,out _NavMeshHit,maxDistance.Value,allowedMask.Value);
 		 	nearestPointFound.Value = _nearestPointFound;
 			
 			position.Value = _NavMeshHit.position;

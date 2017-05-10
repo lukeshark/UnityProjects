@@ -9,7 +9,7 @@ public class Team2 : MonoBehaviour
     public float wanderRate = 2;
     public LayerMask layerMask;
 
-    private NavMeshAgent nav;
+    private UnityEngine.AI.NavMeshAgent nav;
     private Animator anim;
     private float rotationSpeed;
 
@@ -40,7 +40,7 @@ public class Team2 : MonoBehaviour
     {
         rotationSpeed = 25f;
         _shoot = GetComponentInChildren<EnemyShoot>();
-        nav = GetComponent<NavMeshAgent>();
+        nav = GetComponent<UnityEngine.AI.NavMeshAgent>();
         anim = GetComponent<Animator>();
 
         //Initialize State Machine Engine		

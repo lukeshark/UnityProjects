@@ -12,7 +12,7 @@ public class LeaderGoTo : MonoBehaviour {
 
     #region Private Variables
     Quaternion _angle;
-    private NavMeshAgent _agent;
+    private UnityEngine.AI.NavMeshAgent _agent;
     #endregion
     // init FSM
     public enum States
@@ -26,7 +26,7 @@ public class LeaderGoTo : MonoBehaviour {
     #region Main Methods
     void Awake()
     {
-        _agent = GetComponent<NavMeshAgent>();
+        _agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
         //Initialize State Machine Engine		
         fsm = StateMachine<States>.Initialize(this);
     }

@@ -12,7 +12,7 @@ namespace HutongGames.PlayMaker.Actions
 		
 		[RequiredField]
 		[Tooltip("The Game Object to work with. NOTE: The Game Object must have an OffMeshLink component attached.")]
-		[CheckForComponent(typeof(OffMeshLink))]
+		[CheckForComponent(typeof(UnityEngine.AI.OffMeshLink))]
 		public FsmOwnerDefault gameObject;
 		
 		[RequiredField]
@@ -23,7 +23,7 @@ namespace HutongGames.PlayMaker.Actions
 		[Tooltip("Repeat every frame.")]
 		public bool everyFrame;
 		
-		private OffMeshLink _offMeshLink;
+		private UnityEngine.AI.OffMeshLink _offMeshLink;
 
 		private void _getOffMeshLink()
 		{
@@ -33,7 +33,7 @@ namespace HutongGames.PlayMaker.Actions
 				return;
 			}
 			
-			_offMeshLink =  go.GetComponent<OffMeshLink>();
+			_offMeshLink =  go.GetComponent<UnityEngine.AI.OffMeshLink>();
 			
 		}
 		

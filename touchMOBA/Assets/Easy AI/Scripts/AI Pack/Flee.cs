@@ -2,7 +2,7 @@
 using System.Collections;
 using AxlPlay;
 //Flee from the target specified using the Unity NavMesh
-[RequireComponent(typeof(NavMeshAgent))]
+[RequireComponent(typeof(UnityEngine.AI.NavMeshAgent))]
 [AddComponentMenu("Easy AI/Flee")]
 
 public class Flee : MonoBehaviour {
@@ -22,7 +22,7 @@ public class Flee : MonoBehaviour {
     [Range(0.1f, 100)]
     public float StoppingDistance = 0.1f;
     [HideInInspector]
-    public NavMeshAgent agent;
+    public UnityEngine.AI.NavMeshAgent agent;
     // init FSM
     public enum States
     {
@@ -33,7 +33,7 @@ public class Flee : MonoBehaviour {
     public StateMachine<States> fsm;
     void Awake() {
 
-	    agent = GetComponent<NavMeshAgent>();
+	    agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
         agent.speed = AgentSpeed;
         agent.stoppingDistance = StoppingDistance;
         if (target == null) {

@@ -12,7 +12,7 @@ namespace HutongGames.PlayMaker.Actions
 		
 		[RequiredField]
 		[Tooltip("The Game Object to work with. NOTE: The Game Object must have a NavMeshAgent component attached.")]
-		[CheckForComponent(typeof(NavMeshAgent))]
+		[CheckForComponent(typeof(UnityEngine.AI.NavMeshAgent))]
 		public FsmOwnerDefault gameObject;
 		
 		[RequiredField]
@@ -23,7 +23,7 @@ namespace HutongGames.PlayMaker.Actions
 		[Tooltip("Runs every frame.")]
 		public bool everyFrame;
 		
-		private NavMeshAgent _agent;
+		private UnityEngine.AI.NavMeshAgent _agent;
 		
 		private void _getAgent()
 		{
@@ -33,7 +33,7 @@ namespace HutongGames.PlayMaker.Actions
 				return;
 			}
 			
-			_agent =  go.GetComponent<NavMeshAgent>();
+			_agent =  go.GetComponent<UnityEngine.AI.NavMeshAgent>();
 		}
 		
 		public override void Reset()

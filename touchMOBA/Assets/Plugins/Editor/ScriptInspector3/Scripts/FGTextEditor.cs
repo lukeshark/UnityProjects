@@ -2764,7 +2764,7 @@ public class FGTextEditor
 		// on mouse up. Detection is done by comparing hotControl with the next available
 		// controlID - 2, which is super-hacky, but so far I haven't found any nicer way
 		// of doing this.
-		int nextControlID = GUIUtility.GetControlID(buttonHash, FocusType.Native, new Rect());
+		int nextControlID = GUIUtility.GetControlID(buttonHash, FocusType.Passive, new Rect());
 		if (GUIUtility.hotControl != 0)
 		{
 			//Debug.Log("hotControl: " + GUIUtility.hotControl + "  nextControlID: " + nextControlID + "  Event: " + Event.current);

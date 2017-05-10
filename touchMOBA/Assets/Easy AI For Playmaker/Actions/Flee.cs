@@ -8,7 +8,7 @@ namespace HutongGames.PlayMaker.Actions
     {
 
         [RequiredField]
-        [CheckForComponent(typeof(NavMeshAgent))]
+        [CheckForComponent(typeof(UnityEngine.AI.NavMeshAgent))]
 
         public FsmOwnerDefault gameObject;
 
@@ -24,12 +24,12 @@ namespace HutongGames.PlayMaker.Actions
 		public FsmInt LayerOfWalls;
 
         private GameObject go;
-        private NavMeshAgent navMeshAgent;
+        private UnityEngine.AI.NavMeshAgent navMeshAgent;
 
         public override void Awake()
         {
 			go = Fsm.GetOwnerDefaultTarget(gameObject);
-            navMeshAgent = go.GetComponent<NavMeshAgent>();
+            navMeshAgent = go.GetComponent<UnityEngine.AI.NavMeshAgent>();
         }
         public override void OnUpdate()
         {

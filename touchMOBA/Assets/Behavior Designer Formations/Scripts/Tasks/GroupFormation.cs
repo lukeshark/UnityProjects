@@ -31,7 +31,7 @@ namespace BehaviorDesigner.Runtime.Formations.Tasks
         public SharedBool isLeader;
 
         protected List<Transform> transforms = new List<Transform>();
-        protected List<NavMeshAgent> agents = new List<NavMeshAgent>();
+        protected List<UnityEngine.AI.NavMeshAgent> agents = new List<UnityEngine.AI.NavMeshAgent>();
         protected List<bool> destinationPending = new List<bool>();
 
         private List<GameObject> pendingGroupPlacement = new List<UnityEngine.GameObject>();
@@ -127,7 +127,7 @@ namespace BehaviorDesigner.Runtime.Formations.Tasks
         /// <param name="agent">The agent to add.</param>
         protected virtual void AddAgentToGroup(Transform agent)
         {
-            agents.Add(agent.GetComponent<NavMeshAgent>());
+            agents.Add(agent.GetComponent<UnityEngine.AI.NavMeshAgent>());
             transforms.Add(agent);
             destinationPending.Add(false);
             agents[agents.Count - 1].Resume();

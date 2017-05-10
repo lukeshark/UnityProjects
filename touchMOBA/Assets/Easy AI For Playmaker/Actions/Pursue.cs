@@ -9,7 +9,7 @@ namespace HutongGames.PlayMaker.Actions
     public class Pursue : FsmStateAction
     {
         [RequiredField]
-        [CheckForComponent(typeof(NavMeshAgent))]
+        [CheckForComponent(typeof(UnityEngine.AI.NavMeshAgent))]
 
         [Tooltip("How far to predict the distance ahead of the target. Lower values indicate less distance should be predicated")]
         public FsmFloat targetDistPrediction = 20;
@@ -24,7 +24,7 @@ namespace HutongGames.PlayMaker.Actions
         // The position of the target at the last frame
         private Vector3 targetPosition;
 
-        private NavMeshAgent agent;
+        private UnityEngine.AI.NavMeshAgent agent;
 
         [Tooltip("The event will run when the object arrives")]
         public FsmEvent ArrivedEvent;
@@ -33,7 +33,7 @@ namespace HutongGames.PlayMaker.Actions
         public override void Awake()
         {
             if (Owner != null)
-                agent = Owner.GetComponent<NavMeshAgent>();
+                agent = Owner.GetComponent<UnityEngine.AI.NavMeshAgent>();
         }
 
         // Reset the public variables

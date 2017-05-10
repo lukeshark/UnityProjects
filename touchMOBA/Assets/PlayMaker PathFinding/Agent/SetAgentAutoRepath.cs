@@ -13,14 +13,14 @@ namespace HutongGames.PlayMaker.Actions
 	{
 		[RequiredField]
 		[Tooltip("The Game Object to work with. NOTE: The Game Object must have a NavMeshAgent component attached.")]
-		[CheckForComponent(typeof(NavMeshAgent))]
+		[CheckForComponent(typeof(UnityEngine.AI.NavMeshAgent))]
 		public FsmOwnerDefault gameObject;
 		
 		[RequiredField]
 		[Tooltip("Flag to attempt to acquire a new path if the existing path of a NavMesh Agent becomes invalid or if the agent reaches the end of a partial and stale path.")]
 		public FsmBool autoRepath;
 
-		private NavMeshAgent _agent;
+		private UnityEngine.AI.NavMeshAgent _agent;
 		
 		private void _getAgent()
 		{
@@ -30,7 +30,7 @@ namespace HutongGames.PlayMaker.Actions
 				return;
 			}
 			
-			_agent =  go.GetComponent<NavMeshAgent>();
+			_agent =  go.GetComponent<UnityEngine.AI.NavMeshAgent>();
 		}	
 		
 		public override void Reset()

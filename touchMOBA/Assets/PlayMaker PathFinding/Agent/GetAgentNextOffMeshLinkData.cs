@@ -12,7 +12,7 @@ namespace HutongGames.PlayMaker.Actions
 		
 		[RequiredField]
 		[Tooltip("The Game Object to work with. NOTE: The Game Object must have a NavMeshAgent component attached.")]
-		[CheckForComponent(typeof(NavMeshAgent))]
+		[CheckForComponent(typeof(UnityEngine.AI.NavMeshAgent))]
 		public FsmOwnerDefault gameObject;
 		
 		[ActionSection("Result")]
@@ -66,7 +66,7 @@ namespace HutongGames.PlayMaker.Actions
 		public FsmInt navmeshArea; 
 		
 		
-		private NavMeshAgent _agent;
+		private UnityEngine.AI.NavMeshAgent _agent;
 		
 		private void _getAgent()
 		{
@@ -76,7 +76,7 @@ namespace HutongGames.PlayMaker.Actions
 				return;
 			}
 			
-			_agent =  go.GetComponent<NavMeshAgent>();
+			_agent =  go.GetComponent<UnityEngine.AI.NavMeshAgent>();
 		}
 		
 		public override void Reset()
@@ -117,7 +117,7 @@ namespace HutongGames.PlayMaker.Actions
 				return;
 			}
 			
-			OffMeshLinkData link = new OffMeshLinkData();
+			UnityEngine.AI.OffMeshLinkData link = new UnityEngine.AI.OffMeshLinkData();
 			
 			link = _agent.nextOffMeshLinkData;
 			if(!startPos.IsNone)
@@ -144,13 +144,13 @@ namespace HutongGames.PlayMaker.Actions
 			{
 				switch(link.linkType)
 				{
-				case OffMeshLinkType.LinkTypeManual:
+				case UnityEngine.AI.OffMeshLinkType.LinkTypeManual:
 					OffMeshlinkType.Value = "manual";
 					break;
-				case OffMeshLinkType.LinkTypeDropDown:
+				case UnityEngine.AI.OffMeshLinkType.LinkTypeDropDown:
 					OffMeshlinkType.Value = "dropDown";
 					break;
-				case OffMeshLinkType.LinkTypeJumpAcross:
+				case UnityEngine.AI.OffMeshLinkType.LinkTypeJumpAcross:
 					OffMeshlinkType.Value = "jumpAcross";
 					break;
 				}

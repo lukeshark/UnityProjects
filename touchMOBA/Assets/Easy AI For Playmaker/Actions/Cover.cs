@@ -9,7 +9,7 @@ namespace HutongGames.PlayMaker.Actions
 	public class Cover : FsmStateAction {
 
 		[RequiredField]
-		[CheckForComponent(typeof(NavMeshAgent))]
+		[CheckForComponent(typeof(UnityEngine.AI.NavMeshAgent))]
 
 
 		[Tooltip("The distance to search for cover")]
@@ -52,7 +52,7 @@ namespace HutongGames.PlayMaker.Actions
 
 
 
-		private NavMeshAgent agent;
+		private UnityEngine.AI.NavMeshAgent agent;
 
 		bool HasArrived()
 		{
@@ -66,7 +66,7 @@ namespace HutongGames.PlayMaker.Actions
 
 		public override void Awake()
 		{
-			agent = Owner.GetComponent<NavMeshAgent> ();
+			agent = Owner.GetComponent<UnityEngine.AI.NavMeshAgent> ();
 
 		}
 

@@ -7,12 +7,12 @@ public class TargetReachable : MonoBehaviour {
 
     public bool isReachable;
 
-	private NavMeshPath path;
+	private UnityEngine.AI.NavMeshPath path;
     private float elapsed = 0.0f;
 
     void Start()
 	{ 
-		path = new NavMeshPath();
+		path = new UnityEngine.AI.NavMeshPath();
 		elapsed = 0.0f;
 		if (goFrom == null){
 			
@@ -26,7 +26,7 @@ public class TargetReachable : MonoBehaviour {
 	    if (elapsed > 0.1f)
         {
             elapsed = 0f;
-           isReachable =  NavMesh.CalculatePath(goFrom.transform.position, target.position, NavMesh.AllAreas, path);
+           isReachable =  UnityEngine.AI.NavMesh.CalculatePath(goFrom.transform.position, target.position, UnityEngine.AI.NavMesh.AllAreas, path);
         }
 	    for (int i = 0; i < path.corners.Length - 1; i++){
 		    Debug.DrawLine(path.corners[i], path.corners[i + 1], Color.red);
@@ -37,14 +37,14 @@ public class TargetReachable : MonoBehaviour {
 		
 		
 		if (path == null){
-			path = new NavMeshPath();
+			path = new UnityEngine.AI.NavMeshPath();
 			
 		}
 		if (goFrom == null){
 			
 			goFrom = gameObject;
 		}
-		isReachable = NavMesh.CalculatePath(goFrom.transform.position, target.position, NavMesh.AllAreas, path);
+		isReachable = UnityEngine.AI.NavMesh.CalculatePath(goFrom.transform.position, target.position, UnityEngine.AI.NavMesh.AllAreas, path);
 		for (int i = 0; i < path.corners.Length - 1; i++)
 			Debug.DrawLine(path.corners[i], path.corners[i + 1], Color.red);
 		

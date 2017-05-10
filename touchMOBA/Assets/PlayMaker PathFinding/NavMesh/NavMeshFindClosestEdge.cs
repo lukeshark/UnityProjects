@@ -1,6 +1,6 @@
 // (c) Copyright HutongGames, LLC 2010-2014. All rights reserved.
 
-using UnityEngine;
+
 
 namespace HutongGames.PlayMaker.Actions
 {
@@ -80,8 +80,8 @@ namespace HutongGames.PlayMaker.Actions
 		
 		void DoGetDistancetoEdge()
 		{
-			NavMeshHit _NavMeshHit;
-			bool _nearestEdgeFound = NavMesh.FindClosestEdge(sourcePosition.Value,out _NavMeshHit,passableMask.Value);
+			UnityEngine.AI.NavMeshHit _NavMeshHit;
+			bool _nearestEdgeFound = UnityEngine.AI.NavMesh.FindClosestEdge(sourcePosition.Value,out _NavMeshHit,passableMask.Value);
 			nearestEdgeFound.Value = _nearestEdgeFound;
 			
 			position.Value = _NavMeshHit.position;

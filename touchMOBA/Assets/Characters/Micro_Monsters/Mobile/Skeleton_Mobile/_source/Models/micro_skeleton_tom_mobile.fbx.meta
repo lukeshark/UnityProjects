@@ -3,7 +3,58 @@ guid: 6742fcfe633ffff499160510168d6924
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
+    100000: body_skel
+    100002: eyes_skel
+    100004: face
+    100006: hair_skel
+    100008: head_skel
+    100010: left_arm_skel
+    100012: left_hand_skel
+    100014: left_shoulder_skel
+    100016: micro_skeleton_tom
+    100018: //RootNode
+    100020: right_arm_skel
+    100022: right_hand_skel
+    100024: right_shoulder_skel
+    100026: root_skel
+    400000: body_skel
+    400002: eyes_skel
+    400004: face
+    400006: hair_skel
+    400008: head_skel
+    400010: left_arm_skel
+    400012: left_hand_skel
+    400014: left_shoulder_skel
+    400016: micro_skeleton_tom
+    400018: //RootNode
+    400020: right_arm_skel
+    400022: right_hand_skel
+    400024: right_shoulder_skel
+    400026: root_skel
     4300000: micro_skeleton_tom
+    7400000: skeleton_bind
+    7400002: skeleton_idle1
+    7400004: skeleton_idle2
+    7400006: skeleton_walk
+    7400008: skeleton_attack
+    7400010: skeleton_hit_front
+    7400012: skeleton_hit_left
+    7400014: skeleton_hit_right
+    7400016: skeleton_panic
+    7400018: skeleton_jump
+    7400020: skeleton_fly_up_loop
+    7400022: skeleton_trans_fall
+    7400024: skeleton_fall_loop
+    7400026: skeleton_land
+    7400028: skeleton_die
+    7400030: skeleton_stirr_on_ground
+    7400032: skeleton_getup
+    7400034: skeleton_attack_repeatedly
+    7400036: skeleton_dizzy
+    7400038: skeleton_talk
+    7400040: skeleton_laugh
+    11100000: //RootNode
+    13700000: micro_skeleton_tom
   materials:
     importMaterials: 1
     materialName: 0
@@ -14,6 +65,8 @@ ModelImporter:
     resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
@@ -638,6 +691,7 @@ ModelImporter:
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
+    serializedVersion: 2
     human: []
     skeleton: []
     armTwist: 0.5
@@ -648,7 +702,10 @@ ModelImporter:
     legStretch: 0.05
     feetSpacing: 0
     rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 1
   humanoidOversampling: 1

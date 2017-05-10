@@ -2,7 +2,7 @@
 using System.Collections;
 using AxlPlay;
 
-[RequireComponent(typeof(NavMeshAgent))]
+[RequireComponent(typeof(UnityEngine.AI.NavMeshAgent))]
 //Search for a target by combining the wander, within hearing range, and the within seeing range tasks using the Unity NavMesh.v
 [AddComponentMenu("Easy AI/Search")]
 
@@ -35,12 +35,12 @@ public class Search : MonoBehaviour
     public GameObject returnedObject;
 	[Tooltip("The Agent speed.")]
 	public float AgentSpeed = 3.5f;
-    private NavMeshAgent agent;
+    private UnityEngine.AI.NavMeshAgent agent;
     private LayerMask Ignore;
 
     void Awake()
     {
-	    agent = GetComponent<NavMeshAgent>();
+	    agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
 	    agent.speed = AgentSpeed;
     }
 	void Update(){

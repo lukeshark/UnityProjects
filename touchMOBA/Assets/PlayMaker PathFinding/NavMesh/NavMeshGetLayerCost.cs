@@ -1,6 +1,6 @@
 // (c) Copyright HutongGames, LLC 2010-2014. All rights reserved.
 
-using UnityEngine;
+
 
 namespace HutongGames.PlayMaker.Actions
 {
@@ -23,7 +23,7 @@ namespace HutongGames.PlayMaker.Actions
 		[UIHint(UIHint.Variable)]
 		public FsmFloat storeResult;
 		
-		private NavMeshAgent _agent;
+		private UnityEngine.AI.NavMeshAgent _agent;
 		
 		public override void Reset()
 		{
@@ -44,17 +44,17 @@ namespace HutongGames.PlayMaker.Actions
 			int areaId = area.Value;
 			if (orAreaName.Value!=""){
 				
-				areaId = NavMesh.GetAreaFromName(orAreaName.Value);
+				areaId = UnityEngine.AI.NavMesh.GetAreaFromName(orAreaName.Value);
 			}
 			
-			storeResult.Value =	NavMesh.GetAreaCost(areaId);
+			storeResult.Value =	UnityEngine.AI.NavMesh.GetAreaCost(areaId);
 		}
 		
 		public override string ErrorCheck()
 		{
 			if (orAreaName.Value!="")
 			{
-				int areaId = NavMesh.GetAreaFromName(orAreaName.Value);
+				int areaId = UnityEngine.AI.NavMesh.GetAreaFromName(orAreaName.Value);
 				if (areaId==-1){
 					return "Layer Name '"+orAreaName.Value+"' doesn't exists";
 				}else if(area.Value != 0){

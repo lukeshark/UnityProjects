@@ -7,7 +7,7 @@ namespace HutongGames.PlayMaker.Actions
 	public class AgentFormation : FsmStateAction
 	{
 		[RequiredField]
-		[CheckForComponent(typeof(NavMeshAgent))]
+		[CheckForComponent(typeof(UnityEngine.AI.NavMeshAgent))]
 		#region Public Variables
 		public FsmOwnerDefault gameObject;
 		public FsmFloat LeaderSpeed = 2f;
@@ -19,7 +19,7 @@ namespace HutongGames.PlayMaker.Actions
 		#endregion
 		
 		#region Private Variables
-    	private NavMeshAgent navMeshAgent;
+    	private UnityEngine.AI.NavMeshAgent navMeshAgent;
 		private GameObject go;
 		private int indice;
 		private Vector3 _target;
@@ -29,7 +29,7 @@ namespace HutongGames.PlayMaker.Actions
 		public override void OnEnter()
 		{
 			go = Fsm.GetOwnerDefaultTarget(gameObject);
-			navMeshAgent = go.GetComponent<NavMeshAgent>();
+			navMeshAgent = go.GetComponent<UnityEngine.AI.NavMeshAgent>();
 			
 			indice = FormationManagerPM.current.getMyIndice(go);
 			if (indice == -1){

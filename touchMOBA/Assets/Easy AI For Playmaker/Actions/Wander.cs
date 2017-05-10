@@ -10,7 +10,7 @@ namespace HutongGames.PlayMaker.Actions
     public class Wander : FsmStateAction
     {
         [RequiredField]
-        [CheckForComponent(typeof(NavMeshAgent))]
+        [CheckForComponent(typeof(UnityEngine.AI.NavMeshAgent))]
 
         public FsmOwnerDefault gameObject;
         [Tooltip("How far ahead of the current position to look ahead for a wander")]
@@ -19,7 +19,7 @@ namespace HutongGames.PlayMaker.Actions
         public FsmFloat wanderRate = 2;
         public FsmVector3 vector;
         private GameObject go;
-        private NavMeshAgent navMeshAgent;
+        private UnityEngine.AI.NavMeshAgent navMeshAgent;
 
         // Reset the public variables
         public override void Reset()
@@ -30,7 +30,7 @@ namespace HutongGames.PlayMaker.Actions
         public override void Awake()
         {
             go = Fsm.GetOwnerDefaultTarget(gameObject);
-            navMeshAgent = go.GetComponent<NavMeshAgent>();
+            navMeshAgent = go.GetComponent<UnityEngine.AI.NavMeshAgent>();
         }
         public override void OnEnter()
         {

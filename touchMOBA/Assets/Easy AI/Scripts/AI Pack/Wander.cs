@@ -3,7 +3,7 @@ using System.Collections;
 using AxlPlay;
 
 // Wander using Unity NavMesh
-[RequireComponent(typeof(NavMeshAgent))]
+[RequireComponent(typeof(UnityEngine.AI.NavMeshAgent))]
 [AddComponentMenu("Easy AI/Wander")]
 public class Wander : MonoBehaviour
 {
@@ -14,7 +14,7 @@ public class Wander : MonoBehaviour
     [Tooltip("The Agent speed.")]
     public float AgentSpeed = 3.5f;
 
-    private NavMeshAgent navMeshAgent;
+    private UnityEngine.AI.NavMeshAgent navMeshAgent;
     // init FSM
     public enum States
     {
@@ -25,7 +25,7 @@ public class Wander : MonoBehaviour
     public StateMachine<States> fsm;
     void Awake()
     {
-        navMeshAgent = GetComponent<NavMeshAgent>();
+        navMeshAgent = GetComponent<UnityEngine.AI.NavMeshAgent>();
         navMeshAgent.speed = AgentSpeed;
         //Initialize State Machine Engine		
         fsm = StateMachine<States>.Initialize(this);

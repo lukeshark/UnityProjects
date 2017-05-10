@@ -13,7 +13,7 @@ public class ArriveDistanceEditor : Editor
 	{
 		if (_target == null) {
 			_target = (Pursue)target;
-			_target.agent = _target.gameObject.GetComponent<NavMeshAgent> ();
+			_target.agent = _target.gameObject.GetComponent<UnityEngine.AI.NavMeshAgent> ();
 
 		}
 	}
@@ -44,7 +44,7 @@ public class CustomPursue : Editor
 	{
 		if (_target == null) {
 			_target = (Pursue)target;
-			_target.agent = _target.gameObject.GetComponent<NavMeshAgent> ();
+			_target.agent = _target.gameObject.GetComponent<UnityEngine.AI.NavMeshAgent> ();
 
 		}
 	}
@@ -74,7 +74,7 @@ public class CustomSetDestination : Editor
 	{
 		if (_target == null) {
 			_target = (SetDestination)target;
-			_target.agent = _target.gameObject.GetComponent<NavMeshAgent> ();
+			_target.agent = _target.gameObject.GetComponent<UnityEngine.AI.NavMeshAgent> ();
 
 		}
 	}
@@ -104,7 +104,7 @@ public class CustomFlee : Editor
 	{
 		if (_target == null) {
 			_target = (Flee)target;
-			_target.agent = _target.gameObject.GetComponent<NavMeshAgent> ();
+			_target.agent = _target.gameObject.GetComponent<UnityEngine.AI.NavMeshAgent> ();
 
 		}
 	}

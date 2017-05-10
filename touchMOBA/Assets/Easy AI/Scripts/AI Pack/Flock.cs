@@ -24,17 +24,17 @@ public class Flock : MonoBehaviour
     public float angularSpeed = 120;
 
     // A cache of the NavMeshAgents
-    private NavMeshAgent[] navMeshAgents;
+    private UnityEngine.AI.NavMeshAgent[] navMeshAgents;
     protected Transform[] transforms;
 
     void Start()
     {
-        navMeshAgents = new NavMeshAgent[agents.Length];
+        navMeshAgents = new UnityEngine.AI.NavMeshAgent[agents.Length];
         transforms = new Transform[agents.Length];
         for (int i = 0; i < agents.Length; ++i)
         {
             transforms[i] = agents[i].transform;
-            navMeshAgents[i] = agents[i].GetComponent<NavMeshAgent>();
+            navMeshAgents[i] = agents[i].GetComponent<UnityEngine.AI.NavMeshAgent>();
             navMeshAgents[i].speed = speed;
             navMeshAgents[i].angularSpeed = angularSpeed;
             navMeshAgents[i].Resume();

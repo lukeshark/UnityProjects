@@ -97,9 +97,9 @@ namespace HutongGames.PlayMaker.Actions
 				return;
 			}
 			
-			NavMeshPath _path = new NavMeshPath();
+			UnityEngine.AI.NavMeshPath _path = new UnityEngine.AI.NavMeshPath();
 			
-			bool _found = NavMesh.CalculatePath(_sourceGameObject.transform.position,_targetGameObject.transform.position,passableMask.Value,_path);
+			bool _found = UnityEngine.AI.NavMesh.CalculatePath(_sourceGameObject.transform.position,_targetGameObject.transform.position,passableMask.Value,_path);
 			
 			_NavMeshPathProxy.path = _path;
 			

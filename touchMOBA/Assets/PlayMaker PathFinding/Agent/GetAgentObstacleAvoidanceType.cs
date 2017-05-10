@@ -12,7 +12,7 @@ namespace HutongGames.PlayMaker.Actions
 	{
 		[RequiredField]
 		[Tooltip("The Game Object to work with. NOTE: The Game Object must have a NavMeshAgent component attached.")]
-		[CheckForComponent(typeof(NavMeshAgent))]
+		[CheckForComponent(typeof(UnityEngine.AI.NavMeshAgent))]
 		public FsmOwnerDefault gameObject;
 		
 		[Tooltip("Store the agent level of quality of avoidance. Range: no,low,medium,good,high")]
@@ -23,7 +23,7 @@ namespace HutongGames.PlayMaker.Actions
 		[UIHint(UIHint.Variable)]		
 		public FsmInt storeQualityAsInt;
 		
-		private NavMeshAgent _agent;
+		private UnityEngine.AI.NavMeshAgent _agent;
 		
 		private void _getAgent()
 		{
@@ -33,7 +33,7 @@ namespace HutongGames.PlayMaker.Actions
 				return;
 			}
 			
-			_agent =  go.GetComponent<NavMeshAgent>();
+			_agent =  go.GetComponent<UnityEngine.AI.NavMeshAgent>();
 		}
 		
 		public override void Reset()
@@ -65,23 +65,23 @@ namespace HutongGames.PlayMaker.Actions
 			
 			switch(_agent.obstacleAvoidanceType)
 			{
-				case ObstacleAvoidanceType.NoObstacleAvoidance:
+				case UnityEngine.AI.ObstacleAvoidanceType.NoObstacleAvoidance:
 					levelAsString = "no";
 					levelAsInt = 0;
 					break;
-				case ObstacleAvoidanceType.LowQualityObstacleAvoidance:
+				case UnityEngine.AI.ObstacleAvoidanceType.LowQualityObstacleAvoidance:
 					levelAsString = "low";
 					levelAsInt = 1;
 					break;	
-				case ObstacleAvoidanceType.MedQualityObstacleAvoidance:
+				case UnityEngine.AI.ObstacleAvoidanceType.MedQualityObstacleAvoidance:
 					levelAsString = "medium";
 					levelAsInt = 2;
 					break;
-				case ObstacleAvoidanceType.GoodQualityObstacleAvoidance:
+				case UnityEngine.AI.ObstacleAvoidanceType.GoodQualityObstacleAvoidance:
 					levelAsString = "good";
 					levelAsInt = 3;
 					break;
-				case ObstacleAvoidanceType.HighQualityObstacleAvoidance:
+				case UnityEngine.AI.ObstacleAvoidanceType.HighQualityObstacleAvoidance:
 					levelAsString = "high";
 					levelAsInt = 4;
 					break;

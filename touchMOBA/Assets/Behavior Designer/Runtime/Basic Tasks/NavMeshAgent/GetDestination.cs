@@ -13,14 +13,14 @@ namespace BehaviorDesigner.Runtime.Tasks.Basic.UnityNavMeshAgent
         public SharedVector3 storeValue;
 
         // cache the navmeshagent component
-        private NavMeshAgent navMeshAgent;
+        private UnityEngine.AI.NavMeshAgent navMeshAgent;
         private GameObject prevGameObject;
 
         public override void OnStart()
         {
             var currentGameObject = GetDefaultGameObject(targetGameObject.Value);
             if (currentGameObject != prevGameObject) {
-                navMeshAgent = currentGameObject.GetComponent<NavMeshAgent>();
+                navMeshAgent = currentGameObject.GetComponent<UnityEngine.AI.NavMeshAgent>();
                 prevGameObject = currentGameObject;
             }
         }

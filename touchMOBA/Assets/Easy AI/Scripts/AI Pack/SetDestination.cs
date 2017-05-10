@@ -2,7 +2,7 @@
 using System.Collections;
 using AxlPlay;
 
-[RequireComponent(typeof(NavMeshAgent))]
+[RequireComponent(typeof(UnityEngine.AI.NavMeshAgent))]
 [AddComponentMenu("Easy AI/Go To Destination")]
 public class SetDestination : MonoBehaviour {
 
@@ -12,7 +12,7 @@ public class SetDestination : MonoBehaviour {
 	public float AgentSpeed = 3.5f;
 	
 	[HideInInspector]
-    public NavMeshAgent agent;
+    public UnityEngine.AI.NavMeshAgent agent;
     private Vector3 localitation;
 
     private GameObject _gameObject;
@@ -24,7 +24,7 @@ public class SetDestination : MonoBehaviour {
     }
     public StateMachine<States> fsm;
     void Awake() {
-	    agent = GetComponent<NavMeshAgent>();
+	    agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
 	    agent.speed = AgentSpeed;
 	    //Initialize State Machine Engine		
 	    fsm = StateMachine<States>.Initialize(this);

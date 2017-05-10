@@ -8,7 +8,7 @@ namespace HutongGames.PlayMaker.Actions
 	public class Flock : FsmStateAction {
 
 		[RequiredField]
-		[CheckForComponent(typeof(NavMeshAgent))]
+		[CheckForComponent(typeof(UnityEngine.AI.NavMeshAgent))]
 
 		[Tooltip("Agents less than this distance apart are neighbors")]
 		public FsmFloat neighborDistance = 100f;
@@ -30,7 +30,7 @@ namespace HutongGames.PlayMaker.Actions
 		public FsmFloat angularSpeed = 120;
 
 		// A cache of the NavMeshAgents
-		private NavMeshAgent[] navMeshAgents;
+		private UnityEngine.AI.NavMeshAgent[] navMeshAgents;
 		protected Transform[] transforms;
 
 
@@ -52,11 +52,11 @@ namespace HutongGames.PlayMaker.Actions
 
 
 		public override void OnEnter(){
-			navMeshAgents = new NavMeshAgent[agents.Length];
+			navMeshAgents = new UnityEngine.AI.NavMeshAgent[agents.Length];
 			transforms = new Transform[agents.Length];
 			for (int i = 0; i < agents.Length; ++i) {
 				transforms[i] = agents[i].Value.transform;
-				navMeshAgents[i] = agents[i].Value.GetComponent<NavMeshAgent>();
+				navMeshAgents[i] = agents[i].Value.GetComponent<UnityEngine.AI.NavMeshAgent>();
 				navMeshAgents[i].speed = speed.Value;
 				navMeshAgents[i].angularSpeed = angularSpeed.Value;
 				navMeshAgents[i].Resume();

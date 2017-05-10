@@ -1,6 +1,6 @@
 // (c) Copyright HutongGames, LLC 2010-2014. All rights reserved.
 
-using UnityEngine;
+
 
 namespace HutongGames.PlayMaker.Actions
 {
@@ -39,9 +39,9 @@ namespace HutongGames.PlayMaker.Actions
 			
 			int areaId = area.Value;
 			if (orAreaName.Value!=""){
-				areaId = NavMesh.GetAreaFromName(orAreaName.Value);
+				areaId = UnityEngine.AI.NavMesh.GetAreaFromName(orAreaName.Value);
 			}
-			NavMesh.SetAreaCost(areaId,cost.Value);
+			UnityEngine.AI.NavMesh.SetAreaCost(areaId,cost.Value);
 			
 		}
 		
@@ -50,7 +50,7 @@ namespace HutongGames.PlayMaker.Actions
 			
 			if (orAreaName.Value!="")
 			{
-				int areaId = NavMesh.GetAreaFromName(orAreaName.Value);
+				int areaId = UnityEngine.AI.NavMesh.GetAreaFromName(orAreaName.Value);
 				if (areaId==-1){
 					return "Area Name '"+orAreaName.Value+"' doesn't exists";
 				}else if(area.Value != 0){

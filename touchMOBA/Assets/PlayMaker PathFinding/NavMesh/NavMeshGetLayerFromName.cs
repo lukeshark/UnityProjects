@@ -1,6 +1,6 @@
 ﻿// (c) Copyright HutongGames, LLC 2010-2014. All rights reserved.
 
-using UnityEngine;
+
 
 namespace HutongGames.PlayMaker.Actions
 {
@@ -33,7 +33,7 @@ namespace HutongGames.PlayMaker.Actions
 		
 		void DoGetAreaFromName()
 		{
-			areaIndex.Value = NavMesh.GetAreaFromName(areaName.Value);
+			areaIndex.Value = UnityEngine.AI.NavMesh.GetAreaFromName(areaName.Value);
 		}
 		
 

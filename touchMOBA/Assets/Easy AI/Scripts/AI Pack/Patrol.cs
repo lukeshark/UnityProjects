@@ -2,7 +2,7 @@
 using System.Collections;
 using AxlPlay;
 
-[RequireComponent(typeof(NavMeshAgent))]
+[RequireComponent(typeof(UnityEngine.AI.NavMeshAgent))]
 //Patrol around the specified waypoints using the Unity NavMesh.
 [AddComponentMenu("Easy AI/Patrol")]
 
@@ -22,7 +22,7 @@ public class Patrol : MonoBehaviour
     private int waypointIndex;
     private float waypointReachedTime;
     private float arrivedDistance = 1f;
-    private NavMeshAgent agent;
+    private UnityEngine.AI.NavMeshAgent agent;
     // init FSM
     public enum States
     {
@@ -33,7 +33,7 @@ public class Patrol : MonoBehaviour
     public StateMachine<States> fsm;
     void Awake()
     {
-	    agent = GetComponent<NavMeshAgent>();
+	    agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
 
         agent.speed = AgentSpeed;
         //Initialize State Machine Engine		

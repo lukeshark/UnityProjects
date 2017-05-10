@@ -18,7 +18,7 @@ namespace HutongGames.PlayMaker.Actions
 		public FsmEvent isNotReachableEvent;
 		
 		private GameObject go;
-		private NavMeshPath _path;
+		private UnityEngine.AI.NavMeshPath _path;
 		private float elapsed = 0.0f;
 		
 		[UIHint(UIHint.Variable)]
@@ -38,7 +38,7 @@ namespace HutongGames.PlayMaker.Actions
         // Code that runs on entering the state.
 		public override void OnEnter()
 		{
-			_path = new NavMeshPath();
+			_path = new UnityEngine.AI.NavMeshPath();
 			elapsed = 0.0f;
 			
 			if (target != null)
@@ -52,7 +52,7 @@ namespace HutongGames.PlayMaker.Actions
 			if (elapsed > 0.5f)
 			{
 				elapsed = 0.0f;
-				isReachable.Value = NavMesh.CalculatePath(go.transform.position, target.Value.transform.position, NavMesh.AllAreas, _path);
+				isReachable.Value = UnityEngine.AI.NavMesh.CalculatePath(go.transform.position, target.Value.transform.position, UnityEngine.AI.NavMesh.AllAreas, _path);
 				Fsm.Event(isReachable.Value ? isReachableEvent : isNotReachableEvent);
 				
 			}

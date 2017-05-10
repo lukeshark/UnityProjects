@@ -9,7 +9,7 @@ public class EnemyHealth : MonoBehaviour
     public int scoreValue = 10;
     public AudioClip deathClip;
 
-    private NavMeshAgent _navMeshAgent;
+    private UnityEngine.AI.NavMeshAgent _navMeshAgent;
     private Team2 _team2;
     private Team1 _team1;
     private enemyPatrol _patrol;
@@ -22,7 +22,7 @@ public class EnemyHealth : MonoBehaviour
     bool isSinking;
     void Awake()
     {
-        _navMeshAgent = GetComponent<NavMeshAgent>();
+        _navMeshAgent = GetComponent<UnityEngine.AI.NavMeshAgent>();
         anim = GetComponent<Animator>();
 
         // enemyAudio = GetComponent<AudioSource>();
@@ -98,7 +98,7 @@ public class EnemyHealth : MonoBehaviour
 
     public void StartSinking()
     {
-        GetComponent<NavMeshAgent>().enabled = false;
+        GetComponent<UnityEngine.AI.NavMeshAgent>().enabled = false;
         // GetComponent<Rigidbody>().isKinematic = true;
         isSinking = true;
         //ScoreManager.score += scoreValue;

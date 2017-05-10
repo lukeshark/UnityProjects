@@ -12,7 +12,7 @@ namespace HutongGames.PlayMaker.Actions
 	{
 		[RequiredField]
 		[Tooltip("The Game Object to work with. NOTE: The Game Object must have a NavMeshAgent component attached.")]
-		[CheckForComponent(typeof(NavMeshAgent))]
+		[CheckForComponent(typeof(UnityEngine.AI.NavMeshAgent))]
 		public FsmOwnerDefault gameObject;
 		
 		[Tooltip("The Area index.")]
@@ -24,7 +24,7 @@ namespace HutongGames.PlayMaker.Actions
 		[Tooltip("The Layer Cost. A cost of 3 means that walking 1 meter feels as walking 3 meter when cost is 1")]
 		public FsmFloat cost;
 		
-		private NavMeshAgent _agent;
+		private UnityEngine.AI.NavMeshAgent _agent;
 		
 		private void _getAgent()
 		{
@@ -34,7 +34,7 @@ namespace HutongGames.PlayMaker.Actions
 				return;
 			}
 			
-			_agent =  go.GetComponent<NavMeshAgent>();
+			_agent =  go.GetComponent<UnityEngine.AI.NavMeshAgent>();
 		}	
 		
 		public override void Reset()
@@ -63,7 +63,7 @@ namespace HutongGames.PlayMaker.Actions
 			
 			int areaId = area.Value;
 			if (orAreaName.Value!=""){
-				areaId = NavMesh.GetAreaFromName(orAreaName.Value);
+				areaId = UnityEngine.AI.NavMesh.GetAreaFromName(orAreaName.Value);
 			}
 			
 			_agent.SetAreaCost(areaId,cost.Value);
@@ -74,7 +74,7 @@ namespace HutongGames.PlayMaker.Actions
 		{
 			if (orAreaName.Value!="")
 			{
-				int areaId = NavMesh.GetAreaFromName(orAreaName.Value);
+				int areaId = UnityEngine.AI.NavMesh.GetAreaFromName(orAreaName.Value);
 				if (areaId==-1){
 					return "Layer Name '"+orAreaName.Value+"' doesn't exists";
 				}else if(area.Value != 0){

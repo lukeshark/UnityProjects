@@ -1,6 +1,6 @@
 // (c) Copyright HutongGames, LLC 2010-2014. All rights reserved.
 
-using UnityEngine;
+
 
 namespace HutongGames.PlayMaker.Actions
 {
@@ -89,8 +89,8 @@ namespace HutongGames.PlayMaker.Actions
 		
 		void DoRaycast()
 		{
-			NavMeshHit _NavMeshHit;
-			bool _reachedBeforeTargetPosition = NavMesh.Raycast(sourcePosition.Value,targetPosition.Value,out _NavMeshHit,passableMask.Value);
+			UnityEngine.AI.NavMeshHit _NavMeshHit;
+			bool _reachedBeforeTargetPosition = UnityEngine.AI.NavMesh.Raycast(sourcePosition.Value,targetPosition.Value,out _NavMeshHit,passableMask.Value);
 		 	reachedBeforeTargetPosition.Value = _reachedBeforeTargetPosition;
 			
 			position.Value = _NavMeshHit.position;

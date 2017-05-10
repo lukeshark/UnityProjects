@@ -14,7 +14,7 @@ public class Team1 : MonoBehaviour
     public GameObject target;
     private GameObject node;
 
-    private NavMeshAgent nav;
+    private UnityEngine.AI.NavMeshAgent nav;
     private Animator anim;
     private float rotationSpeed;
    // private CanSeeObject canSee;
@@ -44,7 +44,7 @@ public class Team1 : MonoBehaviour
     {
         rotationSpeed = 5f;
         _shoot = GetComponentInChildren<EnemyShoot>();
-        nav = GetComponent<NavMeshAgent>();
+        nav = GetComponent<UnityEngine.AI.NavMeshAgent>();
         anim = GetComponent<Animator>();
        // canSee = GetComponent<CanSeeObject>();
         //Initialize State Machine Engine		

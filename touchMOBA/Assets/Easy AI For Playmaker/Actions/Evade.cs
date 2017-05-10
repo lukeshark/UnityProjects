@@ -8,7 +8,7 @@ namespace HutongGames.PlayMaker.Actions
 	public class Evade : FsmStateAction {
 
 		[RequiredField]
-		[CheckForComponent(typeof(NavMeshAgent))]
+		[CheckForComponent(typeof(UnityEngine.AI.NavMeshAgent))]
 
 		[Tooltip("The agent has evaded when the magnitude is greater than this value")]
 		public FsmFloat evadeDistance = 10;
@@ -25,11 +25,11 @@ namespace HutongGames.PlayMaker.Actions
 
 		// The position of the target at the last frame
 		private Vector3 targetPosition;
-		private NavMeshAgent agent;
+		private UnityEngine.AI.NavMeshAgent agent;
 
 		public override void Awake() {
 
-			agent = Owner.GetComponent<NavMeshAgent> ();
+			agent = Owner.GetComponent<UnityEngine.AI.NavMeshAgent> ();
 		}
 
 		public override void OnEnter()

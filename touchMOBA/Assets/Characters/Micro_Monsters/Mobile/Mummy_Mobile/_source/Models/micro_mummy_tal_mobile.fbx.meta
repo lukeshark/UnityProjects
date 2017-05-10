@@ -3,7 +3,59 @@ guid: 08ae2dccabaf6d04a84039544b3e4705
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
+    100000: body_mummy
+    100002: butt_mummy
+    100004: eye_l_mummy
+    100006: face_mummy
+    100008: head_mummy
+    100010: left_arm_mummy
+    100012: left_hand_mummy
+    100014: left_shoulder_mummy
+    100016: //RootNode
+    100018: right_arm_mummy
+    100020: right_hand_mummy
+    100022: right_shoulder_mummy
+    100024: root_mummy
+    100026: tal
+    400000: body_mummy
+    400002: butt_mummy
+    400004: eye_l_mummy
+    400006: face_mummy
+    400008: head_mummy
+    400010: left_arm_mummy
+    400012: left_hand_mummy
+    400014: left_shoulder_mummy
+    400016: //RootNode
+    400018: right_arm_mummy
+    400020: right_hand_mummy
+    400022: right_shoulder_mummy
+    400024: root_mummy
+    400026: tal
     4300000: tal
+    7400000: mummy_bind
+    7400002: mummy_idle1
+    7400004: mummy_idle2
+    7400006: mummy_walk
+    7400008: mummy_bite
+    7400010: mummy_hit_front
+    7400012: mummy_hit_left
+    7400014: mummy_hit_right
+    7400016: mummy_panic
+    7400018: mummy_jump
+    7400020: mummy_fly_up_loop
+    7400022: mummy_trans_fall
+    7400024: mummy_fall_idle
+    7400026: mummy_land
+    7400028: mummy_die
+    7400030: mummy_stir_on_ground
+    7400032: mummy_getup
+    7400034: mummy_attack_repeatedly
+    7400036: mummy_dizzy
+    7400038: mummy_talk
+    7400040: mummy_laugh
+    7400042: mummy_walk_neutral
+    11100000: //RootNode
+    13700000: tal
   materials:
     importMaterials: 1
     materialName: 1
@@ -14,6 +66,8 @@ ModelImporter:
     resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
@@ -666,6 +720,7 @@ ModelImporter:
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
+    serializedVersion: 2
     human: []
     skeleton: []
     armTwist: 0.5
@@ -676,7 +731,10 @@ ModelImporter:
     legStretch: 0.05
     feetSpacing: 0
     rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 1
   humanoidOversampling: 1

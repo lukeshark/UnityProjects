@@ -22,7 +22,7 @@ public class AgentScript : MonoBehaviour
 
     private Vector3 target;
     [HideInInspector]
-    public NavMeshAgent navMeshAgent;
+    public UnityEngine.AI.NavMeshAgent navMeshAgent;
 
     private Animator _anim;
 
@@ -45,7 +45,7 @@ public class AgentScript : MonoBehaviour
     void Awake()
     {
         notificationCount = 0;
-        navMeshAgent = GetComponent<NavMeshAgent>();
+        navMeshAgent = GetComponent<UnityEngine.AI.NavMeshAgent>();
 
         _anim = GetComponent<Animator>();
 

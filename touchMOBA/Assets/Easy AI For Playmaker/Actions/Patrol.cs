@@ -8,7 +8,7 @@ namespace HutongGames.PlayMaker.Actions
 	public class Patrol : FsmStateAction {
 
 		[RequiredField]
-		[CheckForComponent(typeof(NavMeshAgent))]
+		[CheckForComponent(typeof(UnityEngine.AI.NavMeshAgent))]
 
 		[Tooltip("Should the agent patrol the waypoints randomly?")]
 		public FsmBool randomPatrol = false;
@@ -23,12 +23,12 @@ namespace HutongGames.PlayMaker.Actions
 		private int waypointIndex;
 		private float waypointReachedTime;
 
-		private NavMeshAgent agent;
+		private UnityEngine.AI.NavMeshAgent agent;
 
 
 		public override void Awake() {
 
-			agent = Owner.GetComponent<NavMeshAgent> ();
+			agent = Owner.GetComponent<UnityEngine.AI.NavMeshAgent> ();
 		}
 
 		public override void OnEnter()

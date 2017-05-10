@@ -29,7 +29,7 @@ public class MenuManager
 		var  temp = GameObject.CreatePrimitive(PrimitiveType.Capsule);
 		temp.name = "Agent";
 		temp.transform.position = Vector3.zero;
-		temp.AddComponent<NavMeshAgent>();
+		temp.AddComponent<UnityEngine.AI.NavMeshAgent>();
 		temp.AddComponent<AgentScript>();
 		var _agentScript = temp.GetComponent<AgentScript>();
  

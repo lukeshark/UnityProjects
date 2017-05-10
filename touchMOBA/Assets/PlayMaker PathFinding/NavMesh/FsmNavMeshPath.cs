@@ -22,19 +22,19 @@ public class FsmNavMeshPath : MonoBehaviour {
 	}
 	*/
 	
-	public NavMeshPathStatus status
+	public UnityEngine.AI.NavMeshPathStatus status
 	{
 		get
 		{ 
 			if (path== null)
 			{
-			 return NavMeshPathStatus.PathInvalid;
+			 return UnityEngine.AI.NavMeshPathStatus.PathInvalid;
 			}	
 		return path.status;
 		}
 	}
 
-	public NavMeshPath path;
+	public UnityEngine.AI.NavMeshPath path;
 	
 	// Use this for initialization
 	void Start () {

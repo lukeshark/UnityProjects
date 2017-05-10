@@ -7,7 +7,7 @@ namespace HutongGames.PlayMaker.Actions
 	{
 		
 		[RequiredField]
-		[CheckForComponent (typeof(NavMeshAgent))]
+		[CheckForComponent (typeof(UnityEngine.AI.NavMeshAgent))]
 
 		public FsmOwnerDefault gameObject;
 
@@ -16,7 +16,7 @@ namespace HutongGames.PlayMaker.Actions
 
 		public FsmEvent finishEvent;
 		private GameObject go;
-		private NavMeshAgent navMeshAgent;
+		private UnityEngine.AI.NavMeshAgent navMeshAgent;
 		private Vector3 localitation;
 
 		private GameObject _gameObject;
@@ -30,7 +30,7 @@ namespace HutongGames.PlayMaker.Actions
 
 		public override void Awake ()
 		{
-			navMeshAgent = Owner.GetComponent<NavMeshAgent> ();
+			navMeshAgent = Owner.GetComponent<UnityEngine.AI.NavMeshAgent> ();
 		}
 
 		public override void OnUpdate ()
