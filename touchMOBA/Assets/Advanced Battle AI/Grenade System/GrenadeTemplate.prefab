@@ -5,11 +5,11 @@ GameObject:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 400000}
-  - 33: {fileID: 3300000}
-  - 23: {fileID: 2300000}
+  - component: {fileID: 400000}
+  - component: {fileID: 3300000}
+  - component: {fileID: 2300000}
   m_Layer: 0
   m_Name: custom grenade model
   m_TagString: Untagged
@@ -22,9 +22,9 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 400002}
+  - component: {fileID: 400002}
   m_Layer: 0
   m_Name: Put Grenade Model Here (DO NOT DELETE)
   m_TagString: Untagged
@@ -37,16 +37,16 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 400004}
-  - 33: {fileID: 3300002}
-  - 135: {fileID: 13500000}
-  - 54: {fileID: 5400000}
-  - 114: {fileID: 11400002}
-  - 82: {fileID: 8200000}
-  - 114: {fileID: 11400000}
-  - 114: {fileID: 114000011815161216}
+  - component: {fileID: 400004}
+  - component: {fileID: 3300002}
+  - component: {fileID: 13500000}
+  - component: {fileID: 5400000}
+  - component: {fileID: 11400002}
+  - component: {fileID: 8200000}
+  - component: {fileID: 11400000}
+  - component: {fileID: 114000011815161216}
   m_Layer: 0
   m_Name: GrenadeTemplate
   m_TagString: Untagged
@@ -63,10 +63,10 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 5.980875, y: 5.980873, z: 5.980873}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 400002}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &400002
 Transform:
   m_ObjectHideFlags: 1
@@ -76,11 +76,11 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 400000}
   m_Father: {fileID: 400004}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &400004
 Transform:
   m_ObjectHideFlags: 1
@@ -90,11 +90,11 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.89524937, y: 4.182819, z: 1.6473484}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 400002}
   m_Father: {fileID: 0}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &2300000
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -109,7 +109,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_Materials:
   - {fileID: 2100000, guid: db21f16a63615d74d9f63ec6d7b0f68b, type: 2}
-  m_SubsetIndices: 
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
@@ -117,12 +119,13 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_SelectedWireframeHidden: 0
+  m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!33 &3300000
 MeshFilter:
@@ -169,6 +172,7 @@ AudioSource:
   Loop: 0
   Mute: 0
   Spatialize: 0
+  SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
@@ -181,12 +185,14 @@ AudioSource:
   rolloffCustomCurve:
     serializedVersion: 2
     m_Curve:
-    - time: 0
+    - serializedVersion: 2
+      time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-    - time: 1
+    - serializedVersion: 2
+      time: 1
       value: 0
       inSlope: 0
       outSlope: 0
@@ -197,7 +203,8 @@ AudioSource:
   panLevelCustomCurve:
     serializedVersion: 2
     m_Curve:
-    - time: 0
+    - serializedVersion: 2
+      time: 0
       value: 1
       inSlope: 0
       outSlope: 0
@@ -208,7 +215,8 @@ AudioSource:
   spreadCustomCurve:
     serializedVersion: 2
     m_Curve:
-    - time: 0
+    - serializedVersion: 2
+      time: 0
       value: 0
       inSlope: 0
       outSlope: 0
@@ -219,7 +227,8 @@ AudioSource:
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
-    - time: 0
+    - serializedVersion: 2
+      time: 0
       value: 1
       inSlope: 0
       outSlope: 0
@@ -303,7 +312,7 @@ MonoBehaviour:
       - fsmEvent:
           name: fire
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Get All Players in Scene
         linkStyle: 0
         linkConstraint: 0
@@ -509,7 +518,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Loop through Players
         linkStyle: 0
         linkConstraint: 0
@@ -517,7 +526,7 @@ MonoBehaviour:
       - fsmEvent:
           name: destroy
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Self Destruct
         linkStyle: 0
         linkConstraint: 0
@@ -951,7 +960,7 @@ MonoBehaviour:
       - fsmEvent:
           name: check next player
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Check if Player Within Damage Proximity
         linkStyle: 0
         linkConstraint: 0
@@ -959,7 +968,7 @@ MonoBehaviour:
       - fsmEvent:
           name: finished player check
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Self Destruct
         linkStyle: 0
         linkConstraint: 0
@@ -967,7 +976,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Destroy Grenade
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Self Destruct
         linkStyle: 0
         linkConstraint: 0
@@ -1077,7 +1086,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Check LoS
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Check if Player Within Line of Sight
         linkStyle: 0
         linkConstraint: 0
@@ -1085,7 +1094,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Not In Prox
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Loop through Players
         linkStyle: 0
         linkConstraint: 0
@@ -1174,7 +1183,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Not in LoS
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Loop through Players
         linkStyle: 0
         linkConstraint: 0
@@ -1182,7 +1191,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Send Damage
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Send Damage
         linkStyle: 0
         linkConstraint: 0
@@ -1339,7 +1348,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Loop through Players
         linkStyle: 0
         linkConstraint: 0
@@ -1457,34 +1466,34 @@ MonoBehaviour:
     events:
     - name: FINISHED
       isSystemEvent: 1
-      isGlobal: 0
+      isGlobal: 1
     - name: Check LoS
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: Destroy Grenade
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: Not In Prox
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: Not in LoS
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: Send Damage
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: check next player
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: destroy
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: finished player check
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: fire
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     globalTransitions: []
     variables:
       floatVariables:
@@ -1616,7 +1625,7 @@ MonoBehaviour:
     locked: 0
     manualUpdate: 0
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 1
+    preprocessed: 0
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0

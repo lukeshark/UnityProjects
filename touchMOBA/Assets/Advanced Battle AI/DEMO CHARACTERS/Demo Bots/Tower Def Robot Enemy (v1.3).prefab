@@ -2005,7 +2005,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: 'MAIN NODE: Decide What To Do'
         linkStyle: 0
         linkConstraint: 0
@@ -2280,7 +2280,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Chase Nearest Target in Sight Range
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Wait 2
         linkStyle: 0
         linkConstraint: 0
@@ -2288,7 +2288,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Patrol_SeqWaypoint
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: 'Patrol: Pick Sequential Waypoint'
         linkStyle: 0
         linkConstraint: 0
@@ -2296,7 +2296,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Patrol_NearbyRandom
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: 'Patrol: Pick Random Nearby Location'
         linkStyle: 0
         linkConstraint: 0
@@ -2304,7 +2304,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Patrol_RandomWaypoint
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: 'Patrol: Pick Random Waypoint'
         linkStyle: 0
         linkConstraint: 0
@@ -2312,7 +2312,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Guard_HoldPosition
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: 'MAIN NODE: GUARD: HOLD POSITION'
         linkStyle: 0
         linkConstraint: 0
@@ -2320,7 +2320,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Guard_Chase
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: 'MAIN NODE: GUARD: CHASE'
         linkStyle: 0
         linkConstraint: 0
@@ -2328,7 +2328,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Guard_ChaseReturn
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Calculate Path to Original Location
         linkStyle: 0
         linkConstraint: 0
@@ -2336,7 +2336,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Patrol_SeqWaypointPingpong
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: 'Patrol: Pick Sequential Waypoint Pingpong'
         linkStyle: 0
         linkConstraint: 0
@@ -2344,7 +2344,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Default
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: 'Default: No actions, no enemies'
         linkStyle: 0
         linkConstraint: 0
@@ -2352,7 +2352,7 @@ MonoBehaviour:
       - fsmEvent:
           name: MoveTo
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: MoveTo
         linkStyle: 0
         linkConstraint: 0
@@ -2360,7 +2360,7 @@ MonoBehaviour:
       - fsmEvent:
           name: MoveTo_Chase
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: MoveTo and chase
         linkStyle: 0
         linkConstraint: 0
@@ -2368,7 +2368,7 @@ MonoBehaviour:
       - fsmEvent:
           name: MoveTo_NoEngage
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: MoveTo and don't engage
         linkStyle: 0
         linkConstraint: 0
@@ -2836,7 +2836,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Arrived At Target
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: 'ARRIVED: Wait at Target'
         linkStyle: 0
         linkConstraint: 0
@@ -2844,7 +2844,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Check if we're attacking
         linkStyle: 0
         linkConstraint: 0
@@ -3051,7 +3051,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Think
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Wait 4
         linkStyle: 0
         linkConstraint: 0
@@ -3293,7 +3293,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Chase Target
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: 'WAIT: Update Current Target''s Location'
         linkStyle: 0
         linkConstraint: 0
@@ -3301,7 +3301,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: 'MAIN NODE: Decide What To Do'
         linkStyle: 0
         linkConstraint: 0
@@ -3397,7 +3397,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: 'Final Check: Is Target Within Sight Range?'
         linkStyle: 0
         linkConstraint: 0
@@ -3518,7 +3518,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Calculate Path
         linkStyle: 0
         linkConstraint: 0
@@ -3613,7 +3613,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Calculate Path
         linkStyle: 0
         linkConstraint: 0
@@ -3621,7 +3621,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Reset Current WP Index
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Reset Waypoint Index
         linkStyle: 0
         linkConstraint: 0
@@ -3746,7 +3746,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Calculate Path
         linkStyle: 0
         linkConstraint: 0
@@ -3857,7 +3857,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Think
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Walk or Run? 3
         linkStyle: 0
         linkConstraint: 0
@@ -3865,7 +3865,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Chase Target
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: 'Final Check: Is Target Within Sight Range?'
         linkStyle: 0
         linkConstraint: 0
@@ -4012,7 +4012,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Arrived At Target
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Wait At Location
         linkStyle: 0
         linkConstraint: 0
@@ -4020,7 +4020,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Check if Enemy Detected
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Wait 6
         linkStyle: 0
         linkConstraint: 0
@@ -4165,7 +4165,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Think
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: 'MAIN NODE: Decide What To Do'
         linkStyle: 0
         linkConstraint: 0
@@ -4173,7 +4173,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Think at Ping Pong
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: 'Patrol: Pick Sequential Waypoint Pingpong'
         linkStyle: 0
         linkConstraint: 0
@@ -4181,7 +4181,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Guard_HoldPosition
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: 'MAIN NODE: GUARD: HOLD POSITION'
         linkStyle: 0
         linkConstraint: 0
@@ -4403,7 +4403,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Think
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: CHASE TARGET
         linkStyle: 0
         linkConstraint: 0
@@ -4589,7 +4589,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Think
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Calculate Chase Path
         linkStyle: 0
         linkConstraint: 0
@@ -4597,7 +4597,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Arrived At Target
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: 'ARRIVED: Wait at Target'
         linkStyle: 0
         linkConstraint: 0
@@ -4698,7 +4698,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Think
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: 'MAIN NODE: Decide What To Do'
         linkStyle: 0
         linkConstraint: 0
@@ -4706,7 +4706,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Animate
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Idle
         linkStyle: 0
         linkConstraint: 0
@@ -4714,7 +4714,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: 'MAIN NODE: Decide What To Do'
         linkStyle: 0
         linkConstraint: 0
@@ -4839,7 +4839,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Init Character Main
         linkStyle: 0
         linkConstraint: 0
@@ -4919,7 +4919,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Init Character Main
         linkStyle: 0
         linkConstraint: 0
@@ -5000,7 +5000,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Turn off Obstacle Avoidance
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Obstacle Avoidance Off
         linkStyle: 0
         linkConstraint: 0
@@ -5008,7 +5008,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Turn on Obstacle Avoidance
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Obstacle Avoidance On
         linkStyle: 0
         linkConstraint: 0
@@ -5077,7 +5077,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Wait
         linkStyle: 0
         linkConstraint: 0
@@ -5269,7 +5269,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Wait 3
         linkStyle: 0
         linkConstraint: 0
@@ -5395,7 +5395,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: 'Guard Chase : Check for Nearby Enemies'
         linkStyle: 0
         linkConstraint: 0
@@ -5460,7 +5460,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Guard_Chase
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Idle Animation 2
         linkStyle: 0
         linkConstraint: 0
@@ -5468,7 +5468,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Chase Nearest Target in Sight Range
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Wait 2
         linkStyle: 0
         linkConstraint: 0
@@ -5599,7 +5599,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Guard_Chase
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Idle Animation
         linkStyle: 0
         linkConstraint: 0
@@ -5607,7 +5607,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Chase Nearest Target in Sight Range
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Wait 2
         linkStyle: 0
         linkConstraint: 0
@@ -5727,7 +5727,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: 'Guard Chase Return : Check for Nearby Enemies'
         linkStyle: 0
         linkConstraint: 0
@@ -5792,7 +5792,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Walk or Run? 2
         linkStyle: 0
         linkConstraint: 0
@@ -5865,7 +5865,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Arrived At Target
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: 'MAIN NODE: GUARD: CHASE AND RETURN'
         linkStyle: 0
         linkConstraint: 0
@@ -5948,7 +5948,7 @@ MonoBehaviour:
       - fsmEvent:
           name: UpdatePath
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: 'WAIT: Update Current Target''s Location'
         linkStyle: 0
         linkConstraint: 0
@@ -5956,7 +5956,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Think
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: 'MAIN NODE: Decide What To Do'
         linkStyle: 0
         linkConstraint: 0
@@ -6054,7 +6054,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Calculate Path
         linkStyle: 0
         linkConstraint: 0
@@ -6062,7 +6062,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Guard_HoldPosition
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: 'MAIN NODE: GUARD: HOLD POSITION'
         linkStyle: 0
         linkConstraint: 0
@@ -6165,7 +6165,7 @@ MonoBehaviour:
       - fsmEvent:
           name: 'WP Direction: Standard'
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: 'Route Direction: Standard'
         linkStyle: 0
         linkConstraint: 0
@@ -6173,7 +6173,7 @@ MonoBehaviour:
       - fsmEvent:
           name: 'WP Direction: Reversed'
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: 'Route Direction: Reversed'
         linkStyle: 0
         linkConstraint: 0
@@ -6251,7 +6251,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Calculate Path
         linkStyle: 0
         linkConstraint: 0
@@ -6259,7 +6259,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Reset Current WP Index
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: 'Change Direction: Reversed'
         linkStyle: 0
         linkConstraint: 0
@@ -6368,7 +6368,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Calculate Path
         linkStyle: 0
         linkConstraint: 0
@@ -6438,7 +6438,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Calculate Path
         linkStyle: 0
         linkConstraint: 0
@@ -6446,7 +6446,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Reset Current WP Index
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: 'Change Direction: Original'
         linkStyle: 0
         linkConstraint: 0
@@ -6555,7 +6555,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Calculate Path
         linkStyle: 0
         linkConstraint: 0
@@ -6625,7 +6625,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Think
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: 'MAIN NODE: Decide What To Do'
         linkStyle: 0
         linkConstraint: 0
@@ -6690,7 +6690,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: 'MAIN NODE: Decide What To Do'
         linkStyle: 0
         linkConstraint: 0
@@ -6755,7 +6755,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Calculate Path For MoveTo
         linkStyle: 0
         linkConstraint: 0
@@ -6820,7 +6820,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Think
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Walk or Run?
         linkStyle: 0
         linkConstraint: 0
@@ -6828,7 +6828,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Chase Target
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: 'WAIT: Update Current Target''s Location'
         linkStyle: 0
         linkConstraint: 0
@@ -6964,7 +6964,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Guard_HoldPosition
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: 'MAIN NODE: GUARD: HOLD POSITION'
         linkStyle: 0
         linkConstraint: 0
@@ -6972,7 +6972,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Track Object
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: 'MoveTo: Wait Before Updating Path'
         linkStyle: 0
         linkConstraint: 0
@@ -7183,7 +7183,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Arrived At Target
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: 'Arrived: Wait At MoveTo Location'
         linkStyle: 0
         linkConstraint: 0
@@ -7191,7 +7191,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Chase Target
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: 'WAIT: Update Current Target''s Location'
         linkStyle: 0
         linkConstraint: 0
@@ -7199,7 +7199,7 @@ MonoBehaviour:
       - fsmEvent:
           name: UpdatePath
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: 'MoveTo: Wait Before Updating Path'
         linkStyle: 0
         linkConstraint: 0
@@ -7356,7 +7356,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Calculate Path For MoveTo
         linkStyle: 0
         linkConstraint: 0
@@ -7421,7 +7421,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Calculate Path For MoveTo
         linkStyle: 0
         linkConstraint: 0
@@ -7513,7 +7513,7 @@ MonoBehaviour:
       - fsmEvent:
           name: MoveTo_Walk
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Enable Walking
         linkStyle: 0
         linkConstraint: 0
@@ -7521,7 +7521,7 @@ MonoBehaviour:
       - fsmEvent:
           name: MoveTo_Run
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Enable Running
         linkStyle: 0
         linkConstraint: 0
@@ -7587,7 +7587,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Move to Ordered Location
         linkStyle: 0
         linkConstraint: 0
@@ -7778,7 +7778,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Move to Ordered Location
         linkStyle: 0
         linkConstraint: 0
@@ -7969,7 +7969,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Track Object
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: 'Moveto: Track Object Before Updating Path'
         linkStyle: 0
         linkConstraint: 0
@@ -8034,7 +8034,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Calculate Path For MoveTo
         linkStyle: 0
         linkConstraint: 0
@@ -8042,7 +8042,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Return to Previous State
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Move to Ordered Location
         linkStyle: 0
         linkConstraint: 0
@@ -8125,7 +8125,7 @@ MonoBehaviour:
       - fsmEvent:
           name: MoveTo_Walk
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Enable Walking 3
         linkStyle: 0
         linkConstraint: 0
@@ -8133,7 +8133,7 @@ MonoBehaviour:
       - fsmEvent:
           name: MoveTo_Run
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Enable Running 3
         linkStyle: 0
         linkConstraint: 0
@@ -8199,7 +8199,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Move to Determined Location
         linkStyle: 0
         linkConstraint: 0
@@ -8385,7 +8385,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Move to Determined Location
         linkStyle: 0
         linkConstraint: 0
@@ -8571,7 +8571,7 @@ MonoBehaviour:
       - fsmEvent:
           name: MoveTo_Run
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Enable Running 2
         linkStyle: 0
         linkConstraint: 0
@@ -8579,7 +8579,7 @@ MonoBehaviour:
       - fsmEvent:
           name: MoveTo_Walk
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Enable Walking 2
         linkStyle: 0
         linkConstraint: 0
@@ -8656,7 +8656,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Move to Original Location
         linkStyle: 0
         linkConstraint: 0
@@ -8761,7 +8761,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Move to Original Location
         linkStyle: 0
         linkConstraint: 0
@@ -8929,7 +8929,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Check Wait
         linkStyle: 0
         linkConstraint: 0
@@ -8937,7 +8937,7 @@ MonoBehaviour:
       - fsmEvent:
           name: checkIfAttacksEnabled
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Check if Attacking (if yes, stop chasing)
         linkStyle: 0
         linkConstraint: 0
@@ -8945,7 +8945,7 @@ MonoBehaviour:
       - fsmEvent:
           name: UpdatePath
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Wait Before Updating Path
         linkStyle: 0
         linkConstraint: 0
@@ -8953,7 +8953,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Arrived At Target
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: 'ARRIVED: Wait at Target'
         linkStyle: 0
         linkConstraint: 0
@@ -9112,7 +9112,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: CHASE TARGET
         linkStyle: 0
         linkConstraint: 0
@@ -9177,7 +9177,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Arrived At Target
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: 'ARRIVED: Wait at Target'
         linkStyle: 0
         linkConstraint: 0
@@ -9185,7 +9185,7 @@ MonoBehaviour:
       - fsmEvent:
           name: UpdatePath
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Wait Before Updating Path
         linkStyle: 0
         linkConstraint: 0
@@ -9352,7 +9352,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Wait 5
         linkStyle: 0
         linkConstraint: 0
@@ -9519,7 +9519,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Think
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: 'MAIN NODE: Decide What To Do'
         linkStyle: 0
         linkConstraint: 0
@@ -9584,7 +9584,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Think
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Enemies Detected?
         linkStyle: 0
         linkConstraint: 0
@@ -9649,7 +9649,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Walk or Run? 3
         linkStyle: 0
         linkConstraint: 0
@@ -9657,7 +9657,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Chase Target
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: 'WAIT: Update Current Target''s Location'
         linkStyle: 0
         linkConstraint: 0
@@ -9780,7 +9780,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Wait 3
         linkStyle: 0
         linkConstraint: 0
@@ -9921,7 +9921,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Wait
         linkStyle: 0
         linkConstraint: 0
@@ -10060,94 +10060,94 @@ MonoBehaviour:
     events:
     - name: FINISHED
       isSystemEvent: 1
-      isGlobal: 0
+      isGlobal: 1
     - name: Arrived At Target
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: Chase Nearest Target in Sight Range
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: Chase Target
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: Default
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: Guard_Chase
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: Guard_ChaseReturn
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: Guard_HoldPosition
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: MoveTo
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: MoveTo_Chase
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: MoveTo_NoEngage
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: MoveTo_Run
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: MoveTo_Walk
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: Patrol_NearbyRandom
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: Patrol_RandomWaypoint
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: Patrol_SeqWaypoint
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: Patrol_SeqWaypointPingpong
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: Reset Current WP Index
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: Return to Previous State
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: Think
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: Think at Ping Pong
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: Track Object
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: Turn off Obstacle Avoidance
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: Turn on Obstacle Avoidance
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: UpdatePath
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: 'WP Direction: Reversed'
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: 'WP Direction: Standard'
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: Check if Enemy Detected
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: Animate
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: checkIfAttacksEnabled
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     globalTransitions: []
     variables:
       floatVariables:
@@ -10536,7 +10536,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: DONE
         linkStyle: 0
         linkConstraint: 0
@@ -10544,7 +10544,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Init Random
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Random HP
         linkStyle: 0
         linkConstraint: 0
@@ -10662,7 +10662,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Random Run Speed
         linkStyle: 0
         linkConstraint: 0
@@ -10781,7 +10781,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Random Attack Reflex Time
         linkStyle: 0
         linkConstraint: 0
@@ -10913,7 +10913,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: DONE
         linkStyle: 0
         linkConstraint: 0
@@ -10992,10 +10992,10 @@ MonoBehaviour:
     events:
     - name: FINISHED
       isSystemEvent: 1
-      isGlobal: 0
+      isGlobal: 1
     - name: Init Random
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     globalTransitions: []
     variables:
       floatVariables:
@@ -11094,7 +11094,7 @@ MonoBehaviour:
     locked: 0
     manualUpdate: 0
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 1
+    preprocessed: 0
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0
@@ -11159,7 +11159,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Add to Total Noise
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Add Movements to Total Noise
         linkStyle: 0
         linkConstraint: 0
@@ -11167,7 +11167,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Check if Attacking
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Check if Attacking
         linkStyle: 0
         linkConstraint: 0
@@ -11260,7 +11260,7 @@ MonoBehaviour:
       - fsmEvent:
           name: reset
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Reset Noise and Wait
         linkStyle: 0
         linkConstraint: 0
@@ -11325,7 +11325,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Check if Moving
         linkStyle: 0
         linkConstraint: 0
@@ -11390,7 +11390,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Check if Attacking
         linkStyle: 0
         linkConstraint: 0
@@ -11456,7 +11456,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Add to Total Noise
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Add Weapon Noise to Total Noise 2
         linkStyle: 0
         linkConstraint: 0
@@ -11464,7 +11464,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Final Actions & Done
         linkStyle: 0
         linkConstraint: 0
@@ -11557,7 +11557,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Final Actions & Done
         linkStyle: 0
         linkConstraint: 0
@@ -11623,7 +11623,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Update Noise
         linkStyle: 0
         linkConstraint: 0
@@ -11670,16 +11670,16 @@ MonoBehaviour:
     events:
     - name: FINISHED
       isSystemEvent: 1
-      isGlobal: 0
+      isGlobal: 1
     - name: Add to Total Noise
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: Check if Attacking
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: reset
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     globalTransitions: []
     variables:
       floatVariables:
@@ -11754,7 +11754,7 @@ MonoBehaviour:
     locked: 0
     manualUpdate: 0
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 1
+    preprocessed: 0
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0
@@ -11819,7 +11819,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Pause
         linkStyle: 0
         linkConstraint: 0
@@ -11905,7 +11905,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Update Stats
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Update
         linkStyle: 0
         linkConstraint: 0
@@ -12009,7 +12009,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Pause
         linkStyle: 0
         linkConstraint: 0
@@ -12017,7 +12017,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Enemy Not In Range
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: No Enemies Within Range
         linkStyle: 0
         linkConstraint: 0
@@ -12025,7 +12025,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Enemy Within Sight Radius
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Check Target Within LoS
         linkStyle: 0
         linkConstraint: 0
@@ -12033,7 +12033,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Check Enemy Noise
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Target Not Within LoS
         linkStyle: 0
         linkConstraint: 0
@@ -12177,7 +12177,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Pause
         linkStyle: 0
         linkConstraint: 0
@@ -12301,7 +12301,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Attack not Enabled
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Pause
         linkStyle: 0
         linkConstraint: 0
@@ -12309,7 +12309,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Target Within LoS
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: 'Enemy Detected: Within Line of Sight'
         linkStyle: 0
         linkConstraint: 0
@@ -12317,7 +12317,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Target not in LoS
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: 'Enemy Detected: Not in Line of Sight'
         linkStyle: 0
         linkConstraint: 0
@@ -12451,7 +12451,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Check Enemy Noise
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Target Not Within LoS
         linkStyle: 0
         linkConstraint: 0
@@ -12459,7 +12459,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Enemy Found
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Target Within LoS
         linkStyle: 0
         linkConstraint: 0
@@ -12647,7 +12647,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Enemy Found
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Check if Enemy Alive
         linkStyle: 0
         linkConstraint: 0
@@ -12655,7 +12655,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Enemy Not In Range
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: No Enemies Within Range
         linkStyle: 0
         linkConstraint: 0
@@ -12758,7 +12758,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Enemy Found
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Enemy Detected
         linkStyle: 0
         linkConstraint: 0
@@ -12766,7 +12766,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Enemy Not In Range
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: No Enemies Within Range
         linkStyle: 0
         linkConstraint: 0
@@ -12862,7 +12862,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Check Enemy Noise
         linkStyle: 0
         linkConstraint: 0
@@ -12927,7 +12927,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Enemy Detected
         linkStyle: 0
         linkConstraint: 0
@@ -12992,7 +12992,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Pause
         linkStyle: 0
         linkConstraint: 0
@@ -13000,7 +13000,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Stop Movement FSM
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Stop Movement FSM
         linkStyle: 0
         linkConstraint: 0
@@ -13008,7 +13008,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Start Movement FSM
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Start Movement FSM
         linkStyle: 0
         linkConstraint: 0
@@ -13095,7 +13095,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Pause
         linkStyle: 0
         linkConstraint: 0
@@ -13223,7 +13223,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Pause
         linkStyle: 0
         linkConstraint: 0
@@ -13314,7 +13314,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Pause
         linkStyle: 0
         linkConstraint: 0
@@ -13381,37 +13381,37 @@ MonoBehaviour:
     events:
     - name: FINISHED
       isSystemEvent: 1
-      isGlobal: 0
+      isGlobal: 1
     - name: Attack not Enabled
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: Check Enemy Noise
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: Enemy Found
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: Enemy Not In Range
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: Enemy Within Sight Radius
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: Start Movement FSM
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: Stop Movement FSM
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: Target Within LoS
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: Target not in LoS
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: Update Stats
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     globalTransitions: []
     variables:
       floatVariables:
@@ -13604,7 +13604,7 @@ MonoBehaviour:
     locked: 0
     manualUpdate: 0
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 1
+    preprocessed: 0
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0
@@ -13677,7 +13677,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Demise
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Fall Effects
         linkStyle: 0
         linkConstraint: 0
@@ -13756,7 +13756,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Are We Taking Damage?
         linkStyle: 0
         linkConstraint: 0
@@ -13764,7 +13764,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Do Not Take Damage
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Invincible
         linkStyle: 0
         linkConstraint: 0
@@ -13772,7 +13772,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Getting Hit & Cant See Enemy
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Change Engagement Rules
         linkStyle: 0
         linkConstraint: 0
@@ -13780,7 +13780,7 @@ MonoBehaviour:
       - fsmEvent:
           name: RunAway
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Change Engagement Rules
         linkStyle: 0
         linkConstraint: 0
@@ -13788,7 +13788,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Dodge
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Roll Dodge Chance
         linkStyle: 0
         linkConstraint: 0
@@ -14039,7 +14039,7 @@ MonoBehaviour:
       - fsmEvent:
           name: DestroySelf
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Destroy
         linkStyle: 0
         linkConstraint: 0
@@ -14381,7 +14381,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Are We Taking Damage?
         linkStyle: 0
         linkConstraint: 0
@@ -14389,7 +14389,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Run Not Enabled
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Are We Taking Damage?
         linkStyle: 0
         linkConstraint: 0
@@ -14527,7 +14527,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Run Away
         linkStyle: 0
         linkConstraint: 0
@@ -14535,7 +14535,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Already running
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: wait loop back
         linkStyle: 0
         linkConstraint: 0
@@ -14543,7 +14543,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Run Not Enabled
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: wait loop back
         linkStyle: 0
         linkConstraint: 0
@@ -14642,7 +14642,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Are We Taking Damage?
         linkStyle: 0
         linkConstraint: 0
@@ -14707,7 +14707,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Already running
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Are We Taking Damage?
         linkStyle: 0
         linkConstraint: 0
@@ -14774,7 +14774,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: WaitD
         linkStyle: 0
         linkConstraint: 0
@@ -14902,7 +14902,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Reset
         linkStyle: 0
         linkConstraint: 0
@@ -14967,7 +14967,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Are We Taking Damage?
         linkStyle: 0
         linkConstraint: 0
@@ -15027,7 +15027,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Dodge
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Dodge
         linkStyle: 0
         linkConstraint: 0
@@ -15035,7 +15035,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Are We Taking Damage?
         linkStyle: 0
         linkConstraint: 0
@@ -15096,31 +15096,31 @@ MonoBehaviour:
     events:
     - name: FINISHED
       isSystemEvent: 1
-      isGlobal: 0
+      isGlobal: 1
     - name: Already running
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: Demise
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: DestroySelf
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: Do Not Take Damage
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: Dodge
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: Getting Hit & Cant See Enemy
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: Run Not Enabled
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: RunAway
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: TakeDmg
       isSystemEvent: 0
       isGlobal: 1
@@ -15249,7 +15249,7 @@ MonoBehaviour:
     locked: 0
     manualUpdate: 0
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 1
+    preprocessed: 0
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0
@@ -15567,7 +15567,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Tactical Triggers
         linkStyle: 0
         linkConstraint: 0
@@ -15667,7 +15667,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Tactical Triggers
         linkStyle: 0
         linkConstraint: 0
@@ -15754,7 +15754,7 @@ MonoBehaviour:
     events:
     - name: FINISHED
       isSystemEvent: 1
-      isGlobal: 0
+      isGlobal: 1
     - name: Reset Attack FSM
       isSystemEvent: 0
       isGlobal: 1
@@ -15763,7 +15763,7 @@ MonoBehaviour:
       isGlobal: 1
     - name: Think
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     globalTransitions: []
     variables:
       floatVariables: []
@@ -15805,7 +15805,7 @@ MonoBehaviour:
     locked: 0
     manualUpdate: 0
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 1
+    preprocessed: 0
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0
@@ -15870,7 +15870,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Get Sighted Target
         linkStyle: 0
         linkConstraint: 0
@@ -15997,7 +15997,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Check if Target Within Fire Range
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Wait
         linkStyle: 0
         linkConstraint: 0
@@ -16005,7 +16005,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Enemy Not Detected
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Disable This FSM
         linkStyle: 0
         linkConstraint: 0
@@ -16013,7 +16013,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Hold Fire
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Holding Fire
         linkStyle: 0
         linkConstraint: 0
@@ -16149,7 +16149,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Think
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Get Sighted Target
         linkStyle: 0
         linkConstraint: 0
@@ -16157,7 +16157,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Shoot Target
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: 'MAIN NODE: AGGRESSIVE ACTION DECISION'
         linkStyle: 0
         linkConstraint: 0
@@ -16165,7 +16165,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Get Sighted Target
         linkStyle: 0
         linkConstraint: 0
@@ -16266,7 +16266,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Get Sighted Target
         linkStyle: 0
         linkConstraint: 0
@@ -16274,7 +16274,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Throw Grenade
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Throw Grenade
         linkStyle: 0
         linkConstraint: 0
@@ -16282,7 +16282,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Shoot Target
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Initialize Loop - Burst Shot Group
         linkStyle: 0
         linkConstraint: 0
@@ -16372,7 +16372,7 @@ MonoBehaviour:
       - fsmEvent:
           name: fireAnotherBurstShot
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: waitROF_SubShot
         linkStyle: 0
         linkConstraint: 0
@@ -16380,7 +16380,7 @@ MonoBehaviour:
       - fsmEvent:
           name: ShootAgainOrThink
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Reset
         linkStyle: 0
         linkConstraint: 0
@@ -16388,7 +16388,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Reload
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Reload
         linkStyle: 0
         linkConstraint: 0
@@ -16753,7 +16753,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: 'MAIN ACTION: Shoot 1 Shot and Analyze'
         linkStyle: 0
         linkConstraint: 0
@@ -16819,7 +16819,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: 'MAIN ACTION: Shoot 1 Shot and Analyze'
         linkStyle: 0
         linkConstraint: 0
@@ -16827,7 +16827,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Enemy Not Detected
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Get Sighted Target
         linkStyle: 0
         linkConstraint: 0
@@ -16835,7 +16835,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Target Has NavMesh
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Adjust NavMesh Aim Before Shooting
         linkStyle: 0
         linkConstraint: 0
@@ -16999,7 +16999,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Shoot Target
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: 'INIT ATTACK DECISION: Shoot or Throw Grenades?'
         linkStyle: 0
         linkConstraint: 0
@@ -17007,7 +17007,7 @@ MonoBehaviour:
       - fsmEvent:
           name: RandomActionBeforeShooting
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Wait Briefly Before Aggressive Action
         linkStyle: 0
         linkConstraint: 0
@@ -17015,7 +17015,7 @@ MonoBehaviour:
       - fsmEvent:
           name: TargetNotWithinLoS
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Get Sighted Target
         linkStyle: 0
         linkConstraint: 0
@@ -17023,7 +17023,7 @@ MonoBehaviour:
       - fsmEvent:
           name: targetNoLongerExists
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Get Sighted Target
         linkStyle: 0
         linkConstraint: 0
@@ -17031,7 +17031,7 @@ MonoBehaviour:
       - fsmEvent:
           name: ResetTarget
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Reset Current Target
         linkStyle: 0
         linkConstraint: 0
@@ -17144,7 +17144,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: 'INIT ATTACK DECISION: Shoot or Throw Grenades?'
         linkStyle: 0
         linkConstraint: 0
@@ -17210,7 +17210,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Do Something Before Shooting
         linkStyle: 0
         linkConstraint: 0
@@ -17275,7 +17275,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Pause Briefly After Reloading
         linkStyle: 0
         linkConstraint: 0
@@ -17405,7 +17405,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: 'MAIN ACTION: Shoot 1 Shot and Analyze'
         linkStyle: 0
         linkConstraint: 0
@@ -17474,7 +17474,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Wait Before Shooting
         linkStyle: 0
         linkConstraint: 0
@@ -17583,7 +17583,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Get Sighted Target
         linkStyle: 0
         linkConstraint: 0
@@ -17666,7 +17666,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Check if Within Fire Range Radius
         linkStyle: 0
         linkConstraint: 0
@@ -17733,7 +17733,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Think
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Get Sighted Target
         linkStyle: 0
         linkConstraint: 0
@@ -17741,7 +17741,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Gather Target Intel
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: 'MODIFY: Gather Target and Area Intel'
         linkStyle: 0
         linkConstraint: 0
@@ -17855,7 +17855,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Enhance Aim
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Enhance Target Aim
         linkStyle: 0
         linkConstraint: 0
@@ -17863,7 +17863,7 @@ MonoBehaviour:
       - fsmEvent:
           name: AttackTarget
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Do We Melee?
         linkStyle: 0
         linkConstraint: 0
@@ -17980,7 +17980,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: 'MODIFY: Decide on Target Intel'
         linkStyle: 0
         linkConstraint: 0
@@ -17988,7 +17988,7 @@ MonoBehaviour:
       - fsmEvent:
           name: ResetTarget
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Reset Current Target
         linkStyle: 0
         linkConstraint: 0
@@ -17996,7 +17996,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Get NavMesh Height
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Get Target NavMesh Height
         linkStyle: 0
         linkConstraint: 0
@@ -18287,7 +18287,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: 'MODIFY OR ADD: Custom Non-Aggressive Actions'
         linkStyle: 0
         linkConstraint: 0
@@ -18363,7 +18363,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Do Not Engage
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: 'MAIN NODE: NON-AGGRESSIVE ACTION DECISION'
         linkStyle: 0
         linkConstraint: 0
@@ -18371,7 +18371,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Turn Towards Target
         linkStyle: 0
         linkConstraint: 0
@@ -18379,7 +18379,7 @@ MonoBehaviour:
       - fsmEvent:
           name: ResetTarget
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Reset Current Target
         linkStyle: 0
         linkConstraint: 0
@@ -18488,7 +18488,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Return to Thinking
         linkStyle: 0
         linkConstraint: 0
@@ -18548,7 +18548,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Get Sighted Target
         linkStyle: 0
         linkConstraint: 0
@@ -18610,7 +18610,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Shoot Target With Lead Aim
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: 'MAIN NODE: AGGRESSIVE ACTION DECISION'
         linkStyle: 0
         linkConstraint: 0
@@ -18831,7 +18831,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Yes
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Melee Attack & Audio
         linkStyle: 0
         linkConstraint: 0
@@ -18839,7 +18839,7 @@ MonoBehaviour:
       - fsmEvent:
           name: No
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: 'MAIN NODE: AGGRESSIVE ACTION DECISION'
         linkStyle: 0
         linkConstraint: 0
@@ -18941,7 +18941,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Cause Damage
         linkStyle: 0
         linkConstraint: 0
@@ -19091,7 +19091,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Get Sighted Target
         linkStyle: 0
         linkConstraint: 0
@@ -19156,7 +19156,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Wait Melee RoF
         linkStyle: 0
         linkConstraint: 0
@@ -19314,7 +19314,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Stop Holding Fire
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Wait Before Resuming Fire
         linkStyle: 0
         linkConstraint: 0
@@ -19383,7 +19383,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Think
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Get Sighted Target
         linkStyle: 0
         linkConstraint: 0
@@ -19451,7 +19451,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: 'MODIFY: Decide on Target Intel'
         linkStyle: 0
         linkConstraint: 0
@@ -19537,7 +19537,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: 'MAIN ACTION: Shoot 1 Shot and Analyze'
         linkStyle: 0
         linkConstraint: 0
@@ -19680,7 +19680,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Wait (charSTAT_GrenadeRecoveryTime)
         linkStyle: 0
         linkConstraint: 0
@@ -19881,7 +19881,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Think
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Get Sighted Target
         linkStyle: 0
         linkConstraint: 0
@@ -19933,76 +19933,76 @@ MonoBehaviour:
     events:
     - name: FINISHED
       isSystemEvent: 1
-      isGlobal: 0
+      isGlobal: 1
     - name: AttackTarget
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: Check if Target Within Fire Range
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: Do Not Engage
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: Enemy Not Detected
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: Enhance Aim
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: Gather Target Intel
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: Get NavMesh Height
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: Hold Fire
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: No
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: RandomActionBeforeShooting
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: Reload
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: ResetTarget
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: Shoot Target
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: Shoot Target With Lead Aim
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: ShootAgainOrThink
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: Stop Holding Fire
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: Target Has NavMesh
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: TargetNotWithinLoS
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: Think
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: Throw Grenade
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: Yes
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: fireAnotherBurstShot
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: targetNoLongerExists
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     globalTransitions: []
     variables:
       floatVariables:
@@ -20376,7 +20376,7 @@ MonoBehaviour:
     locked: 0
     manualUpdate: 0
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 1
+    preprocessed: 0
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0

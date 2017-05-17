@@ -5,10 +5,10 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 400000}
-  - 114: {fileID: 11400000}
+  - component: {fileID: 400000}
+  - component: {fileID: 11400000}
   m_Layer: 0
   m_Name: MPplayerOptions
   m_TagString: Untagged
@@ -25,10 +25,10 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -62,7 +62,7 @@ MonoBehaviour:
       - fsmEvent:
           name: YES
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Get the name stored in prefs
         linkStyle: 0
         linkConstraint: 0
@@ -70,7 +70,7 @@ MonoBehaviour:
       - fsmEvent:
           name: NO
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Create a randome name
         linkStyle: 0
         linkConstraint: 0
@@ -142,7 +142,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Store in photon playername
         linkStyle: 0
         linkConstraint: 0
@@ -222,7 +222,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Store in photon playername
         linkStyle: 0
         linkConstraint: 0
@@ -341,7 +341,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: State 1
         linkStyle: 0
         linkConstraint: 0
@@ -413,7 +413,7 @@ MonoBehaviour:
       - fsmEvent:
           name: NAME EDITED
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Store in preferances
         linkStyle: 0
         linkConstraint: 0
@@ -594,7 +594,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Save in photon playername
         linkStyle: 0
         linkConstraint: 0
@@ -674,7 +674,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Player name GUI
         linkStyle: 0
         linkConstraint: 0
@@ -782,13 +782,13 @@ MonoBehaviour:
     events:
     - name: FINISHED
       isSystemEvent: 1
-      isGlobal: 0
+      isGlobal: 1
     - name: NAME EDITED
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: NO
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: PHOTON / CONNECTED TO PHOTON
       isSystemEvent: 0
       isGlobal: 1
@@ -797,7 +797,7 @@ MonoBehaviour:
       isGlobal: 1
     - name: YES
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     globalTransitions:
     - fsmEvent:
         name: 'PHOTON / STATE : CONNECTED'
@@ -867,7 +867,7 @@ MonoBehaviour:
     locked: 0
     manualUpdate: 0
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 1
+    preprocessed: 0
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0
@@ -898,7 +898,7 @@ MonoBehaviour:
     handleAnimatorMove: 0
     handleAnimatorIK: 0
   fsmTemplate: {fileID: 0}
-  eventHandlerComponentsAdded: 0
+  eventHandlerComponentsAdded: 1
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

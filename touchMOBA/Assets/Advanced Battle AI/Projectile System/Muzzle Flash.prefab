@@ -5,11 +5,11 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 400000}
-  - 123: {fileID: 12300000}
-  - 114: {fileID: 11400000}
+  - component: {fileID: 400000}
+  - component: {fileID: 12300000}
+  - component: {fileID: 11400000}
   m_Layer: 0
   m_Name: Muzzle Flash
   m_TagString: Untagged
@@ -26,10 +26,10 @@ Transform:
   m_LocalRotation: {x: 0.38105214, y: 0.4401832, z: 0.2420761, w: -0.7761683}
   m_LocalPosition: {x: -0.4620247, y: 1.3483076, z: 0.49236774}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -63,7 +63,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Destroy Bullet
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Destroy
         linkStyle: 0
         linkConstraint: 0
@@ -170,7 +170,7 @@ MonoBehaviour:
     events:
     - name: Destroy Bullet
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     globalTransitions: []
     variables:
       floatVariables: []
@@ -231,7 +231,7 @@ MonoBehaviour:
     handleAnimatorMove: 0
     handleAnimatorIK: 0
   fsmTemplate: {fileID: 0}
-  eventHandlerComponentsAdded: 0
+  eventHandlerComponentsAdded: 1
 --- !u!123 &12300000
 LensFlare:
   m_ObjectHideFlags: 1

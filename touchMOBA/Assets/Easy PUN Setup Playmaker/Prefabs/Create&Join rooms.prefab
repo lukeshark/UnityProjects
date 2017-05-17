@@ -5,13 +5,13 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 400000}
-  - 114: {fileID: 11400006}
-  - 114: {fileID: 11400004}
-  - 114: {fileID: 11400002}
-  - 114: {fileID: 11400000}
+  - component: {fileID: 400000}
+  - component: {fileID: 11400006}
+  - component: {fileID: 11400004}
+  - component: {fileID: 11400002}
+  - component: {fileID: 11400000}
   m_Layer: 0
   m_Name: Create&Join rooms
   m_TagString: Untagged
@@ -28,10 +28,10 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -119,7 +119,7 @@ MonoBehaviour:
       - fsmEvent:
           name: YEA
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: List rooms GUI
         linkStyle: 0
         linkConstraint: 0
@@ -191,7 +191,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Join
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Join room
         linkStyle: 0
         linkConstraint: 0
@@ -371,7 +371,7 @@ MonoBehaviour:
     events:
     - name: Join
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: PHOTON / RECEIVED ROOM LIST
       isSystemEvent: 0
       isGlobal: 1
@@ -380,7 +380,7 @@ MonoBehaviour:
       isGlobal: 1
     - name: YEA
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     globalTransitions:
     - fsmEvent:
         name: PHOTON / RECEIVED ROOM LIST
@@ -475,7 +475,7 @@ MonoBehaviour:
     handleAnimatorMove: 0
     handleAnimatorIK: 0
   fsmTemplate: {fileID: 0}
-  eventHandlerComponentsAdded: 0
+  eventHandlerComponentsAdded: 1
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -562,7 +562,7 @@ MonoBehaviour:
       - fsmEvent:
           name: GO
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Join a room
         linkStyle: 0
         linkConstraint: 0
@@ -825,7 +825,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Join room GUI
         linkStyle: 0
         linkConstraint: 0
@@ -914,10 +914,10 @@ MonoBehaviour:
     events:
     - name: FINISHED
       isSystemEvent: 1
-      isGlobal: 0
+      isGlobal: 1
     - name: GO
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: PHOTON / CONNECTED TO PHOTON
       isSystemEvent: 0
       isGlobal: 1
@@ -1018,7 +1018,7 @@ MonoBehaviour:
     handleAnimatorMove: 0
     handleAnimatorIK: 0
   fsmTemplate: {fileID: 0}
-  eventHandlerComponentsAdded: 0
+  eventHandlerComponentsAdded: 1
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1107,7 +1107,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Create
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Create a room
         linkStyle: 0
         linkConstraint: 0
@@ -1372,7 +1372,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Create room GUI
         linkStyle: 0
         linkConstraint: 0
@@ -1461,10 +1461,10 @@ MonoBehaviour:
     events:
     - name: FINISHED
       isSystemEvent: 1
-      isGlobal: 0
+      isGlobal: 1
     - name: Create
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: PHOTON / CONNECTED TO PHOTON
       isSystemEvent: 0
       isGlobal: 1
@@ -1569,7 +1569,7 @@ MonoBehaviour:
     handleAnimatorMove: 0
     handleAnimatorIK: 0
   fsmTemplate: {fileID: 0}
-  eventHandlerComponentsAdded: 0
+  eventHandlerComponentsAdded: 1
 --- !u!114 &11400006
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1604,7 +1604,7 @@ MonoBehaviour:
       - fsmEvent:
           name: GO
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Do we have rooms?
         linkStyle: 0
         linkConstraint: 0
@@ -1772,7 +1772,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Create room
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Create a room
         linkStyle: 0
         linkConstraint: 0
@@ -1780,7 +1780,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Join room
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Join a randoem room
         linkStyle: 0
         linkConstraint: 0
@@ -1957,16 +1957,16 @@ MonoBehaviour:
     events:
     - name: FINISHED
       isSystemEvent: 1
-      isGlobal: 0
+      isGlobal: 1
     - name: Create room
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: GO
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: Join room
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: PHOTON / CONNECTED TO PHOTON
       isSystemEvent: 0
       isGlobal: 1
@@ -2075,7 +2075,7 @@ MonoBehaviour:
     handleAnimatorMove: 0
     handleAnimatorIK: 0
   fsmTemplate: {fileID: 0}
-  eventHandlerComponentsAdded: 0
+  eventHandlerComponentsAdded: 1
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

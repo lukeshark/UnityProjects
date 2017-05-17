@@ -34,7 +34,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Give Unit Initial Command 3
         linkStyle: 0
         linkConstraint: 0
@@ -205,7 +205,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: sendMousePos
         linkStyle: 0
         linkConstraint: 0
@@ -273,7 +273,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: SendParams
         linkStyle: 0
         linkConstraint: 0
@@ -387,7 +387,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Spawn Unit
         linkStyle: 0
         linkConstraint: 0
@@ -513,7 +513,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: 'Tap '
         linkStyle: 0
         linkConstraint: 0
@@ -606,7 +606,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: SetUnitSpawning
         linkStyle: 0
         linkConstraint: 0
@@ -614,7 +614,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Spawn Again
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Spawn Unit
         linkStyle: 0
         linkConstraint: 0
@@ -1087,7 +1087,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: SetUnitSpawning
         linkStyle: 0
         linkConstraint: 0
@@ -1333,10 +1333,10 @@ MonoBehaviour:
     events:
     - name: FINISHED
       isSystemEvent: 1
-      isGlobal: 0
+      isGlobal: 1
     - name: Arrived
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: Death
       isSystemEvent: 0
       isGlobal: 1
@@ -1351,19 +1351,19 @@ MonoBehaviour:
       isGlobal: 1
     - name: HitTarget
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: NoTarget
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: Spawn Again
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: SpawnAreaIsMine
       isSystemEvent: 0
       isGlobal: 1
     - name: YES
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     globalTransitions:
     - fsmEvent:
         name: GameOver

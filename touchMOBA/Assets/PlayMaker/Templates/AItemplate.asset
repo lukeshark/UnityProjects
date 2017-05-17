@@ -34,7 +34,7 @@ MonoBehaviour:
       - fsmEvent:
           name: MoveToEnemy
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: MoveToEnemy
         linkStyle: 0
         linkConstraint: 0
@@ -42,7 +42,7 @@ MonoBehaviour:
       - fsmEvent:
           name: MoveToWaypoint
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: MoveToWaypoint
         linkStyle: 0
         linkConstraint: 0
@@ -318,7 +318,7 @@ MonoBehaviour:
       - fsmEvent:
           name: InRange
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: checkismine
         linkStyle: 0
         linkConstraint: 0
@@ -326,7 +326,7 @@ MonoBehaviour:
       - fsmEvent:
           name: NoTarget
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Find Target
         linkStyle: 0
         linkConstraint: 0
@@ -594,7 +594,7 @@ MonoBehaviour:
       - fsmEvent:
           name: HitTarget
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: MeleeAttack
         linkStyle: 0
         linkConstraint: 0
@@ -602,7 +602,7 @@ MonoBehaviour:
       - fsmEvent:
           name: NoTarget
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: MoveToEnemy
         linkStyle: 0
         linkConstraint: 0
@@ -610,7 +610,7 @@ MonoBehaviour:
       - fsmEvent:
           name: ShootTarget
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: RangedAttack
         linkStyle: 0
         linkConstraint: 0
@@ -618,7 +618,7 @@ MonoBehaviour:
       - fsmEvent:
           name: EnemyDead
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Find Target
         linkStyle: 0
         linkConstraint: 0
@@ -869,7 +869,7 @@ MonoBehaviour:
       - fsmEvent:
           name: No
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: SendDamage
         linkStyle: 0
         linkConstraint: 0
@@ -877,7 +877,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Yes
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: SendDamage
         linkStyle: 0
         linkConstraint: 0
@@ -1111,7 +1111,7 @@ MonoBehaviour:
       - fsmEvent:
           name: InRange
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: SetWaypointToBase
         linkStyle: 0
         linkConstraint: 0
@@ -1119,7 +1119,7 @@ MonoBehaviour:
       - fsmEvent:
           name: NoTarget
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Find Target
         linkStyle: 0
         linkConstraint: 0
@@ -1448,7 +1448,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Find Target
         linkStyle: 0
         linkConstraint: 0
@@ -1525,7 +1525,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Find Target
         linkStyle: 0
         linkConstraint: 0
@@ -1727,7 +1727,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Think
         linkStyle: 0
         linkConstraint: 0
@@ -1799,7 +1799,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Wait
         linkStyle: 0
         linkConstraint: 0
@@ -2055,7 +2055,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Yes
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: GetOrders
         linkStyle: 0
         linkConstraint: 0
@@ -2063,7 +2063,7 @@ MonoBehaviour:
       - fsmEvent:
           name: No
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: GetEventAndSplit
         linkStyle: 0
         linkConstraint: 0
@@ -2145,7 +2145,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: GetOrders
         linkStyle: 0
         linkConstraint: 0
@@ -2223,7 +2223,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: GetOrders
         linkStyle: 0
         linkConstraint: 0
@@ -2433,7 +2433,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: ConvertStuff
         linkStyle: 0
         linkConstraint: 0
@@ -2774,7 +2774,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: SetTag
         linkStyle: 0
         linkConstraint: 0
@@ -2962,7 +2962,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Wait
         linkStyle: 0
         linkConstraint: 0
@@ -3100,7 +3100,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Think
         linkStyle: 0
         linkConstraint: 0
@@ -3210,7 +3210,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Yes
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: SendNameToVNS
         linkStyle: 0
         linkConstraint: 0
@@ -3218,7 +3218,7 @@ MonoBehaviour:
       - fsmEvent:
           name: No
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: GetNameFromVNS
         linkStyle: 0
         linkConstraint: 0
@@ -3292,7 +3292,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Think
         linkStyle: 0
         linkConstraint: 0
@@ -3300,7 +3300,7 @@ MonoBehaviour:
       - fsmEvent:
           name: NoTarget
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: checkismine
         linkStyle: 0
         linkConstraint: 0
@@ -3418,7 +3418,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: State 4
         linkStyle: 0
         linkConstraint: 0
@@ -3528,7 +3528,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: CheckIsMine?
         linkStyle: 0
         linkConstraint: 0
@@ -3607,13 +3607,13 @@ MonoBehaviour:
     events:
     - name: FINISHED
       isSystemEvent: 1
-      isGlobal: 0
+      isGlobal: 1
     - name: Death
       isSystemEvent: 0
       isGlobal: 1
     - name: EnemyDead
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: GameOver
       isSystemEvent: 0
       isGlobal: 1
@@ -3625,31 +3625,31 @@ MonoBehaviour:
       isGlobal: 1
     - name: HitTarget
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: InRange
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: MoveToEnemy
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: MoveToWaypoint
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: No
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: NoTarget
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: ShootTarget
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: Yes
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: Spawn Again
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     globalTransitions:
     - fsmEvent:
         name: Death

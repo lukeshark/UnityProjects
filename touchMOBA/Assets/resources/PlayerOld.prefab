@@ -16,18 +16,18 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 4000012289578338}
-  - 33: {fileID: 33000010993141724}
-  - 136: {fileID: 136000012185440310}
-  - 23: {fileID: 23000014168794058}
-  - 54: {fileID: 54000014258097924}
-  - 114: {fileID: 114000010991383120}
-  - 114: {fileID: 114000013637601266}
-  - 114: {fileID: 114000012625008750}
-  - 114: {fileID: 114000010318799280}
-  - 114: {fileID: 114000011899890054}
+  - component: {fileID: 4000012289578338}
+  - component: {fileID: 33000010993141724}
+  - component: {fileID: 136000012185440310}
+  - component: {fileID: 23000014168794058}
+  - component: {fileID: 54000014258097924}
+  - component: {fileID: 114000010991383120}
+  - component: {fileID: 114000013637601266}
+  - component: {fileID: 114000012625008750}
+  - component: {fileID: 114000010318799280}
+  - component: {fileID: 114000011899890054}
   m_Layer: 0
   m_Name: PlayerOld
   m_TagString: Player
@@ -40,11 +40,11 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 4000014277263916}
-  - 33: {fileID: 33000014162075146}
-  - 23: {fileID: 23000012261666146}
+  - component: {fileID: 4000014277263916}
+  - component: {fileID: 33000014162075146}
+  - component: {fileID: 23000012261666146}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -61,11 +61,11 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 4000014277263916}
   m_Father: {fileID: 0}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4000014277263916
 Transform:
   m_ObjectHideFlags: 1
@@ -75,10 +75,10 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.613, y: 0, z: 0.02}
   m_LocalScale: {x: 0.29266998, y: 0.17480867, z: 1.5763365}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 4000012289578338}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &23000012261666146
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -93,7 +93,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_Materials:
   - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-  m_SubsetIndices: 
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
@@ -101,12 +103,13 @@ MeshRenderer:
   m_PreserveUVs: 1
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_SelectedWireframeHidden: 0
+  m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!23 &23000014168794058
 MeshRenderer:
@@ -122,7 +125,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_Materials:
   - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-  m_SubsetIndices: 
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
@@ -130,12 +135,13 @@ MeshRenderer:
   m_PreserveUVs: 1
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_SelectedWireframeHidden: 0
+  m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!33 &33000010993141724
 MeshFilter:
@@ -770,7 +776,7 @@ MonoBehaviour:
       - fsmEvent:
           name: No
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: UpdateTransform Lerp
         linkStyle: 0
         linkConstraint: 0
@@ -778,7 +784,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Yes
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: IsMine
         linkStyle: 0
         linkConstraint: 0
@@ -860,7 +866,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: 
         linkStyle: 0
         linkConstraint: 0
@@ -1517,13 +1523,13 @@ MonoBehaviour:
     events:
     - name: FINISHED
       isSystemEvent: 1
-      isGlobal: 0
+      isGlobal: 1
     - name: No
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: Yes
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     globalTransitions: []
     variables:
       floatVariables:

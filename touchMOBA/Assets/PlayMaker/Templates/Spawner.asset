@@ -34,7 +34,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Random Enemy [SET UP UNITS IN HERE]
         linkStyle: 0
         linkConstraint: 0
@@ -106,7 +106,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Random Spawnpoint
         linkStyle: 0
         linkConstraint: 0
@@ -239,7 +239,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Spawn Unit
         linkStyle: 0
         linkConstraint: 0
@@ -317,7 +317,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Give Unit Initial Command
         linkStyle: 0
         linkConstraint: 0
@@ -436,7 +436,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Wait
         linkStyle: 0
         linkConstraint: 0
@@ -655,7 +655,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Spawn Again
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Random Enemy [SET UP UNITS IN HERE]
         linkStyle: 0
         linkConstraint: 0
@@ -766,10 +766,10 @@ MonoBehaviour:
     events:
     - name: FINISHED
       isSystemEvent: 1
-      isGlobal: 0
+      isGlobal: 1
     - name: Arrived
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: Death
       isSystemEvent: 0
       isGlobal: 1
@@ -787,13 +787,13 @@ MonoBehaviour:
       isGlobal: 1
     - name: HitTarget
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: NoTarget
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: Spawn Again
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     globalTransitions:
     - fsmEvent:
         name: GameOver

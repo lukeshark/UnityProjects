@@ -298,7 +298,7 @@ MonoBehaviour:
       - fsmEvent:
           name: YES
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Add "Me" to the gameobject name
         linkStyle: 0
         linkConstraint: 0
@@ -306,7 +306,7 @@ MonoBehaviour:
       - fsmEvent:
           name: NO
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Get owner player name
         linkStyle: 0
         linkConstraint: 0
@@ -381,7 +381,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Set name to gameobject
         linkStyle: 0
         linkConstraint: 0
@@ -477,7 +477,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Add player name to gameobject name
         linkStyle: 0
         linkConstraint: 0
@@ -566,7 +566,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Set name to gameobject
         linkStyle: 0
         linkConstraint: 0
@@ -717,13 +717,13 @@ MonoBehaviour:
     events:
     - name: FINISHED
       isSystemEvent: 1
-      isGlobal: 0
+      isGlobal: 1
     - name: NO
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: YES
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     globalTransitions: []
     variables:
       floatVariables: []
@@ -766,7 +766,7 @@ MonoBehaviour:
     locked: 0
     manualUpdate: 0
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 1
+    preprocessed: 0
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0
@@ -839,7 +839,7 @@ MonoBehaviour:
       - fsmEvent:
           name: IsNotMine
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Set other players jumping state
         linkStyle: 0
         linkConstraint: 0
@@ -1064,10 +1064,10 @@ MonoBehaviour:
     events:
     - name: IsMine
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: IsNotMine
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     globalTransitions: []
     variables:
       floatVariables: []
@@ -1116,7 +1116,7 @@ MonoBehaviour:
     locked: 0
     manualUpdate: 0
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 1
+    preprocessed: 0
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0
@@ -1189,7 +1189,7 @@ MonoBehaviour:
       - fsmEvent:
           name: IsNotMine
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Set other players rotations
         linkStyle: 0
         linkConstraint: 0
@@ -1446,13 +1446,13 @@ MonoBehaviour:
     events:
     - name: FINISHED
       isSystemEvent: 1
-      isGlobal: 0
+      isGlobal: 1
     - name: IsMine
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: IsNotMine
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     globalTransitions: []
     variables:
       floatVariables: []
@@ -1488,7 +1488,7 @@ MonoBehaviour:
     locked: 0
     manualUpdate: 0
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 1
+    preprocessed: 0
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0
@@ -1724,7 +1724,7 @@ MonoBehaviour:
     locked: 0
     manualUpdate: 0
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 1
+    preprocessed: 0
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0
@@ -1797,7 +1797,7 @@ MonoBehaviour:
       - fsmEvent:
           name: IsNotMine
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Set other players position
         linkStyle: 0
         linkConstraint: 0
@@ -2080,10 +2080,10 @@ MonoBehaviour:
     events:
     - name: IsMine
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: IsNotMine
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     globalTransitions: []
     variables:
       floatVariables: []
@@ -2131,7 +2131,7 @@ MonoBehaviour:
     locked: 0
     manualUpdate: 0
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 1
+    preprocessed: 0
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0
@@ -2230,7 +2230,7 @@ MonoBehaviour:
       - fsmEvent:
           name: IsNotMine
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: State 1
         linkStyle: 0
         linkConstraint: 0
@@ -2305,7 +2305,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Enable controlls
         linkStyle: 0
         linkConstraint: 0
@@ -2543,13 +2543,13 @@ MonoBehaviour:
     events:
     - name: FINISHED
       isSystemEvent: 1
-      isGlobal: 0
+      isGlobal: 1
     - name: IsMine
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: IsNotMine
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: PHOTON / PHOTON INSTANTIATE
       isSystemEvent: 0
       isGlobal: 1
@@ -2597,7 +2597,7 @@ MonoBehaviour:
     locked: 0
     manualUpdate: 0
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 1
+    preprocessed: 0
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0
@@ -2911,7 +2911,7 @@ MonoBehaviour:
       - fsmEvent:
           name: IsNotMine
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: State 1
         linkStyle: 0
         linkConstraint: 0
@@ -3096,13 +3096,13 @@ MonoBehaviour:
     events:
     - name: FINISHED
       isSystemEvent: 1
-      isGlobal: 0
+      isGlobal: 1
     - name: IsMine
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: IsNotMine
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: PHOTON / PHOTON INSTANTIATE
       isSystemEvent: 0
       isGlobal: 1
@@ -3150,7 +3150,7 @@ MonoBehaviour:
     locked: 0
     manualUpdate: 0
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 1
+    preprocessed: 0
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0
@@ -3836,7 +3836,7 @@ MonoBehaviour:
       - fsmEvent:
           name: IsNotMine
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Set other players rotations
         linkStyle: 0
         linkConstraint: 0
@@ -3897,10 +3897,10 @@ MonoBehaviour:
     events:
     - name: IsMine
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: IsNotMine
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     globalTransitions: []
     variables:
       floatVariables: []
@@ -3937,7 +3937,7 @@ MonoBehaviour:
     locked: 0
     manualUpdate: 0
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 1
+    preprocessed: 0
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0

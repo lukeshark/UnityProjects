@@ -34,7 +34,7 @@ MonoBehaviour:
       - fsmEvent:
           name: MoveToEnemy
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: MoveToEnemy
         linkStyle: 0
         linkConstraint: 0
@@ -264,7 +264,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Arrived
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: State 1
         linkStyle: 0
         linkConstraint: 0
@@ -272,7 +272,7 @@ MonoBehaviour:
       - fsmEvent:
           name: NoTarget
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Find Target
         linkStyle: 0
         linkConstraint: 0
@@ -500,7 +500,7 @@ MonoBehaviour:
       - fsmEvent:
           name: HitTarget
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: send hit to target
         linkStyle: 0
         linkConstraint: 0
@@ -508,7 +508,7 @@ MonoBehaviour:
       - fsmEvent:
           name: NoTarget
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Find Target
         linkStyle: 0
         linkConstraint: 0
@@ -665,7 +665,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Find Target
         linkStyle: 0
         linkConstraint: 0
@@ -866,7 +866,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Find Target
         linkStyle: 0
         linkConstraint: 0
@@ -1034,10 +1034,10 @@ MonoBehaviour:
     events:
     - name: FINISHED
       isSystemEvent: 1
-      isGlobal: 0
+      isGlobal: 1
     - name: Arrived
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: Death
       isSystemEvent: 0
       isGlobal: 1
@@ -1052,16 +1052,16 @@ MonoBehaviour:
       isGlobal: 1
     - name: HitTarget
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: MoveToEnemy
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: MoveToWaypoint
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: NoTarget
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     globalTransitions:
     - fsmEvent:
         name: Death

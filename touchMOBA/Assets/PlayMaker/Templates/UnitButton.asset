@@ -86,7 +86,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: State 1
         linkStyle: 0
         linkConstraint: 0
@@ -291,7 +291,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: State 2
         linkStyle: 0
         linkConstraint: 0
@@ -299,7 +299,7 @@ MonoBehaviour:
       - fsmEvent:
           name: NotEnoughMana
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: NotEnoughMana
         linkStyle: 0
         linkConstraint: 0
@@ -422,7 +422,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: State 1
         linkStyle: 0
         linkConstraint: 0
@@ -469,10 +469,10 @@ MonoBehaviour:
     events:
     - name: FINISHED
       isSystemEvent: 1
-      isGlobal: 0
+      isGlobal: 1
     - name: NotEnoughMana
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: UGUI / ON CLICK
       isSystemEvent: 0
       isGlobal: 1

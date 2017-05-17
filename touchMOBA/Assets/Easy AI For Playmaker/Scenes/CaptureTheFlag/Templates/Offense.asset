@@ -34,7 +34,7 @@ MonoBehaviour:
       - fsmEvent:
           name: 'Not Within Searing '
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Flag Is Took?
         linkStyle: 0
         linkConstraint: 0
@@ -185,7 +185,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Flag REached
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Flag Is Took? 2
         linkStyle: 0
         linkConstraint: 0
@@ -367,7 +367,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Not see object
         linkStyle: 0
         linkConstraint: 0
@@ -375,7 +375,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Flag REached
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Flag Is Took? 2
         linkStyle: 0
         linkConstraint: 0
@@ -518,7 +518,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Go To Capture Point
         linkStyle: 0
         linkConstraint: 0
@@ -655,7 +655,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Win
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: takee off flag
         linkStyle: 0
         linkConstraint: 0
@@ -671,7 +671,7 @@ MonoBehaviour:
       - fsmEvent:
           name: I Dont Have
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: set bool value
         linkStyle: 0
         linkConstraint: 0
@@ -857,7 +857,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Go To Capture Point
         linkStyle: 0
         linkConstraint: 0
@@ -981,7 +981,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Not see object
         linkStyle: 0
         linkConstraint: 0
@@ -1100,7 +1100,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: 'Set Position '
         linkStyle: 0
         linkConstraint: 0
@@ -1649,7 +1649,7 @@ MonoBehaviour:
       - fsmEvent:
           name: NO
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Go to flag
         linkStyle: 0
         linkConstraint: 0
@@ -1657,7 +1657,7 @@ MonoBehaviour:
       - fsmEvent:
           name: YES
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: wander
         linkStyle: 0
         linkConstraint: 0
@@ -1731,7 +1731,7 @@ MonoBehaviour:
       - fsmEvent:
           name: NO
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: take flag
         linkStyle: 0
         linkConstraint: 0
@@ -1739,7 +1739,7 @@ MonoBehaviour:
       - fsmEvent:
           name: YES
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: wander
         linkStyle: 0
         linkConstraint: 0
@@ -1813,7 +1813,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: I have flag?
         linkStyle: 0
         linkConstraint: 0
@@ -1942,7 +1942,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Wait 3 & send event canvas
         linkStyle: 0
         linkConstraint: 0
@@ -2062,7 +2062,7 @@ MonoBehaviour:
       - fsmEvent:
           name: YES
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Send Event to Canvas
         linkStyle: 0
         linkConstraint: 0
@@ -2070,7 +2070,7 @@ MonoBehaviour:
       - fsmEvent:
           name: NO
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Wait 3 & send event canvas
         linkStyle: 0
         linkConstraint: 0
@@ -2144,7 +2144,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: 'Set Position '
         linkStyle: 0
         linkConstraint: 0
@@ -2320,7 +2320,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Dont Evade
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Go to flag
         linkStyle: 0
         linkConstraint: 0
@@ -2411,7 +2411,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Dont Evade
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Go To Capture Point
         linkStyle: 0
         linkConstraint: 0
@@ -2502,7 +2502,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Not see object
         linkStyle: 0
         linkConstraint: 0
@@ -2612,7 +2612,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Take off flag
         linkStyle: 0
         linkConstraint: 0
@@ -2717,7 +2717,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Not see object
         linkStyle: 0
         linkConstraint: 0
@@ -2798,7 +2798,7 @@ MonoBehaviour:
     events:
     - name: FINISHED
       isSystemEvent: 1
-      isGlobal: 0
+      isGlobal: 1
     - name: BlueTeamHaveTheFlag
       isSystemEvent: 0
       isGlobal: 1
@@ -2807,25 +2807,25 @@ MonoBehaviour:
       isGlobal: 1
     - name: Dont Evade
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: Evade
       isSystemEvent: 0
       isGlobal: 1
     - name: Flag REached
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: I Dont Have
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: Lose
       isSystemEvent: 0
       isGlobal: 1
     - name: NO
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: 'Not Within Searing '
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: Reset
       isSystemEvent: 0
       isGlobal: 1
@@ -2837,10 +2837,10 @@ MonoBehaviour:
       isGlobal: 1
     - name: Win
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: YES
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     globalTransitions:
     - fsmEvent:
         name: Dead

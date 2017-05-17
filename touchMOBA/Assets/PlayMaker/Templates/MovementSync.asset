@@ -462,7 +462,7 @@ MonoBehaviour:
       - fsmEvent:
           name: No
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: UpdateTransform Lerp
         linkStyle: 0
         linkConstraint: 0
@@ -470,7 +470,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Yes
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: IsMine
         linkStyle: 0
         linkConstraint: 0
@@ -1070,16 +1070,16 @@ MonoBehaviour:
     events:
     - name: FINISHED
       isSystemEvent: 1
-      isGlobal: 0
+      isGlobal: 1
     - name: No
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: Shoot
       isSystemEvent: 0
       isGlobal: 1
     - name: Yes
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     globalTransitions:
     - fsmEvent:
         name: Shoot

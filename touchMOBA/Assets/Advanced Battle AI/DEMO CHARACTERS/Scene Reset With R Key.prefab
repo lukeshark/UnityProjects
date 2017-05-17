@@ -16,11 +16,11 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 4000012156461548}
-  - 114: {fileID: 114000013745140030}
-  - 132: {fileID: 132000010516965194}
+  - component: {fileID: 4000012156461548}
+  - component: {fileID: 114000013745140030}
+  - component: {fileID: 132000010516965194}
   m_Layer: 0
   m_Name: Scene Reset With R Key
   m_TagString: Untagged
@@ -37,10 +37,10 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.1, y: 0.8, z: 0.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &114000013745140030
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -74,7 +74,7 @@ MonoBehaviour:
       - fsmEvent:
           name: reset
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: State 2
         linkStyle: 0
         linkConstraint: 0
@@ -180,7 +180,7 @@ MonoBehaviour:
     events:
     - name: reset
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     globalTransitions: []
     variables:
       floatVariables: []
@@ -241,7 +241,7 @@ MonoBehaviour:
     handleAnimatorMove: 0
     handleAnimatorIK: 0
   fsmTemplate: {fileID: 0}
-  eventHandlerComponentsAdded: 0
+  eventHandlerComponentsAdded: 1
 --- !u!132 &132000010516965194
 GUIText:
   m_ObjectHideFlags: 1

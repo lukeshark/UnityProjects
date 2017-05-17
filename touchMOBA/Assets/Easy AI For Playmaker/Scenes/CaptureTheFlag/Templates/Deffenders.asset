@@ -34,7 +34,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Seen
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Pursue Enemy
         linkStyle: 0
         linkConstraint: 0
@@ -42,7 +42,7 @@ MonoBehaviour:
       - fsmEvent:
           name: NoneHasTheFlag
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Go To The flag
         linkStyle: 0
         linkConstraint: 0
@@ -206,7 +206,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Reached
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Send Event to target
         linkStyle: 0
         linkConstraint: 0
@@ -214,7 +214,7 @@ MonoBehaviour:
       - fsmEvent:
           name: NoneHasTheFlag
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Go To The flag
         linkStyle: 0
         linkConstraint: 0
@@ -382,7 +382,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Set Position
         linkStyle: 0
         linkConstraint: 0
@@ -511,7 +511,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Search
         linkStyle: 0
         linkConstraint: 0
@@ -613,7 +613,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Search
         linkStyle: 0
         linkConstraint: 0
@@ -730,7 +730,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Take flag & go to initial position flag
         linkStyle: 0
         linkConstraint: 0
@@ -738,7 +738,7 @@ MonoBehaviour:
       - fsmEvent:
           name: SomeoneHasTheFlag
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Search
         linkStyle: 0
         linkConstraint: 0
@@ -746,7 +746,7 @@ MonoBehaviour:
       - fsmEvent:
           name: TheyTookTheFlag
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: set bool value
         linkStyle: 0
         linkConstraint: 0
@@ -873,7 +873,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Take Off Flag
         linkStyle: 0
         linkConstraint: 0
@@ -881,7 +881,7 @@ MonoBehaviour:
       - fsmEvent:
           name: TheyTookTheFlag
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: set bool value
         linkStyle: 0
         linkConstraint: 0
@@ -1001,7 +1001,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Search
         linkStyle: 0
         linkConstraint: 0
@@ -1087,7 +1087,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Search
         linkStyle: 0
         linkConstraint: 0
@@ -1168,7 +1168,7 @@ MonoBehaviour:
     events:
     - name: FINISHED
       isSystemEvent: 1
-      isGlobal: 0
+      isGlobal: 1
     - name: Comeback
       isSystemEvent: 0
       isGlobal: 1
@@ -1180,25 +1180,25 @@ MonoBehaviour:
       isGlobal: 1
     - name: NoneHasTheFlag
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: Not Within Sight
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: Reached
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: Search
       isSystemEvent: 0
       isGlobal: 1
     - name: Seen
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: SomeoneHasTheFlag
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: TheyTookTheFlag
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     globalTransitions:
     - fsmEvent:
         name: Lose
@@ -1268,6 +1268,7 @@ MonoBehaviour:
     editorFlags: 3
     activeStateName: 
     mouseEvents: 0
+    handleLevelLoaded: 0
     handleTriggerEnter2D: 0
     handleTriggerExit2D: 0
     handleTriggerStay2D: 0
@@ -1280,7 +1281,10 @@ MonoBehaviour:
     handleCollisionEnter: 0
     handleCollisionExit: 0
     handleCollisionStay: 0
+    handleParticleCollision: 0
     handleControllerColliderHit: 0
+    handleJointBreak: 0
+    handleJointBreak2D: 0
     handleOnGUI: 0
     handleFixedUpdate: 0
     handleApplicationEvents: 0

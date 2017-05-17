@@ -34,7 +34,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: SetUpHealthBar
         linkStyle: 0
         linkConstraint: 0
@@ -144,7 +144,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Check if I'm dead
         linkStyle: 0
         linkConstraint: 0
@@ -305,7 +305,7 @@ MonoBehaviour:
       - fsmEvent:
           name: I'm dead
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: DIE
         linkStyle: 0
         linkConstraint: 0
@@ -313,7 +313,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: IsMine2
         linkStyle: 0
         linkConstraint: 0
@@ -408,7 +408,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Desactivate gameobject
         linkStyle: 0
         linkConstraint: 0
@@ -699,7 +699,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Desactivate gameobject
         linkStyle: 0
         linkConstraint: 0
@@ -861,7 +861,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Desactivate gameobject
         linkStyle: 0
         linkConstraint: 0
@@ -1023,7 +1023,7 @@ MonoBehaviour:
       - fsmEvent:
           name: RedTeam
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: RedTeam
         linkStyle: 0
         linkConstraint: 0
@@ -1031,7 +1031,7 @@ MonoBehaviour:
       - fsmEvent:
           name: BlueTeam
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: BlueTeam
         linkStyle: 0
         linkConstraint: 0
@@ -1245,7 +1245,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: IsMine2
         linkStyle: 0
         linkConstraint: 0
@@ -1359,7 +1359,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: IsMine2
         linkStyle: 0
         linkConstraint: 0
@@ -1473,7 +1473,7 @@ MonoBehaviour:
       - fsmEvent:
           name: No
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: set current health value
         linkStyle: 0
         linkConstraint: 0
@@ -1481,7 +1481,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Yes
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: set current health value
         linkStyle: 0
         linkConstraint: 0
@@ -1563,7 +1563,7 @@ MonoBehaviour:
       - fsmEvent:
           name: No
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: get Health
         linkStyle: 0
         linkConstraint: 0
@@ -1571,7 +1571,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Yes
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Subtract health
         linkStyle: 0
         linkConstraint: 0
@@ -1645,7 +1645,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Check if I'm dead
         linkStyle: 0
         linkConstraint: 0
@@ -1781,7 +1781,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Yes
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: State 2
         linkStyle: 0
         linkConstraint: 0
@@ -1789,7 +1789,7 @@ MonoBehaviour:
       - fsmEvent:
           name: No
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: get Health
         linkStyle: 0
         linkConstraint: 0
@@ -1863,7 +1863,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Check if I'm dead
         linkStyle: 0
         linkConstraint: 0
@@ -1943,10 +1943,10 @@ MonoBehaviour:
     events:
     - name: FINISHED
       isSystemEvent: 1
-      isGlobal: 0
+      isGlobal: 1
     - name: BlueTeam
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: BlueTeamWin
       isSystemEvent: 0
       isGlobal: 1
@@ -1961,22 +1961,22 @@ MonoBehaviour:
       isGlobal: 1
     - name: I'm dead
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: No
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: RedTeam
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: RedTeamWin
       isSystemEvent: 0
       isGlobal: 1
     - name: UpdateHealth
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: Yes
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     globalTransitions:
     - fsmEvent:
         name: Get Damage

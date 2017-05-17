@@ -34,7 +34,7 @@ MonoBehaviour:
       - fsmEvent:
           name: YES
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: AllowSpawning
         linkStyle: 0
         linkConstraint: 0
@@ -42,7 +42,7 @@ MonoBehaviour:
       - fsmEvent:
           name: NO
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: NotMine
         linkStyle: 0
         linkConstraint: 0
@@ -260,13 +260,13 @@ MonoBehaviour:
     events:
     - name: NO
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: SpawnAreaIsMine
       isSystemEvent: 0
       isGlobal: 1
     - name: YES
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     globalTransitions: []
     variables:
       floatVariables: []

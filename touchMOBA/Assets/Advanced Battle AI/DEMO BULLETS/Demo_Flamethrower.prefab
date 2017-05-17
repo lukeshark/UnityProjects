@@ -5,12 +5,12 @@ GameObject:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 400000}
-  - 15: {fileID: 1500000}
-  - 12: {fileID: 1200000}
-  - 26: {fileID: 2600000}
+  - component: {fileID: 400000}
+  - component: {fileID: 1500000}
+  - component: {fileID: 1200000}
+  - component: {fileID: 2600000}
   m_Layer: 0
   m_Name: smoke
   m_TagString: Untagged
@@ -23,12 +23,12 @@ GameObject:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 400002}
-  - 15: {fileID: 1500002}
-  - 12: {fileID: 1200002}
-  - 26: {fileID: 2600002}
+  - component: {fileID: 400002}
+  - component: {fileID: 1500002}
+  - component: {fileID: 1200002}
+  - component: {fileID: 2600002}
   m_Layer: 0
   m_Name: InnerCore
   m_TagString: Untagged
@@ -41,12 +41,12 @@ GameObject:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 400004}
-  - 15: {fileID: 1500004}
-  - 12: {fileID: 1200004}
-  - 26: {fileID: 2600004}
+  - component: {fileID: 400004}
+  - component: {fileID: 1500004}
+  - component: {fileID: 1200004}
+  - component: {fileID: 2600004}
   m_Layer: 0
   m_Name: OuterCore
   m_TagString: Untagged
@@ -59,9 +59,9 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 400006}
+  - component: {fileID: 400006}
   m_Layer: 0
   m_Name: Fire1
   m_TagString: Untagged
@@ -74,17 +74,17 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 400008}
-  - 33: {fileID: 3300000}
-  - 54: {fileID: 5400000}
-  - 135: {fileID: 13500000}
-  - 108: {fileID: 10800000}
-  - 114: {fileID: 11400000}
-  - 114: {fileID: 11400002}
-  - 82: {fileID: 8200000}
-  - 114: {fileID: 114000010431637690}
+  - component: {fileID: 400008}
+  - component: {fileID: 3300000}
+  - component: {fileID: 5400000}
+  - component: {fileID: 13500000}
+  - component: {fileID: 10800000}
+  - component: {fileID: 11400000}
+  - component: {fileID: 11400002}
+  - component: {fileID: 8200000}
+  - component: {fileID: 114000010431637690}
   m_Layer: 0
   m_Name: Demo_Flamethrower
   m_TagString: Player_Projectile
@@ -101,10 +101,10 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1.9354887, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 400006}
   m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &400002
 Transform:
   m_ObjectHideFlags: 1
@@ -114,10 +114,10 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 400006}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &400004
 Transform:
   m_ObjectHideFlags: 1
@@ -127,10 +127,10 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 400006}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &400006
 Transform:
   m_ObjectHideFlags: 1
@@ -140,13 +140,13 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 400004}
   - {fileID: 400002}
   - {fileID: 400000}
   m_Father: {fileID: 400008}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &400008
 Transform:
   m_ObjectHideFlags: 1
@@ -156,11 +156,11 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -25.321676, y: 29.745304, z: 21.163662}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.2}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 400006}
   m_Father: {fileID: 0}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!12 &1200000
 ParticleAnimator:
   m_ObjectHideFlags: 1
@@ -346,7 +346,9 @@ ParticleRenderer:
   m_ReflectionProbeUsage: 1
   m_Materials:
   - {fileID: 2100000, guid: ad90f586d4fe1b942b46f0da520a0e61, type: 2}
-  m_SubsetIndices: 
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
@@ -354,12 +356,13 @@ ParticleRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_SelectedWireframeHidden: 0
+  m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   serializedVersion: 2
   m_CameraVelocityScale: 0
@@ -385,7 +388,9 @@ ParticleRenderer:
   m_ReflectionProbeUsage: 1
   m_Materials:
   - {fileID: 2100000, guid: 642367443312c224bb40c297365867ac, type: 2}
-  m_SubsetIndices: 
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
@@ -393,12 +398,13 @@ ParticleRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_SelectedWireframeHidden: 0
+  m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   serializedVersion: 2
   m_CameraVelocityScale: 0
@@ -424,7 +430,9 @@ ParticleRenderer:
   m_ReflectionProbeUsage: 1
   m_Materials:
   - {fileID: 2100000, guid: 642367443312c224bb40c297365867ac, type: 2}
-  m_SubsetIndices: 
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
@@ -432,12 +440,13 @@ ParticleRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_SelectedWireframeHidden: 0
+  m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   serializedVersion: 2
   m_CameraVelocityScale: 0
@@ -487,6 +496,7 @@ AudioSource:
   Loop: 0
   Mute: 0
   Spatialize: 0
+  SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
@@ -499,12 +509,14 @@ AudioSource:
   rolloffCustomCurve:
     serializedVersion: 2
     m_Curve:
-    - time: 0
+    - serializedVersion: 2
+      time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-    - time: 1
+    - serializedVersion: 2
+      time: 1
       value: 0
       inSlope: 0
       outSlope: 0
@@ -515,7 +527,8 @@ AudioSource:
   panLevelCustomCurve:
     serializedVersion: 2
     m_Curve:
-    - time: 0
+    - serializedVersion: 2
+      time: 0
       value: 1
       inSlope: 0
       outSlope: 0
@@ -526,7 +539,8 @@ AudioSource:
   spreadCustomCurve:
     serializedVersion: 2
     m_Curve:
-    - time: 0
+    - serializedVersion: 2
+      time: 0
       value: 0
       inSlope: 0
       outSlope: 0
@@ -537,7 +551,8 @@ AudioSource:
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
-    - time: 0
+    - serializedVersion: 2
+      time: 0
       value: 1
       inSlope: 0
       outSlope: 0
@@ -552,7 +567,7 @@ Light:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100008}
   m_Enabled: 1
-  serializedVersion: 7
+  serializedVersion: 8
   m_Type: 2
   m_Color: {r: 0.9882353, g: 0.31617647, b: 0, a: 1}
   m_Intensity: 6.04
@@ -577,6 +592,8 @@ Light:
   m_Lightmapping: 1
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
 --- !u!114 &11400000
@@ -612,7 +629,7 @@ MonoBehaviour:
       - fsmEvent:
           name: DamageEffects_HitEnemy
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: 'Set Effect Location: Hit Enemy'
         linkStyle: 0
         linkConstraint: 0
@@ -620,7 +637,7 @@ MonoBehaviour:
       - fsmEvent:
           name: DamageEffects_HitMisc
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: 'Set Effect Location: Hit Something Else'
         linkStyle: 0
         linkConstraint: 0
@@ -628,7 +645,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Skip Self
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Wait Loop
         linkStyle: 0
         linkConstraint: 0
@@ -636,7 +653,7 @@ MonoBehaviour:
       - fsmEvent:
           name: useRaycastBullet
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Raycast Bullet (sniper style)
         linkStyle: 0
         linkConstraint: 0
@@ -845,7 +862,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: DamageEffects - Hit Enemy
         linkStyle: 0
         linkConstraint: 0
@@ -927,7 +944,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: DamageEffects - Hit Something Else
         linkStyle: 0
         linkConstraint: 0
@@ -1009,7 +1026,7 @@ MonoBehaviour:
       - fsmEvent:
           name: goBack
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: WaitForCollision (Collider-based) or Check Raycast Based 2
         linkStyle: 0
         linkConstraint: 0
@@ -1076,7 +1093,7 @@ MonoBehaviour:
       - fsmEvent:
           name: DamageEffects_HitEnemy
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: DamageEffects - Hit Enemy
         linkStyle: 0
         linkConstraint: 0
@@ -1084,7 +1101,7 @@ MonoBehaviour:
       - fsmEvent:
           name: DamageEffects_HitMisc
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: DamageEffects - Hit Something Else
         linkStyle: 0
         linkConstraint: 0
@@ -1092,7 +1109,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Skip Self
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Wait Loop
         linkStyle: 0
         linkConstraint: 0
@@ -1100,7 +1117,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Finished Raycast - Wait for Destruction
         linkStyle: 0
         linkConstraint: 0
@@ -1645,22 +1662,22 @@ MonoBehaviour:
     events:
     - name: FINISHED
       isSystemEvent: 1
-      isGlobal: 0
+      isGlobal: 1
     - name: DamageEffects_HitEnemy
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: DamageEffects_HitMisc
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: Skip Self
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: goBack
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: useRaycastBullet
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     globalTransitions: []
     variables:
       floatVariables:
@@ -1810,7 +1827,7 @@ MonoBehaviour:
     locked: 0
     manualUpdate: 0
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 1
+    preprocessed: 0
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0
@@ -1875,7 +1892,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Destroy Bullet
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Destroy
         linkStyle: 0
         linkConstraint: 0
@@ -1982,7 +1999,7 @@ MonoBehaviour:
     events:
     - name: Destroy Bullet
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     globalTransitions: []
     variables:
       floatVariables: []
@@ -2012,7 +2029,7 @@ MonoBehaviour:
     locked: 0
     manualUpdate: 0
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 1
+    preprocessed: 0
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0

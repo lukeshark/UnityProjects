@@ -5,14 +5,14 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 400000}
-  - 114: {fileID: 11400000}
-  - 114: {fileID: 11400004}
-  - 114: {fileID: 11400006}
-  - 114: {fileID: 11400002}
-  - 114: {fileID: 11400008}
+  - component: {fileID: 400000}
+  - component: {fileID: 11400000}
+  - component: {fileID: 11400004}
+  - component: {fileID: 11400006}
+  - component: {fileID: 11400002}
+  - component: {fileID: 11400008}
   m_Layer: 0
   m_Name: Instantiate-Player
   m_TagString: Untagged
@@ -29,10 +29,10 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 14.994368, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -66,7 +66,7 @@ MonoBehaviour:
       - fsmEvent:
           name: YES
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Enable stuf
         linkStyle: 0
         linkConstraint: 0
@@ -228,7 +228,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Instantiate the player
         linkStyle: 0
         linkConstraint: 0
@@ -354,7 +354,7 @@ MonoBehaviour:
       - fsmEvent:
           name: YES
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Hello new master
         linkStyle: 0
         linkConstraint: 0
@@ -641,10 +641,10 @@ MonoBehaviour:
     events:
     - name: FINISHED
       isSystemEvent: 1
-      isGlobal: 0
+      isGlobal: 1
     - name: DISCONNECT
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: PHOTON / CONNECTION FAIL
       isSystemEvent: 0
       isGlobal: 1
@@ -665,7 +665,7 @@ MonoBehaviour:
       isGlobal: 1
     - name: YES
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     globalTransitions:
     - fsmEvent:
         name: PHOTON / LEFT ROOM
@@ -772,7 +772,7 @@ MonoBehaviour:
     handleAnimatorMove: 0
     handleAnimatorIK: 0
   fsmTemplate: {fileID: 0}
-  eventHandlerComponentsAdded: 0
+  eventHandlerComponentsAdded: 1
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -818,7 +818,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: is there players in the room?
         linkStyle: 0
         linkConstraint: 0
@@ -917,7 +917,7 @@ MonoBehaviour:
       - fsmEvent:
           name: YES
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: State 1
         linkStyle: 0
         linkConstraint: 0
@@ -925,7 +925,7 @@ MonoBehaviour:
       - fsmEvent:
           name: NO
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Leave Room
         linkStyle: 0
         linkConstraint: 0
@@ -1139,10 +1139,10 @@ MonoBehaviour:
     events:
     - name: FINISHED
       isSystemEvent: 1
-      isGlobal: 0
+      isGlobal: 1
     - name: NO
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: PHOTON / PHOTON PLAYER CONNECTED
       isSystemEvent: 0
       isGlobal: 1
@@ -1151,7 +1151,7 @@ MonoBehaviour:
       isGlobal: 1
     - name: YES
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     globalTransitions:
     - fsmEvent:
         name: PHOTON / PHOTON PLAYER CONNECTED
@@ -1234,7 +1234,7 @@ MonoBehaviour:
     handleAnimatorMove: 0
     handleAnimatorIK: 0
   fsmTemplate: {fileID: 0}
-  eventHandlerComponentsAdded: 0
+  eventHandlerComponentsAdded: 1
 --- !u!114 &11400006
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1293,7 +1293,7 @@ MonoBehaviour:
       - fsmEvent:
           name: QUIT
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Leave room
         linkStyle: 0
         linkConstraint: 0
@@ -1433,10 +1433,10 @@ MonoBehaviour:
     events:
     - name: FINISHED
       isSystemEvent: 1
-      isGlobal: 0
+      isGlobal: 1
     - name: QUIT
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     globalTransitions: []
     variables:
       floatVariables: []
@@ -1504,7 +1504,7 @@ MonoBehaviour:
     handleAnimatorMove: 0
     handleAnimatorIK: 0
   fsmTemplate: {fileID: 0}
-  eventHandlerComponentsAdded: 0
+  eventHandlerComponentsAdded: 1
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
