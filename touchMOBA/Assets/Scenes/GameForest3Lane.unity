@@ -7861,7 +7861,13 @@ MonoBehaviour:
         showInInspector: 1
         networkSync: 0
         value: 200
-      boolVariables: []
+      boolVariables:
+      - useVariable: 1
+        name: Mine
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 1
       stringVariables:
       - useVariable: 1
         name: Name
@@ -7906,7 +7912,7 @@ MonoBehaviour:
       enumVariables: []
       categories:
       - 
-      variableCategoryIDs: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+      variableCategoryIDs: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
     description: 
     docUrl: 
     showStateLabel: 1
@@ -10148,7 +10154,13 @@ MonoBehaviour:
         showInInspector: 1
         networkSync: 0
         value: 200
-      boolVariables: []
+      boolVariables:
+      - useVariable: 1
+        name: Mine
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 1
       stringVariables:
       - useVariable: 1
         name: Name
@@ -10193,7 +10205,7 @@ MonoBehaviour:
       enumVariables: []
       categories:
       - 
-      variableCategoryIDs: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+      variableCategoryIDs: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
     description: 
     docUrl: 
     showStateLabel: 1
@@ -10475,7 +10487,7 @@ MonoBehaviour:
     locked: 0
     manualUpdate: 0
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 1
+    preprocessed: 0
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0
@@ -26881,7 +26893,13 @@ MonoBehaviour:
         showInInspector: 1
         networkSync: 0
         value: 200
-      boolVariables: []
+      boolVariables:
+      - useVariable: 1
+        name: Mine
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 1
       stringVariables:
       - useVariable: 1
         name: Name
@@ -26926,7 +26944,7 @@ MonoBehaviour:
       enumVariables: []
       categories:
       - 
-      variableCategoryIDs: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+      variableCategoryIDs: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
     description: 
     docUrl: 
     showStateLabel: 1
@@ -28871,19 +28889,19 @@ MonoBehaviour:
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        value: 0
+        value: 3
       - useVariable: 1
         name: ManaCostUnit
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        value: 0
+        value: 3
       - useVariable: 1
         name: UnitAmount
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        value: 0
+        value: 2
       intVariables:
       - useVariable: 1
         name: UnitAmountInt
@@ -28910,49 +28928,49 @@ MonoBehaviour:
         tooltip: 
         showInInspector: 0
         networkSync: 0
-        value: 
+        value: Vector3(-25.1596,0.5,-29.81107)!BlueTeam!RedTeam!UnitArcher!2!WPMid!WPEast
       - useVariable: 1
         name: SpawnpointposString
         tooltip: 
         showInInspector: 0
         networkSync: 0
-        value: 
+        value: Vector3(-25.1596,0.5,-29.81107)
       - useVariable: 1
         name: TagEnemy
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        value: 
+        value: BlueTeam
       - useVariable: 1
         name: TagFriendly
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        value: 
+        value: RedTeam
       - useVariable: 1
         name: UnitAmountString
         tooltip: 
         showInInspector: 0
         networkSync: 0
-        value: 
+        value: 2
       - useVariable: 1
         name: UnitNameString
         tooltip: 
         showInInspector: 0
         networkSync: 0
-        value: 
+        value: UnitArcher
       - useVariable: 1
         name: Waypoint1Tag
         tooltip: 
         showInInspector: 0
         networkSync: 0
-        value: 
+        value: WPMid
       - useVariable: 1
         name: Waypoint2Tag
         tooltip: 
         showInInspector: 0
         networkSync: 0
-        value: 
+        value: WPEast
       vector2Variables: []
       vector3Variables:
       - useVariable: 1
@@ -28960,7 +28978,7 @@ MonoBehaviour:
         tooltip: 
         showInInspector: 0
         networkSync: 0
-        value: {x: 0, y: 0, z: 0}
+        value: {x: -25.1596, y: 0.5, z: -29.811071}
       colorVariables: []
       rectVariables: []
       quaternionVariables: []
@@ -28976,7 +28994,8 @@ MonoBehaviour:
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        value: {fileID: 0}
+        value: {fileID: 1000014027696624, guid: ca00c433761a1404186c21b87fb44cc5,
+          type: 2}
       - useVariable: 1
         name: SpawnZones
         tooltip: 
@@ -29043,7 +29062,7 @@ MonoBehaviour:
     EnableDebugFlow: 0
     EnableBreakpoints: 1
     editorFlags: 3
-    activeStateName: 
+    activeStateName: Wait
     mouseEvents: 0
     handleLevelLoaded: 0
     handleTriggerEnter2D: 0
@@ -29068,7 +29087,7 @@ MonoBehaviour:
     handleAnimatorMove: 0
     handleAnimatorIK: 0
   fsmTemplate: {fileID: 0}
-  eventHandlerComponentsAdded: 0
+  eventHandlerComponentsAdded: 1
 --- !u!224 &1146461719
 RectTransform:
   m_ObjectHideFlags: 0
@@ -49541,7 +49560,7 @@ MonoBehaviour:
     locked: 0
     manualUpdate: 0
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 1
+    preprocessed: 0
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0
