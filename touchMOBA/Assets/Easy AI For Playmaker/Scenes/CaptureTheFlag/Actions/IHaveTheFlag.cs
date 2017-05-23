@@ -10,7 +10,7 @@ public class IHaveTheFlag : FsmStateAction {
 
 		public override void OnUpdate() {
 
-			if (Owner.transform.FindChild ("Flag") == false) {
+			if (Owner.transform.Find ("Flag") == false) {
 
 				Fsm.Event (IDontHave);
 				Finish ();

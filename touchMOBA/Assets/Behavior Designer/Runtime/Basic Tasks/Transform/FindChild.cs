@@ -33,7 +33,7 @@ namespace BehaviorDesigner.Runtime.Tasks.Basic.UnityTransform
                 return TaskStatus.Failure;
             }
 
-            storeValue.Value = targetTransform.FindChild(transformName.Value);
+            storeValue.Value = targetTransform.Find(transformName.Value);
 
             return TaskStatus.Success;
         }

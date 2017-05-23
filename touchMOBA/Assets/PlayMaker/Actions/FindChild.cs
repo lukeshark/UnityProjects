@@ -43,7 +43,7 @@ namespace HutongGames.PlayMaker.Actions
 				return;
 			}
 
-			var transform = go.transform.FindChild(childName.Value);
+			var transform = go.transform.Find(childName.Value);
 			storeResult.Value = transform != null ? transform.gameObject : null;
 		}
 	}
