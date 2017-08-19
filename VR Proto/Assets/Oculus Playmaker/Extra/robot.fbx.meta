@@ -1,0 +1,502 @@
+fileFormatVersion: 2
+guid: 79ec7d071eca3a0489f5d7c47fe36ef6
+timeCreated: 1495211875
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: pCube1
+    100002: Robot
+    100004: //RootNode
+    100006: Robot_head_JawCtrl
+    100008: Robot_head_JawCtrlGrp
+    100010: Robot_head_JawEndJnt
+    100012: Robot_head_JawJnt
+    100014: Robot_head_MasterCtrl
+    100016: Robot_head_MasterCtrlGrp
+    100018: Robot_head_MasterCtrlScaleGrp
+    100020: Robot_head_ScaleGrp
+    100022: Robot_head_TopJnt
+    100024: Robot_headGrp
+    100026: Robot_l_Legs_AnkleJnt
+    100028: Robot_l_Legs_AnkleJntDummy
+    100030: Robot_l_Legs_BallJnt
+    100032: Robot_l_Legs_FootIKCtrl
+    100034: Robot_l_Legs_FootIKCtrlGrp
+    100036: Robot_l_Legs_HeelIKCtrl
+    100038: Robot_l_Legs_HeelIKCtrlGrp
+    100040: Robot_l_Legs_HipFKCtrl
+    100042: Robot_l_Legs_HipFKCtrlGrp
+    100044: Robot_l_Legs_HipJnt
+    100046: Robot_l_Legs_KneeIKCtrl
+    100048: Robot_l_Legs_KneeIKCtrlGrp
+    100050: Robot_l_Legs_KneeJnt
+    100052: Robot_l_Legs_ScaleGrp
+    100054: Robot_l_Legs_SwitchCtrl
+    100056: Robot_l_Legs_SwitchCtrlGrp
+    100058: Robot_l_Legs_ToeIKCtrl
+    100060: Robot_l_Legs_ToeIKCtrlGrp
+    100062: Robot_l_Legs_ToeJnt
+    100064: Robot_l_LegsGrp
+    100066: Robot_MAINCtrl
+    100068: Robot_r_Legs_AnkleJnt
+    100070: Robot_r_Legs_AnkleJntDummy
+    100072: Robot_r_Legs_BallJnt
+    100074: Robot_r_Legs_FootIKCtrl
+    100076: Robot_r_Legs_FootIKCtrlGrp
+    100078: Robot_r_Legs_HeelIKCtrl
+    100080: Robot_r_Legs_HeelIKCtrlGrp
+    100082: Robot_r_Legs_HipFKCtrl
+    100084: Robot_r_Legs_HipFKCtrlGrp
+    100086: Robot_r_Legs_HipJnt
+    100088: Robot_r_Legs_KneeIKCtrl
+    100090: Robot_r_Legs_KneeIKCtrlGrp
+    100092: Robot_r_Legs_KneeJnt
+    100094: Robot_r_Legs_ScaleGrp
+    100096: Robot_r_Legs_SwitchCtrl
+    100098: Robot_r_Legs_SwitchCtrlGrp
+    100100: Robot_r_Legs_ToeIKCtrl
+    100102: Robot_r_Legs_ToeIKCtrlGrp
+    100104: Robot_r_Legs_ToeJnt
+    100106: Robot_r_LegsGrp
+    100108: Robot_ROOTCtrl
+    100110: Robot_ROOTCtrlGrp
+    100112: Robot_ROOTGrp
+    100114: Robot_ROOTJnt
+    100116: Robot_ROOTParentCtrlGrp2
+    100118: Robot_ROOTSecondaryCtrl
+    100120: robotShell
+    400000: pCube1
+    400002: Robot
+    400004: //RootNode
+    400006: Robot_head_JawCtrl
+    400008: Robot_head_JawCtrlGrp
+    400010: Robot_head_JawEndJnt
+    400012: Robot_head_JawJnt
+    400014: Robot_head_MasterCtrl
+    400016: Robot_head_MasterCtrlGrp
+    400018: Robot_head_MasterCtrlScaleGrp
+    400020: Robot_head_ScaleGrp
+    400022: Robot_head_TopJnt
+    400024: Robot_headGrp
+    400026: Robot_l_Legs_AnkleJnt
+    400028: Robot_l_Legs_AnkleJntDummy
+    400030: Robot_l_Legs_BallJnt
+    400032: Robot_l_Legs_FootIKCtrl
+    400034: Robot_l_Legs_FootIKCtrlGrp
+    400036: Robot_l_Legs_HeelIKCtrl
+    400038: Robot_l_Legs_HeelIKCtrlGrp
+    400040: Robot_l_Legs_HipFKCtrl
+    400042: Robot_l_Legs_HipFKCtrlGrp
+    400044: Robot_l_Legs_HipJnt
+    400046: Robot_l_Legs_KneeIKCtrl
+    400048: Robot_l_Legs_KneeIKCtrlGrp
+    400050: Robot_l_Legs_KneeJnt
+    400052: Robot_l_Legs_ScaleGrp
+    400054: Robot_l_Legs_SwitchCtrl
+    400056: Robot_l_Legs_SwitchCtrlGrp
+    400058: Robot_l_Legs_ToeIKCtrl
+    400060: Robot_l_Legs_ToeIKCtrlGrp
+    400062: Robot_l_Legs_ToeJnt
+    400064: Robot_l_LegsGrp
+    400066: Robot_MAINCtrl
+    400068: Robot_r_Legs_AnkleJnt
+    400070: Robot_r_Legs_AnkleJntDummy
+    400072: Robot_r_Legs_BallJnt
+    400074: Robot_r_Legs_FootIKCtrl
+    400076: Robot_r_Legs_FootIKCtrlGrp
+    400078: Robot_r_Legs_HeelIKCtrl
+    400080: Robot_r_Legs_HeelIKCtrlGrp
+    400082: Robot_r_Legs_HipFKCtrl
+    400084: Robot_r_Legs_HipFKCtrlGrp
+    400086: Robot_r_Legs_HipJnt
+    400088: Robot_r_Legs_KneeIKCtrl
+    400090: Robot_r_Legs_KneeIKCtrlGrp
+    400092: Robot_r_Legs_KneeJnt
+    400094: Robot_r_Legs_ScaleGrp
+    400096: Robot_r_Legs_SwitchCtrl
+    400098: Robot_r_Legs_SwitchCtrlGrp
+    400100: Robot_r_Legs_ToeIKCtrl
+    400102: Robot_r_Legs_ToeIKCtrlGrp
+    400104: Robot_r_Legs_ToeJnt
+    400106: Robot_r_LegsGrp
+    400108: Robot_ROOTCtrl
+    400110: Robot_ROOTCtrlGrp
+    400112: Robot_ROOTGrp
+    400114: Robot_ROOTJnt
+    400116: Robot_ROOTParentCtrlGrp2
+    400118: Robot_ROOTSecondaryCtrl
+    400120: robotShell
+    4300000: pCube1
+    4300002: robotShell
+    7400000: idle
+    7400002: running
+    9500000: //RootNode
+    13700000: pCube1
+    13700002: robotShell
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: idle
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 23
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: pCube1
+        weight: 1
+      - path: Robot
+        weight: 1
+      - path: Robot/Robot_MAINCtrl
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_headGrp
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_headGrp/Robot_head_ScaleGrp
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_headGrp/Robot_head_ScaleGrp/Robot_head_MasterCtrlGrp
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_headGrp/Robot_head_ScaleGrp/Robot_head_MasterCtrlGrp/Robot_head_MasterCtrl
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_headGrp/Robot_head_ScaleGrp/Robot_head_MasterCtrlScaleGrp
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_headGrp/Robot_head_ScaleGrp/Robot_head_MasterCtrlScaleGrp/Robot_head_JawCtrlGrp
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_headGrp/Robot_head_ScaleGrp/Robot_head_MasterCtrlScaleGrp/Robot_head_JawCtrlGrp/Robot_head_JawCtrl
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_headGrp/Robot_head_ScaleGrp/Robot_head_MasterCtrlScaleGrp/Robot_head_JawJnt
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_headGrp/Robot_head_ScaleGrp/Robot_head_MasterCtrlScaleGrp/Robot_head_JawJnt/Robot_head_JawEndJnt
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_headGrp/Robot_head_ScaleGrp/Robot_head_MasterCtrlScaleGrp/Robot_head_TopJnt
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_l_LegsGrp
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_l_LegsGrp/Robot_l_Legs_ScaleGrp
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_l_LegsGrp/Robot_l_Legs_ScaleGrp/Robot_l_Legs_FootIKCtrlGrp
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_l_LegsGrp/Robot_l_Legs_ScaleGrp/Robot_l_Legs_FootIKCtrlGrp/Robot_l_Legs_FootIKCtrl
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_l_LegsGrp/Robot_l_Legs_ScaleGrp/Robot_l_Legs_FootIKCtrlGrp/Robot_l_Legs_ToeIKCtrlGrp
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_l_LegsGrp/Robot_l_Legs_ScaleGrp/Robot_l_Legs_FootIKCtrlGrp/Robot_l_Legs_ToeIKCtrlGrp/Robot_l_Legs_ToeIKCtrl
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_l_LegsGrp/Robot_l_Legs_ScaleGrp/Robot_l_Legs_FootIKCtrlGrp/Robot_l_Legs_ToeIKCtrlGrp/Robot_l_Legs_ToeIKCtrl/Robot_l_Legs_HeelIKCtrlGrp
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_l_LegsGrp/Robot_l_Legs_ScaleGrp/Robot_l_Legs_FootIKCtrlGrp/Robot_l_Legs_ToeIKCtrlGrp/Robot_l_Legs_ToeIKCtrl/Robot_l_Legs_HeelIKCtrlGrp/Robot_l_Legs_HeelIKCtrl
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_l_LegsGrp/Robot_l_Legs_ScaleGrp/Robot_l_Legs_HipFKCtrlGrp
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_l_LegsGrp/Robot_l_Legs_ScaleGrp/Robot_l_Legs_HipFKCtrlGrp/Robot_l_Legs_HipFKCtrl
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_l_LegsGrp/Robot_l_Legs_ScaleGrp/Robot_l_Legs_HipJnt
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_l_LegsGrp/Robot_l_Legs_ScaleGrp/Robot_l_Legs_HipJnt/Robot_l_Legs_KneeJnt
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_l_LegsGrp/Robot_l_Legs_ScaleGrp/Robot_l_Legs_HipJnt/Robot_l_Legs_KneeJnt/Robot_l_Legs_AnkleJnt
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_l_LegsGrp/Robot_l_Legs_ScaleGrp/Robot_l_Legs_HipJnt/Robot_l_Legs_KneeJnt/Robot_l_Legs_AnkleJnt/Robot_l_Legs_BallJnt
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_l_LegsGrp/Robot_l_Legs_ScaleGrp/Robot_l_Legs_HipJnt/Robot_l_Legs_KneeJnt/Robot_l_Legs_AnkleJnt/Robot_l_Legs_BallJnt/Robot_l_Legs_ToeJnt
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_l_LegsGrp/Robot_l_Legs_ScaleGrp/Robot_l_Legs_HipJnt/Robot_l_Legs_KneeJnt/Robot_l_Legs_AnkleJntDummy
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_l_LegsGrp/Robot_l_Legs_ScaleGrp/Robot_l_Legs_KneeIKCtrlGrp
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_l_LegsGrp/Robot_l_Legs_ScaleGrp/Robot_l_Legs_KneeIKCtrlGrp/Robot_l_Legs_KneeIKCtrl
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_l_LegsGrp/Robot_l_Legs_ScaleGrp/Robot_l_Legs_SwitchCtrlGrp
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_l_LegsGrp/Robot_l_Legs_ScaleGrp/Robot_l_Legs_SwitchCtrlGrp/Robot_l_Legs_SwitchCtrl
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_r_LegsGrp
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_r_LegsGrp/Robot_r_Legs_ScaleGrp
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_r_LegsGrp/Robot_r_Legs_ScaleGrp/Robot_r_Legs_FootIKCtrlGrp
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_r_LegsGrp/Robot_r_Legs_ScaleGrp/Robot_r_Legs_FootIKCtrlGrp/Robot_r_Legs_FootIKCtrl
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_r_LegsGrp/Robot_r_Legs_ScaleGrp/Robot_r_Legs_FootIKCtrlGrp/Robot_r_Legs_ToeIKCtrlGrp
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_r_LegsGrp/Robot_r_Legs_ScaleGrp/Robot_r_Legs_FootIKCtrlGrp/Robot_r_Legs_ToeIKCtrlGrp/Robot_r_Legs_ToeIKCtrl
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_r_LegsGrp/Robot_r_Legs_ScaleGrp/Robot_r_Legs_FootIKCtrlGrp/Robot_r_Legs_ToeIKCtrlGrp/Robot_r_Legs_ToeIKCtrl/Robot_r_Legs_HeelIKCtrlGrp
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_r_LegsGrp/Robot_r_Legs_ScaleGrp/Robot_r_Legs_FootIKCtrlGrp/Robot_r_Legs_ToeIKCtrlGrp/Robot_r_Legs_ToeIKCtrl/Robot_r_Legs_HeelIKCtrlGrp/Robot_r_Legs_HeelIKCtrl
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_r_LegsGrp/Robot_r_Legs_ScaleGrp/Robot_r_Legs_HipFKCtrlGrp
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_r_LegsGrp/Robot_r_Legs_ScaleGrp/Robot_r_Legs_HipFKCtrlGrp/Robot_r_Legs_HipFKCtrl
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_r_LegsGrp/Robot_r_Legs_ScaleGrp/Robot_r_Legs_HipJnt
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_r_LegsGrp/Robot_r_Legs_ScaleGrp/Robot_r_Legs_HipJnt/Robot_r_Legs_KneeJnt
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_r_LegsGrp/Robot_r_Legs_ScaleGrp/Robot_r_Legs_HipJnt/Robot_r_Legs_KneeJnt/Robot_r_Legs_AnkleJnt
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_r_LegsGrp/Robot_r_Legs_ScaleGrp/Robot_r_Legs_HipJnt/Robot_r_Legs_KneeJnt/Robot_r_Legs_AnkleJnt/Robot_r_Legs_BallJnt
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_r_LegsGrp/Robot_r_Legs_ScaleGrp/Robot_r_Legs_HipJnt/Robot_r_Legs_KneeJnt/Robot_r_Legs_AnkleJnt/Robot_r_Legs_BallJnt/Robot_r_Legs_ToeJnt
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_r_LegsGrp/Robot_r_Legs_ScaleGrp/Robot_r_Legs_HipJnt/Robot_r_Legs_KneeJnt/Robot_r_Legs_AnkleJntDummy
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_r_LegsGrp/Robot_r_Legs_ScaleGrp/Robot_r_Legs_KneeIKCtrlGrp
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_r_LegsGrp/Robot_r_Legs_ScaleGrp/Robot_r_Legs_KneeIKCtrlGrp/Robot_r_Legs_KneeIKCtrl
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_r_LegsGrp/Robot_r_Legs_ScaleGrp/Robot_r_Legs_SwitchCtrlGrp
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_r_LegsGrp/Robot_r_Legs_ScaleGrp/Robot_r_Legs_SwitchCtrlGrp/Robot_r_Legs_SwitchCtrl
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_ROOTGrp
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_ROOTGrp/Robot_ROOTParentCtrlGrp2
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_ROOTGrp/Robot_ROOTParentCtrlGrp2/Robot_ROOTCtrlGrp
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_ROOTGrp/Robot_ROOTParentCtrlGrp2/Robot_ROOTCtrlGrp/Robot_ROOTCtrl
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_ROOTGrp/Robot_ROOTParentCtrlGrp2/Robot_ROOTCtrlGrp/Robot_ROOTCtrl/Robot_ROOTSecondaryCtrl
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_ROOTGrp/Robot_ROOTParentCtrlGrp2/Robot_ROOTCtrlGrp/Robot_ROOTJnt
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: running
+      takeName: Take 001
+      firstFrame: 26
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: pCube1
+        weight: 1
+      - path: Robot
+        weight: 1
+      - path: Robot/Robot_MAINCtrl
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_headGrp
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_headGrp/Robot_head_ScaleGrp
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_headGrp/Robot_head_ScaleGrp/Robot_head_MasterCtrlGrp
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_headGrp/Robot_head_ScaleGrp/Robot_head_MasterCtrlGrp/Robot_head_MasterCtrl
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_headGrp/Robot_head_ScaleGrp/Robot_head_MasterCtrlScaleGrp
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_headGrp/Robot_head_ScaleGrp/Robot_head_MasterCtrlScaleGrp/Robot_head_JawCtrlGrp
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_headGrp/Robot_head_ScaleGrp/Robot_head_MasterCtrlScaleGrp/Robot_head_JawCtrlGrp/Robot_head_JawCtrl
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_headGrp/Robot_head_ScaleGrp/Robot_head_MasterCtrlScaleGrp/Robot_head_JawJnt
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_headGrp/Robot_head_ScaleGrp/Robot_head_MasterCtrlScaleGrp/Robot_head_JawJnt/Robot_head_JawEndJnt
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_headGrp/Robot_head_ScaleGrp/Robot_head_MasterCtrlScaleGrp/Robot_head_TopJnt
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_l_LegsGrp
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_l_LegsGrp/Robot_l_Legs_ScaleGrp
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_l_LegsGrp/Robot_l_Legs_ScaleGrp/Robot_l_Legs_FootIKCtrlGrp
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_l_LegsGrp/Robot_l_Legs_ScaleGrp/Robot_l_Legs_FootIKCtrlGrp/Robot_l_Legs_FootIKCtrl
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_l_LegsGrp/Robot_l_Legs_ScaleGrp/Robot_l_Legs_FootIKCtrlGrp/Robot_l_Legs_ToeIKCtrlGrp
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_l_LegsGrp/Robot_l_Legs_ScaleGrp/Robot_l_Legs_FootIKCtrlGrp/Robot_l_Legs_ToeIKCtrlGrp/Robot_l_Legs_ToeIKCtrl
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_l_LegsGrp/Robot_l_Legs_ScaleGrp/Robot_l_Legs_FootIKCtrlGrp/Robot_l_Legs_ToeIKCtrlGrp/Robot_l_Legs_ToeIKCtrl/Robot_l_Legs_HeelIKCtrlGrp
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_l_LegsGrp/Robot_l_Legs_ScaleGrp/Robot_l_Legs_FootIKCtrlGrp/Robot_l_Legs_ToeIKCtrlGrp/Robot_l_Legs_ToeIKCtrl/Robot_l_Legs_HeelIKCtrlGrp/Robot_l_Legs_HeelIKCtrl
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_l_LegsGrp/Robot_l_Legs_ScaleGrp/Robot_l_Legs_HipFKCtrlGrp
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_l_LegsGrp/Robot_l_Legs_ScaleGrp/Robot_l_Legs_HipFKCtrlGrp/Robot_l_Legs_HipFKCtrl
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_l_LegsGrp/Robot_l_Legs_ScaleGrp/Robot_l_Legs_HipJnt
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_l_LegsGrp/Robot_l_Legs_ScaleGrp/Robot_l_Legs_HipJnt/Robot_l_Legs_KneeJnt
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_l_LegsGrp/Robot_l_Legs_ScaleGrp/Robot_l_Legs_HipJnt/Robot_l_Legs_KneeJnt/Robot_l_Legs_AnkleJnt
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_l_LegsGrp/Robot_l_Legs_ScaleGrp/Robot_l_Legs_HipJnt/Robot_l_Legs_KneeJnt/Robot_l_Legs_AnkleJnt/Robot_l_Legs_BallJnt
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_l_LegsGrp/Robot_l_Legs_ScaleGrp/Robot_l_Legs_HipJnt/Robot_l_Legs_KneeJnt/Robot_l_Legs_AnkleJnt/Robot_l_Legs_BallJnt/Robot_l_Legs_ToeJnt
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_l_LegsGrp/Robot_l_Legs_ScaleGrp/Robot_l_Legs_HipJnt/Robot_l_Legs_KneeJnt/Robot_l_Legs_AnkleJntDummy
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_l_LegsGrp/Robot_l_Legs_ScaleGrp/Robot_l_Legs_KneeIKCtrlGrp
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_l_LegsGrp/Robot_l_Legs_ScaleGrp/Robot_l_Legs_KneeIKCtrlGrp/Robot_l_Legs_KneeIKCtrl
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_l_LegsGrp/Robot_l_Legs_ScaleGrp/Robot_l_Legs_SwitchCtrlGrp
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_l_LegsGrp/Robot_l_Legs_ScaleGrp/Robot_l_Legs_SwitchCtrlGrp/Robot_l_Legs_SwitchCtrl
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_r_LegsGrp
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_r_LegsGrp/Robot_r_Legs_ScaleGrp
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_r_LegsGrp/Robot_r_Legs_ScaleGrp/Robot_r_Legs_FootIKCtrlGrp
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_r_LegsGrp/Robot_r_Legs_ScaleGrp/Robot_r_Legs_FootIKCtrlGrp/Robot_r_Legs_FootIKCtrl
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_r_LegsGrp/Robot_r_Legs_ScaleGrp/Robot_r_Legs_FootIKCtrlGrp/Robot_r_Legs_ToeIKCtrlGrp
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_r_LegsGrp/Robot_r_Legs_ScaleGrp/Robot_r_Legs_FootIKCtrlGrp/Robot_r_Legs_ToeIKCtrlGrp/Robot_r_Legs_ToeIKCtrl
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_r_LegsGrp/Robot_r_Legs_ScaleGrp/Robot_r_Legs_FootIKCtrlGrp/Robot_r_Legs_ToeIKCtrlGrp/Robot_r_Legs_ToeIKCtrl/Robot_r_Legs_HeelIKCtrlGrp
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_r_LegsGrp/Robot_r_Legs_ScaleGrp/Robot_r_Legs_FootIKCtrlGrp/Robot_r_Legs_ToeIKCtrlGrp/Robot_r_Legs_ToeIKCtrl/Robot_r_Legs_HeelIKCtrlGrp/Robot_r_Legs_HeelIKCtrl
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_r_LegsGrp/Robot_r_Legs_ScaleGrp/Robot_r_Legs_HipFKCtrlGrp
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_r_LegsGrp/Robot_r_Legs_ScaleGrp/Robot_r_Legs_HipFKCtrlGrp/Robot_r_Legs_HipFKCtrl
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_r_LegsGrp/Robot_r_Legs_ScaleGrp/Robot_r_Legs_HipJnt
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_r_LegsGrp/Robot_r_Legs_ScaleGrp/Robot_r_Legs_HipJnt/Robot_r_Legs_KneeJnt
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_r_LegsGrp/Robot_r_Legs_ScaleGrp/Robot_r_Legs_HipJnt/Robot_r_Legs_KneeJnt/Robot_r_Legs_AnkleJnt
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_r_LegsGrp/Robot_r_Legs_ScaleGrp/Robot_r_Legs_HipJnt/Robot_r_Legs_KneeJnt/Robot_r_Legs_AnkleJnt/Robot_r_Legs_BallJnt
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_r_LegsGrp/Robot_r_Legs_ScaleGrp/Robot_r_Legs_HipJnt/Robot_r_Legs_KneeJnt/Robot_r_Legs_AnkleJnt/Robot_r_Legs_BallJnt/Robot_r_Legs_ToeJnt
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_r_LegsGrp/Robot_r_Legs_ScaleGrp/Robot_r_Legs_HipJnt/Robot_r_Legs_KneeJnt/Robot_r_Legs_AnkleJntDummy
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_r_LegsGrp/Robot_r_Legs_ScaleGrp/Robot_r_Legs_KneeIKCtrlGrp
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_r_LegsGrp/Robot_r_Legs_ScaleGrp/Robot_r_Legs_KneeIKCtrlGrp/Robot_r_Legs_KneeIKCtrl
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_r_LegsGrp/Robot_r_Legs_ScaleGrp/Robot_r_Legs_SwitchCtrlGrp
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_r_LegsGrp/Robot_r_Legs_ScaleGrp/Robot_r_Legs_SwitchCtrlGrp/Robot_r_Legs_SwitchCtrl
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_ROOTGrp
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_ROOTGrp/Robot_ROOTParentCtrlGrp2
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_ROOTGrp/Robot_ROOTParentCtrlGrp2/Robot_ROOTCtrlGrp
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_ROOTGrp/Robot_ROOTParentCtrlGrp2/Robot_ROOTCtrlGrp/Robot_ROOTCtrl
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_ROOTGrp/Robot_ROOTParentCtrlGrp2/Robot_ROOTCtrlGrp/Robot_ROOTCtrl/Robot_ROOTSecondaryCtrl
+        weight: 1
+      - path: Robot/Robot_MAINCtrl/Robot_ROOTGrp/Robot_ROOTParentCtrlGrp2/Robot_ROOTCtrlGrp/Robot_ROOTJnt
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
