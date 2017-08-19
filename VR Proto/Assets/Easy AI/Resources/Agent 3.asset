@@ -1,0 +1,893 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8afad27ff3d63b4e8bf0f073d284a69, type: 3}
+  m_Name: Agent 3
+  m_EditorClassIdentifier: 
+  editorStates:
+  - {fileID: 114000013062365154}
+  saveName: Agent 3
+  savePath: Assets/Easy AI/Resources/Agent 3.asset
+  livesInScene: 0
+  nodes:
+  - {fileID: 114000012141837282}
+  - {fileID: 114000012389761722}
+  - {fileID: 114000013637007466}
+  - {fileID: 114000010355400028}
+  - {fileID: 114000013211682436}
+  - {fileID: 114000012706931390}
+  - {fileID: 114000011796197396}
+  - {fileID: 114000012064480256}
+  - {fileID: 114000012908142998}
+  - {fileID: 114000013046958548}
+  groups: []
+  blackboard:
+  - key: target
+    VariableType: gameobject
+    value: '{"value":{"instanceID":0}}'
+  reloadVar: 0
+--- !u!114 &114000010319044066
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4caff27366054dd44a30ddb5be369acc, type: 3}
+  m_Name: Value
+  m_EditorClassIdentifier: 
+  body: {fileID: 114000013046958548}
+  side: 4
+  sidePosition: 20
+  sideOffset: 0
+  connection: {fileID: 114000013507409204}
+  typeID: Action
+--- !u!114 &114000010355400028
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbfa01a1b3e7cfc48811bb7f247b120b, type: 3}
+  m_Name: Running
+  m_EditorClassIdentifier: 
+  rect:
+    x: 873
+    y: -58
+    width: 150
+    height: 50
+  nodeKnobs:
+  - {fileID: 114000012647888936}
+  - {fileID: 114000012893326990}
+  Inputs:
+  - {fileID: 114000012647888936}
+  Outputs:
+  - {fileID: 114000012893326990}
+  backgroundColor:
+    r: 1
+    g: 1
+    b: 1
+    a: 1
+  titleColor:
+    r: 1
+    g: 0
+    b: 0
+    a: 1
+  Id: 
+  tex: {fileID: 0}
+  choiceIndex: 00000000
+  indexVarSelected: 00000000
+  useInternalVar: 
+  internalVar: []
+  debugConsole: 0
+  goToNextState: 0
+  hasFinished: 0
+  fsmVars:
+  - key: target
+    VariableType: gameobject
+    value: '{"value":{"instanceID":0}}'
+  myType: 0
+  self: {fileID: 0}
+  fleeGameObject: {fileID: 0}
+--- !u!114 &114000010386955726
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42e7026d0da7df848ab67d517ac12d74, type: 3}
+  m_Name: Output val
+  m_EditorClassIdentifier: 
+  body: {fileID: 114000013637007466}
+  side: 2
+  sidePosition: 20
+  sideOffset: 0
+  connections:
+  - {fileID: 114000012647888936}
+  typeID: Action
+  calculationBlockade: 0
+--- !u!114 &114000010988953762
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42e7026d0da7df848ab67d517ac12d74, type: 3}
+  m_Name: Output val
+  m_EditorClassIdentifier: 
+  body: {fileID: 114000013046958548}
+  side: 2
+  sidePosition: 20
+  sideOffset: 0
+  connections: []
+  typeID: Conditional
+  calculationBlockade: 0
+--- !u!114 &114000011171424208
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4caff27366054dd44a30ddb5be369acc, type: 3}
+  m_Name: Value
+  m_EditorClassIdentifier: 
+  body: {fileID: 114000013637007466}
+  side: 4
+  sidePosition: 20
+  sideOffset: 0
+  connection: {fileID: 114000012461272410}
+  typeID: Action
+--- !u!114 &114000011352732464
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42e7026d0da7df848ab67d517ac12d74, type: 3}
+  m_Name: Output val
+  m_EditorClassIdentifier: 
+  body: {fileID: 114000011796197396}
+  side: 2
+  sidePosition: 20
+  sideOffset: 0
+  connections:
+  - {fileID: 114000011471452776}
+  typeID: Action
+  calculationBlockade: 0
+--- !u!114 &114000011471452776
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4caff27366054dd44a30ddb5be369acc, type: 3}
+  m_Name: Value
+  m_EditorClassIdentifier: 
+  body: {fileID: 114000012141837282}
+  side: 4
+  sidePosition: 20
+  sideOffset: 0
+  connection: {fileID: 114000011352732464}
+  typeID: Action
+--- !u!114 &114000011796197396
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3528bbd53fdb6874b888b5f0d61a7f2c, type: 3}
+  m_Name: Set Anim Bool
+  m_EditorClassIdentifier: 
+  rect:
+    x: -237
+    y: -187
+    width: 260
+    height: 120
+  nodeKnobs:
+  - {fileID: 114000013045907428}
+  - {fileID: 114000011352732464}
+  Inputs:
+  - {fileID: 114000013045907428}
+  Outputs:
+  - {fileID: 114000011352732464}
+  backgroundColor:
+    r: 1
+    g: 1
+    b: 1
+    a: 1
+  titleColor:
+    r: 1
+    g: 0
+    b: 0
+    a: 1
+  Id: 
+  tex: {fileID: 0}
+  choiceIndex: 
+  indexVarSelected: 
+  useInternalVar: []
+  internalVar: []
+  debugConsole: 0
+  goToNextState: 0
+  hasFinished: 0
+  fsmVars:
+  - key: target
+    VariableType: gameobject
+    value: '{"value":{"instanceID":0}}'
+  myType: 0
+  self: {fileID: 0}
+  Parameter: Walk
+  Value: 1
+--- !u!114 &114000011880118926
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4caff27366054dd44a30ddb5be369acc, type: 3}
+  m_Name: Value
+  m_EditorClassIdentifier: 
+  body: {fileID: 114000012389761722}
+  side: 4
+  sidePosition: 20
+  sideOffset: 0
+  connection: {fileID: 114000013230460222}
+  typeID: Conditional
+--- !u!114 &114000011935610512
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42e7026d0da7df848ab67d517ac12d74, type: 3}
+  m_Name: Output val
+  m_EditorClassIdentifier: 
+  body: {fileID: 114000012064480256}
+  side: 2
+  sidePosition: 20
+  sideOffset: 0
+  connections:
+  - {fileID: 114000013388255536}
+  typeID: Action
+  calculationBlockade: 0
+--- !u!114 &114000012064480256
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ee56c9de90917745bad432ff4985afd, type: 3}
+  m_Name: Timer Node
+  m_EditorClassIdentifier: 
+  rect:
+    x: 975
+    y: 49
+    width: 150
+    height: 60
+  nodeKnobs:
+  - {fileID: 114000013967098296}
+  - {fileID: 114000011935610512}
+  Inputs:
+  - {fileID: 114000013967098296}
+  Outputs:
+  - {fileID: 114000011935610512}
+  backgroundColor:
+    r: 1
+    g: 1
+    b: 1
+    a: 1
+  titleColor:
+    r: 0
+    g: 1
+    b: 1
+    a: 1
+  Id: 
+  tex: {fileID: 0}
+  choiceIndex: 
+  indexVarSelected: 
+  useInternalVar: []
+  internalVar: []
+  debugConsole: 0
+  goToNextState: 0
+  hasFinished: 0
+  fsmVars:
+  - key: target
+    VariableType: gameobject
+    value: '{"value":{"instanceID":0}}'
+  myType: 1
+  self: {fileID: 0}
+  _timer: 3
+  time: 0.48309094
+--- !u!114 &114000012141837282
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31f1deb5cb31ccb41b4aa45ed41cf32b, type: 3}
+  m_Name: Pursue Node
+  m_EditorClassIdentifier: 
+  rect:
+    x: -56
+    y: -59
+    width: 260
+    height: 120
+  nodeKnobs:
+  - {fileID: 114000011471452776}
+  - {fileID: 114000013230460222}
+  Inputs:
+  - {fileID: 114000011471452776}
+  Outputs:
+  - {fileID: 114000013230460222}
+  backgroundColor:
+    r: 1
+    g: 1
+    b: 1
+    a: 1
+  titleColor:
+    r: 0
+    g: 1
+    b: 0
+    a: 1
+  Id: 
+  tex: {fileID: 0}
+  choiceIndex: 00000000
+  indexVarSelected: 
+  useInternalVar: "\x01"
+  internalVar:
+  - target
+  debugConsole: 0
+  goToNextState: 0
+  hasFinished: 0
+  fsmVars:
+  - key: target
+    VariableType: gameobject
+    value: '{"value":{"instanceID":0}}'
+  myType: 0
+  self: {fileID: 0}
+  targetDistPrediction: 20
+  targetDistPredictionMult: 20
+  arrivedDistance: 2
+  AgentSpeed: 3.5
+  pursueGameObject: {fileID: 0}
+  targetPosition: {x: 2.7986066, y: -0.00002682209, z: -0.11825834}
+  _agent: {fileID: 0}
+--- !u!114 &114000012389761722
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9768c0306b187954baccf16a522274a3, type: 3}
+  m_Name: Wait For Finish
+  m_EditorClassIdentifier: 
+  rect:
+    x: 275
+    y: -46
+    width: 180
+    height: 100
+  nodeKnobs:
+  - {fileID: 114000011880118926}
+  - {fileID: 114000012461272410}
+  Inputs:
+  - {fileID: 114000011880118926}
+  Outputs:
+  - {fileID: 114000012461272410}
+  backgroundColor:
+    r: 1
+    g: 1
+    b: 1
+    a: 1
+  titleColor:
+    r: 0
+    g: 1
+    b: 1
+    a: 1
+  Id: 
+  tex: {fileID: 0}
+  choiceIndex: 
+  indexVarSelected: 
+  useInternalVar: []
+  internalVar: []
+  debugConsole: 0
+  goToNextState: 0
+  hasFinished: 0
+  fsmVars:
+  - key: target
+    VariableType: gameobject
+    value: '{"value":{"instanceID":0}}'
+  myType: 1
+  self: {fileID: 0}
+--- !u!114 &114000012461272410
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42e7026d0da7df848ab67d517ac12d74, type: 3}
+  m_Name: Output val
+  m_EditorClassIdentifier: 
+  body: {fileID: 114000012389761722}
+  side: 2
+  sidePosition: 20
+  sideOffset: 0
+  connections:
+  - {fileID: 114000011171424208}
+  typeID: Action
+  calculationBlockade: 0
+--- !u!114 &114000012647888936
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4caff27366054dd44a30ddb5be369acc, type: 3}
+  m_Name: Value
+  m_EditorClassIdentifier: 
+  body: {fileID: 114000010355400028}
+  side: 4
+  sidePosition: 20
+  sideOffset: 0
+  connection: {fileID: 114000010386955726}
+  typeID: Action
+--- !u!114 &114000012706931390
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0da3876a6eefbbf43baf30fc7bdc54f4, type: 3}
+  m_Name: Get GameObject
+  m_EditorClassIdentifier: 
+  rect:
+    x: -484
+    y: -45
+    width: 260
+    height: 120
+  nodeKnobs:
+  - {fileID: 114000014221097500}
+  - {fileID: 114000012848668652}
+  Inputs:
+  - {fileID: 114000014221097500}
+  Outputs:
+  - {fileID: 114000012848668652}
+  backgroundColor:
+    r: 1
+    g: 1
+    b: 1
+    a: 1
+  titleColor:
+    r: 1
+    g: 0
+    b: 0
+    a: 1
+  Id: 
+  tex: {fileID: 0}
+  choiceIndex: 00000000
+  indexVarSelected: 
+  useInternalVar: "\x01"
+  internalVar:
+  - target
+  debugConsole: 0
+  goToNextState: 0
+  hasFinished: 0
+  fsmVars:
+  - key: target
+    VariableType: gameobject
+    value: '{"value":{"instanceID":0}}'
+  myType: 0
+  self: {fileID: 0}
+  targetGameObject: {fileID: 0}
+  tagStr: Player
+  nameStr: 
+--- !u!114 &114000012848668652
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42e7026d0da7df848ab67d517ac12d74, type: 3}
+  m_Name: Output val
+  m_EditorClassIdentifier: 
+  body: {fileID: 114000012706931390}
+  side: 2
+  sidePosition: 20
+  sideOffset: 0
+  connections:
+  - {fileID: 114000013045907428}
+  typeID: Action
+  calculationBlockade: 0
+--- !u!114 &114000012893326990
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42e7026d0da7df848ab67d517ac12d74, type: 3}
+  m_Name: Output val
+  m_EditorClassIdentifier: 
+  body: {fileID: 114000010355400028}
+  side: 2
+  sidePosition: 20
+  sideOffset: 0
+  connections:
+  - {fileID: 114000013967098296}
+  typeID: Conditional
+  calculationBlockade: 0
+--- !u!114 &114000012908142998
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3528bbd53fdb6874b888b5f0d61a7f2c, type: 3}
+  m_Name: Set Anim Bool
+  m_EditorClassIdentifier: 
+  rect:
+    x: 1118
+    y: -136
+    width: 260
+    height: 120
+  nodeKnobs:
+  - {fileID: 114000013388255536}
+  - {fileID: 114000013507409204}
+  Inputs:
+  - {fileID: 114000013388255536}
+  Outputs:
+  - {fileID: 114000013507409204}
+  backgroundColor:
+    r: 1
+    g: 1
+    b: 1
+    a: 1
+  titleColor:
+    r: 1
+    g: 0
+    b: 0
+    a: 1
+  Id: 
+  tex: {fileID: 0}
+  choiceIndex: 
+  indexVarSelected: 
+  useInternalVar: []
+  internalVar: []
+  debugConsole: 0
+  goToNextState: 0
+  hasFinished: 0
+  fsmVars:
+  - key: target
+    VariableType: gameobject
+    value: '{"value":{"instanceID":0}}'
+  myType: 0
+  self: {fileID: 0}
+  Parameter: Attack
+  Value: 0
+--- !u!114 &114000013045907428
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4caff27366054dd44a30ddb5be369acc, type: 3}
+  m_Name: Value
+  m_EditorClassIdentifier: 
+  body: {fileID: 114000011796197396}
+  side: 4
+  sidePosition: 20
+  sideOffset: 0
+  connection: {fileID: 114000012848668652}
+  typeID: Action
+--- !u!114 &114000013046958548
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d51850638c7481b42bc42d6162c43d1a, type: 3}
+  m_Name: Restart Node
+  m_EditorClassIdentifier: 
+  rect:
+    x: 1347
+    y: 39
+    width: 120
+    height: 80
+  nodeKnobs:
+  - {fileID: 114000010319044066}
+  - {fileID: 114000010988953762}
+  Inputs:
+  - {fileID: 114000010319044066}
+  Outputs:
+  - {fileID: 114000010988953762}
+  backgroundColor:
+    r: 1
+    g: 1
+    b: 1
+    a: 1
+  titleColor:
+    r: 0
+    g: 1
+    b: 0
+    a: 1
+  Id: 
+  tex: {fileID: 0}
+  choiceIndex: 
+  indexVarSelected: 
+  useInternalVar: []
+  internalVar: []
+  debugConsole: 0
+  goToNextState: 0
+  hasFinished: 0
+  fsmVars:
+  - key: target
+    VariableType: gameobject
+    value: '{"value":{"instanceID":0}}'
+  myType: 0
+  self: {fileID: 0}
+--- !u!114 &114000013062365154
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6ab6487237ff124ea4c2aa5de9ce3fb, type: 3}
+  m_Name: MainEditorState
+  m_EditorClassIdentifier: 
+  canvas: {fileID: 0}
+  parentEditor: {fileID: 0}
+  drawing: 1
+  selectedNode: {fileID: 114000013046958548}
+  panOffset: {x: -1102, y: 122}
+  zoom: 1
+--- !u!114 &114000013211682436
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58fb1c0f001276e488c6c9093b4b520e, type: 3}
+  m_Name: Start
+  m_EditorClassIdentifier: 
+  rect:
+    x: -544
+    y: -184
+    width: 150
+    height: 60
+  nodeKnobs:
+  - {fileID: 114000014053946546}
+  Inputs: []
+  Outputs:
+  - {fileID: 114000014053946546}
+  backgroundColor:
+    r: 1
+    g: 1
+    b: 1
+    a: 1
+  titleColor:
+    r: 1
+    g: 0
+    b: 0
+    a: 1
+  Id: 
+  tex: {fileID: 0}
+  choiceIndex: 
+  indexVarSelected: 
+  useInternalVar: []
+  internalVar: []
+  debugConsole: 0
+  goToNextState: 0
+  hasFinished: 0
+  fsmVars:
+  - key: target
+    VariableType: gameobject
+    value: '{"value":{"instanceID":0}}'
+  myType: 0
+  self: {fileID: 0}
+--- !u!114 &114000013230460222
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42e7026d0da7df848ab67d517ac12d74, type: 3}
+  m_Name: Output val
+  m_EditorClassIdentifier: 
+  body: {fileID: 114000012141837282}
+  side: 2
+  sidePosition: 20
+  sideOffset: 0
+  connections:
+  - {fileID: 114000011880118926}
+  typeID: Conditional
+  calculationBlockade: 0
+--- !u!114 &114000013388255536
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4caff27366054dd44a30ddb5be369acc, type: 3}
+  m_Name: Value
+  m_EditorClassIdentifier: 
+  body: {fileID: 114000012908142998}
+  side: 4
+  sidePosition: 20
+  sideOffset: 0
+  connection: {fileID: 114000011935610512}
+  typeID: Action
+--- !u!114 &114000013507409204
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42e7026d0da7df848ab67d517ac12d74, type: 3}
+  m_Name: Output val
+  m_EditorClassIdentifier: 
+  body: {fileID: 114000012908142998}
+  side: 2
+  sidePosition: 20
+  sideOffset: 0
+  connections:
+  - {fileID: 114000010319044066}
+  typeID: Action
+  calculationBlockade: 0
+--- !u!114 &114000013637007466
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3528bbd53fdb6874b888b5f0d61a7f2c, type: 3}
+  m_Name: Set Anim Bool
+  m_EditorClassIdentifier: 
+  rect:
+    x: 550
+    y: -54
+    width: 260
+    height: 120
+  nodeKnobs:
+  - {fileID: 114000011171424208}
+  - {fileID: 114000010386955726}
+  Inputs:
+  - {fileID: 114000011171424208}
+  Outputs:
+  - {fileID: 114000010386955726}
+  backgroundColor:
+    r: 1
+    g: 1
+    b: 1
+    a: 1
+  titleColor:
+    r: 1
+    g: 0
+    b: 0
+    a: 1
+  Id: 
+  tex: {fileID: 0}
+  choiceIndex: 
+  indexVarSelected: 
+  useInternalVar: []
+  internalVar: []
+  debugConsole: 0
+  goToNextState: 0
+  hasFinished: 0
+  fsmVars:
+  - key: target
+    VariableType: gameobject
+    value: '{"value":{"instanceID":0}}'
+  myType: 0
+  self: {fileID: 0}
+  Parameter: Attack
+  Value: 1
+--- !u!114 &114000013967098296
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4caff27366054dd44a30ddb5be369acc, type: 3}
+  m_Name: Value
+  m_EditorClassIdentifier: 
+  body: {fileID: 114000012064480256}
+  side: 4
+  sidePosition: 20
+  sideOffset: 0
+  connection: {fileID: 114000012893326990}
+  typeID: Conditional
+--- !u!114 &114000014053946546
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42e7026d0da7df848ab67d517ac12d74, type: 3}
+  m_Name: Start Point
+  m_EditorClassIdentifier: 
+  body: {fileID: 114000013211682436}
+  side: 2
+  sidePosition: 46
+  sideOffset: 0
+  connections:
+  - {fileID: 114000014221097500}
+  typeID: Action
+  calculationBlockade: 0
+--- !u!114 &114000014221097500
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4caff27366054dd44a30ddb5be369acc, type: 3}
+  m_Name: Value
+  m_EditorClassIdentifier: 
+  body: {fileID: 114000012706931390}
+  side: 4
+  sidePosition: 20
+  sideOffset: 0
+  connection: {fileID: 114000014053946546}
+  typeID: Action
