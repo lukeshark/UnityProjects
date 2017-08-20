@@ -23,8 +23,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 61.71875
-        y: 172.48438
+        x: 62.84375
+        y: 180.42969
         width: 330
         height: 16
       isBreakpoint: 0
@@ -41,7 +41,7 @@ MonoBehaviour:
         - 
         - 
         actionEnabled: 010101
-        actionIsOpen: 000000
+        actionIsOpen: 010000
         actionStartIndex: 00000000030000000a000000
         actionHashCodes: 603dd9055552ad055f913504
         unityObjectParams: []
@@ -188,7 +188,7 @@ MonoBehaviour:
         - 
         - 
         actionEnabled: 01010101
-        actionIsOpen: 00000100
+        actionIsOpen: 01010101
         actionStartIndex: 00000000050000000800000010000000
         actionHashCodes: b2cf10002ee01704f6e5be0314180903
         unityObjectParams: []
@@ -270,7 +270,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 10
+          value: 20
         - useVariable: 1
           name: currentHealth
           tooltip: 
@@ -950,6 +950,7 @@ MonoBehaviour:
     editorFlags: 3
     activeStateName: 
     mouseEvents: 0
+    handleLevelLoaded: 0
     handleTriggerEnter2D: 0
     handleTriggerExit2D: 0
     handleTriggerStay2D: 0
@@ -962,9 +963,14 @@ MonoBehaviour:
     handleCollisionEnter: 0
     handleCollisionExit: 0
     handleCollisionStay: 0
+    handleParticleCollision: 0
     handleControllerColliderHit: 0
+    handleJointBreak: 0
+    handleJointBreak2D: 0
     handleOnGUI: 0
     handleFixedUpdate: 0
+    handleLateUpdate: 0
     handleApplicationEvents: 0
+    handleLegacyNetworking: 0
     handleAnimatorMove: 0
     handleAnimatorIK: 0
