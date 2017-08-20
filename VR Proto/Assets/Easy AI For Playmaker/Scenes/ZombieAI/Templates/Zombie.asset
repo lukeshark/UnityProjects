@@ -15,17 +15,17 @@ MonoBehaviour:
   fsm:
     dataVersion: 2
     usedInTemplate: {fileID: 11400000}
-    name: FSM
+    name: Movement
     startState: Find closest human
     states:
     - name: Find closest human
-      description: 
+      description: Just the player for now
       colorIndex: 0
       position:
         serializedVersion: 2
         x: 54.328125
-        y: 135.27344
-        width: 142
+        y: 119.27344
+        width: 159.5
         height: 32
       isBreakpoint: 0
       isSequence: 0
@@ -49,7 +49,7 @@ MonoBehaviour:
         - Game Object Compare
         - 
         actionEnabled: 010101
-        actionIsOpen: 010001
+        actionIsOpen: 010101
         actionStartIndex: 00000000070000000d000000
         actionHashCodes: d899af02ef8d850400000000
         unityObjectParams: []
@@ -60,7 +60,7 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: {fileID: 0}
-        - useVariable: 0
+        - useVariable: 1
           name: 
           tooltip: 
           showInInspector: 0
@@ -80,7 +80,7 @@ MonoBehaviour:
             useVariable: 1
             name: Target
             tooltip: 
-            showInInspector: 0
+            showInInspector: 1
             networkSync: 0
             value: {fileID: 0}
         animationCurveParams: []
@@ -95,7 +95,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: Humans
+          value: Player
         fsmObjectParams: []
         fsmVarParams: []
         fsmArrayParams: []
@@ -163,7 +163,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 104.78906
-        y: 226.29688
+        y: 210.29688
         width: 100
         height: 32
       isBreakpoint: 0
@@ -390,7 +390,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 341.0703
-        y: 201.63281
+        y: 185.63281
         width: 145
         height: 48
       isBreakpoint: 0
@@ -427,7 +427,7 @@ MonoBehaviour:
         - 
         - 
         actionEnabled: 0101010101
-        actionIsOpen: 0000000000
+        actionIsOpen: 0000010101
         actionStartIndex: 0000000004000000040000000600000009000000
         actionHashCodes: 36f09400000000009bd6f80148c011011bcdca04
         unityObjectParams: []
@@ -435,7 +435,7 @@ MonoBehaviour:
         - useVariable: 1
           name: Target
           tooltip: 
-          showInInspector: 0
+          showInInspector: 1
           networkSync: 0
           value: {fileID: 0}
         fsmOwnerDefaultParams:
@@ -541,13 +541,13 @@ MonoBehaviour:
         paramDataPos: 00000000000000000000000000000000010000000000000001000000000000000100000002000000030000000400000001000000020000000300000002000000
         paramByteDataSize: 00000000000000000000000001000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000001000000
     - name: send hit to target
-      description: 
+      description: Use this to send damage to player
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 368.89844
-        y: 113.171875
-        width: 129
+        x: 358.89844
+        y: 101.171875
+        width: 188.5
         height: 32
       isBreakpoint: 0
       isSequence: 0
@@ -591,7 +591,7 @@ MonoBehaviour:
               useVariable: 1
               name: Target
               tooltip: 
-              showInInspector: 0
+              showInInspector: 1
               networkSync: 0
               value: {fileID: 0}
           fsmName:
@@ -651,7 +651,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 739.1094
-        y: 144
+        y: 128
         width: 100
         height: 16
       isBreakpoint: 0
@@ -756,7 +756,7 @@ MonoBehaviour:
       - useVariable: 1
         name: Target
         tooltip: 
-        showInInspector: 0
+        showInInspector: 1
         networkSync: 0
         value: {fileID: 0}
       objectVariables: []

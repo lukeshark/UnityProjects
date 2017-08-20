@@ -15,7 +15,7 @@ MonoBehaviour:
   fsm:
     dataVersion: 2
     usedInTemplate: {fileID: 11400000}
-    name: FSM
+    name: AI
     startState: Find closest human
     states:
     - name: ' '
@@ -99,7 +99,7 @@ MonoBehaviour:
         - 
         - Game Object Compare
         actionEnabled: 0101
-        actionIsOpen: 0000
+        actionIsOpen: 0001
         actionStartIndex: 0000000007000000
         actionHashCodes: d899af02ef8d8504
         unityObjectParams: []
@@ -466,8 +466,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 756.27344
-        y: 229.82031
+        x: 763.27344
+        y: 177.82031
         width: 195
         height: 48
       isBreakpoint: 0
@@ -837,8 +837,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 1093
-        y: 261
+        x: 1091
+        y: 258
         width: 100
         height: 32
       isBreakpoint: 0
@@ -1067,6 +1067,7 @@ MonoBehaviour:
     editorFlags: 3
     activeStateName: 
     mouseEvents: 0
+    handleLevelLoaded: 0
     handleTriggerEnter2D: 0
     handleTriggerExit2D: 0
     handleTriggerStay2D: 0
@@ -1079,9 +1080,14 @@ MonoBehaviour:
     handleCollisionEnter: 0
     handleCollisionExit: 0
     handleCollisionStay: 0
+    handleParticleCollision: 0
     handleControllerColliderHit: 0
+    handleJointBreak: 0
+    handleJointBreak2D: 0
     handleOnGUI: 0
     handleFixedUpdate: 0
+    handleLateUpdate: 0
     handleApplicationEvents: 0
+    handleLegacyNetworking: 0
     handleAnimatorMove: 0
     handleAnimatorIK: 0
