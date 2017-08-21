@@ -276,9 +276,9 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 402
-        y: 293
-        width: 243
+        x: 187.85156
+        y: 323.5547
+        width: 253
         height: 32
       isBreakpoint: 0
       isSequence: 0
@@ -583,6 +583,14 @@ MonoBehaviour:
         isSystemEvent: 0
         isGlobal: 1
       toState: Substract health
+      linkStyle: 0
+      linkConstraint: 0
+      colorIndex: 0
+    - fsmEvent:
+        name: Death
+        isSystemEvent: 0
+        isGlobal: 1
+      toState: set animator trigger and stop agent
       linkStyle: 0
       linkConstraint: 0
       colorIndex: 0

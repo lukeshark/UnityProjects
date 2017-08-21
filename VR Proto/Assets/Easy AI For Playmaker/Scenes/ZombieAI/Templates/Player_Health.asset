@@ -23,7 +23,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 62.84375
+        x: 110.84375
         y: 180.42969
         width: 330
         height: 16
@@ -160,7 +160,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 458.5
+        x: 506.5
         y: 147.21875
         width: 232
         height: 32
@@ -337,8 +337,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 500
-        y: 255
+        x: 640.375
+        y: 298.0078
         width: 128
         height: 32
       isBreakpoint: 0
@@ -420,9 +420,9 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 375.48438
-        y: 326.3828
-        width: 214
+        x: 331.29688
+        y: 318.03125
+        width: 226
         height: 32
       isBreakpoint: 0
       isSequence: 0
@@ -572,8 +572,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 114.61719
-        y: 331.09375
+        x: 63.742188
+        y: 310.6328
         width: 204
         height: 32
       isBreakpoint: 0
@@ -719,7 +719,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 743
+        x: 791
         y: 173.99219
         width: 121
         height: 32
@@ -804,7 +804,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 200.98438
+        x: 248.98438
         y: 101.08594
         width: 100
         height: 32
@@ -904,6 +904,14 @@ MonoBehaviour:
         isSystemEvent: 0
         isGlobal: 1
       toState: substract health
+      linkStyle: 0
+      linkConstraint: 0
+      colorIndex: 0
+    - fsmEvent:
+        name: Death
+        isSystemEvent: 0
+        isGlobal: 1
+      toState: set animator trigger and wait 4
       linkStyle: 0
       linkConstraint: 0
       colorIndex: 0
