@@ -441,14 +441,16 @@ MonoBehaviour:
         - HutongGames.PlayMaker.Actions.SendEvent
         - HutongGames.PlayMaker.Actions.Wait
         - HutongGames.PlayMaker.Actions.SetAnimatorTrigger
+        - HutongGames.PlayMaker.Actions.IntAdd
         customNames:
         - 
         - 
         - 
-        actionEnabled: 010101
-        actionIsOpen: 000000
-        actionStartIndex: 000000000400000007000000
-        actionHashCodes: 5e69bb0448c011019bd6f801
+        - 
+        actionEnabled: 01010101
+        actionIsOpen: 01000001
+        actionStartIndex: 00000000040000000700000009000000
+        actionHashCodes: 5e69bb0448c011019bd6f801603dd905
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -522,7 +524,19 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 4
-        fsmIntParams: []
+        fsmIntParams:
+        - useVariable: 1
+          name: TotalScore
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 100
         fsmBoolParams: []
         fsmVector2Params: []
         fsmVector3Params: []
@@ -532,12 +546,12 @@ MonoBehaviour:
         stringParams:
         - Death
         - FINISHED
-        byteData: 0000
+        byteData: 000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 1f000000170000000f000000010000000f00000017000000010000001400000012000000
+        paramDataType: 1f000000170000000f000000010000000f00000017000000010000001400000012000000100000001000000001000000
         paramName:
         - eventTarget
         - sendEvent
@@ -548,15 +562,18 @@ MonoBehaviour:
         - realTime
         - gameObject
         - trigger
-        paramDataPos: 000000000000000000000000000000000100000001000000010000000000000000000000
-        paramByteDataSize: 000000000000000000000000010000000000000000000000010000000000000000000000
+        - intVariable
+        - add
+        - everyFrame
+        paramDataPos: 000000000000000000000000000000000100000001000000010000000000000000000000000000000100000002000000
+        paramByteDataSize: 000000000000000000000000010000000000000000000000010000000000000000000000000000000000000001000000
     - name: set position to a spawn point
       description: 
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 366.89844
-        y: 411.78125
+        x: 114.61719
+        y: 331.09375
         width: 204
         height: 32
       isBreakpoint: 0
