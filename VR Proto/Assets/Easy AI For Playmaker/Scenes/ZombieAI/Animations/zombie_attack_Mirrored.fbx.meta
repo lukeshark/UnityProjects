@@ -3,7 +3,7 @@ guid: 4c2be2d2664a3464ca1bc866d919525a
 timeCreated: 1471985960
 licenseType: Pro
 ModelImporter:
-  serializedVersion: 19
+  serializedVersion: 21
   fileIDToRecycleName:
     100000: Skeleton_SimplePeople
     100002: Skeleton_SimplePeople (2)
@@ -60,9 +60,11 @@ ModelImporter:
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
-    resampleRotations: 1
+    resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
@@ -73,6 +75,7 @@ ModelImporter:
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
+    extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
       name: mixamo.com
@@ -176,7 +179,10 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
+    importVisibility: 0
     importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
@@ -192,286 +198,13 @@ ModelImporter:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
+    normalCalculationMode: 0
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
-    human:
-    - boneName: Skeleton_SimplePeople
-      humanName: Hips
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: Skeleton_SimplePeople_L (5)
-      humanName: LeftUpperLeg
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: Skeleton_SimplePeople_R (5)
-      humanName: RightUpperLeg
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: Skeleton_SimplePeople_L (6)
-      humanName: LeftLowerLeg
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: Skeleton_SimplePeople_R (6)
-      humanName: RightLowerLeg
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: Skeleton_SimplePeople_L (7)
-      humanName: LeftFoot
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: Skeleton_SimplePeople_R (7)
-      humanName: RightFoot
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: Skeleton_SimplePeople (2)
-      humanName: Spine
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: Skeleton_SimplePeople (3)
-      humanName: Chest
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: Skeleton_SimplePeople (4)
-      humanName: Head
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: Skeleton_SimplePeople_L
-      humanName: LeftUpperArm
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: Skeleton_SimplePeople_R
-      humanName: RightUpperArm
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: Skeleton_SimplePeople_L (2)
-      humanName: LeftLowerArm
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: Skeleton_SimplePeople_R (2)
-      humanName: RightLowerArm
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: Skeleton_SimplePeople_L (3)
-      humanName: LeftHand
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: Skeleton_SimplePeople_R (3)
-      humanName: RightHand
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: Skeleton_SimplePeople_L (8)
-      humanName: LeftToes
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: Skeleton_SimplePeople_R (8)
-      humanName: RightToes
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: Skeleton_SimplePeople_L (9)
-      humanName: LeftEye
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: Skeleton_SimplePeople_R (9)
-      humanName: RightEye
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    skeleton:
-    - name: zombie_attack_Mirrored(Clone)
-      position: {x: 0, y: 0, z: 0}
-      rotation: {x: 0, y: 0, z: 0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: Skeleton_SimplePeople
-      position: {x: 0.010502983, y: 0.90184903, z: -0.002969942}
-      rotation: {x: 0.01245519, y: 0.7207031, z: 0.6931311, w: -0.0011014596}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: Skeleton_SimplePeople (2)
-      position: {x: -0, y: 0, z: 0.466613}
-      rotation: {x: -0.013524561, y: 0.05097522, z: 0.70313555, w: 0.7090973}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: Skeleton_SimplePeople (3)
-      position: {x: -0, y: 0, z: 0.45881802}
-      rotation: {x: 0.102247305, y: -0.00021247905, z: 0.99005795, w: 0.09659581}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: Skeleton_SimplePeople (4)
-      position: {x: -0.001287, y: 0.001561, z: 0.23473498}
-      rotation: {x: 0.5283208, y: -0.4103853, z: -0.4743371, w: 0.5722459}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: Skeleton_SimplePeople_L (9)
-      position: {x: -0, y: 0, z: 0.47236}
-      rotation: {x: 0, y: 0, z: 0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: Skeleton_SimplePeople_R (9)
-      position: {x: 0.000004, y: 0.013441, z: 0.47216898}
-      rotation: {x: 0, y: 0, z: 0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: Skeleton_SimplePeople_L
-      position: {x: -0.074769, y: 0.456758, z: -0.012697}
-      rotation: {x: -0.037937995, y: 0.69612044, z: 0.7112072, w: -0.09034112}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: Skeleton_SimplePeople_L (2)
-      position: {x: -0.000052, y: 0.004999, z: 0.580259}
-      rotation: {x: -0.022567697, y: 0.0022710247, z: 0.013642418, w: 0.99964964}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: Skeleton_SimplePeople_L (3)
-      position: {x: -0.000008, y: -0.009847, z: 0.499928}
-      rotation: {x: 0.04138881, y: 0.06331532, z: -0.21603367, w: 0.9734514}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: Skeleton_SimplePeople_L (4)
-      position: {x: -0, y: 0, z: 0.13}
-      rotation: {x: -0.0564434, y: 0.7105191, z: 0.69906056, w: 0.057368584}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: Skeleton_SimplePeople_R
-      position: {x: 0.074438, y: -0.46107396, z: 0.002226}
-      rotation: {x: -0.047883965, y: 0.73740476, z: -0.6704273, w: 0.06684785}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: Skeleton_SimplePeople_R (2)
-      position: {x: -0.000054999997, y: -0.004999, z: 0.580259}
-      rotation: {x: 0.029360145, y: 0.0015439984, z: -0.019513011, w: 0.99937725}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: Skeleton_SimplePeople_R (3)
-      position: {x: -0.000008, y: 0.009847, z: 0.499928}
-      rotation: {x: 0.11140628, y: 0.085738085, z: 0.1691374, w: 0.97551537}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: Skeleton_SimplePeople_R (4)
-      position: {x: -0, y: 0, z: 0.13}
-      rotation: {x: 0.057368584, y: -0.69906056, z: 0.7105191, w: 0.0564434}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: Skeleton_SimplePeople_L (5)
-      position: {x: 0.21293399, y: 0.004001, z: -0.084281996}
-      rotation: {x: 0.98856354, y: 0.105879694, z: 0.08189466, w: -0.06946137}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: Skeleton_SimplePeople_L (6)
-      position: {x: -0, y: 0, z: 0.390654}
-      rotation: {x: -0.3338486, y: -0.046803635, z: 0.38674915, w: 0.8583586}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: Skeleton_SimplePeople_L (7)
-      position: {x: -0, y: 0, z: 0.42235}
-      rotation: {x: 0.71776855, y: -0.21644555, z: 0.011030392, w: 0.66169333}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: Skeleton_SimplePeople_L (8)
-      position: {x: -0, y: 0, z: 0.134252}
-      rotation: {x: 0.8567338, y: -0.008157715, z: -0.020078957, w: 0.51530343}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: Skeleton_SimplePeople_R (5)
-      position: {x: -0.201896, y: -0.000284, z: -0.081760995}
-      rotation: {x: 0.90020907, y: 0.41892987, z: -0.059841946, w: -0.102666855}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: Skeleton_SimplePeople_R (6)
-      position: {x: -0, y: 0, z: 0.390654}
-      rotation: {x: -0.32269755, y: -0.047950782, z: 0.3014897, w: 0.8959191}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: Skeleton_SimplePeople_R (7)
-      position: {x: -0, y: 0, z: 0.42235}
-      rotation: {x: 0.764499, y: 0.037676163, z: -0.093445376, w: 0.6367022}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: Skeleton_SimplePeople_R (8)
-      position: {x: -0, y: 0, z: 0.134252}
-      rotation: {x: 0.8566839, y: -0.015387132, z: -0.008059945, w: 0.5155492}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
+    serializedVersion: 2
+    human: []
+    skeleton: []
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5
@@ -480,9 +213,12 @@ ModelImporter:
     legStretch: 0.05
     feetSpacing: 0
     rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 3
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
