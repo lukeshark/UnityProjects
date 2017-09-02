@@ -342,14 +342,16 @@ MonoBehaviour:
         - HutongGames.PlayMaker.Actions.Wait
         - HutongGames.PlayMaker.Actions.SetAnimatorTrigger
         - HutongGames.PlayMaker.Actions.SendEvent
+        - HutongGames.PlayMaker.Actions.IntAdd
         customNames:
         - 
         - 
         - 
-        actionEnabled: 010101
-        actionIsOpen: 010101
-        actionStartIndex: 000000000300000005000000
-        actionHashCodes: 48c011019bd6f8015e69bb04
+        - 
+        actionEnabled: 01010101
+        actionIsOpen: 01010101
+        actionStartIndex: 00000000030000000500000009000000
+        actionHashCodes: 48c011019bd6f8015e69bb04603dd905
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -423,7 +425,19 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 0
-        fsmIntParams: []
+        fsmIntParams:
+        - useVariable: 1
+          name: TotalScore
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 100
         fsmBoolParams: []
         fsmVector2Params: []
         fsmVector3Params: []
@@ -433,12 +447,12 @@ MonoBehaviour:
         stringParams:
         - FINISHED
         - Death
-        byteData: 0000
+        byteData: 000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 0f000000170000000100000014000000120000001f000000170000000f00000001000000
+        paramDataType: 0f000000170000000100000014000000120000001f000000170000000f00000001000000100000001000000001000000
         paramName:
         - time
         - finishEvent
@@ -449,16 +463,19 @@ MonoBehaviour:
         - sendEvent
         - delay
         - everyFrame
-        paramDataPos: 000000000000000000000000000000000000000000000000010000000100000001000000
-        paramByteDataSize: 000000000000000001000000000000000000000000000000000000000000000001000000
+        - intVariable
+        - add
+        - everyFrame
+        paramDataPos: 000000000000000000000000000000000000000000000000010000000100000001000000000000000100000002000000
+        paramByteDataSize: 000000000000000001000000000000000000000000000000000000000000000001000000000000000000000001000000
     - name: Desactivate gameobject
       description: 
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 460
-        y: 380.0078
-        width: 168
+        x: 486.8203
+        y: 371.0078
+        width: 179
         height: 16
       isBreakpoint: 0
       isSequence: 0
@@ -658,13 +675,15 @@ MonoBehaviour:
         colorIndex: 0
       actionData:
         actionNames:
+        - HutongGames.PlayMaker.Actions.IntAdd
         - HutongGames.PlayMaker.Actions.IntOperator
         customNames:
         - 
-        actionEnabled: 01
-        actionIsOpen: 01
-        actionStartIndex: 00000000
-        actionHashCodes: 14180903
+        - 
+        actionEnabled: 0101
+        actionIsOpen: 0101
+        actionStartIndex: 0000000003000000
+        actionHashCodes: 603dd90514180903
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -681,6 +700,18 @@ MonoBehaviour:
         fsmEnumParams: []
         fsmFloatParams: []
         fsmIntParams:
+        - useVariable: 1
+          name: TotalScore
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 50
         - useVariable: 1
           name: currentHealth
           tooltip: 
@@ -706,25 +737,31 @@ MonoBehaviour:
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams: []
-        byteData: 0100000000
+        byteData: 000100000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 1000000010000000070000001000000001000000
+        paramDataType: 1000000010000000010000001000000010000000070000001000000001000000
         paramName:
+        - intVariable
+        - add
+        - everyFrame
         - integer1
         - integer2
         - operation
         - storeResult
         - everyFrame
-        paramDataPos: 0000000001000000000000000200000004000000
-        paramByteDataSize: 0000000000000000040000000000000001000000
+        paramDataPos: 0000000001000000000000000200000003000000010000000400000005000000
+        paramByteDataSize: 0000000000000000010000000000000000000000040000000000000001000000
     events:
     - name: FINISHED
       isSystemEvent: 1
       isGlobal: 0
     - name: Death
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: Despawn
       isSystemEvent: 0
       isGlobal: 1
     - name: Get Damage
@@ -761,6 +798,14 @@ MonoBehaviour:
         isSystemEvent: 0
         isGlobal: 1
       toState: HEADSHOT
+      linkStyle: 0
+      linkConstraint: 0
+      colorIndex: 0
+    - fsmEvent:
+        name: Despawn
+        isSystemEvent: 0
+        isGlobal: 1
+      toState: Desactivate gameobject
       linkStyle: 0
       linkConstraint: 0
       colorIndex: 0

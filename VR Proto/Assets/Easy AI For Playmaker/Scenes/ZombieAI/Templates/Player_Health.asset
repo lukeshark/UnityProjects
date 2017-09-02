@@ -800,6 +800,9 @@ MonoBehaviour:
     - name: Death
       isSystemEvent: 0
       isGlobal: 1
+    - name: Despawn
+      isSystemEvent: 0
+      isGlobal: 1
     - name: Get Damage
       isSystemEvent: 0
       isGlobal: 1
@@ -834,6 +837,14 @@ MonoBehaviour:
         isSystemEvent: 0
         isGlobal: 1
       toState: set animator trigger and wait 4
+      linkStyle: 0
+      linkConstraint: 0
+      colorIndex: 0
+    - fsmEvent:
+        name: Despawn
+        isSystemEvent: 0
+        isGlobal: 1
+      toState: Destroy
       linkStyle: 0
       linkConstraint: 0
       colorIndex: 0
