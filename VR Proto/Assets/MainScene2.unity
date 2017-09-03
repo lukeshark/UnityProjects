@@ -57603,16 +57603,18 @@ MonoBehaviour:
         - HutongGames.PlayMaker.Actions.ArrayGet
         - HutongGames.PlayMaker.Actions.ActivateGameObject
         - HutongGames.PlayMaker.Actions.SetIntValue
+        - HutongGames.PlayMaker.Actions.IntAdd
         customNames:
         - 
         - 
         - 
         - 
         - 
-        actionEnabled: 0101010101
-        actionIsOpen: 0101010101
-        actionStartIndex: 0000000005000000080000000d00000012000000
-        actionHashCodes: 02161602fb2588016ba59301b2cf1000603dd905
+        - 
+        actionEnabled: 010101010101
+        actionIsOpen: 010101010101
+        actionStartIndex: 0000000005000000080000000d0000001200000015000000
+        actionHashCodes: 02161602fb2588016ba59301b2cf1000603dd905603dd905
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -57796,6 +57798,18 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 1
+        - useVariable: 1
+          name: WeaponsAmount
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: -1
         fsmBoolParams:
         - useVariable: 0
           name: 
@@ -57816,13 +57830,13 @@ MonoBehaviour:
         fsmQuaternionParams: []
         stringParams:
         - 
-        byteData: 0000000000
+        byteData: 000000000000
         arrayParamSizes: 03000000
         arrayParamTypes:
         - HutongGames.PlayMaker.FsmVar
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 290000000c00000027000000270000002700000029000000100000000100000029000000100000002700000001000000170000001400000011000000110000000100000001000000100000001000000001000000
+        paramDataType: 290000000c00000027000000270000002700000029000000100000000100000029000000100000002700000001000000170000001400000011000000110000000100000001000000100000001000000001000000100000001000000001000000
         paramName:
         - array
         - variables
@@ -57845,8 +57859,11 @@ MonoBehaviour:
         - intVariable
         - intValue
         - everyFrame
-        paramDataPos: 000000000000000000000000010000000200000001000000000000000000000002000000010000000300000001000000000000000000000000000000010000000200000003000000020000000300000004000000
-        paramByteDataSize: 000000000000000000000000000000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000000000000100000001000000000000000000000001000000
+        - intVariable
+        - add
+        - everyFrame
+        paramDataPos: 000000000000000000000000010000000200000001000000000000000000000002000000010000000300000001000000000000000000000000000000010000000200000003000000020000000300000004000000040000000500000005000000
+        paramByteDataSize: 000000000000000000000000000000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000000000000100000001000000000000000000000001000000000000000000000001000000
     - name: Get Next Weapon in Array
       description: 
       colorIndex: 0
@@ -57855,7 +57872,7 @@ MonoBehaviour:
         x: 960.7344
         y: 159.9375
         width: 193
-        height: 32
+        height: 48
       isBreakpoint: 0
       isSequence: 0
       hideUnused: 0
@@ -57868,15 +57885,25 @@ MonoBehaviour:
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
+      - fsmEvent:
+          name: SwapWeapon
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Reset
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
       actionData:
         actionNames:
         - HutongGames.PlayMaker.Actions.ArrayGetNext
+        - HutongGames.PlayMaker.Actions.IntCompare
         customNames:
         - 
-        actionEnabled: 01
-        actionIsOpen: 01
-        actionStartIndex: 00000000
-        actionHashCodes: 92de7404
+        - 
+        actionEnabled: 0101
+        actionIsOpen: 0101
+        actionStartIndex: 0000000007000000
+        actionHashCodes: 92de740409faa102
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -57889,7 +57916,7 @@ MonoBehaviour:
         fsmStringParams: []
         fsmObjectParams: []
         fsmVarParams:
-        - variableName: NextWeapon
+        - variableName: EquippedWeapon
           objectType: UnityEngine.Object
           useVariable: 1
           type: 3
@@ -57948,6 +57975,18 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 0
+        - useVariable: 1
+          name: CurrentWeapon
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 1
+          name: WeaponsAmount
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
         fsmBoolParams: []
         fsmVector2Params: []
         fsmVector3Params: []
@@ -57956,13 +57995,16 @@ MonoBehaviour:
         fsmQuaternionParams: []
         stringParams:
         - 
+        - 
+        - SwapWeapon
         - FINISHED
-        byteData: 
+        - FINISHED
+        byteData: 00
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 29000000100000001000000017000000170000002700000010000000
+        paramDataType: 29000000100000001000000017000000170000002700000010000000100000001000000017000000170000001700000001000000
         paramName:
         - array
         - startIndex
@@ -57971,8 +58013,14 @@ MonoBehaviour:
         - finishedEvent
         - result
         - currentIndex
-        paramDataPos: 00000000000000000100000000000000010000000000000002000000
-        paramByteDataSize: 00000000000000000000000000000000000000000000000000000000
+        - integer1
+        - integer2
+        - equal
+        - lessThan
+        - greaterThan
+        - everyFrame
+        paramDataPos: 00000000000000000100000000000000010000000000000002000000030000000400000002000000030000000400000000000000
+        paramByteDataSize: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000
     - name: State 1
       description: 
       colorIndex: 0
@@ -58003,7 +58051,7 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 000101
+        actionEnabled: 000100
         actionIsOpen: 010101
         actionStartIndex: 00000000050000000a000000
         actionHashCodes: b2cf1000b2cf10004d51cf04
@@ -58033,7 +58081,7 @@ MonoBehaviour:
         - ownerOption: 1
           gameObject:
             useVariable: 1
-            name: NextWeapon
+            name: EquippedWeapon
             tooltip: 
             showInInspector: 0
             networkSync: 0
@@ -58245,6 +58293,83 @@ MonoBehaviour:
         - everyFrame
         paramDataPos: 000000000000000001000000000000000100000001000000020000000300000002000000030000000200000004000000050000000400000005000000
         paramByteDataSize: 000000000000000000000000010000000100000000000000000000000000000001000000010000000000000000000000000000000100000001000000
+    - name: Reset
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 1003.10156
+        y: 262.60156
+        width: 100
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: State 1
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.SetIntValue
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: 603dd905
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams:
+        - useVariable: 1
+          name: CurrentWeapon
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams: []
+        byteData: 00
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 100000001000000001000000
+        paramName:
+        - intVariable
+        - intValue
+        - everyFrame
+        paramDataPos: 000000000100000000000000
+        paramByteDataSize: 000000000000000001000000
     events:
     - name: FINISHED
       isSystemEvent: 1
