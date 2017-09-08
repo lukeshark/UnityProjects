@@ -3627,8 +3627,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 110.484375
-        y: 412.0625
+        x: 101.72656
+        y: 470.6953
         width: 325
         height: 32
       isBreakpoint: 0
@@ -3747,17 +3747,17 @@ MonoBehaviour:
         colorIndex: 0
       actionData:
         actionNames:
+        - HutongGames.PlayMaker.Actions.IntAdd
         - HutongGames.PlayMaker.Actions.PmtSpawn
         - HutongGames.PlayMaker.Actions.ActivateGameObject
-        - HutongGames.PlayMaker.Actions.IntAdd
         customNames:
         - 
         - 
         - 
-        actionEnabled: 010001
+        actionEnabled: 010100
         actionIsOpen: 010101
-        actionStartIndex: 00000000070000000c000000
-        actionHashCodes: 90aefe00b2cf1000603dd905
+        actionStartIndex: 00000000030000000a000000
+        actionHashCodes: 603dd90590aefe00b2cf1000
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
@@ -3851,8 +3851,11 @@ MonoBehaviour:
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 1200000013000000130000001c0000001300000017000000170000001400000011000000110000000100000001000000100000001000000001000000
+        paramDataType: 1000000010000000010000001200000013000000130000001c0000001300000017000000170000001400000011000000110000000100000001000000
         paramName:
+        - intVariable
+        - add
+        - everyFrame
         - poolName
         - gameObject
         - spawnTransform
@@ -3865,18 +3868,15 @@ MonoBehaviour:
         - recursive
         - resetOnExit
         - everyFrame
-        - intVariable
-        - add
-        - everyFrame
-        paramDataPos: 000000000000000001000000000000000200000000000000010000000000000000000000010000000000000001000000000000000100000002000000
-        paramByteDataSize: 000000000000000000000000000000000000000000000000000000000000000000000000000000000100000001000000000000000000000001000000
+        paramDataPos: 000000000100000000000000000000000000000001000000000000000200000000000000010000000000000000000000010000000100000002000000
+        paramByteDataSize: 000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000001000000
     - name: Wait to spawn more zombies
       description: 
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 160.875
-        y: 803.5156
+        x: 164.15625
+        y: 784.8203
         width: 201
         height: 32
       isBreakpoint: 0
@@ -3887,7 +3887,7 @@ MonoBehaviour:
           name: FINISHED
           isSystemEvent: 1
           isGlobal: 0
-        toState: Get a random zombie and a random spawn point
+        toState: Check if the scene is full of zombies
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -3938,7 +3938,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: -0.2
+          value: -0.05
         - useVariable: 1
           name: WaitTime
           tooltip: 
@@ -3999,8 +3999,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 149.61719
-        y: 236.32812
+        x: 258.52344
+        y: 194.49219
         width: 244
         height: 32
       isBreakpoint: 0
@@ -4143,7 +4143,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 15
+          value: 25
         fsmBoolParams: []
         fsmVector2Params: []
         fsmVector3Params: []
@@ -4174,8 +4174,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 525.2656
-        y: 402.35938
+        x: 514.77344
+        y: 294.85156
         width: 145
         height: 32
       isBreakpoint: 0
@@ -4186,7 +4186,7 @@ MonoBehaviour:
           name: FINISHED
           isSystemEvent: 1
           isGlobal: 0
-        toState: Get Array length of ZombiesInScene
+        toState: Check if the scene is full of zombies
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -4258,7 +4258,7 @@ MonoBehaviour:
           name: FINISHED
           isSystemEvent: 1
           isGlobal: 0
-        toState: Get Array length of ZombiesInScene
+        toState: Check if the scene is full of zombies
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -4702,7 +4702,7 @@ MonoBehaviour:
         tooltip: 
         showInInspector: 0
         networkSync: 0
-        value: 15
+        value: 25
       boolVariables: []
       stringVariables: []
       vector2Variables: []
@@ -7829,15 +7829,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4353656899249034, guid: bc2b46850a711974584e688cbcd1b0a9, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0.022
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 4353656899249034, guid: bc2b46850a711974584e688cbcd1b0a9, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.03999999
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4353656899249034, guid: bc2b46850a711974584e688cbcd1b0a9, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0.007999986
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4353656899249034, guid: bc2b46850a711974584e688cbcd1b0a9, type: 2}
       propertyPath: m_LocalRotation.x
@@ -10055,15 +10055,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4266035093297392, guid: 3dda11891e7a91e46b34a6015132db4c, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0.022
+      value: -0.01
       objectReference: {fileID: 0}
     - target: {fileID: 4266035093297392, guid: 3dda11891e7a91e46b34a6015132db4c, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.03999999
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4266035093297392, guid: 3dda11891e7a91e46b34a6015132db4c, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0.007999986
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4266035093297392, guid: 3dda11891e7a91e46b34a6015132db4c, type: 2}
       propertyPath: m_LocalRotation.x
@@ -10084,10 +10084,6 @@ Prefab:
     - target: {fileID: 4266035093297392, guid: 3dda11891e7a91e46b34a6015132db4c, type: 2}
       propertyPath: m_RootOrder
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1462749864121790, guid: 3dda11891e7a91e46b34a6015132db4c, type: 2}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3dda11891e7a91e46b34a6015132db4c, type: 2}
@@ -39369,15 +39365,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4545522021875718, guid: 85a41377ca4366d429e0a7f5c610a9cf, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0.022
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 4545522021875718, guid: 85a41377ca4366d429e0a7f5c610a9cf, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.03999999
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4545522021875718, guid: 85a41377ca4366d429e0a7f5c610a9cf, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0.007999986
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4545522021875718, guid: 85a41377ca4366d429e0a7f5c610a9cf, type: 2}
       propertyPath: m_LocalRotation.x
@@ -51417,7 +51413,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 146
-        y: 196
+        y: 276
         width: 110
         height: 32
       isBreakpoint: 0
@@ -51519,7 +51515,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 50.5
-        y: 348.5
+        y: 428.5
         width: 349
         height: 32
       isBreakpoint: 0
@@ -51607,7 +51603,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 363.66406
-        y: 190.14844
+        y: 270.14844
         width: 293.5
         height: 80
       isBreakpoint: 0
@@ -51764,7 +51760,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 148.27344
-        y: 134.84375
+        y: 214.84375
         width: 106
         height: 32
       isBreakpoint: 0
@@ -52053,7 +52049,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 960.7344
-        y: 191.9375
+        y: 271.9375
         width: 193
         height: 48
       isBreakpoint: 0
@@ -52210,7 +52206,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 821.0078
-        y: 291.17188
+        y: 371.17188
         width: 100
         height: 32
       isBreakpoint: 0
@@ -52341,7 +52337,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 740.66406
-        y: 189.76562
+        y: 269.76562
         width: 149
         height: 32
       isBreakpoint: 0
@@ -52482,7 +52478,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 1003.10156
-        y: 294.60156
+        y: 374.60156
         width: 100
         height: 32
       isBreakpoint: 0
@@ -52558,8 +52554,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 390.89062
-        y: 100.30469
+        x: 423.625
+        y: 111.46875
         width: 100
         height: 32
       isBreakpoint: 0
@@ -52668,8 +52664,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 582
-        y: 111
+        x: 567.89844
+        y: 167.52344
         width: 100
         height: 32
       isBreakpoint: 0
@@ -52792,6 +52788,12 @@ MonoBehaviour:
     - name: SwapWeapon
       isSystemEvent: 0
       isGlobal: 0
+    - name: WeaponEmpty
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: WeaponNotReady
+      isSystemEvent: 0
+      isGlobal: 0
     globalTransitions: []
     variables:
       floatVariables: []
@@ -52809,25 +52811,13 @@ MonoBehaviour:
         networkSync: 0
         value: 0
       boolVariables: []
-      stringVariables:
-      - useVariable: 1
-        name: compareName
-        tooltip: 
-        showInInspector: 0
-        networkSync: 0
-        value: 
+      stringVariables: []
       vector2Variables: []
       vector3Variables: []
       colorVariables: []
       rectVariables: []
       quaternionVariables: []
       gameObjectVariables:
-      - useVariable: 1
-        name: EnemySelected
-        tooltip: 
-        showInInspector: 0
-        networkSync: 0
-        value: {fileID: 0}
       - useVariable: 1
         name: EquippedWeapon
         tooltip: 
@@ -52858,30 +52848,6 @@ MonoBehaviour:
         showInInspector: 1
         networkSync: 0
         value: {fileID: 1776200483}
-      - useVariable: 1
-        name: collider
-        tooltip: 
-        showInInspector: 0
-        networkSync: 0
-        value: {fileID: 0}
-      - useVariable: 1
-        name: colliderGun
-        tooltip: 
-        showInInspector: 0
-        networkSync: 0
-        value: {fileID: 0}
-      - useVariable: 1
-        name: colliderModel
-        tooltip: 
-        showInInspector: 0
-        networkSync: 0
-        value: {fileID: 0}
-      - useVariable: 1
-        name: compareCollider
-        tooltip: 
-        showInInspector: 0
-        networkSync: 0
-        value: {fileID: 0}
       objectVariables: []
       materialVariables: []
       textureVariables: []
@@ -52902,7 +52868,7 @@ MonoBehaviour:
       enumVariables: []
       categories:
       - 
-      variableCategoryIDs: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+      variableCategoryIDs: 0000000000000000000000000000000000000000000000000000000000000000
     description: 
     docUrl: 
     showStateLabel: 1
@@ -52912,7 +52878,7 @@ MonoBehaviour:
     locked: 0
     manualUpdate: 0
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 1
+    preprocessed: 0
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0
@@ -60755,15 +60721,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4545522021875718, guid: 85a41377ca4366d429e0a7f5c610a9cf, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0.022
+      value: -0.01
       objectReference: {fileID: 0}
     - target: {fileID: 4545522021875718, guid: 85a41377ca4366d429e0a7f5c610a9cf, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.03999999
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4545522021875718, guid: 85a41377ca4366d429e0a7f5c610a9cf, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0.007999986
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4545522021875718, guid: 85a41377ca4366d429e0a7f5c610a9cf, type: 2}
       propertyPath: m_LocalRotation.x
@@ -60784,6 +60750,10 @@ Prefab:
     - target: {fileID: 4545522021875718, guid: 85a41377ca4366d429e0a7f5c610a9cf, type: 2}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1105891503543594, guid: 85a41377ca4366d429e0a7f5c610a9cf, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 85a41377ca4366d429e0a7f5c610a9cf, type: 2}
@@ -72322,15 +72292,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4266035093297392, guid: 3dda11891e7a91e46b34a6015132db4c, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0.022
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 4266035093297392, guid: 3dda11891e7a91e46b34a6015132db4c, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.03999999
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4266035093297392, guid: 3dda11891e7a91e46b34a6015132db4c, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0.007999986
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4266035093297392, guid: 3dda11891e7a91e46b34a6015132db4c, type: 2}
       propertyPath: m_LocalRotation.x
@@ -88440,7 +88410,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4353656899249034, guid: bc2b46850a711974584e688cbcd1b0a9, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.01
       objectReference: {fileID: 0}
     - target: {fileID: 4353656899249034, guid: bc2b46850a711974584e688cbcd1b0a9, type: 2}
       propertyPath: m_LocalPosition.y
@@ -88475,36 +88445,6 @@ Prefab:
       propertyPath: fsm.states.Array.data[0].actionData.fsmGameObjectParams.Array.data[4].value
       value: 
       objectReference: {fileID: 241476662}
-    - target: {fileID: 114778052601907334, guid: bc2b46850a711974584e688cbcd1b0a9,
-        type: 2}
-      propertyPath: fsm.states.Array.data[0].position.x
-      value: 56.992188
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778052601907334, guid: bc2b46850a711974584e688cbcd1b0a9,
-        type: 2}
-      propertyPath: fsm.states.Array.data[0].position.y
-      value: 142
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778052601907334, guid: bc2b46850a711974584e688cbcd1b0a9,
-        type: 2}
-      propertyPath: fsm.states.Array.data[1].position.x
-      value: 242
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778052601907334, guid: bc2b46850a711974584e688cbcd1b0a9,
-        type: 2}
-      propertyPath: fsm.states.Array.data[1].position.y
-      value: 171
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778052601907334, guid: bc2b46850a711974584e688cbcd1b0a9,
-        type: 2}
-      propertyPath: fsm.states.Array.data[2].position.x
-      value: 434
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778052601907334, guid: bc2b46850a711974584e688cbcd1b0a9,
-        type: 2}
-      propertyPath: fsm.states.Array.data[2].position.y
-      value: 106
-      objectReference: {fileID: 0}
     - target: {fileID: 1324612647961272, guid: bc2b46850a711974584e688cbcd1b0a9, type: 2}
       propertyPath: m_IsActive
       value: 0
