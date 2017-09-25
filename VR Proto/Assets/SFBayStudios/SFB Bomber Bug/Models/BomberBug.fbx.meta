@@ -1,0 +1,4527 @@
+fileFormatVersion: 2
+guid: c80aee186102a4520ba8a572b5f57e86
+timeCreated: 1466188287
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: abdomen
+    100002: abdomen_jnt
+    100004: Blendshape_GRP
+    100006: body
+    100008: //RootNode
+    100010: carapace
+    100012: eyes
+    100014: head
+    100016: head_jnt
+    100018: L_back_A_leg
+    100020: L_back_ankle_jnt
+    100022: L_back_B_leg
+    100024: L_back_C_leg
+    100026: L_back_contact_jnt
+    100028: L_center_A_leg
+    100030: L_center_ankle_jnt
+    100032: L_center_B_leg
+    100034: L_center_C_leg
+    100036: L_center_contact_jnt
+    100038: L_front_A_leg
+    100040: L_front_ankle_jnt
+    100042: L_front_B_leg
+    100044: L_front_C_leg
+    100046: L_front_contact_jnt
+    100048: L_horn
+    100050: L_leg_back_A_jnt
+    100052: L_leg_back_B_jnt
+    100054: L_leg_back_C_jnt
+    100056: L_leg_center_A_jnt
+    100058: L_leg_center_B_jnt
+    100060: L_leg_center_C_jnt
+    100062: L_leg_front_A_jnt
+    100064: L_leg_front_B_jnt
+    100066: L_leg_front_C_jnt
+    100068: L_pincer
+    100070: L_pincer_1_jnt
+    100072: L_pincer_2_jnt
+    100074: L_pincer_end_jnt
+    100076: L_wing
+    100078: L_wing_1_jnt
+    100080: L_wing_2_jnt
+    100082: L_wing_3_jnt
+    100084: L_wing_end_jnt
+    100086: pronotum_jnt
+    100088: R_back_A_leg
+    100090: R_back_ankle_jnt
+    100092: R_back_B_leg
+    100094: R_back_C_leg
+    100096: R_back_contact_jnt
+    100098: R_center_A_leg
+    100100: R_center_ankle_jnt
+    100102: R_center_B_leg
+    100104: R_center_C_leg
+    100106: R_center_contact_jnt
+    100108: R_front_A_leg
+    100110: R_front_ankle_jnt
+    100112: R_front_B_leg
+    100114: R_front_C_leg
+    100116: R_front_contact_jnt
+    100118: R_horn
+    100120: R_leg_back_A_jnt
+    100122: R_leg_back_B_jnt
+    100124: R_leg_back_C_jnt
+    100126: R_leg_center_A_jnt
+    100128: R_leg_center_B_jnt
+    100130: R_leg_center_C_jnt
+    100132: R_leg_front_A_jnt
+    100134: R_leg_front_B_jnt
+    100136: R_leg_front_C_jnt
+    100138: R_pincer
+    100140: R_pincer_1_jnt
+    100142: R_pincer_2_jnt
+    100144: R_pincer_end_jnt
+    100146: R_wing
+    100148: R_wing_1_jnt
+    100150: R_wing_2_jnt
+    100152: R_wing_3_jnt
+    100154: R_wing_end_jnt
+    100156: ROOT
+    100158: sphere
+    100160: sphere_jnt
+    100162: spine1_jnt
+    100164: spine2_jnt
+    100166: spine3_jnt
+    100168: spine4_jnt
+    100170: BugMesh
+    100172: Abdomen
+    100174: Body
+    100176: Carapace
+    100178: Head
+    100180: Horns
+    100182: Pincers
+    100184: Wings
+    400000: abdomen
+    400002: abdomen_jnt
+    400004: Blendshape_GRP
+    400006: body
+    400008: //RootNode
+    400010: carapace
+    400012: eyes
+    400014: head
+    400016: head_jnt
+    400018: L_back_A_leg
+    400020: L_back_ankle_jnt
+    400022: L_back_B_leg
+    400024: L_back_C_leg
+    400026: L_back_contact_jnt
+    400028: L_center_A_leg
+    400030: L_center_ankle_jnt
+    400032: L_center_B_leg
+    400034: L_center_C_leg
+    400036: L_center_contact_jnt
+    400038: L_front_A_leg
+    400040: L_front_ankle_jnt
+    400042: L_front_B_leg
+    400044: L_front_C_leg
+    400046: L_front_contact_jnt
+    400048: L_horn
+    400050: L_leg_back_A_jnt
+    400052: L_leg_back_B_jnt
+    400054: L_leg_back_C_jnt
+    400056: L_leg_center_A_jnt
+    400058: L_leg_center_B_jnt
+    400060: L_leg_center_C_jnt
+    400062: L_leg_front_A_jnt
+    400064: L_leg_front_B_jnt
+    400066: L_leg_front_C_jnt
+    400068: L_pincer
+    400070: L_pincer_1_jnt
+    400072: L_pincer_2_jnt
+    400074: L_pincer_end_jnt
+    400076: L_wing
+    400078: L_wing_1_jnt
+    400080: L_wing_2_jnt
+    400082: L_wing_3_jnt
+    400084: L_wing_end_jnt
+    400086: pronotum_jnt
+    400088: R_back_A_leg
+    400090: R_back_ankle_jnt
+    400092: R_back_B_leg
+    400094: R_back_C_leg
+    400096: R_back_contact_jnt
+    400098: R_center_A_leg
+    400100: R_center_ankle_jnt
+    400102: R_center_B_leg
+    400104: R_center_C_leg
+    400106: R_center_contact_jnt
+    400108: R_front_A_leg
+    400110: R_front_ankle_jnt
+    400112: R_front_B_leg
+    400114: R_front_C_leg
+    400116: R_front_contact_jnt
+    400118: R_horn
+    400120: R_leg_back_A_jnt
+    400122: R_leg_back_B_jnt
+    400124: R_leg_back_C_jnt
+    400126: R_leg_center_A_jnt
+    400128: R_leg_center_B_jnt
+    400130: R_leg_center_C_jnt
+    400132: R_leg_front_A_jnt
+    400134: R_leg_front_B_jnt
+    400136: R_leg_front_C_jnt
+    400138: R_pincer
+    400140: R_pincer_1_jnt
+    400142: R_pincer_2_jnt
+    400144: R_pincer_end_jnt
+    400146: R_wing
+    400148: R_wing_1_jnt
+    400150: R_wing_2_jnt
+    400152: R_wing_3_jnt
+    400154: R_wing_end_jnt
+    400156: ROOT
+    400158: sphere
+    400160: sphere_jnt
+    400162: spine1_jnt
+    400164: spine2_jnt
+    400166: spine3_jnt
+    400168: spine4_jnt
+    400170: BugMesh
+    400172: Abdomen
+    400174: Body
+    400176: Carapace
+    400178: Head
+    400180: Horns
+    400182: Pincers
+    400184: Wings
+    4300000: body
+    4300002: abdomen
+    4300004: carapace
+    4300006: L_wing
+    4300008: R_wing
+    4300010: sphere
+    4300012: head
+    4300014: eyes
+    4300016: L_pincer
+    4300018: R_pincer
+    4300020: L_horn
+    4300022: R_horn
+    4300024: L_front_A_leg
+    4300026: L_center_A_leg
+    4300028: L_back_A_leg
+    4300030: R_front_A_leg
+    4300032: R_center_A_leg
+    4300034: R_back_A_leg
+    4300036: L_front_B_leg
+    4300038: L_center_B_leg
+    4300040: L_back_B_leg
+    4300042: R_front_B_leg
+    4300044: R_center_B_leg
+    4300046: R_back_B_leg
+    4300048: L_front_C_leg
+    4300050: L_center_C_leg
+    4300052: L_back_C_leg
+    4300054: R_front_C_leg
+    4300056: R_center_C_leg
+    4300058: R_back_C_leg
+    4300060: BugMesh
+    4300062: Abdomen
+    4300064: Head
+    4300066: Body
+    4300068: Carapace
+    4300070: Horns
+    4300072: Pincers
+    4300074: Wings
+    7400000: idle
+    7400002: idle break
+    7400004: walk
+    7400006: walk back
+    7400008: run
+    7400010: jump back
+    7400012: hit reaction
+    7400014: death
+    7400016: attack1
+    7400018: attack2
+    7400020: attack3
+    7400022: magic spit
+    7400024: ground to air
+    7400026: fly hit
+    7400028: fly forward
+    7400030: fly back
+    7400032: air to ground
+    7400034: fly death
+    7400036: explode
+    7400038: fly idle
+    7400040: fly dodge
+    9500000: //RootNode
+    13700000: abdomen
+    13700002: body
+    13700004: carapace
+    13700006: eyes
+    13700008: head
+    13700010: L_back_A_leg
+    13700012: L_back_B_leg
+    13700014: L_back_C_leg
+    13700016: L_center_A_leg
+    13700018: L_center_B_leg
+    13700020: L_center_C_leg
+    13700022: L_front_A_leg
+    13700024: L_front_B_leg
+    13700026: L_front_C_leg
+    13700028: L_horn
+    13700030: L_pincer
+    13700032: L_wing
+    13700034: R_back_A_leg
+    13700036: R_back_B_leg
+    13700038: R_back_C_leg
+    13700040: R_center_A_leg
+    13700042: R_center_B_leg
+    13700044: R_center_C_leg
+    13700046: R_front_A_leg
+    13700048: R_front_B_leg
+    13700050: R_front_C_leg
+    13700052: R_horn
+    13700054: R_pincer
+    13700056: R_wing
+    13700058: sphere
+    13700060: BugMesh
+    13700062: Abdomen
+    13700064: Body
+    13700066: Carapace
+    13700068: Head
+    13700070: Horns
+    13700072: Pincers
+    13700074: Wings
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: idle
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: abdomen
+        weight: 1
+      - path: Blendshape_GRP
+        weight: 1
+      - path: body
+        weight: 1
+      - path: carapace
+        weight: 1
+      - path: eyes
+        weight: 1
+      - path: head
+        weight: 1
+      - path: L_back_A_leg
+        weight: 1
+      - path: L_back_B_leg
+        weight: 1
+      - path: L_back_C_leg
+        weight: 1
+      - path: L_center_A_leg
+        weight: 1
+      - path: L_center_B_leg
+        weight: 1
+      - path: L_center_C_leg
+        weight: 1
+      - path: L_front_A_leg
+        weight: 1
+      - path: L_front_B_leg
+        weight: 1
+      - path: L_front_C_leg
+        weight: 1
+      - path: L_horn
+        weight: 1
+      - path: L_pincer
+        weight: 1
+      - path: L_wing
+        weight: 1
+      - path: R_back_A_leg
+        weight: 1
+      - path: R_back_B_leg
+        weight: 1
+      - path: R_back_C_leg
+        weight: 1
+      - path: R_center_A_leg
+        weight: 1
+      - path: R_center_B_leg
+        weight: 1
+      - path: R_center_C_leg
+        weight: 1
+      - path: R_front_A_leg
+        weight: 1
+      - path: R_front_B_leg
+        weight: 1
+      - path: R_front_C_leg
+        weight: 1
+      - path: R_horn
+        weight: 1
+      - path: R_pincer
+        weight: 1
+      - path: R_wing
+        weight: 1
+      - path: ROOT
+        weight: 1
+      - path: ROOT/abdomen_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt/L_leg_back_C_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt/L_leg_back_C_jnt/L_back_ankle_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt/L_leg_back_C_jnt/L_back_ankle_jnt/L_back_contact_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt/R_leg_back_C_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt/R_leg_back_C_jnt/R_back_ankle_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt/R_leg_back_C_jnt/R_back_ankle_jnt/R_back_contact_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/sphere_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/spine1_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/spine1_jnt/spine2_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/spine1_jnt/spine2_jnt/spine3_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/spine1_jnt/spine2_jnt/spine3_jnt/spine4_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt/L_leg_center_C_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt/L_leg_center_C_jnt/L_center_ankle_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt/L_leg_center_C_jnt/L_center_ankle_jnt/L_center_contact_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt/L_leg_front_C_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt/L_leg_front_C_jnt/L_front_ankle_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt/L_leg_front_C_jnt/L_front_ankle_jnt/L_front_contact_jnt
+        weight: 1
+      - path: ROOT/L_wing_1_jnt
+        weight: 1
+      - path: ROOT/L_wing_1_jnt/L_wing_2_jnt
+        weight: 1
+      - path: ROOT/L_wing_1_jnt/L_wing_2_jnt/L_wing_3_jnt
+        weight: 1
+      - path: ROOT/L_wing_1_jnt/L_wing_2_jnt/L_wing_3_jnt/L_wing_end_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/L_pincer_1_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/L_pincer_1_jnt/L_pincer_2_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/L_pincer_1_jnt/L_pincer_2_jnt/L_pincer_end_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/R_pincer_1_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/R_pincer_1_jnt/R_pincer_2_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/R_pincer_1_jnt/R_pincer_2_jnt/R_pincer_end_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt/R_leg_center_C_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt/R_leg_center_C_jnt/R_center_ankle_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt/R_leg_center_C_jnt/R_center_ankle_jnt/R_center_contact_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt/R_leg_front_C_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt/R_leg_front_C_jnt/R_front_ankle_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt/R_leg_front_C_jnt/R_front_ankle_jnt/R_front_contact_jnt
+        weight: 1
+      - path: ROOT/R_wing_1_jnt
+        weight: 1
+      - path: ROOT/R_wing_1_jnt/R_wing_2_jnt
+        weight: 1
+      - path: ROOT/R_wing_1_jnt/R_wing_2_jnt/R_wing_3_jnt
+        weight: 1
+      - path: ROOT/R_wing_1_jnt/R_wing_2_jnt/R_wing_3_jnt/R_wing_end_jnt
+        weight: 1
+      - path: sphere
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: idle break
+      takeName: Take 001
+      firstFrame: 50
+      lastFrame: 140
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: abdomen
+        weight: 1
+      - path: Blendshape_GRP
+        weight: 1
+      - path: body
+        weight: 1
+      - path: carapace
+        weight: 1
+      - path: eyes
+        weight: 1
+      - path: head
+        weight: 1
+      - path: L_back_A_leg
+        weight: 1
+      - path: L_back_B_leg
+        weight: 1
+      - path: L_back_C_leg
+        weight: 1
+      - path: L_center_A_leg
+        weight: 1
+      - path: L_center_B_leg
+        weight: 1
+      - path: L_center_C_leg
+        weight: 1
+      - path: L_front_A_leg
+        weight: 1
+      - path: L_front_B_leg
+        weight: 1
+      - path: L_front_C_leg
+        weight: 1
+      - path: L_horn
+        weight: 1
+      - path: L_pincer
+        weight: 1
+      - path: L_wing
+        weight: 1
+      - path: R_back_A_leg
+        weight: 1
+      - path: R_back_B_leg
+        weight: 1
+      - path: R_back_C_leg
+        weight: 1
+      - path: R_center_A_leg
+        weight: 1
+      - path: R_center_B_leg
+        weight: 1
+      - path: R_center_C_leg
+        weight: 1
+      - path: R_front_A_leg
+        weight: 1
+      - path: R_front_B_leg
+        weight: 1
+      - path: R_front_C_leg
+        weight: 1
+      - path: R_horn
+        weight: 1
+      - path: R_pincer
+        weight: 1
+      - path: R_wing
+        weight: 1
+      - path: ROOT
+        weight: 1
+      - path: ROOT/abdomen_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt/L_leg_back_C_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt/L_leg_back_C_jnt/L_back_ankle_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt/L_leg_back_C_jnt/L_back_ankle_jnt/L_back_contact_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt/R_leg_back_C_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt/R_leg_back_C_jnt/R_back_ankle_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt/R_leg_back_C_jnt/R_back_ankle_jnt/R_back_contact_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/sphere_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/spine1_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/spine1_jnt/spine2_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/spine1_jnt/spine2_jnt/spine3_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/spine1_jnt/spine2_jnt/spine3_jnt/spine4_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt/L_leg_center_C_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt/L_leg_center_C_jnt/L_center_ankle_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt/L_leg_center_C_jnt/L_center_ankle_jnt/L_center_contact_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt/L_leg_front_C_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt/L_leg_front_C_jnt/L_front_ankle_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt/L_leg_front_C_jnt/L_front_ankle_jnt/L_front_contact_jnt
+        weight: 1
+      - path: ROOT/L_wing_1_jnt
+        weight: 1
+      - path: ROOT/L_wing_1_jnt/L_wing_2_jnt
+        weight: 1
+      - path: ROOT/L_wing_1_jnt/L_wing_2_jnt/L_wing_3_jnt
+        weight: 1
+      - path: ROOT/L_wing_1_jnt/L_wing_2_jnt/L_wing_3_jnt/L_wing_end_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/L_pincer_1_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/L_pincer_1_jnt/L_pincer_2_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/L_pincer_1_jnt/L_pincer_2_jnt/L_pincer_end_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/R_pincer_1_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/R_pincer_1_jnt/R_pincer_2_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/R_pincer_1_jnt/R_pincer_2_jnt/R_pincer_end_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt/R_leg_center_C_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt/R_leg_center_C_jnt/R_center_ankle_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt/R_leg_center_C_jnt/R_center_ankle_jnt/R_center_contact_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt/R_leg_front_C_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt/R_leg_front_C_jnt/R_front_ankle_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt/R_leg_front_C_jnt/R_front_ankle_jnt/R_front_contact_jnt
+        weight: 1
+      - path: ROOT/R_wing_1_jnt
+        weight: 1
+      - path: ROOT/R_wing_1_jnt/R_wing_2_jnt
+        weight: 1
+      - path: ROOT/R_wing_1_jnt/R_wing_2_jnt/R_wing_3_jnt
+        weight: 1
+      - path: ROOT/R_wing_1_jnt/R_wing_2_jnt/R_wing_3_jnt/R_wing_end_jnt
+        weight: 1
+      - path: sphere
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: walk
+      takeName: Take 001
+      firstFrame: 150
+      lastFrame: 166
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: abdomen
+        weight: 1
+      - path: Blendshape_GRP
+        weight: 1
+      - path: body
+        weight: 1
+      - path: carapace
+        weight: 1
+      - path: eyes
+        weight: 1
+      - path: head
+        weight: 1
+      - path: L_back_A_leg
+        weight: 1
+      - path: L_back_B_leg
+        weight: 1
+      - path: L_back_C_leg
+        weight: 1
+      - path: L_center_A_leg
+        weight: 1
+      - path: L_center_B_leg
+        weight: 1
+      - path: L_center_C_leg
+        weight: 1
+      - path: L_front_A_leg
+        weight: 1
+      - path: L_front_B_leg
+        weight: 1
+      - path: L_front_C_leg
+        weight: 1
+      - path: L_horn
+        weight: 1
+      - path: L_pincer
+        weight: 1
+      - path: L_wing
+        weight: 1
+      - path: R_back_A_leg
+        weight: 1
+      - path: R_back_B_leg
+        weight: 1
+      - path: R_back_C_leg
+        weight: 1
+      - path: R_center_A_leg
+        weight: 1
+      - path: R_center_B_leg
+        weight: 1
+      - path: R_center_C_leg
+        weight: 1
+      - path: R_front_A_leg
+        weight: 1
+      - path: R_front_B_leg
+        weight: 1
+      - path: R_front_C_leg
+        weight: 1
+      - path: R_horn
+        weight: 1
+      - path: R_pincer
+        weight: 1
+      - path: R_wing
+        weight: 1
+      - path: ROOT
+        weight: 1
+      - path: ROOT/abdomen_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt/L_leg_back_C_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt/L_leg_back_C_jnt/L_back_ankle_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt/L_leg_back_C_jnt/L_back_ankle_jnt/L_back_contact_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt/R_leg_back_C_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt/R_leg_back_C_jnt/R_back_ankle_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt/R_leg_back_C_jnt/R_back_ankle_jnt/R_back_contact_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/sphere_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/spine1_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/spine1_jnt/spine2_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/spine1_jnt/spine2_jnt/spine3_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/spine1_jnt/spine2_jnt/spine3_jnt/spine4_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt/L_leg_center_C_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt/L_leg_center_C_jnt/L_center_ankle_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt/L_leg_center_C_jnt/L_center_ankle_jnt/L_center_contact_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt/L_leg_front_C_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt/L_leg_front_C_jnt/L_front_ankle_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt/L_leg_front_C_jnt/L_front_ankle_jnt/L_front_contact_jnt
+        weight: 1
+      - path: ROOT/L_wing_1_jnt
+        weight: 1
+      - path: ROOT/L_wing_1_jnt/L_wing_2_jnt
+        weight: 1
+      - path: ROOT/L_wing_1_jnt/L_wing_2_jnt/L_wing_3_jnt
+        weight: 1
+      - path: ROOT/L_wing_1_jnt/L_wing_2_jnt/L_wing_3_jnt/L_wing_end_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/L_pincer_1_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/L_pincer_1_jnt/L_pincer_2_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/L_pincer_1_jnt/L_pincer_2_jnt/L_pincer_end_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/R_pincer_1_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/R_pincer_1_jnt/R_pincer_2_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/R_pincer_1_jnt/R_pincer_2_jnt/R_pincer_end_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt/R_leg_center_C_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt/R_leg_center_C_jnt/R_center_ankle_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt/R_leg_center_C_jnt/R_center_ankle_jnt/R_center_contact_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt/R_leg_front_C_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt/R_leg_front_C_jnt/R_front_ankle_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt/R_leg_front_C_jnt/R_front_ankle_jnt/R_front_contact_jnt
+        weight: 1
+      - path: ROOT/R_wing_1_jnt
+        weight: 1
+      - path: ROOT/R_wing_1_jnt/R_wing_2_jnt
+        weight: 1
+      - path: ROOT/R_wing_1_jnt/R_wing_2_jnt/R_wing_3_jnt
+        weight: 1
+      - path: ROOT/R_wing_1_jnt/R_wing_2_jnt/R_wing_3_jnt/R_wing_end_jnt
+        weight: 1
+      - path: sphere
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: walk back
+      takeName: Take 001
+      firstFrame: 170
+      lastFrame: 186
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: abdomen
+        weight: 1
+      - path: Blendshape_GRP
+        weight: 1
+      - path: body
+        weight: 1
+      - path: carapace
+        weight: 1
+      - path: eyes
+        weight: 1
+      - path: head
+        weight: 1
+      - path: L_back_A_leg
+        weight: 1
+      - path: L_back_B_leg
+        weight: 1
+      - path: L_back_C_leg
+        weight: 1
+      - path: L_center_A_leg
+        weight: 1
+      - path: L_center_B_leg
+        weight: 1
+      - path: L_center_C_leg
+        weight: 1
+      - path: L_front_A_leg
+        weight: 1
+      - path: L_front_B_leg
+        weight: 1
+      - path: L_front_C_leg
+        weight: 1
+      - path: L_horn
+        weight: 1
+      - path: L_pincer
+        weight: 1
+      - path: L_wing
+        weight: 1
+      - path: R_back_A_leg
+        weight: 1
+      - path: R_back_B_leg
+        weight: 1
+      - path: R_back_C_leg
+        weight: 1
+      - path: R_center_A_leg
+        weight: 1
+      - path: R_center_B_leg
+        weight: 1
+      - path: R_center_C_leg
+        weight: 1
+      - path: R_front_A_leg
+        weight: 1
+      - path: R_front_B_leg
+        weight: 1
+      - path: R_front_C_leg
+        weight: 1
+      - path: R_horn
+        weight: 1
+      - path: R_pincer
+        weight: 1
+      - path: R_wing
+        weight: 1
+      - path: ROOT
+        weight: 1
+      - path: ROOT/abdomen_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt/L_leg_back_C_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt/L_leg_back_C_jnt/L_back_ankle_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt/L_leg_back_C_jnt/L_back_ankle_jnt/L_back_contact_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt/R_leg_back_C_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt/R_leg_back_C_jnt/R_back_ankle_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt/R_leg_back_C_jnt/R_back_ankle_jnt/R_back_contact_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/sphere_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/spine1_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/spine1_jnt/spine2_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/spine1_jnt/spine2_jnt/spine3_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/spine1_jnt/spine2_jnt/spine3_jnt/spine4_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt/L_leg_center_C_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt/L_leg_center_C_jnt/L_center_ankle_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt/L_leg_center_C_jnt/L_center_ankle_jnt/L_center_contact_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt/L_leg_front_C_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt/L_leg_front_C_jnt/L_front_ankle_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt/L_leg_front_C_jnt/L_front_ankle_jnt/L_front_contact_jnt
+        weight: 1
+      - path: ROOT/L_wing_1_jnt
+        weight: 1
+      - path: ROOT/L_wing_1_jnt/L_wing_2_jnt
+        weight: 1
+      - path: ROOT/L_wing_1_jnt/L_wing_2_jnt/L_wing_3_jnt
+        weight: 1
+      - path: ROOT/L_wing_1_jnt/L_wing_2_jnt/L_wing_3_jnt/L_wing_end_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/L_pincer_1_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/L_pincer_1_jnt/L_pincer_2_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/L_pincer_1_jnt/L_pincer_2_jnt/L_pincer_end_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/R_pincer_1_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/R_pincer_1_jnt/R_pincer_2_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/R_pincer_1_jnt/R_pincer_2_jnt/R_pincer_end_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt/R_leg_center_C_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt/R_leg_center_C_jnt/R_center_ankle_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt/R_leg_center_C_jnt/R_center_ankle_jnt/R_center_contact_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt/R_leg_front_C_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt/R_leg_front_C_jnt/R_front_ankle_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt/R_leg_front_C_jnt/R_front_ankle_jnt/R_front_contact_jnt
+        weight: 1
+      - path: ROOT/R_wing_1_jnt
+        weight: 1
+      - path: ROOT/R_wing_1_jnt/R_wing_2_jnt
+        weight: 1
+      - path: ROOT/R_wing_1_jnt/R_wing_2_jnt/R_wing_3_jnt
+        weight: 1
+      - path: ROOT/R_wing_1_jnt/R_wing_2_jnt/R_wing_3_jnt/R_wing_end_jnt
+        weight: 1
+      - path: sphere
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: run
+      takeName: Take 001
+      firstFrame: 190
+      lastFrame: 206
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: abdomen
+        weight: 1
+      - path: Blendshape_GRP
+        weight: 1
+      - path: body
+        weight: 1
+      - path: carapace
+        weight: 1
+      - path: eyes
+        weight: 1
+      - path: head
+        weight: 1
+      - path: L_back_A_leg
+        weight: 1
+      - path: L_back_B_leg
+        weight: 1
+      - path: L_back_C_leg
+        weight: 1
+      - path: L_center_A_leg
+        weight: 1
+      - path: L_center_B_leg
+        weight: 1
+      - path: L_center_C_leg
+        weight: 1
+      - path: L_front_A_leg
+        weight: 1
+      - path: L_front_B_leg
+        weight: 1
+      - path: L_front_C_leg
+        weight: 1
+      - path: L_horn
+        weight: 1
+      - path: L_pincer
+        weight: 1
+      - path: L_wing
+        weight: 1
+      - path: R_back_A_leg
+        weight: 1
+      - path: R_back_B_leg
+        weight: 1
+      - path: R_back_C_leg
+        weight: 1
+      - path: R_center_A_leg
+        weight: 1
+      - path: R_center_B_leg
+        weight: 1
+      - path: R_center_C_leg
+        weight: 1
+      - path: R_front_A_leg
+        weight: 1
+      - path: R_front_B_leg
+        weight: 1
+      - path: R_front_C_leg
+        weight: 1
+      - path: R_horn
+        weight: 1
+      - path: R_pincer
+        weight: 1
+      - path: R_wing
+        weight: 1
+      - path: ROOT
+        weight: 1
+      - path: ROOT/abdomen_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt/L_leg_back_C_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt/L_leg_back_C_jnt/L_back_ankle_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt/L_leg_back_C_jnt/L_back_ankle_jnt/L_back_contact_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt/R_leg_back_C_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt/R_leg_back_C_jnt/R_back_ankle_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt/R_leg_back_C_jnt/R_back_ankle_jnt/R_back_contact_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/sphere_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/spine1_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/spine1_jnt/spine2_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/spine1_jnt/spine2_jnt/spine3_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/spine1_jnt/spine2_jnt/spine3_jnt/spine4_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt/L_leg_center_C_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt/L_leg_center_C_jnt/L_center_ankle_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt/L_leg_center_C_jnt/L_center_ankle_jnt/L_center_contact_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt/L_leg_front_C_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt/L_leg_front_C_jnt/L_front_ankle_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt/L_leg_front_C_jnt/L_front_ankle_jnt/L_front_contact_jnt
+        weight: 1
+      - path: ROOT/L_wing_1_jnt
+        weight: 1
+      - path: ROOT/L_wing_1_jnt/L_wing_2_jnt
+        weight: 1
+      - path: ROOT/L_wing_1_jnt/L_wing_2_jnt/L_wing_3_jnt
+        weight: 1
+      - path: ROOT/L_wing_1_jnt/L_wing_2_jnt/L_wing_3_jnt/L_wing_end_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/L_pincer_1_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/L_pincer_1_jnt/L_pincer_2_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/L_pincer_1_jnt/L_pincer_2_jnt/L_pincer_end_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/R_pincer_1_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/R_pincer_1_jnt/R_pincer_2_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/R_pincer_1_jnt/R_pincer_2_jnt/R_pincer_end_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt/R_leg_center_C_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt/R_leg_center_C_jnt/R_center_ankle_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt/R_leg_center_C_jnt/R_center_ankle_jnt/R_center_contact_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt/R_leg_front_C_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt/R_leg_front_C_jnt/R_front_ankle_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt/R_leg_front_C_jnt/R_front_ankle_jnt/R_front_contact_jnt
+        weight: 1
+      - path: ROOT/R_wing_1_jnt
+        weight: 1
+      - path: ROOT/R_wing_1_jnt/R_wing_2_jnt
+        weight: 1
+      - path: ROOT/R_wing_1_jnt/R_wing_2_jnt/R_wing_3_jnt
+        weight: 1
+      - path: ROOT/R_wing_1_jnt/R_wing_2_jnt/R_wing_3_jnt/R_wing_end_jnt
+        weight: 1
+      - path: sphere
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: jump back
+      takeName: Take 001
+      firstFrame: 210
+      lastFrame: 235
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: abdomen
+        weight: 1
+      - path: Blendshape_GRP
+        weight: 1
+      - path: body
+        weight: 1
+      - path: carapace
+        weight: 1
+      - path: eyes
+        weight: 1
+      - path: head
+        weight: 1
+      - path: L_back_A_leg
+        weight: 1
+      - path: L_back_B_leg
+        weight: 1
+      - path: L_back_C_leg
+        weight: 1
+      - path: L_center_A_leg
+        weight: 1
+      - path: L_center_B_leg
+        weight: 1
+      - path: L_center_C_leg
+        weight: 1
+      - path: L_front_A_leg
+        weight: 1
+      - path: L_front_B_leg
+        weight: 1
+      - path: L_front_C_leg
+        weight: 1
+      - path: L_horn
+        weight: 1
+      - path: L_pincer
+        weight: 1
+      - path: L_wing
+        weight: 1
+      - path: R_back_A_leg
+        weight: 1
+      - path: R_back_B_leg
+        weight: 1
+      - path: R_back_C_leg
+        weight: 1
+      - path: R_center_A_leg
+        weight: 1
+      - path: R_center_B_leg
+        weight: 1
+      - path: R_center_C_leg
+        weight: 1
+      - path: R_front_A_leg
+        weight: 1
+      - path: R_front_B_leg
+        weight: 1
+      - path: R_front_C_leg
+        weight: 1
+      - path: R_horn
+        weight: 1
+      - path: R_pincer
+        weight: 1
+      - path: R_wing
+        weight: 1
+      - path: ROOT
+        weight: 1
+      - path: ROOT/abdomen_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt/L_leg_back_C_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt/L_leg_back_C_jnt/L_back_ankle_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt/L_leg_back_C_jnt/L_back_ankle_jnt/L_back_contact_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt/R_leg_back_C_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt/R_leg_back_C_jnt/R_back_ankle_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt/R_leg_back_C_jnt/R_back_ankle_jnt/R_back_contact_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/sphere_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/spine1_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/spine1_jnt/spine2_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/spine1_jnt/spine2_jnt/spine3_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/spine1_jnt/spine2_jnt/spine3_jnt/spine4_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt/L_leg_center_C_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt/L_leg_center_C_jnt/L_center_ankle_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt/L_leg_center_C_jnt/L_center_ankle_jnt/L_center_contact_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt/L_leg_front_C_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt/L_leg_front_C_jnt/L_front_ankle_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt/L_leg_front_C_jnt/L_front_ankle_jnt/L_front_contact_jnt
+        weight: 1
+      - path: ROOT/L_wing_1_jnt
+        weight: 1
+      - path: ROOT/L_wing_1_jnt/L_wing_2_jnt
+        weight: 1
+      - path: ROOT/L_wing_1_jnt/L_wing_2_jnt/L_wing_3_jnt
+        weight: 1
+      - path: ROOT/L_wing_1_jnt/L_wing_2_jnt/L_wing_3_jnt/L_wing_end_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/L_pincer_1_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/L_pincer_1_jnt/L_pincer_2_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/L_pincer_1_jnt/L_pincer_2_jnt/L_pincer_end_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/R_pincer_1_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/R_pincer_1_jnt/R_pincer_2_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/R_pincer_1_jnt/R_pincer_2_jnt/R_pincer_end_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt/R_leg_center_C_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt/R_leg_center_C_jnt/R_center_ankle_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt/R_leg_center_C_jnt/R_center_ankle_jnt/R_center_contact_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt/R_leg_front_C_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt/R_leg_front_C_jnt/R_front_ankle_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt/R_leg_front_C_jnt/R_front_ankle_jnt/R_front_contact_jnt
+        weight: 1
+      - path: ROOT/R_wing_1_jnt
+        weight: 1
+      - path: ROOT/R_wing_1_jnt/R_wing_2_jnt
+        weight: 1
+      - path: ROOT/R_wing_1_jnt/R_wing_2_jnt/R_wing_3_jnt
+        weight: 1
+      - path: ROOT/R_wing_1_jnt/R_wing_2_jnt/R_wing_3_jnt/R_wing_end_jnt
+        weight: 1
+      - path: sphere
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: hit reaction
+      takeName: Take 001
+      firstFrame: 240
+      lastFrame: 260
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: abdomen
+        weight: 1
+      - path: Blendshape_GRP
+        weight: 1
+      - path: body
+        weight: 1
+      - path: carapace
+        weight: 1
+      - path: eyes
+        weight: 1
+      - path: head
+        weight: 1
+      - path: L_back_A_leg
+        weight: 1
+      - path: L_back_B_leg
+        weight: 1
+      - path: L_back_C_leg
+        weight: 1
+      - path: L_center_A_leg
+        weight: 1
+      - path: L_center_B_leg
+        weight: 1
+      - path: L_center_C_leg
+        weight: 1
+      - path: L_front_A_leg
+        weight: 1
+      - path: L_front_B_leg
+        weight: 1
+      - path: L_front_C_leg
+        weight: 1
+      - path: L_horn
+        weight: 1
+      - path: L_pincer
+        weight: 1
+      - path: L_wing
+        weight: 1
+      - path: R_back_A_leg
+        weight: 1
+      - path: R_back_B_leg
+        weight: 1
+      - path: R_back_C_leg
+        weight: 1
+      - path: R_center_A_leg
+        weight: 1
+      - path: R_center_B_leg
+        weight: 1
+      - path: R_center_C_leg
+        weight: 1
+      - path: R_front_A_leg
+        weight: 1
+      - path: R_front_B_leg
+        weight: 1
+      - path: R_front_C_leg
+        weight: 1
+      - path: R_horn
+        weight: 1
+      - path: R_pincer
+        weight: 1
+      - path: R_wing
+        weight: 1
+      - path: ROOT
+        weight: 1
+      - path: ROOT/abdomen_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt/L_leg_back_C_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt/L_leg_back_C_jnt/L_back_ankle_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt/L_leg_back_C_jnt/L_back_ankle_jnt/L_back_contact_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt/R_leg_back_C_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt/R_leg_back_C_jnt/R_back_ankle_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt/R_leg_back_C_jnt/R_back_ankle_jnt/R_back_contact_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/sphere_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/spine1_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/spine1_jnt/spine2_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/spine1_jnt/spine2_jnt/spine3_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/spine1_jnt/spine2_jnt/spine3_jnt/spine4_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt/L_leg_center_C_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt/L_leg_center_C_jnt/L_center_ankle_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt/L_leg_center_C_jnt/L_center_ankle_jnt/L_center_contact_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt/L_leg_front_C_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt/L_leg_front_C_jnt/L_front_ankle_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt/L_leg_front_C_jnt/L_front_ankle_jnt/L_front_contact_jnt
+        weight: 1
+      - path: ROOT/L_wing_1_jnt
+        weight: 1
+      - path: ROOT/L_wing_1_jnt/L_wing_2_jnt
+        weight: 1
+      - path: ROOT/L_wing_1_jnt/L_wing_2_jnt/L_wing_3_jnt
+        weight: 1
+      - path: ROOT/L_wing_1_jnt/L_wing_2_jnt/L_wing_3_jnt/L_wing_end_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/L_pincer_1_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/L_pincer_1_jnt/L_pincer_2_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/L_pincer_1_jnt/L_pincer_2_jnt/L_pincer_end_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/R_pincer_1_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/R_pincer_1_jnt/R_pincer_2_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/R_pincer_1_jnt/R_pincer_2_jnt/R_pincer_end_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt/R_leg_center_C_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt/R_leg_center_C_jnt/R_center_ankle_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt/R_leg_center_C_jnt/R_center_ankle_jnt/R_center_contact_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt/R_leg_front_C_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt/R_leg_front_C_jnt/R_front_ankle_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt/R_leg_front_C_jnt/R_front_ankle_jnt/R_front_contact_jnt
+        weight: 1
+      - path: ROOT/R_wing_1_jnt
+        weight: 1
+      - path: ROOT/R_wing_1_jnt/R_wing_2_jnt
+        weight: 1
+      - path: ROOT/R_wing_1_jnt/R_wing_2_jnt/R_wing_3_jnt
+        weight: 1
+      - path: ROOT/R_wing_1_jnt/R_wing_2_jnt/R_wing_3_jnt/R_wing_end_jnt
+        weight: 1
+      - path: sphere
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: death
+      takeName: Take 001
+      firstFrame: 265
+      lastFrame: 310
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: abdomen
+        weight: 1
+      - path: Blendshape_GRP
+        weight: 1
+      - path: body
+        weight: 1
+      - path: carapace
+        weight: 1
+      - path: eyes
+        weight: 1
+      - path: head
+        weight: 1
+      - path: L_back_A_leg
+        weight: 1
+      - path: L_back_B_leg
+        weight: 1
+      - path: L_back_C_leg
+        weight: 1
+      - path: L_center_A_leg
+        weight: 1
+      - path: L_center_B_leg
+        weight: 1
+      - path: L_center_C_leg
+        weight: 1
+      - path: L_front_A_leg
+        weight: 1
+      - path: L_front_B_leg
+        weight: 1
+      - path: L_front_C_leg
+        weight: 1
+      - path: L_horn
+        weight: 1
+      - path: L_pincer
+        weight: 1
+      - path: L_wing
+        weight: 1
+      - path: R_back_A_leg
+        weight: 1
+      - path: R_back_B_leg
+        weight: 1
+      - path: R_back_C_leg
+        weight: 1
+      - path: R_center_A_leg
+        weight: 1
+      - path: R_center_B_leg
+        weight: 1
+      - path: R_center_C_leg
+        weight: 1
+      - path: R_front_A_leg
+        weight: 1
+      - path: R_front_B_leg
+        weight: 1
+      - path: R_front_C_leg
+        weight: 1
+      - path: R_horn
+        weight: 1
+      - path: R_pincer
+        weight: 1
+      - path: R_wing
+        weight: 1
+      - path: ROOT
+        weight: 1
+      - path: ROOT/abdomen_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt/L_leg_back_C_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt/L_leg_back_C_jnt/L_back_ankle_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt/L_leg_back_C_jnt/L_back_ankle_jnt/L_back_contact_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt/R_leg_back_C_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt/R_leg_back_C_jnt/R_back_ankle_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt/R_leg_back_C_jnt/R_back_ankle_jnt/R_back_contact_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/sphere_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/spine1_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/spine1_jnt/spine2_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/spine1_jnt/spine2_jnt/spine3_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/spine1_jnt/spine2_jnt/spine3_jnt/spine4_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt/L_leg_center_C_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt/L_leg_center_C_jnt/L_center_ankle_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt/L_leg_center_C_jnt/L_center_ankle_jnt/L_center_contact_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt/L_leg_front_C_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt/L_leg_front_C_jnt/L_front_ankle_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt/L_leg_front_C_jnt/L_front_ankle_jnt/L_front_contact_jnt
+        weight: 1
+      - path: ROOT/L_wing_1_jnt
+        weight: 1
+      - path: ROOT/L_wing_1_jnt/L_wing_2_jnt
+        weight: 1
+      - path: ROOT/L_wing_1_jnt/L_wing_2_jnt/L_wing_3_jnt
+        weight: 1
+      - path: ROOT/L_wing_1_jnt/L_wing_2_jnt/L_wing_3_jnt/L_wing_end_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/L_pincer_1_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/L_pincer_1_jnt/L_pincer_2_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/L_pincer_1_jnt/L_pincer_2_jnt/L_pincer_end_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/R_pincer_1_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/R_pincer_1_jnt/R_pincer_2_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/R_pincer_1_jnt/R_pincer_2_jnt/R_pincer_end_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt/R_leg_center_C_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt/R_leg_center_C_jnt/R_center_ankle_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt/R_leg_center_C_jnt/R_center_ankle_jnt/R_center_contact_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt/R_leg_front_C_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt/R_leg_front_C_jnt/R_front_ankle_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt/R_leg_front_C_jnt/R_front_ankle_jnt/R_front_contact_jnt
+        weight: 1
+      - path: ROOT/R_wing_1_jnt
+        weight: 1
+      - path: ROOT/R_wing_1_jnt/R_wing_2_jnt
+        weight: 1
+      - path: ROOT/R_wing_1_jnt/R_wing_2_jnt/R_wing_3_jnt
+        weight: 1
+      - path: ROOT/R_wing_1_jnt/R_wing_2_jnt/R_wing_3_jnt/R_wing_end_jnt
+        weight: 1
+      - path: sphere
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: attack1
+      takeName: Take 001
+      firstFrame: 320
+      lastFrame: 340
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: abdomen
+        weight: 1
+      - path: Blendshape_GRP
+        weight: 1
+      - path: body
+        weight: 1
+      - path: carapace
+        weight: 1
+      - path: eyes
+        weight: 1
+      - path: head
+        weight: 1
+      - path: L_back_A_leg
+        weight: 1
+      - path: L_back_B_leg
+        weight: 1
+      - path: L_back_C_leg
+        weight: 1
+      - path: L_center_A_leg
+        weight: 1
+      - path: L_center_B_leg
+        weight: 1
+      - path: L_center_C_leg
+        weight: 1
+      - path: L_front_A_leg
+        weight: 1
+      - path: L_front_B_leg
+        weight: 1
+      - path: L_front_C_leg
+        weight: 1
+      - path: L_horn
+        weight: 1
+      - path: L_pincer
+        weight: 1
+      - path: L_wing
+        weight: 1
+      - path: R_back_A_leg
+        weight: 1
+      - path: R_back_B_leg
+        weight: 1
+      - path: R_back_C_leg
+        weight: 1
+      - path: R_center_A_leg
+        weight: 1
+      - path: R_center_B_leg
+        weight: 1
+      - path: R_center_C_leg
+        weight: 1
+      - path: R_front_A_leg
+        weight: 1
+      - path: R_front_B_leg
+        weight: 1
+      - path: R_front_C_leg
+        weight: 1
+      - path: R_horn
+        weight: 1
+      - path: R_pincer
+        weight: 1
+      - path: R_wing
+        weight: 1
+      - path: ROOT
+        weight: 1
+      - path: ROOT/abdomen_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt/L_leg_back_C_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt/L_leg_back_C_jnt/L_back_ankle_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt/L_leg_back_C_jnt/L_back_ankle_jnt/L_back_contact_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt/R_leg_back_C_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt/R_leg_back_C_jnt/R_back_ankle_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt/R_leg_back_C_jnt/R_back_ankle_jnt/R_back_contact_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/sphere_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/spine1_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/spine1_jnt/spine2_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/spine1_jnt/spine2_jnt/spine3_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/spine1_jnt/spine2_jnt/spine3_jnt/spine4_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt/L_leg_center_C_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt/L_leg_center_C_jnt/L_center_ankle_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt/L_leg_center_C_jnt/L_center_ankle_jnt/L_center_contact_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt/L_leg_front_C_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt/L_leg_front_C_jnt/L_front_ankle_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt/L_leg_front_C_jnt/L_front_ankle_jnt/L_front_contact_jnt
+        weight: 1
+      - path: ROOT/L_wing_1_jnt
+        weight: 1
+      - path: ROOT/L_wing_1_jnt/L_wing_2_jnt
+        weight: 1
+      - path: ROOT/L_wing_1_jnt/L_wing_2_jnt/L_wing_3_jnt
+        weight: 1
+      - path: ROOT/L_wing_1_jnt/L_wing_2_jnt/L_wing_3_jnt/L_wing_end_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/L_pincer_1_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/L_pincer_1_jnt/L_pincer_2_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/L_pincer_1_jnt/L_pincer_2_jnt/L_pincer_end_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/R_pincer_1_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/R_pincer_1_jnt/R_pincer_2_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/R_pincer_1_jnt/R_pincer_2_jnt/R_pincer_end_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt/R_leg_center_C_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt/R_leg_center_C_jnt/R_center_ankle_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt/R_leg_center_C_jnt/R_center_ankle_jnt/R_center_contact_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt/R_leg_front_C_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt/R_leg_front_C_jnt/R_front_ankle_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt/R_leg_front_C_jnt/R_front_ankle_jnt/R_front_contact_jnt
+        weight: 1
+      - path: ROOT/R_wing_1_jnt
+        weight: 1
+      - path: ROOT/R_wing_1_jnt/R_wing_2_jnt
+        weight: 1
+      - path: ROOT/R_wing_1_jnt/R_wing_2_jnt/R_wing_3_jnt
+        weight: 1
+      - path: ROOT/R_wing_1_jnt/R_wing_2_jnt/R_wing_3_jnt/R_wing_end_jnt
+        weight: 1
+      - path: sphere
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: attack2
+      takeName: Take 001
+      firstFrame: 350
+      lastFrame: 390
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: abdomen
+        weight: 1
+      - path: Blendshape_GRP
+        weight: 1
+      - path: body
+        weight: 1
+      - path: carapace
+        weight: 1
+      - path: eyes
+        weight: 1
+      - path: head
+        weight: 1
+      - path: L_back_A_leg
+        weight: 1
+      - path: L_back_B_leg
+        weight: 1
+      - path: L_back_C_leg
+        weight: 1
+      - path: L_center_A_leg
+        weight: 1
+      - path: L_center_B_leg
+        weight: 1
+      - path: L_center_C_leg
+        weight: 1
+      - path: L_front_A_leg
+        weight: 1
+      - path: L_front_B_leg
+        weight: 1
+      - path: L_front_C_leg
+        weight: 1
+      - path: L_horn
+        weight: 1
+      - path: L_pincer
+        weight: 1
+      - path: L_wing
+        weight: 1
+      - path: R_back_A_leg
+        weight: 1
+      - path: R_back_B_leg
+        weight: 1
+      - path: R_back_C_leg
+        weight: 1
+      - path: R_center_A_leg
+        weight: 1
+      - path: R_center_B_leg
+        weight: 1
+      - path: R_center_C_leg
+        weight: 1
+      - path: R_front_A_leg
+        weight: 1
+      - path: R_front_B_leg
+        weight: 1
+      - path: R_front_C_leg
+        weight: 1
+      - path: R_horn
+        weight: 1
+      - path: R_pincer
+        weight: 1
+      - path: R_wing
+        weight: 1
+      - path: ROOT
+        weight: 1
+      - path: ROOT/abdomen_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt/L_leg_back_C_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt/L_leg_back_C_jnt/L_back_ankle_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt/L_leg_back_C_jnt/L_back_ankle_jnt/L_back_contact_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt/R_leg_back_C_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt/R_leg_back_C_jnt/R_back_ankle_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt/R_leg_back_C_jnt/R_back_ankle_jnt/R_back_contact_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/sphere_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/spine1_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/spine1_jnt/spine2_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/spine1_jnt/spine2_jnt/spine3_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/spine1_jnt/spine2_jnt/spine3_jnt/spine4_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt/L_leg_center_C_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt/L_leg_center_C_jnt/L_center_ankle_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt/L_leg_center_C_jnt/L_center_ankle_jnt/L_center_contact_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt/L_leg_front_C_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt/L_leg_front_C_jnt/L_front_ankle_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt/L_leg_front_C_jnt/L_front_ankle_jnt/L_front_contact_jnt
+        weight: 1
+      - path: ROOT/L_wing_1_jnt
+        weight: 1
+      - path: ROOT/L_wing_1_jnt/L_wing_2_jnt
+        weight: 1
+      - path: ROOT/L_wing_1_jnt/L_wing_2_jnt/L_wing_3_jnt
+        weight: 1
+      - path: ROOT/L_wing_1_jnt/L_wing_2_jnt/L_wing_3_jnt/L_wing_end_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/L_pincer_1_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/L_pincer_1_jnt/L_pincer_2_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/L_pincer_1_jnt/L_pincer_2_jnt/L_pincer_end_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/R_pincer_1_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/R_pincer_1_jnt/R_pincer_2_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/R_pincer_1_jnt/R_pincer_2_jnt/R_pincer_end_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt/R_leg_center_C_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt/R_leg_center_C_jnt/R_center_ankle_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt/R_leg_center_C_jnt/R_center_ankle_jnt/R_center_contact_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt/R_leg_front_C_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt/R_leg_front_C_jnt/R_front_ankle_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt/R_leg_front_C_jnt/R_front_ankle_jnt/R_front_contact_jnt
+        weight: 1
+      - path: ROOT/R_wing_1_jnt
+        weight: 1
+      - path: ROOT/R_wing_1_jnt/R_wing_2_jnt
+        weight: 1
+      - path: ROOT/R_wing_1_jnt/R_wing_2_jnt/R_wing_3_jnt
+        weight: 1
+      - path: ROOT/R_wing_1_jnt/R_wing_2_jnt/R_wing_3_jnt/R_wing_end_jnt
+        weight: 1
+      - path: sphere
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: attack3
+      takeName: Take 001
+      firstFrame: 400
+      lastFrame: 445
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: abdomen
+        weight: 1
+      - path: Blendshape_GRP
+        weight: 1
+      - path: body
+        weight: 1
+      - path: carapace
+        weight: 1
+      - path: eyes
+        weight: 1
+      - path: head
+        weight: 1
+      - path: L_back_A_leg
+        weight: 1
+      - path: L_back_B_leg
+        weight: 1
+      - path: L_back_C_leg
+        weight: 1
+      - path: L_center_A_leg
+        weight: 1
+      - path: L_center_B_leg
+        weight: 1
+      - path: L_center_C_leg
+        weight: 1
+      - path: L_front_A_leg
+        weight: 1
+      - path: L_front_B_leg
+        weight: 1
+      - path: L_front_C_leg
+        weight: 1
+      - path: L_horn
+        weight: 1
+      - path: L_pincer
+        weight: 1
+      - path: L_wing
+        weight: 1
+      - path: R_back_A_leg
+        weight: 1
+      - path: R_back_B_leg
+        weight: 1
+      - path: R_back_C_leg
+        weight: 1
+      - path: R_center_A_leg
+        weight: 1
+      - path: R_center_B_leg
+        weight: 1
+      - path: R_center_C_leg
+        weight: 1
+      - path: R_front_A_leg
+        weight: 1
+      - path: R_front_B_leg
+        weight: 1
+      - path: R_front_C_leg
+        weight: 1
+      - path: R_horn
+        weight: 1
+      - path: R_pincer
+        weight: 1
+      - path: R_wing
+        weight: 1
+      - path: ROOT
+        weight: 1
+      - path: ROOT/abdomen_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt/L_leg_back_C_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt/L_leg_back_C_jnt/L_back_ankle_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt/L_leg_back_C_jnt/L_back_ankle_jnt/L_back_contact_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt/R_leg_back_C_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt/R_leg_back_C_jnt/R_back_ankle_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt/R_leg_back_C_jnt/R_back_ankle_jnt/R_back_contact_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/sphere_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/spine1_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/spine1_jnt/spine2_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/spine1_jnt/spine2_jnt/spine3_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/spine1_jnt/spine2_jnt/spine3_jnt/spine4_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt/L_leg_center_C_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt/L_leg_center_C_jnt/L_center_ankle_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt/L_leg_center_C_jnt/L_center_ankle_jnt/L_center_contact_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt/L_leg_front_C_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt/L_leg_front_C_jnt/L_front_ankle_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt/L_leg_front_C_jnt/L_front_ankle_jnt/L_front_contact_jnt
+        weight: 1
+      - path: ROOT/L_wing_1_jnt
+        weight: 1
+      - path: ROOT/L_wing_1_jnt/L_wing_2_jnt
+        weight: 1
+      - path: ROOT/L_wing_1_jnt/L_wing_2_jnt/L_wing_3_jnt
+        weight: 1
+      - path: ROOT/L_wing_1_jnt/L_wing_2_jnt/L_wing_3_jnt/L_wing_end_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/L_pincer_1_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/L_pincer_1_jnt/L_pincer_2_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/L_pincer_1_jnt/L_pincer_2_jnt/L_pincer_end_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/R_pincer_1_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/R_pincer_1_jnt/R_pincer_2_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/R_pincer_1_jnt/R_pincer_2_jnt/R_pincer_end_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt/R_leg_center_C_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt/R_leg_center_C_jnt/R_center_ankle_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt/R_leg_center_C_jnt/R_center_ankle_jnt/R_center_contact_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt/R_leg_front_C_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt/R_leg_front_C_jnt/R_front_ankle_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt/R_leg_front_C_jnt/R_front_ankle_jnt/R_front_contact_jnt
+        weight: 1
+      - path: ROOT/R_wing_1_jnt
+        weight: 1
+      - path: ROOT/R_wing_1_jnt/R_wing_2_jnt
+        weight: 1
+      - path: ROOT/R_wing_1_jnt/R_wing_2_jnt/R_wing_3_jnt
+        weight: 1
+      - path: ROOT/R_wing_1_jnt/R_wing_2_jnt/R_wing_3_jnt/R_wing_end_jnt
+        weight: 1
+      - path: sphere
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: magic spit
+      takeName: Take 001
+      firstFrame: 455
+      lastFrame: 490
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events:
+      - time: 0.67157125
+        functionName: CastSpell
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      transformMask:
+      - path: 
+        weight: 1
+      - path: abdomen
+        weight: 1
+      - path: Blendshape_GRP
+        weight: 1
+      - path: body
+        weight: 1
+      - path: carapace
+        weight: 1
+      - path: eyes
+        weight: 1
+      - path: head
+        weight: 1
+      - path: L_back_A_leg
+        weight: 1
+      - path: L_back_B_leg
+        weight: 1
+      - path: L_back_C_leg
+        weight: 1
+      - path: L_center_A_leg
+        weight: 1
+      - path: L_center_B_leg
+        weight: 1
+      - path: L_center_C_leg
+        weight: 1
+      - path: L_front_A_leg
+        weight: 1
+      - path: L_front_B_leg
+        weight: 1
+      - path: L_front_C_leg
+        weight: 1
+      - path: L_horn
+        weight: 1
+      - path: L_pincer
+        weight: 1
+      - path: L_wing
+        weight: 1
+      - path: R_back_A_leg
+        weight: 1
+      - path: R_back_B_leg
+        weight: 1
+      - path: R_back_C_leg
+        weight: 1
+      - path: R_center_A_leg
+        weight: 1
+      - path: R_center_B_leg
+        weight: 1
+      - path: R_center_C_leg
+        weight: 1
+      - path: R_front_A_leg
+        weight: 1
+      - path: R_front_B_leg
+        weight: 1
+      - path: R_front_C_leg
+        weight: 1
+      - path: R_horn
+        weight: 1
+      - path: R_pincer
+        weight: 1
+      - path: R_wing
+        weight: 1
+      - path: ROOT
+        weight: 1
+      - path: ROOT/abdomen_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt/L_leg_back_C_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt/L_leg_back_C_jnt/L_back_ankle_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt/L_leg_back_C_jnt/L_back_ankle_jnt/L_back_contact_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt/R_leg_back_C_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt/R_leg_back_C_jnt/R_back_ankle_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt/R_leg_back_C_jnt/R_back_ankle_jnt/R_back_contact_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/sphere_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/spine1_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/spine1_jnt/spine2_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/spine1_jnt/spine2_jnt/spine3_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/spine1_jnt/spine2_jnt/spine3_jnt/spine4_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt/L_leg_center_C_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt/L_leg_center_C_jnt/L_center_ankle_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt/L_leg_center_C_jnt/L_center_ankle_jnt/L_center_contact_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt/L_leg_front_C_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt/L_leg_front_C_jnt/L_front_ankle_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt/L_leg_front_C_jnt/L_front_ankle_jnt/L_front_contact_jnt
+        weight: 1
+      - path: ROOT/L_wing_1_jnt
+        weight: 1
+      - path: ROOT/L_wing_1_jnt/L_wing_2_jnt
+        weight: 1
+      - path: ROOT/L_wing_1_jnt/L_wing_2_jnt/L_wing_3_jnt
+        weight: 1
+      - path: ROOT/L_wing_1_jnt/L_wing_2_jnt/L_wing_3_jnt/L_wing_end_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/L_pincer_1_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/L_pincer_1_jnt/L_pincer_2_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/L_pincer_1_jnt/L_pincer_2_jnt/L_pincer_end_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/R_pincer_1_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/R_pincer_1_jnt/R_pincer_2_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/R_pincer_1_jnt/R_pincer_2_jnt/R_pincer_end_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt/R_leg_center_C_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt/R_leg_center_C_jnt/R_center_ankle_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt/R_leg_center_C_jnt/R_center_ankle_jnt/R_center_contact_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt/R_leg_front_C_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt/R_leg_front_C_jnt/R_front_ankle_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt/R_leg_front_C_jnt/R_front_ankle_jnt/R_front_contact_jnt
+        weight: 1
+      - path: ROOT/R_wing_1_jnt
+        weight: 1
+      - path: ROOT/R_wing_1_jnt/R_wing_2_jnt
+        weight: 1
+      - path: ROOT/R_wing_1_jnt/R_wing_2_jnt/R_wing_3_jnt
+        weight: 1
+      - path: ROOT/R_wing_1_jnt/R_wing_2_jnt/R_wing_3_jnt/R_wing_end_jnt
+        weight: 1
+      - path: sphere
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: ground to air
+      takeName: Take 001
+      firstFrame: 495
+      lastFrame: 520
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: abdomen
+        weight: 1
+      - path: Blendshape_GRP
+        weight: 1
+      - path: body
+        weight: 1
+      - path: carapace
+        weight: 1
+      - path: eyes
+        weight: 1
+      - path: head
+        weight: 1
+      - path: L_back_A_leg
+        weight: 1
+      - path: L_back_B_leg
+        weight: 1
+      - path: L_back_C_leg
+        weight: 1
+      - path: L_center_A_leg
+        weight: 1
+      - path: L_center_B_leg
+        weight: 1
+      - path: L_center_C_leg
+        weight: 1
+      - path: L_front_A_leg
+        weight: 1
+      - path: L_front_B_leg
+        weight: 1
+      - path: L_front_C_leg
+        weight: 1
+      - path: L_horn
+        weight: 1
+      - path: L_pincer
+        weight: 1
+      - path: L_wing
+        weight: 1
+      - path: R_back_A_leg
+        weight: 1
+      - path: R_back_B_leg
+        weight: 1
+      - path: R_back_C_leg
+        weight: 1
+      - path: R_center_A_leg
+        weight: 1
+      - path: R_center_B_leg
+        weight: 1
+      - path: R_center_C_leg
+        weight: 1
+      - path: R_front_A_leg
+        weight: 1
+      - path: R_front_B_leg
+        weight: 1
+      - path: R_front_C_leg
+        weight: 1
+      - path: R_horn
+        weight: 1
+      - path: R_pincer
+        weight: 1
+      - path: R_wing
+        weight: 1
+      - path: ROOT
+        weight: 1
+      - path: ROOT/abdomen_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt/L_leg_back_C_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt/L_leg_back_C_jnt/L_back_ankle_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt/L_leg_back_C_jnt/L_back_ankle_jnt/L_back_contact_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt/R_leg_back_C_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt/R_leg_back_C_jnt/R_back_ankle_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt/R_leg_back_C_jnt/R_back_ankle_jnt/R_back_contact_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/sphere_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/spine1_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/spine1_jnt/spine2_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/spine1_jnt/spine2_jnt/spine3_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/spine1_jnt/spine2_jnt/spine3_jnt/spine4_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt/L_leg_center_C_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt/L_leg_center_C_jnt/L_center_ankle_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt/L_leg_center_C_jnt/L_center_ankle_jnt/L_center_contact_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt/L_leg_front_C_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt/L_leg_front_C_jnt/L_front_ankle_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt/L_leg_front_C_jnt/L_front_ankle_jnt/L_front_contact_jnt
+        weight: 1
+      - path: ROOT/L_wing_1_jnt
+        weight: 1
+      - path: ROOT/L_wing_1_jnt/L_wing_2_jnt
+        weight: 1
+      - path: ROOT/L_wing_1_jnt/L_wing_2_jnt/L_wing_3_jnt
+        weight: 1
+      - path: ROOT/L_wing_1_jnt/L_wing_2_jnt/L_wing_3_jnt/L_wing_end_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/L_pincer_1_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/L_pincer_1_jnt/L_pincer_2_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/L_pincer_1_jnt/L_pincer_2_jnt/L_pincer_end_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/R_pincer_1_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/R_pincer_1_jnt/R_pincer_2_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/R_pincer_1_jnt/R_pincer_2_jnt/R_pincer_end_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt/R_leg_center_C_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt/R_leg_center_C_jnt/R_center_ankle_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt/R_leg_center_C_jnt/R_center_ankle_jnt/R_center_contact_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt/R_leg_front_C_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt/R_leg_front_C_jnt/R_front_ankle_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt/R_leg_front_C_jnt/R_front_ankle_jnt/R_front_contact_jnt
+        weight: 1
+      - path: ROOT/R_wing_1_jnt
+        weight: 1
+      - path: ROOT/R_wing_1_jnt/R_wing_2_jnt
+        weight: 1
+      - path: ROOT/R_wing_1_jnt/R_wing_2_jnt/R_wing_3_jnt
+        weight: 1
+      - path: ROOT/R_wing_1_jnt/R_wing_2_jnt/R_wing_3_jnt/R_wing_end_jnt
+        weight: 1
+      - path: sphere
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: fly hit
+      takeName: Take 001
+      firstFrame: 600
+      lastFrame: 632
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: abdomen
+        weight: 1
+      - path: Blendshape_GRP
+        weight: 1
+      - path: body
+        weight: 1
+      - path: carapace
+        weight: 1
+      - path: eyes
+        weight: 1
+      - path: head
+        weight: 1
+      - path: L_back_A_leg
+        weight: 1
+      - path: L_back_B_leg
+        weight: 1
+      - path: L_back_C_leg
+        weight: 1
+      - path: L_center_A_leg
+        weight: 1
+      - path: L_center_B_leg
+        weight: 1
+      - path: L_center_C_leg
+        weight: 1
+      - path: L_front_A_leg
+        weight: 1
+      - path: L_front_B_leg
+        weight: 1
+      - path: L_front_C_leg
+        weight: 1
+      - path: L_horn
+        weight: 1
+      - path: L_pincer
+        weight: 1
+      - path: L_wing
+        weight: 1
+      - path: R_back_A_leg
+        weight: 1
+      - path: R_back_B_leg
+        weight: 1
+      - path: R_back_C_leg
+        weight: 1
+      - path: R_center_A_leg
+        weight: 1
+      - path: R_center_B_leg
+        weight: 1
+      - path: R_center_C_leg
+        weight: 1
+      - path: R_front_A_leg
+        weight: 1
+      - path: R_front_B_leg
+        weight: 1
+      - path: R_front_C_leg
+        weight: 1
+      - path: R_horn
+        weight: 1
+      - path: R_pincer
+        weight: 1
+      - path: R_wing
+        weight: 1
+      - path: ROOT
+        weight: 1
+      - path: ROOT/abdomen_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt/L_leg_back_C_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt/L_leg_back_C_jnt/L_back_ankle_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt/L_leg_back_C_jnt/L_back_ankle_jnt/L_back_contact_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt/R_leg_back_C_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt/R_leg_back_C_jnt/R_back_ankle_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt/R_leg_back_C_jnt/R_back_ankle_jnt/R_back_contact_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/sphere_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/spine1_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/spine1_jnt/spine2_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/spine1_jnt/spine2_jnt/spine3_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/spine1_jnt/spine2_jnt/spine3_jnt/spine4_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt/L_leg_center_C_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt/L_leg_center_C_jnt/L_center_ankle_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt/L_leg_center_C_jnt/L_center_ankle_jnt/L_center_contact_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt/L_leg_front_C_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt/L_leg_front_C_jnt/L_front_ankle_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt/L_leg_front_C_jnt/L_front_ankle_jnt/L_front_contact_jnt
+        weight: 1
+      - path: ROOT/L_wing_1_jnt
+        weight: 1
+      - path: ROOT/L_wing_1_jnt/L_wing_2_jnt
+        weight: 1
+      - path: ROOT/L_wing_1_jnt/L_wing_2_jnt/L_wing_3_jnt
+        weight: 1
+      - path: ROOT/L_wing_1_jnt/L_wing_2_jnt/L_wing_3_jnt/L_wing_end_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/L_pincer_1_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/L_pincer_1_jnt/L_pincer_2_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/L_pincer_1_jnt/L_pincer_2_jnt/L_pincer_end_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/R_pincer_1_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/R_pincer_1_jnt/R_pincer_2_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/R_pincer_1_jnt/R_pincer_2_jnt/R_pincer_end_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt/R_leg_center_C_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt/R_leg_center_C_jnt/R_center_ankle_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt/R_leg_center_C_jnt/R_center_ankle_jnt/R_center_contact_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt/R_leg_front_C_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt/R_leg_front_C_jnt/R_front_ankle_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt/R_leg_front_C_jnt/R_front_ankle_jnt/R_front_contact_jnt
+        weight: 1
+      - path: ROOT/R_wing_1_jnt
+        weight: 1
+      - path: ROOT/R_wing_1_jnt/R_wing_2_jnt
+        weight: 1
+      - path: ROOT/R_wing_1_jnt/R_wing_2_jnt/R_wing_3_jnt
+        weight: 1
+      - path: ROOT/R_wing_1_jnt/R_wing_2_jnt/R_wing_3_jnt/R_wing_end_jnt
+        weight: 1
+      - path: sphere
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: fly forward
+      takeName: Take 001
+      firstFrame: 640
+      lastFrame: 672
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: abdomen
+        weight: 1
+      - path: Blendshape_GRP
+        weight: 1
+      - path: body
+        weight: 1
+      - path: carapace
+        weight: 1
+      - path: eyes
+        weight: 1
+      - path: head
+        weight: 1
+      - path: L_back_A_leg
+        weight: 1
+      - path: L_back_B_leg
+        weight: 1
+      - path: L_back_C_leg
+        weight: 1
+      - path: L_center_A_leg
+        weight: 1
+      - path: L_center_B_leg
+        weight: 1
+      - path: L_center_C_leg
+        weight: 1
+      - path: L_front_A_leg
+        weight: 1
+      - path: L_front_B_leg
+        weight: 1
+      - path: L_front_C_leg
+        weight: 1
+      - path: L_horn
+        weight: 1
+      - path: L_pincer
+        weight: 1
+      - path: L_wing
+        weight: 1
+      - path: R_back_A_leg
+        weight: 1
+      - path: R_back_B_leg
+        weight: 1
+      - path: R_back_C_leg
+        weight: 1
+      - path: R_center_A_leg
+        weight: 1
+      - path: R_center_B_leg
+        weight: 1
+      - path: R_center_C_leg
+        weight: 1
+      - path: R_front_A_leg
+        weight: 1
+      - path: R_front_B_leg
+        weight: 1
+      - path: R_front_C_leg
+        weight: 1
+      - path: R_horn
+        weight: 1
+      - path: R_pincer
+        weight: 1
+      - path: R_wing
+        weight: 1
+      - path: ROOT
+        weight: 1
+      - path: ROOT/abdomen_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt/L_leg_back_C_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt/L_leg_back_C_jnt/L_back_ankle_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt/L_leg_back_C_jnt/L_back_ankle_jnt/L_back_contact_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt/R_leg_back_C_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt/R_leg_back_C_jnt/R_back_ankle_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt/R_leg_back_C_jnt/R_back_ankle_jnt/R_back_contact_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/sphere_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/spine1_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/spine1_jnt/spine2_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/spine1_jnt/spine2_jnt/spine3_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/spine1_jnt/spine2_jnt/spine3_jnt/spine4_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt/L_leg_center_C_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt/L_leg_center_C_jnt/L_center_ankle_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt/L_leg_center_C_jnt/L_center_ankle_jnt/L_center_contact_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt/L_leg_front_C_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt/L_leg_front_C_jnt/L_front_ankle_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt/L_leg_front_C_jnt/L_front_ankle_jnt/L_front_contact_jnt
+        weight: 1
+      - path: ROOT/L_wing_1_jnt
+        weight: 1
+      - path: ROOT/L_wing_1_jnt/L_wing_2_jnt
+        weight: 1
+      - path: ROOT/L_wing_1_jnt/L_wing_2_jnt/L_wing_3_jnt
+        weight: 1
+      - path: ROOT/L_wing_1_jnt/L_wing_2_jnt/L_wing_3_jnt/L_wing_end_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/L_pincer_1_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/L_pincer_1_jnt/L_pincer_2_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/L_pincer_1_jnt/L_pincer_2_jnt/L_pincer_end_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/R_pincer_1_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/R_pincer_1_jnt/R_pincer_2_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/R_pincer_1_jnt/R_pincer_2_jnt/R_pincer_end_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt/R_leg_center_C_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt/R_leg_center_C_jnt/R_center_ankle_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt/R_leg_center_C_jnt/R_center_ankle_jnt/R_center_contact_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt/R_leg_front_C_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt/R_leg_front_C_jnt/R_front_ankle_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt/R_leg_front_C_jnt/R_front_ankle_jnt/R_front_contact_jnt
+        weight: 1
+      - path: ROOT/R_wing_1_jnt
+        weight: 1
+      - path: ROOT/R_wing_1_jnt/R_wing_2_jnt
+        weight: 1
+      - path: ROOT/R_wing_1_jnt/R_wing_2_jnt/R_wing_3_jnt
+        weight: 1
+      - path: ROOT/R_wing_1_jnt/R_wing_2_jnt/R_wing_3_jnt/R_wing_end_jnt
+        weight: 1
+      - path: sphere
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: fly back
+      takeName: Take 001
+      firstFrame: 680
+      lastFrame: 712
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: abdomen
+        weight: 1
+      - path: Blendshape_GRP
+        weight: 1
+      - path: body
+        weight: 1
+      - path: carapace
+        weight: 1
+      - path: eyes
+        weight: 1
+      - path: head
+        weight: 1
+      - path: L_back_A_leg
+        weight: 1
+      - path: L_back_B_leg
+        weight: 1
+      - path: L_back_C_leg
+        weight: 1
+      - path: L_center_A_leg
+        weight: 1
+      - path: L_center_B_leg
+        weight: 1
+      - path: L_center_C_leg
+        weight: 1
+      - path: L_front_A_leg
+        weight: 1
+      - path: L_front_B_leg
+        weight: 1
+      - path: L_front_C_leg
+        weight: 1
+      - path: L_horn
+        weight: 1
+      - path: L_pincer
+        weight: 1
+      - path: L_wing
+        weight: 1
+      - path: R_back_A_leg
+        weight: 1
+      - path: R_back_B_leg
+        weight: 1
+      - path: R_back_C_leg
+        weight: 1
+      - path: R_center_A_leg
+        weight: 1
+      - path: R_center_B_leg
+        weight: 1
+      - path: R_center_C_leg
+        weight: 1
+      - path: R_front_A_leg
+        weight: 1
+      - path: R_front_B_leg
+        weight: 1
+      - path: R_front_C_leg
+        weight: 1
+      - path: R_horn
+        weight: 1
+      - path: R_pincer
+        weight: 1
+      - path: R_wing
+        weight: 1
+      - path: ROOT
+        weight: 1
+      - path: ROOT/abdomen_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt/L_leg_back_C_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt/L_leg_back_C_jnt/L_back_ankle_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt/L_leg_back_C_jnt/L_back_ankle_jnt/L_back_contact_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt/R_leg_back_C_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt/R_leg_back_C_jnt/R_back_ankle_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt/R_leg_back_C_jnt/R_back_ankle_jnt/R_back_contact_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/sphere_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/spine1_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/spine1_jnt/spine2_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/spine1_jnt/spine2_jnt/spine3_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/spine1_jnt/spine2_jnt/spine3_jnt/spine4_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt/L_leg_center_C_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt/L_leg_center_C_jnt/L_center_ankle_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt/L_leg_center_C_jnt/L_center_ankle_jnt/L_center_contact_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt/L_leg_front_C_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt/L_leg_front_C_jnt/L_front_ankle_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt/L_leg_front_C_jnt/L_front_ankle_jnt/L_front_contact_jnt
+        weight: 1
+      - path: ROOT/L_wing_1_jnt
+        weight: 1
+      - path: ROOT/L_wing_1_jnt/L_wing_2_jnt
+        weight: 1
+      - path: ROOT/L_wing_1_jnt/L_wing_2_jnt/L_wing_3_jnt
+        weight: 1
+      - path: ROOT/L_wing_1_jnt/L_wing_2_jnt/L_wing_3_jnt/L_wing_end_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/L_pincer_1_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/L_pincer_1_jnt/L_pincer_2_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/L_pincer_1_jnt/L_pincer_2_jnt/L_pincer_end_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/R_pincer_1_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/R_pincer_1_jnt/R_pincer_2_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/R_pincer_1_jnt/R_pincer_2_jnt/R_pincer_end_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt/R_leg_center_C_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt/R_leg_center_C_jnt/R_center_ankle_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt/R_leg_center_C_jnt/R_center_ankle_jnt/R_center_contact_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt/R_leg_front_C_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt/R_leg_front_C_jnt/R_front_ankle_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt/R_leg_front_C_jnt/R_front_ankle_jnt/R_front_contact_jnt
+        weight: 1
+      - path: ROOT/R_wing_1_jnt
+        weight: 1
+      - path: ROOT/R_wing_1_jnt/R_wing_2_jnt
+        weight: 1
+      - path: ROOT/R_wing_1_jnt/R_wing_2_jnt/R_wing_3_jnt
+        weight: 1
+      - path: ROOT/R_wing_1_jnt/R_wing_2_jnt/R_wing_3_jnt/R_wing_end_jnt
+        weight: 1
+      - path: sphere
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: air to ground
+      takeName: Take 001
+      firstFrame: 720
+      lastFrame: 755
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: abdomen
+        weight: 1
+      - path: Blendshape_GRP
+        weight: 1
+      - path: body
+        weight: 1
+      - path: carapace
+        weight: 1
+      - path: eyes
+        weight: 1
+      - path: head
+        weight: 1
+      - path: L_back_A_leg
+        weight: 1
+      - path: L_back_B_leg
+        weight: 1
+      - path: L_back_C_leg
+        weight: 1
+      - path: L_center_A_leg
+        weight: 1
+      - path: L_center_B_leg
+        weight: 1
+      - path: L_center_C_leg
+        weight: 1
+      - path: L_front_A_leg
+        weight: 1
+      - path: L_front_B_leg
+        weight: 1
+      - path: L_front_C_leg
+        weight: 1
+      - path: L_horn
+        weight: 1
+      - path: L_pincer
+        weight: 1
+      - path: L_wing
+        weight: 1
+      - path: R_back_A_leg
+        weight: 1
+      - path: R_back_B_leg
+        weight: 1
+      - path: R_back_C_leg
+        weight: 1
+      - path: R_center_A_leg
+        weight: 1
+      - path: R_center_B_leg
+        weight: 1
+      - path: R_center_C_leg
+        weight: 1
+      - path: R_front_A_leg
+        weight: 1
+      - path: R_front_B_leg
+        weight: 1
+      - path: R_front_C_leg
+        weight: 1
+      - path: R_horn
+        weight: 1
+      - path: R_pincer
+        weight: 1
+      - path: R_wing
+        weight: 1
+      - path: ROOT
+        weight: 1
+      - path: ROOT/abdomen_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt/L_leg_back_C_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt/L_leg_back_C_jnt/L_back_ankle_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt/L_leg_back_C_jnt/L_back_ankle_jnt/L_back_contact_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt/R_leg_back_C_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt/R_leg_back_C_jnt/R_back_ankle_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt/R_leg_back_C_jnt/R_back_ankle_jnt/R_back_contact_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/sphere_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/spine1_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/spine1_jnt/spine2_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/spine1_jnt/spine2_jnt/spine3_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/spine1_jnt/spine2_jnt/spine3_jnt/spine4_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt/L_leg_center_C_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt/L_leg_center_C_jnt/L_center_ankle_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt/L_leg_center_C_jnt/L_center_ankle_jnt/L_center_contact_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt/L_leg_front_C_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt/L_leg_front_C_jnt/L_front_ankle_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt/L_leg_front_C_jnt/L_front_ankle_jnt/L_front_contact_jnt
+        weight: 1
+      - path: ROOT/L_wing_1_jnt
+        weight: 1
+      - path: ROOT/L_wing_1_jnt/L_wing_2_jnt
+        weight: 1
+      - path: ROOT/L_wing_1_jnt/L_wing_2_jnt/L_wing_3_jnt
+        weight: 1
+      - path: ROOT/L_wing_1_jnt/L_wing_2_jnt/L_wing_3_jnt/L_wing_end_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/L_pincer_1_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/L_pincer_1_jnt/L_pincer_2_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/L_pincer_1_jnt/L_pincer_2_jnt/L_pincer_end_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/R_pincer_1_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/R_pincer_1_jnt/R_pincer_2_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/R_pincer_1_jnt/R_pincer_2_jnt/R_pincer_end_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt/R_leg_center_C_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt/R_leg_center_C_jnt/R_center_ankle_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt/R_leg_center_C_jnt/R_center_ankle_jnt/R_center_contact_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt/R_leg_front_C_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt/R_leg_front_C_jnt/R_front_ankle_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt/R_leg_front_C_jnt/R_front_ankle_jnt/R_front_contact_jnt
+        weight: 1
+      - path: ROOT/R_wing_1_jnt
+        weight: 1
+      - path: ROOT/R_wing_1_jnt/R_wing_2_jnt
+        weight: 1
+      - path: ROOT/R_wing_1_jnt/R_wing_2_jnt/R_wing_3_jnt
+        weight: 1
+      - path: ROOT/R_wing_1_jnt/R_wing_2_jnt/R_wing_3_jnt/R_wing_end_jnt
+        weight: 1
+      - path: sphere
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: fly death
+      takeName: Take 001
+      firstFrame: 760
+      lastFrame: 820
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: abdomen
+        weight: 1
+      - path: Blendshape_GRP
+        weight: 1
+      - path: body
+        weight: 1
+      - path: carapace
+        weight: 1
+      - path: eyes
+        weight: 1
+      - path: head
+        weight: 1
+      - path: L_back_A_leg
+        weight: 1
+      - path: L_back_B_leg
+        weight: 1
+      - path: L_back_C_leg
+        weight: 1
+      - path: L_center_A_leg
+        weight: 1
+      - path: L_center_B_leg
+        weight: 1
+      - path: L_center_C_leg
+        weight: 1
+      - path: L_front_A_leg
+        weight: 1
+      - path: L_front_B_leg
+        weight: 1
+      - path: L_front_C_leg
+        weight: 1
+      - path: L_horn
+        weight: 1
+      - path: L_pincer
+        weight: 1
+      - path: L_wing
+        weight: 1
+      - path: R_back_A_leg
+        weight: 1
+      - path: R_back_B_leg
+        weight: 1
+      - path: R_back_C_leg
+        weight: 1
+      - path: R_center_A_leg
+        weight: 1
+      - path: R_center_B_leg
+        weight: 1
+      - path: R_center_C_leg
+        weight: 1
+      - path: R_front_A_leg
+        weight: 1
+      - path: R_front_B_leg
+        weight: 1
+      - path: R_front_C_leg
+        weight: 1
+      - path: R_horn
+        weight: 1
+      - path: R_pincer
+        weight: 1
+      - path: R_wing
+        weight: 1
+      - path: ROOT
+        weight: 1
+      - path: ROOT/abdomen_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt/L_leg_back_C_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt/L_leg_back_C_jnt/L_back_ankle_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt/L_leg_back_C_jnt/L_back_ankle_jnt/L_back_contact_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt/R_leg_back_C_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt/R_leg_back_C_jnt/R_back_ankle_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt/R_leg_back_C_jnt/R_back_ankle_jnt/R_back_contact_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/sphere_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/spine1_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/spine1_jnt/spine2_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/spine1_jnt/spine2_jnt/spine3_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/spine1_jnt/spine2_jnt/spine3_jnt/spine4_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt/L_leg_center_C_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt/L_leg_center_C_jnt/L_center_ankle_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt/L_leg_center_C_jnt/L_center_ankle_jnt/L_center_contact_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt/L_leg_front_C_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt/L_leg_front_C_jnt/L_front_ankle_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt/L_leg_front_C_jnt/L_front_ankle_jnt/L_front_contact_jnt
+        weight: 1
+      - path: ROOT/L_wing_1_jnt
+        weight: 1
+      - path: ROOT/L_wing_1_jnt/L_wing_2_jnt
+        weight: 1
+      - path: ROOT/L_wing_1_jnt/L_wing_2_jnt/L_wing_3_jnt
+        weight: 1
+      - path: ROOT/L_wing_1_jnt/L_wing_2_jnt/L_wing_3_jnt/L_wing_end_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/L_pincer_1_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/L_pincer_1_jnt/L_pincer_2_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/L_pincer_1_jnt/L_pincer_2_jnt/L_pincer_end_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/R_pincer_1_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/R_pincer_1_jnt/R_pincer_2_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/R_pincer_1_jnt/R_pincer_2_jnt/R_pincer_end_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt/R_leg_center_C_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt/R_leg_center_C_jnt/R_center_ankle_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt/R_leg_center_C_jnt/R_center_ankle_jnt/R_center_contact_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt/R_leg_front_C_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt/R_leg_front_C_jnt/R_front_ankle_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt/R_leg_front_C_jnt/R_front_ankle_jnt/R_front_contact_jnt
+        weight: 1
+      - path: ROOT/R_wing_1_jnt
+        weight: 1
+      - path: ROOT/R_wing_1_jnt/R_wing_2_jnt
+        weight: 1
+      - path: ROOT/R_wing_1_jnt/R_wing_2_jnt/R_wing_3_jnt
+        weight: 1
+      - path: ROOT/R_wing_1_jnt/R_wing_2_jnt/R_wing_3_jnt/R_wing_end_jnt
+        weight: 1
+      - path: sphere
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: explode
+      takeName: Take 001
+      firstFrame: 830
+      lastFrame: 940
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events:
+      - time: 0.58937204
+        functionName: ExplodeBug
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      transformMask:
+      - path: 
+        weight: 1
+      - path: abdomen
+        weight: 1
+      - path: Blendshape_GRP
+        weight: 1
+      - path: body
+        weight: 1
+      - path: carapace
+        weight: 1
+      - path: eyes
+        weight: 1
+      - path: head
+        weight: 1
+      - path: L_back_A_leg
+        weight: 1
+      - path: L_back_B_leg
+        weight: 1
+      - path: L_back_C_leg
+        weight: 1
+      - path: L_center_A_leg
+        weight: 1
+      - path: L_center_B_leg
+        weight: 1
+      - path: L_center_C_leg
+        weight: 1
+      - path: L_front_A_leg
+        weight: 1
+      - path: L_front_B_leg
+        weight: 1
+      - path: L_front_C_leg
+        weight: 1
+      - path: L_horn
+        weight: 1
+      - path: L_pincer
+        weight: 1
+      - path: L_wing
+        weight: 1
+      - path: R_back_A_leg
+        weight: 1
+      - path: R_back_B_leg
+        weight: 1
+      - path: R_back_C_leg
+        weight: 1
+      - path: R_center_A_leg
+        weight: 1
+      - path: R_center_B_leg
+        weight: 1
+      - path: R_center_C_leg
+        weight: 1
+      - path: R_front_A_leg
+        weight: 1
+      - path: R_front_B_leg
+        weight: 1
+      - path: R_front_C_leg
+        weight: 1
+      - path: R_horn
+        weight: 1
+      - path: R_pincer
+        weight: 1
+      - path: R_wing
+        weight: 1
+      - path: ROOT
+        weight: 1
+      - path: ROOT/abdomen_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt/L_leg_back_C_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt/L_leg_back_C_jnt/L_back_ankle_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt/L_leg_back_C_jnt/L_back_ankle_jnt/L_back_contact_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt/R_leg_back_C_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt/R_leg_back_C_jnt/R_back_ankle_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt/R_leg_back_C_jnt/R_back_ankle_jnt/R_back_contact_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/sphere_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/spine1_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/spine1_jnt/spine2_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/spine1_jnt/spine2_jnt/spine3_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/spine1_jnt/spine2_jnt/spine3_jnt/spine4_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt/L_leg_center_C_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt/L_leg_center_C_jnt/L_center_ankle_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt/L_leg_center_C_jnt/L_center_ankle_jnt/L_center_contact_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt/L_leg_front_C_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt/L_leg_front_C_jnt/L_front_ankle_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt/L_leg_front_C_jnt/L_front_ankle_jnt/L_front_contact_jnt
+        weight: 1
+      - path: ROOT/L_wing_1_jnt
+        weight: 1
+      - path: ROOT/L_wing_1_jnt/L_wing_2_jnt
+        weight: 1
+      - path: ROOT/L_wing_1_jnt/L_wing_2_jnt/L_wing_3_jnt
+        weight: 1
+      - path: ROOT/L_wing_1_jnt/L_wing_2_jnt/L_wing_3_jnt/L_wing_end_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/L_pincer_1_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/L_pincer_1_jnt/L_pincer_2_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/L_pincer_1_jnt/L_pincer_2_jnt/L_pincer_end_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/R_pincer_1_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/R_pincer_1_jnt/R_pincer_2_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/R_pincer_1_jnt/R_pincer_2_jnt/R_pincer_end_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt/R_leg_center_C_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt/R_leg_center_C_jnt/R_center_ankle_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt/R_leg_center_C_jnt/R_center_ankle_jnt/R_center_contact_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt/R_leg_front_C_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt/R_leg_front_C_jnt/R_front_ankle_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt/R_leg_front_C_jnt/R_front_ankle_jnt/R_front_contact_jnt
+        weight: 1
+      - path: ROOT/R_wing_1_jnt
+        weight: 1
+      - path: ROOT/R_wing_1_jnt/R_wing_2_jnt
+        weight: 1
+      - path: ROOT/R_wing_1_jnt/R_wing_2_jnt/R_wing_3_jnt
+        weight: 1
+      - path: ROOT/R_wing_1_jnt/R_wing_2_jnt/R_wing_3_jnt/R_wing_end_jnt
+        weight: 1
+      - path: sphere
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: fly idle
+      takeName: Take 001
+      firstFrame: 520
+      lastFrame: 552
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: abdomen
+        weight: 1
+      - path: Blendshape_GRP
+        weight: 1
+      - path: body
+        weight: 1
+      - path: carapace
+        weight: 1
+      - path: eyes
+        weight: 1
+      - path: head
+        weight: 1
+      - path: L_back_A_leg
+        weight: 1
+      - path: L_back_B_leg
+        weight: 1
+      - path: L_back_C_leg
+        weight: 1
+      - path: L_center_A_leg
+        weight: 1
+      - path: L_center_B_leg
+        weight: 1
+      - path: L_center_C_leg
+        weight: 1
+      - path: L_front_A_leg
+        weight: 1
+      - path: L_front_B_leg
+        weight: 1
+      - path: L_front_C_leg
+        weight: 1
+      - path: L_horn
+        weight: 1
+      - path: L_pincer
+        weight: 1
+      - path: L_wing
+        weight: 1
+      - path: R_back_A_leg
+        weight: 1
+      - path: R_back_B_leg
+        weight: 1
+      - path: R_back_C_leg
+        weight: 1
+      - path: R_center_A_leg
+        weight: 1
+      - path: R_center_B_leg
+        weight: 1
+      - path: R_center_C_leg
+        weight: 1
+      - path: R_front_A_leg
+        weight: 1
+      - path: R_front_B_leg
+        weight: 1
+      - path: R_front_C_leg
+        weight: 1
+      - path: R_horn
+        weight: 1
+      - path: R_pincer
+        weight: 1
+      - path: R_wing
+        weight: 1
+      - path: ROOT
+        weight: 1
+      - path: ROOT/abdomen_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt/L_leg_back_C_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt/L_leg_back_C_jnt/L_back_ankle_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt/L_leg_back_C_jnt/L_back_ankle_jnt/L_back_contact_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt/R_leg_back_C_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt/R_leg_back_C_jnt/R_back_ankle_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt/R_leg_back_C_jnt/R_back_ankle_jnt/R_back_contact_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/sphere_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/spine1_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/spine1_jnt/spine2_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/spine1_jnt/spine2_jnt/spine3_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/spine1_jnt/spine2_jnt/spine3_jnt/spine4_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt/L_leg_center_C_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt/L_leg_center_C_jnt/L_center_ankle_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt/L_leg_center_C_jnt/L_center_ankle_jnt/L_center_contact_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt/L_leg_front_C_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt/L_leg_front_C_jnt/L_front_ankle_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt/L_leg_front_C_jnt/L_front_ankle_jnt/L_front_contact_jnt
+        weight: 1
+      - path: ROOT/L_wing_1_jnt
+        weight: 1
+      - path: ROOT/L_wing_1_jnt/L_wing_2_jnt
+        weight: 1
+      - path: ROOT/L_wing_1_jnt/L_wing_2_jnt/L_wing_3_jnt
+        weight: 1
+      - path: ROOT/L_wing_1_jnt/L_wing_2_jnt/L_wing_3_jnt/L_wing_end_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/L_pincer_1_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/L_pincer_1_jnt/L_pincer_2_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/L_pincer_1_jnt/L_pincer_2_jnt/L_pincer_end_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/R_pincer_1_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/R_pincer_1_jnt/R_pincer_2_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/R_pincer_1_jnt/R_pincer_2_jnt/R_pincer_end_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt/R_leg_center_C_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt/R_leg_center_C_jnt/R_center_ankle_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt/R_leg_center_C_jnt/R_center_ankle_jnt/R_center_contact_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt/R_leg_front_C_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt/R_leg_front_C_jnt/R_front_ankle_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt/R_leg_front_C_jnt/R_front_ankle_jnt/R_front_contact_jnt
+        weight: 1
+      - path: ROOT/R_wing_1_jnt
+        weight: 1
+      - path: ROOT/R_wing_1_jnt/R_wing_2_jnt
+        weight: 1
+      - path: ROOT/R_wing_1_jnt/R_wing_2_jnt/R_wing_3_jnt
+        weight: 1
+      - path: ROOT/R_wing_1_jnt/R_wing_2_jnt/R_wing_3_jnt/R_wing_end_jnt
+        weight: 1
+      - path: sphere
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: fly dodge
+      takeName: Take 001
+      firstFrame: 560
+      lastFrame: 592
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: abdomen
+        weight: 1
+      - path: Blendshape_GRP
+        weight: 1
+      - path: body
+        weight: 1
+      - path: carapace
+        weight: 1
+      - path: eyes
+        weight: 1
+      - path: head
+        weight: 1
+      - path: L_back_A_leg
+        weight: 1
+      - path: L_back_B_leg
+        weight: 1
+      - path: L_back_C_leg
+        weight: 1
+      - path: L_center_A_leg
+        weight: 1
+      - path: L_center_B_leg
+        weight: 1
+      - path: L_center_C_leg
+        weight: 1
+      - path: L_front_A_leg
+        weight: 1
+      - path: L_front_B_leg
+        weight: 1
+      - path: L_front_C_leg
+        weight: 1
+      - path: L_horn
+        weight: 1
+      - path: L_pincer
+        weight: 1
+      - path: L_wing
+        weight: 1
+      - path: R_back_A_leg
+        weight: 1
+      - path: R_back_B_leg
+        weight: 1
+      - path: R_back_C_leg
+        weight: 1
+      - path: R_center_A_leg
+        weight: 1
+      - path: R_center_B_leg
+        weight: 1
+      - path: R_center_C_leg
+        weight: 1
+      - path: R_front_A_leg
+        weight: 1
+      - path: R_front_B_leg
+        weight: 1
+      - path: R_front_C_leg
+        weight: 1
+      - path: R_horn
+        weight: 1
+      - path: R_pincer
+        weight: 1
+      - path: R_wing
+        weight: 1
+      - path: ROOT
+        weight: 1
+      - path: ROOT/abdomen_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt/L_leg_back_C_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt/L_leg_back_C_jnt/L_back_ankle_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt/L_leg_back_C_jnt/L_back_ankle_jnt/L_back_contact_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt/R_leg_back_C_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt/R_leg_back_C_jnt/R_back_ankle_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt/R_leg_back_C_jnt/R_back_ankle_jnt/R_back_contact_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/sphere_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/spine1_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/spine1_jnt/spine2_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/spine1_jnt/spine2_jnt/spine3_jnt
+        weight: 1
+      - path: ROOT/abdomen_jnt/spine1_jnt/spine2_jnt/spine3_jnt/spine4_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt/L_leg_center_C_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt/L_leg_center_C_jnt/L_center_ankle_jnt
+        weight: 1
+      - path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt/L_leg_center_C_jnt/L_center_ankle_jnt/L_center_contact_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt/L_leg_front_C_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt/L_leg_front_C_jnt/L_front_ankle_jnt
+        weight: 1
+      - path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt/L_leg_front_C_jnt/L_front_ankle_jnt/L_front_contact_jnt
+        weight: 1
+      - path: ROOT/L_wing_1_jnt
+        weight: 1
+      - path: ROOT/L_wing_1_jnt/L_wing_2_jnt
+        weight: 1
+      - path: ROOT/L_wing_1_jnt/L_wing_2_jnt/L_wing_3_jnt
+        weight: 1
+      - path: ROOT/L_wing_1_jnt/L_wing_2_jnt/L_wing_3_jnt/L_wing_end_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/L_pincer_1_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/L_pincer_1_jnt/L_pincer_2_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/L_pincer_1_jnt/L_pincer_2_jnt/L_pincer_end_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/R_pincer_1_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/R_pincer_1_jnt/R_pincer_2_jnt
+        weight: 1
+      - path: ROOT/pronotum_jnt/head_jnt/R_pincer_1_jnt/R_pincer_2_jnt/R_pincer_end_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt/R_leg_center_C_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt/R_leg_center_C_jnt/R_center_ankle_jnt
+        weight: 1
+      - path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt/R_leg_center_C_jnt/R_center_ankle_jnt/R_center_contact_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt/R_leg_front_C_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt/R_leg_front_C_jnt/R_front_ankle_jnt
+        weight: 1
+      - path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt/R_leg_front_C_jnt/R_front_ankle_jnt/R_front_contact_jnt
+        weight: 1
+      - path: ROOT/R_wing_1_jnt
+        weight: 1
+      - path: ROOT/R_wing_1_jnt/R_wing_2_jnt
+        weight: 1
+      - path: ROOT/R_wing_1_jnt/R_wing_2_jnt/R_wing_3_jnt
+        weight: 1
+      - path: ROOT/R_wing_1_jnt/R_wing_2_jnt/R_wing_3_jnt/R_wing_end_jnt
+        weight: 1
+      - path: sphere
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: ROOT
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

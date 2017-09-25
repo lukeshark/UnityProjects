@@ -16,7 +16,7 @@ MonoBehaviour:
     dataVersion: 2
     usedInTemplate: {fileID: 11400000}
     name: DestructibleParts
-    startState: State 2
+    startState: State 3
     states:
     - name: State 1
       description: 
@@ -24,7 +24,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 226
-        y: 180
+        y: 196
         width: 100
         height: 32
       isBreakpoint: 0
@@ -51,7 +51,7 @@ MonoBehaviour:
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
-          name: 
+          name: CollisionObject
           tooltip: 
           showInInspector: 0
           networkSync: 0
@@ -102,8 +102,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 390
-        y: 182
+        x: 428
+        y: 199
         width: 107
         height: 32
       isBreakpoint: 0
@@ -114,7 +114,7 @@ MonoBehaviour:
           name: FINISHED
           isSystemEvent: 1
           isGlobal: 0
-        toState: State 1
+        toState: State 3
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -465,7 +465,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 58
-        y: 181
+        y: 197
         width: 100
         height: 32
       isBreakpoint: 0
@@ -542,6 +542,58 @@ MonoBehaviour:
         - detachChildren
         paramDataPos: 000000000000000000000000
         paramByteDataSize: 000000000000000000000000
+    - name: State 3
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 142
+        y: 112
+        width: 100
+        height: 16
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions: []
+      actionData:
+        actionNames: []
+        customNames: []
+        actionEnabled: 
+        actionIsOpen: 
+        actionStartIndex: 
+        actionHashCodes: 
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams: []
+        byteData: 
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 
+        paramName: []
+        paramDataPos: 
+        paramByteDataSize: 
     events:
     - name: FINISHED
       isSystemEvent: 1
@@ -552,7 +604,15 @@ MonoBehaviour:
     - name: HEADSHOT
       isSystemEvent: 0
       isGlobal: 1
-    globalTransitions: []
+    globalTransitions:
+    - fsmEvent:
+        name: Get Damage
+        isSystemEvent: 0
+        isGlobal: 1
+      toState: SendDamage
+      linkStyle: 0
+      linkConstraint: 0
+      colorIndex: 0
     variables:
       floatVariables: []
       intVariables:

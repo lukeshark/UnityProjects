@@ -417,7 +417,7 @@ MonoBehaviour:
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
-          name: 
+          name: HitObject
           tooltip: 
           showInInspector: 0
           networkSync: 0
@@ -585,15 +585,17 @@ MonoBehaviour:
         actionNames:
         - HutongGames.PlayMaker.Actions.CreateObject
         - HutongGames.PlayMaker.Actions.PmtSpawn
+        - HutongGames.PlayMaker.Actions.SendEventByName
         - HutongGames.PlayMaker.Actions.DestroySelf
         customNames:
         - 
         - 
         - 
-        actionEnabled: 000101
-        actionIsOpen: 010101
-        actionStartIndex: 00000000050000000c000000
-        actionHashCodes: bf83c90090aefe0062f95203
+        - 
+        actionEnabled: 00010101
+        actionIsOpen: 01010101
+        actionStartIndex: 00000000050000000c00000010000000
+        actionHashCodes: bf83c90090aefe00ba7ea10162f95203
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 0
@@ -636,7 +638,39 @@ MonoBehaviour:
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
-        fsmEventTargetParams: []
+        fsmEventTargetParams:
+        - target: 2
+          excludeSelf:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          gameObject:
+            ownerOption: 1
+            gameObject:
+              useVariable: 1
+              name: HitObject
+              tooltip: 
+              showInInspector: 0
+              networkSync: 0
+              value: {fileID: 0}
+          fsmName:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: CheckForHeadShot
+          sendToChildren:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          fsmComponent: {fileID: 0}
         fsmPropertyParams: []
         layoutOptionParams: []
         fsmStringParams:
@@ -646,11 +680,23 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: BulletSpawnPool
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Get Damage
         fsmObjectParams: []
         fsmVarParams: []
         fsmArrayParams: []
         fsmEnumParams: []
-        fsmFloatParams: []
+        fsmFloatParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
         fsmIntParams: []
         fsmBoolParams:
         - useVariable: 0
@@ -685,12 +731,12 @@ MonoBehaviour:
         stringParams:
         - 
         - 
-        byteData: 
+        byteData: 00
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 13000000130000001c0000001c000000130000001200000013000000130000001c00000013000000170000001700000011000000
+        paramDataType: 13000000130000001c0000001c000000130000001200000013000000130000001c0000001300000017000000170000001f000000120000000f0000000100000011000000
         paramName:
         - gameObject
         - spawnPoint
@@ -704,9 +750,13 @@ MonoBehaviour:
         - spawnedGameObject
         - successEvent
         - failEvent
+        - eventTarget
+        - sendEvent
+        - delay
+        - everyFrame
         - detachChildren
-        paramDataPos: 00000000010000000000000001000000020000000000000003000000040000000200000005000000000000000100000000000000
-        paramByteDataSize: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+        paramDataPos: 0000000001000000000000000100000002000000000000000300000004000000020000000500000000000000010000000000000001000000000000000000000000000000
+        paramByteDataSize: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000
     events:
     - name: FINISHED
       isSystemEvent: 1
@@ -748,6 +798,12 @@ MonoBehaviour:
       quaternionVariables: []
       gameObjectVariables:
       - useVariable: 1
+        name: HitObject
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: {fileID: 0}
+      - useVariable: 1
         name: bulletPrefab
         tooltip: 
         showInInspector: 0
@@ -760,7 +816,7 @@ MonoBehaviour:
       enumVariables: []
       categories:
       - 
-      variableCategoryIDs: 00000000000000000000000000000000
+      variableCategoryIDs: 0000000000000000000000000000000000000000
     description: 
     docUrl: 
     showStateLabel: 1
@@ -770,7 +826,7 @@ MonoBehaviour:
     locked: 0
     manualUpdate: 0
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 0
+    preprocessed: 1
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0
@@ -785,7 +841,7 @@ MonoBehaviour:
     handleCollisionEnter2D: 0
     handleCollisionExit2D: 0
     handleCollisionStay2D: 0
-    handleTriggerEnter: 0
+    handleTriggerEnter: 1
     handleTriggerExit: 0
     handleTriggerStay: 0
     handleCollisionEnter: 0

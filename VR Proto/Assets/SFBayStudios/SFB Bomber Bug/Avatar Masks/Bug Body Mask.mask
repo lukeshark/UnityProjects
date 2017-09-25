@@ -1,0 +1,124 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1011 &101100000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Bug Body Mask
+  m_Mask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: Bug_MESH1
+    m_Weight: 1
+  - m_Path: Bug_MESH2
+    m_Weight: 1
+  - m_Path: Bug_MESH3
+    m_Weight: 1
+  - m_Path: ROOT
+    m_Weight: 1
+  - m_Path: ROOT/abdomen_jnt
+    m_Weight: 1
+  - m_Path: ROOT/abdomen_jnt/L_leg_back_A_jnt
+    m_Weight: 0
+  - m_Path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt
+    m_Weight: 0
+  - m_Path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt/L_leg_back_C_jnt
+    m_Weight: 0
+  - m_Path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt/L_leg_back_C_jnt/L_back_ankle_jnt
+    m_Weight: 0
+  - m_Path: ROOT/abdomen_jnt/L_leg_back_A_jnt/L_leg_back_B_jnt/L_leg_back_C_jnt/L_back_ankle_jnt/L_back_contact_jnt
+    m_Weight: 0
+  - m_Path: ROOT/abdomen_jnt/R_leg_back_A_jnt
+    m_Weight: 0
+  - m_Path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt
+    m_Weight: 0
+  - m_Path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt/R_leg_back_C_jnt
+    m_Weight: 0
+  - m_Path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt/R_leg_back_C_jnt/R_back_ankle_jnt
+    m_Weight: 0
+  - m_Path: ROOT/abdomen_jnt/R_leg_back_A_jnt/R_leg_back_B_jnt/R_leg_back_C_jnt/R_back_ankle_jnt/R_back_contact_jnt
+    m_Weight: 0
+  - m_Path: ROOT/abdomen_jnt/sphere_jnt
+    m_Weight: 1
+  - m_Path: ROOT/abdomen_jnt/spine1_jnt
+    m_Weight: 1
+  - m_Path: ROOT/abdomen_jnt/spine1_jnt/spine2_jnt
+    m_Weight: 1
+  - m_Path: ROOT/abdomen_jnt/spine1_jnt/spine2_jnt/spine3_jnt
+    m_Weight: 1
+  - m_Path: ROOT/abdomen_jnt/spine1_jnt/spine2_jnt/spine3_jnt/spine4_jnt
+    m_Weight: 1
+  - m_Path: ROOT/L_leg_center_A_jnt
+    m_Weight: 0
+  - m_Path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt
+    m_Weight: 0
+  - m_Path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt/L_leg_center_C_jnt
+    m_Weight: 0
+  - m_Path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt/L_leg_center_C_jnt/L_center_ankle_jnt
+    m_Weight: 0
+  - m_Path: ROOT/L_leg_center_A_jnt/L_leg_center_B_jnt/L_leg_center_C_jnt/L_center_ankle_jnt/L_center_contact_jnt
+    m_Weight: 0
+  - m_Path: ROOT/L_leg_front_A_jnt
+    m_Weight: 0
+  - m_Path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt
+    m_Weight: 0
+  - m_Path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt/L_leg_front_C_jnt
+    m_Weight: 0
+  - m_Path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt/L_leg_front_C_jnt/L_front_ankle_jnt
+    m_Weight: 0
+  - m_Path: ROOT/L_leg_front_A_jnt/L_leg_front_B_jnt/L_leg_front_C_jnt/L_front_ankle_jnt/L_front_contact_jnt
+    m_Weight: 0
+  - m_Path: ROOT/L_wing_1_jnt
+    m_Weight: 0
+  - m_Path: ROOT/L_wing_1_jnt/L_wing_2_jnt
+    m_Weight: 0
+  - m_Path: ROOT/L_wing_1_jnt/L_wing_2_jnt/L_wing_3_jnt
+    m_Weight: 0
+  - m_Path: ROOT/L_wing_1_jnt/L_wing_2_jnt/L_wing_3_jnt/L_wing_end_jnt
+    m_Weight: 0
+  - m_Path: ROOT/pronotum_jnt
+    m_Weight: 1
+  - m_Path: ROOT/pronotum_jnt/head_jnt
+    m_Weight: 1
+  - m_Path: ROOT/pronotum_jnt/head_jnt/L_pincer_1_jnt
+    m_Weight: 1
+  - m_Path: ROOT/pronotum_jnt/head_jnt/L_pincer_1_jnt/L_pincer_2_jnt
+    m_Weight: 1
+  - m_Path: ROOT/pronotum_jnt/head_jnt/L_pincer_1_jnt/L_pincer_2_jnt/L_pincer_end_jnt
+    m_Weight: 1
+  - m_Path: ROOT/pronotum_jnt/head_jnt/R_pincer_1_jnt
+    m_Weight: 1
+  - m_Path: ROOT/pronotum_jnt/head_jnt/R_pincer_1_jnt/R_pincer_2_jnt
+    m_Weight: 1
+  - m_Path: ROOT/pronotum_jnt/head_jnt/R_pincer_1_jnt/R_pincer_2_jnt/R_pincer_end_jnt
+    m_Weight: 1
+  - m_Path: ROOT/R_leg_center_A_jnt
+    m_Weight: 0
+  - m_Path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt
+    m_Weight: 0
+  - m_Path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt/R_leg_center_C_jnt
+    m_Weight: 0
+  - m_Path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt/R_leg_center_C_jnt/R_center_ankle_jnt
+    m_Weight: 0
+  - m_Path: ROOT/R_leg_center_A_jnt/R_leg_center_B_jnt/R_leg_center_C_jnt/R_center_ankle_jnt/R_center_contact_jnt
+    m_Weight: 0
+  - m_Path: ROOT/R_leg_front_A_jnt
+    m_Weight: 0
+  - m_Path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt
+    m_Weight: 0
+  - m_Path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt/R_leg_front_C_jnt
+    m_Weight: 0
+  - m_Path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt/R_leg_front_C_jnt/R_front_ankle_jnt
+    m_Weight: 0
+  - m_Path: ROOT/R_leg_front_A_jnt/R_leg_front_B_jnt/R_leg_front_C_jnt/R_front_ankle_jnt/R_front_contact_jnt
+    m_Weight: 0
+  - m_Path: ROOT/R_wing_1_jnt
+    m_Weight: 0
+  - m_Path: ROOT/R_wing_1_jnt/R_wing_2_jnt
+    m_Weight: 0
+  - m_Path: ROOT/R_wing_1_jnt/R_wing_2_jnt/R_wing_3_jnt
+    m_Weight: 0
+  - m_Path: ROOT/R_wing_1_jnt/R_wing_2_jnt/R_wing_3_jnt/R_wing_end_jnt
+    m_Weight: 0

@@ -1031,6 +1031,58 @@ MonoBehaviour:
         - realTime
         paramDataPos: 000000000000000000000000
         paramByteDataSize: 000000000000000001000000
+    - name: State 4
+      description: Grabbed
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 330.23438
+        y: 317.0703
+        width: 100
+        height: 16
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions: []
+      actionData:
+        actionNames: []
+        customNames: []
+        actionEnabled: 
+        actionIsOpen: 
+        actionStartIndex: 
+        actionHashCodes: 
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams: []
+        byteData: 
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 
+        paramName: []
+        paramDataPos: 
+        paramByteDataSize: 
     events:
     - name: FINISHED
       isSystemEvent: 1
@@ -1045,6 +1097,9 @@ MonoBehaviour:
       isSystemEvent: 0
       isGlobal: 1
     - name: Get Hit
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: Grabbed
       isSystemEvent: 0
       isGlobal: 1
     - name: Hit
@@ -1070,6 +1125,14 @@ MonoBehaviour:
         isSystemEvent: 0
         isGlobal: 1
       toState: State 3
+      linkStyle: 0
+      linkConstraint: 0
+      colorIndex: 0
+    - fsmEvent:
+        name: Grabbed
+        isSystemEvent: 0
+        isGlobal: 1
+      toState: State 4
       linkStyle: 0
       linkConstraint: 0
       colorIndex: 0

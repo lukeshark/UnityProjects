@@ -1,0 +1,45 @@
+AUDIO SNAPSHOT EXPORTER
+http://www.InfinityPBR.com
+
+Note:  This tool requires audio clips from a single song intended to be mixed by users inside Unity, using the Unity Audio Mixer.  If you do not have songs already, please visit the Unity Asset Store and browse the Music section.  Ask Composers if they support the “Audio Snapshot Exporter” from S.F. Bay Studios, and if they don’t, let them know about us :)
+
+INSTRUCTIONS
+1. Create an empty scene, and a new Game Object with the “SFB_AudioSnapshotExporter” script added as a Component.  You may wish to name the Game Object after the song you’re working with.
+
+2. Make sure you have a working Audio Mixer for your song.  Each layer (Audio Clip) should have a group as a child of the Master group.
+
+3. For each group, expose the variable for Attenuation (volume).
+  a. Click on the group in the mixer to load the details in the Inspector window.
+  b. Right click on “Volume” and select “Expose” from the menu.
+
+4. For each Exposed Parameter, rename it to match the name of the Audio Clip for that layer.  The name must match *exactly*.
+  a. In the Audio Mixer window, click the “Exposed Parameters” button in the very top right corner.  You can simply hit return and use the arrow keys to rename each parameter.
+
+5. For every Audio Clip, create a new Game Object as a child of the object you created in Step 1.  Name each object the same name of the Audio Clip.  The name must match *exactly*.
+
+6. Select the Object from Step 1 to load it in the Inspector.
+
+7. In the Inspector, select your Audio Mixer to populate the field.  This will load the data.  If everything is named properly, you will now see more options.
+
+EXPORTING A SINGLE SNAPSHOT
+When you are in edit mode, you can export a single Snapshot.
+
+1. Select the Snapshot you’d like to export in the Audio Mixer window.
+
+2. Provide a name in the String field in the Inspector.  Files will overwrite if you use a name you have already used.
+
+3. Click the Export button.
+
+4. You will find your .wav file in Assets/Exported Music/Song Name/SongName_CustomName.wav
+
+BATCH EXPORTING ALL SNAPSHOTS
+To Batch Export all Snapshots at once, you must be in Play mode.
+
+1. Press play.  Once in Play mode, there will be a new, green button in the Inspector when you have the Game Object with the script attached selected.
+
+2. Click the button, and all Snapshots will export.
+
+4. You will find your .wav files in Assets/Exported Music/Song Name/SongName_SnapshotName.wav
+
+NEED MORE HELP?
+Visit the Forums: https://forum.unity3d.com/threads/infinitypbr-com-audio-mixer-snapshot-exporter-make-your-own-music-mixes-and-batch-export-them.455701/
