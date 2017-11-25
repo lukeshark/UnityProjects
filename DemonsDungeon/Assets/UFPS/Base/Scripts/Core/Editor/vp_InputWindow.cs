@@ -19,10 +19,10 @@ public class vp_InputWindow : EditorWindow
 	public vp_Input m_Component;
 
 	public static vp_InputWindow m_Window = null;
-	public static Texture2D m_Icon = (Texture2D)Resources.Load("Icons/UFPS32x32", typeof(Texture2D));
+    public static Texture2D m_Icon;
 
-	// foldouts
-	public static bool m_ButtonsFoldout = true;
+    // foldouts
+    public static bool m_ButtonsFoldout = true;
 	public static bool m_AxisFoldout = true;
 	
 	protected static GUIStyle m_HeaderStyle = null;
