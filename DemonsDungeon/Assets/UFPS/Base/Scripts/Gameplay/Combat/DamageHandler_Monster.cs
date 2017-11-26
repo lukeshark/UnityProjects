@@ -6,6 +6,8 @@ public class DamageHandler_Monster : vp_DamageHandler {
 
     public Animator _animator;
 
+    public GameObject Mesh;
+
     protected override void Awake()
     {
         base.Awake();
@@ -44,9 +46,16 @@ public class DamageHandler_Monster : vp_DamageHandler {
             }
         }
 
-      
+       
 
+    }
 
+    public void DestroyObjects()
+    {
+        Destroy(GetComponent<Animator>());
+        Destroy(Mesh);
+        Destroy(GetComponent<Rigidbody>());
+              
 
     }
 
