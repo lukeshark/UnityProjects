@@ -1,0 +1,2526 @@
+fileFormatVersion: 2
+guid: eb0b949bb674a0449a967e8513d0bc3c
+timeCreated: 1494682080
+licenseType: Store
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: arm_bot.L
+    100002: arm_bot.R
+    100004: arm_IK.L
+    100006: arm_IK.R
+    100008: arm_up.L
+    100010: arm_up.R
+    100012: elbow_IK.L
+    100014: elbow_IK.L_end
+    100016: elbow_IK.R
+    100018: elbow_IK.R_end
+    100020: Fing1_1.L
+    100022: Fing1_1.R
+    100024: Fing1_2.L
+    100026: Fing1_2.R
+    100028: Fing1_3.L
+    100030: Fing1_3.L_end
+    100032: Fing1_3.R
+    100034: Fing1_3.R_end
+    100036: Fing2_1.L
+    100038: Fing2_1.R
+    100040: Fing2_2.L
+    100042: Fing2_2.R
+    100044: Fing2_3.L
+    100046: Fing2_3.L_end
+    100048: Fing2_3.R
+    100050: Fing2_3.R_end
+    100052: Fing3_1.L
+    100054: Fing3_1.R
+    100056: Fing3_2.L
+    100058: Fing3_2.R
+    100060: Fing3_3.L
+    100062: Fing3_3.L_end
+    100064: Fing3_3.R
+    100066: Fing3_3.R_end
+    100068: FingT_1.L
+    100070: FingT_1.R
+    100072: FingT_2.L
+    100074: FingT_2.R
+    100076: FingT_3.L
+    100078: FingT_3.L_end
+    100080: FingT_3.R
+    100082: FingT_3.R_end
+    100084: hair
+    100086: hair_end
+    100088: hand.L
+    100090: hand.R
+    100092: Hand_LP.002
+    100094: Hand_LP.131
+    100096: Hand_LP.133
+    100098: Hand_LP.134
+    100100: head
+    100102: jaw
+    100104: jaw_end
+    100106: neck
+    100108: root_bone
+    100110: shest
+    100112: shoulder.L
+    100114: shoulder.R
+    100116: shroud1.L
+    100118: shroud1.R
+    100120: shroud2.L
+    100122: shroud2.L_end
+    100124: shroud2.R
+    100126: shroud2.R_end
+    100128: tail1
+    100130: tail2
+    100132: tail2_end
+    100134: //RootNode
+    100136: thc3_arma
+    400000: arm_bot.L
+    400002: arm_bot.R
+    400004: arm_IK.L
+    400006: arm_IK.R
+    400008: arm_up.L
+    400010: arm_up.R
+    400012: elbow_IK.L
+    400014: elbow_IK.L_end
+    400016: elbow_IK.R
+    400018: elbow_IK.R_end
+    400020: Fing1_1.L
+    400022: Fing1_1.R
+    400024: Fing1_2.L
+    400026: Fing1_2.R
+    400028: Fing1_3.L
+    400030: Fing1_3.L_end
+    400032: Fing1_3.R
+    400034: Fing1_3.R_end
+    400036: Fing2_1.L
+    400038: Fing2_1.R
+    400040: Fing2_2.L
+    400042: Fing2_2.R
+    400044: Fing2_3.L
+    400046: Fing2_3.L_end
+    400048: Fing2_3.R
+    400050: Fing2_3.R_end
+    400052: Fing3_1.L
+    400054: Fing3_1.R
+    400056: Fing3_2.L
+    400058: Fing3_2.R
+    400060: Fing3_3.L
+    400062: Fing3_3.L_end
+    400064: Fing3_3.R
+    400066: Fing3_3.R_end
+    400068: FingT_1.L
+    400070: FingT_1.R
+    400072: FingT_2.L
+    400074: FingT_2.R
+    400076: FingT_3.L
+    400078: FingT_3.L_end
+    400080: FingT_3.R
+    400082: FingT_3.R_end
+    400084: hair
+    400086: hair_end
+    400088: hand.L
+    400090: hand.R
+    400092: Hand_LP.002
+    400094: Hand_LP.131
+    400096: Hand_LP.133
+    400098: Hand_LP.134
+    400100: head
+    400102: jaw
+    400104: jaw_end
+    400106: neck
+    400108: root_bone
+    400110: shest
+    400112: shoulder.L
+    400114: shoulder.R
+    400116: shroud1.L
+    400118: shroud1.R
+    400120: shroud2.L
+    400122: shroud2.L_end
+    400124: shroud2.R
+    400126: shroud2.R_end
+    400128: tail1
+    400130: tail2
+    400132: tail2_end
+    400134: //RootNode
+    400136: thc3_arma
+    4300000: Hand_LP.134
+    4300002: Hand_LP.133
+    4300004: Hand_LP.131
+    4300006: Hand_LP.002
+    7400000: thc3_arma|attack1
+    7400002: thc3_arma|attack2
+    7400004: thc3_arma|attack3
+    7400006: thc3_arma|battle_idle
+    7400008: thc3_arma|die1
+    7400010: thc3_arma|die2
+    7400012: thc3_arma|hit1
+    7400014: thc3_arma|hit2
+    7400016: thc3_arma|howl
+    7400018: thc3_arma|idle
+    7400020: thc3_arma|run_backward
+    7400022: thc3_arma|run_forward
+    7400024: thc3_arma|walk_backward
+    7400026: thc3_arma|walk_forward
+    9500000: //RootNode
+    13700000: Hand_LP.002
+    13700002: Hand_LP.131
+    13700004: Hand_LP.133
+    13700006: Hand_LP.134
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 3
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: thc3_arma|attack1
+      takeName: thc3_arma|attack1
+      firstFrame: 0
+      lastFrame: 28
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Hand_LP.002
+        weight: 1
+      - path: Hand_LP.131
+        weight: 1
+      - path: Hand_LP.133
+        weight: 1
+      - path: Hand_LP.134
+        weight: 1
+      - path: thc3_arma
+        weight: 1
+      - path: thc3_arma/root_bone
+        weight: 1
+      - path: thc3_arma/root_bone/arm_IK.L
+        weight: 1
+      - path: thc3_arma/root_bone/arm_IK.L/elbow_IK.L
+        weight: 1
+      - path: thc3_arma/root_bone/arm_IK.L/elbow_IK.L/elbow_IK.L_end
+        weight: 1
+      - path: thc3_arma/root_bone/arm_IK.R
+        weight: 1
+      - path: thc3_arma/root_bone/arm_IK.R/elbow_IK.R
+        weight: 1
+      - path: thc3_arma/root_bone/arm_IK.R/elbow_IK.R/elbow_IK.R_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest
+        weight: 1
+      - path: thc3_arma/root_bone/shest/neck
+        weight: 1
+      - path: thc3_arma/root_bone/shest/neck/head
+        weight: 1
+      - path: thc3_arma/root_bone/shest/neck/head/hair
+        weight: 1
+      - path: thc3_arma/root_bone/shest/neck/head/hair/hair_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/neck/head/jaw
+        weight: 1
+      - path: thc3_arma/root_bone/shest/neck/head/jaw/jaw_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing1_1.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing1_1.L/Fing1_2.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing1_1.L/Fing1_2.L/Fing1_3.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing1_1.L/Fing1_2.L/Fing1_3.L/Fing1_3.L_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing2_1.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing2_1.L/Fing2_2.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing2_1.L/Fing2_2.L/Fing2_3.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing2_1.L/Fing2_2.L/Fing2_3.L/Fing2_3.L_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing3_1.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing3_1.L/Fing3_2.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing3_1.L/Fing3_2.L/Fing3_3.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing3_1.L/Fing3_2.L/Fing3_3.L/Fing3_3.L_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/FingT_1.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/FingT_1.L/FingT_2.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/FingT_1.L/FingT_2.L/FingT_3.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/FingT_1.L/FingT_2.L/FingT_3.L/FingT_3.L_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/shroud1.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/shroud1.L/shroud2.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/shroud1.L/shroud2.L/shroud2.L_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing1_1.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing1_1.R/Fing1_2.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing1_1.R/Fing1_2.R/Fing1_3.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing1_1.R/Fing1_2.R/Fing1_3.R/Fing1_3.R_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing2_1.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing2_1.R/Fing2_2.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing2_1.R/Fing2_2.R/Fing2_3.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing2_1.R/Fing2_2.R/Fing2_3.R/Fing2_3.R_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing3_1.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing3_1.R/Fing3_2.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing3_1.R/Fing3_2.R/Fing3_3.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing3_1.R/Fing3_2.R/Fing3_3.R/Fing3_3.R_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/FingT_1.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/FingT_1.R/FingT_2.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/FingT_1.R/FingT_2.R/FingT_3.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/FingT_1.R/FingT_2.R/FingT_3.R/FingT_3.R_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/shroud1.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/shroud1.R/shroud2.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/shroud1.R/shroud2.R/shroud2.R_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/tail1
+        weight: 1
+      - path: thc3_arma/root_bone/shest/tail1/tail2
+        weight: 1
+      - path: thc3_arma/root_bone/shest/tail1/tail2/tail2_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: thc3_arma|attack2
+      takeName: thc3_arma|attack2
+      firstFrame: 0
+      lastFrame: 33
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Hand_LP.002
+        weight: 1
+      - path: Hand_LP.131
+        weight: 1
+      - path: Hand_LP.133
+        weight: 1
+      - path: Hand_LP.134
+        weight: 1
+      - path: thc3_arma
+        weight: 1
+      - path: thc3_arma/root_bone
+        weight: 1
+      - path: thc3_arma/root_bone/arm_IK.L
+        weight: 1
+      - path: thc3_arma/root_bone/arm_IK.L/elbow_IK.L
+        weight: 1
+      - path: thc3_arma/root_bone/arm_IK.L/elbow_IK.L/elbow_IK.L_end
+        weight: 1
+      - path: thc3_arma/root_bone/arm_IK.R
+        weight: 1
+      - path: thc3_arma/root_bone/arm_IK.R/elbow_IK.R
+        weight: 1
+      - path: thc3_arma/root_bone/arm_IK.R/elbow_IK.R/elbow_IK.R_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest
+        weight: 1
+      - path: thc3_arma/root_bone/shest/neck
+        weight: 1
+      - path: thc3_arma/root_bone/shest/neck/head
+        weight: 1
+      - path: thc3_arma/root_bone/shest/neck/head/hair
+        weight: 1
+      - path: thc3_arma/root_bone/shest/neck/head/hair/hair_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/neck/head/jaw
+        weight: 1
+      - path: thc3_arma/root_bone/shest/neck/head/jaw/jaw_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing1_1.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing1_1.L/Fing1_2.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing1_1.L/Fing1_2.L/Fing1_3.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing1_1.L/Fing1_2.L/Fing1_3.L/Fing1_3.L_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing2_1.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing2_1.L/Fing2_2.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing2_1.L/Fing2_2.L/Fing2_3.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing2_1.L/Fing2_2.L/Fing2_3.L/Fing2_3.L_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing3_1.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing3_1.L/Fing3_2.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing3_1.L/Fing3_2.L/Fing3_3.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing3_1.L/Fing3_2.L/Fing3_3.L/Fing3_3.L_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/FingT_1.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/FingT_1.L/FingT_2.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/FingT_1.L/FingT_2.L/FingT_3.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/FingT_1.L/FingT_2.L/FingT_3.L/FingT_3.L_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/shroud1.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/shroud1.L/shroud2.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/shroud1.L/shroud2.L/shroud2.L_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing1_1.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing1_1.R/Fing1_2.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing1_1.R/Fing1_2.R/Fing1_3.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing1_1.R/Fing1_2.R/Fing1_3.R/Fing1_3.R_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing2_1.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing2_1.R/Fing2_2.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing2_1.R/Fing2_2.R/Fing2_3.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing2_1.R/Fing2_2.R/Fing2_3.R/Fing2_3.R_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing3_1.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing3_1.R/Fing3_2.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing3_1.R/Fing3_2.R/Fing3_3.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing3_1.R/Fing3_2.R/Fing3_3.R/Fing3_3.R_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/FingT_1.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/FingT_1.R/FingT_2.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/FingT_1.R/FingT_2.R/FingT_3.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/FingT_1.R/FingT_2.R/FingT_3.R/FingT_3.R_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/shroud1.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/shroud1.R/shroud2.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/shroud1.R/shroud2.R/shroud2.R_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/tail1
+        weight: 1
+      - path: thc3_arma/root_bone/shest/tail1/tail2
+        weight: 1
+      - path: thc3_arma/root_bone/shest/tail1/tail2/tail2_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: thc3_arma|attack3
+      takeName: thc3_arma|attack3
+      firstFrame: 0
+      lastFrame: 35
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Hand_LP.002
+        weight: 1
+      - path: Hand_LP.131
+        weight: 1
+      - path: Hand_LP.133
+        weight: 1
+      - path: Hand_LP.134
+        weight: 1
+      - path: thc3_arma
+        weight: 1
+      - path: thc3_arma/root_bone
+        weight: 1
+      - path: thc3_arma/root_bone/arm_IK.L
+        weight: 1
+      - path: thc3_arma/root_bone/arm_IK.L/elbow_IK.L
+        weight: 1
+      - path: thc3_arma/root_bone/arm_IK.L/elbow_IK.L/elbow_IK.L_end
+        weight: 1
+      - path: thc3_arma/root_bone/arm_IK.R
+        weight: 1
+      - path: thc3_arma/root_bone/arm_IK.R/elbow_IK.R
+        weight: 1
+      - path: thc3_arma/root_bone/arm_IK.R/elbow_IK.R/elbow_IK.R_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest
+        weight: 1
+      - path: thc3_arma/root_bone/shest/neck
+        weight: 1
+      - path: thc3_arma/root_bone/shest/neck/head
+        weight: 1
+      - path: thc3_arma/root_bone/shest/neck/head/hair
+        weight: 1
+      - path: thc3_arma/root_bone/shest/neck/head/hair/hair_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/neck/head/jaw
+        weight: 1
+      - path: thc3_arma/root_bone/shest/neck/head/jaw/jaw_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing1_1.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing1_1.L/Fing1_2.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing1_1.L/Fing1_2.L/Fing1_3.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing1_1.L/Fing1_2.L/Fing1_3.L/Fing1_3.L_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing2_1.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing2_1.L/Fing2_2.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing2_1.L/Fing2_2.L/Fing2_3.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing2_1.L/Fing2_2.L/Fing2_3.L/Fing2_3.L_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing3_1.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing3_1.L/Fing3_2.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing3_1.L/Fing3_2.L/Fing3_3.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing3_1.L/Fing3_2.L/Fing3_3.L/Fing3_3.L_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/FingT_1.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/FingT_1.L/FingT_2.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/FingT_1.L/FingT_2.L/FingT_3.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/FingT_1.L/FingT_2.L/FingT_3.L/FingT_3.L_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/shroud1.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/shroud1.L/shroud2.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/shroud1.L/shroud2.L/shroud2.L_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing1_1.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing1_1.R/Fing1_2.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing1_1.R/Fing1_2.R/Fing1_3.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing1_1.R/Fing1_2.R/Fing1_3.R/Fing1_3.R_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing2_1.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing2_1.R/Fing2_2.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing2_1.R/Fing2_2.R/Fing2_3.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing2_1.R/Fing2_2.R/Fing2_3.R/Fing2_3.R_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing3_1.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing3_1.R/Fing3_2.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing3_1.R/Fing3_2.R/Fing3_3.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing3_1.R/Fing3_2.R/Fing3_3.R/Fing3_3.R_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/FingT_1.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/FingT_1.R/FingT_2.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/FingT_1.R/FingT_2.R/FingT_3.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/FingT_1.R/FingT_2.R/FingT_3.R/FingT_3.R_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/shroud1.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/shroud1.R/shroud2.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/shroud1.R/shroud2.R/shroud2.R_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/tail1
+        weight: 1
+      - path: thc3_arma/root_bone/shest/tail1/tail2
+        weight: 1
+      - path: thc3_arma/root_bone/shest/tail1/tail2/tail2_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: thc3_arma|battle_idle
+      takeName: thc3_arma|battle_idle
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Hand_LP.002
+        weight: 1
+      - path: Hand_LP.131
+        weight: 1
+      - path: Hand_LP.133
+        weight: 1
+      - path: Hand_LP.134
+        weight: 1
+      - path: thc3_arma
+        weight: 1
+      - path: thc3_arma/root_bone
+        weight: 1
+      - path: thc3_arma/root_bone/arm_IK.L
+        weight: 1
+      - path: thc3_arma/root_bone/arm_IK.L/elbow_IK.L
+        weight: 1
+      - path: thc3_arma/root_bone/arm_IK.L/elbow_IK.L/elbow_IK.L_end
+        weight: 1
+      - path: thc3_arma/root_bone/arm_IK.R
+        weight: 1
+      - path: thc3_arma/root_bone/arm_IK.R/elbow_IK.R
+        weight: 1
+      - path: thc3_arma/root_bone/arm_IK.R/elbow_IK.R/elbow_IK.R_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest
+        weight: 1
+      - path: thc3_arma/root_bone/shest/neck
+        weight: 1
+      - path: thc3_arma/root_bone/shest/neck/head
+        weight: 1
+      - path: thc3_arma/root_bone/shest/neck/head/hair
+        weight: 1
+      - path: thc3_arma/root_bone/shest/neck/head/hair/hair_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/neck/head/jaw
+        weight: 1
+      - path: thc3_arma/root_bone/shest/neck/head/jaw/jaw_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing1_1.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing1_1.L/Fing1_2.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing1_1.L/Fing1_2.L/Fing1_3.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing1_1.L/Fing1_2.L/Fing1_3.L/Fing1_3.L_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing2_1.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing2_1.L/Fing2_2.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing2_1.L/Fing2_2.L/Fing2_3.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing2_1.L/Fing2_2.L/Fing2_3.L/Fing2_3.L_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing3_1.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing3_1.L/Fing3_2.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing3_1.L/Fing3_2.L/Fing3_3.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing3_1.L/Fing3_2.L/Fing3_3.L/Fing3_3.L_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/FingT_1.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/FingT_1.L/FingT_2.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/FingT_1.L/FingT_2.L/FingT_3.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/FingT_1.L/FingT_2.L/FingT_3.L/FingT_3.L_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/shroud1.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/shroud1.L/shroud2.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/shroud1.L/shroud2.L/shroud2.L_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing1_1.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing1_1.R/Fing1_2.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing1_1.R/Fing1_2.R/Fing1_3.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing1_1.R/Fing1_2.R/Fing1_3.R/Fing1_3.R_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing2_1.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing2_1.R/Fing2_2.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing2_1.R/Fing2_2.R/Fing2_3.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing2_1.R/Fing2_2.R/Fing2_3.R/Fing2_3.R_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing3_1.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing3_1.R/Fing3_2.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing3_1.R/Fing3_2.R/Fing3_3.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing3_1.R/Fing3_2.R/Fing3_3.R/Fing3_3.R_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/FingT_1.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/FingT_1.R/FingT_2.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/FingT_1.R/FingT_2.R/FingT_3.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/FingT_1.R/FingT_2.R/FingT_3.R/FingT_3.R_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/shroud1.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/shroud1.R/shroud2.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/shroud1.R/shroud2.R/shroud2.R_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/tail1
+        weight: 1
+      - path: thc3_arma/root_bone/shest/tail1/tail2
+        weight: 1
+      - path: thc3_arma/root_bone/shest/tail1/tail2/tail2_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: thc3_arma|die1
+      takeName: thc3_arma|die1
+      firstFrame: 0
+      lastFrame: 39
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Hand_LP.002
+        weight: 1
+      - path: Hand_LP.131
+        weight: 1
+      - path: Hand_LP.133
+        weight: 1
+      - path: Hand_LP.134
+        weight: 1
+      - path: thc3_arma
+        weight: 1
+      - path: thc3_arma/root_bone
+        weight: 1
+      - path: thc3_arma/root_bone/arm_IK.L
+        weight: 1
+      - path: thc3_arma/root_bone/arm_IK.L/elbow_IK.L
+        weight: 1
+      - path: thc3_arma/root_bone/arm_IK.L/elbow_IK.L/elbow_IK.L_end
+        weight: 1
+      - path: thc3_arma/root_bone/arm_IK.R
+        weight: 1
+      - path: thc3_arma/root_bone/arm_IK.R/elbow_IK.R
+        weight: 1
+      - path: thc3_arma/root_bone/arm_IK.R/elbow_IK.R/elbow_IK.R_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest
+        weight: 1
+      - path: thc3_arma/root_bone/shest/neck
+        weight: 1
+      - path: thc3_arma/root_bone/shest/neck/head
+        weight: 1
+      - path: thc3_arma/root_bone/shest/neck/head/hair
+        weight: 1
+      - path: thc3_arma/root_bone/shest/neck/head/hair/hair_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/neck/head/jaw
+        weight: 1
+      - path: thc3_arma/root_bone/shest/neck/head/jaw/jaw_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing1_1.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing1_1.L/Fing1_2.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing1_1.L/Fing1_2.L/Fing1_3.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing1_1.L/Fing1_2.L/Fing1_3.L/Fing1_3.L_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing2_1.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing2_1.L/Fing2_2.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing2_1.L/Fing2_2.L/Fing2_3.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing2_1.L/Fing2_2.L/Fing2_3.L/Fing2_3.L_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing3_1.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing3_1.L/Fing3_2.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing3_1.L/Fing3_2.L/Fing3_3.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing3_1.L/Fing3_2.L/Fing3_3.L/Fing3_3.L_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/FingT_1.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/FingT_1.L/FingT_2.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/FingT_1.L/FingT_2.L/FingT_3.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/FingT_1.L/FingT_2.L/FingT_3.L/FingT_3.L_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/shroud1.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/shroud1.L/shroud2.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/shroud1.L/shroud2.L/shroud2.L_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing1_1.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing1_1.R/Fing1_2.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing1_1.R/Fing1_2.R/Fing1_3.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing1_1.R/Fing1_2.R/Fing1_3.R/Fing1_3.R_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing2_1.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing2_1.R/Fing2_2.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing2_1.R/Fing2_2.R/Fing2_3.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing2_1.R/Fing2_2.R/Fing2_3.R/Fing2_3.R_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing3_1.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing3_1.R/Fing3_2.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing3_1.R/Fing3_2.R/Fing3_3.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing3_1.R/Fing3_2.R/Fing3_3.R/Fing3_3.R_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/FingT_1.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/FingT_1.R/FingT_2.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/FingT_1.R/FingT_2.R/FingT_3.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/FingT_1.R/FingT_2.R/FingT_3.R/FingT_3.R_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/shroud1.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/shroud1.R/shroud2.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/shroud1.R/shroud2.R/shroud2.R_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/tail1
+        weight: 1
+      - path: thc3_arma/root_bone/shest/tail1/tail2
+        weight: 1
+      - path: thc3_arma/root_bone/shest/tail1/tail2/tail2_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: thc3_arma|die2
+      takeName: thc3_arma|die2
+      firstFrame: 0
+      lastFrame: 37
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Hand_LP.002
+        weight: 1
+      - path: Hand_LP.131
+        weight: 1
+      - path: Hand_LP.133
+        weight: 1
+      - path: Hand_LP.134
+        weight: 1
+      - path: thc3_arma
+        weight: 1
+      - path: thc3_arma/root_bone
+        weight: 1
+      - path: thc3_arma/root_bone/arm_IK.L
+        weight: 1
+      - path: thc3_arma/root_bone/arm_IK.L/elbow_IK.L
+        weight: 1
+      - path: thc3_arma/root_bone/arm_IK.L/elbow_IK.L/elbow_IK.L_end
+        weight: 1
+      - path: thc3_arma/root_bone/arm_IK.R
+        weight: 1
+      - path: thc3_arma/root_bone/arm_IK.R/elbow_IK.R
+        weight: 1
+      - path: thc3_arma/root_bone/arm_IK.R/elbow_IK.R/elbow_IK.R_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest
+        weight: 1
+      - path: thc3_arma/root_bone/shest/neck
+        weight: 1
+      - path: thc3_arma/root_bone/shest/neck/head
+        weight: 1
+      - path: thc3_arma/root_bone/shest/neck/head/hair
+        weight: 1
+      - path: thc3_arma/root_bone/shest/neck/head/hair/hair_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/neck/head/jaw
+        weight: 1
+      - path: thc3_arma/root_bone/shest/neck/head/jaw/jaw_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing1_1.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing1_1.L/Fing1_2.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing1_1.L/Fing1_2.L/Fing1_3.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing1_1.L/Fing1_2.L/Fing1_3.L/Fing1_3.L_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing2_1.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing2_1.L/Fing2_2.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing2_1.L/Fing2_2.L/Fing2_3.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing2_1.L/Fing2_2.L/Fing2_3.L/Fing2_3.L_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing3_1.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing3_1.L/Fing3_2.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing3_1.L/Fing3_2.L/Fing3_3.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing3_1.L/Fing3_2.L/Fing3_3.L/Fing3_3.L_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/FingT_1.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/FingT_1.L/FingT_2.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/FingT_1.L/FingT_2.L/FingT_3.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/FingT_1.L/FingT_2.L/FingT_3.L/FingT_3.L_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/shroud1.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/shroud1.L/shroud2.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/shroud1.L/shroud2.L/shroud2.L_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing1_1.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing1_1.R/Fing1_2.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing1_1.R/Fing1_2.R/Fing1_3.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing1_1.R/Fing1_2.R/Fing1_3.R/Fing1_3.R_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing2_1.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing2_1.R/Fing2_2.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing2_1.R/Fing2_2.R/Fing2_3.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing2_1.R/Fing2_2.R/Fing2_3.R/Fing2_3.R_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing3_1.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing3_1.R/Fing3_2.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing3_1.R/Fing3_2.R/Fing3_3.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing3_1.R/Fing3_2.R/Fing3_3.R/Fing3_3.R_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/FingT_1.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/FingT_1.R/FingT_2.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/FingT_1.R/FingT_2.R/FingT_3.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/FingT_1.R/FingT_2.R/FingT_3.R/FingT_3.R_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/shroud1.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/shroud1.R/shroud2.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/shroud1.R/shroud2.R/shroud2.R_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/tail1
+        weight: 1
+      - path: thc3_arma/root_bone/shest/tail1/tail2
+        weight: 1
+      - path: thc3_arma/root_bone/shest/tail1/tail2/tail2_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: thc3_arma|hit1
+      takeName: thc3_arma|hit1
+      firstFrame: 0
+      lastFrame: 15
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Hand_LP.002
+        weight: 1
+      - path: Hand_LP.131
+        weight: 1
+      - path: Hand_LP.133
+        weight: 1
+      - path: Hand_LP.134
+        weight: 1
+      - path: thc3_arma
+        weight: 1
+      - path: thc3_arma/root_bone
+        weight: 1
+      - path: thc3_arma/root_bone/arm_IK.L
+        weight: 1
+      - path: thc3_arma/root_bone/arm_IK.L/elbow_IK.L
+        weight: 1
+      - path: thc3_arma/root_bone/arm_IK.L/elbow_IK.L/elbow_IK.L_end
+        weight: 1
+      - path: thc3_arma/root_bone/arm_IK.R
+        weight: 1
+      - path: thc3_arma/root_bone/arm_IK.R/elbow_IK.R
+        weight: 1
+      - path: thc3_arma/root_bone/arm_IK.R/elbow_IK.R/elbow_IK.R_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest
+        weight: 1
+      - path: thc3_arma/root_bone/shest/neck
+        weight: 1
+      - path: thc3_arma/root_bone/shest/neck/head
+        weight: 1
+      - path: thc3_arma/root_bone/shest/neck/head/hair
+        weight: 1
+      - path: thc3_arma/root_bone/shest/neck/head/hair/hair_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/neck/head/jaw
+        weight: 1
+      - path: thc3_arma/root_bone/shest/neck/head/jaw/jaw_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing1_1.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing1_1.L/Fing1_2.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing1_1.L/Fing1_2.L/Fing1_3.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing1_1.L/Fing1_2.L/Fing1_3.L/Fing1_3.L_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing2_1.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing2_1.L/Fing2_2.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing2_1.L/Fing2_2.L/Fing2_3.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing2_1.L/Fing2_2.L/Fing2_3.L/Fing2_3.L_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing3_1.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing3_1.L/Fing3_2.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing3_1.L/Fing3_2.L/Fing3_3.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing3_1.L/Fing3_2.L/Fing3_3.L/Fing3_3.L_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/FingT_1.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/FingT_1.L/FingT_2.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/FingT_1.L/FingT_2.L/FingT_3.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/FingT_1.L/FingT_2.L/FingT_3.L/FingT_3.L_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/shroud1.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/shroud1.L/shroud2.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/shroud1.L/shroud2.L/shroud2.L_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing1_1.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing1_1.R/Fing1_2.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing1_1.R/Fing1_2.R/Fing1_3.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing1_1.R/Fing1_2.R/Fing1_3.R/Fing1_3.R_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing2_1.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing2_1.R/Fing2_2.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing2_1.R/Fing2_2.R/Fing2_3.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing2_1.R/Fing2_2.R/Fing2_3.R/Fing2_3.R_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing3_1.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing3_1.R/Fing3_2.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing3_1.R/Fing3_2.R/Fing3_3.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing3_1.R/Fing3_2.R/Fing3_3.R/Fing3_3.R_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/FingT_1.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/FingT_1.R/FingT_2.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/FingT_1.R/FingT_2.R/FingT_3.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/FingT_1.R/FingT_2.R/FingT_3.R/FingT_3.R_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/shroud1.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/shroud1.R/shroud2.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/shroud1.R/shroud2.R/shroud2.R_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/tail1
+        weight: 1
+      - path: thc3_arma/root_bone/shest/tail1/tail2
+        weight: 1
+      - path: thc3_arma/root_bone/shest/tail1/tail2/tail2_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: thc3_arma|hit2
+      takeName: thc3_arma|hit2
+      firstFrame: 0
+      lastFrame: 15
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Hand_LP.002
+        weight: 1
+      - path: Hand_LP.131
+        weight: 1
+      - path: Hand_LP.133
+        weight: 1
+      - path: Hand_LP.134
+        weight: 1
+      - path: thc3_arma
+        weight: 1
+      - path: thc3_arma/root_bone
+        weight: 1
+      - path: thc3_arma/root_bone/arm_IK.L
+        weight: 1
+      - path: thc3_arma/root_bone/arm_IK.L/elbow_IK.L
+        weight: 1
+      - path: thc3_arma/root_bone/arm_IK.L/elbow_IK.L/elbow_IK.L_end
+        weight: 1
+      - path: thc3_arma/root_bone/arm_IK.R
+        weight: 1
+      - path: thc3_arma/root_bone/arm_IK.R/elbow_IK.R
+        weight: 1
+      - path: thc3_arma/root_bone/arm_IK.R/elbow_IK.R/elbow_IK.R_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest
+        weight: 1
+      - path: thc3_arma/root_bone/shest/neck
+        weight: 1
+      - path: thc3_arma/root_bone/shest/neck/head
+        weight: 1
+      - path: thc3_arma/root_bone/shest/neck/head/hair
+        weight: 1
+      - path: thc3_arma/root_bone/shest/neck/head/hair/hair_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/neck/head/jaw
+        weight: 1
+      - path: thc3_arma/root_bone/shest/neck/head/jaw/jaw_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing1_1.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing1_1.L/Fing1_2.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing1_1.L/Fing1_2.L/Fing1_3.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing1_1.L/Fing1_2.L/Fing1_3.L/Fing1_3.L_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing2_1.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing2_1.L/Fing2_2.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing2_1.L/Fing2_2.L/Fing2_3.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing2_1.L/Fing2_2.L/Fing2_3.L/Fing2_3.L_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing3_1.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing3_1.L/Fing3_2.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing3_1.L/Fing3_2.L/Fing3_3.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing3_1.L/Fing3_2.L/Fing3_3.L/Fing3_3.L_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/FingT_1.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/FingT_1.L/FingT_2.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/FingT_1.L/FingT_2.L/FingT_3.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/FingT_1.L/FingT_2.L/FingT_3.L/FingT_3.L_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/shroud1.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/shroud1.L/shroud2.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/shroud1.L/shroud2.L/shroud2.L_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing1_1.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing1_1.R/Fing1_2.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing1_1.R/Fing1_2.R/Fing1_3.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing1_1.R/Fing1_2.R/Fing1_3.R/Fing1_3.R_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing2_1.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing2_1.R/Fing2_2.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing2_1.R/Fing2_2.R/Fing2_3.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing2_1.R/Fing2_2.R/Fing2_3.R/Fing2_3.R_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing3_1.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing3_1.R/Fing3_2.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing3_1.R/Fing3_2.R/Fing3_3.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing3_1.R/Fing3_2.R/Fing3_3.R/Fing3_3.R_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/FingT_1.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/FingT_1.R/FingT_2.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/FingT_1.R/FingT_2.R/FingT_3.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/FingT_1.R/FingT_2.R/FingT_3.R/FingT_3.R_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/shroud1.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/shroud1.R/shroud2.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/shroud1.R/shroud2.R/shroud2.R_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/tail1
+        weight: 1
+      - path: thc3_arma/root_bone/shest/tail1/tail2
+        weight: 1
+      - path: thc3_arma/root_bone/shest/tail1/tail2/tail2_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: thc3_arma|howl
+      takeName: thc3_arma|howl
+      firstFrame: 0
+      lastFrame: 80
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Hand_LP.002
+        weight: 1
+      - path: Hand_LP.131
+        weight: 1
+      - path: Hand_LP.133
+        weight: 1
+      - path: Hand_LP.134
+        weight: 1
+      - path: thc3_arma
+        weight: 1
+      - path: thc3_arma/root_bone
+        weight: 1
+      - path: thc3_arma/root_bone/arm_IK.L
+        weight: 1
+      - path: thc3_arma/root_bone/arm_IK.L/elbow_IK.L
+        weight: 1
+      - path: thc3_arma/root_bone/arm_IK.L/elbow_IK.L/elbow_IK.L_end
+        weight: 1
+      - path: thc3_arma/root_bone/arm_IK.R
+        weight: 1
+      - path: thc3_arma/root_bone/arm_IK.R/elbow_IK.R
+        weight: 1
+      - path: thc3_arma/root_bone/arm_IK.R/elbow_IK.R/elbow_IK.R_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest
+        weight: 1
+      - path: thc3_arma/root_bone/shest/neck
+        weight: 1
+      - path: thc3_arma/root_bone/shest/neck/head
+        weight: 1
+      - path: thc3_arma/root_bone/shest/neck/head/hair
+        weight: 1
+      - path: thc3_arma/root_bone/shest/neck/head/hair/hair_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/neck/head/jaw
+        weight: 1
+      - path: thc3_arma/root_bone/shest/neck/head/jaw/jaw_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing1_1.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing1_1.L/Fing1_2.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing1_1.L/Fing1_2.L/Fing1_3.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing1_1.L/Fing1_2.L/Fing1_3.L/Fing1_3.L_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing2_1.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing2_1.L/Fing2_2.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing2_1.L/Fing2_2.L/Fing2_3.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing2_1.L/Fing2_2.L/Fing2_3.L/Fing2_3.L_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing3_1.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing3_1.L/Fing3_2.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing3_1.L/Fing3_2.L/Fing3_3.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing3_1.L/Fing3_2.L/Fing3_3.L/Fing3_3.L_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/FingT_1.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/FingT_1.L/FingT_2.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/FingT_1.L/FingT_2.L/FingT_3.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/FingT_1.L/FingT_2.L/FingT_3.L/FingT_3.L_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/shroud1.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/shroud1.L/shroud2.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/shroud1.L/shroud2.L/shroud2.L_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing1_1.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing1_1.R/Fing1_2.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing1_1.R/Fing1_2.R/Fing1_3.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing1_1.R/Fing1_2.R/Fing1_3.R/Fing1_3.R_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing2_1.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing2_1.R/Fing2_2.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing2_1.R/Fing2_2.R/Fing2_3.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing2_1.R/Fing2_2.R/Fing2_3.R/Fing2_3.R_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing3_1.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing3_1.R/Fing3_2.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing3_1.R/Fing3_2.R/Fing3_3.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing3_1.R/Fing3_2.R/Fing3_3.R/Fing3_3.R_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/FingT_1.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/FingT_1.R/FingT_2.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/FingT_1.R/FingT_2.R/FingT_3.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/FingT_1.R/FingT_2.R/FingT_3.R/FingT_3.R_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/shroud1.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/shroud1.R/shroud2.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/shroud1.R/shroud2.R/shroud2.R_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/tail1
+        weight: 1
+      - path: thc3_arma/root_bone/shest/tail1/tail2
+        weight: 1
+      - path: thc3_arma/root_bone/shest/tail1/tail2/tail2_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: thc3_arma|idle
+      takeName: thc3_arma|idle
+      firstFrame: 0
+      lastFrame: 80
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Hand_LP.002
+        weight: 1
+      - path: Hand_LP.131
+        weight: 1
+      - path: Hand_LP.133
+        weight: 1
+      - path: Hand_LP.134
+        weight: 1
+      - path: thc3_arma
+        weight: 1
+      - path: thc3_arma/root_bone
+        weight: 1
+      - path: thc3_arma/root_bone/arm_IK.L
+        weight: 1
+      - path: thc3_arma/root_bone/arm_IK.L/elbow_IK.L
+        weight: 1
+      - path: thc3_arma/root_bone/arm_IK.L/elbow_IK.L/elbow_IK.L_end
+        weight: 1
+      - path: thc3_arma/root_bone/arm_IK.R
+        weight: 1
+      - path: thc3_arma/root_bone/arm_IK.R/elbow_IK.R
+        weight: 1
+      - path: thc3_arma/root_bone/arm_IK.R/elbow_IK.R/elbow_IK.R_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest
+        weight: 1
+      - path: thc3_arma/root_bone/shest/neck
+        weight: 1
+      - path: thc3_arma/root_bone/shest/neck/head
+        weight: 1
+      - path: thc3_arma/root_bone/shest/neck/head/hair
+        weight: 1
+      - path: thc3_arma/root_bone/shest/neck/head/hair/hair_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/neck/head/jaw
+        weight: 1
+      - path: thc3_arma/root_bone/shest/neck/head/jaw/jaw_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing1_1.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing1_1.L/Fing1_2.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing1_1.L/Fing1_2.L/Fing1_3.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing1_1.L/Fing1_2.L/Fing1_3.L/Fing1_3.L_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing2_1.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing2_1.L/Fing2_2.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing2_1.L/Fing2_2.L/Fing2_3.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing2_1.L/Fing2_2.L/Fing2_3.L/Fing2_3.L_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing3_1.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing3_1.L/Fing3_2.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing3_1.L/Fing3_2.L/Fing3_3.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing3_1.L/Fing3_2.L/Fing3_3.L/Fing3_3.L_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/FingT_1.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/FingT_1.L/FingT_2.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/FingT_1.L/FingT_2.L/FingT_3.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/FingT_1.L/FingT_2.L/FingT_3.L/FingT_3.L_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/shroud1.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/shroud1.L/shroud2.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/shroud1.L/shroud2.L/shroud2.L_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing1_1.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing1_1.R/Fing1_2.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing1_1.R/Fing1_2.R/Fing1_3.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing1_1.R/Fing1_2.R/Fing1_3.R/Fing1_3.R_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing2_1.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing2_1.R/Fing2_2.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing2_1.R/Fing2_2.R/Fing2_3.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing2_1.R/Fing2_2.R/Fing2_3.R/Fing2_3.R_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing3_1.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing3_1.R/Fing3_2.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing3_1.R/Fing3_2.R/Fing3_3.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing3_1.R/Fing3_2.R/Fing3_3.R/Fing3_3.R_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/FingT_1.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/FingT_1.R/FingT_2.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/FingT_1.R/FingT_2.R/FingT_3.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/FingT_1.R/FingT_2.R/FingT_3.R/FingT_3.R_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/shroud1.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/shroud1.R/shroud2.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/shroud1.R/shroud2.R/shroud2.R_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/tail1
+        weight: 1
+      - path: thc3_arma/root_bone/shest/tail1/tail2
+        weight: 1
+      - path: thc3_arma/root_bone/shest/tail1/tail2/tail2_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: thc3_arma|run_backward
+      takeName: thc3_arma|run_backward
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Hand_LP.002
+        weight: 1
+      - path: Hand_LP.131
+        weight: 1
+      - path: Hand_LP.133
+        weight: 1
+      - path: Hand_LP.134
+        weight: 1
+      - path: thc3_arma
+        weight: 1
+      - path: thc3_arma/root_bone
+        weight: 1
+      - path: thc3_arma/root_bone/arm_IK.L
+        weight: 1
+      - path: thc3_arma/root_bone/arm_IK.L/elbow_IK.L
+        weight: 1
+      - path: thc3_arma/root_bone/arm_IK.L/elbow_IK.L/elbow_IK.L_end
+        weight: 1
+      - path: thc3_arma/root_bone/arm_IK.R
+        weight: 1
+      - path: thc3_arma/root_bone/arm_IK.R/elbow_IK.R
+        weight: 1
+      - path: thc3_arma/root_bone/arm_IK.R/elbow_IK.R/elbow_IK.R_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest
+        weight: 1
+      - path: thc3_arma/root_bone/shest/neck
+        weight: 1
+      - path: thc3_arma/root_bone/shest/neck/head
+        weight: 1
+      - path: thc3_arma/root_bone/shest/neck/head/hair
+        weight: 1
+      - path: thc3_arma/root_bone/shest/neck/head/hair/hair_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/neck/head/jaw
+        weight: 1
+      - path: thc3_arma/root_bone/shest/neck/head/jaw/jaw_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing1_1.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing1_1.L/Fing1_2.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing1_1.L/Fing1_2.L/Fing1_3.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing1_1.L/Fing1_2.L/Fing1_3.L/Fing1_3.L_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing2_1.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing2_1.L/Fing2_2.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing2_1.L/Fing2_2.L/Fing2_3.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing2_1.L/Fing2_2.L/Fing2_3.L/Fing2_3.L_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing3_1.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing3_1.L/Fing3_2.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing3_1.L/Fing3_2.L/Fing3_3.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing3_1.L/Fing3_2.L/Fing3_3.L/Fing3_3.L_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/FingT_1.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/FingT_1.L/FingT_2.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/FingT_1.L/FingT_2.L/FingT_3.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/FingT_1.L/FingT_2.L/FingT_3.L/FingT_3.L_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/shroud1.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/shroud1.L/shroud2.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/shroud1.L/shroud2.L/shroud2.L_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing1_1.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing1_1.R/Fing1_2.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing1_1.R/Fing1_2.R/Fing1_3.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing1_1.R/Fing1_2.R/Fing1_3.R/Fing1_3.R_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing2_1.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing2_1.R/Fing2_2.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing2_1.R/Fing2_2.R/Fing2_3.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing2_1.R/Fing2_2.R/Fing2_3.R/Fing2_3.R_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing3_1.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing3_1.R/Fing3_2.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing3_1.R/Fing3_2.R/Fing3_3.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing3_1.R/Fing3_2.R/Fing3_3.R/Fing3_3.R_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/FingT_1.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/FingT_1.R/FingT_2.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/FingT_1.R/FingT_2.R/FingT_3.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/FingT_1.R/FingT_2.R/FingT_3.R/FingT_3.R_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/shroud1.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/shroud1.R/shroud2.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/shroud1.R/shroud2.R/shroud2.R_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/tail1
+        weight: 1
+      - path: thc3_arma/root_bone/shest/tail1/tail2
+        weight: 1
+      - path: thc3_arma/root_bone/shest/tail1/tail2/tail2_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: thc3_arma|run_forward
+      takeName: thc3_arma|run_forward
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Hand_LP.002
+        weight: 1
+      - path: Hand_LP.131
+        weight: 1
+      - path: Hand_LP.133
+        weight: 1
+      - path: Hand_LP.134
+        weight: 1
+      - path: thc3_arma
+        weight: 1
+      - path: thc3_arma/root_bone
+        weight: 1
+      - path: thc3_arma/root_bone/arm_IK.L
+        weight: 1
+      - path: thc3_arma/root_bone/arm_IK.L/elbow_IK.L
+        weight: 1
+      - path: thc3_arma/root_bone/arm_IK.L/elbow_IK.L/elbow_IK.L_end
+        weight: 1
+      - path: thc3_arma/root_bone/arm_IK.R
+        weight: 1
+      - path: thc3_arma/root_bone/arm_IK.R/elbow_IK.R
+        weight: 1
+      - path: thc3_arma/root_bone/arm_IK.R/elbow_IK.R/elbow_IK.R_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest
+        weight: 1
+      - path: thc3_arma/root_bone/shest/neck
+        weight: 1
+      - path: thc3_arma/root_bone/shest/neck/head
+        weight: 1
+      - path: thc3_arma/root_bone/shest/neck/head/hair
+        weight: 1
+      - path: thc3_arma/root_bone/shest/neck/head/hair/hair_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/neck/head/jaw
+        weight: 1
+      - path: thc3_arma/root_bone/shest/neck/head/jaw/jaw_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing1_1.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing1_1.L/Fing1_2.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing1_1.L/Fing1_2.L/Fing1_3.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing1_1.L/Fing1_2.L/Fing1_3.L/Fing1_3.L_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing2_1.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing2_1.L/Fing2_2.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing2_1.L/Fing2_2.L/Fing2_3.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing2_1.L/Fing2_2.L/Fing2_3.L/Fing2_3.L_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing3_1.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing3_1.L/Fing3_2.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing3_1.L/Fing3_2.L/Fing3_3.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing3_1.L/Fing3_2.L/Fing3_3.L/Fing3_3.L_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/FingT_1.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/FingT_1.L/FingT_2.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/FingT_1.L/FingT_2.L/FingT_3.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/FingT_1.L/FingT_2.L/FingT_3.L/FingT_3.L_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/shroud1.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/shroud1.L/shroud2.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/shroud1.L/shroud2.L/shroud2.L_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing1_1.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing1_1.R/Fing1_2.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing1_1.R/Fing1_2.R/Fing1_3.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing1_1.R/Fing1_2.R/Fing1_3.R/Fing1_3.R_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing2_1.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing2_1.R/Fing2_2.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing2_1.R/Fing2_2.R/Fing2_3.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing2_1.R/Fing2_2.R/Fing2_3.R/Fing2_3.R_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing3_1.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing3_1.R/Fing3_2.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing3_1.R/Fing3_2.R/Fing3_3.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing3_1.R/Fing3_2.R/Fing3_3.R/Fing3_3.R_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/FingT_1.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/FingT_1.R/FingT_2.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/FingT_1.R/FingT_2.R/FingT_3.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/FingT_1.R/FingT_2.R/FingT_3.R/FingT_3.R_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/shroud1.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/shroud1.R/shroud2.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/shroud1.R/shroud2.R/shroud2.R_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/tail1
+        weight: 1
+      - path: thc3_arma/root_bone/shest/tail1/tail2
+        weight: 1
+      - path: thc3_arma/root_bone/shest/tail1/tail2/tail2_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: thc3_arma|walk_backward
+      takeName: thc3_arma|walk_backward
+      firstFrame: 0
+      lastFrame: 81
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Hand_LP.002
+        weight: 1
+      - path: Hand_LP.131
+        weight: 1
+      - path: Hand_LP.133
+        weight: 1
+      - path: Hand_LP.134
+        weight: 1
+      - path: thc3_arma
+        weight: 1
+      - path: thc3_arma/root_bone
+        weight: 1
+      - path: thc3_arma/root_bone/arm_IK.L
+        weight: 1
+      - path: thc3_arma/root_bone/arm_IK.L/elbow_IK.L
+        weight: 1
+      - path: thc3_arma/root_bone/arm_IK.L/elbow_IK.L/elbow_IK.L_end
+        weight: 1
+      - path: thc3_arma/root_bone/arm_IK.R
+        weight: 1
+      - path: thc3_arma/root_bone/arm_IK.R/elbow_IK.R
+        weight: 1
+      - path: thc3_arma/root_bone/arm_IK.R/elbow_IK.R/elbow_IK.R_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest
+        weight: 1
+      - path: thc3_arma/root_bone/shest/neck
+        weight: 1
+      - path: thc3_arma/root_bone/shest/neck/head
+        weight: 1
+      - path: thc3_arma/root_bone/shest/neck/head/hair
+        weight: 1
+      - path: thc3_arma/root_bone/shest/neck/head/hair/hair_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/neck/head/jaw
+        weight: 1
+      - path: thc3_arma/root_bone/shest/neck/head/jaw/jaw_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing1_1.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing1_1.L/Fing1_2.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing1_1.L/Fing1_2.L/Fing1_3.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing1_1.L/Fing1_2.L/Fing1_3.L/Fing1_3.L_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing2_1.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing2_1.L/Fing2_2.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing2_1.L/Fing2_2.L/Fing2_3.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing2_1.L/Fing2_2.L/Fing2_3.L/Fing2_3.L_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing3_1.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing3_1.L/Fing3_2.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing3_1.L/Fing3_2.L/Fing3_3.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing3_1.L/Fing3_2.L/Fing3_3.L/Fing3_3.L_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/FingT_1.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/FingT_1.L/FingT_2.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/FingT_1.L/FingT_2.L/FingT_3.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/FingT_1.L/FingT_2.L/FingT_3.L/FingT_3.L_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/shroud1.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/shroud1.L/shroud2.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/shroud1.L/shroud2.L/shroud2.L_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing1_1.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing1_1.R/Fing1_2.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing1_1.R/Fing1_2.R/Fing1_3.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing1_1.R/Fing1_2.R/Fing1_3.R/Fing1_3.R_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing2_1.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing2_1.R/Fing2_2.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing2_1.R/Fing2_2.R/Fing2_3.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing2_1.R/Fing2_2.R/Fing2_3.R/Fing2_3.R_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing3_1.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing3_1.R/Fing3_2.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing3_1.R/Fing3_2.R/Fing3_3.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing3_1.R/Fing3_2.R/Fing3_3.R/Fing3_3.R_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/FingT_1.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/FingT_1.R/FingT_2.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/FingT_1.R/FingT_2.R/FingT_3.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/FingT_1.R/FingT_2.R/FingT_3.R/FingT_3.R_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/shroud1.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/shroud1.R/shroud2.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/shroud1.R/shroud2.R/shroud2.R_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/tail1
+        weight: 1
+      - path: thc3_arma/root_bone/shest/tail1/tail2
+        weight: 1
+      - path: thc3_arma/root_bone/shest/tail1/tail2/tail2_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: thc3_arma|walk_forward
+      takeName: thc3_arma|walk_forward
+      firstFrame: 0
+      lastFrame: 81
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Hand_LP.002
+        weight: 1
+      - path: Hand_LP.131
+        weight: 1
+      - path: Hand_LP.133
+        weight: 1
+      - path: Hand_LP.134
+        weight: 1
+      - path: thc3_arma
+        weight: 1
+      - path: thc3_arma/root_bone
+        weight: 1
+      - path: thc3_arma/root_bone/arm_IK.L
+        weight: 1
+      - path: thc3_arma/root_bone/arm_IK.L/elbow_IK.L
+        weight: 1
+      - path: thc3_arma/root_bone/arm_IK.L/elbow_IK.L/elbow_IK.L_end
+        weight: 1
+      - path: thc3_arma/root_bone/arm_IK.R
+        weight: 1
+      - path: thc3_arma/root_bone/arm_IK.R/elbow_IK.R
+        weight: 1
+      - path: thc3_arma/root_bone/arm_IK.R/elbow_IK.R/elbow_IK.R_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest
+        weight: 1
+      - path: thc3_arma/root_bone/shest/neck
+        weight: 1
+      - path: thc3_arma/root_bone/shest/neck/head
+        weight: 1
+      - path: thc3_arma/root_bone/shest/neck/head/hair
+        weight: 1
+      - path: thc3_arma/root_bone/shest/neck/head/hair/hair_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/neck/head/jaw
+        weight: 1
+      - path: thc3_arma/root_bone/shest/neck/head/jaw/jaw_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing1_1.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing1_1.L/Fing1_2.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing1_1.L/Fing1_2.L/Fing1_3.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing1_1.L/Fing1_2.L/Fing1_3.L/Fing1_3.L_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing2_1.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing2_1.L/Fing2_2.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing2_1.L/Fing2_2.L/Fing2_3.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing2_1.L/Fing2_2.L/Fing2_3.L/Fing2_3.L_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing3_1.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing3_1.L/Fing3_2.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing3_1.L/Fing3_2.L/Fing3_3.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/Fing3_1.L/Fing3_2.L/Fing3_3.L/Fing3_3.L_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/FingT_1.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/FingT_1.L/FingT_2.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/FingT_1.L/FingT_2.L/FingT_3.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/arm_up.L/arm_bot.L/hand.L/FingT_1.L/FingT_2.L/FingT_3.L/FingT_3.L_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/shroud1.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/shroud1.L/shroud2.L
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.L/shroud1.L/shroud2.L/shroud2.L_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing1_1.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing1_1.R/Fing1_2.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing1_1.R/Fing1_2.R/Fing1_3.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing1_1.R/Fing1_2.R/Fing1_3.R/Fing1_3.R_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing2_1.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing2_1.R/Fing2_2.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing2_1.R/Fing2_2.R/Fing2_3.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing2_1.R/Fing2_2.R/Fing2_3.R/Fing2_3.R_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing3_1.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing3_1.R/Fing3_2.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing3_1.R/Fing3_2.R/Fing3_3.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/Fing3_1.R/Fing3_2.R/Fing3_3.R/Fing3_3.R_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/FingT_1.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/FingT_1.R/FingT_2.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/FingT_1.R/FingT_2.R/FingT_3.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/arm_up.R/arm_bot.R/hand.R/FingT_1.R/FingT_2.R/FingT_3.R/FingT_3.R_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/shroud1.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/shroud1.R/shroud2.R
+        weight: 1
+      - path: thc3_arma/root_bone/shest/shoulder.R/shroud1.R/shroud2.R/shroud2.R_end
+        weight: 1
+      - path: thc3_arma/root_bone/shest/tail1
+        weight: 1
+      - path: thc3_arma/root_bone/shest/tail1/tail2
+        weight: 1
+      - path: thc3_arma/root_bone/shest/tail1/tail2/tail2_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
